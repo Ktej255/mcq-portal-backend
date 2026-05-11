@@ -1,6 +1,6 @@
 from pydantic_settings import BaseSettings
 from pydantic import validator, AnyHttpUrl
-from typing import Optional, List, Union
+from typing import Optional, List, Union, Any
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "MCQ Intelligence Portal"
@@ -15,15 +15,19 @@ class Settings(BaseSettings):
         return v
 
     # CORS Configuration
-    BACKEND_CORS_ORIGINS: List[Union[AnyHttpUrl, str]] = ["http://localhost:3000", "http://localhost:8000"]
+    BACKEND_CORS_ORIGINS: Any = ["http://localhost:3000", "http://localhost:8000"]
 
     @validator("BACKEND_CORS_ORIGINS", pre=True)
-    def assemble_cors_origins(cls, v: Union[str, List[str]]) -> Union[List[str], str]:
-        if isinstance(v, str) and not v.startswith("["):
+    def assemble_cors_origins(cls, v: Union[str, List[str]]) -> List[str]:
+        if isinstance(v, str):
+            if v.startswith("[") and v.endswith("]"):
+                try:
+                    import json
+                    return json.loads(v)
+                except:
+                    pass
             return [i.strip() for i in v.split(",")]
-        elif isinstance(v, (list, str)):
-            return v
-        raise ValueError(v)
+        return v
 
     # GCP / Firebase
     GOOGLE_APPLICATION_CREDENTIALS: Optional[str] = None
