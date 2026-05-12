@@ -1,9 +1,13 @@
-import google.generativeai as genai
 from app.core.config import settings
 from typing import Dict, Any
 
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
+
 def generate_performance_narrative(report_data: Dict[str, Any], behavioral_data: Dict[str, Any]) -> str:
-    if not settings.GOOGLE_API_KEY:
+    if not settings.GOOGLE_API_KEY or genai is None:
         return "AI Narrative generation is currently disabled (API Key missing)."
 
     genai.configure(api_key=settings.GOOGLE_API_KEY)
@@ -12,6 +16,7 @@ def generate_performance_narrative(report_data: Dict[str, Any], behavioral_data:
     prompt = f"""
     You are an expert cognitive performance coach for competitive exams.
     Analyze the following exam data and provide a personalized, actionable, and empathetically framed narrative.
+    You must distinguish evidence from inference and include uncertainty qualifiers.
 
     SCORES:
     - Total Score: {report_data.get('total_score')}
@@ -24,16 +29,19 @@ def generate_performance_narrative(report_data: Dict[str, Any], behavioral_data:
     - Guessing Rate: {behavioral_data.get('guessing_rate', 0):.1f}%
     - Overconfidence Rate: {behavioral_data.get('overconfidence_rate', 0):.1f}%
     - Hesitation Index: {behavioral_data.get('hesitation_index', 0):.1f}%
+    - Behavioral Data Quality: {behavioral_data.get('behavioral_data_quality', {}).get('score', 0):.2f}
+    - Narrative Safety Guidance: {behavioral_data.get('inference_reliability', {}).get('narrative_safety', {}).get('uncertainty_qualifier', 'Use cautious language.')}
 
     TOPIC PERFORMANCE:
     {report_data.get('topic_wise_analysis')}
 
     REQUIREMENTS:
     1. Start with a warm, encouraging assessment of their performance.
-    2. Identify their top 2 cognitive traits (e.g., 'Careful Deliberator', 'Intuitive Speedster').
-    3. Explain ONE specific behavioral risk (e.g., 'Panic answering at the end').
+    2. Identify up to 2 evidence-backed learning patterns, not fixed traits.
+    3. Explain ONE possible behavioral risk using phrases like "may indicate" or "is consistent with".
     4. Provide a 3-step 'Roadmap to Mastery' based on the topic analysis.
     5. Keep it under 250 words. Use Markdown for formatting.
+    6. Do not diagnose, overclaim, or present speculation as fact.
     """
 
     try:

@@ -1,7 +1,14 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator, model_validator
 from typing import List, Optional, Any, Dict
 from datetime import datetime
 from app.models.domain import ConfidenceEnum, AttemptStatusEnum
+from app.services.domain_contracts import (
+    ContractViolation,
+    normalize_option_id,
+    normalize_confidence,
+    normalize_event_payload,
+    validate_event_timestamp,
+)
 
 # Schemas for Test Metadata
 class TestMetadataResponse(BaseModel):
@@ -53,6 +60,23 @@ class SaveAnswerRequest(BaseModel):
     is_skipped: bool = False
     marked_for_review: bool = False
 
+    @field_validator("selected_option")
+    @classmethod
+    def validate_selected_option(cls, value):
+        return normalize_option_id(value)
+
+    @field_validator("confidence_level", mode="before")
+    @classmethod
+    def validate_confidence(cls, value):
+        return normalize_confidence(value)
+
+    @field_validator("time_taken_seconds")
+    @classmethod
+    def validate_time_taken(cls, value):
+        if value < 0:
+            raise ValueError("time_taken_seconds must be non-negative")
+        return value
+
 class SaveAnswerResponse(BaseModel):
     success: bool
     message: str
@@ -94,5 +118,23 @@ class ExamEventRequest(BaseModel):
     payload: Optional[Dict[str, Any]] = None
     timestamp: Optional[datetime] = None
 
+    @model_validator(mode="after")
+    def validate_contract(self):
+        try:
+            self.timestamp = validate_event_timestamp(self.timestamp)
+            self.payload = normalize_event_payload(self.event_type, self.question_id, self.payload)
+        except ContractViolation as exc:
+            raise ValueError(str(exc)) from exc
+        return self
+
 class EventBatchRequest(BaseModel):
     events: List[ExamEventRequest]
+
+    @field_validator("events")
+    @classmethod
+    def validate_non_empty_batch(cls, value):
+        if not value:
+            raise ValueError("events batch must contain at least one event")
+        if len(value) > 100:
+            raise ValueError("events batch cannot exceed 100 events")
+        return value

@@ -2,6 +2,7 @@ from typing import List, Dict, Any
 from sqlalchemy.orm import Session
 from app.models.domain import ExamEvent, AttemptAnswer, ConfidenceEnum
 from app.schemas.cognitive import CognitiveSignal, BehavioralSnapshot
+from app.services.inference_reliability import attempt_reliability_profile
 
 class CognitiveEngine:
     def analyze_attempt(self, db: Session, attempt_id: int) -> BehavioralSnapshot:
@@ -22,6 +23,18 @@ class CognitiveEngine:
         guessing_rate = len(blind_guesses) / len(answers) * 100
         overconfidence = len(sure_wrong) / len(answers) * 100
         hesitation = len(hesitant_correct) / len(answers) * 100
+        answer_changes = [event for event in events if event.event_type == "ANSWER_CHANGED"]
+        high_confidence_answers = [a for a in answers if a.confidence_level == ConfidenceEnum.HUNDRED_PERCENT]
+        avg_time = sum((a.time_taken_seconds or 0) for a in answers) / len(answers)
+        reliability = attempt_reliability_profile(answers, events, {
+            "high_confidence_rate": len(high_confidence_answers) / len(answers) * 100,
+            "answer_change_rate": len(answer_changes) / len(answers) * 100,
+            "hesitation_index": hesitation,
+            "average_time_per_question": avg_time,
+            "fatigue_score": 0,
+            "late_accuracy_delta": 0,
+        })
+        quality_score = reliability["behavioral_data_quality"]["score"]
 
         # 2. Derive Signals with Confidence Scores
         signals = []
@@ -31,8 +44,10 @@ class CognitiveEngine:
             signals.append(CognitiveSignal(
                 name="RECKLESS_IMPULSE",
                 value=guessing_rate,
-                confidence=0.85,
-                interpretation="Student is making rapid choices without sufficient deliberation or self-calibration."
+                confidence=reliability["signals"]["impulsiveness"]["signal_confidence"],
+                signal_confidence=reliability["signals"]["impulsiveness"]["signal_confidence"],
+                interpretation="Available answer and confidence patterns may indicate low deliberation.",
+                uncertainty_note="This is a behavioral inference, not a psychological diagnosis."
             ))
         
         # Signal: Calibration Accuracy (Confidence vs. Reality)
@@ -42,8 +57,10 @@ class CognitiveEngine:
         signals.append(CognitiveSignal(
             name="CONFIDENCE_CALIBRATION",
             value=calibration * 100,
-            confidence=0.9,
-            interpretation=f"Student's self-assessment is {calibration*100:.1f}% aligned with actual performance."
+            confidence=reliability["signals"]["confidence_drift"]["signal_confidence"],
+            signal_confidence=reliability["signals"]["confidence_drift"]["signal_confidence"],
+            interpretation=f"Available evidence suggests self-assessment alignment of {calibration*100:.1f}%.",
+            uncertainty_note="Confidence calibration is less reliable with sparse attempts or missing events."
         ))
 
         return BehavioralSnapshot(
@@ -51,7 +68,9 @@ class CognitiveEngine:
             hesitation_index=hesitation,
             overconfidence_rate=overconfidence,
             anxiety_index=0, # Placeholder for future biometric/pattern analysis
-            signals=signals
+            signals=signals,
+            behavioral_data_quality=reliability["behavioral_data_quality"],
+            inference_reliability=reliability
         )
 
 cognitive_engine = CognitiveEngine()

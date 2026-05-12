@@ -1,5 +1,6 @@
 from typing import Optional, List, Dict, Any
 from pydantic import BaseModel, Field, root_validator, validator
+from app.services.domain_contracts import normalize_option_id
 
 # Subject Schemas
 class SubjectCreate(BaseModel):
@@ -48,6 +49,7 @@ class QuestionCreate(BaseModel):
 
     @validator("correct_option")
     def validate_correct_option(cls, v, values):
+        v = normalize_option_id(v)
         if "options_en" in values and v not in values["options_en"]:
             raise ValueError(f"Correct option {v} must be one of the keys in options_en")
         return v

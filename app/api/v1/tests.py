@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List, Any
 from app.db.session import get_db
-from app.models.domain import Test, Question, Topic, Subject, User
+from app.models.domain import Test, Question, Topic, Subject, User, Attempt
 from app.api.dependencies import get_current_user
 from app.schemas.common import StandardResponse
 
@@ -13,16 +13,23 @@ def get_available_tests(db: Session = Depends(get_db), current_user: User = Depe
     tests = db.query(Test).filter(Test.is_active == True).all()
     result = []
     for test in tests:
-        # Get subjects for the test
-        subjects = db.query(Subject.name).join(Topic).join(Question).filter(Question.test_id == test.id).distinct().all()
+        # Get attempt stats for this user
+        attempts = db.query(Attempt).filter(Attempt.test_id == test.id, Attempt.user_id == current_user.id).all()
+        attempt_count = len(attempts)
+        last_attempt = attempts[-1] if attempts else None
+        
         total_questions = db.query(Question).filter(Question.test_id == test.id).count()
+        
         result.append({
             "id": str(test.id),
             "title": test.title,
             "description": test.description,
             "durationMinutes": test.duration_minutes,
             "totalQuestions": total_questions,
-            "subjects": [s[0] for s in subjects]
+            "subject": test.subject.name if test.subject else "General",
+            "attemptCount": attempt_count,
+            "lastAttemptStatus": last_attempt.status if last_attempt else None,
+            "lastAttemptDate": last_attempt.end_time.isoformat() if last_attempt and last_attempt.end_time else (last_attempt.start_time.isoformat() if last_attempt else None)
         })
     return StandardResponse(success=True, message="Tests retrieved successfully", data=result)
 

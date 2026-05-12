@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from app.models.domain import Attempt, AttemptStatusEnum, AttemptAnswer, Question, Report, Topic, Subject
 from app.services.narrative_service import generate_performance_narrative
 from app.services.longitudinal_service import update_student_evolution
+from app.services.domain_contracts import detect_analytics_anomalies
 
 def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == user_id).first()
@@ -79,6 +80,17 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     total_qs = len(questions)
     accuracy = (correct_count / (correct_count + incorrect_count)) * 100 if (correct_count + incorrect_count) > 0 else 0
     avg_time = total_time / total_qs if total_qs > 0 else 0
+    anomalies = detect_analytics_anomalies({
+        "total_questions": total_qs,
+        "correct_count": correct_count,
+        "incorrect_count": incorrect_count,
+        "unattempted_count": unattempted_count,
+        "accuracy": accuracy,
+        "average_time_per_question": avg_time,
+        "total_score": total_score,
+    })
+    if anomalies:
+        raise HTTPException(status_code=422, detail={"analytics_anomalies": anomalies})
     
     report = Report(
         attempt_id=attempt_id,
@@ -88,7 +100,9 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
         incorrect_count=incorrect_count,
         unattempted_count=unattempted_count,
         topic_wise_analysis=topic_wise,
+        subject_wise_performance=subject_wise,
         confidence_analysis=confidence_stats,
+        average_time_per_question=avg_time,
         processing_status="PENDING", # Async pipeline will update this
         generated_at=datetime.now(timezone.utc)
     )
@@ -97,10 +111,6 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     db.add(report)
     db.commit()
     db.refresh(report)
-    
-    # Injected average time manually into the dict to be returned by schema
-    setattr(report, "subject_wise_performance", subject_wise)
-    setattr(report, "average_time_per_question", avg_time)
     
     return report
 
@@ -112,6 +122,7 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
     from app.db.session import SessionLocal
     from app.services.cognitive_engine import cognitive_engine
     from app.services.narrative_evaluator import narrative_evaluator
+    from app.services.student_longitudinal_profile import create_cognitive_snapshot, update_longitudinal_profile
     
     db = SessionLocal()
     try:
@@ -136,8 +147,10 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
         evaluation = narrative_evaluator.evaluate(report.narrative, narrative_input, behavioral.dict())
         report.evaluation_metadata = evaluation.dict()
         
-        # 4. Longitudinal Evolution Update
+        # 4. Immutable cognitive snapshot + longitudinal evolution update
+        create_cognitive_snapshot(db, user_id, attempt_id, behavioral.dict())
         update_student_evolution(db, user_id)
+        update_longitudinal_profile(db, user_id)
         
         report.processing_status = "COMPLETED"
         db.commit()

@@ -1,0 +1,49 @@
+[
+  {
+    "_comment": "TEMPLATE — Replace with real MCQ data. Delete this entry before running.",
+    "subject": "Environment",
+    "topic": "Ecology and Ecosystems",
+    "text_en": "Which of the following is a primary producer in a terrestrial ecosystem?",
+    "text_hi": "निम्नलिखित में से कौन एक स्थलीय पारिस्थितिकी तंत्र में प्राथमिक उत्पादक है?",
+    "options_en": {
+      "A": "Grass",
+      "B": "Deer",
+      "C": "Fox",
+      "D": "Eagle"
+    },
+    "options_hi": {
+      "A": "घास",
+      "B": "हिरण",
+      "C": "लोमड़ी",
+      "D": "चील"
+    },
+    "correct_option": "A",
+    "explanation_en": "Primary producers (autotrophs) like grass manufacture their own food through photosynthesis.",
+    "explanation_hi": "प्राथमिक उत्पादक (स्वपोषी) जैसे घास प्रकाश संश्लेषण के माध्यम से अपना भोजन स्वयं बनाते हैं।",
+    "difficulty": "EASY",
+    "source": "NCERT"
+  },
+  {
+    "subject": "Polity",
+    "topic": "Constitutional Framework",
+    "text_en": "The Preamble of the Indian Constitution was amended by which constitutional amendment?",
+    "text_hi": "भारतीय संविधान की प्रस्तावना को किस संवैधानिक संशोधन द्वारा संशोधित किया गया था?",
+    "options_en": {
+      "A": "42nd Amendment",
+      "B": "44th Amendment",
+      "C": "52nd Amendment",
+      "D": "86th Amendment"
+    },
+    "options_hi": {
+      "A": "42वां संशोधन",
+      "B": "44वां संशोधन",
+      "C": "52वां संशोधन",
+      "D": "86वां संशोधन"
+    },
+    "correct_option": "A",
+    "explanation_en": "The 42nd Constitutional Amendment Act 1976 added the words 'Socialist', 'Secular', and 'Integrity' to the Preamble.",
+    "explanation_hi": "42वें संवैधानिक संशोधन अधिनियम 1976 ने प्रस्तावना में 'समाजवादी', 'धर्मनिरपेक्ष' और 'अखंडता' शब्द जोड़े।",
+    "difficulty": "MEDIUM",
+    "source": "Laxmikanth"
+  }
+]

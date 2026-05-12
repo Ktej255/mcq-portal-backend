@@ -12,6 +12,8 @@ from slowapi.errors import RateLimitExceeded
 
 from app.core.firebase import init_firebase
 from app.core.config import settings
+from app.db.session import engine
+from app.services.schema_integrity import validate_startup_schema
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
@@ -25,6 +27,7 @@ async def lifespan(app: FastAPI):
     # Startup
     logger.info("Starting MCQ API...")
     init_firebase()
+    validate_startup_schema(engine, strict=settings.SCHEMA_CHECK_STRICT)
     yield
     # Shutdown
     logger.info("Shutting down MCQ API...")
@@ -89,7 +92,7 @@ async def add_process_time_and_security_headers(request: Request, call_next):
     response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
     return response
 
-from app.api.v1 import auth, attempts, admin, dashboard, tests, reports
+from app.api.v1 import auth, attempts, admin, dashboard, tests, reports, institutional, governance, causal, grounding, flourishing
 
 @app.get("/")
 @limiter.limit("10/minute")
@@ -115,3 +118,8 @@ app.include_router(admin.router, prefix="/api/v1/admin", tags=["Admin"])
 app.include_router(dashboard.router, prefix="/api/v1/dashboard", tags=["Dashboard"])
 app.include_router(tests.router, prefix="/api/v1/tests", tags=["Tests"])
 app.include_router(reports.router, prefix="/api/v1/reports", tags=["Reports"])
+app.include_router(institutional.router, prefix="/api/v1/institutional", tags=["Institutional"])
+app.include_router(governance.router, prefix="/api/v1/governance", tags=["Governance"])
+app.include_router(causal.router, prefix="/api/v1/causal", tags=["Causal"])
+app.include_router(grounding.router, prefix="/api/v1/grounding", tags=["Grounding"])
+app.include_router(flourishing.router, prefix="/api/v1/flourishing", tags=["Flourishing"])

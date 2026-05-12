@@ -1,0 +1,38 @@
+{
+    "total_parsed": 472,
+    "total_ingested": 448,
+    "failed": [],
+    "subjects": {
+        "Environment": {
+            "parsed": 411,
+            "ingested": 387,
+            "batches": 8
+        },
+        "Polity": {
+            "parsed": 61,
+            "ingested": 61,
+            "batches": 2
+        },
+        "History": {
+            "parsed": 0,
+            "ingested": 0,
+            "batches": 0
+        },
+        "Science": {
+            "parsed": 0,
+            "ingested": 0,
+            "batches": 0
+        },
+        "Economy": {
+            "parsed": 0,
+            "ingested": 0,
+            "batches": 0
+        },
+        "Geography": {
+            "parsed": 0,
+            "ingested": 0,
+            "batches": 0
+        }
+    },
+    "duplicates": 24
+}

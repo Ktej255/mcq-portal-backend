@@ -3,6 +3,7 @@ from fastapi import HTTPException
 from datetime import datetime, timezone
 from app.models.domain import Test, Attempt, AttemptStatusEnum, Question, AttemptAnswer, Topic, Subject, Report
 from app.schemas.test_engine import StartAttemptRequest, SaveAnswerRequest
+from app.services.domain_contracts import normalize_option_id
 
 def start_attempt(db: Session, user_id: int, request: StartAttemptRequest) -> Attempt:
     test = db.query(Test).filter(Test.id == request.test_id, Test.is_active == True).first()
@@ -65,16 +66,18 @@ def save_answer(db: Session, attempt_id: int, user_id: int, request: SaveAnswerR
     # Check timer (optional strict check, could also be done on submit)
     # if attempt.start_time + attempt.test.duration_minutes < now...
     
+    selected_option = normalize_option_id(request.selected_option)
+
     answer = db.query(AttemptAnswer).filter(
         AttemptAnswer.attempt_id == attempt_id,
         AttemptAnswer.question_id == request.question_id
     ).first()
     
     if answer:
-        if answer.selected_option != request.selected_option:
+        if answer.selected_option != selected_option:
             answer.is_changed = True
-        answer.selected_option = request.selected_option
-        answer.time_taken_seconds += request.time_taken_seconds
+        answer.selected_option = selected_option
+        answer.time_taken_seconds = request.time_taken_seconds
         answer.confidence_level = request.confidence_level
         answer.is_skipped = request.is_skipped
         answer.marked_for_review = request.marked_for_review
@@ -82,7 +85,7 @@ def save_answer(db: Session, attempt_id: int, user_id: int, request: SaveAnswerR
         answer = AttemptAnswer(
             attempt_id=attempt_id,
             question_id=request.question_id,
-            selected_option=request.selected_option,
+            selected_option=selected_option,
             time_taken_seconds=request.time_taken_seconds,
             confidence_level=request.confidence_level,
             is_skipped=request.is_skipped,

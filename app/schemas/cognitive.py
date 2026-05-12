@@ -7,6 +7,9 @@ class CognitiveSignal(BaseModel):
     value: float
     confidence: float
     interpretation: str
+    signal_confidence: float = 0.0
+    metric_version: str = "inference-reliability.v1"
+    uncertainty_note: Optional[str] = None
 
 class BehavioralSnapshot(BaseModel):
     guessing_rate: float
@@ -14,6 +17,8 @@ class BehavioralSnapshot(BaseModel):
     overconfidence_rate: float
     anxiety_index: float
     signals: List[CognitiveSignal] = []
+    behavioral_data_quality: Dict[str, Any] = {}
+    inference_reliability: Dict[str, Any] = {}
 
 class TopicMasterySnapshot(BaseModel):
     topic_id: int
@@ -37,5 +42,8 @@ class NarrativeEvaluation(BaseModel):
     hallucination_score: float # 0 to 1
     relevance_score: float
     contradiction_detected: bool
+    uncertainty_score: float = 0.0
+    requires_human_review: bool = False
+    metric_version: str = "inference-reliability.v1"
     expert_validated: bool = False
     expert_comments: Optional[str] = None

@@ -29,7 +29,7 @@ class EventAuditor:
             if event.event_type == 'QUESTION_VIEWED':
                 viewed_questions.add(event.question_id)
             
-            elif event.event_type in ['ANSWER_SELECTED', 'ANSWER_CHANGED', 'CONFIDENCE_UPDATED', 'MARKED_FOR_REVIEW']:
+            elif event.event_type in ['ANSWER_CHANGED', 'CONFIDENCE_SELECTED', 'REVIEW_MARKED']:
                 if event.question_id not in viewed_questions:
                     violations.append({
                         "type": "CAUSALITY_VIOLATION",

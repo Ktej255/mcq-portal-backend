@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks
 from sqlalchemy.orm import Session
 from typing import List
+from datetime import datetime, timezone
 from app.db.session import get_db
 from app.models.domain import User
 from app.api.dependencies import get_current_user
@@ -13,11 +14,14 @@ from app.schemas.common import StandardResponse
 from app.services.test_engine_service import start_attempt, get_attempt_questions, save_answer
 from app.services.report_service import generate_report
 from app.services.event_auditor import event_auditor
+from app.services.domain_contracts import CanonicalExamEvent
 import logging
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter()
+
+ALLOWED_EXAM_EVENTS = {event.value for event in CanonicalExamEvent}
 
 @router.get("/history", response_model=StandardResponse[List[HistoryItemResponse]])
 def get_attempt_history(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
@@ -119,6 +123,10 @@ def record_exam_events(
     attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == current_user.id).first()
     if not attempt:
         raise HTTPException(status_code=404, detail="Attempt not found")
+
+    invalid_events = sorted({event.event_type for event in request.events if event.event_type not in ALLOWED_EXAM_EVENTS})
+    if invalid_events:
+        raise HTTPException(status_code=422, detail={"invalid_event_types": invalid_events})
         
     # Audit events for integrity
     audit_results = event_auditor.validate_sequence(request.events)
@@ -137,11 +145,15 @@ def record_exam_events(
     
     db.add_all(db_events)
     db.commit()
+    ordered_timestamps = sorted(event.timestamp for event in db_events if event.timestamp)
     return StandardResponse(
         success=True, 
         message=f"{len(db_events)} events recorded", 
         data={
             "count": len(db_events),
-            "audit": audit_results["audit_summary"]
+            "audit": audit_results["audit_summary"],
+            "firstTimestamp": ordered_timestamps[0].isoformat() if ordered_timestamps else None,
+            "lastTimestamp": ordered_timestamps[-1].isoformat() if ordered_timestamps else None,
+            "eventTypes": [event.event_type for event in db_events],
         }
     )

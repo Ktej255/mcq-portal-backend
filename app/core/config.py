@@ -48,6 +48,7 @@ class Settings(BaseSettings):
     GOOGLE_API_KEY: Optional[str] = None
     
     ADMIN_EMAILS: List[str] = ["sarit.kumar.dev@gmail.com"] # Add bootstrap admin
+    SCHEMA_CHECK_STRICT: bool = False
 
     class Config:
         env_file = ".env"
