@@ -33,6 +33,23 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down MCQ API...")
 
 app = FastAPI(title="MCQ Intelligence Portal API", version="1.0.0", lifespan=lifespan)
+
+@app.get("/api/v1/debug/counts")
+def debug_counts():
+    """Public debug endpoint — shows what this Cloud Run instance sees in DB."""
+    from app.db.session import SessionLocal
+    from app.models.domain import Test, Question, Subject
+    db = SessionLocal()
+    try:
+        q_count = db.query(Question).count()
+        t_count = db.query(Test).count()
+        subjects = {s.name: db.query(Test).filter(Test.subject_id == s.id).count()
+                    for s in db.query(Subject).all()}
+        import os
+        return {"questions": q_count, "tests": t_count, "subjects": subjects,
+                "db_url_prefix": os.environ.get("DATABASE_URL","")[:40]}
+    finally:
+        db.close()
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
