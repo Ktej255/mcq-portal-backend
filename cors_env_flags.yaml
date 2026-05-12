@@ -1,0 +1,2 @@
+update-env-vars:
+  BACKEND_CORS_ORIGINS: "http://localhost:3000,https://mcq-portal-frontend-yo5i.vercel.app,https://mcq-portal-frontend.vercel.app"

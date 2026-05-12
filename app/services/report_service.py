@@ -99,3 +99,59 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     setattr(report, "average_time_per_question", avg_time)
     
     return report
+
+def get_detailed_review(db: Session, attempt_id: int, user_id: int):
+    attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == user_id).first()
+    if not attempt:
+        raise HTTPException(status_code=404, detail="Attempt not found")
+        
+    questions = db.query(Question).filter(Question.test_id == attempt.test_id).all()
+    answers = db.query(AttemptAnswer).filter(AttemptAnswer.attempt_id == attempt_id).all()
+    ans_map = {ans.question_id: ans for ans in answers}
+    
+    review_data = []
+    for q in questions:
+        ans = ans_map.get(q.id)
+        review_data.append({
+            "id": q.id,
+            "text_en": q.text_en,
+            "text_hi": q.text_hi,
+            "options_en": q.options_en,
+            "options_hi": q.options_hi,
+            "correct_option": q.correct_option,
+            "explanation_en": q.explanation_en,
+            "explanation_hi": q.explanation_hi,
+            "selected_option": ans.selected_option if ans else None,
+            "is_correct": ans.is_correct if ans else False,
+            "time_taken_seconds": ans.time_taken_seconds if ans else 0,
+            "confidence_level": ans.confidence_level if ans else None,
+            "marked_for_review": ans.marked_for_review if ans else False
+        })
+    return review_data
+
+def get_behavioral_analysis(db: Session, attempt_id: int, user_id: int):
+    # This would typically be part of generate_report or a separate analysis engine
+    # For now, let's just return a template of what we can derive
+    attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == user_id).first()
+    if not attempt: return {}
+    
+    answers = db.query(AttemptAnswer).filter(AttemptAnswer.attempt_id == attempt_id).all()
+    
+    analysis = {
+        "guessing_rate": 0,
+        "hesitation_index": 0,
+        "overconfidence_rate": 0,
+        "anxiety_index": 0
+    }
+    
+    if not answers: return analysis
+    
+    blind_guesses = [a for a in answers if a.confidence_level == "BLIND_GUESS"]
+    sure_wrong = [a for a in answers if a.confidence_level == "100_SURE" and not a.is_correct]
+    long_time_right = [a for a in answers if a.time_taken_seconds > 60 and a.is_correct]
+    
+    analysis["guessing_rate"] = len(blind_guesses) / len(answers) * 100
+    analysis["overconfidence_rate"] = len(sure_wrong) / len(answers) * 100
+    analysis["hesitation_index"] = len(long_time_right) / len(answers) * 100
+    
+    return analysis

@@ -41,6 +41,9 @@ class QuestionCreate(BaseModel):
     options_en: Dict[str, str] = Field(..., description="E.g., {'A': 'Option 1', 'B': 'Option 2'}")
     options_hi: Optional[Dict[str, str]] = None
     correct_option: str = Field(..., max_length=5)
+    explanation_en: Optional[str] = None
+    explanation_hi: Optional[str] = None
+    source: Optional[str] = None
     difficulty: str = Field(default="MEDIUM", description="E.g., EASY, MEDIUM, HARD")
 
     @validator("correct_option")
@@ -62,6 +65,9 @@ class QuestionUpdate(BaseModel):
     options_en: Optional[Dict[str, str]] = None
     options_hi: Optional[Dict[str, str]] = None
     correct_option: Optional[str] = None
+    explanation_en: Optional[str] = None
+    explanation_hi: Optional[str] = None
+    source: Optional[str] = None
     difficulty: Optional[str] = None
 
 class QuestionOut(BaseModel):
@@ -73,6 +79,9 @@ class QuestionOut(BaseModel):
     options_en: Dict[str, str]
     options_hi: Optional[Dict[str, str]] = None
     correct_option: str
+    explanation_en: Optional[str] = None
+    explanation_hi: Optional[str] = None
+    source: Optional[str] = None
     difficulty: str
 
     class Config:

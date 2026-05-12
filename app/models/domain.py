@@ -62,7 +62,7 @@ class Test(Base):
 
     subject = relationship("Subject", back_populates="tests")
     questions = relationship("Question", back_populates="test")
-    attempts = relationship("Attempt", back_populates="test")
+    attempts = relationship("Attempt", back_populates="test", order_by="desc(Attempt.start_time)")
 
 class Question(Base):
     __tablename__ = "questions"
@@ -74,7 +74,10 @@ class Question(Base):
     options_en = Column(JSON, nullable=False) 
     options_hi = Column(JSON, nullable=True)
     correct_option = Column(String, nullable=False)
-    difficulty = Column(String, default="MEDIUM")
+    explanation_en = Column(String, nullable=True)
+    explanation_hi = Column(String, nullable=True)
+    source = Column(String, nullable=True, index=True)
+    difficulty = Column(String, default="MEDIUM", index=True)
 
     test = relationship("Test", back_populates="questions")
     topic = relationship("Topic", back_populates="questions")
@@ -103,9 +106,10 @@ class AttemptAnswer(Base):
     is_correct = Column(Boolean, nullable=True)
     time_taken_seconds = Column(Integer, default=0)
     confidence_level = Column(Enum(ConfidenceEnum), nullable=True)
-    is_skipped = Column(Boolean, default=False)
+    is_skipped = Column(Boolean, default=False, index=True)
     is_changed = Column(Boolean, default=False)
-    marked_for_review = Column(Boolean, default=False)
+    marked_for_review = Column(Boolean, default=False, index=True)
+    interaction_history = Column(JSON, nullable=True) # List of events: {type, value, timestamp}
 
     attempt = relationship("Attempt", back_populates="answers")
     question = relationship("Question", back_populates="attempt_answers")
