@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from app.models.domain import EducationalEscalation, Cohort, User, CohortMembership
 
 class EducationalEscalationSystem:
