@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 from app.db.session import get_db
 from app.models.domain import User, RoleEnum
 from app.core.firebase import verify_token
+from app.core.config import settings
 
 from typing import Optional
 
@@ -49,17 +50,25 @@ def get_current_user(db: Session = Depends(get_db), auth: Optional[HTTPAuthoriza
 
     user = db.query(User).filter(User.google_uid == google_uid).first()
     
+    # Check if user should be an admin based on email
+    is_bootstrap_admin = email in settings.ADMIN_EMAILS
+    
     # Auto-create user on first login
     if not user:
-        logger.info(f"FORENSIC | User not found in DB, auto-creating student account for {email}")
+        logger.info(f"FORENSIC | User not found in DB, auto-creating account for {email}")
         user = User(
             google_uid=google_uid,
             email=email,
             full_name=name,
             profile_picture=picture,
-            role=RoleEnum.STUDENT
+            role=RoleEnum.ADMIN if is_bootstrap_admin else RoleEnum.STUDENT
         )
         db.add(user)
+        db.commit()
+        db.refresh(user)
+    elif is_bootstrap_admin and user.role != RoleEnum.ADMIN:
+        logger.info(f"FORENSIC | Elevating user {email} to ADMIN based on allowlist")
+        user.role = RoleEnum.ADMIN
         db.commit()
         db.refresh(user)
     else:

@@ -45,6 +45,8 @@ class Settings(BaseSettings):
     # GCP / Firebase
     GOOGLE_APPLICATION_CREDENTIALS: Optional[str] = None
     FIREBASE_PROJECT_ID: Optional[str] = "mcq-intelligence-portal"
+    
+    ADMIN_EMAILS: List[str] = ["sarit.kumar.dev@gmail.com"] # Add bootstrap admin
 
     class Config:
         env_file = ".env"
