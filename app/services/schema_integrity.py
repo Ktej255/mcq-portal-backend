@@ -56,3 +56,8 @@ def validate_startup_schema(engine: Engine, strict: bool = False) -> dict[str, l
     else:
         logger.info("Schema integrity check passed.")
     return drift
+
+
+def validate_telemetry_schema(engine: Engine) -> dict[str, list[str]]:
+    """Alias kept for backward compatibility with reliability_audit_engine."""
+    return validate_startup_schema(engine, strict=False)
