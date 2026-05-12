@@ -27,6 +27,8 @@ class User(Base):
     full_name = Column(String, nullable=True)
     profile_picture = Column(String, nullable=True)
     role = Column(Enum(RoleEnum), default=RoleEnum.STUDENT, nullable=False)
+    topic_mastery = Column(JSON, nullable=True) # {topic_id: {mastery_score, last_updated}}
+    behavioral_profile = Column(JSON, nullable=True) # {guessing_rate_trend, consistency_score, etc.}
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     attempts = relationship("Attempt", back_populates="user")
@@ -44,6 +46,7 @@ class Topic(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True, nullable=False)
     subject_id = Column(Integer, ForeignKey("subjects.id"), nullable=False)
+    prerequisites = Column(JSON, nullable=True) # List of topic_ids
 
     subject = relationship("Subject", back_populates="topics")
     questions = relationship("Question", back_populates="topic")
@@ -96,6 +99,7 @@ class Attempt(Base):
     test = relationship("Test", back_populates="attempts")
     answers = relationship("AttemptAnswer", back_populates="attempt")
     report = relationship("Report", back_populates="attempt", uselist=False)
+    events = relationship("ExamEvent", back_populates="attempt")
 
 class AttemptAnswer(Base):
     __tablename__ = "attempt_answers"
@@ -114,6 +118,18 @@ class AttemptAnswer(Base):
     attempt = relationship("Attempt", back_populates="answers")
     question = relationship("Question", back_populates="attempt_answers")
 
+class ExamEvent(Base):
+    __tablename__ = "exam_events"
+    id = Column(Integer, primary_key=True, index=True)
+    attempt_id = Column(Integer, ForeignKey("attempts.id"), nullable=False)
+    event_type = Column(String, nullable=False, index=True) # e.g., QUESTION_VIEWED, ANSWER_SELECTED
+    question_id = Column(Integer, ForeignKey("questions.id"), nullable=True)
+    payload = Column(JSON, nullable=True) # Specific data for the event
+    timestamp = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    attempt = relationship("Attempt", back_populates="events")
+    question = relationship("Question")
+
 class Report(Base):
     __tablename__ = "reports"
     id = Column(Integer, primary_key=True, index=True)
@@ -125,6 +141,17 @@ class Report(Base):
     unattempted_count = Column(Integer, nullable=False)
     topic_wise_analysis = Column(JSON, nullable=True)
     confidence_analysis = Column(JSON, nullable=True)
+    narrative = Column(String, nullable=True) # AI Generated Insight
     generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
 
     attempt = relationship("Attempt", back_populates="report")
+
+class StudentEvolution(Base):
+    __tablename__ = "student_evolution"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    metric_type = Column(String, nullable=False, index=True) # e.g., ACCURACY, SPEED, CALIBRATION
+    value = Column(Float, nullable=False)
+    timestamp = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    user = relationship("User")

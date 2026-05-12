@@ -85,3 +85,12 @@ class HistoryItemResponse(BaseModel):
 
     class Config:
         from_attributes = True
+# Schemas for Behavioral Events
+class ExamEventRequest(BaseModel):
+    event_type: str
+    question_id: Optional[int] = None
+    payload: Optional[Dict[str, Any]] = None
+    timestamp: Optional[datetime] = None
+
+class EventBatchRequest(BaseModel):
+    events: List[ExamEventRequest]

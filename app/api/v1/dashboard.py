@@ -6,6 +6,7 @@ from app.db.session import get_db
 from app.models.domain import User, Attempt, AttemptStatusEnum, Report, Test
 from app.api.dependencies import get_current_user
 from app.schemas.common import StandardResponse
+from app.services.recommendation_service import get_personalized_recommendations
 
 router = APIRouter()
 
@@ -40,3 +41,8 @@ def get_dashboard_summary(db: Session = Depends(get_db), current_user: User = De
         "recentTests": recent_tests
     }
     return StandardResponse(success=True, message="Dashboard summary retrieved", data=data)
+
+@router.get("/recommendations")
+def get_dashboard_recommendations(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)) -> Any:
+    recs = get_personalized_recommendations(db, current_user.id)
+    return StandardResponse(success=True, message="Recommendations retrieved", data=recs)

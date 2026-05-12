@@ -2,6 +2,8 @@ from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from datetime import datetime, timezone
 from app.models.domain import Attempt, AttemptStatusEnum, AttemptAnswer, Question, Report, Topic, Subject
+from app.services.narrative_service import generate_performance_narrative
+from app.services.longitudinal_service import update_student_evolution
 
 def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == user_id).first()
@@ -89,6 +91,20 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
         confidence_analysis=confidence_stats,
         generated_at=datetime.now(timezone.utc)
     )
+    
+    # Generate AI Narrative
+    behavioral = get_behavioral_analysis(db, attempt_id, user_id)
+    report.narrative = generate_performance_narrative(
+        {
+            "total_score": total_score, 
+            "accuracy": accuracy, 
+            "correct_count": correct_count, 
+            "incorrect_count": incorrect_count, 
+            "unattempted_count": unattempted_count,
+            "topic_wise_analysis": topic_wise
+        },
+        behavioral
+    )
     # Save the evaluation of answers back
     db.add(report)
     db.commit()
@@ -98,6 +114,12 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     setattr(report, "subject_wise_performance", subject_wise)
     setattr(report, "average_time_per_question", avg_time)
     
+    # Update longitudinal profile
+    try:
+        update_student_evolution(db, user_id)
+    except Exception as e:
+        print(f"Longitudinal Update Error: {str(e)}")
+        
     return report
 
 def get_detailed_review(db: Session, attempt_id: int, user_id: int):
@@ -146,9 +168,10 @@ def get_behavioral_analysis(db: Session, attempt_id: int, user_id: int):
     
     if not answers: return analysis
     
-    blind_guesses = [a for a in answers if a.confidence_level == "BLIND_GUESS"]
-    sure_wrong = [a for a in answers if a.confidence_level == "100_SURE" and not a.is_correct]
-    long_time_right = [a for a in answers if a.time_taken_seconds > 60 and a.is_correct]
+    from app.models.domain import ConfidenceEnum
+    blind_guesses = [a for a in answers if a.confidence_level == ConfidenceEnum.BLIND_GUESS]
+    sure_wrong = [a for a in answers if a.confidence_level == ConfidenceEnum.HUNDRED_PERCENT and a.is_correct == False]
+    long_time_right = [a for a in answers if a.time_taken_seconds > 60 and a.is_correct == True]
     
     analysis["guessing_rate"] = len(blind_guesses) / len(answers) * 100
     analysis["overconfidence_rate"] = len(sure_wrong) / len(answers) * 100

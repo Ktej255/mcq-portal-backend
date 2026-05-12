@@ -6,7 +6,8 @@ from app.models.domain import User
 from app.api.dependencies import get_current_user
 from app.schemas.test_engine import (
     StartAttemptRequest, StartAttemptResponse, QuestionResponse, 
-    SaveAnswerRequest, SaveAnswerResponse, ReportResponse, HistoryItemResponse
+    SaveAnswerRequest, SaveAnswerResponse, ReportResponse, HistoryItemResponse,
+    EventBatchRequest
 )
 from app.schemas.common import StandardResponse
 from app.services.test_engine_service import start_attempt, get_attempt_questions, save_answer
@@ -95,3 +96,30 @@ def submit_test(
 ):
     report = generate_report(db, attempt_id, current_user.id)
     return StandardResponse(success=True, message="Test submitted and report generated successfully", data=report)
+
+@router.post("/{attempt_id}/events", response_model=StandardResponse[dict])
+def record_exam_events(
+    attempt_id: int,
+    request: EventBatchRequest,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    from app.models.domain import ExamEvent, Attempt
+    # Verify attempt ownership
+    attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == current_user.id).first()
+    if not attempt:
+        raise HTTPException(status_code=404, detail="Attempt not found")
+        
+    db_events = []
+    for e in request.events:
+        db_events.append(ExamEvent(
+            attempt_id=attempt_id,
+            event_type=e.event_type,
+            question_id=e.question_id,
+            payload=e.payload,
+            timestamp=e.timestamp or datetime.now(timezone.utc)
+        ))
+    
+    db.add_all(db_events)
+    db.commit()
+    return StandardResponse(success=True, message=f"{len(db_events)} events recorded", data={"count": len(db_events)})
