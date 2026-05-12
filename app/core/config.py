@@ -15,7 +15,12 @@ class Settings(BaseSettings):
         return v
 
     # CORS Configuration
-    BACKEND_CORS_ORIGINS: Any = ["http://localhost:3000", "http://localhost:8000"]
+    BACKEND_CORS_ORIGINS: Any = [
+        "http://localhost:3000",
+        "http://localhost:8000",
+        "https://mcq-portal-frontend-yo5i.vercel.app",
+        "https://mcq-portal-frontend.vercel.app",
+    ]
 
     @validator("BACKEND_CORS_ORIGINS", pre=True)
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> List[str]:
@@ -31,7 +36,7 @@ class Settings(BaseSettings):
 
     # GCP / Firebase
     GOOGLE_APPLICATION_CREDENTIALS: Optional[str] = None
-    FIREBASE_PROJECT_ID: Optional[str] = None
+    FIREBASE_PROJECT_ID: Optional[str] = "mcq-intelligence-portal"
 
     class Config:
         env_file = ".env"

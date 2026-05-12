@@ -73,3 +73,15 @@ class ReportResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+class HistoryItemResponse(BaseModel):
+    attemptId: str
+    title: str
+    date: str
+    status: str
+    score: Optional[float]
+    maxScore: float
+    accuracy: str
+
+    class Config:
+        from_attributes = True

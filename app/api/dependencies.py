@@ -5,28 +5,53 @@ from app.db.session import get_db
 from app.models.domain import User, RoleEnum
 from app.core.firebase import verify_token
 
-security = HTTPBearer()
+from typing import Optional
 
-def get_current_user(db: Session = Depends(get_db), auth: HTTPAuthorizationCredentials = Depends(security)) -> User:
+security = HTTPBearer(auto_error=False)
+
+import logging
+logger = logging.getLogger(__name__)
+
+def get_current_user(db: Session = Depends(get_db), auth: Optional[HTTPAuthorizationCredentials] = Depends(security)) -> User:
+    auth_provided = bool(auth)
+    logger.info(f"FORENSIC | get_current_user check | Auth provided: {auth_provided}")
+    
+    if not auth:
+        logger.warning("FORENSIC | No auth credentials provided in request headers")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Not authenticated: No Bearer token found in headers",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
+        detail="Could not validate credentials: Token verification failed",
         headers={"WWW-Authenticate": "Bearer"},
     )
     
-    decoded_token = verify_token(auth.credentials)
+    try:
+        decoded_token = verify_token(auth.credentials)
+    except Exception as e:
+        logger.error(f"FORENSIC | Token verification exception: {str(e)}")
+        raise credentials_exception
+
     google_uid = decoded_token.get("uid")
     email = decoded_token.get("email")
     name = decoded_token.get("name")
     picture = decoded_token.get("picture")
     
+    logger.info(f"FORENSIC | Token Decoded | UID: {google_uid} | Email: {email}")
+
     if not google_uid or not email:
+        logger.error("FORENSIC | Token missing UID or Email claims")
         raise credentials_exception
 
     user = db.query(User).filter(User.google_uid == google_uid).first()
     
     # Auto-create user on first login
     if not user:
+        logger.info(f"FORENSIC | User not found in DB, auto-creating student account for {email}")
         user = User(
             google_uid=google_uid,
             email=email,
@@ -37,13 +62,17 @@ def get_current_user(db: Session = Depends(get_db), auth: HTTPAuthorizationCrede
         db.add(user)
         db.commit()
         db.refresh(user)
+    else:
+        logger.info(f"FORENSIC | User found in DB | Role: {user.role}")
         
     return user
 
 def get_current_admin(current_user: User = Depends(get_current_user)) -> User:
-    if current_user.role != "ADMIN":
+    logger.info(f"FORENSIC | get_current_admin check | User: {current_user.email} | Role: {current_user.role}")
+    if current_user.role != "ADMIN" and current_user.role != RoleEnum.ADMIN:
+        logger.warning(f"FORENSIC | ACCESS DENIED | User {current_user.email} attempted admin access with role {current_user.role}")
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
-            detail="The user doesn't have enough privileges"
+            detail=f"Admin privileges required. Your current role is {current_user.role}"
         )
     return current_user

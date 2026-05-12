@@ -6,23 +6,24 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+from app.core.config import settings
+
 def init_firebase():
     if not firebase_admin._apps:
         try:
-            # Expected to be loaded via environment variables in production (e.g., GOOGLE_APPLICATION_CREDENTIALS)
-            # For local dev, we could pass a cert dict or just let it auto-discover if creds are set.
-            # Here we let it discover from GOOGLE_APPLICATION_CREDENTIALS or default ADC.
-            cred = credentials.ApplicationDefault()
-            firebase_admin.initialize_app(cred)
-            logger.info("Firebase Admin initialized successfully via Application Default Credentials.")
+            # Determine project ID for logging
+            project_id = settings.FIREBASE_PROJECT_ID or os.getenv("GOOGLE_CLOUD_PROJECT") or os.getenv("FIREBASE_PROJECT_ID")
+            logger.info(f"Initializing Firebase Admin for project: {project_id}")
+            
+            # Use specific credentials if available, otherwise default ADC
+            if settings.GOOGLE_APPLICATION_CREDENTIALS and os.path.exists(settings.GOOGLE_APPLICATION_CREDENTIALS):
+                cred = credentials.Certificate(settings.GOOGLE_APPLICATION_CREDENTIALS)
+                firebase_admin.initialize_app(cred)
+            else:
+                firebase_admin.initialize_app()
+            logger.info("Firebase Admin initialized successfully.")
         except Exception as e:
             logger.error(f"Failed to initialize Firebase Admin: {e}")
-            # If ADC fails, try to initialize without specific creds (useful in some GCP environments)
-            try:
-                firebase_admin.initialize_app()
-                logger.info("Firebase Admin initialized successfully without explicit credentials.")
-            except Exception as inner_e:
-                logger.error(f"Failed fallback initialization for Firebase Admin: {inner_e}")
 
 def verify_token(id_token: str) -> dict:
     try:
