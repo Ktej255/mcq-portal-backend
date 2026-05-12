@@ -1,15 +1,15 @@
 {
-    "total_parsed": 472,
-    "total_ingested": 448,
+    "total_parsed": 0,
+    "total_ingested": 458,
     "failed": [],
     "subjects": {
         "Environment": {
-            "parsed": 411,
-            "ingested": 387,
+            "parsed": 0,
+            "ingested": 397,
             "batches": 8
         },
         "Polity": {
-            "parsed": 61,
+            "parsed": 0,
             "ingested": 61,
             "batches": 2
         },
@@ -34,5 +34,5 @@
             "batches": 0
         }
     },
-    "duplicates": 24
+    "duplicates": 25
 }

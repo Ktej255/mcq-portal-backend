@@ -247,65 +247,45 @@ class AutomatedContentIngestor:
         
         print(f"  Walking directory: {path}")
         for root, dirs, files in os.walk(path):
-            # Strict Filtering: prioritize MCQ folders or Batch files
-            root_lower = root.lower()
-            is_mcq_folder = any(kw in root_lower for kw in ["mcq", "probab", "mock", "test", "question"])
-            
             for file in files:
                 file_path = os.path.join(root, file)
                 file_lower = file.lower()
                 
-                is_mcq_file = "mcq" in file_lower or "batch" in file_lower or "question" in file_lower
-                
-                # Skip definitely non-MCQ large files unless specifically an MCQ file/folder
-                if not (is_mcq_folder or is_mcq_file):
-                    if any(skip in file_lower for skip in ["master", "decoder", "capsule", "timeline", "pt365", "magzine", "script"]):
-                        continue
-
-                # Identify Batch files for bimodal logic
-                if "batch" in file_lower:
-                    if "ans" in file_lower:
-                        a_files.append(file_path)
-                    else:
-                        q_files.append(file_path)
+                # STRICT RULE: Only process files with "Batch" in the name
+                if "batch" not in file_lower:
                     continue
-                
-                # Process standalone MCQs
-                if is_mcq_folder or is_mcq_file:
-                    print(f"    Processing file: {file}")
-                    content = self._read_file_content(file_path)
-                    if content:
-                        parsed = MCQParser.parse_mcqs(content)
-                        if parsed:
-                            print(f"      Parsed {len(parsed)} MCQs")
-                            all_mcqs.extend(parsed)
+
+                if "ans" in file_lower or "key" in file_lower:
+                    a_files.append(file_path)
+                else:
+                    q_files.append(file_path)
 
         # 2. Bimodal Ingestion (Join Q-files and A-files)
         for qf in q_files:
             match = re.search(r'batch[\s_]*(\d+)', os.path.basename(qf), re.IGNORECASE)
             if match:
-                batch_num = match.group(1)
-                af = next((f for f in a_files if re.search(rf'ans.*batch[\s_]*{batch_num}', os.path.basename(f), re.IGNORECASE) or re.search(rf'batch[\s_]*{batch_num}.*ans', os.path.basename(f), re.IGNORECASE)), None)
+                batch_num = int(match.group(1))
+                # Look for matching answer file
+                af = next((f for f in a_files if re.search(rf'batch[\s_]*0?{batch_num}', os.path.basename(f), re.IGNORECASE)), None)
                 
                 print(f"    Processing Batch {batch_num}: {os.path.basename(qf)}")
                 q_text = self._read_file_content(qf)
+                parsed = []
                 if af:
                     a_text = self._read_file_content(af)
                     if q_text and a_text:
                         combined = q_text + "\n\n=== ANSWER KEY ===\n\n" + a_text
                         parsed = MCQParser.parse_mcqs(combined)
-                        if parsed:
-                            print(f"      Successfully joined {len(parsed)} MCQs")
-                            all_mcqs.extend(parsed)
                 else:
                     if q_text:
                         parsed = MCQParser.parse_mcqs(q_text)
-                        if parsed:
-                            print(f"      Parsed {len(parsed)} MCQs (standalone)")
-                            all_mcqs.extend(parsed)
-                    
-        self.report["subjects"][subject]["parsed"] = len(all_mcqs)
-        self.report["total_parsed"] += len(all_mcqs)
+                
+                if parsed:
+                    for m in parsed:
+                        m["batch_id"] = batch_num
+                    print(f"      Parsed {len(parsed)} MCQs")
+                    all_mcqs.extend(parsed)
+
         return all_mcqs
 
     def _read_file_content(self, file_path: str) -> str:
