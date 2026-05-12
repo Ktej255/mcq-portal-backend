@@ -13,6 +13,7 @@ from app.schemas.admin import (
     TestCreate, TestUpdate, TestOut
 )
 from app.crud import admin as crud_admin
+from app.services.observability import observability_service
 
 router = APIRouter()
 
@@ -154,3 +155,11 @@ def update_test(
 ) -> Any:
     test = crud_admin.update_test(db=db, test_id=test_id, obj_in=test_in)
     return StandardResponse(success=True, message="Test updated successfully", data=test)
+
+@router.get("/observability/pipeline")
+def get_pipeline_observability(
+    db: Session = Depends(get_db),
+    current_admin: User = Depends(get_current_admin)
+) -> Any:
+    health = observability_service.get_pipeline_health(db)
+    return StandardResponse(success=True, message="Pipeline observability retrieved", data=health)

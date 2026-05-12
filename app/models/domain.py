@@ -139,9 +139,10 @@ class Report(Base):
     correct_count = Column(Integer, nullable=False)
     incorrect_count = Column(Integer, nullable=False)
     unattempted_count = Column(Integer, nullable=False)
-    topic_wise_analysis = Column(JSON, nullable=True)
     confidence_analysis = Column(JSON, nullable=True)
     narrative = Column(String, nullable=True) # AI Generated Insight
+    processing_status = Column(String, default="COMPLETED", nullable=False) # e.g., PENDING, COMPLETED, FAILED
+    evaluation_metadata = Column(JSON, nullable=True) # {hallucination_score, relevance_score, etc.}
     generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
 
     attempt = relationship("Attempt", back_populates="report")

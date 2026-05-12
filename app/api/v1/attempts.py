@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks
 from sqlalchemy.orm import Session
 from typing import List
 from app.db.session import get_db
@@ -12,6 +12,10 @@ from app.schemas.test_engine import (
 from app.schemas.common import StandardResponse
 from app.services.test_engine_service import start_attempt, get_attempt_questions, save_answer
 from app.services.report_service import generate_report
+from app.services.event_auditor import event_auditor
+import logging
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
@@ -91,11 +95,17 @@ def save_test_answer(
 @router.post("/{attempt_id}/submit", response_model=StandardResponse[ReportResponse])
 def submit_test(
     attempt_id: int, 
+    background_tasks: BackgroundTasks,
     db: Session = Depends(get_db), 
     current_user: User = Depends(get_current_user)
 ):
+    from app.services.report_service import generate_report, run_async_cognitive_pipeline
     report = generate_report(db, attempt_id, current_user.id)
-    return StandardResponse(success=True, message="Test submitted and report generated successfully", data=report)
+    
+    # Offload heavy tasks to background
+    background_tasks.add_task(run_async_cognitive_pipeline, attempt_id, current_user.id)
+    
+    return StandardResponse(success=True, message="Test submitted. Primary analysis complete. AI Insight is being generated.", data=report)
 
 @router.post("/{attempt_id}/events", response_model=StandardResponse[dict])
 def record_exam_events(
@@ -110,6 +120,11 @@ def record_exam_events(
     if not attempt:
         raise HTTPException(status_code=404, detail="Attempt not found")
         
+    # Audit events for integrity
+    audit_results = event_auditor.validate_sequence(request.events)
+    if not audit_results["is_valid"]:
+        logger.warning(f"Event Audit Violations for Attempt {attempt_id}: {audit_results['violations']}")
+
     db_events = []
     for e in request.events:
         db_events.append(ExamEvent(
@@ -122,4 +137,11 @@ def record_exam_events(
     
     db.add_all(db_events)
     db.commit()
-    return StandardResponse(success=True, message=f"{len(db_events)} events recorded", data={"count": len(db_events)})
+    return StandardResponse(
+        success=True, 
+        message=f"{len(db_events)} events recorded", 
+        data={
+            "count": len(db_events),
+            "audit": audit_results["audit_summary"]
+        }
+    )

@@ -69,6 +69,8 @@ class ReportResponse(BaseModel):
     confidence_analysis: Optional[Dict] = None
     subject_wise_performance: Optional[Dict] = None
     average_time_per_question: Optional[float] = None
+    narrative: Optional[str] = None
+    processing_status: str = "COMPLETED"
     generated_at: datetime
 
     class Config:

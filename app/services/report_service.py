@@ -89,22 +89,10 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
         unattempted_count=unattempted_count,
         topic_wise_analysis=topic_wise,
         confidence_analysis=confidence_stats,
+        processing_status="PENDING", # Async pipeline will update this
         generated_at=datetime.now(timezone.utc)
     )
     
-    # Generate AI Narrative
-    behavioral = get_behavioral_analysis(db, attempt_id, user_id)
-    report.narrative = generate_performance_narrative(
-        {
-            "total_score": total_score, 
-            "accuracy": accuracy, 
-            "correct_count": correct_count, 
-            "incorrect_count": incorrect_count, 
-            "unattempted_count": unattempted_count,
-            "topic_wise_analysis": topic_wise
-        },
-        behavioral
-    )
     # Save the evaluation of answers back
     db.add(report)
     db.commit()
@@ -114,13 +102,52 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     setattr(report, "subject_wise_performance", subject_wise)
     setattr(report, "average_time_per_question", avg_time)
     
-    # Update longitudinal profile
-    try:
-        update_student_evolution(db, user_id)
-    except Exception as e:
-        print(f"Longitudinal Update Error: {str(e)}")
-        
     return report
+
+def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
+    """
+    Handles heavy cognitive analysis, AI narratives, and mastery updates.
+    Run in background tasks.
+    """
+    from app.db.session import SessionLocal
+    from app.services.cognitive_engine import cognitive_engine
+    from app.services.narrative_evaluator import narrative_evaluator
+    
+    db = SessionLocal()
+    try:
+        report = db.query(Report).filter(Report.attempt_id == attempt_id).first()
+        if not report: return
+
+        # 1. Advanced Cognitive Analysis
+        behavioral = cognitive_engine.analyze_attempt(db, attempt_id)
+        
+        # 2. AI Narrative Generation
+        narrative_input = {
+            "total_score": report.total_score, 
+            "accuracy": report.accuracy, 
+            "correct_count": report.correct_count, 
+            "incorrect_count": report.incorrect_count, 
+            "unattempted_count": report.unattempted_count,
+            "topic_wise_analysis": report.topic_wise_analysis
+        }
+        report.narrative = generate_performance_narrative(narrative_input, behavioral.dict())
+        
+        # 3. Narrative Evaluation (Phase 6C)
+        evaluation = narrative_evaluator.evaluate(report.narrative, narrative_input, behavioral.dict())
+        report.evaluation_metadata = evaluation.dict()
+        
+        # 4. Longitudinal Evolution Update
+        update_student_evolution(db, user_id)
+        
+        report.processing_status = "COMPLETED"
+        db.commit()
+    except Exception as e:
+        print(f"Async Pipeline Error: {str(e)}")
+        if report:
+            report.processing_status = "FAILED"
+            db.commit()
+    finally:
+        db.close()
 
 def get_detailed_review(db: Session, attempt_id: int, user_id: int):
     attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == user_id).first()
