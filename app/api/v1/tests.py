@@ -10,7 +10,7 @@ router = APIRouter()
 
 @router.get("/available")
 def get_available_tests(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)) -> Any:
-    tests = db.query(Test).filter(Test.is_active == True).all()
+    tests = db.query(Test).filter(Test.is_active == True).order_by(Test.id.asc()).all()
     result = []
     for test in tests:
         # Get attempt stats for this user

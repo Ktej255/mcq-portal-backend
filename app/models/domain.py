@@ -193,6 +193,7 @@ class Report(Base):
     telemetry_summary = Column(JSON, nullable=True) # Pacing, Focus, and Navigation metrics
     processing_status = Column(String, default="COMPLETED", nullable=False) # e.g., PENDING, COMPLETED, FAILED
     evaluation_metadata = Column(JSON, nullable=True) # {hallucination_score, relevance_score, etc.}
+    forensic_data = Column(JSON, nullable=True) # Behavioral and performance forensic timeline
     generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
 
     attempt = relationship("Attempt", back_populates="report")
