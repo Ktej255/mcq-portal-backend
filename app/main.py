@@ -25,9 +25,21 @@ limiter = Limiter(key_func=get_remote_address)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
-    logger.info("Starting MCQ API...")
-    init_firebase()
-    validate_startup_schema(engine, strict=settings.SCHEMA_CHECK_STRICT)
+    logger.info("DEBUG: Starting MCQ API Lifespan...")
+    try:
+        logger.info("DEBUG: Initializing Firebase...")
+        init_firebase()
+        logger.info("DEBUG: Firebase initialized.")
+        
+        logger.info("DEBUG: Validating Startup Schema...")
+        validate_startup_schema(engine, strict=settings.SCHEMA_CHECK_STRICT)
+        logger.info("DEBUG: Schema validation finished.")
+    except Exception as e:
+        logger.error(f"DEBUG: Startup error: {e}")
+        # Don't raise if not strict to allow boot-up for logs
+        if settings.SCHEMA_CHECK_STRICT:
+            raise
+    
     yield
     # Shutdown
     logger.info("Shutting down MCQ API...")

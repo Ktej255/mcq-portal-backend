@@ -15,6 +15,8 @@ from app.services.test_engine_service import start_attempt, get_attempt_question
 from app.services.report_service import generate_report
 from app.services.event_auditor import event_auditor
 from app.services.domain_contracts import CanonicalExamEvent
+from app.services.attempt_lock_manager import AttemptLockManager, AttemptLockError
+from app.services.attempt_reconciliation_engine import AttemptReconciliationEngine
 import logging
 
 logger = logging.getLogger(__name__)
@@ -93,6 +95,12 @@ def save_test_answer(
     db: Session = Depends(get_db), 
     current_user: User = Depends(get_current_user)
 ):
+    # Priority 2: Lock governance before any write
+    try:
+        AttemptLockManager.lock_for_save(db, attempt_id, current_user.id)
+    except AttemptLockError as e:
+        raise HTTPException(status_code=409, detail={"code": e.code, "message": e.detail})
+    
     success = save_answer(db, attempt_id, current_user.id, request)
     return StandardResponse(success=True, message="Answer saved successfully", data={"success": success, "message": "Answer saved successfully"})
 
@@ -104,10 +112,44 @@ def submit_test(
     current_user: User = Depends(get_current_user)
 ):
     from app.services.report_service import generate_report, run_async_cognitive_pipeline
-    report = generate_report(db, attempt_id, current_user.id)
     
-    # Offload heavy tasks to background
-    background_tasks.add_task(run_async_cognitive_pipeline, attempt_id, current_user.id)
+    # Priority 2: Idempotent submit — if already submitted, return existing report
+    try:
+        locked_attempt = AttemptLockManager.lock_for_submit(db, attempt_id, current_user.id)
+    except AttemptLockError as e:
+        raise HTTPException(status_code=409, detail={"code": e.code, "message": e.detail})
+    
+    from app.models.domain import Report, AttemptStatusEnum
+    if locked_attempt.status == AttemptStatusEnum.SUBMITTED:
+        existing_report = db.query(Report).filter(Report.attempt_id == attempt_id).first()
+        if existing_report:
+            logger.info(f"Idempotent submit: attempt {attempt_id} already submitted, returning existing report")
+            return StandardResponse(success=True, message="Already submitted — returning existing report.", data=existing_report)
+    
+    # Priority 1: Run reconciliation as background audit before pipeline
+    def reconcile_and_pipeline(attempt_id: int, user_id: int):
+        from app.db.session import SessionLocal
+        from app.services.observability import log_system_event
+        _db = SessionLocal()
+        try:
+            rec = AttemptReconciliationEngine.reconcile(_db, attempt_id)
+            if rec.status == "FORENSIC_DIVERGENCE":
+                logger.warning(
+                    f"FORENSIC_DIVERGENCE on attempt {attempt_id}: "
+                    f"{len(rec.divergences)} divergences. Summary: {rec.summary}"
+                )
+                log_system_event(
+                    _db, "FORENSIC_DIVERGENCE",
+                    "CRITICAL", "AttemptReconciliationEngine",
+                    rec.summary,
+                    {"attempt_id": attempt_id, "divergences": rec.divergences}
+                )
+            run_async_cognitive_pipeline(attempt_id, user_id)
+        finally:
+            _db.close()
+    
+    report = generate_report(db, attempt_id, current_user.id)
+    background_tasks.add_task(reconcile_and_pipeline, attempt_id, current_user.id)
     
     return StandardResponse(success=True, message="Test submitted. Primary analysis complete. AI Insight is being generated.", data=report)
 
