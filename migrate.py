@@ -3,8 +3,22 @@ import sys
 import subprocess
 import logging
 
+import sqlalchemy as sa
+from sqlalchemy import inspect
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+def check_schema(db_url):
+    try:
+        engine = sa.create_engine(db_url)
+        inspector = inspect(engine)
+        columns = [c['name'] for c in inspector.get_columns('reports')]
+        logger.info(f"Columns in 'reports' table: {columns}")
+        return columns
+    except Exception as e:
+        logger.error(f"Error checking schema: {e}")
+        return []
 
 def run_migrations():
     logger.info("Starting database migrations...")
@@ -20,6 +34,9 @@ def run_migrations():
         sys.exit(1)
     
     logger.info(f"Using database URL: {db_url[:20]}...")
+    
+    # Check actual schema first
+    check_schema(db_url)
     
     try:
         # Check current version
