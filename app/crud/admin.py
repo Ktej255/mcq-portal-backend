@@ -119,23 +119,30 @@ def delete_question(db: Session, question_id: int) -> Question:
     db.commit()
     return db_obj
 
+from app.core.pedagogy.ingestion_engine import MCQIngestionEngine
+
 def bulk_create_questions(db: Session, obj_in: BulkQuestionCreate) -> list[Question]:
+    # Extract raw dictionaries from Pydantic models for the ingestion engine
+    questions_data = [q.dict() for q in obj_in.questions]
+    
+    # Use the hardened ingestion engine
+    # Note: test_id is expected to be part of each question in the current schema
+    # but the engine can handle a batch for a specific test if needed.
+    # For now, we pass test_id=0 if multiple tests are in one batch, or handle per question.
+    
+    # We'll use a wrapper to handle multiple tests if present
     created_questions = []
-    for q_in in obj_in.questions:
-        test = db.query(Test).filter(Test.id == q_in.test_id).first()
-        if not test:
-            raise HTTPException(status_code=404, detail=f"Test {q_in.test_id} not found for question")
-        topic = db.query(Topic).filter(Topic.id == q_in.topic_id).first()
-        if not topic:
-            raise HTTPException(status_code=404, detail=f"Topic {q_in.topic_id} not found for question")
-            
-        db_obj = Question(**q_in.dict())
-        db.add(db_obj)
-        created_questions.append(db_obj)
+    test_batches = {}
+    for q in questions_data:
+        t_id = q["test_id"]
+        if t_id not in test_batches:
+            test_batches[t_id] = []
+        test_batches[t_id].append(q)
         
-    db.commit()
-    for q in created_questions:
-        db.refresh(q)
+    for t_id, batch in test_batches.items():
+        batch_results = MCQIngestionEngine.ingest_batch(db, t_id, batch)
+        created_questions.extend(batch_results)
+        
     return created_questions
 
 # --- Test CRUD ---

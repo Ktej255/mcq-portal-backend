@@ -1,7 +1,7 @@
 from datetime import datetime, timezone, timedelta
 
 from app.models.domain import ExamEvent
-from app.services.telemetry_reconstruction import reconstruct_attempt_timeline
+from app.core.pedagogy.telemetry_reconstruction import reconstruct_attempt_timeline
 
 
 def make_event(event_id: int, event_type: str, seconds: int, question_id=None, payload=None):

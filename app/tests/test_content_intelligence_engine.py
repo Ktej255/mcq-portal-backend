@@ -1,5 +1,5 @@
 from app.db.session import Base
-from app.services.content_intelligence_engine import (
+from app.core.pedagogy.content_intelligence_engine import (
     conceptual_overlap,
     content_observability,
     extract_content_concepts,

@@ -5,8 +5,8 @@ from statistics import mean, pstdev
 from typing import Any
 
 from app.models.domain import ExamEvent
-from app.services.inference_reliability import clamp
-from app.services.telemetry_reconstruction import HEARTBEAT_ALLOWED_GAP_SECONDS, HEARTBEAT_EXPECTED_SECONDS
+from app.core.pedagogy.inference_reliability import clamp
+from app.core.pedagogy.telemetry_reconstruction import HEARTBEAT_ALLOWED_GAP_SECONDS, HEARTBEAT_EXPECTED_SECONDS
 
 REALTIME_TELEMETRY_VERSION = "realtime-telemetry.v1"
 

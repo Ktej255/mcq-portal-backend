@@ -2,7 +2,7 @@ from typing import List, Dict, Any
 from sqlalchemy.orm import Session
 from app.models.domain import ExamEvent, AttemptAnswer, ConfidenceEnum
 from app.schemas.cognitive import CognitiveSignal, BehavioralSnapshot
-from app.services.inference_reliability import attempt_reliability_profile
+from app.core.pedagogy.inference_reliability import attempt_reliability_profile
 
 class CognitiveEngine:
     def analyze_attempt(self, db: Session, attempt_id: int) -> BehavioralSnapshot:

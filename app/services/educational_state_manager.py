@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 
 from app.services.adaptive_learning_engine import adaptive_reliability, build_adaptive_learning_plan
 from app.services.educational_memory_engine import build_educational_memory
-from app.services.inference_reliability import clamp
+from app.core.pedagogy.inference_reliability import clamp
 from app.services.knowledge_graph_engine import build_knowledge_graph, graph_observability, propagate_mastery
 from app.services.pedagogical_reasoning_engine import pedagogical_reasoning_report
 from app.services.student_longitudinal_profile import build_student_longitudinal_profile

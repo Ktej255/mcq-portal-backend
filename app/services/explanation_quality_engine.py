@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from app.services.content_intelligence_engine import CONTENT_INTELLIGENCE_VERSION, extract_content_concepts, map_resource_to_graph
-from app.services.inference_reliability import clamp
+from app.core.pedagogy.content_intelligence_engine import CONTENT_INTELLIGENCE_VERSION, extract_content_concepts, map_resource_to_graph
+from app.core.pedagogy.inference_reliability import clamp
 
 QUALITY_VERSION = "explanation-quality.v1"
 

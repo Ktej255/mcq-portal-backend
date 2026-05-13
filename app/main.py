@@ -109,7 +109,7 @@ async def add_process_time_and_security_headers(request: Request, call_next):
     response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
     return response
 
-from app.api.v1 import auth, attempts, admin, dashboard, tests, reports, institutional, governance, causal, grounding, flourishing
+from app.api.v1 import auth, attempts, admin, dashboard, tests, reports, institutional, governance, causal, grounding, flourishing, observability
 
 @app.get("/")
 @limiter.limit("10/minute")
@@ -140,3 +140,4 @@ app.include_router(governance.router, prefix="/api/v1/governance", tags=["Govern
 app.include_router(causal.router, prefix="/api/v1/causal", tags=["Causal"])
 app.include_router(grounding.router, prefix="/api/v1/grounding", tags=["Grounding"])
 app.include_router(flourishing.router, prefix="/api/v1/flourishing", tags=["Flourishing"])
+app.include_router(observability.router, prefix="/api/v1/observability", tags=["Observability"])

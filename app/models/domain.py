@@ -121,11 +121,19 @@ class Question(Base):
     options_en = Column(JSON, nullable=False) 
     options_hi = Column(JSON, nullable=True)
     correct_option = Column(String, nullable=False)
+    statements_en = Column(JSON, nullable=True) # List of numbered statements
+    statements_hi = Column(JSON, nullable=True)
     explanation_en = Column(String, nullable=True)
     explanation_hi = Column(String, nullable=True)
     source = Column(String, nullable=True, index=True)
     difficulty = Column(String, default="MEDIUM", index=True)
     question_number = Column(Integer, nullable=True, index=True)
+    
+    # Forensic Fingerprints
+    content_hash = Column(String, index=True, nullable=True)
+    structure_hash = Column(String, index=True, nullable=True)
+    options_hash = Column(String, index=True, nullable=True)
+    integrity_metadata = Column(JSON, nullable=True) # {integrity_hash, version, ingestion_timestamp}
 
     test = relationship("Test", back_populates="questions")
     topic = relationship("Topic", back_populates="questions")
@@ -194,6 +202,8 @@ class Report(Base):
     processing_status = Column(String, default="COMPLETED", nullable=False) # e.g., PENDING, COMPLETED, FAILED
     evaluation_metadata = Column(JSON, nullable=True) # {hallucination_score, relevance_score, etc.}
     forensic_data = Column(JSON, nullable=True) # Behavioral and performance forensic timeline
+    reliability_score = Column(Float, default=0.0) # 0-100 score of trust
+    forensic_audit_log = Column(JSON, nullable=True) # Detailed calculation evidence
     generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
 
     attempt = relationship("Attempt", back_populates="report")
@@ -342,3 +352,27 @@ class CulturalContext(Base):
     governance_rules = Column(JSON, nullable=True)
     pedagogical_patterns = Column(JSON, nullable=True) # Regional metaphors, reasoning styles, etc.
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+class ExecutionTrace(Base):
+    __tablename__ = "execution_traces"
+    id = Column(Integer, primary_key=True, index=True)
+    trace_id = Column(String, unique=True, index=True, nullable=False)
+    parent_trace_id = Column(String, index=True, nullable=True)
+    
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=True)
+    attempt_id = Column(Integer, ForeignKey("attempts.id"), nullable=True)
+    module_name = Column(String, index=True, nullable=False)
+    function_name = Column(String, index=True, nullable=False)
+    
+    input_payload = Column(JSON, nullable=True)
+    output_payload = Column(JSON, nullable=True)
+    
+    status = Column(String, default="STARTED", index=True)
+    error_message = Column(String, nullable=True)
+    duration_ms = Column(Float, nullable=True)
+    
+    provider_metadata = Column(JSON, nullable=True)
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
+    
+    user = relationship("User")
+    attempt = relationship("Attempt")

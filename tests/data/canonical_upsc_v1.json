@@ -1,0 +1,42 @@
+[
+  {
+    "question_number": 1,
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "batch": "UPSC_CANONICAL_2026",
+    "difficulty": "HARD",
+    "text_en": "Consider the following statements regarding the Right to Privacy in India:",
+    "question_type": "MULTI_STATEMENT",
+    "statements_en": [
+      "It was declared a fundamental right in the K.S. Puttaswamy v. Union of India case.",
+      "It is an absolute right and cannot be restricted by any state law.",
+      "It is protected as an intrinsic part of the right to life and personal liberty under Article 21."
+    ],
+    "options": [
+      {"id": "A", "text_en": "1 and 2 only"},
+      {"id": "B", "text_en": "2 and 3 only"},
+      {"id": "C", "text_en": "1 and 3 only"},
+      {"id": "D", "text_en": "1, 2 and 3"}
+    ],
+    "correct_option": "C",
+    "explanation_en": "The Supreme Court in Justice K.S. Puttaswamy (Retd.) v. Union of India (2017) held that Right to Privacy is a fundamental right. However, it is NOT an absolute right and is subject to reasonable restrictions."
+  },
+  {
+    "question_number": 2,
+    "subject": "History",
+    "topic": "Ancient India",
+    "batch": "UPSC_CANONICAL_2026",
+    "difficulty": "MEDIUM",
+    "text_en": "Assertion (A): The Harappan civilization was a predominantly urban civilization.\nReason (R): The Harappans developed advanced town planning and drainage systems.",
+    "question_type": "ASSERTION_REASON",
+    "statements_en": [],
+    "options": [
+      {"id": "A", "text_en": "Both A and R are true and R is the correct explanation of A."},
+      {"id": "B", "text_en": "Both A and R are true but R is NOT the correct explanation of A."},
+      {"id": "C", "text_en": "A is true but R is false."},
+      {"id": "D", "text_en": "A is false but R is true."}
+    ],
+    "correct_option": "A",
+    "explanation_en": "Harappan civilization is known for its urban nature, which is evidenced by its advanced town planning."
+  }
+]

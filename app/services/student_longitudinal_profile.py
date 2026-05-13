@@ -16,8 +16,8 @@ from app.models.domain import (
     Report,
     User,
 )
-from app.services.inference_reliability import METRIC_VERSION, attempt_reliability_profile, clamp
-from app.services.telemetry_reconstruction import reconstruct_attempt_timeline
+from app.core.pedagogy.inference_reliability import METRIC_VERSION, attempt_reliability_profile, clamp
+from app.core.pedagogy.telemetry_reconstruction import reconstruct_attempt_timeline
 
 LONGITUDINAL_VERSION = "longitudinal-cognition.v1"
 

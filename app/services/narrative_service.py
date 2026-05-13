@@ -1,10 +1,6 @@
 from app.core.config import settings
 from typing import Dict, Any
-
-try:
-    import google.generativeai as genai
-except ImportError:
-    genai = None
+from app.core.inference import inference_gateway
 
 def generate_rule_based_narrative(report_data: Dict[str, Any], behavioral_data: Dict[str, Any]) -> str:
     """Heuristic fallback when AI is unavailable - providing high-fidelity structured analysis."""
@@ -37,11 +33,8 @@ def generate_rule_based_narrative(report_data: Dict[str, Any], behavioral_data: 
     return narrative
 
 def generate_performance_narrative(report_data: Dict[str, Any], behavioral_data: Dict[str, Any]) -> str:
-    if not settings.GOOGLE_API_KEY or genai is None:
+    if not settings.GOOGLE_API_KEY:
         return generate_rule_based_narrative(report_data, behavioral_data)
-
-    genai.configure(api_key=settings.GOOGLE_API_KEY)
-    model = genai.GenerativeModel('gemini-1.5-flash')
 
     prompt = f"""
     You are an expert cognitive performance coach for competitive exams.
@@ -75,7 +68,7 @@ def generate_performance_narrative(report_data: Dict[str, Any], behavioral_data:
     """
 
     try:
-        response = model.generate_content(prompt)
+        response = inference_gateway.generate(prompt)
         return response.text
     except Exception as e:
         print(f"Narrative Generation Error: {str(e)}")

@@ -8,7 +8,7 @@ from typing import Any
 from sqlalchemy.orm import Session
 
 from app.models.domain import CognitiveSnapshot, LearningIntervention, User
-from app.services.inference_reliability import clamp
+from app.core.pedagogy.inference_reliability import clamp
 from app.services.knowledge_graph_engine import (
     build_knowledge_graph,
     conceptual_recovery_sequence,

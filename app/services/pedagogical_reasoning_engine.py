@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Any
 
 from app.services.educational_memory_engine import EDUCATIONAL_MEMORY_VERSION
-from app.services.inference_reliability import clamp
+from app.core.pedagogy.inference_reliability import clamp
 
 PEDAGOGICAL_REASONING_VERSION = "pedagogical-reasoning.v1"
 

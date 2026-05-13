@@ -1,17 +1,13 @@
 from app.core.config import settings
 from app.schemas.cognitive import NarrativeEvaluation
 from typing import Dict, Any
-
-try:
-    import google.generativeai as genai
-except ImportError:
-    genai = None
+from app.core.inference import inference_gateway
 
 class NarrativeEvaluator:
     def evaluate(self, narrative: str, report_data: Dict[str, Any], behavioral_data: Dict[str, Any]) -> NarrativeEvaluation:
         reliability = behavioral_data.get("inference_reliability", {})
         narrative_safety = reliability.get("narrative_safety", {})
-        if not settings.GOOGLE_API_KEY or genai is None:
+        if not settings.GOOGLE_API_KEY:
             return NarrativeEvaluation(
                 narrative_id="N/A",
                 hallucination_score=0.0,
@@ -20,9 +16,6 @@ class NarrativeEvaluator:
                 uncertainty_score=1 - behavioral_data.get("behavioral_data_quality", {}).get("score", 0),
                 requires_human_review=narrative_safety.get("requires_human_review", False)
             )
-
-        genai.configure(api_key=settings.GOOGLE_API_KEY)
-        model = genai.GenerativeModel('gemini-1.5-flash')
 
         eval_prompt = f"""
         Analyze the following AI-generated exam narrative for scientific accuracy and logical consistency.
@@ -54,7 +47,7 @@ class NarrativeEvaluator:
         """
 
         try:
-            response = model.generate_content(eval_prompt)
+            response = inference_gateway.generate(eval_prompt)
             # Simplified parsing for the example
             import json
             import re

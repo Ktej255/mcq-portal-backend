@@ -1,13 +1,13 @@
 from typing import Dict, Any
 from sqlalchemy.orm import Session
 from app.models.domain import Report, ExamEvent, User, LearningIntervention, Question, Attempt, AttemptStatusEnum
-from app.services.content_intelligence_engine import content_observability
+from app.core.pedagogy.content_intelligence_engine import content_observability
 from app.services.educational_memory_engine import educational_memory_observability
 from app.services.intervention_analytics import longitudinal_intervention_analytics
 from app.services.knowledge_graph_engine import build_knowledge_graph, graph_observability
 from app.services.educational_orchestrator import orchestration_observability
 from app.services.session_intelligence_engine import build_session_intelligence, educator_live_awareness
-from app.services.telemetry_reconstruction import reconstruct_attempt_timeline
+from app.core.pedagogy.telemetry_reconstruction import reconstruct_attempt_timeline
 import time
 
 class ObservabilityService:

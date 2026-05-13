@@ -4,7 +4,7 @@ from typing import Any
 from sqlalchemy.orm import Session
 
 from app.models.domain import Attempt, ExamEvent, AttemptAnswer
-from app.services.inference_reliability import behavioral_data_quality
+from app.core.pedagogy.inference_reliability import behavioral_data_quality
 from app.services.report_service import get_attempt_report
 from app.services.recommendation_service import get_recommendations
 from app.services.intervention_tracking_engine import get_intervention_history

@@ -6,7 +6,7 @@ from typing import Any
 from sqlalchemy.orm import Session
 
 from app.models.domain import Question, Topic
-from app.services.inference_reliability import clamp
+from app.core.pedagogy.inference_reliability import clamp
 from app.services.knowledge_graph_engine import build_knowledge_graph, conceptual_recovery_sequence, graph_observability, propagate_mastery
 from app.services.learning_state_machine import probabilistic_learning_states, state_adaptation_guidance
 from app.services.student_longitudinal_profile import build_student_longitudinal_profile

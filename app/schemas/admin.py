@@ -39,6 +39,9 @@ class QuestionCreate(BaseModel):
     topic_id: int
     text_en: str = Field(..., min_length=5)
     text_hi: Optional[str] = None
+    question_type: Optional[str] = "STANDARD" # E.g., MULTI_STATEMENT, ASSERTION_REASON
+    statements_en: Optional[List[str]] = None
+    statements_hi: Optional[List[str]] = None
     options_en: Dict[str, str] = Field(..., description="E.g., {'A': 'Option 1', 'B': 'Option 2'}")
     options_hi: Optional[Dict[str, str]] = None
     correct_option: str = Field(..., max_length=5)
@@ -46,6 +49,7 @@ class QuestionCreate(BaseModel):
     explanation_hi: Optional[str] = None
     source: Optional[str] = None
     difficulty: str = Field(default="MEDIUM", description="E.g., EASY, MEDIUM, HARD")
+    question_number: Optional[int] = None
 
     @validator("correct_option")
     def validate_correct_option(cls, v, values):
@@ -78,6 +82,9 @@ class QuestionOut(BaseModel):
     topic_id: int
     text_en: str
     text_hi: Optional[str] = None
+    question_type: Optional[str] = "STANDARD"
+    statements_en: Optional[List[str]] = None
+    statements_hi: Optional[List[str]] = None
     options_en: Dict[str, str]
     options_hi: Optional[Dict[str, str]] = None
     correct_option: str
@@ -85,6 +92,13 @@ class QuestionOut(BaseModel):
     explanation_hi: Optional[str] = None
     source: Optional[str] = None
     difficulty: str
+    question_number: Optional[int] = None
+    
+    # Forensic Metadata
+    content_hash: Optional[str] = None
+    structure_hash: Optional[str] = None
+    options_hash: Optional[str] = None
+    integrity_metadata: Optional[Dict[str, Any]] = None
 
     class Config:
         orm_mode = True

@@ -6,7 +6,7 @@ from typing import Any
 from sqlalchemy.orm import Session
 
 from app.models.domain import Question, Subject, Topic
-from app.services.inference_reliability import clamp
+from app.core.pedagogy.inference_reliability import clamp
 
 GRAPH_VERSION = "knowledge-graph.v1"
 

@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from datetime import datetime, timezone
 
 from app.models.domain import ExamEvent, Attempt, AttemptAnswer
-from app.services.inference_reliability import behavioral_data_quality
+from app.core.pedagogy.inference_reliability import behavioral_data_quality
 from app.services.schema_integrity import validate_telemetry_schema
 
 RELIABILITY_AUDIT_VERSION = "reliability-audit.v1"

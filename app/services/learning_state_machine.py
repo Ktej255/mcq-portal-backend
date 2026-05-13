@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from app.services.inference_reliability import clamp
+from app.core.pedagogy.inference_reliability import clamp
 
 STATE_MODEL_VERSION = "learning-state.v1"
 

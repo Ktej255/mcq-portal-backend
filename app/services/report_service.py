@@ -135,44 +135,47 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
     from app.services.cognitive_engine import cognitive_engine
     from app.services.narrative_evaluator import narrative_evaluator
     from app.services.student_longitudinal_profile import create_cognitive_snapshot, update_longitudinal_profile
+    from app.core.observability import trace_execution
     
     db = SessionLocal()
     try:
-        report = db.query(Report).filter(Report.attempt_id == attempt_id).first()
-        if not report: return
+        with trace_execution(db, "report_service", "run_async_cognitive_pipeline", user_id=user_id, attempt_id=attempt_id):
+            report = db.query(Report).filter(Report.attempt_id == attempt_id).first()
+            if not report: return
 
-        # 1. Advanced Telemetry Reconstruction
-        events = db.query(ExamEvent).filter(ExamEvent.attempt_id == attempt_id).all()
-        from app.services.telemetry_reconstruction import reconstruct_attempt_timeline
-        telemetry = reconstruct_attempt_timeline(events)
-        report.telemetry_summary = telemetry
-        
-        # 2. Advanced Cognitive Analysis
-        behavioral = cognitive_engine.analyze_attempt(db, attempt_id)
-        report.behavioral_analysis = behavioral.dict()
-        
-        # 3. AI Narrative Generation
-        narrative_input = {
-            "total_score": report.total_score, 
-            "accuracy": report.accuracy, 
-            "correct_count": report.correct_count, 
-            "incorrect_count": report.incorrect_count, 
-            "unattempted_count": report.unattempted_count,
-            "topic_wise_analysis": report.topic_wise_analysis
-        }
-        report.narrative = generate_performance_narrative(narrative_input, behavioral.dict())
-        
-        # 4. Narrative Evaluation (Phase 6C)
-        evaluation = narrative_evaluator.evaluate(report.narrative, narrative_input, behavioral.dict())
-        report.evaluation_metadata = evaluation.dict()
-        
-        # 5. Immutable cognitive snapshot + longitudinal evolution update
-        create_cognitive_snapshot(db, user_id, attempt_id, behavioral.dict())
-        update_student_evolution(db, user_id)
-        update_longitudinal_profile(db, user_id)
-        
-        report.processing_status = "COMPLETED"
-        db.commit()
+            # 1. Advanced Telemetry Reconstruction
+            from app.models.domain import ExamEvent
+            events = db.query(ExamEvent).filter(ExamEvent.attempt_id == attempt_id).all()
+            from app.core.pedagogy.telemetry_reconstruction import reconstruct_attempt_timeline
+            telemetry = reconstruct_attempt_timeline(events)
+            report.telemetry_summary = telemetry
+            
+            # 2. Advanced Cognitive Analysis
+            behavioral = cognitive_engine.analyze_attempt(db, attempt_id)
+            report.behavioral_analysis = behavioral.dict()
+            
+            # 3. AI Narrative Generation
+            narrative_input = {
+                "total_score": report.total_score, 
+                "accuracy": report.accuracy, 
+                "correct_count": report.correct_count, 
+                "incorrect_count": report.incorrect_count, 
+                "unattempted_count": report.unattempted_count,
+                "topic_wise_analysis": report.topic_wise_analysis
+            }
+            report.narrative = generate_performance_narrative(narrative_input, behavioral.dict())
+            
+            # 4. Narrative Evaluation (Phase 6C)
+            evaluation = narrative_evaluator.evaluate(report.narrative, narrative_input, behavioral.dict())
+            report.evaluation_metadata = evaluation.dict()
+            
+            # 5. Immutable cognitive snapshot + longitudinal evolution update
+            create_cognitive_snapshot(db, user_id, attempt_id, behavioral.dict())
+            update_student_evolution(db, user_id)
+            update_longitudinal_profile(db, user_id)
+            
+            report.processing_status = "COMPLETED"
+            db.commit()
     except Exception as e:
         import traceback
         print(f"Async Pipeline Error: {str(e)}")

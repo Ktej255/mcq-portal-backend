@@ -2,7 +2,7 @@ from datetime import datetime, timezone
 
 from app.models.domain import AttemptAnswer, ExamEvent, ConfidenceEnum
 from app.schemas.test_engine import ExamEventRequest
-from app.services.inference_reliability import (
+from app.core.pedagogy.inference_reliability import (
     METRIC_VERSION,
     behavioral_data_quality,
     contradiction_detector,
