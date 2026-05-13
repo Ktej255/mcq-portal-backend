@@ -11,13 +11,14 @@ logger = logging.getLogger(__name__)
 
 def check_schema(db_url):
     try:
+        print(f"DEBUG: Connecting to DB to check schema...")
         engine = sa.create_engine(db_url)
         inspector = inspect(engine)
         columns = [c['name'] for c in inspector.get_columns('reports')]
-        logger.info(f"Columns in 'reports' table: {columns}")
+        print(f"DEBUG: Columns in 'reports' table: {columns}")
         return columns
     except Exception as e:
-        logger.error(f"Error checking schema: {e}")
+        print(f"DEBUG: Error checking schema: {e}")
         return []
 
 def run_migrations():
@@ -40,10 +41,11 @@ def run_migrations():
     
     try:
         # Check current version
-        logger.info("Checking current migration version...")
+        print("DEBUG: Checking current migration version...")
         subprocess.run(["alembic", "current"], check=False)
         
         # Run alembic upgrade head
+        print("DEBUG: Running alembic upgrade head...")
         result = subprocess.run(
             ["alembic", "upgrade", "head"],
             capture_output=True,
