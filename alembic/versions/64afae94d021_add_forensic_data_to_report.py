@@ -24,8 +24,6 @@ def upgrade() -> None:
                existing_type=sa.VARCHAR(length=11),
                type_=sa.Enum('IN_PROGRESS', 'SUBMITTED', 'SOVEREIGNTY_PROTECTED', name='attemptstatusenum'),
                existing_nullable=False)
-    op.add_column('questions', sa.Column('question_number', sa.Integer(), nullable=True))
-    op.create_index(op.f('ix_questions_question_number'), 'questions', ['question_number'], unique=False)
     op.add_column('reports', sa.Column('forensic_data', sa.JSON(), nullable=True))
     op.alter_column('users', 'role',
                existing_type=sa.VARCHAR(length=7),
@@ -43,8 +41,6 @@ def downgrade() -> None:
                type_=sa.VARCHAR(length=7),
                existing_nullable=False)
     op.drop_column('reports', 'forensic_data')
-    op.drop_index(op.f('ix_questions_question_number'), table_name='questions')
-    op.drop_column('questions', 'question_number')
     op.alter_column('attempts', 'status',
                existing_type=sa.Enum('IN_PROGRESS', 'SUBMITTED', 'SOVEREIGNTY_PROTECTED', name='attemptstatusenum'),
                type_=sa.VARCHAR(length=11),
