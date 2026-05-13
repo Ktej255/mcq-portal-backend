@@ -93,6 +93,11 @@ def get_attempt_report(attempt_id: int, db: Session = Depends(get_db), current_u
         "telemetry_summary": report.telemetry_summary,
         "processingStatus": report.processing_status,
         "processing_status": report.processing_status,
+        "reliability_score": report.reliability_score,
+        "forensic_audit_log": report.forensic_audit_log,
+        "truth_status": report.truth_status,           # VERIFIED / FAILED / UNVERIFIED
+        "strengths": report.behavioral_analysis.get("strengths", []) if report.behavioral_analysis else [],
+        "totalTime": report.telemetry_summary.get("total_time_seconds", 0) if report.telemetry_summary else 0,
         "generatedAt": report.generated_at.isoformat()
     }
     return StandardResponse(success=True, message="Report retrieved", data=data)

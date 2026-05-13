@@ -115,7 +115,8 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
         subject_wise_performance=subject_wise,
         confidence_analysis=confidence_stats,
         average_time_per_question=avg_time,
-        forensic_data=forensic_data,
+        forensic_data = forensic_data,
+        reliability_score = 0.0, # Will be updated in async pipeline
         processing_status="PENDING",
         generated_at=datetime.now(timezone.utc)
     )
@@ -129,60 +130,145 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
 def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
     """
     Handles heavy cognitive analysis, AI narratives, and mastery updates.
-    Run in background tasks.
+    Run in background tasks with GRACEFUL DEGRADATION.
     """
     from app.db.session import SessionLocal
     from app.services.cognitive_engine import cognitive_engine
     from app.services.narrative_evaluator import narrative_evaluator
     from app.services.student_longitudinal_profile import create_cognitive_snapshot, update_longitudinal_profile
-    from app.core.observability import trace_execution
+    from app.core.observability.tracer import trace_execution
+    from app.core.pedagogy.reliability_engine import EducationalReliabilityEngine
     
     db = SessionLocal()
+    report = None
     try:
-        with trace_execution(db, "report_service", "run_async_cognitive_pipeline", user_id=user_id, attempt_id=attempt_id):
+        with trace_execution(module_name="report_service", function_name="run_async_cognitive_pipeline") as trace:
             report = db.query(Report).filter(Report.attempt_id == attempt_id).first()
             if not report: return
 
-            # 1. Advanced Telemetry Reconstruction
+            # --- CORE PEDAGOGICAL TRUTH ---
+            attempt = report.attempt
+            questions = attempt.test.questions
+            answers = attempt.answers
             from app.models.domain import ExamEvent
             events = db.query(ExamEvent).filter(ExamEvent.attempt_id == attempt_id).all()
-            from app.core.pedagogy.telemetry_reconstruction import reconstruct_attempt_timeline
-            telemetry = reconstruct_attempt_timeline(events)
-            report.telemetry_summary = telemetry
-            
-            # 2. Advanced Cognitive Analysis
-            behavioral = cognitive_engine.analyze_attempt(db, attempt_id)
-            report.behavioral_analysis = behavioral.dict()
-            
-            # 3. AI Narrative Generation
-            narrative_input = {
-                "total_score": report.total_score, 
-                "accuracy": report.accuracy, 
-                "correct_count": report.correct_count, 
-                "incorrect_count": report.incorrect_count, 
-                "unattempted_count": report.unattempted_count,
-                "topic_wise_analysis": report.topic_wise_analysis
-            }
-            report.narrative = generate_performance_narrative(narrative_input, behavioral.dict())
-            
-            # 4. Narrative Evaluation (Phase 6C)
-            evaluation = narrative_evaluator.evaluate(report.narrative, narrative_input, behavioral.dict())
-            report.evaluation_metadata = evaluation.dict()
-            
-            # 5. Immutable cognitive snapshot + longitudinal evolution update
-            create_cognitive_snapshot(db, user_id, attempt_id, behavioral.dict())
+
+            # 1. Telemetry Reconstruction (Internal Fail-Safe)
+            try:
+                from app.core.pedagogy.telemetry_reconstruction import reconstruct_attempt_timeline
+                telemetry = reconstruct_attempt_timeline(events)
+                report.telemetry_summary = telemetry
+            except Exception as e:
+                print(f"Telemetry Reconstruction Failed: {e}")
+                report.telemetry_summary = {"status": "DEGRADED", "error": str(e)}
+
+            # 2. Advanced Cognitive Analysis (Internal Fail-Safe)
+            behavioral_data = {}
+            try:
+                behavioral = cognitive_engine.analyze_attempt(db, attempt_id)
+                behavioral_data = behavioral.dict()
+                report.behavioral_analysis = behavioral_data
+            except Exception as e:
+                print(f"Cognitive Analysis Failed: {e}")
+                report.behavioral_analysis = {"status": "DEGRADED", "error": str(e)}
+
+            # 3. Reliability Computation
+            reliability = EducationalReliabilityEngine.compute_reliability(
+                total_questions=len(questions),
+                answers=answers,
+                events=events,
+                inference_confidence=0.9 if behavioral_data.get("status") != "DEGRADED" else 0.5
+            )
+            report.reliability_score = reliability["reliability_score"]
+            report.forensic_audit_log = reliability
+
+            # 4. Create Immutable Snapshot (Audit Mode)
+            snapshot = []
+            for q in questions:
+                ans = next((a for a in answers if a.question_id == q.id), None)
+                snapshot.append({
+                    "id": q.id,
+                    "text_en": q.text_en,
+                    "correct_option": q.correct_option,
+                    "selected_option": ans.selected_option if ans else None,
+                    "is_correct": ans.is_correct if ans else False,
+                    "explanation_en": q.explanation_en,
+                    "options_en": q.options_en,
+                    "question_type": q.question_type,
+                    "statements_en": q.statements_en
+                })
+            report.snapshot_bundle = snapshot
+
+            # 5. AI Narrative Generation (Optional Layer)
+            try:
+                narrative_input = {
+                    "total_score": report.total_score, 
+                    "accuracy": report.accuracy, 
+                    "correct_count": report.correct_count, 
+                    "incorrect_count": report.incorrect_count, 
+                    "unattempted_count": report.unattempted_count,
+                    "topic_wise_analysis": report.topic_wise_analysis
+                }
+                report.narrative = generate_performance_narrative(narrative_input, behavioral_data)
+                
+                # Narrative Evaluation
+                evaluation = narrative_evaluator.evaluate(report.narrative, narrative_input, behavioral_data)
+                report.evaluation_metadata = evaluation.dict()
+            except Exception as e:
+                print(f"AI Narrative Generation Failed: {e}")
+                report.narrative = "Analysis complete. AI insights temporarily unavailable."
+
+            # 5. Longitudinal Updates
+            create_cognitive_snapshot(db, user_id, attempt_id, behavioral_data)
             update_student_evolution(db, user_id)
             update_longitudinal_profile(db, user_id)
+            
+            # 6. Report Truth Validation (Final Integrity Check)
+            try:
+                is_valid = verify_report_integrity(report, questions, answers)
+                report.truth_status = "VERIFIED" if is_valid else "FAILED"
+            except Exception as e:
+                print(f"Truth Validation Failed: {e}")
+                report.truth_status = "FAILED"
             
             report.processing_status = "COMPLETED"
             db.commit()
     except Exception as e:
         import traceback
-        print(f"Async Pipeline Error: {str(e)}")
+        print(f"Async Pipeline Critical Error: {str(e)}")
         traceback.print_exc()
         if report:
             report.processing_status = "FAILED"
             db.commit()
+
+def verify_report_integrity(report: Report, questions: List[Question], answers: List[AttemptAnswer]) -> bool:
+    """
+    Priority 1: Report Truth Validation Layer.
+    Cross-checks all report math against raw data.
+    """
+    total = len(questions)
+    correct = len([a for a in answers if a.is_correct is True])
+    incorrect = len([a for a in answers if a.is_correct is False])
+    skipped = len([a for a in answers if a.is_skipped or a.selected_option is None])
+    
+    # 1. Math Check
+    if (correct + incorrect + skipped) != total:
+        print(f"Math Mismatch: {correct}+{incorrect}+{skipped} != {total}")
+        return False
+        
+    # 2. Score Check
+    expected_score = (correct * 2.0) - (incorrect * 0.66) # Assuming UPSC standard marking
+    if abs(report.total_score - expected_score) > 0.01:
+        print(f"Score Mismatch: {report.total_score} != {expected_score}")
+        return False
+        
+    # 3. Accuracy Check
+    expected_accuracy = (correct / total * 100) if total > 0 else 0
+    if abs(report.accuracy - expected_accuracy) > 0.01:
+        print(f"Accuracy Mismatch: {report.accuracy} != {expected_accuracy}")
+        return False
+        
+    return True
     finally:
         db.close()
 

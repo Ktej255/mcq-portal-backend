@@ -11,18 +11,11 @@ logger = logging.getLogger(__name__)
 
 def check_schema(db_url):
     try:
-        print(f"DEBUG: Connecting to DB to check schema...")
+        print(f"DEBUG: Checking current database schema...")
         engine = sa.create_engine(db_url)
         inspector = inspect(engine)
         columns = [c['name'] for c in inspector.get_columns('reports')]
         print(f"DEBUG: Columns in 'reports' table: {columns}")
-        
-        # Try to select the column
-        with engine.connect() as conn:
-            print(f"DEBUG: Testing SELECT forensic_data FROM reports...")
-            conn.execute(sa.text("SELECT forensic_data FROM reports LIMIT 1"))
-            print(f"DEBUG: SELECT successful!")
-            
         return columns
     except Exception as e:
         print(f"DEBUG: Error checking schema: {e}")

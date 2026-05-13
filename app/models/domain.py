@@ -157,8 +157,8 @@ class Attempt(Base):
 class AttemptAnswer(Base):
     __tablename__ = "attempt_answers"
     id = Column(Integer, primary_key=True, index=True)
-    attempt_id = Column(Integer, ForeignKey("attempts.id"), nullable=False)
-    question_id = Column(Integer, ForeignKey("questions.id"), nullable=False)
+    attempt_id = Column(Integer, ForeignKey("attempts.id"), nullable=False, index=True)
+    question_id = Column(Integer, ForeignKey("questions.id"), nullable=False, index=True)
     selected_option = Column(String, nullable=True)
     is_correct = Column(Boolean, nullable=True)
     time_taken_seconds = Column(Integer, default=0)
@@ -204,6 +204,8 @@ class Report(Base):
     forensic_data = Column(JSON, nullable=True) # Behavioral and performance forensic timeline
     reliability_score = Column(Float, default=0.0) # 0-100 score of trust
     forensic_audit_log = Column(JSON, nullable=True) # Detailed calculation evidence
+    snapshot_bundle = Column(JSON, nullable=True) # Immutable snapshot of questions/answers
+    truth_status = Column(String, default="UNVERIFIED") # VERIFIED, FAILED, UNVERIFIED
     generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
 
     attempt = relationship("Attempt", back_populates="report")
@@ -376,3 +378,27 @@ class ExecutionTrace(Base):
     
     user = relationship("User")
     attempt = relationship("Attempt")
+
+class OperationalMetric(Base):
+    """
+    Priority 1 & 5: Real Student Validation & Accuracy Monitoring.
+    Tracks system-level performance and educational correctness.
+    """
+    __tablename__ = "operational_metrics"
+
+    id = Column(Integer, primary_key=True, index=True)
+    metric_type = Column(String, index=True) # e.g., SESSION_COMPLETION, DROPOUT, REPORT_LATENCY
+    value = Column(Float)
+    metadata_json = Column(JSON, nullable=True) # {attempt_id, user_id, reason, status}
+    timestamp = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+class SystemEvent(Base):
+    """
+    Audit log for institutional changes and deployments.
+    """
+    __tablename__ = "system_events"
+    id = Column(Integer, primary_key=True, index=True)
+    event_name = Column(String)
+    description = Column(String)
+    actor = Column(String)
+    timestamp = Column(DateTime, default=lambda: datetime.now(timezone.utc))

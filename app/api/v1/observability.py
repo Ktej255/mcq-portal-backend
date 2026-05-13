@@ -43,9 +43,48 @@ def get_trace_tree(trace_id: str, db: Session = Depends(get_db)):
         
     return build_tree(root_trace)
 
-@router.get("/traces/{trace_id}", response_model=TraceDetail)
-def get_trace_detail(trace_id: str, db: Session = Depends(get_db)):
-    trace = db.query(ExecutionTrace).filter(ExecutionTrace.trace_id == trace_id).first()
-    if not trace:
-        raise HTTPException(status_code=404, detail="Trace not found")
-    return trace
+@router.get("/attempts/{attempt_id}/behavioral-replay")
+def get_behavioral_replay(attempt_id: int, db: Session = Depends(get_db)):
+    """
+    Returns a sequence of exam events for behavioral playback.
+    """
+    from app.models.domain import ExamEvent, Attempt
+    attempt = db.query(Attempt).filter(Attempt.id == attempt_id).first()
+    if not attempt:
+        raise HTTPException(status_code=404, detail="Attempt not found")
+        
+    events = db.query(ExamEvent).filter(ExamEvent.attempt_id == attempt_id).order_by(ExamEvent.timestamp.asc()).all()
+    
+    # Enrich events with question numbering for replay clarity
+    replay_events = []
+    for event in events:
+        evt_dict = {
+            "type": event.event_type,
+            "timestamp": event.timestamp.isoformat(),
+            "question_id": event.question_id,
+            "metadata": event.event_metadata,
+        }
+        replay_events.append(evt_dict)
+        
+    return {
+        "attempt_id": attempt_id,
+        "user_id": attempt.user_id,
+        "test_id": attempt.test_id,
+        "event_timeline": replay_events
+    }
+
+@router.get("/attempts/{attempt_id}/event-cinema")
+def get_event_cinema(attempt_id: int, db: Session = Depends(get_db)):
+    """
+    Priority 4: Founder Event Timeline — Cinema-style educational timeline.
+    Returns every system + behavioral event for a single attempt in chronological order.
+    """
+    from app.services.event_cinema_service import EventCinemaService
+    timeline = EventCinemaService.get_educational_timeline(db, attempt_id)
+    if not timeline:
+        raise HTTPException(status_code=404, detail="No events found for this attempt")
+    return {
+        "attempt_id": attempt_id,
+        "total_events": len(timeline),
+        "timeline": timeline
+    }
