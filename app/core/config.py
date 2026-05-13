@@ -10,8 +10,13 @@ class Settings(BaseSettings):
 
     @validator("DATABASE_URL", pre=True)
     def assemble_db_url(cls, v: Optional[str]) -> str:
-        if isinstance(v, str) and v.startswith("postgres://"):
-            return v.replace("postgres://", "postgresql://", 1)
+        if v is None:
+            return v
+        if isinstance(v, str):
+            # Strip literal quotes that sometimes get injected by shell/GCP
+            v = v.strip("'").strip('"')
+            if v.startswith("postgres://"):
+                return v.replace("postgres://", "postgresql://", 1)
         return v
 
     # CORS Configuration
