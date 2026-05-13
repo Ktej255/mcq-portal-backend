@@ -269,8 +269,6 @@ def verify_report_integrity(report: Report, questions: List[Question], answers: 
         return False
         
     return True
-    finally:
-        db.close()
 
 def get_detailed_review(db: Session, attempt_id: int, user_id: int):
     attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == user_id).first()

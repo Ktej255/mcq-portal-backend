@@ -1,21 +1,21 @@
 """Add truth_status to reports
 
 Revision ID: 0006_truth_status
-Revises: 0005_reliability_snapshot
+Revises: 5d9a8c3e1f22
 Create Date: 2026-05-13
 
 Phase 8 — Report Truth Validation Layer.
 Adds truth_status field to track forensic mathematical verification state.
-VERIFIED = all math cross-checks passed.
-FAILED   = integrity mismatch detected; report access restricted.
-UNVERIFIED = new report, not yet processed by the async pipeline.
+  VERIFIED   = all math cross-checks passed.
+  FAILED     = integrity mismatch detected; report access restricted.
+  UNVERIFIED = report not yet processed by the async pipeline.
 """
 
 from alembic import op
 import sqlalchemy as sa
 
 revision = '0006_truth_status'
-down_revision = '0005_reliability_snapshot'
+down_revision = '5d9a8c3e1f22'
 branch_labels = None
 depends_on = None
 
