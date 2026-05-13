@@ -10,7 +10,15 @@ router = APIRouter()
 
 @router.get("/available")
 def get_available_tests(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)) -> Any:
-    tests = db.query(Test).filter(Test.is_active == True).order_by(Test.id.asc()).all()
+    tests = db.query(Test).filter(Test.is_active == True).all()
+    
+    # Natural sort for titles (handles "Batch 2" vs "Batch 10" correctly)
+    import re
+    def natural_sort_key(s):
+        return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s or "")]
+    
+    tests.sort(key=lambda x: natural_sort_key(x.title))
+    
     result = []
     for test in tests:
         # Get attempt stats for this user
