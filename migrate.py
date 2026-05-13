@@ -22,6 +22,10 @@ def run_migrations():
     logger.info(f"Using database URL: {db_url[:20]}...")
     
     try:
+        # Check current version
+        logger.info("Checking current migration version...")
+        subprocess.run(["alembic", "current"], check=False)
+        
         # Run alembic upgrade head
         result = subprocess.run(
             ["alembic", "upgrade", "head"],
@@ -29,8 +33,10 @@ def run_migrations():
             text=True,
             check=True
         )
-        logger.info("Migration output:")
+        logger.info("Migration STDOUT:")
         logger.info(result.stdout)
+        logger.info("Migration STDERR:")
+        logger.info(result.stderr)
     except subprocess.CalledProcessError as e:
         logger.error("Migration failed!")
         logger.error(e.stdout)
