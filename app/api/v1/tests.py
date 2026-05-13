@@ -57,7 +57,8 @@ def get_test_questions(test_id: int, db: Session = Depends(get_db), current_user
     questions = db.query(Question, Topic.name.label("topic_name"), Subject.name.label("subject_name"))\
         .join(Topic, Question.topic_id == Topic.id)\
         .join(Subject, Topic.subject_id == Subject.id)\
-        .filter(Question.test_id == test_id).all()
+        .filter(Question.test_id == test_id)\
+        .order_by(Question.question_number.asc()).all()
         
     result = []
     for q, topic_name, subject_name in questions:

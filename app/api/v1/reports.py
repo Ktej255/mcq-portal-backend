@@ -9,7 +9,17 @@ from app.schemas.common import StandardResponse
 
 router = APIRouter()
 
-from app.services import report_service
+from app.services import report_service, student_longitudinal_profile, recommendation_service
+
+@router.get("/evolution")
+def get_evolution_profile(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)) -> Any:
+    profile = student_longitudinal_profile.build_student_longitudinal_profile(db, current_user.id)
+    return StandardResponse(success=True, message="Evolution profile retrieved", data=profile)
+
+@router.get("/recommendations")
+def get_report_recommendations(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)) -> Any:
+    recommendations = recommendation_service.get_personalized_recommendations(db, current_user.id)
+    return StandardResponse(success=True, message="Recommendations retrieved", data=recommendations)
 
 @router.get("/aggregate")
 def get_aggregate_report(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)) -> Any:
@@ -18,23 +28,32 @@ def get_aggregate_report(db: Session = Depends(get_db), current_user: User = Dep
         Attempt.status == AttemptStatusEnum.SUBMITTED
     ).order_by(Report.generated_at.asc()).all()
 
+    if not reports:
+        return StandardResponse(success=True, message="No reports found", data={"scoreTrends": []})
+
     score_trends = [
         {
             "attemptId": str(report.attempt_id),
             "score": report.total_score,
+            "accuracy": report.accuracy,
             "generatedAt": report.generated_at.isoformat(),
         }
         for report in reports
     ]
+    
+    profile = student_longitudinal_profile.build_student_longitudinal_profile(db, current_user.id)
+    
     data = {
-        "totalScore": reports[-1].total_score if reports else 0,
-        "accuracy": reports[-1].accuracy if reports else 0,
-        "correctCount": reports[-1].correct_count if reports else 0,
-        "incorrectCount": reports[-1].incorrect_count if reports else 0,
-        "unattemptedCount": reports[-1].unattempted_count if reports else 0,
+        "totalScore": reports[-1].total_score,
+        "accuracy": reports[-1].accuracy,
+        "correctCount": reports[-1].correct_count,
+        "incorrectCount": reports[-1].incorrect_count,
+        "unattemptedCount": reports[-1].unattempted_count,
         "subjectScores": [],
         "confidenceAnalytics": [],
-        "scoreTrends": score_trends
+        "scoreTrends": score_trends,
+        "longitudinalProfile": profile,
+        "topicMastery": current_user.topic_mastery
     }
     return StandardResponse(success=True, message="Aggregate report retrieved", data=data)
 
@@ -70,6 +89,8 @@ def get_attempt_report(attempt_id: int, db: Session = Depends(get_db), current_u
         "averageTimePerQuestion": report.average_time_per_question or 0,
         "average_time_per_question": report.average_time_per_question or 0,
         "narrative": report.narrative,
+        "behavioral_analysis": report.behavioral_analysis,
+        "telemetry_summary": report.telemetry_summary,
         "processingStatus": report.processing_status,
         "processing_status": report.processing_status,
         "generatedAt": report.generated_at.isoformat()

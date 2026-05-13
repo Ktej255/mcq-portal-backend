@@ -22,7 +22,11 @@ BILINGUAL_MARKERS = {"hindi", "english", "bilingual", "translation", "अनु�
 
 
 def _normalize(text: str) -> str:
-    return re.sub(r"\s+", " ", (text or "").strip())
+    if not text:
+        return ""
+    # Preserve newlines but collapse horizontal whitespace
+    lines = [" ".join(line.split()) for line in text.splitlines()]
+    return "\n".join(lines).strip()
 
 
 def _tokens(text: str) -> list[str]:

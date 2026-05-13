@@ -62,14 +62,14 @@ NEGATIVE_MARKING_VALUE = 0.66
 # ─────────────────────────────────────────────────────────────
 
 def normalize_text(text: str) -> str:
-    """Normalize whitespace, unicode, and common encoding artifacts."""
+    """Normalize whitespace, unicode, and common encoding artifacts while preserving line breaks."""
     if not text:
         return text
     # Unicode normalization (handles Hindi/Devanagari correctly)
     text = unicodedata.normalize("NFC", text)
-    # Collapse multiple whitespace to single space
-    text = " ".join(text.split())
-    return text.strip()
+    # Collapse multiple spaces but preserve newlines
+    lines = [" ".join(line.split()) for line in text.splitlines()]
+    return "\n".join(lines).strip()
 
 
 def normalize_options(options: dict) -> dict:

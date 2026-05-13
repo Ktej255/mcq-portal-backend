@@ -6,9 +6,39 @@ try:
 except ImportError:
     genai = None
 
+def generate_rule_based_narrative(report_data: Dict[str, Any], behavioral_data: Dict[str, Any]) -> str:
+    """Heuristic fallback when AI is unavailable - providing high-fidelity structured analysis."""
+    accuracy = report_data.get('accuracy', 0)
+    guessing = behavioral_data.get('guessing_rate', 0)
+    hesitation = behavioral_data.get('hesitation_index', 0)
+    overconfidence = behavioral_data.get('overconfidence_rate', 0)
+    
+    narrative = "## Educational Intelligence Dossier\n\n"
+    
+    # 1. Executive Summary
+    narrative += "### 1. Executive Summary\n"
+    if accuracy >= 80:
+        narrative += "Outstanding performance. Your cognitive retrieval is both precise and stable. You are operating at the 'Mastery' level for this subject domain.\n\n"
+    elif accuracy >= 60:
+        narrative += "Proficient performance. You have a strong grasp of core concepts, though some friction exists in higher-order application or complex reasoning chains.\n\n"
+    elif accuracy >= 40:
+        narrative += "Developing competency. There is significant 'Knowledge Fragmentation' visible—where you understand parts of a concept but fail during the final integration step.\n\n"
+    else:
+        narrative += "Emerging stage. Current results indicate foundational conceptual bottlenecks. Priority should be on rebuilding first principles before attempting high-speed drills.\n\n"
+        
+    if guessing > 25:
+        narrative += "**Behavioral Pattern:** High volatility in answer selection (Guessing Rate: " + f"{guessing:.1f}%" + "). This may indicate a tendency to attempt questions without sufficient elimination evidence.\n\n"
+    
+    if hesitation > 30:
+        narrative += "**Behavioral Pattern:** Significant time-spend on correct answers (Hesitation Index: " + f"{hesitation:.1f}%" + "). This suggests that while your knowledge is present, it is not yet 'fluent'. Work on speed drills to build automaticity.\n\n"
+
+    narrative += "### Next Steps\n1. Review the 'Confidence Matrix' to identify blind spots.\n2. Focus on the lowest accuracy topic shown in your mastery map.\n3. Attempt a similar batch tomorrow to measure recovery stability."
+    
+    return narrative
+
 def generate_performance_narrative(report_data: Dict[str, Any], behavioral_data: Dict[str, Any]) -> str:
     if not settings.GOOGLE_API_KEY or genai is None:
-        return "AI Narrative generation is currently disabled (API Key missing)."
+        return generate_rule_based_narrative(report_data, behavioral_data)
 
     genai.configure(api_key=settings.GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-1.5-flash')
@@ -49,4 +79,5 @@ def generate_performance_narrative(report_data: Dict[str, Any], behavioral_data:
         return response.text
     except Exception as e:
         print(f"Narrative Generation Error: {str(e)}")
-        return "Our AI coach is currently processing a high volume of reports. Please check back in a few minutes for your personalized insight."
+        # Fallback to heuristic if API fails
+        return generate_rule_based_narrative(report_data, behavioral_data)

@@ -125,6 +125,7 @@ class Question(Base):
     explanation_hi = Column(String, nullable=True)
     source = Column(String, nullable=True, index=True)
     difficulty = Column(String, default="MEDIUM", index=True)
+    question_number = Column(Integer, nullable=True, index=True)
 
     test = relationship("Test", back_populates="questions")
     topic = relationship("Topic", back_populates="questions")
@@ -188,6 +189,8 @@ class Report(Base):
     confidence_analysis = Column(JSON, nullable=True)
     average_time_per_question = Column(Float, nullable=True)
     narrative = Column(String, nullable=True) # AI Generated Insight
+    behavioral_analysis = Column(JSON, nullable=True) # Full Cognitive Snapshot
+    telemetry_summary = Column(JSON, nullable=True) # Pacing, Focus, and Navigation metrics
     processing_status = Column(String, default="COMPLETED", nullable=False) # e.g., PENDING, COMPLETED, FAILED
     evaluation_metadata = Column(JSON, nullable=True) # {hallucination_score, relevance_score, etc.}
     generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
