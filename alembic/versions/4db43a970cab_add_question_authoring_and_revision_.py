@@ -50,7 +50,7 @@ def upgrade() -> None:
     )
     op.create_index(op.f('ix_revision_queues_id'), 'revision_queues', ['id'], unique=False)
     op.create_index(op.f('ix_revision_queues_is_deleted'), 'revision_queues', ['is_deleted'], unique=False)
-    op.add_column('questions', sa.Column('status', sa.Enum('DRAFT', 'REVIEW', 'VERIFIED', 'PUBLISHED', 'ARCHIVED', name='workflowstatusenum'), nullable=False, server_default='PUBLISHED'))
+    op.add_column('questions', sa.Column('status', sa.String(), nullable=False, server_default='PUBLISHED'))
     op.add_column('questions', sa.Column('reviewer_id', sa.Integer(), nullable=True))
     op.add_column('questions', sa.Column('explanation_quality_score', sa.Float(), nullable=True))
     op.add_column('questions', sa.Column('is_outdated', sa.Boolean(), nullable=False, server_default='0'))
