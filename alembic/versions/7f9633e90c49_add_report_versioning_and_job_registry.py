@@ -104,10 +104,10 @@ def upgrade() -> None:
     op.add_column('reports', sa.Column('reliability_score', sa.Float(), nullable=True))
     op.add_column('reports', sa.Column('forensic_audit_log', sa.JSON(), nullable=True))
     op.add_column('reports', sa.Column('snapshot_bundle', sa.JSON(), nullable=True))
-    op.add_column('reports', sa.Column('report_version', sa.String(), nullable=False))
-    op.add_column('reports', sa.Column('rendering_version', sa.String(), nullable=False))
-    op.add_column('reports', sa.Column('evaluation_version', sa.String(), nullable=False))
-    op.add_column('reports', sa.Column('telemetry_version', sa.String(), nullable=False))
+    op.add_column('reports', sa.Column('report_version', sa.String(), nullable=True))
+    op.add_column('reports', sa.Column('rendering_version', sa.String(), nullable=True))
+    op.add_column('reports', sa.Column('evaluation_version', sa.String(), nullable=True))
+    op.add_column('reports', sa.Column('telemetry_version', sa.String(), nullable=True))
     op.drop_column('tests', 'created_at')
     with op.batch_alter_table('users') as batch_op:
         batch_op.alter_column('role',
