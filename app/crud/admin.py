@@ -82,7 +82,7 @@ def get_questions(db: Session, test_id: int = None, skip: int = 0, limit: int = 
     query = db.query(Question)
     if test_id:
         query = query.filter(Question.test_id == test_id)
-    return query.offset(skip).limit(limit).all()
+    return query.order_by(Question.question_number.asc()).offset(skip).limit(limit).all()
 
 def update_question(db: Session, question_id: int, obj_in: QuestionUpdate) -> Question:
     db_obj = db.query(Question).filter(Question.id == question_id).first()

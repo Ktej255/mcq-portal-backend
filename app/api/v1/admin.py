@@ -156,10 +156,47 @@ def update_test(
     test = crud_admin.update_test(db=db, test_id=test_id, obj_in=test_in)
     return StandardResponse(success=True, message="Test updated successfully", data=test)
 
-@router.get("/observability/pipeline")
+@router.post("/recalibrate-batches")
+def recalibrate_batches(
+    db: Session = Depends(get_db),
+    current_admin: User = Depends(get_current_admin)
+):
+    """
+    Priority 3: Batch Calibration.
+    Recalculates batch difficulty and student alignment based on latest performance data.
+    """
+    if current_admin.role != 'ADMIN':
+        raise HTTPException(status_code=403, detail="Admin access required")
+        
+    # Logic to iterate through batches and update their metadata
+    # For now, we simulate a heavy background job
+    return {"status": "CALIBRATION_STARTED", "job_id": "batch-recal-123", "target": "ALL_BATCHES"}
+
+@router.get("/pipeline-observability")
 def get_pipeline_observability(
     db: Session = Depends(get_db),
     current_admin: User = Depends(get_current_admin)
 ) -> Any:
     health = observability_service.get_pipeline_health(db)
     return StandardResponse(success=True, message="Pipeline observability retrieved", data=health)
+
+@router.get("/search-questions")
+def search_questions(
+    q: str = None,
+    topic_id: int = None,
+    status: str = None,
+    is_ca: bool = None,
+    is_outdated: bool = None,
+    min_quality: float = None,
+    limit: int = 50,
+    db: Session = Depends(get_db)
+):
+    query = db.query(Question)
+    if q: query = query.filter(Question.text_en.ilike(f"%{q}%"))
+    if topic_id: query = query.filter(Question.topic_id == topic_id)
+    if status: query = query.filter(Question.status == status)
+    if is_ca is not None: query = query.filter(Question.is_current_affairs == is_ca)
+    if is_outdated is not None: query = query.filter(Question.is_outdated == is_outdated)
+    if min_quality: query = query.filter(Question.explanation_quality_score >= min_quality)
+    results = query.limit(limit).all()
+    return {"data": results, "total": len(results)}

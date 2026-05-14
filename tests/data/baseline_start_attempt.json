@@ -1,0 +1,14 @@
+{
+  "attempt_id": 456,
+  "test": {
+    "id": 1,
+    "title": "UPSC Prelims 2026 - Canonical",
+    "description": "A high-stakes exam baseline.",
+    "duration_minutes": 60,
+    "correct_marks": 2.0,
+    "negative_marking_value": 0.66,
+    "total_questions": 100
+  },
+  "start_time": "2026-05-13T12:00:00Z",
+  "status": "IN_PROGRESS"
+}

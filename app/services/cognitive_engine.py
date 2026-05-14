@@ -49,6 +49,28 @@ class CognitiveEngine:
                 interpretation="Available answer and confidence patterns may indicate low deliberation.",
                 uncertainty_note="This is a behavioral inference, not a psychological diagnosis."
             ))
+
+        # Signal: Panic / Anxiety Pattern (Pacing Collapse)
+        # Check second half accuracy vs first half
+        mid = len(answers) // 2
+        first_half = answers[:mid]
+        second_half = answers[mid:]
+        first_acc = len([a for a in first_half if a.is_correct]) / len(first_half) if first_half else 0
+        second_acc = len([a for a in second_half if a.is_correct]) / len(second_half) if second_half else 0
+        
+        # Check pacing in second half
+        avg_time_first = sum(a.time_taken_seconds for a in first_half) / len(first_half) if first_half else 0
+        avg_time_second = sum(a.time_taken_seconds for a in second_half) / len(second_half) if second_half else 0
+        
+        if second_acc < first_acc * 0.7 and avg_time_second < avg_time_first * 0.8:
+             signals.append(CognitiveSignal(
+                name="ANXIETY_PATTERN",
+                value=(first_acc - second_acc) * 100,
+                confidence=0.85,
+                signal_confidence=0.85,
+                interpretation="Your accuracy collapsed in the latter half as your pace accelerated. This often indicates exam anxiety or fatigue.",
+                uncertainty_note="Behavioral pattern detected: 'Panic Solving'."
+            ))
         
         # Signal: Calibration Accuracy (Confidence vs. Reality)
         correct_sure = [a for a in answers if a.confidence_level == ConfidenceEnum.HUNDRED_PERCENT and a.is_correct == True]

@@ -1,10 +1,12 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from datetime import datetime, timezone
-from app.models.domain import Attempt, AttemptStatusEnum, AttemptAnswer, Question, Report, Topic, Subject
+from typing import List, Dict, Any, Optional
+from app.models.domain import Attempt, AttemptStatusEnum, AttemptAnswer, Question, Report, Topic, Subject, ConfidenceEnum, ExamEvent
 from app.services.narrative_service import generate_performance_narrative
 from app.services.longitudinal_service import update_student_evolution
 from app.services.domain_contracts import detect_analytics_anomalies
+from app.services.scoring_engine import ScoringEngine
 
 def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     attempt = db.query(Attempt).filter(Attempt.id == attempt_id, Attempt.user_id == user_id).first()
@@ -27,96 +29,64 @@ def generate_report(db: Session, attempt_id: int, user_id: int) -> Report:
     
     ans_map = {ans.question_id: ans for ans in answers}
     
-    correct_count = 0
-    incorrect_count = 0
-    unattempted_count = 0
+    scoring_results = ScoringEngine.calculate_score(test, questions, answers)
     
-    topic_wise = {}
-    subject_wise = {}
-    confidence_stats = {}
-    total_time = 0
-    
-    for q in questions:
-        ans = ans_map.get(q.id)
-        
-        # Build topic/subject trackers
-        topic_name = q.topic.name
-        subject_name = q.topic.subject.name
-        
-        if topic_name not in topic_wise:
-            topic_wise[topic_name] = {"correct": 0, "incorrect": 0, "skipped": 0, "total": 0, "time": 0}
-        if subject_name not in subject_wise:
-            subject_wise[subject_name] = {"correct": 0, "incorrect": 0, "skipped": 0, "total": 0, "time": 0}
+    # Update AttemptAnswer is_correct
+    evaluations = scoring_results.get("evaluations", {})
+    for ans in answers:
+        if ans.question_id in evaluations:
+            ans.is_correct = evaluations[ans.question_id]
             
-        topic_wise[topic_name]["total"] += 1
-        subject_wise[subject_name]["total"] += 1
-        
-        if not ans or ans.is_skipped or ans.selected_option is None:
-            unattempted_count += 1
-            topic_wise[topic_name]["skipped"] += 1
-            subject_wise[subject_name]["skipped"] += 1
-        else:
-            total_time += ans.time_taken_seconds
-            topic_wise[topic_name]["time"] += ans.time_taken_seconds
-            subject_wise[subject_name]["time"] += ans.time_taken_seconds
-            
-            is_correct = (ans.selected_option == q.correct_option)
-            ans.is_correct = is_correct  # Save back evaluation
-            
-            conf = ans.confidence_level.value if ans.confidence_level else "UNKNOWN"
-            if conf not in confidence_stats:
-                confidence_stats[conf] = {"correct": 0, "incorrect": 0, "total": 0}
-            confidence_stats[conf]["total"] += 1
-            
-            if is_correct:
-                correct_count += 1
-                topic_wise[topic_name]["correct"] += 1
-                subject_wise[subject_name]["correct"] += 1
-                confidence_stats[conf]["correct"] += 1
-            else:
-                incorrect_count += 1
-                topic_wise[topic_name]["incorrect"] += 1
-                subject_wise[subject_name]["incorrect"] += 1
-                confidence_stats[conf]["incorrect"] += 1
-
-    total_qs = len(questions)
-    attempted_count = correct_count + incorrect_count
+    # Commit evaluations
+    db.commit()
     
     # FORENSIC RECONCILIATION: Total must equal sum of outcomes
-    if total_qs != (correct_count + incorrect_count + unattempted_count):
-        raise HTTPException(status_code=500, detail="Forensic Mismatch: Total != Correct + Incorrect + Skipped")
+    actual_total = scoring_results["correct_count"] + scoring_results["incorrect_count"] + scoring_results["unattempted_count"]
+    if scoring_results["total_count"] != actual_total:
+        error_msg = f"Forensic Mismatch: Total({scoring_results['total_count']}) != Correct({scoring_results['correct_count']}) + Incorrect({scoring_results['incorrect_count']}) + Skipped({scoring_results['unattempted_count']}). Sum={actual_total}"
+        import logging
+        logging.error(f"Attempt ID {attempt_id}: {error_msg}")
+        raise HTTPException(status_code=500, detail=error_msg)
+        
+    # Telemetry and other processing...
+    telemetry_summary = {}
 
-    # Accuracy relative to total questions as per Directive
-    accuracy = (correct_count / total_qs) * 100 if total_qs > 0 else 0
-    total_score = (correct_count * test.correct_marks) - (incorrect_count * test.negative_marking_value)
-    avg_time = total_time / total_qs if total_qs > 0 else 0
-    
     # Build Forensic Metadata
     forensic_data = {
-        "total_questions": total_qs,
-        "attempted_count": attempted_count,
-        "skipped_count": unattempted_count,
-        "correct_count": correct_count,
-        "incorrect_count": incorrect_count,
-        "final_score": total_score,
-        "accuracy_formula": "Correct / Total",
-        "raw_accuracy": accuracy,
-        "negative_marks": incorrect_count * test.negative_marking_value
+        "total_questions": scoring_results["total_count"],
+        "attempted_count": scoring_results["attempted_count"],
+        "skipped_count": scoring_results["unattempted_count"],
+        "correct_count": scoring_results["correct_count"],
+        "incorrect_count": scoring_results["incorrect_count"],
+        "final_score": scoring_results["total_score"],
+        "accuracy_formula": "Correct / Attempted",
+        "raw_accuracy": scoring_results["accuracy"],
+        "mastery_percentage": scoring_results["mastery_percentage"],
+        "score_percentage": scoring_results["score_percentage"],
+        "negative_marks": scoring_results["negative_marks"]
     }
     
     report = Report(
         attempt_id=attempt_id,
-        total_score=total_score,
-        accuracy=accuracy,
-        correct_count=correct_count,
-        incorrect_count=incorrect_count,
-        unattempted_count=unattempted_count,
-        topic_wise_analysis=topic_wise,
-        subject_wise_performance=subject_wise,
-        confidence_analysis=confidence_stats,
-        average_time_per_question=avg_time,
-        forensic_data = forensic_data,
-        reliability_score = 0.0, # Will be updated in async pipeline
+        total_score=scoring_results["total_score"],
+        accuracy=scoring_results["accuracy"],
+        mastery_percentage=scoring_results["mastery_percentage"],
+        score_percentage=scoring_results["score_percentage"],
+        correct_count=scoring_results["correct_count"],
+        incorrect_count=scoring_results["incorrect_count"],
+        unattempted_count=scoring_results["unattempted_count"],
+        negative_marks=scoring_results["negative_marks"],
+        topic_wise_analysis=scoring_results["topic_wise"],
+        subject_wise_performance=scoring_results["subject_wise"],
+        confidence_analysis=scoring_results["confidence_stats"],
+        average_time_per_question=scoring_results["average_time_per_question"],
+        forensic_data=forensic_data,
+        telemetry_summary=telemetry_summary,
+        report_version="1.0.0",
+        rendering_version="1.0.0",
+        evaluation_version="1.0.0",
+        telemetry_version="1.0.0",
+        reliability_score=0.0, # Will be updated in async pipeline
         processing_status="PENDING",
         generated_at=datetime.now(timezone.utc)
     )
@@ -138,11 +108,12 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
     from app.services.student_longitudinal_profile import create_cognitive_snapshot, update_longitudinal_profile
     from app.core.observability.tracer import trace_execution
     from app.core.pedagogy.reliability_engine import EducationalReliabilityEngine
+    from app.services.revision_service import populate_revision_queue_from_attempt
     
     db = SessionLocal()
     report = None
     try:
-        with trace_execution(module_name="report_service", function_name="run_async_cognitive_pipeline") as trace:
+        with trace_execution(db=db, module="report_service", function="run_async_cognitive_pipeline") as trace:
             report = db.query(Report).filter(Report.attempt_id == attempt_id).first()
             if not report: return
 
@@ -150,7 +121,6 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
             attempt = report.attempt
             questions = attempt.test.questions
             answers = attempt.answers
-            from app.models.domain import ExamEvent
             events = db.query(ExamEvent).filter(ExamEvent.attempt_id == attempt_id).all()
 
             # 1. Telemetry Reconstruction (Internal Fail-Safe)
@@ -188,13 +158,15 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
                 ans = next((a for a in answers if a.question_id == q.id), None)
                 snapshot.append({
                     "id": q.id,
+                    "question_number": q.question_number,
                     "text_en": q.text_en,
                     "correct_option": q.correct_option,
                     "selected_option": ans.selected_option if ans else None,
                     "is_correct": ans.is_correct if ans else False,
+                    "time_spent": ans.time_taken_seconds if ans else 0,
+                    "confidence": ans.confidence_level.value if ans and hasattr(ans.confidence_level, 'value') else (str(ans.confidence_level) if ans and ans.confidence_level else "UNKNOWN"),
                     "explanation_en": q.explanation_en,
                     "options_en": q.options_en,
-                    "question_type": q.question_type,
                     "statements_en": q.statements_en
                 })
             report.snapshot_bundle = snapshot
@@ -233,6 +205,12 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
             
             report.processing_status = "COMPLETED"
             db.commit()
+            
+            # 7. Populate Revision Queue
+            try:
+                populate_revision_queue_from_attempt(db, attempt_id, user_id)
+            except Exception as e:
+                print(f"Revision Queue Population Failed: {e}")
     except Exception as e:
         import traceback
         print(f"Async Pipeline Critical Error: {str(e)}")
@@ -244,28 +222,34 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
 def verify_report_integrity(report: Report, questions: List[Question], answers: List[AttemptAnswer]) -> bool:
     """
     Priority 1: Report Truth Validation Layer.
-    Cross-checks all report math against raw data.
+    Cross-checks all report math against raw data using the ScoringEngine.
     """
-    total = len(questions)
-    correct = len([a for a in answers if a.is_correct is True])
-    incorrect = len([a for a in answers if a.is_correct is False])
-    skipped = len([a for a in answers if a.is_skipped or a.selected_option is None])
+    test = report.attempt.test
+    scoring_results = ScoringEngine.calculate_score(test, questions, answers)
     
     # 1. Math Check
-    if (correct + incorrect + skipped) != total:
-        print(f"Math Mismatch: {correct}+{incorrect}+{skipped} != {total}")
+    if abs(report.total_score - scoring_results["total_score"]) > 0.01:
+        print(f"Score Mismatch: {report.total_score} != {scoring_results['total_score']}")
         return False
         
-    # 2. Score Check
-    expected_score = (correct * 2.0) - (incorrect * 0.66) # Assuming UPSC standard marking
-    if abs(report.total_score - expected_score) > 0.01:
-        print(f"Score Mismatch: {report.total_score} != {expected_score}")
+    # 2. Accuracy Check
+    if abs(report.accuracy - scoring_results["accuracy"]) > 0.01:
+        print(f"Accuracy Mismatch: {report.accuracy} != {scoring_results['accuracy']}")
         return False
         
-    # 3. Accuracy Check
-    expected_accuracy = (correct / total * 100) if total > 0 else 0
-    if abs(report.accuracy - expected_accuracy) > 0.01:
-        print(f"Accuracy Mismatch: {report.accuracy} != {expected_accuracy}")
+    # 3. Counts Check
+    if report.correct_count != scoring_results["correct_count"] or \
+       report.incorrect_count != scoring_results["incorrect_count"]:
+        print(f"Counts Mismatch: C:{report.correct_count}/{scoring_results['correct_count']} I:{report.incorrect_count}/{scoring_results['incorrect_count']}")
+        return False
+        
+    # 4. Forensic Metrics Check
+    if abs(report.mastery_percentage - scoring_results["mastery_percentage"]) > 0.01:
+        print(f"Mastery Mismatch: {report.mastery_percentage} != {scoring_results['mastery_percentage']}")
+        return False
+    
+    if abs(report.negative_marks - scoring_results["negative_marks"]) > 0.01:
+        print(f"Negative Marks Mismatch: {report.negative_marks} != {scoring_results['negative_marks']}")
         return False
         
     return True
@@ -330,13 +314,13 @@ def get_detailed_review(db: Session, attempt_id: int, user_id: int):
             "correct_option": q.correct_option,
             "explanation_en": q.explanation_en,
             "explanation_hi": q.explanation_hi,
-            "topic": q.topic.name,
-            "subject": q.topic.subject.name,
+            "topic": q.topic.name if q.topic else "General",
+            "subject": q.topic.subject.name if q.topic and q.topic.subject else "General",
             "difficulty": getattr(q, 'difficulty', 'MEDIUM'),
             "selected_option": ans.selected_option if ans else None,
             "is_correct": ans.is_correct if ans else False,
             "time_taken_seconds": ans.time_taken_seconds if ans else 0,
-            "confidence_level": ans.confidence_level.value if ans and ans.confidence_level else "UNKNOWN",
+            "confidence_level": ans.confidence_level.value if ans and hasattr(ans.confidence_level, 'value') else (str(ans.confidence_level) if ans and ans.confidence_level else "UNKNOWN"),
             "marked_for_review": ans.marked_for_review if ans else False,
             "interaction_type": interaction_type,
             "forensic_evidence": {
@@ -365,7 +349,6 @@ def get_behavioral_analysis(db: Session, attempt_id: int, user_id: int):
     
     if not answers: return analysis
     
-    from app.models.domain import ConfidenceEnum
     blind_guesses = [a for a in answers if a.confidence_level == ConfidenceEnum.BLIND_GUESS]
     sure_wrong = [a for a in answers if a.confidence_level == ConfidenceEnum.HUNDRED_PERCENT and a.is_correct == False]
     long_time_right = [a for a in answers if a.time_taken_seconds > 60 and a.is_correct == True]

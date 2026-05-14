@@ -129,24 +129,30 @@ def submit_test(
     # Priority 1: Run reconciliation as background audit before pipeline
     def reconcile_and_pipeline(attempt_id: int, user_id: int):
         from app.db.session import SessionLocal
-        from app.services.observability import log_system_event
         _db = SessionLocal()
         try:
             rec = AttemptReconciliationEngine.reconcile(_db, attempt_id)
             if rec.status == "FORENSIC_DIVERGENCE":
                 logger.warning(
                     f"FORENSIC_DIVERGENCE on attempt {attempt_id}: "
-                    f"{len(rec.divergences)} divergences. Summary: {rec.summary}"
+                    f"{len(rec.divergences)} divergences detected. "
+                    f"Summary: {rec.summary} | "
+                    f"Divergences: {rec.divergences}"
                 )
-                log_system_event(
-                    _db, "FORENSIC_DIVERGENCE",
-                    "CRITICAL", "AttemptReconciliationEngine",
-                    rec.summary,
-                    {"attempt_id": attempt_id, "divergences": rec.divergences}
+            elif rec.status == "INSUFFICIENT_DATA":
+                logger.info(
+                    f"Reconciliation INSUFFICIENT_DATA for attempt {attempt_id}: {rec.summary}"
+                )
+            else:
+                logger.info(
+                    f"Reconciliation CLEAN for attempt {attempt_id}: {rec.summary}"
                 )
             run_async_cognitive_pipeline(attempt_id, user_id)
+        except Exception as exc:
+            logger.error(f"reconcile_and_pipeline failed for attempt {attempt_id}: {exc}")
         finally:
             _db.close()
+
     
     report = generate_report(db, attempt_id, current_user.id)
     background_tasks.add_task(reconcile_and_pipeline, attempt_id, current_user.id)

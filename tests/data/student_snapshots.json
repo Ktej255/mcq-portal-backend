@@ -1,0 +1,45 @@
+{
+  "beginner": {
+    "description": "Slow, takes full time, skips 20%, accuracy 60%",
+    "profile": {
+      "avg_time_per_question": 120,
+      "skipped_rate": 0.2,
+      "intended_accuracy": 0.6
+    },
+    "expected_invariants": {
+      "min_mastery": 0.4,
+      "max_negative_marks": 10.0
+    }
+  },
+  "topper": {
+    "description": "Fast, skips 5%, accuracy 95%",
+    "profile": {
+      "avg_time_per_question": 45,
+      "skipped_rate": 0.05,
+      "intended_accuracy": 0.95
+    },
+    "expected_invariants": {
+      "min_mastery": 0.9,
+      "max_negative_marks": 5.0
+    }
+  },
+  "panic_student": {
+    "description": "Very fast in last 10 mins, high error rate at end",
+    "profile": {
+      "late_stage_error_rate": 0.8,
+      "total_time_seconds": 3600
+    },
+    "expected_invariants": {
+      "behavioral_flag": "TIME_CRUNCH"
+    }
+  },
+  "retry_student": {
+    "description": "Re-attempts same test, focuses on weak topics",
+    "profile": {
+      "previous_weak_topics_attempted": 1.0
+    },
+    "expected_invariants": {
+      "improvement_trend": "positive"
+    }
+  }
+}

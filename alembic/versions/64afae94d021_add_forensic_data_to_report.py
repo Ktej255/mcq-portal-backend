@@ -25,46 +25,16 @@ def _has_column(table_name: str, column_name: str) -> bool:
 
 
 def upgrade() -> None:
-    # Use raw SQL with IF NOT EXISTS for better reliability in production
-    # 1. Update Enum types (Postgres enums are tricky, we'll use string conversion if needed or just skip if it works)
-    # Actually, alter_column should be fine if types match, but let's be safe.
-    
-    # 2. Add question_number to questions
-    op.execute('ALTER TABLE questions ADD COLUMN IF NOT EXISTS question_number INTEGER')
-    # Index creation if not exists is also tricky, we can use a DO block
-    op.execute("""
-        DO $$
-        BEGIN
-            IF NOT EXISTS (SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace WHERE c.relname = 'ix_questions_question_number') THEN
-                CREATE INDEX ix_questions_question_number ON questions (question_number);
-            END IF;
-        END $$;
-    """)
-    
-    # 3. Add forensic_data to reports
-    op.execute('ALTER TABLE reports ADD COLUMN IF NOT EXISTS forensic_data JSON')
-    
-    # 4. Add institution_id foreign key to users if not exists
-    # We'll check if the column exists first
-    op.execute('ALTER TABLE users ADD COLUMN IF NOT EXISTS institution_id INTEGER REFERENCES institutions(id)')
-    
-    # 5. Handle Enums (Skip for now as they are harder to do idempotently in raw SQL without DO blocks)
-    # The existing alter_column calls were mostly working or failing gracefully.
-    try:
-        op.alter_column('attempts', 'status',
-                   existing_type=sa.VARCHAR(length=11),
-                   type_=sa.Enum('IN_PROGRESS', 'SUBMITTED', 'SOVEREIGNTY_PROTECTED', name='attemptstatusenum'),
-                   existing_nullable=False)
-    except Exception:
-        pass
+    if not _has_column('questions', 'question_number'):
+        op.add_column('questions', sa.Column('question_number', sa.Integer(), nullable=True))
+        with op.batch_alter_table('questions') as batch_op:
+            batch_op.create_index(batch_op.f('ix_questions_question_number'), ['question_number'], unique=False)
+            
+    if not _has_column('reports', 'forensic_data'):
+        op.add_column('reports', sa.Column('forensic_data', sa.JSON(), nullable=True))
         
-    try:
-        op.alter_column('users', 'role',
-                   existing_type=sa.VARCHAR(length=7),
-                   type_=sa.Enum('ADMIN', 'STUDENT', 'EDUCATOR', name='roleenum'),
-                   existing_nullable=False)
-    except Exception:
-        pass
+    if not _has_column('users', 'institution_id'):
+        op.add_column('users', sa.Column('institution_id', sa.Integer(), sa.ForeignKey('institutions.id'), nullable=True))
 
 
 def downgrade() -> None:

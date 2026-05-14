@@ -25,7 +25,7 @@ class MCQIngestionEngine:
 
     @staticmethod
     def ingest_batch(db: Session, test_id: int, questions: List[Dict[str, Any]]) -> List[Question]:
-        with trace_execution(module_name="pedagogy.ingestion", function_name="ingest_batch") as trace:
+        with trace_execution(db=db, module="pedagogy.ingestion", function="ingest_batch") as trace:
             trace.input_payload = {"test_id": test_id, "count": len(questions)}
             
             created_questions = []

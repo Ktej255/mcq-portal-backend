@@ -55,11 +55,7 @@ def record_generated_interventions(
                 "strategy": strategy,
                 "adaptive_context": adaptive_context or {},
             },
-            status="GENERATED",
-            reliability_snapshot=(adaptive_context or {}).get("trajectory_reliability"),
-            metric_version=INTERVENTION_VERSION,
-            generated_at=datetime.now(timezone.utc),
-            updated_at=datetime.now(timezone.utc),
+            status="GENERATED"
         )
         db.add(intervention)
         interventions.append(intervention)

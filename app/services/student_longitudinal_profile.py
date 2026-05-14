@@ -117,10 +117,23 @@ def learning_velocity(points: list[dict[str, Any]]) -> dict[str, Any]:
     earlier = accuracies[:-3]
     recovery_velocity = _safe_mean(recent) - _safe_mean(earlier) if earlier and recent else 0.0
     stabilization = len(accuracies) >= 4 and _volatility(accuracies[-3:]) < _volatility(accuracies[:-1])
+    
+    # Calculate most recent delta
+    accuracy_delta = 0.0
+    trend = "STABLE"
+    if len(accuracies) >= 2:
+        accuracy_delta = round(accuracies[-1] - accuracies[-2], 2)
+        if accuracy_delta > 5:
+            trend = "IMPROVING"
+        elif accuracy_delta < -5:
+            trend = "DECLINING"
+
     return {
         "accuracy_slope": round(_slope(accuracies), 4),
         "score_slope": round(_slope(scores), 4),
         "recovery_velocity": round(recovery_velocity, 4),
+        "accuracy_delta": accuracy_delta,
+        "trend": trend,
         "stabilization_detected": stabilization,
         "confidence": longitudinal_reliability_weight(points)["overall_reliability"],
         "metric_version": LONGITUDINAL_VERSION,

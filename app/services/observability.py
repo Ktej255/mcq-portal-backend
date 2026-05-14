@@ -147,4 +147,32 @@ class ObservabilityService:
             }
         }
 
+    def record_operational_metrics(self, db: Session):
+        """
+        Snapshots current system health into persistent OperationalMetric records.
+        """
+        from app.models.domain import OperationalMetric
+        health = self.get_pipeline_health(db)
+        
+        # Key Metrics to Track
+        metrics_to_record = [
+            ("PIPELINE_FAILURE_RATE", health["pipeline"]["failure_rate"]),
+            ("TELEMETRY_CONTINUITY", health["telemetry"]["continuity_score"]),
+            ("SESSION_COMPLETION_RATE", (100 - health["realtime_intelligence"]["unstable_session_count"] / max(1, health["realtime_intelligence"]["active_session_count"]) * 100)),
+            ("INFERENCE_UNRELIABILITY", health["inference_reliability"]["unreliable_inference_rate"]),
+            ("CONCEPTUAL_BOTTLENECKS", health["conceptual_intelligence"]["bottleneck_count"]),
+            ("MEMORY_MISCONCEPTION_PERSISTENCE", health["educational_memory"]["misconception_persistence_rate"]),
+            ("ORCHESTRATION_CONFLICTS", health["educational_orchestration"]["arbitration_conflict_count"])
+        ]
+        
+        for m_type, val in metrics_to_record:
+            metric = OperationalMetric(
+                metric_type=m_type,
+                value=float(val),
+                timestamp=datetime.now(timezone.utc)
+            )
+            db.add(metric)
+        
+        db.commit()
+
 observability_service = ObservabilityService()

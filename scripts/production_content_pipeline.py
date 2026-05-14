@@ -279,6 +279,7 @@ def ingest_batches(db, batches: dict[str, list[list]], dry_run: bool = False) ->
                     explanation_hi=mcq.get("explanation_hi"),
                     difficulty=mcq.get("difficulty", "MEDIUM"),
                     source=mcq.get("source"),
+                    question_number=q_count + 1
                 )
                 db.add(question)
                 q_count += 1

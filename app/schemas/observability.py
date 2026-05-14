@@ -25,3 +25,37 @@ class TraceTreeNode(TraceDetail):
 class TraceListResponse(BaseModel):
     traces: List[TraceDetail]
     total: int
+
+class JobExecutionSchema(BaseModel):
+    id: int
+    job_name: str
+    job_type: str
+    reference_id: Optional[str] = None
+    status: str
+    started_at: datetime
+    completed_at: Optional[datetime] = None
+    duration_ms: Optional[int] = None
+    retries: int
+    error_payload: Optional[Dict[str, Any]] = None
+    metadata_payload: Optional[Dict[str, Any]] = None
+
+    class Config:
+        from_attributes = True
+
+class MetricSchema(BaseModel):
+    id: int
+    metric_type: str
+    value: float
+    metadata_json: Optional[Dict[str, Any]] = None
+    timestamp: datetime
+
+    class Config:
+        from_attributes = True
+
+class JobListResponse(BaseModel):
+    jobs: List[JobExecutionSchema]
+    total: int
+
+class MetricListResponse(BaseModel):
+    metrics: List[MetricSchema]
+    total: int

@@ -86,9 +86,12 @@ class ReportResponse(BaseModel):
     attempt_id: int
     total_score: float
     accuracy: float
+    mastery_percentage: Optional[float] = None
+    score_percentage: Optional[float] = None
     correct_count: int
     incorrect_count: int
     unattempted_count: int
+    negative_marks: Optional[float] = None
     topic_wise_analysis: Optional[Dict] = None
     confidence_analysis: Optional[Dict] = None
     subject_wise_performance: Optional[Dict] = None

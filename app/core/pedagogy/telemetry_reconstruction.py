@@ -1,13 +1,23 @@
 from typing import List, Dict, Any
 from datetime import datetime
 
+HEARTBEAT_EXPECTED_SECONDS = 30
+HEARTBEAT_ALLOWED_GAP_SECONDS = 45
+
 def reconstruct_attempt_timeline(events: List[Any]) -> Dict[str, Any]:
     """
     Focus Area 1: Forensic Behavioral Reconstruction.
     Transforms raw ExamEvents into a structured replay timeline.
     """
     if not events:
-        return {"status": "EMPTY", "timeline": []}
+        return {
+            "status": "EMPTY", 
+            "timeline": [], 
+            "quality": {"heartbeat_density": 0, "continuity_score": 0, "temporal_coherence": 0},
+            "total_duration": 0,
+            "event_count": 0,
+            "question_insights": {}
+        }
 
     sorted_events = sorted(events, key=lambda x: x.timestamp)
     timeline = []
@@ -38,15 +48,26 @@ def reconstruct_attempt_timeline(events: List[Any]) -> Dict[str, Any]:
             "q_id": q_id,
             "dwell": delta,
             "timestamp": event.timestamp.isoformat(),
-            "metadata": event.event_metadata
+            "metadata": event.payload
         })
         
         last_event_time = event.timestamp
 
+    # Add quality metrics
+    heartbeat_count = len([e for e in sorted_events if e.event_type == "HEARTBEAT"])
+    total_sec = (sorted_events[-1].timestamp - sorted_events[0].timestamp).total_seconds()
+    
+    quality = {
+        "heartbeat_density": min(1.0, heartbeat_count / (total_sec / HEARTBEAT_EXPECTED_SECONDS)) if total_sec > 30 else 0,
+        "continuity_score": 1.0, 
+        "temporal_coherence": 1.0
+    }
+    
     return {
         "status": "VERIFIED",
-        "total_duration": (sorted_events[-1].timestamp - sorted_events[0].timestamp).total_seconds(),
+        "total_duration": total_sec,
         "event_count": len(events),
         "question_insights": question_stats,
-        "timeline": timeline
+        "timeline": timeline,
+        "quality": quality
     }

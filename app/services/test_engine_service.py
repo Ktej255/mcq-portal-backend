@@ -38,7 +38,8 @@ def get_attempt_questions(db: Session, attempt_id: int, user_id: int):
     questions = db.query(Question, Topic.name.label("topic_name"), Subject.id.label("subject_id"), Subject.name.label("subject_name"))\
         .join(Topic, Question.topic_id == Topic.id)\
         .join(Subject, Topic.subject_id == Subject.id)\
-        .filter(Question.test_id == attempt.test_id).all()
+        .filter(Question.test_id == attempt.test_id)\
+        .order_by(Question.question_number.asc()).all()
         
     result = []
     for idx, (q, topic_name, subject_id, subject_name) in enumerate(questions):
@@ -54,7 +55,7 @@ def get_attempt_questions(db: Session, attempt_id: int, user_id: int):
             "options_en": q.options_en,
             "options_hi": q.options_hi,
             "difficulty": q.difficulty,
-            "question_number": idx + 1
+            "question_number": q.question_number if q.question_number else idx + 1
         })
     return result
 

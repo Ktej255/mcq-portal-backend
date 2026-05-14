@@ -24,7 +24,7 @@ class InferenceGateway:
     @classmethod
     def generate(cls, prompt: str, provider: str = None, **kwargs) -> InferenceResponse:
         provider_name = provider or cls._default_provider_name
-        with trace_execution(module_name="core.inference", function_name=f"generate:{provider_name}") as trace:
+        with trace_execution(db=None, module="core.inference", function=f"generate:{provider_name}") as trace:
             trace.input_payload = {"prompt": prompt[:100] + "...", "provider": provider_name}
             request = InferenceRequest(prompt=prompt, **kwargs)
             response = cls.get_provider(provider_name).generate(request)
@@ -34,7 +34,7 @@ class InferenceGateway:
     @classmethod
     async def generate_async(cls, prompt: str, provider: str = None, **kwargs) -> InferenceResponse:
         provider_name = provider or cls._default_provider_name
-        with trace_execution(module_name="core.inference", function_name=f"generate_async:{provider_name}") as trace:
+        with trace_execution(db=None, module="core.inference", function=f"generate_async:{provider_name}") as trace:
             trace.input_payload = {"prompt": prompt[:100] + "...", "provider": provider_name}
             request = InferenceRequest(prompt=prompt, **kwargs)
             response = await cls.get_provider(provider_name).generate_async(request)

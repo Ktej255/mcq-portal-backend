@@ -56,27 +56,45 @@ class ExecutionTracer:
 
 # Context manager for easier tracing
 class trace_execution:
-    def __init__(self, db: Session, module: str, function: str, **kwargs):
+    def __init__(self, db: Optional[Session], module: str, function: str, **kwargs):
         self.db = db
         self.module = module
         self.function = function
         self.kwargs = kwargs
-        self.tracer = ExecutionTracer(db)
+        self.tracer = ExecutionTracer(db) if db else None
         self.trace_id = None
         self.start_time = None
+        self.input_payload = kwargs.get("input_payload")
+        self.output_payload = None
 
     def __enter__(self):
         self.start_time = time.time()
-        self.trace_id = self.tracer.start_trace(
-            self.module, 
-            self.function, 
-            **self.kwargs
-        )
-        return self.trace_id
+        if self.tracer:
+            self.trace_id = self.tracer.start_trace(
+                self.module, 
+                self.function, 
+                **self.kwargs
+            )
+        else:
+            import logging
+            logging.info(f"TRACER | START | {self.module}.{self.function} | {self.kwargs}")
+        return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         duration = (time.time() - self.start_time) * 1000
-        if exc_type:
-            self.tracer.fail_trace(self.trace_id, str(exc_val), duration)
+        if self.tracer and self.trace_id:
+            if exc_type:
+                self.tracer.fail_trace(self.trace_id, str(exc_val), duration)
+            else:
+                # Update with any payloads set during execution
+                trace_obj = self.db.query(ExecutionTrace).filter(ExecutionTrace.trace_id == self.trace_id).first()
+                if trace_obj:
+                    if self.input_payload: trace_obj.input_payload = self.input_payload
+                    if self.output_payload: trace_obj.output_payload = self.output_payload
+                self.tracer.complete_trace(self.trace_id, duration_ms=duration)
         else:
-            self.tracer.complete_trace(self.trace_id, duration_ms=duration)
+            import logging
+            if exc_type:
+                logging.error(f"TRACER | FAIL | {self.module}.{self.function} | Error: {exc_val} | Duration: {duration}ms")
+            else:
+                logging.info(f"TRACER | COMPLETE | {self.module}.{self.function} | Duration: {duration}ms")

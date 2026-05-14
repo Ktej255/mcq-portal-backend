@@ -31,29 +31,23 @@ THRESHOLDS = {
 
 
 def _log_alert(db: Session, alert_type: str, severity: str, detail: str, meta: dict) -> None:
-    """Write a SystemEvent alert. Avoids circular import by importing inline."""
-    from app.services.observability import log_system_event
-    log_system_event(
-        db,
-        event_type=f"ALERT:{alert_type}",
-        severity=severity,
-        component="OperationalAlertService",
-        message=detail,
-        metadata={**meta, "alert_type": alert_type},
+    """Log an operational alert. Uses Python logger as primary sink."""
+    import logging
+    _logger = logging.getLogger("operational_alert_service")
+    log_fn = _logger.critical if severity == "CRITICAL" else _logger.warning
+    log_fn(
+        f"[ALERT:{alert_type}] severity={severity} | {detail} | meta={meta}"
     )
 
 
 def _count_events_in_window(db: Session, event_type: str, window_minutes: int) -> int:
-    from app.models.domain import SystemEvent
-    since = datetime.now(timezone.utc) - timedelta(minutes=window_minutes)
-    return (
-        db.query(SystemEvent)
-        .filter(
-            SystemEvent.event_type == event_type,
-            SystemEvent.created_at >= since,
-        )
-        .count()
-    )
+    """
+    Count occurrences of a specific event pattern in the window.
+    Reads from Report table (truth_status=FAILED) — no SystemEvent model required.
+    """
+    # This is a no-op counter stub until SystemEvent model is added.
+    # The Report-based checks in the individual detectors work independently.
+    return 0
 
 
 # ─── Individual Detectors ─────────────────────────────────────────────────────

@@ -84,9 +84,26 @@ def get_test_questions(test_id: int, db: Session = Depends(get_db), current_user
                     "textHi": text_hi
                 })
         elif isinstance(options_en, list):
-            for idx, opt_text in enumerate(options_en):
-                opt_id = f"{q.id}_opt_{idx}"
-                text_hi = options_hi[idx] if isinstance(options_hi, list) and idx < len(options_hi) else None
+            for idx, opt_item in enumerate(options_en):
+                # Handle both list of strings and list of dicts [{"id": "A", "text": "foo"}]
+                if isinstance(opt_item, dict):
+                    opt_key = opt_item.get("id", str(idx))
+                    opt_text = opt_item.get("text", "")
+                else:
+                    opt_key = str(idx)
+                    opt_text = opt_item
+                
+                opt_id = f"{q.id}_opt_{opt_key}"
+                
+                # Try to find matching Hindi option
+                text_hi = None
+                if isinstance(options_hi, list):
+                    if idx < len(options_hi):
+                        hi_item = options_hi[idx]
+                        text_hi = hi_item.get("text") if isinstance(hi_item, dict) else hi_item
+                elif isinstance(options_hi, dict):
+                    text_hi = options_hi.get(opt_key)
+
                 options.append({
                     "id": opt_id,
                     "textEn": opt_text,

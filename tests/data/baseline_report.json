@@ -1,0 +1,24 @@
+{
+  "attempt_id": 123,
+  "total_score": 10.5,
+  "accuracy": 75.0,
+  "mastery_percentage": 65.0,
+  "score_percentage": 52.5,
+  "correct_count": 7,
+  "incorrect_count": 3,
+  "unattempted_count": 5,
+  "negative_marks": 1.5,
+  "topic_wise_analysis": {
+    "Polity": {"correct": 3, "incorrect": 1, "unattempted": 2}
+  },
+  "confidence_analysis": {
+    "HIGH": {"correct": 5, "incorrect": 0}
+  },
+  "subject_wise_performance": {
+    "History": 0.8
+  },
+  "average_time_per_question": 45.5,
+  "narrative": "Standard baseline narrative.",
+  "processing_status": "COMPLETED",
+  "generated_at": "2026-05-13T12:00:00Z"
+}

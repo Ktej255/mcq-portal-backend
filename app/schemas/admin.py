@@ -75,6 +75,10 @@ class QuestionUpdate(BaseModel):
     explanation_hi: Optional[str] = None
     source: Optional[str] = None
     difficulty: Optional[str] = None
+    status: Optional[str] = None # E.g., DRAFT, REVIEW, VERIFIED, PUBLISHED
+    reviewer_id: Optional[int] = None
+    explanation_quality_score: Optional[float] = None
+    is_outdated: Optional[bool] = None
 
 class QuestionOut(BaseModel):
     id: int
@@ -94,11 +98,24 @@ class QuestionOut(BaseModel):
     difficulty: str
     question_number: Optional[int] = None
     
+    # Governance & Quality
+    status: str
+    reviewer_id: Optional[int] = None
+    explanation_quality_score: Optional[float] = None
+    is_outdated: bool
+    last_reviewed_at: Optional[Any] = None
+    
     # Forensic Metadata
     content_hash: Optional[str] = None
     structure_hash: Optional[str] = None
     options_hash: Optional[str] = None
     integrity_metadata: Optional[Dict[str, Any]] = None
+    
+    # Audit
+    created_at: Any
+    updated_at: Any
+    created_by: Optional[str] = None
+    updated_by: Optional[str] = None
 
     class Config:
         orm_mode = True

@@ -3,6 +3,7 @@ from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey, F
 from sqlalchemy.orm import relationship
 import enum
 from app.db.session import Base
+from app.db.governance import InstitutionalAuditMixin, SoftDeleteMixin
 
 class RoleEnum(str, enum.Enum):
     ADMIN = "ADMIN"
@@ -111,7 +112,14 @@ class Test(Base):
     questions = relationship("Question", back_populates="test")
     attempts = relationship("Attempt", back_populates="test", order_by="desc(Attempt.start_time)")
 
-class Question(Base):
+class WorkflowStatusEnum(str, enum.Enum):
+    DRAFT = "DRAFT"
+    REVIEW = "REVIEW"
+    VERIFIED = "VERIFIED"
+    PUBLISHED = "PUBLISHED"
+    ARCHIVED = "ARCHIVED"
+
+class Question(Base, InstitutionalAuditMixin, SoftDeleteMixin):
     __tablename__ = "questions"
     id = Column(Integer, primary_key=True, index=True)
     test_id = Column(Integer, ForeignKey("tests.id"), nullable=False)
@@ -129,6 +137,17 @@ class Question(Base):
     difficulty = Column(String, default="MEDIUM", index=True)
     question_number = Column(Integer, nullable=True, index=True)
     
+    # Authoring & Governance
+    status = Column(Enum(WorkflowStatusEnum), default=WorkflowStatusEnum.PUBLISHED, nullable=False)
+    reviewer_id = Column(Integer, ForeignKey("users.id"), nullable=True)
+    explanation_quality_score = Column(Float, nullable=True) # 0.0 - 1.0
+    bilingual_alignment_score = Column(Float, nullable=True) # 0.0 - 1.0
+    is_current_affairs = Column(Boolean, default=False)
+    content_date = Column(DateTime, nullable=True) # For CA freshness tracking
+    is_outdated = Column(Boolean, default=False)
+    last_reviewed_at = Column(DateTime, nullable=True)
+    quality_notes = Column(JSON, nullable=True) # {ambiguity: bool, too_short: bool, complex_language: bool}
+
     # Forensic Fingerprints
     content_hash = Column(String, index=True, nullable=True)
     structure_hash = Column(String, index=True, nullable=True)
@@ -137,9 +156,10 @@ class Question(Base):
 
     test = relationship("Test", back_populates="questions")
     topic = relationship("Topic", back_populates="questions")
+    reviewer = relationship("User", foreign_keys=[reviewer_id])
     attempt_answers = relationship("AttemptAnswer", back_populates="question")
 
-class Attempt(Base):
+class Attempt(Base, InstitutionalAuditMixin, SoftDeleteMixin):
     __tablename__ = "attempts"
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
@@ -147,6 +167,8 @@ class Attempt(Base):
     start_time = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
     end_time = Column(DateTime, nullable=True)
     status = Column(Enum(AttemptStatusEnum), default=AttemptStatusEnum.IN_PROGRESS, nullable=False)
+    is_simulation = Column(Boolean, default=False)
+
 
     user = relationship("User", back_populates="attempts")
     test = relationship("Test", back_populates="attempts")
@@ -183,15 +205,18 @@ class ExamEvent(Base):
     attempt = relationship("Attempt", back_populates="events")
     question = relationship("Question")
 
-class Report(Base):
+class Report(Base, InstitutionalAuditMixin, SoftDeleteMixin):
     __tablename__ = "reports"
     id = Column(Integer, primary_key=True, index=True)
     attempt_id = Column(Integer, ForeignKey("attempts.id"), unique=True, nullable=False)
     total_score = Column(Float, nullable=False)
-    accuracy = Column(Float, nullable=False) # percentage
+    accuracy = Column(Float, nullable=False) # percentage (Correct / Attempted)
+    mastery_percentage = Column(Float, nullable=True) # Correct / Total
+    score_percentage = Column(Float, nullable=True) # Final Score / Max Possible
     correct_count = Column(Integer, nullable=False)
     incorrect_count = Column(Integer, nullable=False)
     unattempted_count = Column(Integer, nullable=False)
+    negative_marks = Column(Float, nullable=True)
     topic_wise_analysis = Column(JSON, nullable=True)
     subject_wise_performance = Column(JSON, nullable=True)
     confidence_analysis = Column(JSON, nullable=True)
@@ -206,6 +231,13 @@ class Report(Base):
     forensic_audit_log = Column(JSON, nullable=True) # Detailed calculation evidence
     snapshot_bundle = Column(JSON, nullable=True) # Immutable snapshot of questions/answers
     truth_status = Column(String, default="UNVERIFIED") # VERIFIED, FAILED, UNVERIFIED
+    
+    # Versioning for Immutable Institutional Artifacts
+    report_version = Column(String, default="1.0.0", nullable=False)
+    rendering_version = Column(String, default="1.0.0", nullable=False)
+    evaluation_version = Column(String, default="1.0.0", nullable=False)
+    telemetry_version = Column(String, default="1.0.0", nullable=False)
+    
     generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
 
     attempt = relationship("Attempt", back_populates="report")
@@ -220,7 +252,7 @@ class StudentEvolution(Base):
 
     user = relationship("User")
 
-class CognitiveSnapshot(Base):
+class CognitiveSnapshot(Base, InstitutionalAuditMixin, SoftDeleteMixin):
     __tablename__ = "cognitive_snapshots"
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
@@ -234,7 +266,7 @@ class CognitiveSnapshot(Base):
     user = relationship("User")
     attempt = relationship("Attempt")
 
-class LearningIntervention(Base):
+class LearningIntervention(Base, InstitutionalAuditMixin, SoftDeleteMixin):
     __tablename__ = "learning_interventions"
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
@@ -248,12 +280,6 @@ class LearningIntervention(Base):
     approval_status = Column(String, default="AUTO_APPROVED", nullable=False) # AUTO_APPROVED, PENDING_REVIEW, APPROVED, REJECTED
     acceptance_metadata = Column(JSON, nullable=True)
     outcome_metadata = Column(JSON, nullable=True)
-    reliability_snapshot = Column(JSON, nullable=True)
-    metric_version = Column(String, nullable=False)
-    generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
-    updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
-
-    user = relationship("User")
 
 class EducationalReview(Base):
     __tablename__ = "educational_reviews"
@@ -379,6 +405,33 @@ class ExecutionTrace(Base):
     user = relationship("User")
     attempt = relationship("Attempt")
 
+class RevisionQueue(Base, InstitutionalAuditMixin, SoftDeleteMixin):
+    __tablename__ = "revision_queues"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    topic_id = Column(Integer, ForeignKey("topics.id"), nullable=False)
+    question_id = Column(Integer, ForeignKey("questions.id"), nullable=True) # If specific question needs revision
+    
+    priority_score = Column(Float, default=0.0) # Calculated based on weakness/forgetting
+    reason = Column(String) # WEAK_TOPIC, INCORRECT_ANSWER, MARKED_FOR_REVIEW, SPACED_REPETITION
+    category = Column(String, default="MISTAKE") # MISTAKE, FORGOTTEN, WEAKNESS, AVOIDED
+    
+    # Memory Reinforcement Metrics
+    forgetting_count = Column(Integer, default=0) # Number of times forgotten after revision
+    decay_rate = Column(Float, default=1.0) # Speed of retention loss
+    is_overconfident = Column(Boolean, default=False) # Marked as easy but missed later
+    retention_history = Column(JSON, nullable=True) # List of mastery snapshots
+
+    
+    next_review_at = Column(DateTime, nullable=False)
+    last_reviewed_at = Column(DateTime, nullable=True)
+    review_count = Column(Integer, default=0)
+    mastery_level = Column(Float, default=0.0) # 0.0 to 1.0
+
+    user = relationship("User")
+    topic = relationship("Topic")
+    question = relationship("Question")
+
 class OperationalMetric(Base):
     """
     Priority 1 & 5: Real Student Validation & Accuracy Monitoring.
@@ -402,3 +455,17 @@ class SystemEvent(Base):
     description = Column(String)
     actor = Column(String)
     timestamp = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+class JobExecutionRegistry(Base):
+    __tablename__ = "job_execution_registry"
+    id = Column(Integer, primary_key=True, index=True)
+    job_name = Column(String, nullable=False, index=True)
+    job_type = Column(String, nullable=False, index=True) # e.g., REPORT_GENERATION, TELEMETRY_AGGREGATION
+    reference_id = Column(String, nullable=True, index=True) # e.g., attempt_id or other entity id
+    status = Column(String, nullable=False, default="STARTED", index=True) # STARTED, COMPLETED, FAILED, DEGRADED
+    started_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
+    completed_at = Column(DateTime, nullable=True)
+    duration_ms = Column(Integer, nullable=True)
+    retries = Column(Integer, default=0, nullable=False)
+    error_payload = Column(JSON, nullable=True)
+    metadata_payload = Column(JSON, nullable=True) # e.g., degraded fallbacks used
