@@ -97,6 +97,7 @@ class Topic(Base):
     questions = relationship("Question", back_populates="topic")
 
 class Test(Base):
+    __test__ = False
     __tablename__ = "tests"
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, nullable=False)
@@ -280,6 +281,9 @@ class LearningIntervention(Base, InstitutionalAuditMixin, SoftDeleteMixin):
     approval_status = Column(String, default="AUTO_APPROVED", nullable=False) # AUTO_APPROVED, PENDING_REVIEW, APPROVED, REJECTED
     acceptance_metadata = Column(JSON, nullable=True)
     outcome_metadata = Column(JSON, nullable=True)
+    reliability_snapshot = Column(JSON, nullable=True)
+    metric_version = Column(String, default="intervention-tracking.v1", nullable=True)
+    generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=True)
 
 class EducationalReview(Base):
     __tablename__ = "educational_reviews"

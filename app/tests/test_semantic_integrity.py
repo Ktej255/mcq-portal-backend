@@ -1,16 +1,17 @@
 from datetime import datetime, timezone, timedelta
 
 import pytest
+from fastapi import HTTPException
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from app.db.session import Base
-from app.models.domain import Subject, Topic, Test, Question, User, RoleEnum, AttemptAnswer, ExamEvent
+from app.models.domain import Subject, Topic, Test, Question, User, RoleEnum, AttemptAnswer, ExamEvent, WorkflowStatusEnum
 from app.schemas.test_engine import SaveAnswerRequest, ExamEventRequest, EventBatchRequest
 from app.services.domain_contracts import normalize_option_id, normalize_confidence, detect_analytics_anomalies
 from app.services.report_service import generate_report
-from app.services.test_engine_service import start_attempt, save_answer
+from app.services.test_engine_service import start_attempt, save_answer, get_attempt_questions
 from app.schemas.test_engine import StartAttemptRequest
 
 
@@ -89,6 +90,34 @@ def test_score_correctness_uses_canonical_option_keys(db):
     assert report.incorrect_count == 1
     assert report.accuracy == 50
     assert report.subject_wise_performance["Physics"]["total"] == 2
+
+
+def test_start_attempt_rejects_empty_active_test(db):
+    user = User(google_uid="uid-empty", email="empty@example.com", role=RoleEnum.STUDENT)
+    subject = Subject(name="Empty Subject")
+    db.add_all([user, subject])
+    db.commit()
+
+    test = Test(title="Empty Test", subject_id=subject.id, duration_minutes=30)
+    db.add(test)
+    db.commit()
+
+    with pytest.raises(HTTPException) as exc:
+        start_attempt(db, user.id, StartAttemptRequest(test_id=test.id))
+
+    assert exc.value.status_code == 409
+    assert exc.value.detail["code"] == "TEST_HAS_NO_PUBLISHED_QUESTIONS"
+
+
+def test_attempt_questions_only_include_published_live_questions(db):
+    user, test, q1, q2 = seed_exam(db)
+    q2.status = WorkflowStatusEnum.DRAFT
+    db.commit()
+
+    attempt = start_attempt(db, user.id, StartAttemptRequest(test_id=test.id))
+    questions = get_attempt_questions(db, attempt.id, user.id)
+
+    assert [question["id"] for question in questions] == [q1.id]
 
 
 def test_autosave_timing_is_absolute_not_additive(db):

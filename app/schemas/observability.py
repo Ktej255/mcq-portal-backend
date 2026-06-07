@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 from typing import List, Optional, Dict, Any
 
@@ -39,8 +39,7 @@ class JobExecutionSchema(BaseModel):
     error_payload: Optional[Dict[str, Any]] = None
     metadata_payload: Optional[Dict[str, Any]] = None
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 class MetricSchema(BaseModel):
     id: int
@@ -49,8 +48,7 @@ class MetricSchema(BaseModel):
     metadata_json: Optional[Dict[str, Any]] = None
     timestamp: datetime
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 class JobListResponse(BaseModel):
     jobs: List[JobExecutionSchema]

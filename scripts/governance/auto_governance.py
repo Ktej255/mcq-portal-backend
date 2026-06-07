@@ -61,7 +61,7 @@ def update_system_state(files, blast_radius="Calculating...", risk="LOW"):
     
     timestamp = datetime.now().isoformat()
     justification = os.environ.get("MUTATION_JUSTIFICATION", "N/A (Standard Edit)")
-    agent_id = os.environ.get("AGENT_ID", "Antigravity-G2")
+    agent_id = os.environ.get("AGENT_ID", "Governance-G2")
     
     entry = f"\n### Mutation: {timestamp}\n"
     entry += f"- **Agent**: {agent_id}\n"

@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, ConfigDict, EmailStr
 from typing import Optional
 
 class UserCreate(BaseModel):
@@ -15,8 +15,7 @@ class UserResponse(BaseModel):
     profile_picture: Optional[str]
     role: str
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 class FirebaseTokenAuth(BaseModel):
     id_token: str

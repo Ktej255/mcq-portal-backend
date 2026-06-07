@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from datetime import datetime, timezone
-from typing import List, Dict, Any, Optional
+from typing import Any, Optional
 from app.models.domain import Attempt, AttemptStatusEnum, AttemptAnswer, Question, Report, Topic, Subject, ConfidenceEnum, ExamEvent
 from app.services.narrative_service import generate_performance_narrative
 from app.services.longitudinal_service import update_student_evolution
@@ -102,6 +102,8 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
     Handles heavy cognitive analysis, AI narratives, and mastery updates.
     Run in background tasks with GRACEFUL DEGRADATION.
     """
+    import os
+    import time
     from app.db.session import SessionLocal
     from app.services.cognitive_engine import cognitive_engine
     from app.services.narrative_evaluator import narrative_evaluator
@@ -113,6 +115,10 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
     db = SessionLocal()
     report = None
     try:
+        validation_delay = float(os.getenv("REPORT_PIPELINE_DELAY_SECONDS", "0") or 0)
+        if validation_delay > 0:
+            time.sleep(validation_delay)
+
         with trace_execution(db=db, module="report_service", function="run_async_cognitive_pipeline") as trace:
             report = db.query(Report).filter(Report.attempt_id == attempt_id).first()
             if not report: return
@@ -219,7 +225,7 @@ def run_async_cognitive_pipeline(attempt_id: int, user_id: int):
             report.processing_status = "FAILED"
             db.commit()
 
-def verify_report_integrity(report: Report, questions: List[Question], answers: List[AttemptAnswer]) -> bool:
+def verify_report_integrity(report: Report, questions: list[Question], answers: list[AttemptAnswer]) -> bool:
     """
     Priority 1: Report Truth Validation Layer.
     Cross-checks all report math against raw data using the ScoringEngine.

@@ -1,14 +1,33 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from datetime import datetime, timezone
-from app.models.domain import Test, Attempt, AttemptStatusEnum, Question, AttemptAnswer, Topic, Subject, Report
+from app.models.domain import Test, Attempt, AttemptStatusEnum, Question, AttemptAnswer, Topic, Subject, Report, WorkflowStatusEnum
 from app.schemas.test_engine import StartAttemptRequest, SaveAnswerRequest
 from app.services.domain_contracts import normalize_option_id
+
+def published_question_query(db: Session, test_id: int):
+    return db.query(Question).filter(
+        Question.test_id == test_id,
+        Question.is_deleted == False,
+        Question.status == WorkflowStatusEnum.PUBLISHED,
+    )
+
+def count_published_questions(db: Session, test_id: int) -> int:
+    return published_question_query(db, test_id).count()
 
 def start_attempt(db: Session, user_id: int, request: StartAttemptRequest) -> Attempt:
     test = db.query(Test).filter(Test.id == request.test_id, Test.is_active == True).first()
     if not test:
         raise HTTPException(status_code=404, detail="Test not found or inactive")
+
+    if count_published_questions(db, request.test_id) == 0:
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "code": "TEST_HAS_NO_PUBLISHED_QUESTIONS",
+                "message": "This test has no published questions yet.",
+            },
+        )
     
     # Check if an in-progress attempt already exists
     existing_attempt = db.query(Attempt).filter(
@@ -38,8 +57,21 @@ def get_attempt_questions(db: Session, attempt_id: int, user_id: int):
     questions = db.query(Question, Topic.name.label("topic_name"), Subject.id.label("subject_id"), Subject.name.label("subject_name"))\
         .join(Topic, Question.topic_id == Topic.id)\
         .join(Subject, Topic.subject_id == Subject.id)\
-        .filter(Question.test_id == attempt.test_id)\
+        .filter(
+            Question.test_id == attempt.test_id,
+            Question.is_deleted == False,
+            Question.status == WorkflowStatusEnum.PUBLISHED,
+        )\
         .order_by(Question.question_number.asc()).all()
+
+    if not questions:
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "code": "ATTEMPT_HAS_NO_PUBLISHED_QUESTIONS",
+                "message": "This attempt's test has no published questions available.",
+            },
+        )
         
     result = []
     for idx, (q, topic_name, subject_id, subject_name) in enumerate(questions):
@@ -75,6 +107,11 @@ def save_answer(db: Session, attempt_id: int, user_id: int, request: SaveAnswerR
     ).first()
     
     if answer:
+        if selected_option is None and request.is_skipped and not request.clear_response:
+            answer.time_taken_seconds = request.time_taken_seconds
+            answer.marked_for_review = request.marked_for_review
+            db.commit()
+            return True
         if answer.selected_option != selected_option:
             answer.is_changed = True
         answer.selected_option = selected_option
@@ -83,6 +120,8 @@ def save_answer(db: Session, attempt_id: int, user_id: int, request: SaveAnswerR
         answer.is_skipped = request.is_skipped
         answer.marked_for_review = request.marked_for_review
     else:
+        if selected_option is None and request.is_skipped and not request.clear_response:
+            return True
         answer = AttemptAnswer(
             attempt_id=attempt_id,
             question_id=request.question_id,

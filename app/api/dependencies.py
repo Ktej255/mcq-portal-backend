@@ -49,7 +49,7 @@ def get_current_user(db: Session = Depends(get_db), auth: Optional[HTTPAuthoriza
             if not user:
                 user = User(
                     google_uid="dev-validator-id",
-                    email="validator@antigravity.os",
+                    email="validator@upsc.local",
                     full_name="Institutional Validator",
                     role=RoleEnum.ADMIN
                 )

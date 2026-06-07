@@ -1,5 +1,5 @@
 from typing import Optional, List, Dict, Any
-from pydantic import BaseModel, Field, root_validator, validator
+from pydantic import BaseModel, ConfigDict, Field, ValidationInfo, field_validator
 from app.services.domain_contracts import normalize_option_id
 
 # Subject Schemas
@@ -13,8 +13,7 @@ class SubjectOut(BaseModel):
     id: int
     name: str
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 # Topic Schemas
 class TopicCreate(BaseModel):
@@ -30,8 +29,7 @@ class TopicOut(BaseModel):
     name: str
     subject_id: int
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 # Question Schemas
 class QuestionCreate(BaseModel):
@@ -51,14 +49,17 @@ class QuestionCreate(BaseModel):
     difficulty: str = Field(default="MEDIUM", description="E.g., EASY, MEDIUM, HARD")
     question_number: Optional[int] = None
 
-    @validator("correct_option")
-    def validate_correct_option(cls, v, values):
+    @field_validator("correct_option")
+    @classmethod
+    def validate_correct_option(cls, v, info: ValidationInfo):
         v = normalize_option_id(v)
-        if "options_en" in values and v not in values["options_en"]:
+        options_en = info.data.get("options_en", {})
+        if options_en and v not in options_en:
             raise ValueError(f"Correct option {v} must be one of the keys in options_en")
         return v
 
-    @validator("options_en")
+    @field_validator("options_en")
+    @classmethod
     def validate_options(cls, v):
         if len(v) < 2:
             raise ValueError("At least 2 options are required")
@@ -117,8 +118,7 @@ class QuestionOut(BaseModel):
     created_by: Optional[str] = None
     updated_by: Optional[str] = None
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 class BulkQuestionCreate(BaseModel):
     questions: List[QuestionCreate]
@@ -129,8 +129,8 @@ class TestCreate(BaseModel):
     description: Optional[str] = None
     subject_id: int
     duration_minutes: int = Field(default=60, gt=0)
-    correct_marks: float = Field(default=1.0, gt=0)
-    negative_marking_value: float = Field(default=0.33, ge=0)
+    correct_marks: float = Field(default=2.0, gt=0)
+    negative_marking_value: float = Field(default=0.66, ge=0)
     is_active: bool = True
 
 class TestUpdate(BaseModel):
@@ -152,5 +152,4 @@ class TestOut(BaseModel):
     negative_marking_value: float
     is_active: bool
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)

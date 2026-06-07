@@ -2,9 +2,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List, Any
 from app.db.session import get_db
-from app.models.domain import Test, Question, Topic, Subject, User, Attempt
+from app.models.domain import Test, Question, Topic, Subject, User, Attempt, WorkflowStatusEnum
 from app.api.dependencies import get_current_user
 from app.schemas.common import StandardResponse
+from app.services.test_engine_service import count_published_questions
 
 router = APIRouter()
 
@@ -26,7 +27,7 @@ def get_available_tests(db: Session = Depends(get_db), current_user: User = Depe
         attempt_count = len(attempts)
         last_attempt = attempts[-1] if attempts else None
         
-        total_questions = db.query(Question).filter(Question.test_id == test.id).count()
+        total_questions = count_published_questions(db, test.id)
         
         result.append({
             "id": str(test.id),
@@ -34,6 +35,7 @@ def get_available_tests(db: Session = Depends(get_db), current_user: User = Depe
             "description": test.description,
             "durationMinutes": test.duration_minutes,
             "totalQuestions": total_questions,
+            "canStart": total_questions > 0,
             "subject": test.subject.name if test.subject else "General",
             "attemptCount": attempt_count,
             "lastAttemptStatus": last_attempt.status if last_attempt else None,
@@ -47,8 +49,12 @@ def get_test(test_id: int, db: Session = Depends(get_db), current_user: User = D
     if not test:
         raise HTTPException(status_code=404, detail="Test not found")
     
-    subjects = db.query(Subject.name).join(Topic).join(Question).filter(Question.test_id == test.id).distinct().all()
-    total_questions = db.query(Question).filter(Question.test_id == test.id).count()
+    subjects = db.query(Subject.name).join(Topic).join(Question).filter(
+        Question.test_id == test.id,
+        Question.is_deleted == False,
+        Question.status == WorkflowStatusEnum.PUBLISHED,
+    ).distinct().all()
+    total_questions = count_published_questions(db, test.id)
     
     data = {
         "id": str(test.id),
@@ -56,6 +62,7 @@ def get_test(test_id: int, db: Session = Depends(get_db), current_user: User = D
         "description": test.description,
         "durationMinutes": test.duration_minutes,
         "totalQuestions": total_questions,
+        "canStart": total_questions > 0,
         "subjects": [s[0] for s in subjects]
     }
     return StandardResponse(success=True, message="Test retrieved successfully", data=data)
@@ -65,7 +72,11 @@ def get_test_questions(test_id: int, db: Session = Depends(get_db), current_user
     questions = db.query(Question, Topic.name.label("topic_name"), Subject.name.label("subject_name"))\
         .join(Topic, Question.topic_id == Topic.id)\
         .join(Subject, Topic.subject_id == Subject.id)\
-        .filter(Question.test_id == test_id)\
+        .filter(
+            Question.test_id == test_id,
+            Question.is_deleted == False,
+            Question.status == WorkflowStatusEnum.PUBLISHED,
+        )\
         .order_by(Question.question_number.asc()).all()
         
     result = []

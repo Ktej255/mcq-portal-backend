@@ -84,10 +84,10 @@ def main():
     
     # Create or get users
     personas = [
-        {"name": "Panic Student", "accuracy": 0.3, "time": 8, "email": "panic@antigravity.dev"},
-        {"name": "Slow Serious Student", "accuracy": 0.6, "time": 150, "email": "slow@antigravity.dev"},
-        {"name": "Fragile Topper", "accuracy": 0.85, "time": 45, "email": "topper@antigravity.dev"},
-        {"name": "Recovery Student", "accuracy": 0.4, "time": 60, "email": "recovery@antigravity.dev"}
+        {"name": "Panic Student", "accuracy": 0.3, "time": 8, "email": "panic@upsc.local"},
+        {"name": "Slow Serious Student", "accuracy": 0.6, "time": 150, "email": "slow@upsc.local"},
+        {"name": "Fragile Topper", "accuracy": 0.85, "time": 45, "email": "topper@upsc.local"},
+        {"name": "Recovery Student", "accuracy": 0.4, "time": 60, "email": "recovery@upsc.local"}
     ]
     
     for p in personas:
@@ -101,7 +101,7 @@ def main():
         create_persona_attempt(db, user.id, test_id, p["name"], p["accuracy"], p["time"])
     
     # Simulate 2nd attempt for Recovery Student
-    recovery_user = db.query(User).filter(User.email == "recovery@antigravity.dev").first()
+    recovery_user = db.query(User).filter(User.email == "recovery@upsc.local").first()
     if recovery_user:
         create_persona_attempt(db, recovery_user.id, test_id, "Recovery Student (Attempt 2)", 0.85, 45)
 

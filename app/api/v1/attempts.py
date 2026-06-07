@@ -11,7 +11,7 @@ from app.schemas.test_engine import (
     EventBatchRequest
 )
 from app.schemas.common import StandardResponse
-from app.services.test_engine_service import start_attempt, get_attempt_questions, save_answer
+from app.services.test_engine_service import start_attempt, get_attempt_questions, save_answer, count_published_questions
 from app.services.report_service import generate_report
 from app.services.event_auditor import event_auditor
 from app.services.domain_contracts import CanonicalExamEvent
@@ -64,6 +64,7 @@ def start_test_attempt(
 ):
     attempt = start_attempt(db, current_user.id, request)
     test = attempt.test
+    total_questions = count_published_questions(db, test.id)
     return StandardResponse(success=True, message="Attempt started successfully", data={
         "attempt_id": attempt.id,
         "test": {
@@ -73,7 +74,7 @@ def start_test_attempt(
             "duration_minutes": test.duration_minutes,
             "correct_marks": test.correct_marks,
             "negative_marking_value": test.negative_marking_value,
-            "total_questions": len(test.questions) if test.questions else None,
+            "total_questions": total_questions,
         },
         "start_time": attempt.start_time,
         "status": attempt.status

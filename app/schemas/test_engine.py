@@ -1,4 +1,4 @@
-from pydantic import BaseModel, field_validator, model_validator
+from pydantic import BaseModel, ConfigDict, field_validator, model_validator
 from typing import List, Optional, Any, Dict
 from datetime import datetime
 from app.models.domain import ConfidenceEnum, AttemptStatusEnum
@@ -12,6 +12,8 @@ from app.services.domain_contracts import (
 
 # Schemas for Test Metadata
 class TestMetadataResponse(BaseModel):
+    __test__ = False
+
     id: int
     title: str
     description: Optional[str]
@@ -20,8 +22,7 @@ class TestMetadataResponse(BaseModel):
     negative_marking_value: float
     total_questions: Optional[int] = None
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # Schemas for Test Start
 class StartAttemptRequest(BaseModel):
@@ -48,8 +49,7 @@ class QuestionResponse(BaseModel):
     difficulty: str
     question_number: Optional[int] = None
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # Schemas for Saving Answers
 class SaveAnswerRequest(BaseModel):
@@ -59,6 +59,7 @@ class SaveAnswerRequest(BaseModel):
     confidence_level: Optional[ConfidenceEnum] = None
     is_skipped: bool = False
     marked_for_review: bool = False
+    clear_response: bool = False
 
     @field_validator("selected_option")
     @classmethod
@@ -100,8 +101,7 @@ class ReportResponse(BaseModel):
     processing_status: str = "COMPLETED"
     generated_at: datetime
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 class HistoryItemResponse(BaseModel):
     attemptId: str
@@ -112,8 +112,7 @@ class HistoryItemResponse(BaseModel):
     maxScore: float
     accuracy: str
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 # Schemas for Behavioral Events
 class ExamEventRequest(BaseModel):
     event_type: str

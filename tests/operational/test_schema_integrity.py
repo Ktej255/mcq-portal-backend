@@ -3,6 +3,8 @@ import json
 import os
 from app.schemas.test_engine import ReportResponse
 
+TEST_DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
+
 class TestSchemaIntegrity(unittest.TestCase):
     """
     PROTECTION SUITE: Ensures API schemas remain backwards-compatible.
@@ -10,11 +12,11 @@ class TestSchemaIntegrity(unittest.TestCase):
     """
     
     def setUp(self):
-        self.baseline_report_path = os.path.join("backend", "tests", "data", "baseline_report.json")
+        self.baseline_report_path = os.path.join(TEST_DATA_DIR, "baseline_report.json")
         with open(self.baseline_report_path, "r") as f:
             self.baseline_report = json.load(f)
             
-        self.baseline_start_path = os.path.join("backend", "tests", "data", "baseline_start_attempt.json")
+        self.baseline_start_path = os.path.join(TEST_DATA_DIR, "baseline_start_attempt.json")
         with open(self.baseline_start_path, "r") as f:
             self.baseline_start = json.load(f)
 

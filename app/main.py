@@ -7,6 +7,12 @@ import time
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+from app.core.firebase import init_firebase
+from app.core.config import settings
+
+# Initialize Firebase Admin
+init_firebase()
+
 app = FastAPI(
     title="MCQ Intelligence Portal",
     description="Institutional MCQ OS for high-stakes examinations.",
@@ -14,9 +20,13 @@ app = FastAPI(
 )
 
 # Configure CORS
+cors_origins = settings.BACKEND_CORS_ORIGINS
+if isinstance(cors_origins, str):
+    cors_origins = ["*"] if cors_origins == "*" else [origin.strip() for origin in cors_origins.split(",") if origin.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify actual domains
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

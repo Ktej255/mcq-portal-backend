@@ -1,5 +1,5 @@
-from pydantic_settings import BaseSettings
-from pydantic import validator, AnyHttpUrl
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import field_validator
 from typing import Optional, List, Union, Any, ClassVar
 
 class Settings(BaseSettings):
@@ -8,8 +8,9 @@ class Settings(BaseSettings):
     # DB Configuration
     DATABASE_URL: Optional[str] = "postgresql://postgres:password@localhost:5432/mcq_portal"
 
-    @validator("DATABASE_URL", pre=True)
-    def assemble_db_url(cls, v: Optional[str]) -> str:
+    @field_validator("DATABASE_URL", mode="before")
+    @classmethod
+    def assemble_db_url(cls, v: Optional[str]) -> Optional[str]:
         if v is None:
             return v
         if isinstance(v, str):
@@ -22,13 +23,18 @@ class Settings(BaseSettings):
     # CORS Configuration
     DEFAULT_CORS_ORIGINS: ClassVar[List[str]] = [
         "http://localhost:3000",
+        "http://localhost:3001",
+        "http://127.0.0.1:3000",
+        "http://127.0.0.1:3001",
         "http://localhost:8000",
+        "http://127.0.0.1:8000",
         "https://mcq-portal-frontend-yo5i.vercel.app",
         "https://mcq-portal-frontend.vercel.app",
     ]
     BACKEND_CORS_ORIGINS: Any = DEFAULT_CORS_ORIGINS.copy()
 
-    @validator("BACKEND_CORS_ORIGINS", pre=True)
+    @field_validator("BACKEND_CORS_ORIGINS", mode="before")
+    @classmethod
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> Union[str, List[str]]:
         if isinstance(v, str):
             if v.strip() == "*":
@@ -55,9 +61,6 @@ class Settings(BaseSettings):
     ADMIN_EMAILS: List[str] = ["sarit.kumar.dev@gmail.com"] # Add bootstrap admin
     SCHEMA_CHECK_STRICT: bool = False
 
-    class Config:
-        env_file = ".env"
-        case_sensitive = True
-        extra = "ignore"
+    model_config = SettingsConfigDict(env_file=".env", case_sensitive=True, extra="ignore")
 
 settings = Settings()
