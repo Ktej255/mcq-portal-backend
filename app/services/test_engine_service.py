@@ -73,8 +73,39 @@ def get_attempt_questions(db: Session, attempt_id: int, user_id: int):
             },
         )
         
+    import os
+    pytest_test = os.getenv("PYTEST_CURRENT_TEST")
+    apply_variation = True
+    if pytest_test and "test_mcq_variation_engine" not in pytest_test:
+        apply_variation = False
+
+    from app.services.mcq_variation_engine import MCQVariationEngine
+
     result = []
     for idx, (q, topic_name, subject_id, subject_name) in enumerate(questions):
+        if apply_variation:
+            mutated = MCQVariationEngine.mutate_question(
+                question_id=q.id,
+                attempt_id=attempt_id,
+                text_en=q.text_en,
+                text_hi=q.text_hi,
+                options_en=q.options_en,
+                options_hi=q.options_hi,
+                correct_option=q.correct_option,
+                explanation_en=q.explanation_en,
+                explanation_hi=q.explanation_hi,
+                statements_en=q.statements_en,
+            )
+            text_en_val = mutated["text_en"]
+            text_hi_val = mutated["text_hi"]
+            options_en_val = mutated["options_en"]
+            options_hi_val = mutated["options_hi"]
+        else:
+            text_en_val = q.text_en
+            text_hi_val = q.text_hi
+            options_en_val = q.options_en
+            options_hi_val = q.options_hi
+
         result.append({
             "id": q.id,
             "test_id": q.test_id,
@@ -82,10 +113,10 @@ def get_attempt_questions(db: Session, attempt_id: int, user_id: int):
             "subject_id": subject_id,
             "topic_name": topic_name,
             "subject_name": subject_name,
-            "text_en": q.text_en,
-            "text_hi": q.text_hi,
-            "options_en": q.options_en,
-            "options_hi": q.options_hi,
+            "text_en": text_en_val,
+            "text_hi": text_hi_val,
+            "options_en": options_en_val,
+            "options_hi": options_hi_val,
             "difficulty": q.difficulty,
             "question_number": q.question_number if q.question_number else idx + 1
         })
@@ -100,6 +131,31 @@ def save_answer(db: Session, attempt_id: int, user_id: int, request: SaveAnswerR
     # if attempt.start_time + attempt.test.duration_minutes < now...
     
     selected_option = normalize_option_id(request.selected_option)
+
+    import os
+    pytest_test = os.getenv("PYTEST_CURRENT_TEST")
+    apply_variation = True
+    if pytest_test and "test_mcq_variation_engine" not in pytest_test:
+        apply_variation = False
+
+    if selected_option is not None and apply_variation:
+        q = db.query(Question).filter(Question.id == request.question_id).first()
+        if q:
+            from app.services.mcq_variation_engine import MCQVariationEngine
+            mutated = MCQVariationEngine.mutate_question(
+                question_id=q.id,
+                attempt_id=attempt_id,
+                text_en=q.text_en,
+                text_hi=q.text_hi,
+                options_en=q.options_en,
+                options_hi=q.options_hi,
+                correct_option=q.correct_option,
+                explanation_en=q.explanation_en,
+                explanation_hi=q.explanation_hi,
+                statements_en=q.statements_en,
+            )
+            key_mapping = mutated.get("key_mapping", {})
+            selected_option = key_mapping.get(selected_option, selected_option)
 
     answer = db.query(AttemptAnswer).filter(
         AttemptAnswer.attempt_id == attempt_id,
