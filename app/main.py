@@ -33,7 +33,7 @@ app.add_middleware(
 )
 
 # API Routers
-from app.api.v1 import auth, admin, tests, reports, dashboard, revision, attempts, simulation, mains_upload, entitlements
+from app.api.v1 import auth, admin, tests, reports, dashboard, revision, attempts, simulation, mains_upload, entitlements, payments
 
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 app.include_router(admin.router, prefix="/api/v1/admin", tags=["admin"])
@@ -45,6 +45,7 @@ app.include_router(attempts.router, prefix="/api/v1/attempts", tags=["attempts"]
 app.include_router(simulation.router, prefix="/api/v1/simulation", tags=["simulation"])
 app.include_router(mains_upload.router, prefix="/api/v1/mains-upload", tags=["mains-upload"])
 app.include_router(entitlements.router, prefix="/api/v1/entitlements", tags=["entitlements"])
+app.include_router(payments.router, prefix="/api/v1/payments", tags=["payments"])
 
 
 @app.get("/")
