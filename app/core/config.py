@@ -61,6 +61,14 @@ class Settings(BaseSettings):
     ADMIN_EMAILS: List[str] = ["sarit.kumar.dev@gmail.com"] # Add bootstrap admin
     SCHEMA_CHECK_STRICT: bool = False
 
+    # Cashfree Payments (PG). Leave unset to keep payment endpoints disabled (503).
+    CASHFREE_APP_ID: Optional[str] = None
+    CASHFREE_SECRET_KEY: Optional[str] = None
+    CASHFREE_ENV: str = "sandbox"  # "sandbox" | "production"
+    # Public URLs used for redirect + webhook
+    FRONTEND_BASE_URL: str = "http://localhost:3000"
+    BACKEND_BASE_URL: Optional[str] = None  # e.g. https://api.upsccommand.com
+
     model_config = SettingsConfigDict(env_file=".env", case_sensitive=True, extra="ignore")
 
 settings = Settings()
