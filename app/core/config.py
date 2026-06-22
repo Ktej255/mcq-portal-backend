@@ -61,6 +61,14 @@ class Settings(BaseSettings):
     ADMIN_EMAILS: List[str] = ["sarit.kumar.dev@gmail.com"] # Add bootstrap admin
     SCHEMA_CHECK_STRICT: bool = False
 
+    # Security: the `MOCK_TOKEN` auth bypass in `get_current_user` is a
+    # dev/test/e2e affordance ONLY. It is gated behind this flag and defaults to
+    # OFF so it can never be honored in production. Enable it explicitly (e.g.
+    # `ALLOW_MOCK_AUTH=true` in an untracked local `.env` or a CI/e2e env) to run
+    # Playwright/local flows that authenticate via `Bearer MOCK_TOKEN[_<uid>]`.
+    # When off, a `MOCK_TOKEN` is treated as an invalid credential (401).
+    ALLOW_MOCK_AUTH: bool = False
+
     model_config = SettingsConfigDict(env_file=".env", case_sensitive=True, extra="ignore")
 
 settings = Settings()

@@ -7,6 +7,7 @@ from app.models.domain import User, Attempt, AttemptStatusEnum, Report, Test
 from app.api.dependencies import get_current_user
 from app.schemas.common import StandardResponse
 from app.services.recommendation_service import get_personalized_recommendations
+from app.services.student_longitudinal_profile import build_student_longitudinal_profile
 
 router = APIRouter()
 
@@ -49,12 +50,18 @@ def get_dashboard_recommendations(db: Session = Depends(get_db), current_user: U
 
 @router.get("/evolution")
 def get_dashboard_evolution(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)) -> Any:
+    """Learning-evolution signals computed from the student's own attempt history.
+
+    Delegates to the real longitudinal profile (derived from submitted reports);
+    a student with no history honestly gets zeroed slopes/stability rather than
+    fabricated numbers.
     """
-    Simulated learning evolution data.
-    """
+    profile = build_student_longitudinal_profile(db, current_user.id)
     return StandardResponse(success=True, message="Evolution retrieved", data={
-        "learning_velocity": {"accuracy_slope": 0.12},
-        "behavioral_stability": {"consistency_score": 0.85}
+        "attempt_count": profile["attempt_count"],
+        "learning_velocity": profile["learning_velocity"],
+        "behavioral_stability": profile["behavioral_stability"],
+        "longitudinal_reliability": profile["longitudinal_reliability"],
     })
 
 @router.get("/export-journey")
@@ -62,13 +69,33 @@ async def export_journey(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user)
 ):
+    """Compile the student's real journey data for export (student sovereignty).
+
+    ``total_attempts`` and ``mastery_trend`` are computed from the student's own
+    submitted attempts/reports — never fabricated. With fewer than two attempts
+    the trend is honestly reported as ``INSUFFICIENT_DATA``.
     """
-    Priority 9: Data Export for Student Sovereignty.
-    """
+    total_attempts = (
+        db.query(Attempt)
+        .filter(Attempt.user_id == current_user.id, Attempt.status == AttemptStatusEnum.SUBMITTED)
+        .count()
+    )
+
+    if total_attempts < 2:
+        mastery_trend = "INSUFFICIENT_DATA"
+    else:
+        slope = build_student_longitudinal_profile(db, current_user.id)["learning_velocity"]["accuracy_slope"]
+        if slope > 0.5:
+            mastery_trend = "UPWARD"
+        elif slope < -0.5:
+            mastery_trend = "DOWNWARD"
+        else:
+            mastery_trend = "STABLE"
+
     return StandardResponse(success=True, message="Journey data compiled", data={
         "user_id": current_user.id,
-        "total_attempts": 42,
-        "mastery_trend": "UPWARD",
+        "total_attempts": total_attempts,
+        "mastery_trend": mastery_trend,
         "export_ready": True
     })
 

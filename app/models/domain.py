@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey, Float, Enum, JSON
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey, Float, Enum, JSON, UniqueConstraint
 from sqlalchemy.orm import relationship
 import enum
 from app.db.session import Base
@@ -473,3 +473,54 @@ class JobExecutionRegistry(Base):
     retries = Column(Integer, default=0, nullable=False)
     error_payload = Column(JSON, nullable=True)
     metadata_payload = Column(JSON, nullable=True) # e.g., degraded fallbacks used
+
+
+class StudentProfile(Base):
+    """Canonical per-student self-study profile + onboarding state.
+
+    Master Plan A3 / GATE-4: the single backend source of truth for the
+    student's profile (mirrors the frontend ``StudentProfile`` JSON), so the
+    student app persists on the same FastAPI/Postgres backend as the Optional
+    platform instead of localStorage/Supabase. One row per user; the whole
+    profile is stored as JSON so the shape can evolve without a migration.
+    """
+    __tablename__ = "student_profiles"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), unique=True, nullable=False, index=True)
+    profile = Column(JSON, nullable=False, default=dict)
+    updated_at = Column(
+        DateTime,
+        default=lambda: datetime.now(timezone.utc),
+        onupdate=lambda: datetime.now(timezone.utc),
+        nullable=False,
+    )
+
+    user = relationship("User")
+
+
+class StudentSubjectProgress(Base):
+    """Canonical per-student, per-subject GS progress (Master Plan A3 / GATE-4).
+
+    Backend source of truth for the student's progress within a GS subject
+    (mirrors the frontend per-subject progress map; stored as JSON so the shape
+    can evolve). One row per ``(user_id, subject_slug)`` — replaces the
+    Supabase/localStorage-only ``upsc_subject_progress`` path.
+    """
+    __tablename__ = "student_subject_progress"
+    __table_args__ = (
+        UniqueConstraint("user_id", "subject_slug", name="uq_student_subject_progress_user_subject"),
+    )
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+    subject_slug = Column(String, nullable=False, index=True)
+    progress = Column(JSON, nullable=False, default=dict)
+    updated_at = Column(
+        DateTime,
+        default=lambda: datetime.now(timezone.utc),
+        onupdate=lambda: datetime.now(timezone.utc),
+        nullable=False,
+    )
+
+    user = relationship("User")

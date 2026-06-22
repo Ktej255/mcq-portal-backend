@@ -167,22 +167,65 @@ async def get_recovery_path(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user)
 ):
-    """
-    Priority 4: Concept Recovery System.
-    Identifies foundational prerequisite paths for weak topics.
+    """Concept recovery: the student's REAL recorded weak points in this topic.
+
+    Built from the student's own ``RevisionQueue`` items for the topic (the
+    questions/reasons actually flagged for them) — never fabricated generic
+    prerequisites. When nothing is recorded yet, returns an honest empty path so
+    the UI can say so rather than inventing steps.
     """
     topic = db.query(Topic).filter(Topic.id == topic_id).first()
     if not topic:
         raise HTTPException(status_code=404, detail="Topic not found")
-        
+
+    items = (
+        db.query(RevisionQueue)
+        .filter(
+            RevisionQueue.user_id == current_user.id,
+            RevisionQueue.topic_id == topic_id,
+        )
+        .order_by(RevisionQueue.priority_score.desc())
+        .limit(5)
+        .all()
+    )
+
+    reason_titles = {
+        "WEAK_TOPIC": "Weak topic — rebuild the fundamentals",
+        "INCORRECT_ANSWER": "Mistake to re-attempt",
+        "MARKED_FOR_REVIEW": "Flagged for review",
+        "SPACED_REPETITION": "Due for spaced recall",
+    }
+
+    def _priority(mastery: float) -> str:
+        if mastery < 0.34:
+            return "CRITICAL"
+        if mastery < 0.67:
+            return "HIGH"
+        return "MEDIUM"
+
+    steps = [
+        {
+            "title": reason_titles.get(item.reason or "", item.reason) or f"Revise {topic.name}",
+            "priority": _priority(item.mastery_level or 0.0),
+        }
+        for item in items
+    ]
+
+    if steps:
+        message = (
+            f"{len(steps)} recorded weak point(s) in {topic.name}. "
+            "Clear these from your revision queue to recover the topic."
+        )
+    else:
+        message = (
+            f"No recorded weaknesses in {topic.name} yet. Attempt or revise it "
+            "and your recovery path will build from your real results."
+        )
+
     return {
         "primary_topic": topic.name,
-        "suggested_prerequisites": [
-            {"title": f"Foundational {topic.name} Mechanics", "priority": "CRITICAL"},
-            {"title": "Historical Context & Frameworks", "priority": "HIGH"},
-            {"title": "Current Affairs Linkages", "priority": "MEDIUM"}
-        ],
-        "message": f"Structural weakness detected in {topic.name}. Focus on foundational mechanics first."
+        "suggested_prerequisites": steps,
+        "message": message,
     }
 
 @router.get("/history", response_model=List[dict])

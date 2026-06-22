@@ -21,6 +21,26 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from app.models.domain import Base
 from app.core.config import settings
+
+# Import GS LMS models so autogenerate can detect them
+from app.core.gs_lms.models import (  # noqa: F401
+    GsLmsSyllabusNode,
+    GsLmsContentSection,
+    GsLmsPyq,
+    GsLmsMcqQuestion,
+)
+from app.core.gs_lms.student_models import (  # noqa: F401
+    GsLmsStudentSectionProgress,
+    GsLmsDiscussionSession,
+    GsLmsDiscussionTurn,
+    GsLmsPracticeSession,
+    GsLmsPracticeAttempt,
+    GsLmsGapSnapshot,
+    GsLmsDailyPlan,
+    GsLmsReplanEvent,
+    GsLmsOnboardingStatus,
+)
+
 target_metadata = Base.metadata
 
 # other values from the config, defined by the needs of env.py,

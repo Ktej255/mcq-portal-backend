@@ -34,6 +34,9 @@ app.add_middleware(
 
 # API Routers
 from app.api.v1 import auth, admin, tests, reports, dashboard, revision, attempts, simulation, mains_upload
+from app.api.v1 import optional
+from app.api.v1 import gs_lms
+from app.api.v1 import profile
 
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 app.include_router(admin.router, prefix="/api/v1/admin", tags=["admin"])
@@ -44,6 +47,9 @@ app.include_router(revision.router, prefix="/api/v1/revision", tags=["revision"]
 app.include_router(attempts.router, prefix="/api/v1/attempts", tags=["attempts"])
 app.include_router(simulation.router, prefix="/api/v1/simulation", tags=["simulation"])
 app.include_router(mains_upload.router, prefix="/api/v1/mains-upload", tags=["mains-upload"])
+app.include_router(optional.router, prefix="/api/v1/optional", tags=["optional"])
+app.include_router(gs_lms.router, prefix="/api/v1/gs-lms", tags=["gs-lms"])
+app.include_router(profile.router, prefix="/api/v1/student", tags=["student-profile"])
 
 
 @app.get("/")

@@ -1,0 +1,527 @@
+{
+  "subject_id": 1,
+  "tree": [
+    {
+      "title": "Geomorphology",
+      "node_type": "MEGA_TOPIC",
+      "weight": 5.0,
+      "display_order": 1,
+      "ordering_justification": "Foundation of physical geography — landforms and tectonic processes underpin all other geographic phenomena",
+      "children": [
+        {
+          "title": "Plate Tectonics and Earth's Interior",
+          "node_type": "SUB_TOPIC",
+          "weight": 2.5,
+          "display_order": 1,
+          "ordering_justification": "Tectonic processes drive landform creation and must be understood first",
+          "children": [
+            {
+              "title": "Plate Tectonics and Continental Drift",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.5,
+              "display_order": 1,
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Fundamentals of Plate Tectonics",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "The theory of plate tectonics explains the large-scale motion of Earth's lithosphere. The lithosphere is divided into several tectonic plates that float on the semi-fluid asthenosphere beneath them."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Alfred Wegener proposed the Continental Drift theory in 1912, suggesting that continents were once joined as a supercontinent called Pangaea. Evidence included the jigsaw fit of continents, fossil distribution (Mesosaurus, Glossopteris), matching rock sequences, and paleoclimatic evidence."
+                    },
+                    {
+                      "type": "para",
+                      "text": "There are three types of plate boundaries: divergent (plates move apart, e.g., Mid-Atlantic Ridge), convergent (plates move together, e.g., Himalayas), and transform (plates slide past each other, e.g., San Andreas Fault)."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "Plate Boundary Dynamics and Mechanisms",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Driving mechanisms of plate motion include mantle convection currents, ridge push (gravitational sliding at mid-ocean ridges), and slab pull (subducting plate pulling the rest). Slab pull is considered the dominant force."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Convergent boundaries produce different results depending on plate types: oceanic-oceanic convergence creates island arcs (Japan, Philippines), oceanic-continental creates volcanic mountain ranges (Andes), and continental-continental creates fold mountains (Himalayas)."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Wilson Cycle describes the cyclical opening and closing of ocean basins over geological time. Hot spots like Hawaii provide evidence of plate motion over stationary mantle plumes, creating age-progressive volcanic chains."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "NCERT Alignment — Class XI Fundamentals of Physical Geography",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class XI Chapter 4 covers the interior of the Earth and plate tectonics. Key concepts tested: seismic waves (P-waves, S-waves, surface waves), discontinuities (Mohorovicic, Gutenberg, Lehmann), and Earth's layered structure (crust, mantle, core)."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The NCERT specifically mentions evidence for continental drift: matching coastlines of South America and Africa, Glossopteris flora in multiple continents, Carboniferous glaciation patterns, and distribution of identical rock formations across continents."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Common Exam Misconceptions — Plate Tectonics",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Trap 1: Confusing Continental Drift (Wegener, 1912) with Plate Tectonics (1960s). Continental Drift lacked a mechanism; Plate Tectonics provided one via seafloor spreading and mantle convection."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Trap 2: Assuming all volcanic activity occurs at plate boundaries. Intraplate volcanism (hot spots like Hawaii, Yellowstone) occurs away from boundaries due to mantle plumes."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Trap 3: UPSC often tests whether the Himalayas are still rising. They are — the Indo-Australian plate continues to converge with the Eurasian plate at ~5 cm/year, making the Himalayas tectonically active."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [
+                {
+                  "exam_type": "PRELIMS",
+                  "year": 2022,
+                  "question_text": "Consider the following statements about tectonic plates:\n1. The Indo-Australian plate includes both continental and oceanic crust.\n2. Transform boundaries are characterized by volcanic activity.\n3. The Ring of Fire is associated with convergent and transform boundaries.\nWhich of the statements given above is/are correct?",
+                  "answer_text": "(a) 1 and 3 only",
+                  "explanation": "Statement 1 is correct — the Indo-Australian plate contains both the Indian continent and the oceanic crust beneath the Indian Ocean. Statement 2 is incorrect — transform boundaries are characterized by earthquakes, not volcanism. Statement 3 is correct — the Pacific Ring of Fire involves subduction zones (convergent) and transform faults.",
+                  "question_type": "STATEMENT_BASED"
+                },
+                {
+                  "exam_type": "MAINS",
+                  "year": 2021,
+                  "question_text": "Discuss the evidence that led to the formulation of the theory of Plate Tectonics. How does it explain the distribution of earthquakes and volcanoes?",
+                  "answer_text": "Evidence includes: paleomagnetic studies showing seafloor spreading, matching magnetic anomalies on either side of mid-ocean ridges, age patterns of oceanic crust, GPS measurements of plate motion, and distribution of earthquake foci along Wadati-Benioff zones.",
+                  "explanation": "A 15-mark answer should cover: (1) Seafloor spreading evidence, (2) Magnetic anomalies, (3) Earthquake distribution along plate boundaries explaining Wadati-Benioff zones, (4) Volcanic distribution at convergent boundaries and hot spots, (5) Modern GPS evidence confirming plate motion rates.",
+                  "marks": 15,
+                  "question_type": "FACTUAL"
+                }
+              ],
+              "mcq_questions": [
+                {
+                  "question_text": "Which of the following is NOT an evidence cited by Wegener for Continental Drift?",
+                  "options": [
+                    {"label": "A", "text": "Jigsaw fit of South America and Africa"},
+                    {"label": "B", "text": "Distribution of Glossopteris fossils"},
+                    {"label": "C", "text": "Magnetic anomalies on the ocean floor"},
+                    {"label": "D", "text": "Carboniferous glaciation in southern continents"}
+                  ],
+                  "correct_option": "C",
+                  "explanation": "Magnetic anomalies on the ocean floor were discovered in the 1960s during seafloor spreading research, decades after Wegener's Continental Drift proposal (1912). Wegener used biological, geological, and climatological evidence.",
+                  "question_type": "FACTUAL",
+                  "display_order": 1
+                },
+                {
+                  "question_text": "Consider the following statements:\n1. Slab pull is considered the most dominant force driving plate motion.\n2. Ridge push occurs due to gravitational sliding at mid-ocean ridges.\n3. Mantle convection was first proposed by Arthur Holmes.\nWhich of the above statements is/are correct?",
+                  "options": [
+                    {"label": "A", "text": "1 and 2 only"},
+                    {"label": "B", "text": "2 and 3 only"},
+                    {"label": "C", "text": "1 and 3 only"},
+                    {"label": "D", "text": "1, 2 and 3"}
+                  ],
+                  "correct_option": "D",
+                  "explanation": "All three statements are correct. Slab pull (weight of subducting plate) is the primary driver. Ridge push is gravitational potential energy at elevated ridges. Arthur Holmes proposed mantle convection as a mechanism for continental drift in the 1930s.",
+                  "question_type": "STATEMENT_BASED",
+                  "display_order": 2
+                },
+                {
+                  "question_text": "Match the following plate boundaries with their characteristic features:\nList I: (a) Divergent (b) Convergent (c) Transform\nList II: (1) San Andreas Fault (2) Mid-Atlantic Ridge (3) Mariana Trench",
+                  "options": [
+                    {"label": "A", "text": "a-2, b-3, c-1"},
+                    {"label": "B", "text": "a-3, b-2, c-1"},
+                    {"label": "C", "text": "a-2, b-1, c-3"},
+                    {"label": "D", "text": "a-1, b-3, c-2"}
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Divergent boundaries feature mid-ocean ridges (Mid-Atlantic Ridge). Convergent boundaries create deep ocean trenches (Mariana Trench) via subduction. Transform boundaries involve lateral sliding (San Andreas Fault).",
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "display_order": 3
+                },
+                {
+                  "question_text": "The Hawaiian island chain provides evidence for which of the following geological concepts?",
+                  "options": [
+                    {"label": "A", "text": "Seafloor spreading at divergent boundaries"},
+                    {"label": "B", "text": "Plate motion over a stationary mantle hot spot"},
+                    {"label": "C", "text": "Subduction of oceanic crust beneath continental crust"},
+                    {"label": "D", "text": "Transform fault displacement over time"}
+                  ],
+                  "correct_option": "B",
+                  "explanation": "The Hawaiian islands form an age-progressive chain because the Pacific Plate moves northwest over a stationary mantle plume (hot spot). The oldest islands are furthest from the current hot spot location.",
+                  "question_type": "FACTUAL",
+                  "display_order": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Weathering and Erosion",
+          "node_type": "SUB_TOPIC",
+          "weight": 2.0,
+          "display_order": 2,
+          "ordering_justification": "Surface processes that shape landforms after tectonic creation",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "Climatology",
+      "node_type": "MEGA_TOPIC",
+      "weight": 5.0,
+      "display_order": 2,
+      "ordering_justification": "Atmospheric processes connect geomorphology to human geography — builds on physical foundation",
+      "children": [
+        {
+          "title": "Atmospheric Dynamics",
+          "node_type": "SUB_TOPIC",
+          "weight": 2.5,
+          "display_order": 1,
+          "ordering_justification": "General circulation drives weather patterns globally",
+          "children": [
+            {
+              "title": "Atmospheric Circulation and Weather Systems",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.5,
+              "display_order": 1,
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Fundamentals of Atmospheric Circulation",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Global atmospheric circulation is driven by differential heating of Earth's surface. The equator receives more solar radiation than the poles, creating a temperature gradient that drives convective cells."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Three-cell model: Hadley Cell (0°-30°), Ferrel Cell (30°-60°), and Polar Cell (60°-90°). The Hadley Cell is thermally direct — warm air rises at the ITCZ, flows poleward aloft, descends at ~30° creating subtropical high-pressure belts."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Coriolis Effect deflects winds to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. This produces the northeast and southeast trade winds, westerlies, and polar easterlies."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "Jet Streams, Rossby Waves, and Weather Fronts",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Jet streams are fast-flowing, narrow air currents at the tropopause (~9-12 km altitude). The Subtropical Jet Stream (STJ) and Polar Jet Stream are critical for UPSC — the STJ influences the Indian monsoon by shifting northward in summer."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Rossby waves (planetary waves) are large-scale undulations in the upper-level westerlies caused by differential heating and Earth's rotation. They create ridges (high pressure) and troughs (low pressure) that steer surface weather systems."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Weather fronts form where air masses of different temperatures meet. Cold fronts produce intense, short-duration rainfall; warm fronts produce prolonged, lighter precipitation. Occluded fronts form when a cold front overtakes a warm front."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "NCERT Alignment — Class XI Atmospheric Circulation",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class XI Chapter 10 covers atmospheric circulation and weather systems. Key concepts: pressure belts (equatorial low, subtropical high, subpolar low, polar high), wind systems, and the tri-cellular model of circulation."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT emphasizes the relationship between pressure belts and wind patterns: air flows from high to low pressure, deflected by Coriolis force. The ITCZ (Inter-Tropical Convergence Zone) migrates seasonally, pulling the monsoon winds northward in Indian summer."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Common Exam Misconceptions — Atmospheric Circulation",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Trap 1: The Ferrel Cell is thermally indirect (driven mechanically by Hadley and Polar cells), not thermally direct. UPSC tests this distinction — only Hadley and Polar cells are thermally driven."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Trap 2: Coriolis Effect is zero at the equator and maximum at the poles. Questions often test whether Coriolis 'causes' wind — it only deflects existing wind, never initiates motion."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Trap 3: The subtropical jet stream (STJ) does NOT bring the Indian monsoon. The withdrawal of the STJ from over India allows the ITCZ to shift northward, enabling monsoon onset. The Tropical Easterly Jet (TEJ) forms during the monsoon season."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [
+                {
+                  "exam_type": "PRELIMS",
+                  "year": 2020,
+                  "question_text": "With reference to the general circulation of the atmosphere, consider the following statements:\n1. The Ferrel cell is a thermally direct cell.\n2. The Hadley cell extends from the equator to approximately 30° latitude.\n3. The polar cell is the weakest of the three cells.\nWhich of the statements given above is/are correct?",
+                  "answer_text": "(b) 2 only",
+                  "explanation": "Statement 1 is incorrect — the Ferrel cell is thermally indirect (mechanically driven). Statement 2 is correct — the Hadley cell operates between the equator and ~30° latitude. Statement 3 is incorrect — the Ferrel cell is actually the weakest; the Polar cell, though small, is thermally direct and well-defined.",
+                  "question_type": "STATEMENT_BASED"
+                },
+                {
+                  "exam_type": "PRELIMS",
+                  "year": 2019,
+                  "question_text": "Which of the following is/are the characteristic(s) of the Subtropical Jet Stream?\n1. It flows at altitudes between 9-12 km.\n2. It is strongest during winter months.\n3. Its withdrawal from India triggers the onset of the southwest monsoon.\nSelect the correct answer using the code given below:",
+                  "answer_text": "(d) 1, 2 and 3",
+                  "explanation": "All three statements are correct. The STJ flows at tropopause levels (9-12 km), strengthens in winter due to greater pole-equator temperature gradient, and its seasonal withdrawal from over India is closely associated with monsoon onset.",
+                  "question_type": "STATEMENT_BASED"
+                }
+              ],
+              "mcq_questions": [
+                {
+                  "question_text": "The Inter-Tropical Convergence Zone (ITCZ) is characterized by:",
+                  "options": [
+                    {"label": "A", "text": "Descending air and clear skies"},
+                    {"label": "B", "text": "Strong surface winds and low humidity"},
+                    {"label": "C", "text": "Rising air, low pressure, and heavy rainfall"},
+                    {"label": "D", "text": "Diverging surface winds and temperature inversions"}
+                  ],
+                  "correct_option": "C",
+                  "explanation": "The ITCZ is a belt of low pressure near the equator where trade winds converge, causing intense convective uplift, cloud formation, and heavy rainfall. It migrates seasonally with the overhead sun.",
+                  "question_type": "FACTUAL",
+                  "display_order": 1
+                },
+                {
+                  "question_text": "Consider the following pairs:\nWind System — Region of Operation\n1. Trade Winds — 0° to 30° latitude\n2. Westerlies — 30° to 60° latitude\n3. Polar Easterlies — 60° to 90° latitude\nWhich of the pairs given above is/are correctly matched?",
+                  "options": [
+                    {"label": "A", "text": "1 only"},
+                    {"label": "B", "text": "1 and 2 only"},
+                    {"label": "C", "text": "2 and 3 only"},
+                    {"label": "D", "text": "1, 2 and 3"}
+                  ],
+                  "correct_option": "D",
+                  "explanation": "All three pairs are correctly matched. Trade winds blow from subtropical highs toward the equatorial low (0-30°), westerlies blow from subtropical highs toward subpolar lows (30-60°), and polar easterlies blow from polar highs toward subpolar lows (60-90°).",
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "display_order": 2
+                },
+                {
+                  "question_text": "Assertion (A): The Coriolis effect is maximum at the poles.\nReason (R): The angular velocity of Earth's rotation is highest at the poles.",
+                  "options": [
+                    {"label": "A", "text": "Both A and R are true and R is the correct explanation of A"},
+                    {"label": "B", "text": "Both A and R are true but R is NOT the correct explanation of A"},
+                    {"label": "C", "text": "A is true but R is false"},
+                    {"label": "D", "text": "A is false and R is true"}
+                  ],
+                  "correct_option": "C",
+                  "explanation": "The Coriolis effect is indeed maximum at the poles (A is true). However, the angular velocity is uniform across all latitudes — what changes is the component of the vertical angular velocity vector that affects horizontal motion (proportional to sine of latitude). R is false because angular velocity is constant everywhere on Earth.",
+                  "question_type": "ASSERTION_REASON",
+                  "display_order": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Indian Monsoon System",
+          "node_type": "SUB_TOPIC",
+          "weight": 2.0,
+          "display_order": 2,
+          "ordering_justification": "Most frequently tested climatology topic in UPSC — India-specific application",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "Oceanography",
+      "node_type": "MEGA_TOPIC",
+      "weight": 4.0,
+      "display_order": 3,
+      "ordering_justification": "Oceanic processes integrate geomorphology and climatology — requires both as prerequisites",
+      "children": [
+        {
+          "title": "Ocean Circulation",
+          "node_type": "SUB_TOPIC",
+          "weight": 2.0,
+          "display_order": 1,
+          "ordering_justification": "Ocean currents link to atmospheric circulation and global climate regulation",
+          "children": [
+            {
+              "title": "Ocean Currents and Their Effects",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.5,
+              "display_order": 1,
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Fundamentals of Ocean Currents",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Ocean currents are continuous, directed movements of seawater generated by wind friction, Coriolis effect, water density differences (thermohaline circulation), and ocean floor topography."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Surface currents (upper 400m) are primarily wind-driven and follow the global wind belts. They form large circular gyres: clockwise in the Northern Hemisphere and counter-clockwise in the Southern Hemisphere."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Major warm currents include the Gulf Stream (North Atlantic), Kuroshio (North Pacific), and Agulhas (Indian Ocean). Major cold currents include the Labrador, California, Benguela, and Peru (Humboldt) currents."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "Thermohaline Circulation and Climate Feedback",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Thermohaline circulation (THC) — the 'global ocean conveyor belt' — is driven by density differences caused by temperature and salinity variations. Cold, saline water sinks in the North Atlantic (North Atlantic Deep Water formation), driving a global deep-water circulation that takes approximately 1,000 years to complete a full cycle."
+                    },
+                    {
+                      "type": "para",
+                      "text": "El Niño-Southern Oscillation (ENSO) represents a coupled ocean-atmosphere phenomenon. During El Niño, trade winds weaken, warm water shifts eastward in the Pacific, suppressing upwelling off Peru. This disrupts global weather: droughts in India/Australia, floods in Peru/California."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Indian Ocean Dipole (IOD) is an independent mode of climate variability in the Indian Ocean. A positive IOD (warm west, cool east) enhances Indian monsoon rainfall, while a negative IOD can suppress it. IOD can modulate or amplify ENSO effects on India."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "NCERT Alignment — Class XI Movements of Ocean Water",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class XI Chapter 14 covers ocean water movements: waves, tides, and currents. For currents, the NCERT emphasizes the gyre system, naming major currents in each ocean basin and distinguishing warm from cold currents by their relative temperature to the surrounding water."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Key NCERT concept: warm currents flow from equator toward poles (raising coastal temperatures), while cold currents flow from poles toward equator (lowering coastal temperatures and promoting aridity). The Atacama and Namib deserts are explained by cold current proximity."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Common Exam Misconceptions — Ocean Currents",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Trap 1: The Gulf Stream does NOT directly warm Europe. It transitions into the North Atlantic Drift, which (combined with westerly winds) moderates European winters. UPSC tests this distinction."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Trap 2: El Niño does NOT always cause drought in India. The relationship is probabilistic — some El Niño years have had normal or even above-normal monsoon rainfall (e.g., 1997). A positive IOD can counteract El Niño effects."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Trap 3: Cold currents cause coastal deserts through temperature inversion (cold water cools the lower atmosphere, preventing convective uplift), not merely by being 'cold.' The mechanism is suppression of vertical air motion, not temperature alone."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [
+                {
+                  "exam_type": "PRELIMS",
+                  "year": 2023,
+                  "question_text": "Consider the following statements about ocean currents:\n1. The Gulf Stream is a warm current that flows along the eastern coast of North America.\n2. The Benguela current is responsible for the aridity of the Namib Desert.\n3. Upwelling zones are generally characterized by high biological productivity.\nWhich of the statements given above is/are correct?",
+                  "answer_text": "(d) 1, 2 and 3",
+                  "explanation": "All three are correct. The Gulf Stream is a warm western boundary current along eastern North America. The cold Benguela current causes the Namib Desert's aridity by promoting temperature inversions. Upwelling brings nutrient-rich deep water to the surface, supporting rich marine ecosystems.",
+                  "question_type": "STATEMENT_BASED"
+                },
+                {
+                  "exam_type": "MAINS",
+                  "year": 2018,
+                  "question_text": "What is the significance of the thermohaline circulation for global climate? Discuss the potential impacts of its weakening due to climate change.",
+                  "answer_text": "The thermohaline circulation redistributes heat from the tropics to high latitudes, moderating global climate. It transports approximately 1.2 petawatts of heat northward in the Atlantic. Weakening could lead to: cooling of NW Europe (paradoxical warming-induced cooling), altered precipitation patterns, disrupted monsoon systems, and changes in marine ecosystems dependent on nutrient transport.",
+                  "explanation": "A comprehensive answer should cover: (1) Mechanism of THC, (2) Role in heat redistribution, (3) Impact of freshwater input from melting ice sheets on NADW formation, (4) Potential regional climate impacts, (5) Geological precedents (Younger Dryas).",
+                  "marks": 15,
+                  "question_type": "CAUSE_EFFECT"
+                }
+              ],
+              "mcq_questions": [
+                {
+                  "question_text": "Which of the following ocean currents is a cold current?",
+                  "options": [
+                    {"label": "A", "text": "Gulf Stream"},
+                    {"label": "B", "text": "Kuroshio Current"},
+                    {"label": "C", "text": "Humboldt Current"},
+                    {"label": "D", "text": "Agulhas Current"}
+                  ],
+                  "correct_option": "C",
+                  "explanation": "The Humboldt (Peru) Current is a cold eastern boundary current flowing northward along the western coast of South America. Gulf Stream, Kuroshio, and Agulhas are all warm western boundary currents.",
+                  "question_type": "FACTUAL",
+                  "display_order": 1
+                },
+                {
+                  "question_text": "With reference to El Niño phenomenon, consider the following:\n1. It involves weakening of trade winds in the Pacific.\n2. It leads to warming of sea surface in the eastern Pacific.\n3. It invariably causes drought conditions in India.\nWhich of the statements given above is/are correct?",
+                  "options": [
+                    {"label": "A", "text": "1 and 2 only"},
+                    {"label": "B", "text": "2 and 3 only"},
+                    {"label": "C", "text": "1, 2 and 3"},
+                    {"label": "D", "text": "1 only"}
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Statements 1 and 2 are correct. El Niño involves weakening of Walker Circulation trade winds and warming of eastern Pacific. Statement 3 is incorrect — El Niño has a probabilistic relationship with Indian monsoon; it does not invariably cause drought. Positive IOD can counteract El Niño effects.",
+                  "question_type": "STATEMENT_BASED",
+                  "display_order": 2
+                },
+                {
+                  "question_text": "The phenomenon of 'upwelling' in oceans is caused by:",
+                  "options": [
+                    {"label": "A", "text": "Convergence of warm and cold currents"},
+                    {"label": "B", "text": "Offshore winds pushing surface water away from coast"},
+                    {"label": "C", "text": "Volcanic activity on the ocean floor"},
+                    {"label": "D", "text": "Tidal forces during spring tides"}
+                  ],
+                  "correct_option": "B",
+                  "explanation": "Coastal upwelling occurs when persistent offshore winds (or winds parallel to the coast with Ekman transport directing water offshore) displace surface water away from the coast, allowing cold, nutrient-rich deep water to rise and replace it.",
+                  "question_type": "CAUSE_EFFECT",
+                  "display_order": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Marine Resources and Ecosystems",
+          "node_type": "SUB_TOPIC",
+          "weight": 1.5,
+          "display_order": 2,
+          "ordering_justification": "Applied oceanography — builds on circulation knowledge for resource and ecosystem understanding",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

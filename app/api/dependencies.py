@@ -35,6 +35,17 @@ def get_current_user(db: Session = Depends(get_db), auth: Optional[HTTPAuthoriza
         token_cred = auth.credentials.strip() if auth.credentials else ""
         logger.info(f"FORENSIC | Received credentials: '{token_cred}'")
         if token_cred.startswith("MOCK_TOKEN"):
+            # SECURITY: the MOCK_TOKEN bypass is a dev/test/e2e affordance only.
+            # It is honored ONLY when explicitly enabled (settings.ALLOW_MOCK_AUTH),
+            # which defaults to False, so production can never be impersonated via
+            # a static token string. When disabled, a MOCK_TOKEN is just an
+            # invalid credential and is rejected like any other bad token (401).
+            if not settings.ALLOW_MOCK_AUTH:
+                logger.warning(
+                    "FORENSIC | MOCK_TOKEN presented but ALLOW_MOCK_AUTH is "
+                    "disabled — rejecting as invalid credential"
+                )
+                raise credentials_exception
             logger.warning(f"FORENSIC | Using MOCK_TOKEN bypass: {token_cred}")
             
             # Support MOCK_TOKEN_<google_uid> for persona simulation
