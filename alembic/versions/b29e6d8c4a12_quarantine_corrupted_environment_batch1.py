@@ -21,7 +21,7 @@ def upgrade() -> None:
         """
         UPDATE questions
         SET status = 'ARCHIVED',
-            is_deleted = 1,
+            is_deleted = TRUE,
             updated_by = 'content_integrity_audit_2026_05_18'
         WHERE test_id = 1
           AND question_number = 42
@@ -35,7 +35,7 @@ def downgrade() -> None:
         """
         UPDATE questions
         SET status = 'PUBLISHED',
-            is_deleted = 0,
+            is_deleted = FALSE,
             updated_by = 'content_integrity_audit_rollback_2026_05_18'
         WHERE test_id = 1
           AND question_number = 42

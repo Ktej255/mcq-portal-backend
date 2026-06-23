@@ -144,6 +144,44 @@ def _build_session_out(
 # Routes
 # ---------------------------------------------------------------------------
 
+@router.get("/geography/practice/{session_id}")
+def get_practice_session(
+    session_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+) -> Any:
+    """Retrieve an active practice session by ID.
+
+    Returns the current session state with the current question exposed.
+    Used by the frontend to recover session state after a page refresh.
+
+    Raises 404 if session not found, not owned by student, or already SUBMITTED.
+    """
+    practice_session = _get_session_owned_by(db, session_id, current_user.id)
+
+    # Don't expose submitted sessions — they are finalized
+    if practice_session.status == GsLmsPracticeSessionStatusEnum.SUBMITTED:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Session not found",
+        )
+
+    # Get current question if session is still active
+    current_question = None
+    if practice_session.current_index < practice_session.total_questions:
+        questions = _get_questions_for_session(db, practice_session.syllabus_node_id)
+        if practice_session.current_index < len(questions):
+            current_question = questions[practice_session.current_index]
+
+    session_out = _build_session_out(practice_session, current_question)
+
+    return StandardResponse(
+        success=True,
+        message="Practice session retrieved",
+        data=session_out,
+    )
+
+
 @router.post("/geography/practice/start")
 def start_practice_session(
     body: GsLmsPracticeStartIn,
