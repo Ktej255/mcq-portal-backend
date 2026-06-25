@@ -1,0 +1,99 @@
+{
+  "title": "Lecture 7: Plate Tectonics – Convergent Boundaries (Ocean-Ocean & Trijunctions)",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 7,
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Fundamentals of Plate Tectonics – Convergent Boundaries (Ocean-Ocean & Trijunctions)",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "In the previous module on 'Sea Floor Spreading', we established that oceanic crust is continuously created at mid-oceanic ridges and consumed at subduction zones. This process creates the global conveyor belt of lithospheric plates. Convergent boundaries represent zones where tectonic plates move towards each other, resulting in the destruction of the crust through subduction or intense crustal deformation."
+        },
+        {
+          "type": "para",
+          "text": "Ocean-Ocean convergence occurs when two oceanic plates collide. Due to differences in age, temperature, and density, the older, colder, and denser oceanic plate subducts beneath the younger, warmer, and less dense oceanic plate. The point of subduction is marked by the formation of deep-sea trenches, such as the Mariana Trench or the Java Trench."
+        },
+        {
+          "type": "para",
+          "text": "As the subducting plate descends into the asthenosphere, it undergoes dehydration melting. The rising magma, rich in silica and dissolved gases, penetrates the overriding oceanic plate. Over millions of years, this volcanic activity constructs a chain of volcanic islands parallel to the trench, known as an Island Arc. Examples include the Japanese Island Arc and the Philippine Island Arc."
+        },
+        {
+          "type": "para",
+          "text": "The Indonesian Archipelago is a classic example of ongoing Orogenesis where continental crust is built by replacing oceanic crust through persistent volcanism. Continuous volcanic deposition and tectonic accretion eventually transform isolated volcanic islands into a cohesive, larger landmass. This process signifies the lifecycle of oceanic crust as it transitions into more stable continental configurations."
+        },
+        {
+          "type": "para",
+          "text": "A Trijunction, or triple junction, is the point where three tectonic plate boundaries meet. These junctions are critical to the stability and movement of the global plate mosaic. They can occur as combinations of ridges, trenches, or transform faults. For instance, the junction near the Chagos Archipelago involves the interaction of spreading sites and historical hotspots, influencing the regional seismicity of the Indian Ocean floor."
+        },
+        {
+          "type": "para",
+          "text": "This understanding becomes critical when we study 'Seismicity and Volcanism' because the mechanics of subduction at these boundaries are the primary drivers of high-magnitude earthquakes and explosive volcanic eruptions globally."
+        }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Plate Tectonics – Convergent Boundaries (Ocean-Ocean & Trijunctions)",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Source: Savindra Singh, Physical Geography. Unlike the divergent boundary where basaltic magma dominates, convergent zones produce acidic or intermediate magma. This high silica content increases viscosity, preventing the lava from flowing over long distances. Consequently, the volcanic material accumulates near the vent, forming steep-sided stratovolcanoes characteristic of island arcs."
+        },
+        {
+          "type": "para",
+          "text": "The destruction of the lithosphere at these boundaries is balanced by the creation of new crust elsewhere, maintaining the Earth's surface area. In the Indian context, the eastern margin of the Indian Plate interacts with the Eurasian Plate via the Java Trench, where the subduction of the Indian oceanic lithosphere dictates the seismic profile of the Andaman and Nicobar Islands."
+        },
+        {
+          "type": "para",
+          "text": "Trijunction stability follows the rule that stable junctions usually involve three ridges (R-R-R). R-T-T or T-T-T junctions are often transient in geological time scales. The interaction between the Somali plate and the Arabian plate at the Red Sea rift, linked to the Chagos transition, illustrates how spreading centers and triple junctions reshape oceanic basins."
+        },
+        {
+          "type": "para",
+          "text": "Continental growth is an outcome of sustained ocean-ocean convergence. The conversion of mafic oceanic crust to more buoyant, felsic continental crust occurs through partial melting of the subducting slab and subsequent differentiation, facilitating the long-term vertical growth of continents above sea level."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Plate Tectonics – Convergent Boundaries (Ocean-Ocean & Trijunctions)",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Source: NCERT Class XI, Fundamentals of Physical Geography, Chapter 4 & 5. Key points: 1. Convergent boundaries are classified as 'destructive' because the crust is consumed in the subduction zone. 2. Subduction zones are defined as areas where the heavier plate dives into the mantle. 3. Three types of convergence exist: Oceanic-Continental, Oceanic-Oceanic, and Continental-Continental. 4. Island arcs are formed strictly at Oceanic-Oceanic convergence points due to the cooling and solidification of magma rising from the subducting slab."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Common Examiner Traps & Exam Strategy",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "1. Trapping the 'Island Formation' logic: Students often assume all volcanic islands result from ocean-ocean convergence. However, Hotspot volcanism (e.g., Hawaii) creates islands in the middle of plates, not at boundaries. UPSC frames options confusing these two processes."
+        },
+        {
+          "type": "para",
+          "text": "2. Silica Content Fallacy: Remember that divergent boundaries facilitate basaltic (low viscosity/low silica) eruptions, while convergent boundaries facilitate andesitic/rhyolitic (high viscosity/high silica) eruptions. Options often swap these characteristics."
+        },
+        {
+          "type": "para",
+          "text": "3. Plate Movement misconception: Plate movement is driven by mantle convection cells (Arthur Holmes' theory) and slab-pull/ridge-push forces. UPSC often traps students by stating that 'continents move over the ocean floor', whereas the reality is the lithospheric plate (oceanic + continental portions) moves as a rigid unit."
+        },
+        {
+          "type": "para",
+          "text": "This concept becomes essential in 'Geomorphology' where we will see how these boundaries dictate the formation of regional landforms and long-term tectonic evolution of the Indian subcontinent."
+        }
+      ]
+    }
+  ]
+}

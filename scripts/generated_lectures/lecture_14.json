@@ -1,0 +1,91 @@
+{
+  "title": "Lecture 14: Rock Cycle and Drainage Introduction",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 14,
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Fundamentals of Rock Cycle and Drainage Introduction",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "In the previous study of the Earth's interior and crustal composition, we established that the lithosphere is composed of diverse minerals and rocks. This foundational understanding links directly to the Rock Cycle, which describes the continuous process of transformation between igneous, sedimentary, and metamorphic rocks."
+        },
+        {
+          "type": "para",
+          "text": "Igneous rocks are the primary rocks formed from the cooling and solidification of magma or lava. When these rocks undergo weathering and erosion, they break down into sediments, which are transported and deposited to form sedimentary rocks through lithification. Under intense heat and pressure, both igneous and sedimentary rocks transform into metamorphic rocks, which may eventually melt to complete the cycle."
+        },
+        {
+          "type": "para",
+          "text": "The drainage system of a region is intrinsically linked to the underlying rock structure and geological history. A drainage basin is an area drained by a river and its tributaries. The orientation and flow pattern of rivers, such as the peninsular rivers of India, are determined by crustal tilting, faulting, and the relative hardness or softness of the rock strata."
+        },
+        {
+          "type": "para",
+          "text": "The Peninsular drainage system, which is older than the Himalayan system, displays a predominantly west-to-east slope due to the slight tilting of the Indian landmass. Exceptions like the Narmada and Tapti rivers, which flow westwards through rift valleys, are a direct consequence of crustal faulting within the stable Gondwana block."
+        },
+        {
+          "type": "para",
+          "text": "This understanding becomes critical when we study the Geomorphological Processes and Drainage Evolution, as the interaction between rock resistance (lithology) and tectonic activity dictates the development of landforms like V-shaped valleys, gorges, and waterfalls."
+        }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Rock Cycle and Drainage Introduction",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "The rock cycle is not a closed system but part of the Earth's wider geochemical cycle. In the Indian context, the Deccan Plateau represents a massive basaltic province formed by volcanic activity, providing a textbook example of igneous rock dominance. The transition from these igneous bases to sedimentary basins (like the Godavari-Krishna grabens) illustrates the cyclic destruction and creation of rock mass."
+        },
+        {
+          "type": "para",
+          "text": "Drainage evolution in India is shaped by three main geological events: (1) The subsidence of the western flank of the peninsula, which submerged the western part of the original plateau; (2) The upheaval of the Himalayas, which caused the northern portion of the Indian block to tilt southwards; (3) The slight tilting of the peninsular block eastwards, forcing major rivers to drain into the Bay of Bengal."
+        },
+        {
+          "type": "para",
+          "text": "Unlike the Himalayan drainage, which is characterized by youthful, fast-flowing, and deeply entrenched river systems (antecedent drainage), the Peninsular rivers are mature, having reached their base levels. The presence of 'rift valley' drainage (Narmada and Tapti) demonstrates the role of tectonic instability within an otherwise stable shield area."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Rock Cycle and Drainage Introduction",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Source: NCERT Class 11, 'Fundamentals of Physical Geography', Chapter 5 (Minerals and Rocks) and NCERT Class 11, 'India: Physical Environment', Chapter 3 (Drainage System)."
+        },
+        {
+          "type": "para",
+          "text": "Key Concepts: 1. Rock cycle is a continuous process through which old rocks are transformed into new ones. 2. Igneous rocks are 'primary' rocks. 3. Sedimentary rocks are formed by the process of lithification. 4. Drainage pattern is determined by slope, geological structure, and climatic conditions. 5. Himalayan rivers are perennial, whereas Peninsular rivers are seasonal and dependent on monsoonal rainfall."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Common Examiner Traps & Exam Strategy",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Trap 1: Students often mistakenly assume the Himalayan drainage system is older due to the sheer size of the rivers. In reality, the Peninsular drainage system is geologically much older and has reached its stage of maturity, while Himalayan rivers are in their youthful stage."
+        },
+        {
+          "type": "para",
+          "text": "Trap 2: Confusing 'antecedent' drainage with 'superimposed' drainage. Antecedent rivers (like the Indus and Brahmaputra) existed before the upliftment of the Himalayas, whereas superimposed rivers cut through existing geological structures due to the downward erosion of a previously formed surface."
+        },
+        {
+          "type": "para",
+          "text": "Trap 3: Assuming all Peninsular rivers follow the east-west slope. The Narmada and Tapti are crucial exceptions because they flow through rift valleys created by faulting, not by following the general topographic gradient."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "family": "mcq-portal-task",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "mcq-portal-backend",
+      "image": "758024567687.dkr.ecr.ap-south-1.amazonaws.com/mcq-portal-backend:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080
+        }
+      ],
+      "environment": [
+        {
+          "name": "DATABASE_URL",
+          "value": "postgresql://postgres:UpSC20261June@mcq-portal-db.cf086we6uxks.ap-south-1.rds.amazonaws.com:5432/mcq_portal"
+        },
+        {
+          "name": "SECRET_KEY",
+          "value": "b9148d8cd68e7ec9e60f089fa08dfaab2a1e1d0879e19d6eb36ba0ec335ed5f2"
+        },
+        {
+          "name": "GOOGLE_API_KEY",
+          "value": "AIzaSyBIRQsLwhooqdPe7K46-e7Wqxpk_I-Fi7w"
+        },
+        {
+          "name": "ALLOW_MOCK_AUTH",
+          "value": "false"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/aws/ecs/mcq-portal-backend",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs",
+          "awslogs-create-group": "true"
+        }
+      }
+    }
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::758024567687:role/ecsTaskExecutionRole"
+}

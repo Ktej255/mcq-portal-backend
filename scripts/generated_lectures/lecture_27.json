@@ -1,0 +1,103 @@
+{
+  "title": "Lecture 27: Jet Streams and Tricellular Circulation",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 27,
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Fundamentals of Jet Streams and Tricellular Circulation",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "In the previous topic of Global Pressure Belts, we established that Earth's uneven heating creates a tri-cellular meridional circulation model consisting of the Hadley, Ferrel, and Polar cells. This understanding is the foundation for Jet Streams, which are narrow bands of high-velocity winds found in the upper troposphere, generated primarily by the temperature gradients between these circulation cells."
+        },
+        {
+          "type": "para",
+          "text": "The Hadley cell operates between the equator and 30-degree latitudes, transporting heat poleward. The rising air at the ITCZ (Inter-Tropical Convergence Zone) moves poleward, cools, and sinks near 30-degree latitudes, creating subtropical high-pressure belts. The rotation of the Earth and the conservation of angular momentum accelerate these winds, resulting in the Subtropical Westerly Jet Stream."
+        },
+        {
+          "type": "para",
+          "text": "The Polar cell circulates air between 60-degree latitudes and the poles. The temperature contrast between cold polar air and warmer mid-latitude air creates a sharp pressure gradient at the tropopause. This boundary hosts the Polar Front Jet Stream, which meanders in Rossby waves, effectively segregating frigid polar air from temperate air masses."
+        },
+        {
+          "type": "para",
+          "text": "Jet streams are characterized by wind speeds exceeding 100 km/h, reaching up to 300 km/h in winter. They are located at the tropopause, typically between 8 km and 15 km altitude. Their path is not fixed; it fluctuates seasonally due to the apparent movement of the sun, which dictates the shift of global pressure belts."
+        },
+        {
+          "type": "para",
+          "text": "In the Indian context, the Himalayas act as a formidable climatic barrier. During winter, the Subtropical Westerly Jet Stream (STWJ) is forced to bifurcate by the Himalayan massif. One branch flows to the north of the Tibetan Plateau, while the southern branch flows across the Indo-Gangetic plains, influencing the arrival of Western Disturbances."
+        },
+        {
+          "type": "para",
+          "text": "This understanding becomes critical when we study Indian Monsoon dynamics, because the withdrawal of the southern branch of the STWJ from the Indian plains is a prerequisite for the onset of the summer monsoon."
+        }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Jet Streams and Tricellular Circulation",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Source: Savindra Singh, Climatology. The Polar Vortex is an upper-level, counter-clockwise circulating mass of cold air. When the jet stream is strong, it acts as a 'containment wall,' locking polar air in the high latitudes. A 'Polar Vortex event' occurs when the jet stream weakens and becomes wavy (Rossby waves), allowing lobes of cold air to break off and surge toward lower latitudes."
+        },
+        {
+          "type": "para",
+          "text": "The Tropical Easterly Jet (TEJ) is unique as it is a summer phenomenon, appearing at 8-15 degrees N latitude over the Indian peninsula. Unlike westerly jets, it is not driven by temperature gradients at the mid-latitudes, but by the intense heating of the Tibetan Plateau. The TEJ flows from east to west and is instrumental in accelerating the onset of the monsoon by enhancing the divergence of air over the Indian subcontinent."
+        },
+        {
+          "type": "para",
+          "text": "The Somali Jet, or 'Findlater Jet,' is a low-level jet stream (at approx. 1.5 km height) occurring during summer. It originates near the coast of East Africa (Somalia/Kenya) and flows across the Arabian Sea, picking up massive moisture to supply the Indian monsoon. The interaction between the Somali Jet and the Indian Ocean Dipole (IOD) determines the intensity of rainfall in the Indian peninsula."
+        },
+        {
+          "type": "para",
+          "text": "The Ferrel cell is an indirect circulation cell. It is driven by the movement of air between the Hadley and Polar cells rather than by direct thermal buoyancy. Consequently, the surface winds within the Ferrel cell, known as the 'Westerlies,' are highly variable compared to the steady Trade Winds of the Hadley cell."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Jet Streams and Tricellular Circulation",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Reference: NCERT Class 11, 'Fundamentals of Physical Geography', Chapter 10 (Atmospheric Circulation and Weather Systems); NCERT Class 11, 'India: Physical Environment', Chapter 4 (Climate)."
+        },
+        {
+          "type": "para",
+          "text": "Key NCERT Takeaways: (1) Jet streams are localized in the upper troposphere (tropopause) where air currents are concentrated. (2) The STWJ is responsible for bringing Western Disturbances to Northwest India during the winter months. (3) The shifting of the ITCZ toward the Ganga plain during summer causes the subtropical westerly jet to move north of the Himalayas, allowing the tropical easterly jet to become established over India."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Common Examiner Traps & Exam Strategy",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Trap 1: Confusion between 'Tropical Easterly Jet' and 'Subtropical Westerly Jet' origins. Note that the STWJ is thermally driven by the global temperature gradient, while the TEJ is driven by the specific thermal anomaly of the Tibetan Plateau."
+        },
+        {
+          "type": "para",
+          "text": "Trap 2: The belief that Jet Streams exist at the surface. Jet streams are exclusively upper-tropospheric phenomena; the 'Somali Jet' is a rare low-level exception, which is often tested in Prelims to check depth."
+        },
+        {
+          "type": "para",
+          "text": "Trap 3: Linking Western Disturbances to the Tropical Easterly Jet. Always remember: Western Disturbances are carried by the Subtropical Westerly Jet. Linking them to the TEJ is a common conceptual error."
+        },
+        {
+          "type": "para",
+          "text": "Forward Hook: This mastery of atmospheric vertical circulation prepares you for the 'Climate of India' module, where we will apply these jet stream dynamics to the onset and withdrawal of the Monsoon."
+        }
+      ]
+    }
+  ]
+}

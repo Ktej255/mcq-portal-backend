@@ -10,6 +10,8 @@ from __future__ import annotations
 
 import sys
 
+from sqlalchemy import text
+
 from app.core.gs_lms.importer import import_gs_geography
 from app.db.session import SessionLocal
 
@@ -18,6 +20,14 @@ def main() -> None:
     """Run the GS Geography content import with REVIEWED status."""
     session = SessionLocal()
     try:
+        print("Clearing pre-existing GS LMS geography content tables...")
+        # Delete in order of dependencies: MCQs, PYQs, Content Sections, Syllabus Nodes
+        session.execute(text("DELETE FROM gs_lms_mcq_questions WHERE syllabus_node_id IN (SELECT id FROM gs_lms_syllabus_nodes WHERE subject_id = 1)"))
+        session.execute(text("DELETE FROM gs_lms_pyqs WHERE subject_id = 1"))
+        session.execute(text("DELETE FROM gs_lms_content_sections WHERE syllabus_node_id IN (SELECT id FROM gs_lms_syllabus_nodes WHERE subject_id = 1)"))
+        session.execute(text("DELETE FROM gs_lms_syllabus_nodes WHERE subject_id = 1"))
+        session.flush()
+
         print("Starting GS Geography LMS import (review_status=REVIEWED)...")
         result = import_gs_geography(session, review_status="REVIEWED")
         session.commit()

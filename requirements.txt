@@ -13,3 +13,4 @@ httpx==0.27.0
 hypothesis==6.108.5
 google-generativeai==0.7.2
 xhtml2pdf==0.2.16
+cashfree_pg==6.0.5

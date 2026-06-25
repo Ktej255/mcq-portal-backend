@@ -1,0 +1,135 @@
+{
+  "topic_id": "2.1",
+  "title": "Origin and Evolution of Earth",
+  "parent_topic": "Earth's Origin and Interior",
+  "mega_topic": "Geomorphology",
+  "part": "PART 1 — PHYSICAL GEOGRAPHY",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 1,
+  "prelims_relevance": "HIGH",
+  "mains_relevance": "HIGH",
+  "sections": [
+    {
+      "section_label": "BASICS",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "The Earth formed approximately **4.6 billion years ago** from the solar nebula through accretion of planetesimals. The nebular hypothesis by Kant and Laplace suggests a rotating gas-dust cloud contracted under gravity forming the Sun and planets. Modern understanding integrates planetesimal accretion theory with nebular gas dynamics for a comprehensive formation model."
+        },
+        {
+          "type": "para",
+          "text": "Early Earth underwent **differentiation** where heavier iron and nickel sank to form the core while lighter silicates rose to create the mantle and crust. This density-based separation was driven by gravitational energy and radioactive heating during the **magma ocean stage** lasting several hundred million years after initial accretion."
+        },
+        {
+          "type": "para",
+          "text": "Earth's atmosphere evolved through **three stages**: (1) Primary hydrogen-helium atmosphere lost to space, (2) Secondary volcanic outgassing of CO₂, water vapour, and nitrogen, (3) Oxygen enrichment through the **Great Oxidation Event 2.5 Ga** when photosynthetic cyanobacteria transformed atmospheric composition permanently."
+        },
+        {
+          "type": "para",
+          "text": "The **Giant Impact Hypothesis** explains Moon formation through collision of a Mars-sized body (Theia) with proto-Earth about 4.5 billion years ago. Supporting evidence includes compositional similarity of lunar samples to Earth's mantle and the Moon's small iron core relative to its size."
+        },
+        {
+          "type": "para",
+          "text": "**Radiometric dating** provides absolute geological ages: **uranium-lead** for billions of years, **potassium-argon** for millions, **carbon-14** for thousands. The oldest terrestrial zircons from **Western Australia** at 4.4 billion years prove early continental crust and liquid water existence."
+        },
+        {
+          "type": "para",
+          "text": "India's **Dharwar craton** in Karnataka and **Aravalli craton** in Rajasthan preserve Archean crust exceeding 3 billion years, hosting significant mineral deposits of gold, iron, and manganese formed during early crustal evolution."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_REFERENCE",
+      "title": "NCERT Content Reference",
+      "display_order": 2,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "NCERT Class XI Chapter 2 covers Earth's origin through the nebular hypothesis. Key concepts include Big Bang theory, solar system formation, and planetary differentiation into layers. The chapter provides foundation for understanding Earth's internal dynamics."
+        },
+        {
+          "type": "para",
+          "text": "The textbook connects geological history to India through ancient shield regions. The peninsular craton's mineral wealth relates to these ancient formation processes over billions of years of geological time."
+        }
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connected to This Topic",
+      "display_order": 3,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "JWST observations of protoplanetary disks around young stars provide real-time evidence of planetary formation processes similar to those that created Earth 4.6 Ga ago."
+        },
+        {
+          "type": "para",
+          "text": "India's Deep Continental Studies programme explores Precambrian geology of peninsular shields, linking billion-year-old formations to modern mineral resources."
+        },
+        {
+          "type": "para",
+          "text": "Perseverance rover's analysis of Martian rocks provides comparative planetology data — understanding why Mars evolved differently from Earth despite similar origins."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps and Common Confusions",
+      "display_order": 4,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "TRAP 1 — Confusing nebular hypothesis (gas contraction) with planetesimal hypothesis (solid body accretion). Modern science combines both approaches."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 2 — Earth's age (4.6 Ga) is based on meteorite dating, NOT Earth rocks. The oldest Earth rocks are ~4.0 Ga (Acasta Gneiss, Canada). Oldest minerals are zircons at 4.4 Ga."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 3 — Differentiation occurred DURING formation, not after. The magma ocean stage allowed density separation while Earth was still molten."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 4 — The Great Oxidation Event (2.5 Ga) is NOT when life began. Life existed for at least 1 billion years before O₂ accumulated in the atmosphere."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 5 — Carbon-14 dating works only to ~50,000 years. For geological timescales (millions/billions), use U-Pb or K-Ar systems. Never say C-14 dates billion-year-old rocks."
+        }
+      ]
+    },
+    {
+      "section_label": "MAINS_PYQ",
+      "title": "Mains Previous Year Questions",
+      "display_order": 5,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Q1 (GS-1, 2019, 15 marks): 'Discuss modern theories regarding Earth's origin and explain how differentiation led to its layered structure.'"
+        },
+        {
+          "type": "para",
+          "text": "Q2 (GS-1, 2017, 10 marks): 'Explain evolution of Earth's atmosphere and its significance for climate change understanding.'"
+        }
+      ]
+    },
+    {
+      "section_label": "ANSWERS",
+      "title": "Answers and Explanations",
+      "display_order": 6,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "KEY FACTS FOR PRELIMS: (1) Earth age = 4.6 Ga (from meteorites). (2) Differentiation created layered structure — iron core, silicate mantle, thin crust. (3) Three atmospheric stages. (4) Great Oxidation Event = 2.5 Ga. (5) Dharwar craton = Karnataka, Aravalli = Rajasthan. (6) Oldest zircons = 4.4 Ga Western Australia. (7) U-Pb for billions, K-Ar for millions, C-14 for thousands."
+        },
+        {
+          "type": "para",
+          "text": "KEY FOCUS FOR MAINS: (1) Differentiation as the process creating Earth's layered structure — connect to magnetic field and plate tectonics. (2) Atmospheric evolution — link to climate change and biosignatures. (3) India's ancient cratons — geological heritage and mineral resources. (4) Radiometric dating as scientific methodology."
+        }
+      ]
+    }
+  ]
+}

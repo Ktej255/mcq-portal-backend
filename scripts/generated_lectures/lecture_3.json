@@ -1,0 +1,91 @@
+{
+  "title": "Lecture 3: Geological Time Scale, Coal, and Deccan Basalt",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 3,
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Fundamentals of Geological Time Scale, Coal, and Deccan Basalt",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "In the previous study of Earth's internal structure, we identified the layering of the crust, mantle, and core. This foundation is essential to understanding the Geological Time Scale, as the movement of lithospheric plates and thermal activity in the mantle dictate the timing of surface geological events, such as the formation of the Deccan Traps and coal-bearing strata."
+        },
+        {
+          "type": "para",
+          "text": "The Geological Time Scale (GTS) is a chronological system that segments Earth’s 4.6-billion-year history into hierarchical units: Eons, Eras, Periods, and Epochs. The Phanerozoic Eon, covering the last 541 million years, is the period where abundant fossil records appear, facilitating detailed stratigraphic classification."
+        },
+        {
+          "type": "para",
+          "text": "Coal formation is intrinsically linked to specific climatic and geological periods. Most of the world's coal deposits, including those in India's Gondwana belts, formed during the Carboniferous and Permian periods, characterized by vast, swampy tropical forests that were buried and subjected to heat and pressure over millions of years."
+        },
+        {
+          "type": "para",
+          "text": "The Deccan Basalt is a Large Igneous Province (LIP) formed approximately 66 million years ago. Its origin is attributed to the Reunion Hotspot, which the Indian plate traversed during its northward drift. The resulting massive outpouring of fluid, low-viscosity basaltic lava created the step-like topography known as 'traps'."
+        },
+        {
+          "type": "para",
+          "text": "This understanding becomes critical when we study Plate Tectonics because the Deccan volcanism serves as a direct geophysical record of the Indian plate's velocity and path over the mantle-based Reunion hotspot."
+        }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Geological Time Scale, Coal, and Deccan Basalt",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "The Deccan Traps cover an area of approximately 500,000 square kilometers in the Maharashtra Plateau. Geologically, these are classified as 'Flood Basalts'. Unlike composite volcanoes that form steep cones via viscous, acidic magma, flood basalts involve the fissure eruption of highly fluid, silica-poor basaltic lava that spreads over vast distances, creating near-horizontal layering."
+        },
+        {
+          "type": "para",
+          "text": "Regarding coal distribution in India, there is a clear distinction between the older Gondwana coal (found in the Chotanagpur, Mahanadi, and Godavari basins) and the younger Tertiary coal (found in Northeast India, Rajasthan, and Jammu & Kashmir). Gondwana coal is high-quality bituminous coal, whereas Tertiary coal is often lignitic, possessing higher sulfur content."
+        },
+        {
+          "type": "para",
+          "text": "The Reunion hotspot, located beneath the Indian Ocean, was a stationary thermal plume. As the Indian plate migrated northward at an estimated speed of 15-20 cm/year during the Late Cretaceous, the plume punched through the lithosphere. This interaction suggests that the thinning of the upper crust in conjunction with the hotspot was the primary catalyst for the catastrophic basaltic outpourings."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Geological Time Scale, Coal, and Deccan Basalt",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Reference: NCERT Class 11, 'Fundamentals of Physical Geography', Chapter 2 (The Origin and Evolution of the Earth). Key takeaway: The Earth's crustal development is marked by the 'Great Dying' and various extinction events. The Precambrian eon represents 88% of Earth's history, followed by the Paleozoic, Mesozoic, and Cenozoic eras."
+        },
+        {
+          "type": "para",
+          "text": "Reference: NCERT Class 11, 'Fundamentals of Physical Geography', Chapter 3 (Interior of the Earth). Key takeaway: Flood basalt provinces are defined as regions where highly fluid lava flows for long distances, resulting in thick basalt plateaus. The Deccan Traps are the primary Indian example."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Common Examiner Traps & Exam Strategy",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Trap 1: Students often confuse 'Shield Volcanoes' with 'Flood Basalts'. While both involve basaltic lava, Shield volcanoes form discrete conical mountains (e.g., Mauna Loa), whereas Flood Basalts form expansive, stepped plateaus without a central vent structure."
+        },
+        {
+          "type": "para",
+          "text": "Trap 2: UPSC often swaps the age or composition of Gondwana versus Tertiary coal. Remember: Gondwana coal is older (Permian/Carboniferous) and high-grade; Tertiary coal is younger (Eocene/Miocene) and low-grade."
+        },
+        {
+          "type": "para",
+          "text": "Trap 3: The association of the Deccan Traps exclusively with the Cretaceous-Paleogene (K-Pg) boundary. The event coincides with the mass extinction of dinosaurs, and examiners may test the link between the volcanic aerosols released and the resulting climatic shifts."
+        }
+      ]
+    }
+  ]
+}

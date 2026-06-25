@@ -1,0 +1,79 @@
+{
+  "title": "Lecture 24: Solar Radiation and Heat Budget of Earth",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 24,
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Fundamentals of Solar Radiation and Heat Budget of Earth",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "In the previous topic, we explored the vertical structure of the atmosphere. This establishes the context for 'Solar Radiation and Heat Budget' because the composition of the atmosphere, particularly greenhouse gases and suspended particles, dictates how incoming solar energy is filtered, absorbed, or reflected before interacting with the Earth's surface."
+        },
+        {
+          "type": "para",
+          "text": "The Sun is the primary source of energy for the Earth. Solar radiation, or insolation, enters the atmosphere as short-wave radiation. The intensity of this radiation at the top of the atmosphere is approximately 1.94 calories per sq. cm per minute, known as the solar constant. This energy varies slightly due to the Earth's elliptical orbit; at perihelion (January 3rd), the Earth is approximately 147 million km from the Sun, receiving slightly more energy than at aphelion (July 4th), when the distance is 152 million km."
+        },
+        {
+          "type": "para",
+          "text": "The Earth's surface does not absorb all incoming radiation. Approximately 35 units of the incoming 100 units of solar radiation are reflected back to space by clouds (27 units), snow/ice (2 units), and scattering (6 units), a process known as the Earth's albedo. The remaining 65 units are absorbed—14 units by the atmosphere and 51 units by the Earth's surface."
+        },
+        {
+          "type": "para",
+          "text": "The Earth loses heat through terrestrial radiation (long-wave radiation). Of the 51 units absorbed by the surface, 17 units are radiated directly to space, while 34 units are absorbed by the atmosphere. Together with the 14 units absorbed directly from solar radiation, the atmosphere radiates 48 units back into space, maintaining a net zero heat balance for the planet."
+        },
+        {
+          "type": "para",
+          "text": "Regional disparities in this budget are significant. Tropics (0-40 degrees N/S) experience a radiation surplus, while polar regions face a deficit. This surplus is redistributed poleward by atmospheric circulation and ocean currents, ensuring the climate remains habitable across latitudes. This understanding becomes critical when we study 'Atmospheric Circulation and Pressure Belts' because these energy imbalances are the fundamental drivers of global wind systems."
+        }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Solar Radiation and Heat Budget of Earth",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Source: Savindra Singh, 'Physical Geography'. The distribution of insolation is governed by the 'angle of incidence'. Higher latitudes receive solar energy at a slant, spreading the same amount of energy over a larger surface area compared to the equator. Furthermore, slanted rays must traverse a greater path through the atmosphere, increasing the probability of scattering and absorption by particulate matter, water vapor, and ozone."
+        },
+        {
+          "type": "para",
+          "text": "The 'Aspect' of land configuration also plays a major role in local temperature distribution. In the Northern Hemisphere, south-facing slopes receive more direct solar radiation than north-facing slopes, leading to differences in vegetation density and micro-climate. An example in India is the difference in forest types on the southern versus northern slopes of the Himalayan valleys."
+        },
+        {
+          "type": "para",
+          "text": "The 'Normal Lapse Rate' of 6.5 degrees Celsius per kilometer increase in altitude is a function of the fact that the atmosphere is heated primarily from the bottom up by terrestrial radiation, rather than directly by incoming solar radiation, which the atmosphere is largely transparent to."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Solar Radiation and Heat Budget of Earth",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Reference: NCERT Class 11, 'Fundamentals of Physical Geography', Chapter 9. Key takeaways: 1. Earth's geoid shape creates unequal heating. 2. The atmosphere is transparent to shortwave solar radiation but opaque to long-wave terrestrial radiation (Greenhouse effect). 3. Factors influencing insolation: Rotation, angle of inclination, duration of daylight, atmospheric transparency, and land configuration."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Common Examiner Traps & Exam Strategy",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Trap 1: Confusion between 'Atmospheric heating' and 'Surface heating'. Atmosphere is mainly heated by terrestrial long-wave radiation, NOT direct solar short-wave radiation. Trap 2: Albedo units. UPSC often swaps the reflection percentages (27% clouds, 2% snow). Trap 3: Global warming vs. Greenhouse effect. The greenhouse effect is a natural process for thermal regulation; global warming is the anthropogenic enhancement of this process. This concept is vital for the upcoming 'Climate Change' unit where we will analyze 'Geo-engineering' solutions like stratospheric aerosol injection."
+        }
+      ]
+    }
+  ]
+}

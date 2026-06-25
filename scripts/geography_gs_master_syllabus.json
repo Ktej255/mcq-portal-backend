@@ -1,0 +1,158 @@
+{
+  "subject": "Geography GS",
+  "version": "2.0",
+  "approach": "Maximum depth — every examinable sub-concept gets full treatment",
+  "total_major_topics": 82,
+  "structure": "MEGA_TOPIC > SUB_TOPIC > LEAF_TOPIC (each leaf = full 9-section content)",
+  "topics": [
+    {
+      "id": 1,
+      "title": "Earth and Its Origin (The Universe)",
+      "part": "PART 1 — PHYSICAL GEOGRAPHY",
+      "mega_topic": "Geomorphology",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Big Bang Theory and Origin of the Universe",
+          "depth_points": [
+            "Singularity concept — infinite density, temperature",
+            "Expansion timeline: 10^-43 sec (Planck epoch) to present",
+            "Evidence: Cosmic Microwave Background Radiation (Penzias & Wilson 1965)",
+            "Hubble's Law — recession velocity proportional to distance",
+            "Red shift of galaxies as proof of expansion",
+            "Dark matter and dark energy — 95% of universe is unknown",
+            "Age of Universe: 13.8 billion years (WMAP/Planck satellite data)",
+            "Limitations of Big Bang — what it doesn't explain (before singularity)"
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "Theories of Solar System Formation",
+          "depth_points": [
+            "Nebular Hypothesis (Kant 1755, Laplace 1796) — rotating gas cloud contraction",
+            "Planetesimal Hypothesis (Chamberlin & Moulton) — solid body accretion",
+            "Tidal Hypothesis (Jeans & Jeffreys) — passing star pulled material",
+            "Binary Star Hypothesis (Hoyle & Lyttleton)",
+            "Modern Solar Nebula Theory — combines nebular + planetesimal",
+            "Proto-planetary disk → accretion → differentiation sequence",
+            "Why inner planets are rocky, outer planets are gaseous",
+            "Bode's Law — mathematical spacing of planetary orbits"
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "Structure of the Solar System",
+          "depth_points": [
+            "Sun — composition (H 74%, He 24%), nuclear fusion, solar wind",
+            "Terrestrial planets: Mercury, Venus, Earth, Mars — characteristics comparison",
+            "Jovian planets: Jupiter, Saturn, Uranus, Neptune — gas giants",
+            "Asteroid Belt — location, composition, Ceres (dwarf planet)",
+            "Kuiper Belt and Oort Cloud — cometary reservoir",
+            "Dwarf planets: Pluto, Eris, Makemake, Haumea — IAU 2006 reclassification",
+            "Earth's uniqueness — Goldilocks zone, magnetic field, atmosphere, water"
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "Age of the Earth and Radiometric Dating",
+          "depth_points": [
+            "Earth's age: 4.54 billion years (Patterson 1956, meteorite dating)",
+            "Radiometric dating principles — parent/daughter isotope ratio",
+            "Uranium-Lead dating (4.5 Ga half-life) — for oldest rocks",
+            "Potassium-Argon dating (1.3 Ga half-life) — for volcanic rocks",
+            "Carbon-14 dating (5730 yr half-life) — for organic remains up to 50,000 years",
+            "Rubidium-Strontium dating — for metamorphic rocks",
+            "Oldest known rocks: Acasta Gneiss (4.03 Ga, Canada)",
+            "Oldest known minerals: Jack Hills zircons (4.4 Ga, Australia)",
+            "Indian context: Dharwar craton rocks >3.0 Ga, Singhbhum >3.3 Ga"
+          ]
+        },
+        {
+          "id": "1.5",
+          "title": "Geological Time Scale — Eons and Eras",
+          "depth_points": [
+            "Hierarchy: Eon > Era > Period > Epoch > Age",
+            "Four Eons: Hadean (4.5-4.0 Ga), Archean (4.0-2.5 Ga), Proterozoic (2.5-0.54 Ga), Phanerozoic (0.54 Ga-present)",
+            "Hadean: magma ocean, heavy bombardment, no life, no rocks survive",
+            "Archean: first life (prokaryotes), BIFs, greenstone belts, no oxygen",
+            "Proterozoic: Great Oxidation Event (2.5 Ga), first eukaryotes, Snowball Earth",
+            "Phanerozoic: visible life explosion, three eras",
+            "Three Eras of Phanerozoic: Paleozoic (ancient life), Mesozoic (middle life), Cenozoic (recent life)",
+            "How to remember: 'Had Archie's Protein Pancake' (Hadean, Archean, Proterozoic, Phanerozoic)"
+          ]
+        },
+        {
+          "id": "1.6",
+          "title": "Geological Time Scale — Periods and Indian Geological Events",
+          "depth_points": [
+            "Paleozoic Periods: Cambrian, Ordovician, Silurian, Devonian, Carboniferous, Permian",
+            "Cambrian Explosion (541 Ma) — rapid diversification of multicellular life",
+            "Carboniferous (359-299 Ma) — vast coal forests, Gondwana coal deposits in India",
+            "Permian-Triassic extinction (252 Ma) — 96% species lost, 'Great Dying'",
+            "Mesozoic Periods: Triassic, Jurassic, Cretaceous",
+            "Jurassic: dinosaur dominance, Gondwana breakup begins",
+            "Cretaceous-Paleogene extinction (66 Ma) — asteroid + Deccan volcanism",
+            "Cenozoic Periods: Paleogene, Neogene, Quaternary",
+            "Quaternary: Pleistocene Ice Ages, Holocene (human civilization), Anthropocene debate",
+            "Indian events mapped to time: Gondwana coal (Carboniferous-Permian), Deccan Traps (Late Cretaceous), Himalayan uplift (Eocene-present), Siwalik sediments (Miocene)"
+          ]
+        },
+        {
+          "id": "1.7",
+          "title": "Earth's Early Differentiation and Layer Formation",
+          "depth_points": [
+            "Homogeneous accretion → heterogeneous differentiation (iron catastrophe)",
+            "Gravitational energy + radioactive heating → magma ocean stage",
+            "Heavy elements (Fe, Ni) sank to form core; light silicates rose to form mantle/crust",
+            "Core formation timeline: first 30-50 million years after accretion",
+            "Moon formation: Giant Impact Hypothesis (Theia collision, 4.5 Ga)",
+            "Evidence for Moon origin: lunar sample composition matches Earth's mantle",
+            "Earth's magnetic field generation begins with liquid outer core formation",
+            "Late Heavy Bombardment (4.1-3.8 Ga) — final accretion phase"
+          ]
+        },
+        {
+          "id": "1.8",
+          "title": "Evolution of Earth's Atmosphere",
+          "depth_points": [
+            "Primary atmosphere: H2, He — lost to space (low gravity for light gases)",
+            "Secondary atmosphere: volcanic outgassing — CO2, N2, H2O, SO2, NH3",
+            "No free oxygen for first 2 billion years",
+            "Great Oxidation Event (2.4 Ga): cyanobacteria photosynthesis → O2 production",
+            "Banded Iron Formations (BIFs) as evidence of oxygen appearance",
+            "Ozone layer formation → enabled land colonization by life",
+            "Current composition: N2 (78%), O2 (21%), Ar (0.93%), CO2 (0.04%)",
+            "Carbon cycle regulation — geological thermostat via silicate weathering"
+          ]
+        },
+        {
+          "id": "1.9",
+          "title": "Evolution of Hydrosphere and Oceans",
+          "depth_points": [
+            "Source of water: volcanic outgassing + cometary/asteroidal delivery",
+            "Ocean formation: ~4.4 Ga (evidence from Jack Hills zircons showing liquid water)",
+            "Early oceans: hot, acidic, iron-rich, no dissolved oxygen",
+            "Salinity buildup: weathering of continental rocks → dissolved minerals to ocean",
+            "Ocean volume has remained relatively constant for 3+ billion years",
+            "Role of oceans in CO2 regulation — carbon sink",
+            "Indian context: Tethys Sea (Mesozoic) → Himalayan sedimentary rocks today"
+          ]
+        },
+        {
+          "id": "1.10",
+          "title": "Formation of Continents — Cratons and Shield Areas",
+          "depth_points": [
+            "First continental crust: TTG (tonalite-trondhjemite-granodiorite) formation in Archean",
+            "Craton = stable continental core (shield + platform)",
+            "Shield = exposed Precambrian crystalline basement",
+            "Platform = shield covered by younger flat-lying sediments",
+            "Global major cratons: Canadian Shield, Baltic Shield, Siberian Craton, Australian Craton",
+            "Indian cratons: Dharwar (Karnataka), Bastar (Chhattisgarh), Singhbhum (Jharkhand), Aravalli (Rajasthan), Bundelkhand (UP-MP)",
+            "Mineral wealth concentrated in cratons: iron (Singhbhum), gold (Dharwar), manganese (Bastar)",
+            "Craton stability → why Peninsular India has low seismicity vs Himalayan belt"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Lecture 35: Coral Reefs, Bleaching, and Marine Resources",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 35,
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Fundamentals of Coral Reefs, Bleaching, and Marine Resources",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "In the preceding module regarding coastal geomorphology, we established that shoreline processes are primarily driven by wave energy and sediment transport. This understanding provides the foundation for exploring coral reefs, which act as biological buffers and integral components of the marine ecosystem. Corals are colonies of small animals called polyps that exist in a symbiotic relationship with microscopic algae known as zooxanthellae."
+        },
+        {
+          "type": "para",
+          "text": "Coral reefs require specific environmental parameters for survival: water temperatures between 20°C and 32°C, shallow depths (typically less than 50 meters for photosynthesis), high salinity, and clear, sediment-free, nutrient-poor waters. The symbiotic algae reside within the coral tissue, providing energy through photosynthesis, while the corals provide a protected environment and the compounds necessary for photosynthesis."
+        },
+        {
+          "type": "para",
+          "text": "There are three primary categories of coral reefs: fringing reefs, which grow directly from the shoreline; barrier reefs, which are separated from the land by a deep lagoon; and atolls, which consist of circular or horseshoe-shaped reefs surrounding a central lagoon. In India, significant coral formations are located in the Gulf of Kutch, the Gulf of Mannar, the Lakshadweep Islands, and the Andaman and Nicobar Islands."
+        },
+        {
+          "type": "para",
+          "text": "Coral bleaching is a stress response occurring when corals expel their symbiotic zooxanthellae due to environmental stressors, primarily thermal anomalies. This expulsion leaves the white calcium carbonate skeleton visible. While bleaching is not immediately fatal, it leaves corals highly susceptible to disease and death if the stress persists, potentially collapsing the entire reef-based food web."
+        },
+        {
+          "type": "para",
+          "text": "This understanding becomes critical when we study Ocean Resources and Biodiversity because the health of coral reefs directly dictates the viability of coastal economies and the efficacy of natural defenses against extreme weather events."
+        }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Coral Reefs, Bleaching, and Marine Resources",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Source: Savindra Singh (Physical Geography) & India—A Comprehensive Geography (Majid Husain). Coral reefs are absent from the western coasts of continents in both hemispheres due to the prevalence of cold ocean currents, which inhibit the thermal requirements of reef-building corals. Conversely, eastern continental margins typically support expansive reefs due to the presence of warm western boundary currents."
+        },
+        {
+          "type": "para",
+          "text": "Marine ecosystem services provided by corals extend beyond biodiversity; they function as carbon sinks by sequestering CO2 into calcium carbonate structures. Furthermore, they facilitate nitrogen fixation and nutrient cycling, which are essential for supporting the global fishing industry. Their structural complexity serves as a physical barrier against storm surges, tsunamis, and coastal erosion."
+        },
+        {
+          "type": "para",
+          "text": "Human-induced threats include ocean acidification—a consequence of increased atmospheric CO2 absorption—which reduces the availability of carbonate ions necessary for calcification. Furthermore, agricultural runoff increases nutrient loading, leading to algal blooms that smother corals, while physical destruction results from bottom-trawling and coastal construction."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Coral Reefs, Bleaching, and Marine Resources",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Source: NCERT Class 11 (Fundamentals of Physical Geography), Chapter 14: Movement of Ocean Water; Class 12 (India: People and Economy). Key takeaways: 1) Coral reefs are formed by the skeletal deposits of tiny marine organisms. 2) They are sensitive to changes in water temperature and quality. 3) They are primary nurseries for various marine species, supporting complex trophic levels. 4) The symbiosis between corals and zooxanthellae is the primary energy source for reef formation."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Common Examiner Traps & Exam Strategy",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "1. Trap: The assumption that coral reefs are found everywhere in tropical waters. Fact: They are restricted by temperature and sediment levels; hence, they are rarely found at river mouths or in high-turbidity zones. 2. Trap: Confusing bleaching with death. Fact: Bleaching is a stress response; corals can recover if environmental conditions normalize. 3. Trap: Assuming western coasts of continents have reefs. Fact: Cold currents on western margins create temperature regimes unsuitable for hermatypic (reef-building) corals. This concept becomes essential in 'Ocean Climate' where we will examine how current shifts correlate with biodiversity loss."
+        }
+      ]
+    }
+  ]
+}

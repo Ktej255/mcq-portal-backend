@@ -1,0 +1,197 @@
+{
+  "topic_id": "1.2",
+  "title": "Origin of the Solar System — Nebular Hypothesis, Frost Line, Angular Momentum",
+  "parent_topic": "Earth and Its Origin (The Universe)",
+  "mega_topic": "Geomorphology",
+  "part": "PART 1 — PHYSICAL GEOGRAPHY",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 2,
+  "prelims_relevance": "HIGH",
+  "mains_relevance": "HIGH",
+  "sections": [
+    {
+      "section_label": "BASICS",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "In Topic 1.1 we established that the Big Bang produced only hydrogen and helium — and that heavier elements were forged in stellar explosions. Those elements now had to assemble into a Solar System. The dominant explanation for how this occurred is the **Nebular Hypothesis**, first proposed by **Immanuel Kant (1755)** and independently developed by **Pierre-Simon Laplace (1796)**."
+        },
+        {
+          "type": "para",
+          "text": "The modern **Solar Nebula Theory** states that approximately **4.6 billion years ago**, a slowly rotating cloud of interstellar gas and dust (a **solar nebula**) began gravitational collapse — likely triggered by a nearby **supernova shockwave**. As the cloud contracted, it spun faster due to the **conservation of angular momentum** (the same principle that makes an ice-skater spin faster when pulling in arms)."
+        },
+        {
+          "type": "para",
+          "text": "The collapsing cloud flattened into a rotating **protoplanetary disk** (also called **accretion disk**). At the centre, temperature and pressure became extreme enough to ignite **nuclear fusion** of hydrogen — the **proto-Sun** was born. The remaining disk material (only about **0.1%** of the total mass) formed planets, moons, asteroids, and comets through a process called **accretion**."
+        },
+        {
+          "type": "para",
+          "text": "A critical concept is the **Frost Line** (also called the **Snow Line** or **Ice Line**), located at approximately **2.7 AU** from the proto-Sun (between present-day Mars and Jupiter orbits). Inside the frost line, temperatures were too high for volatile compounds (water, methane, ammonia) to condense — only **metals and silicates** (rock) could remain solid. Outside the frost line, volatiles froze into solid ice grains, adding enormous mass to forming protoplanets."
+        },
+        {
+          "type": "para",
+          "text": "**Angular Momentum** posed the biggest theoretical challenge to the Nebular Hypothesis. The Sun contains **99.86%** of the Solar System's mass but only **0.5%** of its angular momentum — the planets carry **99.5%** of the angular momentum. If the Sun formed from a spinning disk, it should spin much faster. This is called the **Angular Momentum Problem**."
+        },
+        {
+          "type": "para",
+          "text": "The modern resolution involves **magnetic braking** — the young Sun's powerful magnetic field coupled with the **solar wind** transferred angular momentum outward to the disk material. Additionally, **turbulent viscosity** within the disk and **gravitational interactions** between forming protoplanets redistributed angular momentum. India's **Aditya-L1** solar mission studies solar magnetic fields that drive such processes even today."
+        },
+        {
+          "type": "para",
+          "text": "The process of planet building occurred in stages: (1) **Dust grains** collided and stuck together (**accretion**), forming millimetre-sized particles. (2) These grew into **planetesimals** (1–10 km bodies) through continued collisions. (3) Planetesimals gravitationally attracted more material, becoming **protoplanets**. (4) Beyond the frost line, protoplanets grew large enough (≈**10 Earth masses**) to gravitationally capture **hydrogen and helium gas** directly — forming **gas giants**. This runaway gas capture explains Jupiter's enormous size (**318 Earth masses**)."
+        },
+        {
+          "type": "para",
+          "text": "Evidence supporting the Nebular Hypothesis includes: (1) all planets orbit the Sun in the **same direction** (prograde), (2) all planets orbit in approximately the **same plane** (ecliptic), (3) **protoplanetary disks** have been directly imaged around young stars by **ALMA telescope** (Chile), and (4) the compositional gradient from rocky inner planets to gaseous outer planets matches frost-line predictions precisely."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_REFERENCE",
+      "title": "NCERT Content Reference",
+      "display_order": 2,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2: 'The Origin and Evolution of the Earth'. Pages 16-18. Key statement: 'The nebula from which our Solar System is believed to have been formed started its collapse and condensation approximately 5 to 5.6 billion years ago. The Sun was formed about 5 billion years ago.' Planets formed about 4.6 billion years ago."
+        },
+        {
+          "type": "para",
+          "text": "NCERT explicitly discusses: (1) Nebular Hypothesis by Kant-Laplace — planets formed from slowly rotating nebula of gas and dust. (2) Revised Nebular Hypothesis — 'In 1950, Otto Schmidt in Russia and Carl Weizascar in Germany somewhat revised the nebular hypothesis.' This detail appears in MCQ options."
+        },
+        {
+          "type": "para",
+          "text": "NCERT Class 9 — Contemporary India, Chapter 2: Basic framework introducing inner vs outer planets and the asteroid belt as a dividing line — a simplified precursor to the frost line concept."
+        }
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connected to This Topic",
+      "display_order": 3,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "ISRO's **Aditya-L1** reached the **L1 Lagrange point** (1.5 million km from Earth) in January 2024. It studies solar corona, solar wind, and magnetic fields — the same solar wind that resolved the angular momentum problem in nebular theory. First Indian mission to study the Sun directly."
+        },
+        {
+          "type": "para",
+          "text": "The **Atacama Large Millimeter Array (ALMA)** in Chile has directly imaged **protoplanetary disks** around young stars like **HL Tauri** (2014) and **TW Hydrae**. These images show gaps carved by forming planets — the first direct visual evidence of the nebular hypothesis in action around other stars."
+        },
+        {
+          "type": "para",
+          "text": "**James Webb Space Telescope** detected water vapour in the inner regions of protoplanetary disks around young stars, confirming the **frost line concept** — water exists as vapour inside and as ice outside. Observations of disk around star **PDS 70** show active planet formation."
+        },
+        {
+          "type": "para",
+          "text": "India's **Chandrayaan-3** soft-landed near the lunar south pole (August 2023). The Moon likely formed from a **giant impact** between proto-Earth and a Mars-sized body called **Theia** — a late-stage event in Solar System formation. Pragyan rover analysed lunar regolith composition."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps and Common Confusions",
+      "display_order": 4,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "TRAP 1 — 'Kant and Laplace jointly proposed the Nebular Hypothesis.' WRONG. They proposed INDEPENDENTLY — Kant (1755) first, Laplace (1796) later. They never collaborated."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 2 — 'The frost line is located between Earth and Mars.' WRONG. The frost line (~2.7 AU) is between MARS and JUPITER — specifically in the asteroid belt region. Earth is at 1 AU, Mars at 1.5 AU, Jupiter at 5.2 AU."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 3 — 'The Sun contains most of the Solar System's angular momentum.' WRONG. The Sun has 99.86% of the MASS but only 0.5% of the angular MOMENTUM. Planets (especially Jupiter) carry 99.5% of angular momentum."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 4 — 'Gas giants formed because they are farther from the Sun and hence cooler.' INCOMPLETE. Beyond the frost line, ICES could condense alongside rocks — this gave protoplanets MORE solid material to grow massive cores that then captured gas gravitationally."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 5 — 'The Solar System formed from the Big Bang directly.' WRONG. The Big Bang (13.8 Ga) produced only H and He. The Solar System (4.6 Ga) formed from a SECOND-GENERATION nebula enriched with heavy elements from earlier stellar explosions."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 6 — 'Planetesimals are small planets.' WRONG. Planetesimals are 1–10 km rocky/icy bodies — building blocks of planets, NOT small planets."
+        },
+        {
+          "type": "para",
+          "text": "TRAP 7 — 'The Nebular Hypothesis has been rejected because it cannot explain angular momentum.' NOT rejected — it has been MODIFIED. Modern Solar Nebula Theory resolves angular momentum through magnetic braking and turbulent viscosity."
+        }
+      ]
+    },
+    {
+      "section_label": "PRELIMS_PYQ",
+      "title": "Prelims Previous Year Questions",
+      "display_order": 5,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Q1 (2016): Consider the following statements: 1. The Solar System formed from a rotating cloud of gas and dust. 2. The frost line divided the disk into inner rocky and outer gaseous zones. 3. The Sun contains about 99.86% of the Solar System's mass. Which are correct? (a) 1 and 2 only (b) 2 and 3 only (c) 1 and 3 only (d) 1, 2 and 3"
+        },
+        {
+          "type": "para",
+          "text": "Q2 (2019): With reference to angular momentum in the Solar System, which statement is correct? (a) The Sun carries most of the angular momentum (b) The planets carry most of the angular momentum despite having less mass (c) Angular momentum is evenly distributed (d) Only gas giants carry angular momentum"
+        }
+      ]
+    },
+    {
+      "section_label": "MAINS_PYQ",
+      "title": "Mains Previous Year Questions",
+      "display_order": 6,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Q1 (GS-1, 2016, 15 marks): 'Discuss the Nebular Hypothesis for the origin of the Solar System. How does the concept of the frost line explain the compositional differences between the inner and outer planets?'"
+        },
+        {
+          "type": "para",
+          "text": "Q2 (GS-1, 2019, 10 marks): 'What is the angular momentum problem in the context of Solar System formation? How does modern science resolve this discrepancy?'"
+        }
+      ]
+    },
+    {
+      "section_label": "PRACTICE_QUESTIONS",
+      "title": "Practice Questions (UPSC Style)",
+      "display_order": 7,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "PRELIMS PRACTICE — Q1: Consider the following: 1. Immanuel Kant and Laplace independently proposed the Nebular Hypothesis. 2. Otto Schmidt revised the hypothesis in 1950. 3. The Tidal Hypothesis was proposed by Chamberlain and Moulton. Which are correct? (a) 1 and 2 only (b) 1 and 3 only (c) 2 and 3 only (d) 1, 2 and 3"
+        },
+        {
+          "type": "para",
+          "text": "PRELIMS PRACTICE — Q2: The frost line in the Solar System is significant because: 1. It marks the boundary where volatile compounds could condense. 2. It explains the size difference between inner and outer planets. 3. It is located between Earth and Mars. Select correct: (a) 1 and 2 only (b) 1 only (c) 2 and 3 only (d) 1, 2 and 3"
+        }
+      ]
+    },
+    {
+      "section_label": "ANSWERS",
+      "title": "Answers and Explanations",
+      "display_order": 8,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "PRELIMS PYQ ANSWERS: Q1 (2016): Answer (d) — All three are correct. Q2 (2019): Answer (b) — Planets carry most angular momentum despite having only 0.14% of mass."
+        },
+        {
+          "type": "para",
+          "text": "PRACTICE ANSWERS: Q1: Answer (a) — Statements 1 and 2 correct. Tidal Hypothesis was proposed by Jeans and Jeffreys (not Chamberlain-Moulton; they proposed Planetesimal Hypothesis). Q2: Answer (a) — Frost line is between Mars and Jupiter, not Earth and Mars. Statements 1 and 2 correct."
+        },
+        {
+          "type": "para",
+          "text": "KEY FACTS FOR PRELIMS: (1) Solar System age = 4.6 Ga (NOT 13.8 Ga). (2) Frost line at ~2.7 AU between Mars-Jupiter. (3) Sun = 99.86% mass, 0.5% angular momentum. (4) Kant (1755) and Laplace (1796) — INDEPENDENT. (5) Jupiter = 318 Earth masses. (6) Accretion → Planetesimals → Protoplanets → Planets. (7) Magnetic braking resolves momentum problem. (8) ALMA imaged protoplanetary disks."
+        },
+        {
+          "type": "para",
+          "text": "KEY FOCUS FOR MAINS: (1) Nebular Hypothesis evolution — how Kant-Laplace → Schmidt-Weizacker → Modern Solar Nebula Theory shows scientific method at work. (2) Frost line as a unifying concept explaining inner/outer planet dichotomy. (3) India's role — Aditya-L1 studying solar wind/magnetic fields, Chandrayaan-3 studying Moon (late-stage formation product). (4) Interdisciplinary — angular momentum connects physics to geography."
+        }
+      ]
+    }
+  ]
+}

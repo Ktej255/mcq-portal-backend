@@ -1,0 +1,99 @@
+{
+  "title": "Lecture 25: Temperature Distribution and Inversions",
+  "node_type": "LEAF_TOPIC",
+  "display_order": 25,
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Fundamentals of Temperature Distribution and Inversions",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "In the previous module on Solar Radiation, we established the mechanisms of insolation and the Earth's heat budget. This understanding is foundational to Temperature Distribution because temperature is the objective manifestation of heat energy absorbed, stored, and re-radiated by the Earth-Atmosphere system."
+        },
+        {
+          "type": "para",
+          "text": "Temperature serves as a measure of the molecular kinetic energy within a substance. The distribution of temperature across the globe is uneven, primarily governed by latitude, altitude, and the thermal inertia of land versus water bodies. Areas between 40° N and S latitudes generally experience a surplus in radiation balance, necessitating a redistribution of heat toward the poles via atmospheric circulation and ocean currents."
+        },
+        {
+          "type": "para",
+          "text": "The vertical distribution of temperature follows the 'Normal Lapse Rate,' where temperature decreases by approximately 6.5°C per kilometer of ascent in the troposphere. This occurs because the atmosphere is primarily heated from below by terrestrial radiation rather than directly by incoming solar radiation."
+        },
+        {
+          "type": "para",
+          "text": "Temperature inversion represents a critical deviation from this norm. It is a state where the vertical temperature profile shows an increase with height. Inversions are frequently observed on long winter nights under clear skies and calm wind conditions, where rapid terrestrial radiation leads to surface cooling that chills the air layer immediately in contact with the ground."
+        },
+        {
+          "type": "para",
+          "text": "In mountainous regions, inversion occurs due to 'air drainage' or catabatic winds. Dense, cold air formed on higher slopes descends into the valleys by gravitational force, while warmer air is displaced upwards. This phenomenon is vital for agriculture as it protects valley floors from frost, though it can create stagnant pockets of pollutants in urban centers."
+        },
+        {
+          "type": "para",
+          "text": "This understanding becomes critical when we study Atmospheric Circulation because temperature gradients are the primary drivers of pressure belts and the movement of air masses across the Indian subcontinent."
+        }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Temperature Distribution and Inversions",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Savindra Singh and GC Leong emphasize that the Earth's heat budget is finely balanced at 100 units of insolation. Approximately 35 units are reflected back to space (Albedo), 14 units are absorbed by the atmosphere, and 51 units reach the surface. The 51 units are re-radiated as long-wave terrestrial radiation, which the greenhouse gases in the atmosphere trap, maintaining the tropospheric temperature profile."
+        },
+        {
+          "type": "para",
+          "text": "Temperature inversion is classified into two main types: Surface inversion and Upper-air inversion. Surface inversion occurs due to radiational cooling, advection (movement of cold air into warm areas), and subsidence. Upper-air inversion occurs primarily due to the subsidence of air in high-pressure belts (anticyclones), where descending air compresses and warms, overriding cooler surface air."
+        },
+        {
+          "type": "para",
+          "text": "The Indian context, particularly the Indo-Gangetic plain during winter, demonstrates the adverse effects of inversion. High-pressure stability and low wind speeds trap hygroscopic nuclei and particulate matter (PM 2.5 and PM 10), leading to severe smog episodes that reduce visibility and impact respiratory health. This interaction between inversion layers and industrial pollution is a recurring factor in North Indian winter air quality crises."
+        }
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Temperature Distribution and Inversions",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Source: NCERT Class XI, Fundamentals of Physical Geography, Chapter 9 (Solar Radiation, Heat Balance and Temperature)."
+        },
+        {
+          "type": "para",
+          "text": "Key Points: 1. Insolation varies by latitude: equator receives more vertical rays, poles receive slanted rays. 2. Altitude: For every 165m rise, temperature drops by 1°C. 3. Specific Heat: Water requires more energy to heat/cool than land, creating moderating effects in coastal areas. 4. Ocean Currents: Warm currents increase coastal temperatures (e.g., North Atlantic Drift), while cold currents decrease them (e.g., Labrador Current)."
+        }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Common Examiner Traps & Exam Strategy",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {
+          "type": "para",
+          "text": "1. Confusion between 'Radiational Cooling' and 'Advection Inversion': Radiational inversion requires clear skies and calm air. Advection inversion can occur even with wind movement when warm air masses move over a cold surface."
+        },
+        {
+          "type": "para",
+          "text": "2. Latitude vs. Altitude: Candidates often mistake the lapse rate (6.5°C/km) with latitudinal temperature gradients. Remember, the lapse rate applies to vertical movement in the troposphere."
+        },
+        {
+          "type": "para",
+          "text": "3. The 'Inversion Stability' Trap: UPSC often tests that an inversion layer acts as a 'lid' for the atmosphere. This stability prevents vertical mixing, which explains why pollution levels skyrocket during inversion events, a fact often linked to modern urban air quality issues."
+        },
+        {
+          "type": "para",
+          "text": "This concept becomes essential in the next topic, 'Atmospheric Circulation,' where we will see how the pressure gradient force interacts with temperature distributions to drive planetary wind systems."
+        }
+      ]
+    }
+  ]
+}
