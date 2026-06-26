@@ -15,4 +15,4 @@ google-generativeai==0.7.2
 xhtml2pdf==0.2.16
 cashfree_pg==6.0.1
 python-dateutil==2.9.0.post0
-
+resend==2.7.0

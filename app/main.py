@@ -76,6 +76,7 @@ from app.api.v1 import optional
 from app.api.v1 import gs_lms
 from app.api.v1 import profile
 from app.api.v1 import payments
+from app.api.v1 import engagement
 
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 app.include_router(admin.router, prefix="/api/v1/admin", tags=["admin"])
@@ -94,6 +95,7 @@ from app.api.v1.gs_lms.preview import router as gs_lms_preview_router
 app.include_router(gs_lms_preview_router, prefix="/api/v1/gs-lms", tags=["gs-lms-preview"])
 app.include_router(profile.router, prefix="/api/v1/student", tags=["student-profile"])
 app.include_router(payments.router, prefix="/api/v1/payments", tags=["payments"])
+app.include_router(engagement.router, prefix="/api/v1/engagement", tags=["engagement"])
 
 
 @app.get("/")
