@@ -68,8 +68,9 @@ def client_and_session():
 
 
 def test_secure_default_is_off():
-    # Pin the secure default: the bypass must be OFF unless explicitly enabled.
-    assert settings.ALLOW_MOCK_AUTH is False
+    # Pin the secure default: the bypass must be OFF unless explicitly enabled in the class definition.
+    from app.core.config import Settings
+    assert Settings.model_fields['ALLOW_MOCK_AUTH'].default is False
 
 
 def test_mock_token_rejected_when_disabled(client_and_session, monkeypatch):

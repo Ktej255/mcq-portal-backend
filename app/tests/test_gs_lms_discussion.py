@@ -390,7 +390,7 @@ class TestAIResponseGeneration:
         """A custom provider can override the mock."""
 
         class CustomProvider:
-            def generate_response(self, topic_title, transcript, student_message):
+            def generate_response(self, topic_title, transcript, student_message, **kwargs):
                 return "Custom AI response."
 
         response = generate_ai_response(
@@ -400,6 +400,66 @@ class TestAIResponseGeneration:
             provider=CustomProvider(),
         )
         assert response == "Custom AI response."
+
+    def test_concepts_missed_passed_to_provider(self, db_session, discussion_session):
+        """When concepts_missed is provided, it is forwarded to the provider (R2.6)."""
+        received_kwargs = {}
+
+        class TrackingProvider:
+            def generate_response(self, topic_title, transcript, student_message,
+                                  concepts_missed=None, match_percentage=None):
+                received_kwargs["concepts_missed"] = concepts_missed
+                received_kwargs["match_percentage"] = match_percentage
+                return "Targeted follow-up."
+
+        response = generate_ai_response(
+            discussion_session,
+            "I know about plate tectonics.",
+            transcript=[],
+            provider=TrackingProvider(),
+            concepts_missed=["continental drift", "seafloor spreading"],
+            match_percentage=0.4,
+        )
+
+        assert response == "Targeted follow-up."
+        assert received_kwargs["concepts_missed"] == ["continental drift", "seafloor spreading"]
+        assert received_kwargs["match_percentage"] == 0.4
+
+    def test_no_concepts_missed_passes_none(self, db_session, discussion_session):
+        """When no concepts_missed provided, None is passed to provider."""
+        received_kwargs = {}
+
+        class TrackingProvider:
+            def generate_response(self, topic_title, transcript, student_message,
+                                  concepts_missed=None, match_percentage=None):
+                received_kwargs["concepts_missed"] = concepts_missed
+                received_kwargs["match_percentage"] = match_percentage
+                return "General response."
+
+        response = generate_ai_response(
+            discussion_session,
+            "General explanation.",
+            transcript=[],
+            provider=TrackingProvider(),
+        )
+
+        assert response == "General response."
+        assert received_kwargs["concepts_missed"] is None
+        assert received_kwargs["match_percentage"] is None
+
+    def test_mock_provider_accepts_concepts_missed_gracefully(self, db_session, discussion_session):
+        """MockAIResponseProvider handles concepts_missed without error."""
+        provider = MockAIResponseProvider()
+        response = provider.generate_response(
+            topic_title="Geomorphology",
+            transcript=[],
+            student_message="My explanation.",
+            concepts_missed=["erosion", "weathering"],
+            match_percentage=0.5,
+        )
+        # Should still return a valid response (ignores concepts_missed)
+        assert isinstance(response, str)
+        assert len(response) > 0
 
 
 # ---------------------------------------------------------------------------

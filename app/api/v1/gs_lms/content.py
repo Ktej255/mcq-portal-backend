@@ -1,8 +1,8 @@
 """Content delivery endpoints for the GS LMS Platform.
 
-Routes (mounted under /api/v1/gs-lms; auth-gated at the package router):
-* GET /geography/topics/{node_id}/sections — Sections with lock/unlock state
-* POST /geography/topics/{node_id}/sections/{section_id}/complete — Mark section complete
+Routes (mounted under /api/v1/gs-lms/{subject_slug}; auth-gated at the package router):
+* GET /topics/{node_id}/sections — Sections with lock/unlock state
+* POST /topics/{node_id}/sections/{section_id}/complete — Mark section complete
 
 Progressive disclosure logic:
 - Only REVIEWED sections are visible to students (review-gate).
@@ -15,7 +15,7 @@ Progressive disclosure logic:
 - Content blocks are included only for unlocked sections; None for locked.
 - When all 4 sections are completed → topic is content-complete.
 
-Requirements traced: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 5.1
+Requirements traced: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 5.1, 9.1, 9.2
 """
 
 from __future__ import annotations
@@ -30,7 +30,7 @@ from app.db.session import get_db
 from app.models.domain import User
 from app.api.dependencies import get_current_user
 from app.schemas.common import StandardResponse
-from app.core.gs.models import GsReviewStatusEnum
+from app.core.gs.models import GsReviewStatusEnum, GsSubject
 from app.core.gs_lms.models import (
     GsLmsSyllabusNode,
     GsLmsContentSection,
@@ -39,11 +39,15 @@ from app.core.gs_lms.student_models import (
     GsLmsStudentSectionProgress,
     GsLmsDiscussionSession,
     GsLmsDiscussionStatusEnum,
+    GsLmsVideoWatch,
+    GsLmsOnboardingStatus,
 )
+from app.api.v1.gs_lms.dependencies import resolve_subject
 from app.api.v1.gs_lms.schemas import (
     GsLmsTopicSectionsOut,
     GsLmsContentSectionOut,
 )
+from app.core.gs_lms.revisit import schedule_revisits
 
 router = APIRouter()
 
@@ -154,11 +158,90 @@ def _compute_lock_states(
     return result
 
 
-def _is_topic_completed(progress_map: dict[int, bool], section_ids: list[int]) -> bool:
-    """A topic is content-complete when ALL its sections are completed."""
+def _is_topic_completed(
+    progress_map: dict[int, bool],
+    section_ids: list[int],
+    skippable_section_ids: set[int] | None = None,
+) -> bool:
+    """A topic is content-complete when all non-skippable sections are completed.
+
+    Skippable sections are excluded from the completion requirement — the student
+    can still read them, but they don't block topic completion.
+    """
     if not section_ids:
         return False
-    return all(progress_map.get(sid, False) for sid in section_ids)
+    skip = skippable_section_ids or set()
+    required_ids = [sid for sid in section_ids if sid not in skip]
+    if not required_ids:
+        return False
+    return all(progress_map.get(sid, False) for sid in required_ids)
+
+
+def _get_learner_level(db: Session, student_id: int) -> str:
+    """Get the learner level for a student from their onboarding record.
+
+    Defaults to "beginner" if no onboarding record exists.
+    """
+    onboarding = (
+        db.query(GsLmsOnboardingStatus)
+        .filter(GsLmsOnboardingStatus.student_id == student_id)
+        .one_or_none()
+    )
+    if onboarding is None:
+        return "beginner"
+    return onboarding.learner_level or "beginner"
+
+
+def _get_latest_match_percentage(
+    db: Session, student_id: int, node_id: int
+) -> float | None:
+    """Get the match_percentage from the latest completed discussion session for a topic.
+
+    Returns None if no completed session exists or no match_percentage was recorded.
+    """
+    session = (
+        db.query(GsLmsDiscussionSession)
+        .filter(
+            GsLmsDiscussionSession.student_id == student_id,
+            GsLmsDiscussionSession.syllabus_node_id == node_id,
+            GsLmsDiscussionSession.status == GsLmsDiscussionStatusEnum.COMPLETED,
+        )
+        .order_by(GsLmsDiscussionSession.completed_at.desc())
+        .first()
+    )
+    if session is None:
+        return None
+    return session.match_percentage
+
+
+def _compute_skippable_section_labels(
+    learner_level: str, match_percentage: float | None
+) -> set[str]:
+    """Determine which section labels are skippable based on level + match %.
+
+    Rules:
+    - Beginner: no sections skipped
+    - Intermediate + match > 70%: BASIC is skippable
+    - Advanced + match > 90%: BASIC + ADVANCED are skippable
+    """
+    if learner_level == "intermediate" and match_percentage is not None and match_percentage > 70.0:
+        return {"BASIC"}
+    elif learner_level == "advanced" and match_percentage is not None and match_percentage > 90.0:
+        return {"BASIC", "ADVANCED"}
+    return set()
+
+
+def _compute_skippable_section_ids(
+    sections: list[GsLmsContentSection],
+    skippable_labels: set[str],
+) -> set[int]:
+    """Map skippable section labels to their IDs for a given sections list."""
+    result: set[int] = set()
+    for section in sections:
+        label = section.section_label.value if hasattr(section.section_label, "value") else str(section.section_label)
+        if label in skippable_labels:
+            result.add(section.id)
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -166,9 +249,10 @@ def _is_topic_completed(progress_map: dict[int, bool], section_ids: list[int]) -
 # ---------------------------------------------------------------------------
 
 
-@router.get("/geography/topics/{node_id}/sections")
+@router.get("/topics/{node_id}/sections")
 def get_topic_sections(
     node_id: int,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
@@ -196,12 +280,19 @@ def get_topic_sections(
     # Compute lock states
     section_states = _compute_lock_states(sections, progress_map, discussion_gate_passed)
 
+    # --- Section-skip logic based on learner level + match percentage ---
+    learner_level = _get_learner_level(db, current_user.id)
+    match_percentage = _get_latest_match_percentage(db, current_user.id, node_id)
+    skippable_labels = _compute_skippable_section_labels(learner_level, match_percentage)
+    skippable_ids = _compute_skippable_section_ids(sections, skippable_labels)
+
     # Build response
     sections_out: list[GsLmsContentSectionOut] = []
     for state in section_states:
         section: GsLmsContentSection = state["section"]
         locked: bool = state["locked"]
         completed: bool = state["completed"]
+        is_skippable = section.id in skippable_ids
 
         sections_out.append(
             GsLmsContentSectionOut(
@@ -213,12 +304,25 @@ def get_topic_sections(
                 display_order=section.display_order,
                 locked=locked,
                 completed=completed,
+                skippable=is_skippable,
                 # Content blocks only for unlocked sections
                 blocks=section.blocks if not locked else None,
             )
         )
 
-    topic_completed = _is_topic_completed(progress_map, section_ids)
+    topic_completed = _is_topic_completed(progress_map, section_ids, skippable_ids)
+
+    # Video data: read video_url from the node and check watch status
+    video_url = node.video_url if hasattr(node, "video_url") else None
+    watch_record = (
+        db.query(GsLmsVideoWatch)
+        .filter(
+            GsLmsVideoWatch.student_id == current_user.id,
+            GsLmsVideoWatch.syllabus_node_id == node_id,
+        )
+        .one_or_none()
+    )
+    video_watched = watch_record is not None
 
     return StandardResponse(
         success=True,
@@ -228,15 +332,19 @@ def get_topic_sections(
             title=node.title,
             discussion_gate_passed=discussion_gate_passed,
             topic_completed=topic_completed,
+            video_url=video_url,
+            video_watched=video_watched,
+            learner_level=learner_level,
             sections=sections_out,
         ),
     )
 
 
-@router.post("/geography/topics/{node_id}/sections/{section_id}/complete")
+@router.post("/topics/{node_id}/sections/{section_id}/complete")
 def complete_section(
     node_id: int,
     section_id: int,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
@@ -305,11 +413,17 @@ def complete_section(
             detail="Previous section not completed",
         )
 
+    # Compute skippable sections for this student + topic
+    learner_level = _get_learner_level(db, current_user.id)
+    match_percentage = _get_latest_match_percentage(db, current_user.id, node_id)
+    skippable_labels = _compute_skippable_section_labels(learner_level, match_percentage)
+    skippable_ids = _compute_skippable_section_ids(all_sections, skippable_labels)
+
     # Already completed? Return success idempotently
     if target_state["completed"]:
         # Re-fetch full state for response
         updated_progress_map = _get_student_progress(db, current_user.id, section_ids)
-        topic_completed = _is_topic_completed(updated_progress_map, section_ids)
+        topic_completed = _is_topic_completed(updated_progress_map, section_ids, skippable_ids)
         return StandardResponse(
             success=True,
             message="Section already completed",
@@ -318,11 +432,15 @@ def complete_section(
                 title=node.title,
                 discussion_gate_passed=discussion_gate_passed,
                 topic_completed=topic_completed,
+                learner_level=learner_level,
                 sections=_build_sections_response(
-                    all_sections, updated_progress_map, discussion_gate_passed
+                    all_sections, updated_progress_map, discussion_gate_passed, skippable_ids
                 ),
             ),
         )
+
+    # Check if topic was already completed BEFORE this section completion
+    topic_was_already_completed = _is_topic_completed(progress_map, section_ids, skippable_ids)
 
     # Mark section as complete
     now = datetime.now(timezone.utc)
@@ -352,7 +470,12 @@ def complete_section(
 
     # Fetch updated state for response
     updated_progress_map = _get_student_progress(db, current_user.id, section_ids)
-    topic_completed = _is_topic_completed(updated_progress_map, section_ids)
+    topic_completed = _is_topic_completed(updated_progress_map, section_ids, skippable_ids)
+
+    # Auto-schedule revisits if topic just became completed in THIS request
+    if topic_completed and not topic_was_already_completed:
+        schedule_revisits(db, current_user.id, node_id)
+        db.commit()
 
     return StandardResponse(
         success=True,
@@ -362,8 +485,9 @@ def complete_section(
             title=node.title,
             discussion_gate_passed=discussion_gate_passed,
             topic_completed=topic_completed,
+            learner_level=learner_level,
             sections=_build_sections_response(
-                all_sections, updated_progress_map, discussion_gate_passed
+                all_sections, updated_progress_map, discussion_gate_passed, skippable_ids
             ),
         ),
     )
@@ -373,8 +497,15 @@ def _build_sections_response(
     sections: list[GsLmsContentSection],
     progress_map: dict[int, bool],
     discussion_gate_passed: bool,
+    skippable_ids: set[int] | None = None,
 ) -> list[GsLmsContentSectionOut]:
-    """Build the section list response with updated lock states."""
+    """Build the section list response with updated lock states.
+
+    Args:
+        skippable_ids: Set of section IDs that are skippable based on learner
+            level and discussion match percentage. Defaults to empty set.
+    """
+    skip = skippable_ids or set()
     section_states = _compute_lock_states(sections, progress_map, discussion_gate_passed)
     sections_out: list[GsLmsContentSectionOut] = []
     for state in section_states:
@@ -391,6 +522,7 @@ def _build_sections_response(
                 display_order=section.display_order,
                 locked=locked,
                 completed=completed,
+                skippable=section.id in skip,
                 blocks=section.blocks if not locked else None,
             )
         )

@@ -1,10 +1,11 @@
 """MCQ Practice endpoints for the GS LMS Platform.
 
-Routes (mounted under /api/v1/gs-lms; auth-gated at the package router):
-* POST /geography/practice/start — Create a practice session for a topic
-* POST /geography/practice/{session_id}/answer — Record answer for current question
-* POST /geography/practice/{session_id}/skip — Skip current question
-* POST /geography/practice/{session_id}/submit — Finalize and score session
+Routes (mounted under /api/v1/gs-lms/{subject_slug}; auth-gated at the package router):
+* GET /practice/{session_id} — Retrieve active practice session
+* POST /practice/start — Create a practice session for a topic
+* POST /practice/{session_id}/answer — Record answer for current question
+* POST /practice/{session_id}/skip — Skip current question
+* POST /practice/{session_id}/submit — Finalize and score session
 
 Design properties enforced:
 * Property 10 (Sequential MCQ access control): only the current question is
@@ -13,7 +14,7 @@ Design properties enforced:
   accuracy computed on submission.
 * Property 19 (review-gate): only REVIEWED MCQ questions are presented.
 
-Requirements traced: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6
+Requirements traced: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 9.1, 9.2
 """
 
 from __future__ import annotations
@@ -28,7 +29,7 @@ from app.db.session import get_db
 from app.models.domain import User
 from app.api.dependencies import get_current_user
 from app.schemas.common import StandardResponse
-from app.core.gs.models import GsReviewStatusEnum
+from app.core.gs.models import GsReviewStatusEnum, GsSubject
 from app.core.gs_lms.models import (
     GsLmsSyllabusNode,
     GsLmsMcqQuestion,
@@ -44,6 +45,7 @@ from app.core.gs_lms.mcq_scoring import (
     compute_type_accuracy,
 )
 from app.core.gs_lms.coverage import create_gap_snapshot
+from app.api.v1.gs_lms.dependencies import resolve_subject
 from app.api.v1.gs_lms.schemas import (
     GsLmsPracticeStartIn,
     GsLmsPracticeSessionOut,
@@ -144,9 +146,10 @@ def _build_session_out(
 # Routes
 # ---------------------------------------------------------------------------
 
-@router.get("/geography/practice/{session_id}")
+@router.get("/practice/{session_id}")
 def get_practice_session(
     session_id: int,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
@@ -182,9 +185,10 @@ def get_practice_session(
     )
 
 
-@router.post("/geography/practice/start")
+@router.post("/practice/start")
 def start_practice_session(
     body: GsLmsPracticeStartIn,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
@@ -243,10 +247,11 @@ def start_practice_session(
     )
 
 
-@router.post("/geography/practice/{session_id}/answer")
+@router.post("/practice/{session_id}/answer")
 def answer_question(
     session_id: int,
     body: GsLmsPracticeAnswerIn,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
@@ -345,9 +350,10 @@ def answer_question(
     )
 
 
-@router.post("/geography/practice/{session_id}/skip")
+@router.post("/practice/{session_id}/skip")
 def skip_question(
     session_id: int,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
@@ -426,9 +432,10 @@ def skip_question(
     )
 
 
-@router.post("/geography/practice/{session_id}/submit")
+@router.post("/practice/{session_id}/submit")
 def submit_session(
     session_id: int,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:

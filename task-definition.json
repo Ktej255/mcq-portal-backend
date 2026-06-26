@@ -28,6 +28,22 @@
         {
           "name": "ALLOW_MOCK_AUTH",
           "value": "false"
+        },
+        {
+          "name": "CASHFREE_APP_ID",
+          "value": "TEST10255394e1d1de4f8a32bb5840a649355201"
+        },
+        {
+          "name": "CASHFREE_SECRET_KEY",
+          "value": "cfsdk_ma_test_d83e20ec427eb326d9c394c8e7631dfb_c847e76a"
+        },
+        {
+          "name": "CASHFREE_ENVIRONMENT",
+          "value": "sandbox"
+        },
+        {
+          "name": "BACKEND_CORS_ORIGINS",
+          "value": "https://mcq-portal-frontend-yo5i.vercel.app,https://mcq-portal-frontend.vercel.app,https://saritlearn.com,https://www.saritlearn.com"
         }
       ],
       "logConfiguration": {

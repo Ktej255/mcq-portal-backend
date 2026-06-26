@@ -53,9 +53,19 @@ class GeminiAIResponseProvider:
         topic_title: str,
         transcript: list[dict],
         student_message: str,
+        concepts_missed: list[str] | None = None,
+        match_percentage: float | None = None,
     ) -> str:
-        """Generate a Gemini-powered counter-question, falling back to mock on error."""
-        prompt = self._build_prompt(topic_title, transcript, student_message)
+        """Generate a Gemini-powered counter-question, falling back to mock on error.
+
+        When concepts_missed is provided, the prompt is enhanced to generate
+        Socratic questions specifically targeting those missed concepts (R2.6).
+        """
+        prompt = self._build_prompt(
+            topic_title, transcript, student_message,
+            concepts_missed=concepts_missed,
+            match_percentage=match_percentage,
+        )
         try:
             response = self._model.generate_content(prompt)
             return response.text
@@ -64,7 +74,9 @@ class GeminiAIResponseProvider:
                 "Gemini discussion call failed, falling back to mock: %s", exc
             )
             return self._fallback.generate_response(
-                topic_title, transcript, student_message
+                topic_title, transcript, student_message,
+                concepts_missed=concepts_missed,
+                match_percentage=match_percentage,
             )
 
     def _build_prompt(
@@ -72,15 +84,37 @@ class GeminiAIResponseProvider:
         topic_title: str,
         transcript: list[dict],
         student_message: str,
+        concepts_missed: list[str] | None = None,
+        match_percentage: float | None = None,
     ) -> str:
-        """Assemble the prompt sent to the Gemini SDK."""
+        """Assemble the prompt sent to the Gemini SDK.
+
+        When concepts_missed is provided, appends targeted Socratic guidance
+        so the AI asks about specific uncovered concepts.
+        """
         lines = [f"Topic: {topic_title}", "", "Conversation so far:"]
         for turn in transcript:
             role = turn.get("role", "unknown").capitalize()
             content = turn.get("content", "")
             lines.append(f"  {role}: {content}")
         lines.append(f"\nStudent's latest message: {student_message}")
-        lines.append("\nRespond with a Socratic counter-question:")
+
+        # Enhanced prompt for targeting missed concepts (Requirement 2.6)
+        if concepts_missed:
+            lines.append(
+                f"\n\nThe student has explained some concepts well, but has NOT yet "
+                f"covered these key concepts: {', '.join(concepts_missed)}. "
+                "Ask a focused Socratic question about ONE of the missed concepts "
+                "to guide the student toward explaining it."
+            )
+            if match_percentage is not None:
+                lines.append(
+                    f"(Current concept coverage: {match_percentage:.0%}. "
+                    "The gate opens at 80%.)"
+                )
+        else:
+            lines.append("\nRespond with a Socratic counter-question:")
+
         return "\n".join(lines)
 
 

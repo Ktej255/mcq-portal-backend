@@ -168,6 +168,10 @@ def _import_node(
         .one_or_none()
     )
 
+    # video_url and concept_checklist are only meaningful on LEAF_TOPIC nodes.
+    video_url = node_data.get("video_url") if node_type == GsLmsNodeTypeEnum.LEAF_TOPIC else None
+    concept_checklist = node_data.get("concept_checklist") if node_type == GsLmsNodeTypeEnum.LEAF_TOPIC else None
+
     if existing:
         # Update existing node attributes.
         existing.node_type = node_type
@@ -175,6 +179,8 @@ def _import_node(
         existing.display_order = node_data.get("display_order", 0)
         existing.ordering_justification = node_data.get("ordering_justification")
         existing.day_lesson_id = node_data.get("day_lesson_id")
+        existing.video_url = video_url
+        existing.concept_checklist = concept_checklist
         existing.review_status = review_status
         existing.updated_by = _ACTOR
         db.flush()
@@ -191,6 +197,8 @@ def _import_node(
             display_order=node_data.get("display_order", 0),
             ordering_justification=node_data.get("ordering_justification"),
             day_lesson_id=node_data.get("day_lesson_id"),
+            video_url=video_url,
+            concept_checklist=concept_checklist,
             review_status=review_status,
             created_by=_ACTOR,
             updated_by=_ACTOR,

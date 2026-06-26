@@ -1,18 +1,19 @@
 """Onboarding endpoints for the GS LMS Platform.
 
-Routes (mounted under /api/v1/gs-lms; auth-gated at the package router):
-* GET /geography/onboarding/status — Current onboarding state
-* POST /geography/onboarding/complete — Mark onboarding done
+Routes (mounted under /api/v1/gs-lms/{subject_slug}; auth-gated at the package router):
+* GET /onboarding/status — Current onboarding state
+* POST /onboarding/complete — Mark onboarding done
+* PUT /onboarding/level — Update learner level post-onboarding
 
 Design Component 9 (Onboarding Service) — three steps:
   1. Welcome + method explanation
-  2. Bandwidth selection
+  2. Bandwidth selection (+ learner level + study window)
   3. First topic assignment
 
 Completion is persisted so returning students skip directly to learning
 position (Requirement 9.5).
 
-Requirements traced: 9.1, 9.2, 9.3, 9.4, 9.5
+Requirements traced: 3.1, 3.2, 6.1, 6.4, 9.1, 9.2, 9.3, 9.4, 9.5
 """
 
 from __future__ import annotations
@@ -33,9 +34,23 @@ from app.core.gs_lms.student_models import GsLmsOnboardingStatus
 from app.api.v1.gs_lms.schemas import (
     GsLmsOnboardingStatusOut,
     GsLmsOnboardingCompleteIn,
+    GsLmsLearnerLevelUpdateIn,
 )
 
 router = APIRouter()
+
+# ---------------------------------------------------------------------------
+# Constants
+# ---------------------------------------------------------------------------
+
+# Maps study_window_minutes → bandwidth value.
+# 60 min → 1 item, 90 min → 2 items, 120 min → 3 items, 180 min → 4 items.
+STUDY_WINDOW_TO_BANDWIDTH: dict[int, int] = {
+    60: 1,
+    90: 2,
+    120: 3,
+    180: 4,
+}
 
 
 # ---------------------------------------------------------------------------
@@ -82,6 +97,8 @@ def _build_status_out(
             bandwidth_selected=None,
             first_topic_id=None,
             first_topic_title=None,
+            learner_level=None,
+            study_window_minutes=None,
         )
 
     first_topic_title: str | None = None
@@ -104,6 +121,8 @@ def _build_status_out(
         bandwidth_selected=record.bandwidth_selected,
         first_topic_id=record.first_topic_id,
         first_topic_title=first_topic_title,
+        learner_level=record.learner_level,
+        study_window_minutes=record.study_window_minutes,
     )
 
 
@@ -112,7 +131,7 @@ def _build_status_out(
 # ---------------------------------------------------------------------------
 
 
-@router.get("/geography/onboarding/status")
+@router.get("/onboarding/status")
 def get_onboarding_status(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
@@ -132,7 +151,7 @@ def get_onboarding_status(
     )
 
 
-@router.post("/geography/onboarding/complete")
+@router.post("/onboarding/complete")
 def complete_onboarding(
     payload: GsLmsOnboardingCompleteIn,
     db: Session = Depends(get_db),
@@ -140,13 +159,16 @@ def complete_onboarding(
 ) -> Any:
     """Mark onboarding as complete with bandwidth selection and first topic.
 
-    Accepts the student's bandwidth choice and an optional first_topic_id.
-    If first_topic_id is not provided, defaults to the first REVIEWED leaf
-    node in the syllabus tree (by display_order).
+    Accepts the student's bandwidth choice, learner level, study window,
+    and an optional first_topic_id. If first_topic_id is not provided,
+    defaults to the first REVIEWED leaf node in the syllabus tree.
+
+    study_window_minutes is mapped to bandwidth_selected:
+      60 → 1, 90 → 2, 120 → 3, 180 → 4
 
     Idempotent: if already completed, returns success without modification.
 
-    Requirements: 9.1, 9.2, 9.3, 9.5
+    Requirements: 3.1, 3.2, 6.1, 9.1, 9.2, 9.3, 9.5
     """
     record = _get_onboarding_record(db, current_user.id)
 
@@ -182,6 +204,11 @@ def complete_onboarding(
         default_topic = _get_first_reviewed_leaf(db)
         first_topic_id = default_topic.id if default_topic else None
 
+    # Derive bandwidth from study_window_minutes if provided
+    bandwidth = STUDY_WINDOW_TO_BANDWIDTH.get(
+        payload.study_window_minutes, payload.bandwidth
+    )
+
     now = datetime.now(timezone.utc)
 
     if record is None:
@@ -190,16 +217,20 @@ def complete_onboarding(
             student_id=current_user.id,
             completed=True,
             completed_at=now,
-            bandwidth_selected=payload.bandwidth,
+            bandwidth_selected=bandwidth,
             first_topic_id=first_topic_id,
+            learner_level=payload.learner_level,
+            study_window_minutes=payload.study_window_minutes,
         )
         db.add(record)
     else:
         # Update existing record (was created but not completed)
         record.completed = True
         record.completed_at = now
-        record.bandwidth_selected = payload.bandwidth
+        record.bandwidth_selected = bandwidth
         record.first_topic_id = first_topic_id
+        record.learner_level = payload.learner_level
+        record.study_window_minutes = payload.study_window_minutes
 
     db.commit()
     db.refresh(record)
@@ -208,5 +239,39 @@ def complete_onboarding(
     return StandardResponse(
         success=True,
         message="Onboarding completed successfully",
+        data=data,
+    )
+
+
+@router.put("/onboarding/level")
+def update_learner_level(
+    payload: GsLmsLearnerLevelUpdateIn,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+) -> Any:
+    """Update the learner level for a student post-onboarding.
+
+    Requires that onboarding has already been completed. Updates the
+    learner_level field on the existing onboarding record and returns
+    the updated onboarding status.
+
+    Requirements: 3.1, 3.2, 6.4
+    """
+    record = _get_onboarding_record(db, current_user.id)
+
+    if record is None or not record.completed:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Onboarding must be completed before updating learner level",
+        )
+
+    record.learner_level = payload.learner_level
+    db.commit()
+    db.refresh(record)
+
+    data = _build_status_out(record, db)
+    return StandardResponse(
+        success=True,
+        message="Learner level updated successfully",
         data=data,
     )

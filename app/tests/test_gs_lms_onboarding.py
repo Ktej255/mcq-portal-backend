@@ -193,6 +193,8 @@ class TestGetOnboardingStatus:
         assert data["bandwidth_selected"] is None
         assert data["first_topic_id"] is None
         assert data["first_topic_title"] is None
+        assert data["learner_level"] is None
+        assert data["study_window_minutes"] is None
 
     def test_completed_student_returns_full_status(
         self, client, seed_onboarding_completed
@@ -219,10 +221,15 @@ class TestCompleteOnboarding:
     """Tests for the POST onboarding complete endpoint."""
 
     def test_complete_with_explicit_topic(self, client, seed_syllabus):
-        """Complete onboarding with explicit first_topic_id."""
+        """Complete onboarding with explicit first_topic_id and study window."""
         resp = client.post(
             "/api/v1/gs-lms/geography/onboarding/complete",
-            json={"bandwidth": 5, "first_topic_id": seed_syllabus["second_leaf_id"]},
+            json={
+                "bandwidth": 5,
+                "first_topic_id": seed_syllabus["second_leaf_id"],
+                "learner_level": "intermediate",
+                "study_window_minutes": 180,
+            },
         )
         assert resp.status_code == 200
         body = resp.json()
@@ -231,22 +238,28 @@ class TestCompleteOnboarding:
         data = body["data"]
         assert data["completed"] is True
         assert data["completed_at"] is not None
-        assert data["bandwidth_selected"] == 5
+        # study_window_minutes=180 maps to bandwidth=4
+        assert data["bandwidth_selected"] == 4
         assert data["first_topic_id"] == seed_syllabus["second_leaf_id"]
         assert data["first_topic_title"] == "Climatology Introduction"
+        assert data["learner_level"] == "intermediate"
+        assert data["study_window_minutes"] == 180
 
     def test_complete_defaults_to_first_reviewed_leaf(self, client, seed_syllabus):
         """When no first_topic_id, defaults to first REVIEWED leaf by display_order."""
         resp = client.post(
             "/api/v1/gs-lms/geography/onboarding/complete",
-            json={"bandwidth": 2},
+            json={"bandwidth": 2, "study_window_minutes": 120},
         )
         assert resp.status_code == 200
         data = resp.json()["data"]
         assert data["completed"] is True
         assert data["first_topic_id"] == seed_syllabus["first_leaf_id"]
         assert data["first_topic_title"] == "Geomorphology Basics"
-        assert data["bandwidth_selected"] == 2
+        # study_window_minutes=120 maps to bandwidth=3
+        assert data["bandwidth_selected"] == 3
+        assert data["learner_level"] == "beginner"  # default
+        assert data["study_window_minutes"] == 120
 
     def test_idempotent_already_completed(self, client, seed_onboarding_completed):
         """If already completed, returns success without modification (R9.5)."""
@@ -306,10 +319,14 @@ class TestCompleteOnboarding:
 
     def test_status_reflects_completion(self, client, seed_syllabus):
         """After completing onboarding, GET status reflects the new state."""
-        # Complete onboarding
+        # Complete onboarding with study_window_minutes=60 → bandwidth=1
         client.post(
             "/api/v1/gs-lms/geography/onboarding/complete",
-            json={"bandwidth": 4},
+            json={
+                "bandwidth": 4,
+                "study_window_minutes": 60,
+                "learner_level": "advanced",
+            },
         )
 
         # Check status
@@ -317,8 +334,10 @@ class TestCompleteOnboarding:
         assert resp.status_code == 200
         data = resp.json()["data"]
         assert data["completed"] is True
-        assert data["bandwidth_selected"] == 4
+        assert data["bandwidth_selected"] == 1  # 60 min → 1
         assert data["first_topic_id"] == seed_syllabus["first_leaf_id"]
+        assert data["learner_level"] == "advanced"
+        assert data["study_window_minutes"] == 60
 
 
 # ---------------------------------------------------------------------------
@@ -349,3 +368,53 @@ class TestOnboardingAuthGating:
             json={"bandwidth": 3},
         )
         assert resp.status_code == 401
+
+
+# ---------------------------------------------------------------------------
+# PUT /onboarding/level
+# ---------------------------------------------------------------------------
+
+
+class TestUpdateLearnerLevel:
+    """Tests for the PUT onboarding/level endpoint."""
+
+    def test_update_level_after_onboarding(self, client, seed_onboarding_completed):
+        """Update learner level on a completed onboarding record."""
+        resp = client.put(
+            "/api/v1/gs-lms/geography/onboarding/level",
+            json={"learner_level": "advanced"},
+        )
+        assert resp.status_code == 200
+        body = resp.json()
+        assert body["success"] is True
+        assert "updated" in body["message"].lower()
+        data = body["data"]
+        assert data["learner_level"] == "advanced"
+        assert data["completed"] is True
+
+    def test_update_level_before_onboarding_rejects(self, client):
+        """Cannot update level if onboarding not completed → 400."""
+        resp = client.put(
+            "/api/v1/gs-lms/geography/onboarding/level",
+            json={"learner_level": "intermediate"},
+        )
+        assert resp.status_code == 400
+
+    def test_rejects_invalid_level(self, client, seed_onboarding_completed):
+        """Invalid learner_level value → 422."""
+        resp = client.put(
+            "/api/v1/gs-lms/geography/onboarding/level",
+            json={"learner_level": "expert"},
+        )
+        assert resp.status_code == 422
+
+    def test_level_persists_in_status(self, client, seed_onboarding_completed):
+        """After updating level, GET status returns the new level."""
+        client.put(
+            "/api/v1/gs-lms/geography/onboarding/level",
+            json={"learner_level": "intermediate"},
+        )
+        resp = client.get("/api/v1/gs-lms/geography/onboarding/status")
+        assert resp.status_code == 200
+        data = resp.json()["data"]
+        assert data["learner_level"] == "intermediate"

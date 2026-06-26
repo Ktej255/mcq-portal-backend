@@ -1,8 +1,8 @@
 """Syllabus tree endpoints for the GS LMS Platform.
 
-Routes (mounted under /api/v1/gs-lms; auth-gated at the package router):
-* GET /geography/syllabus — Full tree with per-student completion status
-* GET /geography/syllabus/{node_id} — Single node with children
+Routes (mounted under /api/v1/gs-lms/{subject_slug}; auth-gated at the package router):
+* GET /syllabus — Full tree with per-student completion status
+* GET /syllabus/{node_id} — Single node with children
 
 Design properties enforced:
 * Property 19 (review-gate): only REVIEWED nodes are returned to students.
@@ -10,7 +10,7 @@ Design properties enforced:
   boolean for leaf nodes, percentage for non-leaf nodes.
 * Requirement 11.2: bridges to existing GsDayLesson via day_lesson_id FK.
 
-Requirements traced: 1.1, 1.2, 1.3, 1.4, 10.3, 11.2
+Requirements traced: 1.1, 1.2, 1.3, 1.4, 9.1, 9.2, 10.3, 11.2
 """
 
 from __future__ import annotations
@@ -32,6 +32,7 @@ from app.core.gs_lms.models import (
     GsLmsSectionLabelEnum,
 )
 from app.core.gs_lms.student_models import GsLmsStudentSectionProgress
+from app.api.v1.gs_lms.dependencies import resolve_subject
 from app.api.v1.gs_lms.schemas import (
     GsLmsSyllabusNodeOut,
     GsLmsSyllabusTreeOut,
@@ -47,20 +48,6 @@ _SECTIONS_PER_LEAF = 4
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
-
-def _get_geography_subject(db: Session) -> GsSubject:
-    """Retrieve the GS Geography subject or raise 404."""
-    subject = (
-        db.query(GsSubject)
-        .filter(GsSubject.slug == "geography")
-        .one_or_none()
-    )
-    if subject is None:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="GS Geography subject not found",
-        )
-    return subject
 
 
 def _build_completion_map(db: Session, student_id: int) -> dict[int, int]:
@@ -176,18 +163,17 @@ def _count_nodes(nodes: list[GsLmsSyllabusNodeOut]) -> int:
 # Routes
 # ---------------------------------------------------------------------------
 
-@router.get("/geography/syllabus")
+@router.get("/syllabus")
 def get_syllabus_tree(
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
-    """Return the full GS Geography syllabus tree with per-student completion.
+    """Return the full syllabus tree with per-student completion.
 
     Only REVIEWED nodes are included (Property 19 / Requirement 10.3).
     Each node is annotated with completion status for the requesting student.
     """
-    subject = _get_geography_subject(db)
-
     # Query all REVIEWED root nodes (parent_id IS NULL) for this subject.
     root_nodes = (
         db.query(GsLmsSyllabusNode)
@@ -214,14 +200,15 @@ def get_syllabus_tree(
     )
     return StandardResponse(
         success=True,
-        message="GS Geography syllabus tree retrieved",
+        message=f"{subject.name} syllabus tree retrieved",
         data=data,
     )
 
 
-@router.get("/geography/syllabus/{node_id}")
+@router.get("/syllabus/{node_id}")
 def get_syllabus_node(
     node_id: int,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:

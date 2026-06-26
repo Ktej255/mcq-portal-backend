@@ -38,6 +38,7 @@ from app.core.gs_lms.student_models import (  # noqa: F401
     GsLmsGapSnapshot,
     GsLmsDailyPlan,
     GsLmsReplanEvent,
+    GsLmsVideoWatch,
     GsLmsOnboardingStatus,
 )
 

@@ -53,9 +53,9 @@ class Settings(BaseSettings):
             return list(dict.fromkeys([*cls.DEFAULT_CORS_ORIGINS, *v]))
         return cls.DEFAULT_CORS_ORIGINS.copy()
 
-    # GCP / Firebase
-    GOOGLE_APPLICATION_CREDENTIALS: Optional[str] = None
-    FIREBASE_PROJECT_ID: Optional[str] = "mcq-intelligence-portal"
+    # Clerk Auth Settings
+    CLERK_JWT_KEY: Optional[str] = None
+    CLERK_JWKS_URL: Optional[str] = None
     GOOGLE_API_KEY: Optional[str] = None
     
     ADMIN_EMAILS: List[str] = ["sarit.kumar.dev@gmail.com"] # Add bootstrap admin

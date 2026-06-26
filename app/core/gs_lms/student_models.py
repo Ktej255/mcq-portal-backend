@@ -23,6 +23,7 @@ import enum
 
 from sqlalchemy import (
     Column,
+    Index,
     Integer,
     String,
     Text,
@@ -130,6 +131,11 @@ class GsLmsDiscussionSession(Base, InstitutionalAuditMixin):
         DateTime, default=lambda: datetime.now(timezone.utc), nullable=False
     )
     completed_at = Column(DateTime, nullable=True)
+
+    # Concept tracking columns (Phase 2 — concept-level scoring)
+    concepts_matched = Column(JSON, nullable=True)
+    concepts_missed = Column(JSON, nullable=True)
+    match_percentage = Column(Float, nullable=True)
 
     # Relationships
     student = relationship("User")
@@ -332,6 +338,42 @@ class GsLmsReplanEvent(Base, InstitutionalAuditMixin):
 
 
 # ---------------------------------------------------------------------------
+# Video Watch Tracking
+# ---------------------------------------------------------------------------
+
+class GsLmsVideoWatch(Base, InstitutionalAuditMixin):
+    """Tracks which videos a student has watched for a syllabus node.
+
+    Records the timestamp and optional duration when a student marks a
+    topic's video as watched. The unique constraint ensures at most one
+    watch record per student per syllabus node.
+    """
+    __tablename__ = "gs_lms_video_watches"
+    __table_args__ = (
+        UniqueConstraint(
+            "student_id", "syllabus_node_id",
+            name="uq_gs_lms_video_watch"
+        ),
+    )
+
+    id = Column(Integer, primary_key=True, index=True)
+    student_id = Column(
+        Integer, ForeignKey("users.id"), nullable=False, index=True
+    )
+    syllabus_node_id = Column(
+        Integer, ForeignKey("gs_lms_syllabus_nodes.id"), nullable=False, index=True
+    )
+    watched_at = Column(
+        DateTime, default=lambda: datetime.now(timezone.utc), nullable=False
+    )
+    watch_duration_seconds = Column(Float, nullable=True)
+
+    # Relationships
+    student = relationship("User")
+    syllabus_node = relationship("GsLmsSyllabusNode")
+
+
+# ---------------------------------------------------------------------------
 # Onboarding Status
 # ---------------------------------------------------------------------------
 
@@ -395,10 +437,101 @@ class GsLmsOnboardingStatus(Base, InstitutionalAuditMixin):
     first_topic_id = Column(
         Integer, ForeignKey("gs_lms_syllabus_nodes.id"), nullable=True
     )
+    # Learner level: "beginner" | "intermediate" | "advanced"
+    learner_level = Column(String, default="beginner", nullable=False)
+    # Preferred daily study window in minutes
+    study_window_minutes = Column(Integer, default=90, nullable=False)
 
     # Relationships
     student = relationship("User")
     first_topic = relationship("GsLmsSyllabusNode")
+
+
+# ---------------------------------------------------------------------------
+# Spaced Revisit Schedule
+# ---------------------------------------------------------------------------
+
+class GsLmsRevisitSchedule(Base, InstitutionalAuditMixin):
+    """Spaced-repetition revisit schedule for completed topics.
+
+    When a student completes all 4 sections of a topic, the system creates
+    three revisit records at Day+3, Day+7, and Day+21. These appear in the
+    daily planner and drive Quick Recall discussions.
+
+    The unique constraint ensures at most one record per (student, topic,
+    revisit_type) — a student cannot have duplicate day_3 revisits for the
+    same topic.
+    """
+    __tablename__ = "gs_lms_revisit_schedule"
+    __table_args__ = (
+        UniqueConstraint(
+            "student_id", "syllabus_node_id", "revisit_type",
+            name="uq_gs_lms_revisit_schedule",
+        ),
+        Index(
+            "ix_gs_lms_revisit_student_due",
+            "student_id", "due_date",
+        ),
+    )
+
+    id = Column(Integer, primary_key=True, index=True)
+    student_id = Column(
+        Integer, ForeignKey("users.id"), nullable=False, index=True
+    )
+    syllabus_node_id = Column(
+        Integer, ForeignKey("gs_lms_syllabus_nodes.id"), nullable=False, index=True
+    )
+    due_date = Column(Date, nullable=False, index=True)
+    revisit_type = Column(String, nullable=False)  # "day_3", "day_7", "day_21"
+    completed = Column(Boolean, default=False, nullable=False)
+    completed_at = Column(DateTime, nullable=True)
+    created_at = Column(
+        DateTime, default=lambda: datetime.now(timezone.utc), nullable=False
+    )
+
+    # Relationships
+    student = relationship("User")
+    syllabus_node = relationship("GsLmsSyllabusNode")
+
+
+# ---------------------------------------------------------------------------
+# Weekly Retrospective
+# ---------------------------------------------------------------------------
+
+class GsLmsWeeklyRetro(Base, InstitutionalAuditMixin):
+    """Weekly retrospective record for a student.
+
+    Every 7th planned day, a retro item is injected into the daily plan.
+    The student is prompted to reflect on the week: topics completed, gaps
+    noticed, and a free-text reflection. The retro feeds back into gap data.
+    """
+    __tablename__ = "gs_lms_weekly_retros"
+    __table_args__ = (
+        UniqueConstraint("student_id", "week_number", name="uq_gs_lms_weekly_retro"),
+    )
+
+    id = Column(Integer, primary_key=True, index=True)
+    student_id = Column(
+        Integer, ForeignKey("users.id"), nullable=False, index=True
+    )
+    # Sequential week number (1-based, per-student)
+    week_number = Column(Integer, nullable=False)
+    # The plan date that triggered this retro
+    plan_date = Column(Date, nullable=False)
+    # Topics completed this week — [{node_id, title}]
+    topics_completed = Column(JSON, nullable=True)
+    # Gap summary from latest snapshot — [{type, accuracy}]
+    gap_summary = Column(JSON, nullable=True)
+    # Student's free-text reflection
+    reflection_text = Column(String, nullable=True)
+    completed = Column(Boolean, default=False, nullable=False)
+    completed_at = Column(DateTime, nullable=True)
+    created_at = Column(
+        DateTime, default=lambda: datetime.now(timezone.utc), nullable=False
+    )
+
+    # Relationships
+    student = relationship("User")
 
 
 __all__ = [
@@ -414,6 +547,9 @@ __all__ = [
     "GsLmsGapSnapshot",
     "GsLmsDailyPlan",
     "GsLmsReplanEvent",
+    "GsLmsVideoWatch",
     "GsLmsPyqReveal",
     "GsLmsOnboardingStatus",
+    "GsLmsRevisitSchedule",
+    "GsLmsWeeklyRetro",
 ]

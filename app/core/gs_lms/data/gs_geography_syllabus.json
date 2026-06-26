@@ -103,7 +103,8 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "video_url": "https://www.youtube.com/watch?v=earths_origin_structure"
             },
             {
               "title": "Lecture 3: Geological Time Scale, Coal, and Deccan Basalt",
@@ -877,7 +878,17 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "video_url": "https://www.youtube.com/watch?v=continental_drift_wegener",
+              "concept_checklist": [
+                "Wegener's continental drift hypothesis",
+                "Pangaea and Panthalassa",
+                "evidences for continental drift (jigsaw fit, fossil, geological, climatological)",
+                "limitations of Wegener's theory",
+                "Gondwanaland and Laurasia",
+                "paleomagnetic evidence",
+                "polar wandering curves"
+              ]
             },
             {
               "title": "Lecture 5: Plate Tectonics – Divergent Boundaries",
@@ -979,7 +990,18 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "video_url": "https://www.youtube.com/watch?v=plate_tectonics_divergent",
+              "concept_checklist": [
+                "seafloor spreading hypothesis (Harry Hess)",
+                "mid-ocean ridges and rift valleys",
+                "magnetic anomaly symmetry",
+                "East African Rift System",
+                "constructive plate margins",
+                "basaltic volcanism at divergent boundaries",
+                "formation of new oceanic crust",
+                "Iceland as a divergent boundary example"
+              ]
             },
             {
               "title": "Lecture 6: Plate Tectonics – Convergent Boundaries (Ocean-Continental)",
@@ -1077,7 +1099,8 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "video_url": "https://www.youtube.com/watch?v=plate_tectonics_intro"
             },
             {
               "title": "Lecture 7: Plate Tectonics – Convergent Boundaries (Ocean-Ocean & Trijunctions)",
@@ -1605,7 +1628,8 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "video_url": "https://www.youtube.com/watch?v=weathering_erosion_basics"
             },
             {
               "title": "Lecture 17: Mass Wasting and Indian Landslides",
@@ -2141,7 +2165,17 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "concept_checklist": [
+                "Davis cycle of erosion (youth, maturity, old age)",
+                "V-shaped valleys and gorges",
+                "waterfalls and rapids",
+                "meanders and oxbow lakes",
+                "floodplains and natural levees",
+                "alluvial fans vs deltas",
+                "incised meanders and river terraces",
+                "base level concept (ultimate and local)"
+              ]
             },
             {
               "title": "Lecture 22: Deltas, Rejuvenation, and Stream Piracy",
@@ -2873,7 +2907,18 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "video_url": "https://www.youtube.com/watch?v=monsoon_mechanisms",
+              "concept_checklist": [
+                "Indian monsoon mechanism (thermal and dynamic factors)",
+                "El Nino Southern Oscillation (ENSO) and its impact on monsoon",
+                "Indian Ocean Dipole (IOD) – positive and negative phases",
+                "Madden-Julian Oscillation (MJO)",
+                "role of Tibetan Plateau and jet streams",
+                "monsoon onset and withdrawal dates",
+                "monsoon breaks and active/break spells",
+                "Western Disturbances and winter precipitation"
+              ]
             },
             {
               "title": "Lecture 29: Air Masses, Fronts, and Temperate Cyclones",
@@ -3444,7 +3489,16 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "concept_checklist": [
+                "ocean currents – warm and cold (major global currents)",
+                "thermohaline circulation (global conveyor belt)",
+                "spring tides and neap tides",
+                "tsunami generation and propagation",
+                "western boundary currents vs eastern boundary currents",
+                "upwelling and downwelling",
+                "tidal bore and tidal energy"
+              ]
             },
             {
               "title": "Lecture 35: Coral Reefs, Bleaching, and Marine Resources",
@@ -3989,7 +4043,16 @@
                 }
               ],
               "pyqs": [],
-              "mcq_questions": []
+              "mcq_questions": [],
+              "concept_checklist": [
+                "stages of Demographic Transition Model (DTM)",
+                "population explosion in Stage 2",
+                "fertility decline and Stage 3 characteristics",
+                "India's position in the DTM (state-wise variation)",
+                "Total Fertility Rate (TFR) and replacement level",
+                "dependency ratio (youth and old-age)",
+                "demographic dividend concept"
+              ]
             }
           ]
         },

@@ -16,7 +16,7 @@ from __future__ import annotations
 from datetime import date, datetime
 from typing import Any, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 # ---------------------------------------------------------------------------
@@ -61,6 +61,10 @@ class GsLmsContentSectionOut(BaseModel):
 
     When locked, ``blocks`` is None (content hidden). When unlocked,
     ``blocks`` contains the typed content blocks.
+
+    Skippable sections are unlocked (student can read them) but NOT required
+    for topic completion. This is determined by learner level + discussion
+    match percentage.
     """
     section_id: int
     section_label: str  # BASIC | ADVANCED | NCERT_LEVEL | EXAMINER_TRAPS
@@ -68,6 +72,7 @@ class GsLmsContentSectionOut(BaseModel):
     display_order: int
     locked: bool
     completed: bool
+    skippable: bool = False
     # Content blocks — None when section is locked.
     blocks: Optional[Any] = None
 
@@ -78,6 +83,9 @@ class GsLmsTopicSectionsOut(BaseModel):
     title: str
     discussion_gate_passed: bool
     topic_completed: bool
+    video_url: Optional[str] = None
+    video_watched: bool = False
+    learner_level: Optional[str] = None
     sections: list[GsLmsContentSectionOut] = []
 
 
@@ -237,6 +245,10 @@ class GsLmsDiscussionTurnResponseOut(BaseModel):
     student_turn: GsLmsDiscussionTurnOut
     ai_turn: GsLmsDiscussionTurnOut
     gate_passed: bool
+    # Concept matching info (present when topic has a concept_checklist)
+    concepts_matched: Optional[list[str]] = None
+    concepts_missed: Optional[list[str]] = None
+    match_percentage: Optional[float] = None
 
 
 # ---------------------------------------------------------------------------
@@ -310,9 +322,13 @@ class GsLmsPlanItemOut(BaseModel):
     """A single item in the daily plan."""
     node_id: int
     title: str
-    item_type: str  # "section" | "practice"
+    item_type: str  # "section" | "practice" | "revisit"
     completed: bool = False
     completed_at: Optional[str] = None  # ISO 8601
+    # For revisit items only
+    revisit_id: Optional[int] = None
+    revisit_type: Optional[str] = None  # "day_3" | "day_7" | "day_21"
+    overdue: bool = False
 
 
 class GsLmsDailyPlanOut(BaseModel):
@@ -372,6 +388,8 @@ class GsLmsOnboardingStatusOut(BaseModel):
     bandwidth_selected: Optional[int] = None
     first_topic_id: Optional[int] = None
     first_topic_title: Optional[str] = None
+    learner_level: Optional[str] = None
+    study_window_minutes: Optional[int] = None
 
 
 class GsLmsOnboardingCompleteIn(BaseModel):
@@ -381,3 +399,45 @@ class GsLmsOnboardingCompleteIn(BaseModel):
 
     bandwidth: int = Field(..., gt=0, description="Daily bandwidth selection")
     first_topic_id: Optional[int] = None
+    learner_level: str = Field(
+        default="beginner",
+        description="Learner level: beginner, intermediate, or advanced",
+    )
+    study_window_minutes: int = Field(
+        default=90,
+        description="Daily study window in minutes: 60, 90, 120, or 180",
+    )
+
+    @field_validator("learner_level")
+    @classmethod
+    def validate_learner_level(cls, v: str) -> str:
+        allowed = ("beginner", "intermediate", "advanced")
+        if v not in allowed:
+            raise ValueError(f"learner_level must be one of {allowed}")
+        return v
+
+    @field_validator("study_window_minutes")
+    @classmethod
+    def validate_study_window(cls, v: int) -> int:
+        allowed = (60, 90, 120, 180)
+        if v not in allowed:
+            raise ValueError(f"study_window_minutes must be one of {allowed}")
+        return v
+
+
+class GsLmsLearnerLevelUpdateIn(BaseModel):
+    """Request to update learner level post-onboarding."""
+
+    model_config = {"extra": "forbid"}
+
+    learner_level: str = Field(
+        ..., description="Learner level: beginner, intermediate, or advanced"
+    )
+
+    @field_validator("learner_level")
+    @classmethod
+    def validate_learner_level(cls, v: str) -> str:
+        allowed = ("beginner", "intermediate", "advanced")
+        if v not in allowed:
+            raise ValueError(f"learner_level must be one of {allowed}")
+        return v

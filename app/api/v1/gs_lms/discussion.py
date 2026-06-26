@@ -1,9 +1,9 @@
 """AI Discussion endpoints for the GS LMS Platform.
 
-Routes (mounted under /api/v1/gs-lms; auth-gated at the package router):
-* POST /geography/discussion/start — Initiate discussion for a topic
-* POST /geography/discussion/{session_id}/turn — Student sends message, gets AI response
-* GET /geography/discussion/{session_id}/status — Session completion status
+Routes (mounted under /api/v1/gs-lms/{subject_slug}; auth-gated at the package router):
+* POST /discussion/start — Initiate discussion for a topic
+* POST /discussion/{session_id}/turn — Student sends message, gets AI response
+* GET /discussion/{session_id}/status — Session completion status
 
 Key behaviours:
 - `start`: Creates a new session OR returns the existing active session. If
@@ -15,7 +15,7 @@ Key behaviours:
 - Ownership: students can only access their own sessions.
 - Error handling: 404 for missing sessions, 422 for turns on completed sessions.
 
-Requirements traced: 5.1, 5.2, 5.3, 5.4, 5.6
+Requirements traced: 5.1, 5.2, 5.3, 5.4, 5.6, 9.1, 9.2
 """
 
 from __future__ import annotations
@@ -29,6 +29,7 @@ from app.db.session import get_db
 from app.models.domain import User
 from app.api.dependencies import get_current_user
 from app.schemas.common import StandardResponse
+from app.core.gs.models import GsSubject
 from app.core.gs_lms.student_models import (
     GsLmsDiscussionSession,
     GsLmsDiscussionStatusEnum,
@@ -43,8 +44,10 @@ from app.core.gs_lms.discussion import (
     has_completed_discussion,
     get_active_session,
     get_session_transcript,
+    process_turn_concepts,
 )
 from app.core.gs_lms.coverage import create_gap_snapshot
+from app.api.v1.gs_lms.dependencies import resolve_subject
 from app.api.v1.gs_lms.schemas import (
     GsLmsDiscussionStartIn,
     GsLmsDiscussionTurnIn,
@@ -126,13 +129,14 @@ def _turn_to_out(turn) -> GsLmsDiscussionTurnOut:
 
 
 # ---------------------------------------------------------------------------
-# POST /geography/discussion/start
+# POST /discussion/start
 # ---------------------------------------------------------------------------
 
 
-@router.post("/geography/discussion/start")
+@router.post("/discussion/start")
 def start_discussion(
     body: GsLmsDiscussionStartIn,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
@@ -185,14 +189,15 @@ def start_discussion(
 
 
 # ---------------------------------------------------------------------------
-# POST /geography/discussion/{session_id}/turn
+# POST /discussion/{session_id}/turn
 # ---------------------------------------------------------------------------
 
 
-@router.post("/geography/discussion/{session_id}/turn")
+@router.post("/discussion/{session_id}/turn")
 def submit_turn(
     session_id: int,
     body: GsLmsDiscussionTurnIn,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:
@@ -227,17 +232,25 @@ def submit_turn(
     # 2. Get transcript for AI context
     transcript = get_session_transcript(db, session.id)
 
-    # 3. Generate AI response
+    # 3. Process concept matching after student turn (recomputes matching)
+    #    This updates session.concepts_matched, concepts_missed, match_percentage
+    concept_gate_active, missed_concepts, match_pct = process_turn_concepts(
+        db, session, transcript
+    )
+
+    # 4. Generate AI response — pass concept gaps for Socratic targeting (R2.6)
     ai_response_text = generate_ai_response(
         session,
         body.content,
         transcript=transcript,
+        concepts_missed=missed_concepts,
+        match_percentage=match_pct,
     )
 
-    # 4. Add AI turn
+    # 5. Add AI turn
     ai_turn = add_ai_turn(db, session, ai_response_text)
 
-    # 5. Check threshold and auto-complete if met
+    # 6. Check threshold and auto-complete if met
     total_turns = len(transcript) + 1  # transcript was fetched before AI turn was added
     # Actually recount: transcript was fetched after student turn (flushed), so it
     # includes student_turn. We added ai_turn after that, so total = len(transcript) + 1
@@ -264,18 +277,22 @@ def submit_turn(
             student_turn=_turn_to_out(student_turn),
             ai_turn=_turn_to_out(ai_turn),
             gate_passed=gate_passed,
+            concepts_matched=session.concepts_matched,
+            concepts_missed=session.concepts_missed,
+            match_percentage=session.match_percentage,
         ),
     )
 
 
 # ---------------------------------------------------------------------------
-# GET /geography/discussion/{session_id}/status
+# GET /discussion/{session_id}/status
 # ---------------------------------------------------------------------------
 
 
-@router.get("/geography/discussion/{session_id}/status")
+@router.get("/discussion/{session_id}/status")
 def get_discussion_status(
     session_id: int,
+    subject: GsSubject = Depends(resolve_subject),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> Any:

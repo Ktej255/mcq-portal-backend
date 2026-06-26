@@ -9,12 +9,8 @@ import time
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-from app.core.firebase import init_firebase
 from app.core.config import settings
 from app.core.gs_lms.gemini_discussion_provider import register_discussion_provider
-
-# Initialize Firebase Admin
-init_firebase()
 
 # Wire up the real Gemini discussion provider (falls back to mock if no API key)
 register_discussion_provider()

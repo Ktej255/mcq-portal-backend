@@ -23,6 +23,12 @@ from sqlalchemy import (
     Index,
 )
 from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.ext.compiler import compiles
+
+@compiles(JSONB, "sqlite")
+def compile_jsonb_sqlite(element, compiler, **kw):
+    return "JSON"
+
 from sqlalchemy.orm import relationship
 
 from app.db.session import Base

@@ -108,6 +108,11 @@ class GsLmsSyllabusNode(Base, InstitutionalAuditMixin):
     display_order = Column(Integer, default=0, nullable=False)
     # Metadata justifying the chosen topic ordering (R1.2, R1.5).
     ordering_justification = Column(Text, nullable=True)
+    # URL of the video lecture associated with this node (Phase 1 video integration).
+    video_url = Column(Text, nullable=True)
+    # JSON array of concept strings for concept-level discussion scoring (Phase 2).
+    # e.g. ["plate tectonics", "continental drift", "seafloor spreading"]
+    concept_checklist = Column(JSON, nullable=True)
     review_status = Column(
         Enum(GsReviewStatusEnum),
         default=GsReviewStatusEnum.UNREVIEWED,

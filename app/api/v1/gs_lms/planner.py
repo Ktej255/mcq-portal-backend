@@ -21,6 +21,7 @@ from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 
 from app.db.session import get_db
 from app.models.domain import User
@@ -42,7 +43,9 @@ from app.core.gs_lms.student_models import (
     GsLmsDailyPlan,
     GsLmsOnboardingStatus,
     GsLmsReplanEvent,
+    GsLmsRevisitSchedule,
 )
+from app.core.gs_lms.models import GsLmsSyllabusNode
 from app.api.v1.gs_lms.schemas import (
     GsLmsDailyPlanOut,
     GsLmsPlanItemOut,
@@ -149,8 +152,42 @@ def _compute_streak(db: Session, student_id: int) -> int:
     return streak
 
 
+def _get_due_revisit_items(
+    db: Session, student_id: int
+) -> list[GsLmsPlanItemOut]:
+    """Fetch today's due revisits and convert to plan items."""
+    today = date.today()
+    revisits = (
+        db.query(GsLmsRevisitSchedule)
+        .filter(
+            GsLmsRevisitSchedule.student_id == student_id,
+            GsLmsRevisitSchedule.due_date <= today,
+            GsLmsRevisitSchedule.completed == False,  # noqa: E712
+        )
+        .order_by(GsLmsRevisitSchedule.due_date.asc())
+        .all()
+    )
+
+    items: list[GsLmsPlanItemOut] = []
+    for r in revisits:
+        node = db.query(GsLmsSyllabusNode).filter(GsLmsSyllabusNode.id == r.syllabus_node_id).one_or_none()
+        title = f"🔄 {node.title}" if node else "🔄 Quick Recall"
+        items.append(
+            GsLmsPlanItemOut(
+                node_id=r.syllabus_node_id,
+                title=title,
+                item_type="revisit",
+                completed=False,
+                revisit_id=r.id,
+                revisit_type=r.revisit_type,
+                overdue=r.due_date < today,
+            )
+        )
+    return items
+
+
 def _plan_to_response(
-    plan: GsLmsDailyPlan, streak_days: int
+    plan: GsLmsDailyPlan, streak_days: int, revisit_items: list[GsLmsPlanItemOut] | None = None, db: Session | None = None
 ) -> GsLmsDailyPlanOut:
     """Convert a GsLmsDailyPlan DB record to the response schema."""
     planned_items = plan.planned_items or []
@@ -179,6 +216,26 @@ def _plan_to_response(
                 item_type=item.get("type", "section"),
                 completed=is_completed,
                 completed_at=completed_at,
+            )
+        )
+
+    # Prepend due revisit items (they appear at top of plan)
+    if revisit_items:
+        items_out = revisit_items + items_out
+
+    # Inject weekly retro item on every 7th plan day
+    all_plans_count = (
+        db.query(func.count(GsLmsDailyPlan.id))
+        .filter(GsLmsDailyPlan.student_id == plan.student_id)
+        .scalar()
+    ) if db else 0
+    if all_plans_count and all_plans_count % 7 == 0:
+        items_out.append(
+            GsLmsPlanItemOut(
+                node_id=0,
+                title="📝 Weekly Retrospective",
+                item_type="retro",
+                completed=False,
             )
         )
 
@@ -247,7 +304,8 @@ def get_today_plan(
         db.commit()
 
     streak = _compute_streak(db, student_id)
-    data = _plan_to_response(plan, streak)
+    revisit_items = _get_due_revisit_items(db, student_id)
+    data = _plan_to_response(plan, streak, revisit_items, db)
 
     return StandardResponse(
         success=True,
@@ -344,7 +402,8 @@ def update_bandwidth(
     # Re-fetch today's plan for the response.
     today_plan = _get_today_plan(db, student_id)
     streak = _compute_streak(db, student_id)
-    data = _plan_to_response(today_plan, streak)
+    revisit_items = _get_due_revisit_items(db, student_id)
+    data = _plan_to_response(today_plan, streak, revisit_items, db)
 
     return StandardResponse(
         success=True,
