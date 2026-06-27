@@ -30,6 +30,7 @@ class Settings(BaseSettings):
         "http://127.0.0.1:8000",
         "https://mcq-portal-frontend-yo5i.vercel.app",
         "https://mcq-portal-frontend.vercel.app",
+        "https://upsc-command.vercel.app",
     ]
     BACKEND_CORS_ORIGINS: Any = DEFAULT_CORS_ORIGINS.copy()
 

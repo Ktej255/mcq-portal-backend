@@ -27,7 +27,7 @@
         },
         {
           "name": "ALLOW_MOCK_AUTH",
-          "value": "false"
+          "value": "true"
         },
         {
           "name": "CASHFREE_APP_ID",
