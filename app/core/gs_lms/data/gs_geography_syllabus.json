@@ -7,9 +7,783 @@
       "display_order": 1,
       "children": [
         {
+          "title": "Earth and Its Origin (The Universe)",
+          "node_type": "SUB_TOPIC",
+          "display_order": 0,
+          "review_status": "REVIEWED",
+          "children": [
+            {
+              "title": "Big Bang Theory and Origin of the Universe",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.0,
+              "display_order": 1,
+              "review_status": "REVIEWED",
+              "video_url": null,
+              "concept_checklist": [
+                "The Universe originated approximately 13.8 billion years ago from an infinitely dense, infinitely hot singularity in ...",
+                "Within the first fraction of a second (10⁻⁴³ seconds, called the Planck epoch), the four fundamental forces — gravity...",
+                "For the next 380,000 years, the Universe remained an opaque plasma of charged particles",
+                "Stars began forming approximately 200 million years after the Big Bang from gravitational collapse of hydrogen gas cl...",
+                "Galaxies assembled from gravitational clustering of stars and dark matter over hundreds of millions of years",
+                "The evidence for the Big Bang rests on three observational pillars: (1) the expansion of the Universe measured throug...",
+                "This cosmic evolution directly determines Earth's composition and existence"
+              ],
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Foundation Understanding",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "The Universe originated approximately 13.8 billion years ago from an infinitely dense, infinitely hot singularity in an event termed the Big Bang. This was not an explosion in space but an expansion of space itself. Prior to this event, neither space, time, nor matter existed in any form recognizable by current physics."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Within the first fraction of a second (10⁻⁴³ seconds, called the Planck epoch), the four fundamental forces — gravity, electromagnetism, strong nuclear force, and weak nuclear force — were unified as a single force. As the Universe expanded and cooled, these forces separated sequentially. By 10⁻⁶ seconds, quarks combined to form protons and neutrons. By 3 minutes, nuclear fusion produced hydrogen (75%) and helium (25%) nuclei — this is called Big Bang Nucleosynthesis."
+                    },
+                    {
+                      "type": "para",
+                      "text": "For the next 380,000 years, the Universe remained an opaque plasma of charged particles. At 380,000 years, temperature dropped below 3000 K, allowing electrons to combine with nuclei to form neutral atoms. This event, called Recombination, made the Universe transparent to light. The radiation released at this moment is detectable today as the Cosmic Microwave Background Radiation (CMBR), discovered by Arno Penzias and Robert Wilson in 1965."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Stars began forming approximately 200 million years after the Big Bang from gravitational collapse of hydrogen gas clouds. These first-generation stars (Population III) were massive and short-lived, producing heavier elements through nuclear fusion and supernova explosions. All elements heavier than iron in the periodic table — including the calcium in your bones and iron in your blood — were forged in stellar explosions."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Galaxies assembled from gravitational clustering of stars and dark matter over hundreds of millions of years. The Milky Way galaxy, containing our Solar System, is a barred spiral galaxy approximately 100,000 light-years in diameter with an estimated 200-400 billion stars. Our Solar System occupies an unremarkable position in the Orion Arm, approximately 26,000 light-years from the galactic centre."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The evidence for the Big Bang rests on three observational pillars: (1) the expansion of the Universe measured through redshift of galaxies (Hubble 1929), (2) the existence and uniformity of CMBR at 2.725 K matching theoretical predictions, and (3) the observed abundance ratio of hydrogen to helium (75:25) matching nucleosynthesis calculations precisely."
+                    },
+                    {
+                      "type": "para",
+                      "text": "This cosmic evolution directly determines Earth's composition and existence. Every atom on Earth was produced either in the Big Bang (hydrogen, helium) or in stellar interiors and explosions (carbon, oxygen, iron, uranium). Understanding cosmic origins provides the foundation for understanding why Earth has the specific chemical composition that enables plate tectonics, magnetism, and life — concepts we build upon in the next sub-topic on Solar System formation theories."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "NCERT Content Reference",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2: 'The Origin and Evolution of the Earth'. Pages 14-16 cover the Big Bang Theory. Key points from NCERT: The Big Bang Theory states that all matter was concentrated at one point (a singularity) in a state of extremely high density and temperature. A 'big bang' caused the singularity to expand. As expansion continued, temperature dropped. Within 300,000 years, temperature fell to 4500 K and hydrogen and helium atoms formed."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT specifically states: 'The expansion continues even to the present day.' This is testable in Prelims — the Universe is STILL expanding, not static. NCERT also mentions that galaxies are moving farther apart (Hubble's observation), which confirms continuing expansion. The textbook does not cover CMBR or nucleosynthesis in detail but mentions them as supporting evidence."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 6 — The Earth: Our Habitat, Chapter 1: Provides the simplest description — 'billions of stars and galaxies form the Universe' and 'the Sun is a star.' While basic, UPSC has tested understanding at this fundamental level in combination statements."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "Standard Reference Depth (Savindra Singh Ch. 2-3)",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Savindra Singh's Physical Geography, Chapter 2 provides the theoretical framework. He categorizes Universe origin theories into: (A) Steady State Theory (Bondi, Gold, Hoyle 1948) — Universe has no beginning or end, continuous creation of matter maintains density despite expansion. This theory is now REJECTED because CMBR existence contradicts it. (B) Pulsating Universe Theory — Universe expands, contracts, and expands again in cycles. Not proven but not completely disproven. (C) Big Bang Theory (Lemaitre 1927, Gamow 1948) — currently the ACCEPTED model."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Critical distinction for UPSC: Georges Lemaitre (1927) first proposed the expansion from a 'primeval atom' — he is the ORIGINAL proponent, not Hubble. Hubble (1929) provided OBSERVATIONAL EVIDENCE through redshift measurements. George Gamow (1948) worked out the physics of nucleosynthesis. This chronology is frequently tested: Who proposed? Lemaitre. Who proved? Hubble."
+                    },
+                    {
+                      "type": "para",
+                      "text": "GC Leong's Certificate Physical Geography (Chapter 1) provides additional context on stellar evolution: Nebula → Protostar → Main Sequence Star → Red Giant → Supernova/White Dwarf/Black Hole. This stellar life cycle is important because supernova explosions produce the heavy elements that form planets. Without stellar death, rocky planets like Earth cannot exist."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Advanced concept from Savindra Singh: Dark Matter constitutes approximately 27% and Dark Energy approximately 68% of the Universe. Visible matter (stars, planets, gas) is only about 5%. Dark Energy is responsible for the ACCELERATING expansion of the Universe, discovered in 1998 (Perlmutter, Schmidt, Riess — Nobel Prize 2011). UPSC has asked about dark energy in the context of Universe expansion acceleration."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Current Affairs Connected to This Topic",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "James Webb Space Telescope (JWST), launched December 2021 by NASA-ESA-CSA, has captured images of galaxies formed just 300 million years after the Big Bang — the oldest galaxies ever observed. These observations are REVISING estimates of early galaxy formation rates. UPSC relevance: JWST uses infrared to peer through cosmic dust, orbits at the L2 Lagrange point (1.5 million km from Earth), and has already discovered galaxies that challenge existing models of early Universe evolution."
+                    },
+                    {
+                      "type": "para",
+                      "text": "India's AstroSat (launched 2015, ISRO) is India's first dedicated multi-wavelength space observatory. It observes in UV, X-ray, and visible light simultaneously. In 2024, AstroSat detected UV radiation from a galaxy 9.3 billion light-years away — one of the farthest UV detections by any space telescope. UPSC tests India's space achievements frequently."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Consider the following statements: (1) The James Webb Space Telescope orbits the Earth at the L2 Lagrange point. (2) It primarily observes in the infrared spectrum. (3) It has detected galaxies older than those observed by the Hubble Space Telescope. Which statements are correct? Answer: All three are correct. This is the UPSC framing style for current affairs questions on this topic."
+                    },
+                    {
+                      "type": "para",
+                      "text": "LIGO-India (Laser Interferometer Gravitational-Wave Observatory) is under construction in Aundha Nagnath, Maharashtra. Gravitational waves — ripples in spacetime predicted by Einstein in 1916 — were first directly detected in 2015 by LIGO USA. These waves are produced by merging black holes and neutron stars. LIGO-India will improve the global network's ability to locate gravitational wave sources. This connects Universe physics to India's scientific infrastructure."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [],
+              "mcq_questions": []
+            },
+            {
+              "title": "Origin of the Solar System — Nebular Hypothesis, Frost Line, Angular Momentum",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.0,
+              "display_order": 2,
+              "review_status": "REVIEWED",
+              "video_url": null,
+              "concept_checklist": [
+                "In Topic 1.1 we established that the Big Bang produced only hydrogen and helium — and that heavier elements were forg...",
+                "The modern **Solar Nebula Theory** states that approximately **4.6 billion years ago**, a slowly rotating cloud of in...",
+                "The collapsing cloud flattened into a rotating **protoplanetary disk** (also called **accretion disk**)",
+                "A critical concept is the **Frost Line** (also called the **Snow Line** or **Ice Line**), located at approximately **...",
+                "**Angular Momentum** posed the biggest theoretical challenge to the Nebular Hypothesis",
+                "The modern resolution involves **magnetic braking** — the young Sun's powerful magnetic field coupled with the **sola...",
+                "The process of planet building occurred in stages: (1) **Dust grains** collided and stuck together (**accretion**), f..."
+              ],
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Foundation Understanding",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "In Topic 1.1 we established that the Big Bang produced only hydrogen and helium — and that heavier elements were forged in stellar explosions. Those elements now had to assemble into a Solar System. The dominant explanation for how this occurred is the **Nebular Hypothesis**, first proposed by **Immanuel Kant (1755)** and independently developed by **Pierre-Simon Laplace (1796)**."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The modern **Solar Nebula Theory** states that approximately **4.6 billion years ago**, a slowly rotating cloud of interstellar gas and dust (a **solar nebula**) began gravitational collapse — likely triggered by a nearby **supernova shockwave**. As the cloud contracted, it spun faster due to the **conservation of angular momentum** (the same principle that makes an ice-skater spin faster when pulling in arms)."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The collapsing cloud flattened into a rotating **protoplanetary disk** (also called **accretion disk**). At the centre, temperature and pressure became extreme enough to ignite **nuclear fusion** of hydrogen — the **proto-Sun** was born. The remaining disk material (only about **0.1%** of the total mass) formed planets, moons, asteroids, and comets through a process called **accretion**."
+                    },
+                    {
+                      "type": "para",
+                      "text": "A critical concept is the **Frost Line** (also called the **Snow Line** or **Ice Line**), located at approximately **2.7 AU** from the proto-Sun (between present-day Mars and Jupiter orbits). Inside the frost line, temperatures were too high for volatile compounds (water, methane, ammonia) to condense — only **metals and silicates** (rock) could remain solid. Outside the frost line, volatiles froze into solid ice grains, adding enormous mass to forming protoplanets."
+                    },
+                    {
+                      "type": "para",
+                      "text": "**Angular Momentum** posed the biggest theoretical challenge to the Nebular Hypothesis. The Sun contains **99.86%** of the Solar System's mass but only **0.5%** of its angular momentum — the planets carry **99.5%** of the angular momentum. If the Sun formed from a spinning disk, it should spin much faster. This is called the **Angular Momentum Problem**."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The modern resolution involves **magnetic braking** — the young Sun's powerful magnetic field coupled with the **solar wind** transferred angular momentum outward to the disk material. Additionally, **turbulent viscosity** within the disk and **gravitational interactions** between forming protoplanets redistributed angular momentum. India's **Aditya-L1** solar mission studies solar magnetic fields that drive such processes even today."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The process of planet building occurred in stages: (1) **Dust grains** collided and stuck together (**accretion**), forming millimetre-sized particles. (2) These grew into **planetesimals** (1–10 km bodies) through continued collisions. (3) Planetesimals gravitationally attracted more material, becoming **protoplanets**. (4) Beyond the frost line, protoplanets grew large enough (≈**10 Earth masses**) to gravitationally capture **hydrogen and helium gas** directly — forming **gas giants**. This runaway gas capture explains Jupiter's enormous size (**318 Earth masses**)."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Evidence supporting the Nebular Hypothesis includes: (1) all planets orbit the Sun in the **same direction** (prograde), (2) all planets orbit in approximately the **same plane** (ecliptic), (3) **protoplanetary disks** have been directly imaged around young stars by **ALMA telescope** (Chile), and (4) the compositional gradient from rocky inner planets to gaseous outer planets matches frost-line predictions precisely."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "NCERT Content Reference",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2: 'The Origin and Evolution of the Earth'. Pages 16-18. Key statement: 'The nebula from which our Solar System is believed to have been formed started its collapse and condensation approximately 5 to 5.6 billion years ago. The Sun was formed about 5 billion years ago.' Planets formed about 4.6 billion years ago."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT explicitly discusses: (1) Nebular Hypothesis by Kant-Laplace — planets formed from slowly rotating nebula of gas and dust. (2) Revised Nebular Hypothesis — 'In 1950, Otto Schmidt in Russia and Carl Weizascar in Germany somewhat revised the nebular hypothesis.' This detail appears in MCQ options."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 9 — Contemporary India, Chapter 2: Basic framework introducing inner vs outer planets and the asteroid belt as a dividing line — a simplified precursor to the frost line concept."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "Current Affairs Connected to This Topic",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "ISRO's **Aditya-L1** reached the **L1 Lagrange point** (1.5 million km from Earth) in January 2024. It studies solar corona, solar wind, and magnetic fields — the same solar wind that resolved the angular momentum problem in nebular theory. First Indian mission to study the Sun directly."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The **Atacama Large Millimeter Array (ALMA)** in Chile has directly imaged **protoplanetary disks** around young stars like **HL Tauri** (2014) and **TW Hydrae**. These images show gaps carved by forming planets — the first direct visual evidence of the nebular hypothesis in action around other stars."
+                    },
+                    {
+                      "type": "para",
+                      "text": "**James Webb Space Telescope** detected water vapour in the inner regions of protoplanetary disks around young stars, confirming the **frost line concept** — water exists as vapour inside and as ice outside. Observations of disk around star **PDS 70** show active planet formation."
+                    },
+                    {
+                      "type": "para",
+                      "text": "India's **Chandrayaan-3** soft-landed near the lunar south pole (August 2023). The Moon likely formed from a **giant impact** between proto-Earth and a Mars-sized body called **Theia** — a late-stage event in Solar System formation. Pragyan rover analysed lunar regolith composition."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Examiner Traps and Common Confusions",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "TRAP 1 — 'Kant and Laplace jointly proposed the Nebular Hypothesis.' WRONG. They proposed INDEPENDENTLY — Kant (1755) first, Laplace (1796) later. They never collaborated."
+                    },
+                    {
+                      "type": "para",
+                      "text": "TRAP 2 — 'The frost line is located between Earth and Mars.' WRONG. The frost line (~2.7 AU) is between MARS and JUPITER — specifically in the asteroid belt region. Earth is at 1 AU, Mars at 1.5 AU, Jupiter at 5.2 AU."
+                    },
+                    {
+                      "type": "para",
+                      "text": "TRAP 3 — 'The Sun contains most of the Solar System's angular momentum.' WRONG. The Sun has 99.86% of the MASS but only 0.5% of the angular MOMENTUM. Planets (especially Jupiter) carry 99.5% of angular momentum."
+                    },
+                    {
+                      "type": "para",
+                      "text": "TRAP 4 — 'Gas giants formed because they are farther from the Sun and hence cooler.' INCOMPLETE. Beyond the frost line, ICES could condense alongside rocks — this gave protoplanets MORE solid material to grow massive cores that then captured gas gravitationally."
+                    },
+                    {
+                      "type": "para",
+                      "text": "TRAP 5 — 'The Solar System formed from the Big Bang directly.' WRONG. The Big Bang (13.8 Ga) produced only H and He. The Solar System (4.6 Ga) formed from a SECOND-GENERATION nebula enriched with heavy elements from earlier stellar explosions."
+                    },
+                    {
+                      "type": "para",
+                      "text": "TRAP 6 — 'Planetesimals are small planets.' WRONG. Planetesimals are 1–10 km rocky/icy bodies — building blocks of planets, NOT small planets."
+                    },
+                    {
+                      "type": "para",
+                      "text": "TRAP 7 — 'The Nebular Hypothesis has been rejected because it cannot explain angular momentum.' NOT rejected — it has been MODIFIED. Modern Solar Nebula Theory resolves angular momentum through magnetic braking and turbulent viscosity."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [],
+              "mcq_questions": []
+            },
+            {
+              "title": "Stars — Formation, Life Cycle, and Stellar Evolution",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.0,
+              "display_order": 3,
+              "review_status": "REVIEWED",
+              "video_url": null,
+              "concept_checklist": [
+                "Stars form within molecular clouds — dense regions of interstellar gas (primarily hydrogen) and dust",
+                "The main sequence is the longest phase of a star's life, during which hydrogen fuses into helium in the core",
+                "The Hertzsprung-Russell (H-R) Diagram plots stars by luminosity (vertical) against surface temperature/colour (horizo...",
+                "Low-mass stars (below ~8 solar masses) exhaust core hydrogen, expand into red giants, shed outer layers as planetary ...",
+                "High-mass stars (above ~8 solar masses) undergo successive fusion stages: hydrogen → helium → carbon → neon → oxygen ...",
+                "Supernova remnants include either neutron stars (extremely dense, city-sized, with intense magnetic fields and rapid ...",
+                "Stellar nucleosynthesis is directly responsible for Earth's existence"
+              ],
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Foundation Understanding",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Stars form within molecular clouds — dense regions of interstellar gas (primarily hydrogen) and dust. When a portion of such a cloud becomes gravitationally unstable (Jeans instability), it collapses inward. As the material contracts, it heats up, eventually forming a protostar. When core temperatures reach approximately 10 million Kelvin, hydrogen fusion ignites, and a true star is born. This marks the beginning of the main sequence phase."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The main sequence is the longest phase of a star's life, during which hydrogen fuses into helium in the core. The Sun is a G-type main sequence star (yellow dwarf) currently about 4.6 billion years into its approximately 10 billion year main sequence lifespan. A star's mass at birth determines its luminosity, colour, temperature, and lifespan — more massive stars burn hotter, bluer, and die much faster."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Hertzsprung-Russell (H-R) Diagram plots stars by luminosity (vertical) against surface temperature/colour (horizontal). Main sequence stars form a diagonal band. Giants and supergiants occupy the upper right (cool, luminous), while white dwarfs sit in the lower left (hot, dim). The H-R diagram is the fundamental organising tool for understanding stellar populations and evolution."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Low-mass stars (below ~8 solar masses) exhaust core hydrogen, expand into red giants, shed outer layers as planetary nebulae, and leave behind white dwarfs — dense, Earth-sized remnants that slowly cool over billions of years. The Sun will follow this path, expanding to engulf Mercury and Venus in approximately 5 billion years before collapsing to a white dwarf."
+                    },
+                    {
+                      "type": "para",
+                      "text": "High-mass stars (above ~8 solar masses) undergo successive fusion stages: hydrogen → helium → carbon → neon → oxygen → silicon → iron. Iron cannot release energy through fusion, so when the iron core exceeds the Chandrasekhar limit (~1.4 solar masses), it collapses catastrophically in a core-collapse supernova. The explosion synthesises all elements heavier than iron and disperses them into space."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Supernova remnants include either neutron stars (extremely dense, city-sized, with intense magnetic fields and rapid rotation — pulsars) or black holes (if the remnant exceeds ~3 solar masses, gravity overcomes all forces and the matter collapses into a singularity). These endpoints represent the most extreme states of matter in the Universe."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Stellar nucleosynthesis is directly responsible for Earth's existence. Every element in the periodic table heavier than hydrogen and helium was manufactured inside stars or in supernova explosions. The carbon in organic molecules, oxygen we breathe, iron in Earth's core, and uranium that heats Earth's interior — all were produced by stellar processes before the Solar System formed. We are, literally, made of stardust."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "NCERT Content Reference",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2 briefly mentions that the Sun is a star and that stars produce energy through nuclear fusion. The textbook states: 'A star is formed by condensation of gases, mainly hydrogen, in a nebula.' It does not provide extensive stellar evolution detail but establishes the connection between stellar processes and planetary formation."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 8 — Science, Chapter on 'Stars and the Solar System' covers star basics: stars are luminous bodies that produce light through nuclear reactions, they appear to twinkle due to atmospheric refraction, and the Sun is a medium-sized star. NCERT explicitly states the Sun will last for approximately another 5 billion years."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 6 — 'The Earth: Our Habitat' provides the simplest framework: 'The Sun is a star. Stars are celestial bodies that produce heat and light of their own.' While basic, UPSC may combine this with advanced stellar physics in statement-based questions. Know that ALL stars produce their own light through fusion — this distinguishes them from planets and moons."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "Standard Reference Depth (Savindra Singh / GC Leong)",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "GC Leong's Certificate Physical Geography (Chapter 1) provides the stellar life cycle: Nebula → Protostar → Main Sequence Star → Red Giant → Planetary Nebula/Supernova → White Dwarf/Neutron Star/Black Hole. This evolutionary sequence is essential for understanding element production and planetary system formation."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Savindra Singh connects stellar evolution to Earth sciences: (1) Supernova explosions produce heavy elements that form rocky planets. (2) Supernovae may trigger nebular collapse, initiating new solar system formation. (3) The Sun's energy output controls Earth's climate, atmospheric processes, and biological productivity. (4) Solar variability (sunspot cycles) affects short-term climate patterns."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The stellar classification system (OBAFGKM — 'Oh Be A Fine Girl/Guy Kiss Me') arranges stars by surface temperature: O-type (>30,000 K, blue, short-lived) to M-type (<3,500 K, red, long-lived). The Sun is a G2V star — G-type, sub-class 2, main sequence (V). This classification system appears in advanced UPSC questions on astronomy."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Key threshold masses: Below 0.08 solar masses → brown dwarf (failed star, no sustained fusion). 0.08-8 solar masses → white dwarf end state. 8-25 solar masses → neutron star after supernova. Above 25 solar masses → black hole after supernova. The Chandrasekhar Limit (1.4 solar masses) is the maximum white dwarf mass — Nobel Prize 1983, named after Indian astrophysicist Subrahmanyan Chandrasekhar."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Current Affairs Connected to This Topic",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "The Event Horizon Telescope (EHT) captured the first image of a black hole shadow in M87 galaxy (2019) and then Sagittarius A* at the Milky Way's centre (2022). These images confirm Einstein's general relativity predictions about black hole behaviour. UPSC tests: EHT is not a single telescope but a global network using very long baseline interferometry."
+                    },
+                    {
+                      "type": "para",
+                      "text": "ISRO's Aditya-L1 mission studies the Sun's corona, solar wind, and magnetic field. Solar flares and Coronal Mass Ejections (CMEs) can disrupt Earth's magnetosphere, satellites, power grids, and communications — the phenomenon of space weather. Understanding our star is both scientific and strategic for India's growing satellite infrastructure."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Betelgeuse, a red supergiant in Orion visible to the naked eye, dimmed dramatically in 2019-2020, raising speculation about imminent supernova. Studies revealed a dust cloud from surface mass ejection was responsible. When Betelgeuse eventually explodes (within ~100,000 years), it will be visible in daylight from Earth — connecting stellar evolution to direct human observation."
+                    },
+                    {
+                      "type": "para",
+                      "text": "India's XPoSat (X-ray Polarimeter Satellite), launched January 2024, studies X-ray polarisation from neutron stars, black hole systems, and supernova remnants. It is only the second mission globally (after NASA's IXPE) dedicated to X-ray polarimetry, placing India at the forefront of high-energy astrophysics observation."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [],
+              "mcq_questions": []
+            },
+            {
+              "title": "Galaxies and Large-Scale Structure of the Universe",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.0,
+              "display_order": 4,
+              "review_status": "REVIEWED",
+              "video_url": null,
+              "concept_checklist": [
+                "A galaxy is a gravitationally bound system of stars, stellar remnants, gas, dust, and dark matter",
+                "Edwin Hubble (1926) classified galaxies into three main morphological types: (1) Spiral galaxies — disc-shaped with s...",
+                "The Milky Way is a barred spiral galaxy approximately 100,000 light-years in diameter, containing 200-400 billion stars",
+                "At the centre of the Milky Way lies Sagittarius A* (Sgr A*), a supermassive black hole with a mass of approximately 4...",
+                "The Local Group is a galaxy cluster containing about 80 galaxies dominated by the Milky Way and Andromeda (M31)",
+                "The large-scale structure of the Universe resembles a cosmic web: galaxies cluster along filaments and walls surround...",
+                "Understanding galaxies contextualises Earth's position in the cosmos: we occupy an unremarkable location in an averag..."
+              ],
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Foundation Understanding",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "A galaxy is a gravitationally bound system of stars, stellar remnants, gas, dust, and dark matter. The Universe contains an estimated 200 billion to 2 trillion galaxies, each containing millions to trillions of stars. Galaxies are the fundamental building blocks of the Universe's large-scale structure, arranged in clusters, superclusters, and filaments surrounding vast empty voids."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Edwin Hubble (1926) classified galaxies into three main morphological types: (1) Spiral galaxies — disc-shaped with spiral arms, ongoing star formation, contain young and old stars (e.g., Milky Way, Andromeda). (2) Elliptical galaxies — smooth, featureless ellipsoidal shapes, predominantly old red stars, minimal gas/dust, little new star formation. (3) Irregular galaxies — lack defined structure, often chaotic, vigorous star formation (e.g., Large and Small Magellanic Clouds)."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Milky Way is a barred spiral galaxy approximately 100,000 light-years in diameter, containing 200-400 billion stars. It has a central bar-shaped structure surrounded by spiral arms. Our Solar System is located in the Orion Arm (also called the Local Spur), about 26,000 light-years from the galactic centre. The Sun orbits the galactic centre once every 225-250 million years (one 'galactic year')."
+                    },
+                    {
+                      "type": "para",
+                      "text": "At the centre of the Milky Way lies Sagittarius A* (Sgr A*), a supermassive black hole with a mass of approximately 4 million solar masses. Most large galaxies harbour supermassive black holes at their centres. These central black holes influence galactic evolution through energy feedback when actively accreting matter (Active Galactic Nuclei)."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Local Group is a galaxy cluster containing about 80 galaxies dominated by the Milky Way and Andromeda (M31). The Milky Way and Andromeda are approaching each other at ~110 km/s and will merge in approximately 4.5 billion years. The Local Group is part of the Virgo Supercluster, which itself is part of the Laniakea Supercluster — a vast cosmic structure containing approximately 100,000 galaxies spanning 500 million light-years."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The large-scale structure of the Universe resembles a cosmic web: galaxies cluster along filaments and walls surrounding enormous voids (regions almost empty of galaxies). The largest known structures include the Hercules-Corona Borealis Great Wall (~10 billion light-years across) and the Boötes Void (~330 million light-years in diameter). This web-like distribution arose from tiny density fluctuations in the early Universe amplified by gravity over billions of years."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Understanding galaxies contextualises Earth's position in the cosmos: we occupy an unremarkable location in an average spiral arm of a typical barred spiral galaxy in a modest galaxy group. This 'Copernican Principle' — that there is nothing special about our cosmic address — is a foundational concept in modern cosmology and has philosophical implications for understanding our place in the Universe."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "NCERT Content Reference",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 6 — 'The Earth: Our Habitat', Chapter 1: States 'A Galaxy is a huge system of billions of stars and clouds of dust and gases.' NCERT mentions that there are millions of galaxies and that our galaxy is the Milky Way. While basic, UPSC has framed questions testing whether students know the Sun is one star among billions in one galaxy among billions."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2: Provides context by stating the Universe contains billions of galaxies. The emphasis is on scale: Universe → Galaxies → Solar Systems → Planets. This hierarchical organisation establishes the framework within which Earth's formation is understood."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 8 — Science, 'Stars and the Solar System': Describes the Milky Way as appearing as a bright band across the night sky when viewed edge-on from within. Mentions that the Sun is just one of the many stars in our galaxy, establishing the Sun's ordinary nature — critical for understanding that planet-forming conditions are likely common across the galaxy."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "Standard Reference Depth (Savindra Singh / GC Leong)",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "GC Leong provides the Hubble classification (tuning fork diagram): Elliptical (E0-E7, numbered by elongation), Spiral (Sa, Sb, Sc — tightness of arms), Barred Spiral (SBa, SBb, SBc), and Irregular (Irr). The Milky Way was reclassified from spiral to BARRED spiral (SBbc) in 2005 based on infrared surveys revealing the central bar structure."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Savindra Singh discusses the Milky Way's structural components: (1) Central bulge — dense, old stars, supermassive black hole. (2) Disc — spiral arms, young stars, gas, dust, active star formation. (3) Halo — globular clusters, old stars, dark matter. (4) Dark matter halo — extends far beyond visible disc, contains most of the galaxy's mass. The disc is where our Solar System resides."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Distance measurement in astronomy uses a ladder of methods: Parallax (nearby stars, <100 pc), Cepheid Variables (galaxies, period-luminosity relation discovered by Henrietta Leavitt), Type Ia Supernovae (distant galaxies, 'standard candles'), and Redshift (Hubble's Law, v = H₀d, for the most distant objects). Each method calibrates the next, building from local to cosmological distances."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Hubble's Law (1929): Galaxies recede from us at velocities proportional to their distance (v = H₀d, where H₀ ≈ 70 km/s/Mpc). This is evidence for universal expansion. Key insight: it appears as if we are at the centre, but expansion is uniform — every point sees all others receding. There is no centre to the expansion, just as there is no centre to the surface of an expanding balloon."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Current Affairs Connected to This Topic",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "The Event Horizon Telescope released the first image of Sagittarius A* (May 2022) — the supermassive black hole at the centre of our Milky Way. The image shows the 'shadow' of the black hole surrounded by a bright ring of hot gas. This confirmed the mass (~4 million solar masses) and confirmed general relativity predictions for our own galactic centre."
+                    },
+                    {
+                      "type": "para",
+                      "text": "JWST has discovered galaxies existing just 300-400 million years after the Big Bang — much earlier than expected. Some of these early galaxies are unexpectedly massive and mature, challenging existing models of galaxy formation. This is an active area of research that may require revisions to our understanding of early Universe structure formation."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Euclid space telescope (ESA, launched July 2023) is mapping the large-scale structure of the Universe to study dark energy and dark matter. It will survey 36% of the sky, imaging billions of galaxies up to 10 billion light-years away. Understanding cosmic structure helps constrain the nature of dark energy driving accelerated expansion."
+                    },
+                    {
+                      "type": "para",
+                      "text": "India's AstroSat continues contributing to galaxy research. In 2024, it detected extreme ultraviolet radiation from a distant galaxy, demonstrating that such radiation can escape galaxies and ionise intergalactic hydrogen — relevant to understanding how the early Universe became transparent (cosmic reionisation). India's observation capabilities are reaching internationally competitive levels."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [],
+              "mcq_questions": []
+            },
+            {
+              "title": "Earth in the Solar System — Uniqueness and Habitability",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.0,
+              "display_order": 5,
+              "review_status": "REVIEWED",
+              "video_url": null,
+              "concept_checklist": [
+                "Earth is the third planet from the Sun, orbiting at a mean distance of approximately 150 million kilometres (1 Astron...",
+                "Earth's position in the 'Goldilocks Zone' (Circumstellar Habitable Zone) — the orbital band where stellar radiation a...",
+                "Earth's atmosphere (78% nitrogen, 21% oxygen, 1% argon with trace CO₂ and water vapour) is unique in the Solar System",
+                "Earth's magnetic field, generated by the geodynamo in the liquid iron outer core, creates a magnetosphere extending t...",
+                "Plate tectonics — unique to Earth among known planets — recycles carbon through the carbonate-silicate cycle, maintai...",
+                "The Moon stabilises Earth's axial tilt at approximately 23.5° (varying only between 22.1° and 24.5° over 41,000-year ...",
+                "Jupiter acts as a 'cosmic shield' — its enormous gravity deflects many asteroids and comets that might otherwise impa..."
+              ],
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Foundation Understanding",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Earth is the third planet from the Sun, orbiting at a mean distance of approximately 150 million kilometres (1 Astronomical Unit). It is the fifth largest planet by diameter (12,742 km) and the densest planet in the Solar System (5.51 g/cm³). Earth is the only known planet to possess liquid water on its surface, active plate tectonics, a strong magnetic field, and a biosphere — the combination of conditions that makes it uniquely habitable."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Earth's position in the 'Goldilocks Zone' (Circumstellar Habitable Zone) — the orbital band where stellar radiation allows liquid water on a planet's surface — is the foundational condition for habitability. Too close to the Sun (Venus), water evaporates triggering runaway greenhouse effect. Too far (Mars), water freezes and the atmosphere thins. Earth's distance maintains temperatures where water can exist in all three phases simultaneously."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Earth's atmosphere (78% nitrogen, 21% oxygen, 1% argon with trace CO₂ and water vapour) is unique in the Solar System. The presence of free oxygen is entirely biological — produced by photosynthesis over the past 2.5 billion years. Without life, Earth's atmosphere would resemble Venus or Mars (dominated by CO₂). The atmosphere provides radiation shielding, thermal regulation, and the medium for weather and climate."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Earth's magnetic field, generated by the geodynamo in the liquid iron outer core, creates a magnetosphere extending thousands of kilometres into space. This deflects solar wind and cosmic radiation that would otherwise strip the atmosphere and sterilise the surface. Mars, which lost its global magnetic field approximately 4 billion years ago, subsequently lost most of its atmosphere to solar wind erosion — demonstrating what Earth would become without magnetic protection."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Plate tectonics — unique to Earth among known planets — recycles carbon through the carbonate-silicate cycle, maintaining atmospheric CO₂ levels within habitable bounds over geological time. Without plate tectonics, CO₂ would either accumulate (Venus-like greenhouse) or be entirely locked in rocks (snowball state). Plate tectonics also creates diverse habitats, drives volcanism that replenishes atmospheric gases, and generates mountain barriers affecting climate and biodiversity."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Moon stabilises Earth's axial tilt at approximately 23.5° (varying only between 22.1° and 24.5° over 41,000-year cycles). Without the Moon, Earth's tilt could vary chaotically between 0° and 85° over millions of years, causing extreme climate instability incompatible with complex life evolution. Mars, lacking a large moon, has experienced axial tilt variations from 15° to 35° in recent geological history."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Jupiter acts as a 'cosmic shield' — its enormous gravity deflects many asteroids and comets that might otherwise impact Earth. While this protection is not absolute (impacts still occur), Jupiter reduces the frequency of catastrophic impacts significantly. Earth's habitability thus depends not just on its own properties but on the architecture of the entire Solar System — a concept called the 'Rare Earth Hypothesis.'"
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "NCERT Content Reference",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 6 — 'The Earth: Our Habitat', Chapter 1: 'Conditions favourable to support life are probably found only on the Earth. The Earth is neither too hot nor too cold. It has water and air, which are very essential for our survival. The air has life-supporting gases like oxygen.' This simple statement captures the essence of habitability — UPSC tests this fundamental understanding."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2: Describes how Earth's differentiation created the layered structure with iron core (magnetic field source), silicate mantle (convection for tectonics), and thin crust. Chapter 3 discusses atmospheric composition and evolution. Together they explain WHY Earth is habitable — it has the right composition, structure, and processes."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 — Chapter 3 'Interior of the Earth': Connects internal heat and structure to surface processes. Radioactive heating maintains mantle convection, driving plate tectonics and volcanism that regulate atmospheric composition. This internal-external coupling is the mechanism by which Earth maintains habitability over billions of years."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "Standard Reference Depth (Savindra Singh / GC Leong)",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Savindra Singh lists Earth's unique characteristics: (1) Right distance from Sun (habitable zone), (2) Optimal mass — sufficient gravity to retain atmosphere but not so massive as to become a gas giant, (3) Active magnetic field protecting atmosphere, (4) Liquid water in three phases, (5) Plate tectonics regulating climate, (6) Large stabilising Moon, (7) Protective gas giant (Jupiter). These seven factors collectively enable habitability."
+                    },
+                    {
+                      "type": "para",
+                      "text": "GC Leong emphasises comparative planetology: Venus (too hot, ~460°C, runaway greenhouse, no magnetic field, no plate tectonics) and Mars (too cold, thin atmosphere, no global magnetic field, tectonically dead) represent 'failed Earths' — planets that might have been habitable but lost the conditions. Understanding why Venus and Mars failed illuminates why Earth succeeded."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The carbonate-silicate cycle (Walker et al., 1981) is Earth's long-term thermostat: (1) Volcanoes emit CO₂ → warming. (2) Warming increases weathering → CO₂ removed from atmosphere → cooling. (3) Cooling reduces weathering → CO₂ accumulates → warming. This negative feedback maintains temperatures within habitable range over billions of years and REQUIRES plate tectonics to operate through volcanic recycling."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The 'Rare Earth Hypothesis' (Ward and Brownlee, 2000) argues that while microbial life may be common, complex multicellular life requires an exceptionally rare combination of astronomical, geological, and chemical conditions — many of which Earth possesses by fortunate circumstance. This hypothesis is debated but provides an excellent framework for understanding Earth's multiple layers of habitability factors."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Current Affairs Connected to This Topic",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NASA's Perseverance rover (landed February 2021) is actively searching for biosignatures in Jezero Crater, Mars — an ancient lake bed. Sample tubes are being cached for future Mars Sample Return mission (~2033). If evidence of past Martian life is found, it would transform our understanding of habitability and confirm that habitable conditions ≠ unique to Earth."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Europa Clipper (NASA, launched October 2024) will investigate Jupiter's moon Europa, which has a subsurface ocean beneath its ice shell estimated to contain twice the water of all Earth's oceans. Conditions at the ocean-rock interface may support chemosynthetic life. This expands the habitable zone concept beyond traditional stellar radiation-based definitions."
+                    },
+                    {
+                      "type": "para",
+                      "text": "India's Chandrayaan-3 (August 2023) detected sulphur, oxygen, iron, and other elements at the lunar south pole. The Moon's composition informs Earth's formation history (Giant Impact Hypothesis). Future missions targeting permanently shadowed craters for water ice could enable sustained human presence — extending Earth's biosphere beyond the planet."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Climate change is testing Earth's habitability buffering mechanisms. The IPCC AR6 (2021-2023) confirms that anthropogenic CO₂ emissions are overwhelming the natural carbonate-silicate thermostat that operates on geological timescales. Understanding Earth's habitability factors provides scientific foundation for why maintaining atmospheric composition within natural bounds is existentially critical."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [],
+              "mcq_questions": []
+            },
+            {
+              "title": "The Moon — Origin, Characteristics, and Influence on Earth",
+              "node_type": "LEAF_TOPIC",
+              "weight": 1.0,
+              "display_order": 6,
+              "review_status": "REVIEWED",
+              "video_url": null,
+              "concept_checklist": [
+                "The Moon is Earth's only natural satellite, orbiting at a mean distance of approximately 384,400 km",
+                "The Giant Impact Hypothesis (accepted model): Approximately 4.5 billion years ago, a Mars-sized body named Theia stru...",
+                "The Moon's surface is divided into two terrain types: (1) Maria (singular: mare, 'seas') — dark, flat basaltic plains...",
+                "The Moon is tidally locked to Earth — its rotation period equals its orbital period (27.3 days), meaning the same fac...",
+                "The Moon generates tides on Earth through differential gravitational pull",
+                "The Moon is slowly receding from Earth at approximately 3.8 cm per year due to tidal energy transfer",
+                "The Moon's role in Earth's habitability is profound: (1) Stabilises axial tilt (23.5° ± 1.3°) preventing extreme clim..."
+              ],
+              "content_sections": [
+                {
+                  "section_label": "BASIC",
+                  "title": "Foundation Understanding",
+                  "display_order": 1,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "The Moon is Earth's only natural satellite, orbiting at a mean distance of approximately 384,400 km. It has a diameter of 3,474 km (about one-quarter of Earth's), making it the fifth-largest moon in the Solar System and the largest relative to its host planet. The Moon's mass is about 1/81 of Earth's, and its surface gravity is one-sixth of Earth's (1.62 m/s²)."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Giant Impact Hypothesis (accepted model): Approximately 4.5 billion years ago, a Mars-sized body named Theia struck proto-Earth at an oblique angle. The collision melted both bodies partially, with the resulting debris disc orbiting Earth eventually coalescing to form the Moon. Evidence: (1) Moon's isotopic oxygen ratios match Earth's mantle precisely, (2) Moon has a disproportionately small iron core (~2% mass vs Earth's ~32%), (3) Moon rocks lack volatile elements consistent with formation in extreme heat."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Moon's surface is divided into two terrain types: (1) Maria (singular: mare, 'seas') — dark, flat basaltic plains formed by ancient volcanic eruptions 3.1-3.9 billion years ago, covering ~16% of surface, concentrated on the near side. (2) Highlands (terrae) — lighter, heavily cratered ancient crust (anorthositic composition), representing the original solidified crust from the lunar magma ocean, approximately 4.4 billion years old."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Moon is tidally locked to Earth — its rotation period equals its orbital period (27.3 days), meaning the same face always points toward Earth. This resulted from tidal interaction over billions of years. Tidal forces from Earth slowed the Moon's rotation until synchronisation was achieved. The far side of the Moon (often incorrectly called 'dark side') receives equal sunlight but is never visible from Earth."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Moon generates tides on Earth through differential gravitational pull. The side of Earth facing the Moon experiences stronger pull (creating a tidal bulge), while the far side experiences weaker pull (creating an opposite bulge due to inertial effects). Spring tides occur when Sun-Moon-Earth align (new and full moon); neap tides occur when they are at right angles (quarter moons). Tidal range varies from near zero (Mediterranean) to 16 metres (Bay of Fundy)."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Moon is slowly receding from Earth at approximately 3.8 cm per year due to tidal energy transfer. Simultaneously, Earth's rotation is slowing (days are getting longer by ~2.3 milliseconds per century). 900 million years ago, a day was only about 18 hours long and the Moon was much closer. Eventually, both bodies will become mutually tidally locked — but the Sun will become a red giant before this completes."
+                    },
+                    {
+                      "type": "para",
+                      "text": "The Moon's role in Earth's habitability is profound: (1) Stabilises axial tilt (23.5° ± 1.3°) preventing extreme climate oscillations. (2) Generates tides that create intertidal zones — unique habitats that may have facilitated the evolution of life from sea to land. (3) The giant impact that formed the Moon may have delivered additional material to Earth and accelerated Earth's rotation, enhancing the magnetic dynamo. (4) Moonlight governs biological rhythms in many organisms."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "NCERT Content Reference",
+                  "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 6 — 'The Earth: Our Habitat', Chapter 1: 'The Moon is about 3,84,400 km from us. The Moon moves around the Earth in about 27 days. It takes exactly the same time to complete one spin. The Moon does not have conditions favourable for life. It has neither water nor air.' These basic facts form the foundation for more complex questions — UPSC tests integration of simple facts with advanced concepts."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2: Mentions the Moon in context of Earth's origin. The textbook discusses how the Earth-Moon system formed from the same period of Solar System formation. Chapter 14 on 'Movements of Ocean Water' explains tidal mechanisms with Sun-Moon gravitational interaction creating spring and neap tide patterns."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 7 — Geography, Chapter 5 'Water': Explains tides as 'rhythmic rise and fall of ocean water twice in a day' caused by the gravitational force exerted by the Sun and Moon on Earth's surface. NCERT clearly states that the Moon's gravitational pull is the PRIMARY cause of tides, with the Sun playing a secondary role despite being more massive (because the Moon is much closer)."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "NCERT_LEVEL",
+                  "title": "Standard Reference Depth (Savindra Singh / GC Leong)",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Savindra Singh discusses Moon origin theories chronologically: (1) Fission Hypothesis (George Darwin 1879) — Moon spun off from rapidly rotating Earth, leaving the Pacific Ocean basin. REJECTED: angular momentum calculations don't support it. (2) Capture Hypothesis — Moon formed elsewhere and was captured by Earth's gravity. REJECTED: capture mechanics unlikely without energy dissipation mechanism. (3) Co-accretion Hypothesis — Moon formed alongside Earth from same material. REJECTED: doesn't explain Moon's iron deficiency. (4) Giant Impact Hypothesis (Hartmann & Davis 1975) — ACCEPTED."
+                    },
+                    {
+                      "type": "para",
+                      "text": "GC Leong covers tidal theory comprehensively: Equilibrium theory (Newton) treats tides as static ocean responding to gravitational forces. Dynamic theory (Laplace) accounts for ocean basin geometry, continental barriers, Coriolis effect, and resonance. Real tides are complex combinations of multiple harmonic constituents (M2, S2, K1, O1 etc.) creating the actual observed tidal patterns at any location."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Types of tides: (1) Semi-diurnal — two high and two low tides per day (most Atlantic coasts). (2) Diurnal — one high and one low per day (Gulf of Mexico, parts of Southeast Asia). (3) Mixed — unequal heights between successive tides (Pacific coasts). India's coasts are predominantly semi-diurnal with mixed characteristics in some regions."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Tidal energy potential: The Gulf of Khambhat (Gujarat) has India's highest tidal range (8-11 m) and is the most promising site for tidal energy generation in India. The Gulf of Kutch is another potential site. Globally, major tidal energy installations include La Rance (France, 240 MW), Sihwa Lake (South Korea, 254 MW), and proposed Severn Barrage (UK, 8640 MW). Tidal energy is renewable but geographically limited to high-range locations."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "EXAMINER_TRAPS",
+                  "title": "Current Affairs Connected to This Topic",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "para",
+                      "text": "Chandrayaan-3 (ISRO, August 2023) achieved India's first successful lunar soft landing near the south pole (69°S latitude). The Vikram lander and Pragyan rover operated for one lunar day (14 Earth days). Key findings: sulphur confirmation at the surface, temperature profile measurements showing steep gradient in the top 8 cm of regolith, and plasma density measurements near the surface."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NASA's Artemis programme aims to return humans to the Moon by 2025-2026, establishing a permanent lunar presence. Artemis I (uncrewed, 2022) successfully tested the SLS/Orion system on a lunar flyby. The Lunar Gateway — a planned space station in lunar orbit — will serve as a staging point. India-US space cooperation under Artemis Accords (India signed June 2023) positions ISRO as a partner."
+                    },
+                    {
+                      "type": "para",
+                      "text": "China's Chang'e-6 mission (June 2024) returned samples from the lunar far side for the first time in history — from the South Pole-Aitken Basin. These samples reveal ancient lunar interior composition and impact history. The far side crust is thicker and compositionally different from the near side, constraining Moon formation models."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Water ice at the lunar south pole (confirmed by Chandrayaan-1's Moon Impact Probe in 2008 and NASA's LCROSS in 2009) drives current exploration interest. Permanently shadowed craters at the poles may contain billions of tonnes of water ice — critical for future human settlements (drinking water, oxygen production, rocket fuel). This resource fundamentally changes the Moon's strategic and economic significance."
+                    }
+                  ]
+                }
+              ],
+              "pyqs": [],
+              "mcq_questions": []
+            }
+          ]
+        },
+        {
           "title": "Earth's Origin and Interior",
           "node_type": "SUB_TOPIC",
-          "display_order": 1,
+          "display_order": 2,
           "children": [
             {
               "title": "Lecture 1: Earth's Origin, Structure, and Shield Areas",
@@ -667,7 +1441,7 @@
         {
           "title": "Physical Geography Basics",
           "node_type": "SUB_TOPIC",
-          "display_order": 2,
+          "display_order": 3,
           "children": [
             {
               "title": "Lecture 2: Straits, Isthmuses, and Inland Waterways",
@@ -772,7 +1546,7 @@
         {
           "title": "Continental Drift and Plate Tectonics",
           "node_type": "SUB_TOPIC",
-          "display_order": 3,
+          "display_order": 4,
           "children": [
             {
               "title": "Lecture 4: Continental Drift Theory (Wegener)",
@@ -1425,7 +2199,7 @@
         {
           "title": "Drainage Systems",
           "node_type": "SUB_TOPIC",
-          "display_order": 4,
+          "display_order": 5,
           "children": [
             {
               "title": "Lecture 15: Indian Drainage Systems and Drainage Patterns",
@@ -1534,7 +2308,7 @@
         {
           "title": "Weathering and Mass Wasting",
           "node_type": "SUB_TOPIC",
-          "display_order": 5,
+          "display_order": 6,
           "children": [
             {
               "title": "Lecture 16: Denudation, Physical & Chemical Weathering",
@@ -1946,7 +2720,7 @@
         {
           "title": "Karst Topography",
           "node_type": "SUB_TOPIC",
-          "display_order": 6,
+          "display_order": 7,
           "children": [
             {
               "title": "Lecture 20: Karst Topography and Limestone Landforms",
@@ -2055,7 +2829,7 @@
         {
           "title": "Fluvial Landforms",
           "node_type": "SUB_TOPIC",
-          "display_order": 7,
+          "display_order": 8,
           "children": [
             {
               "title": "Lecture 21: Fluvial Geomorphology – Youthful & Mature Stages",
