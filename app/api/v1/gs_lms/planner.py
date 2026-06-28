@@ -259,7 +259,7 @@ def _plan_to_response(
 # ---------------------------------------------------------------------------
 
 
-@router.get("/geography/plan/today")
+@router.get("/plan/today")
 def get_today_plan(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
@@ -314,7 +314,7 @@ def get_today_plan(
     )
 
 
-@router.put("/geography/plan/bandwidth")
+@router.put("/plan/bandwidth")
 def update_bandwidth(
     payload: GsLmsBandwidthIn,
     db: Session = Depends(get_db),
@@ -412,7 +412,7 @@ def update_bandwidth(
     )
 
 
-@router.post("/geography/plan/replan")
+@router.post("/plan/replan")
 def trigger_replan(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),

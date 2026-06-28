@@ -100,7 +100,7 @@ def _pyq_to_out(pyq: GsLmsPyq, revealed: bool) -> GsLmsPyqOut:
 # Routes
 # ---------------------------------------------------------------------------
 
-@router.get("/geography/topics/{node_id}/pyqs")
+@router.get("/topics/{node_id}/pyqs")
 def get_topic_pyqs(
     node_id: int,
     exam_type: Optional[str] = Query(
@@ -187,7 +187,7 @@ def get_topic_pyqs(
     )
 
 
-@router.post("/geography/pyqs/{pyq_id}/reveal")
+@router.post("/pyqs/{pyq_id}/reveal")
 def reveal_pyq(
     pyq_id: int,
     db: Session = Depends(get_db),

@@ -260,7 +260,7 @@ def _build_gap_out_from_profile(profile, computed_at_iso: str) -> GsLmsGapOut:
 # Routes
 # ---------------------------------------------------------------------------
 
-@router.get("/geography/progress")
+@router.get("/progress")
 def get_progress(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
@@ -280,7 +280,7 @@ def get_progress(
     )
 
 
-@router.get("/geography/gaps")
+@router.get("/gaps")
 def get_gaps(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),

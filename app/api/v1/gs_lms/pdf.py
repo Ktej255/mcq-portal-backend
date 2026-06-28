@@ -95,7 +95,7 @@ def _sanitize_filename(title: str) -> str:
 # ---------------------------------------------------------------------------
 
 
-@router.get("/geography/topics/{node_id}/pdf")
+@router.get("/topics/{node_id}/pdf")
 def download_topic_pdf(
     node_id: int,
     db: Session = Depends(get_db),
