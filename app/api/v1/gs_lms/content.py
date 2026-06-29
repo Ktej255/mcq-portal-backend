@@ -305,8 +305,9 @@ def get_topic_sections(
                 locked=locked,
                 completed=completed,
                 skippable=is_skippable,
-                # Content blocks only for unlocked sections
-                blocks=section.blocks if not locked else None,
+                # Content blocks: always include when discussion gate passed
+                # (funnel controls access progression, not section locking)
+                blocks=section.blocks if discussion_gate_passed else None,
             )
         )
 
@@ -523,7 +524,7 @@ def _build_sections_response(
                 locked=locked,
                 completed=completed,
                 skippable=section.id in skip,
-                blocks=section.blocks if not locked else None,
+                blocks=section.blocks,
             )
         )
     return sections_out
