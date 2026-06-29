@@ -72,7 +72,9 @@ app.add_middleware(
 )
 
 # API Routers
-from app.api.v1 import auth, admin, tests, reports, dashboard, revision, attempts, simulation, mains_upload
+# Note: app.api.v1.admin is a package (admin/ dir with CA CMS routes).
+# Legacy admin CRUD routes (subjects/topics/questions) live in admin_legacy.py.
+from app.api.v1 import auth, admin_legacy, tests, reports, dashboard, revision, attempts, simulation, mains_upload
 from app.api.v1 import optional
 from app.api.v1 import gs_lms
 from app.api.v1 import profile
@@ -80,7 +82,7 @@ from app.api.v1 import payments
 from app.api.v1 import engagement
 
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
-app.include_router(admin.router, prefix="/api/v1/admin", tags=["admin"])
+app.include_router(admin_legacy.router, prefix="/api/v1/admin", tags=["admin"])
 app.include_router(tests.router, prefix="/api/v1/tests", tags=["tests"])
 app.include_router(reports.router, prefix="/api/v1/reports", tags=["reports"])
 app.include_router(dashboard.router, prefix="/api/v1/dashboard", tags=["dashboard"])
@@ -100,10 +102,10 @@ app.include_router(engagement.router, prefix="/api/v1/engagement", tags=["engage
 
 # Current Affairs Platform & Admin CMS routers
 from app.api.v1.current_affairs import router as ca_router
-from app.api.v1.admin import router as admin_router
+from app.api.v1.admin import router as ca_admin_router
 
-app.include_router(ca_router, prefix="/api/v1/current-affairs")
-app.include_router(admin_router, prefix="/api/v1/admin")
+app.include_router(ca_router, prefix="/api/v1/current-affairs", tags=["current-affairs"])
+app.include_router(ca_admin_router, prefix="/api/v1/admin", tags=["admin-cms"])
 
 
 
