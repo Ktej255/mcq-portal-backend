@@ -1,0 +1,282 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Sources of Information about Earth's Interior. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Interior of the Earth)"
+  },
+  "title": "Sources of Information about Earth's Interior",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.2,
+  "display_order": 8,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After understanding Earth's layered structure (Topic 7), students must understand the evidence base — how seismic waves, drilling, meteorites, and gravity reveal what we cannot directly observe.",
+  "concept_checklist": [
+    "Direct sources are limited: mining/drilling (deepest: Kola Superdeep Borehole, 12.2 km), volcanic eruptions (xenoliths from 150-200 km), deep-sea drilling (IODP, formerly ODP).",
+    "Indirect sources are the primary means: seismic waves (most important), gravity anomalies, magnetic surveys, meteorite analysis, heat flow measurements.",
+    "P-waves (longitudinal, travel through all media) slow at Gutenberg discontinuity (2900 km); S-waves (transverse, solids only) are completely blocked by liquid outer core.",
+    "Shadow zones: P-wave shadow zone spans 103°-143° from epicentre; S-wave shadow zone spans 103°-180° — proving outer core is liquid.",
+    "Seismic tomography uses thousands of earthquake records to create 3D velocity maps of the mantle, revealing plumes, slabs, and thermal anomalies.",
+    "Meteorites (especially iron meteorites from differentiated asteroids) serve as analogues for Earth's core composition — not actual pieces of Earth.",
+    "Gravity anomalies reveal subsurface density variations; positive anomaly = denser material below, negative = less dense. Isostasy explains why continents float higher.",
+    "India-specific contributions: Koyna deep drilling project (Maharashtra), Indian Meteorological Department (IMD) seismic network, National Centre for Seismology (NCS), IODP Expedition 355 in Arabian Sea.",
+    "The PREM (Preliminary Reference Earth Model, Dziewonski & Anderson, 1981) synthesizes all seismic data into a standard 1D velocity-density model of Earth's interior.",
+    "Travel-time curves (hodographs) plot arrival times of seismic waves at different distances — kinks and gaps in these curves directly reveal discontinuities and shadow zones."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding — How Do We Know What's Below?",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "The deepest hole ever drilled (Kola, Russia) reached only 12.2 km — barely 0.2% of Earth's radius. The Mariana Trench, deepest ocean point, is just 11 km. Yet we know the core's composition, temperature, and state with remarkable precision. How? Earthquakes act as natural X-ray machines, sending waves through the planet that reveal its hidden anatomy."},
+        {"type": "statgrid", "items": [
+          {"value": "12.2 km", "label": "Deepest drill (Kola)"},
+          {"value": "6,371 km", "label": "Earth's radius"},
+          {"value": "0.2%", "label": "% of radius drilled"},
+          {"value": "2", "label": "Source categories (Direct + Indirect)"}
+        ]},
+        {"type": "heading", "text": "Why Can't We Directly Access the Interior?"},
+        {"type": "para", "text": "Three barriers prevent direct access: **temperature** (increases ~25-30°C/km near surface — at 12 km, Kola encountered 180°C, making further drilling impractical), **pressure** (rocks flow plastically, collapsing boreholes), and **technology limits** (no drill bit material survives deep mantle conditions). Therefore, we rely overwhelmingly on **indirect methods**."},
+        {"type": "heading", "text": "Direct Sources vs Indirect Sources"},
+        {"type": "para", "text": "**Direct sources** provide actual material from depth: (1) **Mining and drilling** — limited to uppermost crust (~12 km max), (2) **Volcanic eruptions** — bring **xenoliths** (rock fragments from 150-200 km depth) and **kimberlite pipes** (from ~250 km, carry diamonds), (3) **Deep-sea drilling** (IODP) — penetrates oceanic crust to study composition. **Indirect sources** use physical measurements to infer deep structure without physical access."},
+        {"type": "analogy", "text": "Direct sources are like tasting a small chip from a fruit's skin. Indirect sources are like tapping the fruit, listening to the sound, measuring its weight, and using X-rays — you learn about the entire interior without cutting it open."},
+        {"type": "heading", "text": "Earthquakes as Natural X-rays"},
+        {"type": "para", "text": "When an earthquake occurs, it generates **seismic waves** that travel through Earth's interior. By recording how fast these waves arrive at stations worldwide and where they don't arrive (**shadow zones**), seismologists deduce the **density**, **physical state** (solid/liquid), and **boundaries** of each internal layer. This is why NCERT calls seismic waves the **'most important source'** of information about Earth's interior."},
+        {"type": "keyterms", "terms": [
+          {"term": "Xenolith", "definition": "Rock fragment from deep Earth carried to the surface by volcanic eruptions. Provides **direct** samples of mantle material."},
+          {"term": "Shadow Zone", "definition": "Angular range where seismic waves are NOT recorded. P-wave: 103°-143°; S-wave: 103°-180°."},
+          {"term": "Seismic Tomography", "definition": "Technique using thousands of seismic records to create **3D images** of velocity variations inside Earth — like a CT scan."},
+          {"term": "Gravity Anomaly", "definition": "Difference between observed gravitational acceleration and theoretical value. Reveals subsurface density variations."},
+          {"term": "Isostasy", "definition": "Principle that Earth's crust floats in gravitational equilibrium on the denser mantle, like icebergs in water."},
+          {"term": "IODP", "definition": "International Ocean Discovery Program — multinational deep-sea drilling program that samples oceanic crust and upper mantle."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Sources of Information about Interior",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "3", "page_start": 28, "page_end": 31, "external_url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf", "text": "Chapter 3 'Interior of the Earth' — first section (pp. 28-31) specifically covers 'Sources of Information about the Interior'. NCERT categorizes sources into Direct and Indirect, with detailed explanation of seismic wave behaviour.", "key_facts": ["Direct sources: mining, volcanic eruptions, deep drilling (Kola)", "Indirect sources: seismic waves (most important), gravity, magnetism, meteorites", "P-waves travel through all media; S-waves only through solids", "Shadow zones prove liquid outer core", "Geothermal gradient as evidence of internal heat"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 3 (pp. 28-31)"},
+        {"type": "points", "title": "Direct Sources (NCERT Classification)", "items": ["**Mining and drilling operations** — provide direct rock samples but limited to shallow depths", "**Volcanic eruptions** — magma and xenoliths bring material from 150-200 km depth to surface", "**Deep drilling projects** — Kola Superdeep Borehole (Russia, 12.2 km) is the deepest artificial point on Earth", "NCERT explicitly states these sources are 'limited' because of temperature and pressure barriers"]},
+        {"type": "points", "title": "Indirect Sources (NCERT Classification)", "items": ["**Seismic waves** — NCERT calls this the 'most important' source; changes in velocity reveal density/state changes at boundaries", "**Gravitational anomalies** — variations in 'g' indicate uneven mass distribution below surface", "**Magnetic field** — indicates metallic core with convective motion (geodynamo)", "**Meteorites** — samples of differentiated planetary material analogous to Earth's layers"]},
+        {"type": "para", "text": "NCERT emphasises two key seismic observations: (1) **velocity changes** at discontinuities (abrupt increase at Moho, decrease at Gutenberg), and (2) **shadow zones** — regions where P-waves or S-waves are absent. The S-wave shadow zone (103°-180°) is the **primary evidence** that the outer core is liquid, since S-waves (shear/transverse) cannot propagate through liquids."},
+        {"type": "diagram", "id": "sources-classification-tree", "caption": "NCERT classification tree: Sources → Direct (mining, volcanoes, drilling) + Indirect (seismic waves, gravity, magnetism, meteorites). Seismic waves further split into Body waves (P, S) and Surface waves (Love, Rayleigh)."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC frequently tests: (1) Classification of sources into direct/indirect, (2) Which is the 'most important' indirect source (answer: seismic waves), (3) Why Kola borehole stopped (temperature, not technology), (4) What xenoliths tell us about mantle. All from NCERT Ch. 3, pp. 28-31."},
+        {"type": "para", "text": "NCERT also mentions that **temperature increases** with depth at a rate of about **1°C per 32 metres** near the surface (equivalent to ~30°C/km). However, this rate **decreases** with depth — otherwise Earth's core would be impossibly hot. The actual core temperature (~5500°C) is constrained by indirect evidence, not direct measurement."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Seismic Tomography, PREM Model, and Modern Techniques",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Seismic Tomography — CT Scan of the Earth"},
+        {"type": "para", "text": "**Seismic tomography** (developed in the 1980s) uses arrival-time data from thousands of earthquakes recorded at thousands of stations to construct **3D velocity maps** of Earth's interior. Regions where waves travel faster than average indicate **cold, dense material** (subducted slabs); regions where waves travel slower indicate **hot, buoyant material** (mantle plumes). This technique revealed that subducted oceanic plates can sink all the way to the core-mantle boundary (~2900 km) and that mantle plumes beneath hotspots like Hawaii and Réunion originate from this depth."},
+        {"type": "callout", "tone": "insight", "title": "Key Insight", "text": "Seismic tomography transformed our understanding from a 1D layered model to a **3D dynamic model** of the mantle. We now know the mantle is not uniform at any given depth — it has lateral temperature/density variations of 2-5% that drive plate movements."},
+        {"type": "heading", "text": "The PREM Model (Preliminary Reference Earth Model)"},
+        {"type": "para", "text": "Published by **Dziewonski and Anderson (1981)**, PREM is the standard 1D reference model of Earth's interior. It specifies how **P-wave velocity**, **S-wave velocity**, **density**, **pressure**, and **gravity** vary with depth. Key PREM values: P-wave velocity jumps from ~8 km/s (just below Moho) to ~13.7 km/s (base of mantle), then drops to ~8.1 km/s in the outer core (liquid). S-wave velocity drops to **zero** in the outer core. PREM remains the baseline against which all tomographic anomalies are measured."},
+        {"type": "heading", "text": "Travel-Time Curves (Hodographs)"},
+        {"type": "para", "text": "**Travel-time curves** plot the arrival time of seismic phases against angular distance from the epicentre. A smooth curve indicates uniform velocity; a **kink** (sudden change in slope) indicates a discontinuity; a **gap** indicates a shadow zone. The classic P-wave hodograph shows a gap between 103°-143° — this is the P-wave shadow zone caused by **refraction** (not absorption) at the core-mantle boundary. Beyond 143°, P-waves reappear as **PKP phases** (waves that passed through the core)."},
+        {"type": "heading", "text": "Receiver Functions and Ambient Noise Tomography"},
+        {"type": "para", "text": "**Receiver functions** analyse how P-waves convert to S-waves at boundaries beneath a seismic station, revealing crustal thickness and Moho depth with ~1 km precision. **Ambient noise tomography** (developed post-2005) uses continuous background vibrations (ocean waves, traffic) instead of earthquakes to image the crust and upper mantle — particularly useful in seismically quiet regions like peninsular India."},
+        {"type": "heading", "text": "Wadati-Benioff Zones"},
+        {"type": "para", "text": "**Wadati-Benioff zones** are inclined planes of earthquake foci (hypocentres) extending from ocean trenches down to ~700 km depth. They mark the path of **subducting oceanic plates** sinking into the mantle. These zones provide direct evidence that cold, rigid lithospheric slabs penetrate deep into the mantle, and their seismicity enables tomographic imaging of slab geometry."},
+        {"type": "heading", "text": "India's Seismic Network"},
+        {"type": "para", "text": "India operates a dense seismic network through the **National Centre for Seismology (NCS)** under the Ministry of Earth Sciences. The network includes: **115+ broadband seismograph stations**, the **Koyna-Warna seismic array** (Maharashtra — world's best-monitored site for reservoir-induced seismicity), and participation in **Global Seismographic Network (GSN)**. India's seismic data contributes to global tomographic models and helps map the Indian plate's collision geometry beneath the Himalayas."},
+        {"type": "collapsible", "title": "Advanced: How Meteorites Reveal Core Composition", "content": "Iron meteorites come from the cores of small, differentiated asteroids that broke apart early in solar system history. Their composition (mainly Fe-Ni with trace elements like iridium, platinum) matches seismic predictions for Earth's core density and wave velocities. Stony-iron meteorites (pallasites) represent core-mantle boundaries of these ancient bodies. Chondritic meteorites represent undifferentiated bulk composition — comparing Earth's bulk to chondrites reveals that Earth must have a dense iron core to account for the 'missing' iron relative to chondritic abundances."},
+        {"type": "timeline", "title": "Key Milestones in Probing Earth's Interior", "items": [
+          {"year": "1889", "event": "First teleseismic earthquake recorded (Japan earthquake detected in Germany)"},
+          {"year": "1906", "event": "Oldham identifies P-wave shadow zone, proposes liquid core"},
+          {"year": "1909", "event": "Mohorovičić discovers crust-mantle boundary using Croatian earthquake"},
+          {"year": "1936", "event": "Inge Lehmann discovers solid inner core from P-wave analysis"},
+          {"year": "1961", "event": "Project Mohole attempts (and fails) to drill through oceanic crust to mantle"},
+          {"year": "1970-1989", "event": "Kola Superdeep Borehole drilled to 12.2 km"},
+          {"year": "1981", "event": "PREM model published by Dziewonski & Anderson"},
+          {"year": "1984", "event": "First seismic tomography images of mantle published"},
+          {"year": "2005", "event": "Ambient noise tomography technique developed"},
+          {"year": "2016", "event": "India's Koyna deep borehole drilling project initiated"}
+        ]}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Probing Earth's Interior",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2024-2026)"},
+        {"type": "callout", "tone": "note", "title": "India's Koyna Deep Drilling Phase-II (2025)", "text": "India's **Koyna deep scientific drilling project** (Maharashtra) entered Phase-II in 2025, aiming to drill to **7 km depth** to place instruments directly in the seismogenic zone of **reservoir-induced earthquakes**. This is India's deepest scientific borehole and provides in-situ stress, temperature, and fluid-pressure measurements. It connects reservoir-induced seismicity to understanding crustal stress patterns in the Deccan Volcanic Province. UPSC may frame this under India's contribution to earth science."},
+        {"type": "callout", "tone": "note", "title": "IODP Expedition 399 — Drilling into Mantle Rock (2024)", "text": "The International Ocean Discovery Program's **Expedition 399** (2024) drilled into exposed mantle rock at the **Mid-Atlantic Ridge** (Atlantis Massif), recovering **fresh peridotite** — actual upper mantle material pushed to the seafloor by tectonic processes. This provided direct samples of mantle rock without needing to drill through the entire crust, validating seismic predictions about upper mantle composition. Relevant for questions on oceanic crust structure and direct evidence."},
+        {"type": "callout", "tone": "note", "title": "Mantle Plume Discovery beneath Indian Plate (2024-2025)", "text": "New seismic tomography studies (2024-2025) using data from India's expanded broadband network revealed a **low-velocity anomaly** extending from 400-1000 km depth beneath the **Deccan region** — interpreted as a remnant of the **Réunion mantle plume** that caused the Deccan Traps eruption 66 million years ago. This connects ancient volcanism to modern deep-Earth imaging and is highly relevant for Mains questions on Indian geology."},
+        {"type": "callout", "tone": "note", "title": "AI-Enhanced Earthquake Detection (2024-2025)", "text": "**Machine learning algorithms** (such as PhaseNet and EQTransformer) are now detecting **10-100x more micro-earthquakes** than traditional methods from the same seismic data. India's NCS adopted these tools in 2024, dramatically improving tomographic resolution of the crust beneath the Himalayas and northeast India. This represents a paradigm shift in how seismic data is used as a source of information about Earth's interior."},
+        {"type": "callout", "tone": "note", "title": "DAS Technology — Turning Fibre Optic Cables into Seismometers (2024)", "text": "**Distributed Acoustic Sensing (DAS)** converts existing **submarine fibre optic cables** into dense seismic arrays with sensors every 1-2 metres. By 2024, DAS arrays in the Indian Ocean detected microseisms from mid-ocean ridges and provided unprecedented imaging of oceanic lithosphere structure. This technology may revolutionize our ability to image Earth's interior beneath oceans where traditional stations are sparse."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Sources of Information about Earth's Interior",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "Deep drilling has reached the mantle, providing direct mantle samples", "correct": "The deepest drill (Kola, 12.2 km) barely penetrated the UPPER CRUST. The Moho is 30-70 km under continents. No drill has ever reached the mantle in situ. The closest we have come is drilling into exposed mantle rock at mid-ocean ridges (IODP 2024), which is tectonically exhumed, not drilled through crust."},
+        {"type": "trap", "wrong": "Meteorites ARE pieces of Earth's core that escaped during formation", "correct": "Meteorites are fragments of OTHER solar system bodies (asteroids, rarely Mars/Moon). Iron meteorites come from cores of DIFFERENTIATED ASTEROIDS that broke apart. They serve as ANALOGUES for Earth's core composition — not actual Earth material."},
+        {"type": "trap", "wrong": "P-waves prove the outer core is solid because they pass through it", "correct": "P-waves pass through the outer core BUT they SLOW dramatically (from ~13.7 to ~8.1 km/s) and are REFRACTED, creating the P-wave shadow zone (103°-143°). It is the ABSENCE of S-waves (103°-180°) that proves the outer core is LIQUID. P-waves travel through both solids AND liquids."},
+        {"type": "trap", "wrong": "The P-wave shadow zone proves the core is liquid (same as S-wave shadow zone)", "correct": "The P-wave shadow zone (103°-143°) is caused by REFRACTION (bending) at the core-mantle boundary, not by absorption. P-waves DO pass through the liquid core — they just get bent away from the 103°-143° zone. The S-wave shadow zone (103°-180°) proves liquidity because S-waves CANNOT exist in liquids at all."},
+        {"type": "trap", "wrong": "Gravity anomalies directly tell us the composition of deep layers", "correct": "Gravity anomalies reveal density VARIATIONS in the crust and upper mantle, not deep core composition. They indicate mass excess (positive anomaly) or deficit (negative anomaly) relative to a reference model. They are most useful for crustal and near-surface studies (isostasy, ore deposits), not for probing the deep interior."},
+        {"type": "trap", "wrong": "Volcanic eruptions bring material from the core to the surface", "correct": "Volcanic eruptions bring material from the UPPER MANTLE (100-200 km depth) only. Kimberlite pipes originate from ~250 km maximum. The core begins at 2,900 km — no volcanic process reaches there. Xenoliths are mantle samples, NOT core samples."},
+        {"type": "trap", "wrong": "Seismic waves are absorbed at discontinuities, creating shadow zones", "correct": "Seismic waves are REFRACTED (bent) and REFLECTED at discontinuities, not absorbed. Shadow zones result from refraction geometry. Energy is redistributed, not destroyed. This is why P-waves reappear beyond 143° as PKP phases that have passed through the core."},
+        {"type": "memory", "text": "Sources mnemonic: 'MiVoD-SGMM' = Direct: Mining, Volcanoes, Drilling | Indirect: Seismic waves, Gravity, Magnetism, Meteorites | Shadow zones: P = 103-143 (Partial gap), S = 103-180 (Sweeping gap) | 'P-waves Pass through all; S-waves Stop at liquids'"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2018, "question_text": "Consider the following statements:\n1. The__(most important)__ source of information about the interior of the Earth is provided by seismic waves.\n2. Volcanic eruptions provide direct evidence about the composition of the core.\n3. Deep drilling has enabled scientists to directly study the upper mantle.\nWhich of the above statements is/are correct?", "answer_text": "A", "explanation": "Only statement 1 is correct — NCERT explicitly states seismic waves are the most important source. Statement 2 is wrong — volcanic eruptions bring material from the upper mantle (100-250 km), not the core (2900+ km). Statement 3 is wrong — the deepest drill (Kola, 12.2 km) never reached the mantle (Moho is 30-70 km under continents).", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2020, "question_text": "Which of the following phenomena helps in the study of the interior of the Earth?\n1. Earthquakes\n2. Volcanic eruptions\n3. Gravitational force variation\n4. Magnetic field of the Earth\nSelect the correct answer using the code given below:", "answer_text": "D (1, 2, 3 and 4)", "explanation": "All four are valid sources: Earthquakes (seismic waves = most important indirect source), Volcanic eruptions (direct source — xenoliths), Gravitational force variation (gravity anomalies reveal density distribution), Magnetic field (indicates metallic core, convective dynamo). NCERT Ch. 3 lists all of these.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2019, "question_text": "How do seismic waves help in understanding the structure of the Earth's interior? Explain with suitable diagrams.", "answer_text": "Seismic waves (P and S) provide the most important indirect evidence. Key answer points: (1) P-waves are compressional, travel through all media at 5-13 km/s; S-waves are shear, travel only through solids at 3-7 km/s. (2) Velocity changes at discontinuities — sharp increase at Moho (crust→mantle), sharp decrease at Gutenberg (mantle→core). (3) Shadow zones: P-wave gap at 103°-143° due to refraction at core boundary; S-wave gap at 103°-180° proves liquid outer core. (4) Lehmann discontinuity (5150 km) — inner core detected by P-wave speed increase. (5) Seismic tomography reveals 3D mantle structure. Diagram: Earth cross-section showing wave paths, shadow zones, discontinuities.", "explanation": "Classic 15-mark Mains question. Structure: define waves → explain behaviour at boundaries → shadow zones with angles → conclusions about layers → modern techniques. Must include diagram showing ray paths and shadow zones.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding sources of information about Earth's interior:\n1. Seismic waves are the most important indirect source of information about Earth's interior.\n2. The Kola Superdeep Borehole reached a depth of 12.2 km, penetrating into the upper mantle.\n3. Xenoliths brought up by volcanic eruptions provide direct samples of upper mantle material.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 3 only"}, {"label": "B", "text": "1 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — NCERT explicitly identifies seismic waves as the most important source. Statement 2 is wrong — Kola reached 12.2 km but this is still in the UPPER CRUST (Moho is 30-70 km under continents); it never reached the mantle. Statement 3 is correct — xenoliths are rock fragments from 150-200 km depth (upper mantle) carried up by volcanic eruptions.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about direct sources of information about Earth's interior:\n1. Diamond-bearing kimberlite pipes originate from depths of approximately 250 km.\n2. The International Ocean Discovery Program (IODP) has successfully drilled through the entire oceanic crust to sample mantle rock.\n3. Mining operations have provided rock samples from depths exceeding 50 km.\n4. Volcanic eruptions can bring garnet peridotite xenoliths from depths of 150-200 km.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 4 only"}, {"label": "B", "text": "1, 2 and 4"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 3 and 4"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — kimberlites originate from ~250 km, carrying diamonds formed at high pressure. Statement 2 is wrong — IODP has drilled INTO oceanic crust but has NOT drilled THROUGH the entire crust to reach in-situ mantle (exposed mantle rock at ridges is tectonically exhumed). Statement 3 is wrong — deepest mines (Mponeng, South Africa) reach only ~4 km, far less than 50 km. Statement 4 is correct — garnet peridotite xenoliths come from upper mantle depths.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. The geothermal gradient is approximately 30°C per km throughout Earth's interior from surface to core.\n2. Gravity anomalies help identify subsurface density variations in the crust.\n3. The PREM model provides a standard reference for seismic velocities at different depths.\n4. Ambient noise tomography requires large earthquakes to image crustal structure.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "B",
+      "explanation": "Statements 2 and 3 are correct. Statement 1 is wrong — the 30°C/km gradient applies only near the surface; it decreases dramatically with depth (otherwise the core would be >190,000°C). Statement 4 is wrong — ambient noise tomography uses continuous background vibrations (ocean waves, wind, traffic) and specifically does NOT require earthquakes — that is its advantage.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about seismic shadow zones:\n1. The P-wave shadow zone extends from 103° to 143° angular distance from the epicentre.\n2. The S-wave shadow zone extends from 103° to 180° angular distance from the epicentre.\n3. P-waves are completely absorbed at the core-mantle boundary, creating the P-wave shadow zone.\n4. The S-wave shadow zone proves the outer core is in a liquid state.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 4 are correct. Statement 3 is wrong — P-waves are NOT absorbed at the core-mantle boundary; they are REFRACTED (bent). P-waves pass through the liquid outer core (as PKP phases) but are deflected away from the 103°-143° zone by refraction. They reappear beyond 143°.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Meteorites are considered valuable sources of information about Earth's deep interior.\nReason (R): Iron meteorites are fragments of Earth's core that were ejected during the early formation of the planet.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — meteorites provide analogues for Earth's internal composition (iron meteorites have Fe-Ni composition similar to predicted core composition). R is INCORRECT — iron meteorites are NOT fragments of Earth's core. They are from the cores of OTHER differentiated asteroids that broke apart billions of years ago. Earth has never ejected core material into space.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The S-wave shadow zone extends from 103° to 180° from the earthquake epicentre.\nReason (R): S-waves, being transverse/shear waves, cannot propagate through the liquid outer core.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "Both A and R are correct, and R is the correct explanation of A. The S-wave shadow zone (103°-180°) exists precisely because S-waves (shear/transverse waves) require a rigid medium to propagate — they cannot travel through the liquid outer core. When S-wave paths encounter the liquid outer core, they are completely blocked, creating the extensive shadow zone.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a correct statement about the P-wave shadow zone?",
+      "options": [{"label": "A", "text": "It extends from 103° to 143° angular distance from the epicentre"}, {"label": "B", "text": "It is caused by refraction of P-waves at the core-mantle boundary"}, {"label": "C", "text": "P-waves are completely destroyed at the core-mantle boundary, never reaching beyond 103°"}, {"label": "D", "text": "P-waves reappear beyond 143° as PKP phases after passing through the core"}],
+      "correct_option": "C",
+      "explanation": "Option C is INCORRECT (and therefore the answer) — P-waves are NOT destroyed at the core-mantle boundary. They are refracted (bent) and DO pass through the liquid core as PKP phases, re-emerging beyond 143°. The shadow zone exists because refraction bends waves away from the 103°-143° zone, not because energy is destroyed. A, B, and D are all correct.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a valid reason why deep drilling cannot serve as the primary method for studying Earth's deep interior?",
+      "options": [{"label": "A", "text": "Temperature increases rapidly with depth, exceeding the limits of drilling equipment"}, {"label": "B", "text": "Rock pressure causes borehole walls to collapse at great depths"}, {"label": "C", "text": "The Moho discontinuity acts as an impenetrable physical barrier to all drilling"}, {"label": "D", "text": "Cost and time constraints make ultra-deep drilling economically impractical"}],
+      "correct_option": "C",
+      "explanation": "Option C is INCORRECT (and therefore the answer) — the Moho is a compositional/velocity boundary, not a physical barrier. There is no 'wall' at the Moho that prevents drilling. The actual barriers are: high temperature (A), rock pressure causing collapse (B), and economic constraints (D). In principle, one could drill through the Moho if engineering challenges were overcome.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A seismograph station located at 115° angular distance from an earthquake epicentre records clear P-wave arrivals but no S-wave arrivals. Another station at 85° records both P-waves and S-waves clearly.\n\nBased on the above information, which of the following inferences is most valid?",
+      "options": [{"label": "A", "text": "The earthquake at 115° was weaker than the one at 85°"}, {"label": "B", "text": "A liquid layer in Earth's interior blocks S-waves from reaching the 115° station"}, {"label": "C", "text": "The 115° station has a malfunctioning S-wave detector"}, {"label": "D", "text": "S-waves always dissipate before reaching distances greater than 100°"}],
+      "correct_option": "B",
+      "explanation": "The station at 115° lies within the S-wave shadow zone (103°-180°) — S-waves cannot reach it because the liquid outer core blocks all shear waves. The station at 85° is within the normal detection range (0°-103°) where both wave types arrive. This is not about earthquake strength or equipment malfunction — it's the geometry of wave propagation through a liquid layer.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Scientists studying a seismic tomography image observe a region beneath peninsular India (400-1000 km depth) where seismic wave velocities are 2-3% slower than the PREM reference model.\n\nIn light of this passage, consider the following statements:\n1. The low-velocity anomaly indicates the presence of hotter-than-average mantle material at that depth.\n2. This anomaly could represent a remnant of the mantle plume responsible for the Deccan Traps eruption.\n3. The slow velocities confirm the presence of a liquid layer similar to the outer core beneath India.\nWhich of the above inferences can be drawn?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Inferences 1 and 2 are valid — in seismic tomography, low velocity = hot, buoyant material. A 2-3% anomaly beneath the Deccan region is consistent with a thermal anomaly from the Réunion plume track (Deccan eruption ~66 Ma). Inference 3 is INVALID — a 2-3% velocity reduction indicates hot solid rock, not liquid. A liquid layer would show S-wave velocity dropping to ZERO, not a modest 2-3% reduction.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A gravity survey in a region shows a strongly negative Bouguer gravity anomaly over a mountain range.\n\nBased on this information, which of the following can be correctly inferred?\n1. The mountain range has deep crustal roots extending into the mantle.\n2. The mountain range is not in isostatic equilibrium and is actively rising.\n3. There is less dense material (crustal rock) extending to greater depths than normal beneath the mountains.\nSelect the correct answer:",
+      "options": [{"label": "A", "text": "1 and 3 only"}, {"label": "B", "text": "2 only"}, {"label": "C", "text": "1, 2 and 3"}, {"label": "D", "text": "3 only"}],
+      "correct_option": "A",
+      "explanation": "Inferences 1 and 3 are valid — a negative Bouguer anomaly over mountains indicates less dense crustal material extending deeper than normal (isostatic root). This is classic evidence of crustal thickening beneath mountain ranges (Airy isostasy model). Inference 2 is NOT necessarily valid — a negative anomaly is consistent with isostatic EQUILIBRIUM (mountains have compensating roots). It does NOT prove the mountains are actively rising; they could be in perfect isostatic balance.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Source of Information) with List-II (Type of Information Provided):\n\nList-I: (a) Seismic waves, (b) Gravity anomalies, (c) Meteorites, (d) Volcanic xenoliths\nList-II: (1) Direct samples of upper mantle mineralogy, (2) Density variations in crust/upper mantle, (3) Analogue for core composition (Fe-Ni), (4) Layer boundaries, physical state, and velocity structure of entire interior",
+      "options": [{"label": "A", "text": "a-4, b-2, c-3, d-1"}, {"label": "B", "text": "a-2, b-4, c-1, d-3"}, {"label": "C", "text": "a-4, b-3, c-2, d-1"}, {"label": "D", "text": "a-3, b-2, c-4, d-1"}],
+      "correct_option": "A",
+      "explanation": "Seismic waves (a) reveal layer boundaries, physical state (solid/liquid), and velocity structure through the entire Earth (4). Gravity anomalies (b) reveal density variations primarily in the crust and upper mantle (2). Meteorites (c) provide analogues for core composition — iron meteorites are Fe-Ni like the predicted core (3). Volcanic xenoliths (d) are actual rock fragments from the upper mantle brought to the surface (1).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Technique/Method) with List-II (Key Characteristic):\n\nList-I: (a) Seismic tomography, (b) Receiver functions, (c) Ambient noise tomography, (d) Wadati-Benioff zone analysis\nList-II: (1) Uses background vibrations instead of earthquakes, (2) Maps inclined planes of earthquake foci to trace subducting slabs, (3) Creates 3D velocity images of mantle using thousands of earthquake records, (4) Analyses P-to-S wave conversions to determine crustal thickness",
+      "options": [{"label": "A", "text": "a-3, b-4, c-1, d-2"}, {"label": "B", "text": "a-1, b-3, c-4, d-2"}, {"label": "C", "text": "a-3, b-2, c-4, d-1"}, {"label": "D", "text": "a-4, b-1, c-2, d-3"}],
+      "correct_option": "A",
+      "explanation": "Seismic tomography (a) uses thousands of earthquake records to create 3D velocity maps of the mantle (3). Receiver functions (b) analyse P-to-S conversions at boundaries beneath stations to determine Moho depth and crustal thickness (4). Ambient noise tomography (c) uses continuous background vibrations — no earthquakes needed (1). Wadati-Benioff zone analysis (d) maps inclined planes of earthquake foci along subducting slabs to ~700 km depth (2).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. The Kola Superdeep Borehole is located in Russia and reached 12.2 km depth.\n2. India's Koyna deep drilling project is located in Maharashtra and studies reservoir-induced seismicity.\n3. Project Mohole (1961) successfully drilled through the oceanic Moho to reach the upper mantle.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — Kola Superdeep Borehole (Russia, Kola Peninsula) reached 12,262 metres by 1989. Statement 2 is correct — India's Koyna deep drilling project in Maharashtra studies reservoir-induced seismicity associated with the Koyna Dam (one of the best-documented cases globally). Statement 3 is wrong — Project Mohole FAILED. It was abandoned in 1966 due to cost overruns and technical difficulties before reaching the Moho.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The Koyna region in Maharashtra is significant in the context of Earth's interior studies primarily because:",
+      "options": [{"label": "A", "text": "It contains India's deepest mine, reaching 8 km into the crust"}, {"label": "B", "text": "It is the site of India's scientific deep drilling project studying reservoir-induced seismicity"}, {"label": "C", "text": "It has exposed mantle rocks on the surface due to ancient tectonic activity"}, {"label": "D", "text": "It is located directly above a mantle plume confirmed by seismic tomography"}],
+      "correct_option": "B",
+      "explanation": "The Koyna region (Maharashtra) hosts India's scientific deep drilling project, initiated to study the relationship between the Koyna Dam reservoir and induced seismicity. Koyna experienced a damaging M6.3 earthquake in 1967 linked to reservoir filling and continues to experience induced earthquakes — making it a globally unique natural laboratory. Options A, C, and D are fabricated/incorrect for Koyna.",
+      "question_type": "MAP_BASED",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Temperature, Pressure, and Density Distribution within Earth. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Interior of the Earth)"
+  },
+  "title": "Temperature, Pressure, and Density Distribution within Earth",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.0,
+  "display_order": 9,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After understanding layers (Topic 7) and evidence methods (Topic 8), students need the quantitative picture — how T, P, and density vary with depth — to explain why materials behave differently at different depths.",
+  "concept_checklist": [
+    "Geothermal gradient is ~25-30°C per km near the surface, but DECREASES with depth.",
+    "Actual core temperature is approximately 5,500°C — NOT 190,000°C (which a constant gradient would predict).",
+    "Pressure increases continuously with depth, reaching ~360 GPa at Earth's centre.",
+    "Density distribution: surface rocks ~2.7 g/cm³ → lower mantle ~5.5 g/cm³ → outer core ~10 g/cm³ → inner core ~13 g/cm³.",
+    "If the geothermal gradient remained constant at 30°C/km, the core temperature would be 6371 × 30 ≈ 190,000°C — physically impossible.",
+    "Radioactive decay (U, Th, K) is the PRIMARY source of Earth's internal heat, but primordial heat and gravitational compression also contribute.",
+    "Phase diagram logic: where actual temperature exceeds melting point → liquid (outer core); where melting point exceeds actual temperature → solid (inner core).",
+    "Geothermal energy applications in India: Puga Valley (Ladakh), Tattapani (Chhattisgarh), Manikaran (Himachal Pradesh)."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Imagine descending into the Earth at 1 km per minute. In just 30 seconds, the temperature around you rises by 15°C. At this rate, you'd expect the centre to be an impossible 190,000°C — hotter than the Sun's surface. But it's only 5,500°C. The gradient MUST decrease with depth. Understanding WHY is the key to this topic."},
+        {"type": "statgrid", "items": [
+          {"value": "25-30°C/km", "label": "Surface geothermal gradient"},
+          {"value": "5,500°C", "label": "Core temperature"},
+          {"value": "360 GPa", "label": "Pressure at centre"},
+          {"value": "13 g/cm³", "label": "Inner core density"}
+        ]},
+        {"type": "heading", "text": "The Geothermal Gradient"},
+        {"type": "para", "text": "The **geothermal gradient** is the rate at which temperature increases with depth inside the Earth. Near the surface, this rate is approximately **25-30°C per kilometre**. However, this rate is NOT constant — it **decreases significantly** with depth. In the deep mantle, the gradient drops to about 0.3-0.5°C/km, and in the core it is even lower."},
+        {"type": "callout", "tone": "why", "title": "Why Does the Gradient Decrease?", "text": "If the gradient remained 30°C/km all the way down, at 6,371 km depth the temperature would be ~190,000°C — hotter than the Sun's core! This is physically impossible. The gradient decreases because: (1) heat is conducted and convected outward efficiently, (2) radioactive heat sources are concentrated in the crust and upper mantle, and (3) the deep interior is in near-equilibrium."},
+        {"type": "heading", "text": "Sources of Earth's Internal Heat"},
+        {"type": "para", "text": "Earth's internal heat comes from three main sources: (1) **Radioactive decay** of uranium (U-238), thorium (Th-232), and potassium (K-40) — contributes about **60-70%** of current heat production, concentrated in the crust and upper mantle. (2) **Primordial heat** — leftover heat from Earth's formation and accretion (~4.5 Ga). (3) **Gravitational compression** and core crystallization — as the inner core solidifies, latent heat is released."},
+        {"type": "analogy", "text": "Think of a house with radiators (radioactive elements) mostly on the upper floors. The ground floor stays warm from residual insulation (primordial heat) and a slow-burning furnace in the basement (core crystallization). The temperature profile inside the house is NOT a straight line from cold outside to hottest basement."},
+        {"type": "heading", "text": "Density Distribution"},
+        {"type": "para", "text": "Density increases with depth in a stepwise manner: **Surface rocks**: ~2.7 g/cm³ (granite) to 3.0 g/cm³ (basalt). **Upper mantle**: 3.3-4.5 g/cm³. **Lower mantle**: 4.5-5.5 g/cm³. **Outer core**: 9.9-12.2 g/cm³. **Inner core**: 12.8-13.1 g/cm³. The jumps at the Moho and Gutenberg discontinuities reflect changes in chemical composition, not just compression."},
+        {"type": "callout", "tone": "insight", "title": "Key Insight — Phase Diagram Logic", "text": "Whether a material is solid or liquid at depth depends on the RACE between actual temperature and melting point. Both increase with depth, but at different rates. Where actual temperature > melting point → LIQUID (outer core). Where melting point > actual temperature → SOLID (inner core). Pressure raises the melting point faster than temperature rises in the deep interior."},
+        {"type": "keyterms", "terms": [
+          {"term": "Geothermal gradient", "definition": "Rate of temperature increase with depth: ~25-30°C/km near surface, decreasing at depth."},
+          {"term": "Geotherm", "definition": "The curve showing actual temperature vs depth profile inside the Earth."},
+          {"term": "Solidus", "definition": "The curve showing melting point vs depth. Where geotherm crosses solidus → phase change."},
+          {"term": "Adiabatic gradient", "definition": "Temperature change due purely to pressure change (no heat exchange): ~0.3°C/km in mantle."},
+          {"term": "Radioactive decay", "definition": "Spontaneous nuclear disintegration of U, Th, K — primary heat source in crust/upper mantle."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Temperature, Pressure, Density",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "3", "page_start": 28, "page_end": 37, "external_url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf", "text": "Chapter 3 'Interior of the Earth' mentions temperature increase with depth and the concept of geothermal gradient. NCERT states the gradient is not uniform and decreases with depth.", "key_facts": ["Temperature increases with increasing depth at rate of 1°C per 32m in upper crust", "Due to high temperature interior is in liquid/semi-liquid state", "Density increases from surface to centre", "Pressure increases enormously with depth"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 3"},
+        {"type": "points", "title": "Temperature Distribution (NCERT)", "items": ["Temperature increases at the rate of **1°C for every 32 metres** depth in the upper crust (≈ 30°C/km)", "The rate of increase is NOT uniform — it **decreases** towards the centre", "The interior is extremely hot but NOT uniformly molten", "Heat sources include radioactivity and primordial heat"]},
+        {"type": "points", "title": "Pressure Distribution (NCERT)", "items": ["Pressure increases with depth due to weight of overlying rocks", "Enormous pressure at great depths keeps material in solid state despite high temperatures", "This explains why the inner core is solid even at 5,500°C"]},
+        {"type": "points", "title": "Density Distribution (NCERT)", "items": ["Average density of Earth = 5.5 g/cm³", "Surface rocks average only 2.7 g/cm³", "This discrepancy proves the core must be very dense (iron-nickel, ~13 g/cm³)", "Density increases in steps at each discontinuity"]},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC frequently tests: (1) Why is the geothermal gradient not uniform? (2) Why is inner core solid despite being hottest? (3) What does the density discrepancy (5.5 vs 2.7) prove? All directly from NCERT Ch. 3."},
+        {"type": "para", "text": "NCERT emphasises that the interplay of **temperature and pressure** determines the physical state of material at any depth. The student must understand that temperature alone does not determine whether rock is solid or liquid — **pressure is equally important**. This concept appears repeatedly in UPSC Prelims."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Quantitative Earth Interior",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Adams-Williamson Equation"},
+        {"type": "para", "text": "The **Adams-Williamson equation** allows calculation of density variation with depth using seismic wave velocities: dρ/dr = -ρg/φ, where φ = Vp² - (4/3)Vs² is the seismic parameter. This equation assumes the Earth is in **hydrostatic equilibrium** and that the temperature gradient is **adiabatic** (no heat exchange between layers). It was fundamental in constructing the **Preliminary Reference Earth Model (PREM)**."},
+        {"type": "callout", "tone": "insight", "title": "Why This Matters", "text": "The Adams-Williamson equation connects observable quantities (seismic velocities, which we measure) to unobservable quantities (density at depth, which we want to know). It is the mathematical bridge from seismology to Earth's density profile."},
+        {"type": "heading", "text": "Adiabatic Gradient and Convection"},
+        {"type": "para", "text": "The **adiabatic gradient** (~0.3°C/km in the mantle, ~0.8°C/km in the core) represents the temperature increase due purely to compression — no heat is added or removed. If the actual thermal gradient exceeds the adiabatic gradient, the material becomes **convectively unstable** — hotter material rises, cooler material sinks. This is the basis of **mantle convection**, which drives plate tectonics."},
+        {"type": "compare", "title": "Geothermal Gradient vs Adiabatic Gradient", "left": {"label": "Geothermal Gradient", "items": ["Actual temperature change with depth", "~25-30°C/km near surface", "Decreases with depth", "Depends on heat sources and conductivity", "Non-uniform throughout Earth"]}, "right": {"label": "Adiabatic Gradient", "items": ["Temperature change from compression alone", "~0.3°C/km in mantle", "~0.8°C/km in outer core", "Depends only on material properties", "Nearly uniform within each layer"]}},
+        {"type": "heading", "text": "Birch's Law"},
+        {"type": "para", "text": "**Birch's Law** (1961) establishes a linear relationship between **compressional wave velocity (Vp)** and **density (ρ)** for silicate and oxide minerals: Vp = a(M̄) + bρ, where M̄ is the mean atomic weight. This empirical relationship allows density estimation from seismic velocities and was crucial in confirming the iron-nickel composition of the core (high density + appropriate wave speeds)."},
+        {"type": "heading", "text": "Geothermal Provinces of India"},
+        {"type": "para", "text": "India has several **geothermal provinces** with anomalously high heat flow: (1) **Puga Valley, Ladakh** — heat flow >400 mW/m², associated with hot springs and geysers along the Indus Suture Zone. (2) **Tattapani, Chhattisgarh** — hot springs with temperatures up to 98°C. (3) **West Coast (Konkan)** — elevated heat flow due to Deccan volcanic province. (4) **Cambay Graben, Gujarat** — rift-related high heat flow. (5) **Manikaran, Himachal Pradesh** — famous hot springs at 95°C."},
+        {"type": "collapsible", "title": "Advanced: Thermal Boundary Layers", "content": "The Earth has two major thermal boundary layers: (1) The lithosphere — where heat is transported by CONDUCTION, creating the steep near-surface gradient. (2) The D'' layer (core-mantle boundary) — another conductive layer with steep temperature change (~1000°C across ~200 km). Between these, the mantle and core are nearly adiabatic because heat is transported by CONVECTION (efficient mixing). This explains why the gradient is steep near the surface but nearly flat in the deep interior."},
+        {"type": "collapsible", "title": "Advanced: Heat Flow and Continental vs Oceanic Regions", "content": "Global average surface heat flow is ~87 mW/m². Oceanic heat flow (~100 mW/m²) exceeds continental (~65 mW/m²) despite continents having more radioactive elements. This is because: (1) Oceanic crust is thinner, allowing mantle heat to reach the surface faster. (2) Mid-ocean ridges have extremely high heat flow from upwelling mantle. (3) Continental lithosphere is thicker, acting as an insulating blanket. India's average heat flow is ~64 mW/m², with hotspots at geothermal provinces."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Temperature, Pressure, Density",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2024-2025)"},
+        {"type": "callout", "tone": "note", "title": "India's Geothermal Energy Push (2024-2025)", "text": "The **Ministry of New and Renewable Energy (MNRE)** has identified **340 geothermal hot springs** across India with potential for direct-use applications and power generation. Puga Valley (Ladakh) remains the most promising site with reservoir temperatures exceeding **250°C** at shallow depths. A pilot geothermal power plant of **1 MW capacity** was proposed under the National Geothermal Energy Mission. UPSC may ask about India's geothermal potential in the context of renewable energy diversification."},
+        {"type": "callout", "tone": "note", "title": "Deep Geothermal Mapping by GSI (2024)", "text": "The **Geological Survey of India (GSI)** launched an enhanced geothermal mapping programme using **magnetotelluric surveys** and borehole temperature measurements to create a comprehensive **Heat Flow Map of India**. This data helps identify regions suitable for Enhanced Geothermal Systems (EGS) — a technology that creates artificial geothermal reservoirs by fracturing hot dry rock at depth."},
+        {"type": "callout", "tone": "note", "title": "Inner Core Composition Debate (2024)", "text": "New high-pressure experiments at synchrotron facilities confirmed that the inner core density is **2-3% lighter** than pure iron-nickel at equivalent conditions. This 'density deficit' suggests the presence of lighter elements (silicon, oxygen, hydrogen) dissolved in the inner core. The finding affects models of core temperature (lighter elements lower the melting point) and Earth's thermal evolution."},
+        {"type": "callout", "tone": "note", "title": "Puga Valley Geothermal Development (Ladakh)", "text": "In 2024-2025, the **ONGC** and **GSI** conducted detailed subsurface investigations at Puga Valley, confirming temperatures of **>250°C at 1-2 km depth** — comparable to active geothermal fields in Iceland and New Zealand. The site lies along the **Indus-Tsangpo Suture Zone** where the Indian Plate collided with the Eurasian Plate, creating anomalous heat flow from tectonic activity and shallow magmatic intrusions."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Temperature, Pressure, Density",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "The geothermal gradient is constant at ~30°C/km throughout Earth's interior", "correct": "The gradient of 25-30°C/km applies ONLY near the surface (upper few km). It DECREASES dramatically with depth — in the deep mantle it is only ~0.3°C/km. If it were constant, the core would be ~190,000°C, which is impossible."},
+        {"type": "trap", "wrong": "Radioactive decay is the ONLY source of Earth's internal heat", "correct": "Radioactive decay (U, Th, K) provides ~60-70% of current heat production, but primordial heat (from accretion and differentiation) and latent heat from inner core crystallization are also significant contributors. Three sources, not one."},
+        {"type": "trap", "wrong": "Temperature always increases linearly with depth", "correct": "Temperature increases but NOT linearly. The rate of increase (gradient) is steep near the surface and flattens dramatically in the deep mantle and core. The temperature-depth curve (geotherm) is a CURVE, not a straight line."},
+        {"type": "trap", "wrong": "Higher temperature always means the material will be liquid", "correct": "The state of matter depends on BOTH temperature AND pressure. The inner core is at ~5,500°C but is SOLID because pressure (~360 GPa) raises the melting point above the actual temperature. You must compare the geotherm with the solidus (melting curve)."},
+        {"type": "trap", "wrong": "Density increases smoothly and continuously with depth", "correct": "Density increases with depth but in STEPS, not smoothly. There are sharp jumps at the Moho (~2.7 to 3.3 g/cm³) and especially at the Gutenberg discontinuity (~5.5 to ~10 g/cm³) due to changes in CHEMICAL COMPOSITION, not just compression."},
+        {"type": "trap", "wrong": "Geothermal energy is not viable in India because India is not volcanically active", "correct": "India has significant geothermal potential (340+ hot springs identified). Geothermal energy does NOT require active volcanism — it requires elevated heat flow, which occurs in rift zones, collision zones (like the Himalayas), and regions with high radioactive element concentration in crustal rocks."},
+        {"type": "memory", "text": "GRADIENT: Great Rate At Top, Diminishes In ENormous Depths | HEAT SOURCES: RIP = Radioactive + Initial (primordial) + Pressure (core crystallization) | DENSITY JUMPS: MoGu = Moho jump + Gutenberg jump (the two big density steps)"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2019, "question_text": "Consider the following statements:\n1. The rate of increase of temperature with depth inside the Earth is uniform throughout.\n2. The temperature at the centre of the Earth is estimated to be around 5,500°C.\n3. Radioactive decay of elements is a source of heat in Earth's interior.\nWhich of the above statements is/are correct?", "answer_text": "C", "explanation": "Statements 2 and 3 are correct. Statement 1 is WRONG — the geothermal gradient is NOT uniform; it decreases significantly with depth (steep near surface, nearly flat in deep interior). Core temperature is ~5,500°C and radioactive decay is indeed a major heat source.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "Which of the following is/are the source(s) of Earth's internal heat?\n1. Radioactive decay of uranium, thorium, and potassium\n2. Primordial heat from Earth's formation\n3. Solar radiation absorbed at the surface\nSelect the correct answer using the code given below:", "answer_text": "A", "explanation": "Statements 1 and 2 are correct sources of internal heat. Statement 3 is wrong — solar radiation heats only the surface and atmosphere; it does NOT contribute to Earth's INTERNAL heat. The Sun's energy penetrates only a few metres into the ground.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2020, "question_text": "Discuss the factors that control the temperature distribution within the Earth's interior. How does the interplay of temperature and pressure determine the physical state of materials at different depths?", "answer_text": "Temperature distribution is controlled by: (1) Geothermal gradient — ~30°C/km near surface, decreasing with depth. (2) Heat sources — radioactive decay (U, Th, K) concentrated in upper layers, primordial heat, core crystallization. (3) Heat transfer mechanisms — conduction in lithosphere, convection in mantle and outer core. The physical state depends on comparing the geotherm (actual T) with the solidus (melting curve): in the outer core, T exceeds melting point → liquid; in the inner core, extreme pressure raises melting point above T → solid despite higher temperature. The asthenosphere is partially molten because T is close to (slightly below) the solidus with 1-5% melt.", "explanation": "Key structure: define gradient → list heat sources → explain T-P interplay using phase diagram logic → give examples (outer core liquid, inner core solid, asthenosphere partially molten) → Indian context (geothermal provinces).", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding the geothermal gradient:\n1. It is approximately 25-30°C per km near the Earth's surface.\n2. It remains constant throughout Earth's interior.\n3. If it were constant, the core temperature would exceed 100,000°C.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statement 1 is correct — the gradient is ~25-30°C/km near the surface. Statement 2 is wrong — it decreases significantly with depth. Statement 3 is correct — if constant at 30°C/km, core temperature would be 6371 × 30 ≈ 190,000°C (well over 100,000°C), which is physically impossible.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about Earth's internal heat sources:\n1. Radioactive decay of U, Th, and K accounts for about 60-70% of current heat production.\n2. Primordial heat from Earth's accretion has been completely exhausted.\n3. Crystallization of the inner core releases latent heat.\n4. Solar radiation is a major contributor to Earth's internal heat.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "B",
+      "explanation": "Statements 1 and 3 are correct. Statement 2 is wrong — primordial heat has NOT been exhausted; Earth is still cooling from its formation. Statement 4 is wrong — solar radiation heats only the surface (few metres); it contributes nothing to INTERNAL heat at depth.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The geothermal gradient decreases with depth inside the Earth.\nReason (R): Radioactive heat-producing elements are concentrated in the upper crust and their abundance decreases with depth.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — the gradient does decrease with depth (from ~30°C/km to <1°C/km). R is correct and explains A — radioactive elements (U, Th, K) are concentrated in the granitic upper crust due to their large ionic radii (incompatible elements). Their decreasing abundance means less heat production at depth, so the gradient flattens.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The outer core of Earth is in a liquid state.\nReason (R): At the depth of the outer core, the actual temperature exceeds the melting point of iron-nickel alloy.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — the outer core (2900-5150 km) is liquid (proven by S-wave shadow zone). R is correct and explains A — at outer core depths, the geotherm (actual temperature) lies ABOVE the solidus (melting curve), so the iron-nickel alloy melts. This is the phase diagram explanation for the liquid state.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following correctly describes the density distribution within the Earth?",
+      "options": [{"label": "A", "text": "Density increases uniformly from 2.7 g/cm³ at the surface to 13 g/cm³ at the centre"}, {"label": "B", "text": "Density increases in steps with sharp jumps at the Moho and Gutenberg discontinuities"}, {"label": "C", "text": "Density remains constant in the mantle and increases only in the core"}, {"label": "D", "text": "Density decreases from the crust to the mantle before increasing in the core"}],
+      "correct_option": "B",
+      "explanation": "Density increases with depth but NOT uniformly — there are sharp jumps at major boundaries. At Moho: ~2.7 to ~3.3 g/cm³ (compositional change from silicic to ultramafic). At Gutenberg: ~5.5 to ~10 g/cm³ (silicate to iron-nickel). Within each layer, density increases more gradually due to compression.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The pressure at the centre of the Earth is approximately:",
+      "options": [{"label": "A", "text": "36 GPa"}, {"label": "B", "text": "136 GPa"}, {"label": "C", "text": "360 GPa"}, {"label": "D", "text": "3600 GPa"}],
+      "correct_option": "C",
+      "explanation": "The pressure at Earth's centre is approximately 360 GPa (3.6 million atmospheres). This extreme pressure keeps the inner core solid despite temperatures of ~5,500°C. Option A (36 GPa) is roughly the pressure at the base of the upper mantle. Option B (136 GPa) is approximately the core-mantle boundary pressure.",
+      "question_type": "FACTUAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A passage from a geophysics journal states: 'The Adams-Williamson equation relates density variation with depth to seismic wave velocities, assuming hydrostatic equilibrium and adiabatic temperature gradient.'\n\nIn light of this, consider the following:\n1. The equation allows density calculation from measurable seismic data.\n2. It assumes no heat exchange between adjacent layers.\n3. It cannot be applied in regions with strong thermal anomalies.\nWhich of the above inferences can be correctly drawn?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are valid inferences. (1) The equation uses Vp and Vs (measurable) to calculate density at depth (not directly measurable). (2) 'Adiabatic' by definition means no heat exchange. (3) Strong thermal anomalies violate the adiabatic assumption, making the equation unreliable in such regions (like thermal boundary layers).",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Geothermal Site) with List-II (State):\n\nList-I: (a) Puga Valley, (b) Tattapani, (c) Manikaran, (d) Cambay\nList-II: (1) Himachal Pradesh, (2) Ladakh, (3) Gujarat, (4) Chhattisgarh",
+      "options": [{"label": "A", "text": "a-2, b-4, c-1, d-3"}, {"label": "B", "text": "a-1, b-3, c-2, d-4"}, {"label": "C", "text": "a-2, b-1, c-4, d-3"}, {"label": "D", "text": "a-4, b-2, c-3, d-1"}],
+      "correct_option": "A",
+      "explanation": "Puga Valley — Ladakh (UT), Tattapani — Chhattisgarh, Manikaran — Himachal Pradesh, Cambay (Graben) — Gujarat. These are India's major geothermal provinces, all with elevated heat flow suitable for geothermal energy development.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Depth Zone) with List-II (Approximate Density):\n\nList-I: (a) Upper crust, (b) Upper mantle, (c) Lower mantle, (d) Inner core\nList-II: (1) ~13 g/cm³, (2) ~2.7 g/cm³, (3) ~5.5 g/cm³, (4) ~3.3 g/cm³",
+      "options": [{"label": "A", "text": "a-2, b-4, c-3, d-1"}, {"label": "B", "text": "a-4, b-2, c-1, d-3"}, {"label": "C", "text": "a-2, b-3, c-4, d-1"}, {"label": "D", "text": "a-1, b-4, c-3, d-2"}],
+      "correct_option": "A",
+      "explanation": "Upper crust: ~2.7 g/cm³ (granitic rocks). Upper mantle: ~3.3 g/cm³ (peridotite/olivine). Lower mantle: ~5.5 g/cm³ (compressed silicates). Inner core: ~13 g/cm³ (compressed iron-nickel). Density increases step-wise with depth.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about geothermal energy in India:\n1. India has over 300 identified geothermal hot spring locations.\n2. Puga Valley in Ladakh has reservoir temperatures exceeding 200°C.\n3. Geothermal energy requires active volcanism to be viable.\n4. The Geological Survey of India has mapped geothermal provinces along the Himalayan belt.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 4 are correct. India has 340+ identified hot springs. Puga Valley has temperatures >250°C at shallow depths. GSI has mapped the Himalayan geothermal belt. Statement 3 is WRONG — geothermal energy does NOT require active volcanism; elevated heat flow from any geological source (radioactivity, tectonic activity, hot dry rock) is sufficient.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following best explains why the inner core is solid despite being at a higher temperature than the liquid outer core?",
+      "options": [{"label": "A", "text": "The inner core has a different chemical composition that has a higher melting point"}, {"label": "B", "text": "The immense pressure at the inner core raises the melting point above the actual temperature"}, {"label": "C", "text": "The inner core is cooled by heat conduction to outer space"}, {"label": "D", "text": "The inner core solidified first during Earth's formation and cannot remelt"}],
+      "correct_option": "B",
+      "explanation": "The inner core is solid because pressure at ~360 GPa raises the melting point of iron-nickel alloy above the actual temperature (~5,500°C). This is a phase diagram effect — on the P-T diagram, the inner core conditions plot on the SOLID side of the melting curve. The composition is similar to the outer core, so option A is not the primary reason.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. The adiabatic gradient in the mantle is approximately 0.3°C/km.\n2. When the actual thermal gradient exceeds the adiabatic gradient, convection occurs.\n3. Mantle convection is the driving mechanism for plate tectonics.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. The adiabatic gradient is ~0.3°C/km in the mantle. When actual gradient > adiabatic gradient, the layer is superadiabatic and convectively unstable — hot material rises, cool material sinks. This mantle convection creates drag forces on lithospheric plates, driving plate tectonics.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following about Birch's Law:\n1. It establishes a relationship between seismic wave velocity and density.\n2. It applies to silicate and oxide minerals.\n3. It was used to confirm the iron-nickel composition of Earth's core.\nWhich of the above is/are correct?",
+      "options": [{"label": "A", "text": "1 only"}, {"label": "B", "text": "1 and 2 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. Birch's Law (1961) establishes a linear relation between Vp and density (Vp = a(M̄) + bρ). It applies to silicate and oxide minerals. The core's observed high density combined with its seismic velocities matches iron-nickel on Birch's relationship, confirming core composition.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "An area in peninsular India shows anomalously high heat flow (>100 mW/m²) and hot springs. Which of the following is the most likely geological explanation?",
+      "options": [{"label": "A", "text": "Active subduction zone beneath the peninsula"}, {"label": "B", "text": "High concentration of radioactive elements in granitic basement and/or rift-related thin lithosphere"}, {"label": "C", "text": "Recent volcanic eruption within the last 1000 years"}, {"label": "D", "text": "Proximity to the Antarctic plate boundary"}],
+      "correct_option": "B",
+      "explanation": "Peninsular India is NOT near any active subduction zone, recent volcano, or Antarctic plate boundary. High heat flow in shield regions is explained by: (1) radioactive element enrichment in granitic crust (U, Th, K), and/or (2) rift-related lithospheric thinning (as in Cambay Graben or Godavari Graben). These are the correct geological explanations for Indian geothermal anomalies.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following statements about temperature distribution within the Earth is INCORRECT?",
+      "options": [{"label": "A", "text": "Temperature at the core-mantle boundary is approximately 3,500-4,000°C"}, {"label": "B", "text": "The temperature at the centre of Earth is approximately 5,500°C"}, {"label": "C", "text": "Solar radiation is a significant contributor to temperatures below 100 km depth"}, {"label": "D", "text": "The geothermal gradient is steepest in the lithosphere"}],
+      "correct_option": "C",
+      "explanation": "Option C is INCORRECT — solar radiation penetrates only a few metres into the ground and has NO influence on temperatures at depth. Earth's internal heat is from radioactive decay, primordial heat, and core crystallization — NOT from the Sun. Options A, B, and D are all correct descriptions of Earth's thermal structure.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}
