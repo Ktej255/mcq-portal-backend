@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\tests.py
+# hypothesis_version: 6.155.7
+
+[404, '([0-9]+)', '/available', '/{test_id}', '/{test_id}/questions', 'General', 'Medium', 'Test not found', 'attemptCount', 'canStart', 'description', 'difficulty', 'durationMinutes', 'id', 'lastAttemptDate', 'lastAttemptStatus', 'negativeMarks', 'options', 'positiveMarks', 'subject', 'subject_name', 'subjects', 'text', 'textEn', 'textHi', 'title', 'topic', 'topic_name', 'totalQuestions']

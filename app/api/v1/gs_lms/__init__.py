@@ -31,6 +31,7 @@ from app.api.v1.gs_lms import revisit
 from app.api.v1.gs_lms import preview
 from app.api.v1.gs_lms import recall_gate
 from app.api.v1.gs_lms import retro
+from app.api.v1.gs_lms import answers
 
 # All GS LMS routes require authentication. Declaring the dependency at the
 # aggregate level enforces auth-gating uniformly across every sub-router
@@ -53,6 +54,7 @@ router.include_router(video.router, prefix="/{subject_slug}", tags=["gs-lms"])
 router.include_router(revisit.router, prefix="/{subject_slug}", tags=["gs-lms"])
 router.include_router(recall_gate.router, prefix="/{subject_slug}", tags=["gs-lms"])
 router.include_router(retro.router, prefix="/{subject_slug}", tags=["gs-lms"])
+router.include_router(answers.router, prefix="/{subject_slug}", tags=["gs-lms"])
 
 # Preview routes are NOT subject-specific — they serve dev/preview content
 # without auth or subject resolution.

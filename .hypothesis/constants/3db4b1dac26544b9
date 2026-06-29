@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs_lms\models.py
+# hypothesis_version: 6.155.7
+
+[0.0, 'ADVANCED', 'ASSERTION_REASON', 'BASIC', 'CAUSE_EFFECT', 'CHRONOLOGICAL', 'DRAFT', 'EVALUATED', 'EXAMINER_TRAPS', 'FACTUAL', 'FAILED', 'GS1', 'GS2', 'GS3', 'GS4', 'GsDayLesson', 'GsLmsAnswerAttempt', 'GsLmsAnswerModeEnum', 'GsLmsContentSection', 'GsLmsExamTypeEnum', 'GsLmsMcqQuestion', 'GsLmsNodeTypeEnum', 'GsLmsPaperEnum', 'GsLmsPyq', 'GsLmsSyllabusNode', 'GsSubject', 'HANDWRITTEN', 'LEAF_TOPIC', 'MAINS', 'MAP_BASED', 'MATCH_THE_FOLLOWING', 'MEGA_TOPIC', 'NCERT_LEVEL', 'PRELIMS', 'STATEMENT_BASED', 'SUBMITTED', 'SUB_TOPIC', 'TYPED', 'User', 'all, delete-orphan', 'attempt', 'children', 'content_sections', 'gs_day_lessons.id', 'gs_lms_mcq_questions', 'gs_lms_pyqs', 'gs_lms_pyqs.id', 'gs_subjects.id', 'images', 'mcq_questions', 'parent', 'pyqs', 'report', 'syllabus_node', 'users.id']

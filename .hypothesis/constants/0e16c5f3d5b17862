@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs_lms\importer.py
+# hypothesis_version: 6.155.7
+
+[1.0, '--artifact', '--review-status', 'Import results:', 'UNREVIEWED', '__main__', 'answer_text', 'authored', 'blocks', 'children', 'concept_checklist', 'content_sections', 'correct_option', 'created', 'data', 'day_lesson_id', 'display_order', 'exam_type', 'explanation', 'gs-lms-importer', 'marks', 'mcq_questions', 'mcqs_created', 'mcqs_updated', 'node_type', 'nodes_created', 'nodes_updated', 'options', 'pyqs', 'pyqs_created', 'pyqs_updated', 'question_text', 'question_type', 'r', 'review_status', 'section_label', 'sections_created', 'sections_updated', 'subject_id', 'title', 'tree', 'updated', 'utf-8', 'video_url', 'weight', 'year']

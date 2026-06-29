@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\__init__.py
+# hypothesis_version: 6.155.7
+
+['/{subject_slug}', 'gs-lms', 'gs-lms-preview']

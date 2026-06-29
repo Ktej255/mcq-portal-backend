@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\answer_schemas.py
+# hypothesis_version: 6.155.7
+
+['GsAnswerAckOut', 'GsAnswerStatusOut', 'GsAnswerSubmitIn', 'GsOverrideIn', 'GsPageUploadOut']

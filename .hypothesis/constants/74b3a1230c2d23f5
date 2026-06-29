@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\evaluation\providers\config.py
+# hypothesis_version: 6.155.7
+
+[60.0, 4096, '1', 'API_KEY_REF', 'BASE_URL', 'BREAKER_THRESHOLD', 'ConfigurationError', 'EVALUATION_PROVIDER', 'GEMINI_API_KEY', 'GEMINI_MODEL_ID', 'MAX_TOKENS', 'MODEL_ID', 'ProviderConfig', 'RETRY_LIMIT', 'STRUCTURED_OUTPUT', 'SUPPORTS_VISION', 'StructuredOutputMode', 'TIMEOUT_SECONDS', 'active_provider_key', 'gemini', 'gemini-1.5-flash', 'load_provider_config', 'mock', 'native', 'on', 'prompt', 'true', 'yes']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\evaluation\schema.py
+# hypothesis_version: 6.155.7
+
+[0.0, 10.0, 100.0, 'EvaluationReport', 'EvaluationSection', 'HintSchema', 'JSON_MIME_TYPE', 'LOW_TEMPERATURE', 'MarkingScheme', 'RecallMatchSchema', 'after', 'answer_language', 'application/json', 'body', 'classification', 'concept', 'concepts', 'conclusion', 'content_coverage', 'examiner_keywords', 'extra', 'feedback', 'forbid', 'hint', 'introduction', 'missed', 'overall_assessment', 'partial', 'recalled', 'strengths', 'target_concept', 'value_addition']

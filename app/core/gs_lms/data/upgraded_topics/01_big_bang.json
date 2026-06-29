@@ -1,0 +1,233 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Reference upgrade template for GS Geography LMS leaf topics. Rich, interactive, visually engaging blocks (callouts, stat cards, comparison tables, timelines, examiner-trap cards, memory hooks, inline quizzes, inline SVG diagrams) + keyword highlighting via **bold**. Schema-compatible with import_geography.py (sections + pyqs[] + mcq_questions[]). Rendered by components/gs-lms/RichBlockRenderer.tsx. Current affairs refreshed to mid-2026.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram(id: cosmic-timeline|universe-composition)",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge this node under Geomorphology > Earth and Its Origin (The Universe))"
+  },
+  "title": "Big Bang Theory and Origin of the Universe",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.0,
+  "display_order": 1,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "Opening topic of Physical Geography: cosmic origin establishes why Earth has the chemical composition (iron core, silicate mantle) that enables every later topic — plate tectonics, magnetism, geomorphology.",
+  "concept_checklist": [
+    "Universe is ~13.8 billion years old; originated from a singularity via expansion of space (not an explosion in space).",
+    "Big Bang Nucleosynthesis produced only H (~75%), He (~25%), and trace Li; heavier elements formed in stars.",
+    "Recombination at ~380,000 years made the Universe transparent; relic radiation is the CMBR (2.725 K).",
+    "Three observational pillars: galactic redshift (Hubble 1929), CMBR (Penzias-Wilson 1965), H:He abundance (75:25).",
+    "Lemaitre proposed (1927), Hubble proved expansion (1929), Gamow worked out nucleosynthesis (1948).",
+    "Dark Energy ~68%, Dark Matter ~27%, visible matter ~5%; dark energy drives accelerating expansion (1998).",
+    "Cosmic origin fixes Earth's elemental inventory, linking astronomy to Earth's internal structure."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        { "type": "callout", "tone": "hook", "title": "Start Here", "text": "Every atom of iron in your blood and calcium in your bones was forged inside a dying star. To understand Earth, you first have to understand where its raw material came from. That story begins 13.8 billion years ago." },
+        { "type": "statgrid", "items": [
+          { "value": "13.8 Bn yrs", "label": "Age of the Universe" },
+          { "value": "75 : 25", "label": "Hydrogen : Helium" },
+          { "value": "2.725 K", "label": "CMBR temperature" },
+          { "value": "380,000 yrs", "label": "Universe became transparent" }
+        ]},
+        { "type": "heading", "text": "What the Big Bang Is (and Is Not)" },
+        { "type": "para", "text": "The Universe originated approximately **13.8 billion years ago** from an infinitely dense, infinitely hot **singularity**. This was **not an explosion in space but an expansion of space itself**. Before this event, neither space, time, nor matter existed in any form recognizable by current physics." },
+        { "type": "analogy", "text": "Picture dots drawn on a balloon. As you inflate it, every dot moves away from every other dot — not because the dots travel through the rubber, but because the rubber itself stretches. That is cosmic expansion: space stretching, not galaxies flying through it." },
+        { "type": "para", "text": "Within the first fraction of a second (the **Planck epoch**, ~10⁻⁴³ s) the four fundamental forces were unified. As the Universe cooled, they separated. By 10⁻⁶ s, quarks combined into protons and neutrons; by **3 minutes**, fusion produced hydrogen and helium nuclei — **Big Bang Nucleosynthesis**." },
+        { "type": "diagram", "id": "cosmic-timeline", "caption": "From singularity to today: the key milestones of cosmic evolution." },
+        { "type": "heading", "text": "Recombination and the CMBR" },
+        { "type": "para", "text": "For 380,000 years the Universe was an opaque plasma. When temperature fell below **3000 K**, electrons joined nuclei to form neutral atoms — an event called **Recombination** — making the Universe transparent. The light released then still reaches us today as the **Cosmic Microwave Background Radiation (CMBR)**, discovered by **Penzias and Wilson in 1965**." },
+        { "type": "keyterms", "terms": [
+          { "term": "Singularity", "definition": "the infinitely dense, hot point from which the Universe expanded." },
+          { "term": "Nucleosynthesis", "definition": "formation of H and He nuclei in the first ~3 minutes." },
+          { "term": "Recombination", "definition": "electrons + nuclei → neutral atoms at ~380,000 yrs; Universe turns transparent." },
+          { "term": "CMBR", "definition": "relic radiation from Recombination, now cooled to **2.725 K**." }
+        ]},
+        { "type": "heading", "text": "From Stars to Galaxies" },
+        { "type": "para", "text": "Stars began forming ~200 million years after the Big Bang. The first **Population III** stars were massive and short-lived, forging heavier elements through fusion and supernovae. **All elements heavier than iron** were created in stellar explosions. Galaxies then assembled from gravitational clustering of stars and dark matter." },
+        { "type": "quiz", "question": "If you find iron and uranium on Earth, where were these elements actually made?", "answer": "Inside stars and their supernova explosions — **not** in the Big Bang. The Big Bang produced only H, He and trace Li." },
+        { "type": "callout", "tone": "why", "title": "Why It Matters for Geography", "text": "Cosmic origin fixes Earth's chemical inventory. The iron that sank to form Earth's **core** and the silicates that rose to form the **mantle** were forged in stars. No stellar death → no rocky planet → no plate tectonics, magnetism, or life." }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Reference-Book Depth & 2026 Current Affairs",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        { "type": "heading", "text": "Competing Theories (Savindra Singh, Ch. 2–3)" },
+        { "type": "compare", "columns": ["Steady State Theory", "Big Bang Theory"], "rows": [
+          { "label": "Proponents", "a": "Bondi, Gold, Hoyle (1948)", "b": "Lemaitre (1927), Gamow (1948)" },
+          { "label": "Core idea", "a": "No beginning/end; continuous matter creation keeps density constant", "b": "Expansion from a singularity 13.8 Bn yrs ago" },
+          { "label": "Status", "a": "**Rejected** — CMBR contradicts it", "b": "**Accepted** current model" }
+        ]},
+        { "type": "callout", "tone": "insight", "title": "The Distinction UPSC Loves", "text": "**Lemaitre proposed; Hubble proved.** Lemaitre (1927) gave the expanding-Universe model from a 'primeval atom'. Hubble (1929) supplied the *evidence* through galactic redshift. Gamow (1948) worked out the nucleosynthesis physics." },
+        { "type": "timeline", "events": [
+          { "year": "1927", "title": "Lemaitre proposes expansion", "detail": "the 'primeval atom' — the original proponent." },
+          { "year": "1929", "title": "Hubble proves it", "detail": "galactic **redshift** shows galaxies receding." },
+          { "year": "1948", "title": "Gamow", "detail": "physics of Big Bang **nucleosynthesis**." },
+          { "year": "1965", "title": "Penzias & Wilson", "detail": "discover the **CMBR** (2.725 K)." },
+          { "year": "1998", "title": "Accelerating expansion", "detail": "dark energy (Perlmutter, Schmidt, Riess; Nobel 2011)." }
+        ]},
+        { "type": "heading", "text": "Composition of the Universe" },
+        { "type": "diagram", "id": "universe-composition", "caption": "We can directly see only ~5% of the Universe; the rest is dark." },
+        { "type": "para", "text": "**Dark Energy ~68%**, **Dark Matter ~27%**, visible (baryonic) matter only **~5%**. Dark Energy drives the **accelerating** expansion discovered in 1998. GC Leong adds the stellar life cycle: Nebula → Protostar → Main Sequence → Red Giant → Supernova / White Dwarf / Black Hole." },
+        { "type": "heading", "text": "Current Affairs (mid-2026)" },
+        { "type": "callout", "tone": "tip", "title": "High-Yield Linkages", "items": [
+          "**JWST** (NASA-ESA-CSA, 2021) — infrared; orbits Sun-Earth **L2**; imaging galaxies from ~300 million years after the Big Bang.",
+          "**Aditya-L1** (ISRO) — halo orbit around **L1** (Jan 2024); India became the **4th country** to study the Sun from space.",
+          "**LIGO-India** at Aundha Nagnath, Maharashtra — gravitational waves (Einstein 1916; first detected 2015)."
+        ]},
+        { "type": "collapsible", "title": "Dig deeper — India's 2026 space push", "items": [
+          "**NISAR** (NASA-ISRO Earth-observation radar) launched **July 2025**.",
+          "**SPADEX** docking experiment (Dec 2024) demonstrated in-orbit docking.",
+          "**Semi-cryogenic 175-tonne engine** hot-tested June 2026 for heavy-lift.",
+          "**Chandrayaan-4** — India's first lunar **sample-return** mission.",
+          "**Chandrayaan-5** — joint with Japan (JAXA), carrying a ~350-kg rover."
+        ]},
+        { "type": "quiz", "question": "JWST and Aditya-L1 both sit at Lagrange points — which point each, and why does it matter?", "answer": "**JWST → L2** (anti-Sun side, for a cold, unobstructed deep-space view). **Aditya-L1 → L1** (Sun-facing, for a continuous view of the Sun). UPSC frequently swaps these." }
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Content Mapping",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        { "type": "callout", "tone": "note", "title": "Source", "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** 'The Origin and Evolution of the Earth' (pp. 14–16) is the core reference for this topic." },
+        { "type": "para", "text": "NCERT key points: all matter was concentrated at one **singularity** at extreme density and temperature; a 'big bang' caused it to expand; as expansion continued, temperature dropped; within ~300,000 years it fell to ~4500 K and **hydrogen and helium atoms formed**." },
+        { "type": "para", "text": "NCERT states plainly: **'The expansion continues even to the present day.'** Highly testable — the Universe is **still expanding**, not static. It also notes galaxies moving farther apart (Hubble), confirming continuing expansion. CMBR and nucleosynthesis appear only as supporting evidence." },
+        { "type": "para", "text": "**NCERT Class 6 — The Earth: Our Habitat, Chapter 1** gives the simplest framing: 'billions of stars and galaxies form the Universe' and 'the Sun is a star.' UPSC has tested this fundamental level inside combination statements." }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps & Common Confusions",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        { "type": "trap", "title": "Trap 1 — 'Explosion in space'", "text": "The Big Bang was an **expansion OF space**, not an explosion IN pre-existing space. Wrong option: 'matter exploded outward into empty space.'" },
+        { "type": "trap", "title": "Trap 2 — Proposed vs proved", "text": "**Lemaitre proposed (1927); Hubble proved (1929).** 'Edwin Hubble proposed the Big Bang Theory' is **incorrect**." },
+        { "type": "trap", "title": "Trap 3 — Steady State & CMBR", "text": "CMBR **disproves** the Steady State Theory; it was not predicted by it. Fred Hoyle coined 'Big Bang' as **mockery** — he opposed it." },
+        { "type": "trap", "title": "Trap 4 — Age swap", "text": "Earth ≈ **4.54 Bn yrs**; Universe ≈ **13.8 Bn yrs**. Remember: Universe 13.8 Ga, Solar System 4.6 Ga, Earth 4.54 Ga." },
+        { "type": "trap", "title": "Trap 5 — Element abundance", "text": "Big Bang made only **H, He, trace Li**. 'Produced all elements up to iron' is **incorrect** — heavier elements come from stars." },
+        { "type": "trap", "title": "Trap 6 — L1 vs L2", "text": "**Aditya-L1 → L1**, **JWST → L2**. Options frequently swap the two Lagrange points." },
+        { "type": "memory", "text": "**'Little Hippos Get Peanuts'** → **L**emaitre (proposed) → **H**ubble (proved) → **G**amow (nucleosynthesis) → **P**enzias-Wilson (CMBR). Chronology in one line." }
+      ]
+    }
+  ],
+  "pyqs": [
+    {
+      "exam_type": "PRELIMS",
+      "year": 2018,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following statements: 1. The Universe is still expanding. 2. The expansion of the Universe is accelerating. 3. Dark energy is considered responsible for the accelerating expansion. Which of the above statements is/are correct? (a) 1 only (b) 1 and 2 only (c) 2 and 3 only (d) 1, 2 and 3",
+      "answer_text": "(d) 1, 2 and 3",
+      "explanation": "The Universe is expanding (Hubble), the expansion is accelerating (discovered 1998), and dark energy is the accepted cause of the acceleration. All three are correct."
+    },
+    {
+      "exam_type": "PRELIMS",
+      "year": 2015,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Which of the following is/are evidence for the Big Bang Theory? 1. Redshift of distant galaxies. 2. Cosmic Microwave Background Radiation. 3. Abundance of hydrogen and helium in the Universe. Select the correct answer: (a) 1 and 2 only (b) 2 only (c) 1 and 3 only (d) 1, 2 and 3",
+      "answer_text": "(d) 1, 2 and 3",
+      "explanation": "All three are the classic observational pillars: galactic redshift (expansion), CMBR (relic radiation), and the observed 75:25 H:He abundance matching nucleosynthesis predictions."
+    },
+    {
+      "exam_type": "PRELIMS",
+      "year": 2022,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "With reference to the James Webb Space Telescope, consider the following: 1. It is placed at the L1 Lagrange point. 2. It observes primarily in infrared wavelengths. 3. It is a joint project of NASA, ESA and JAXA. Which of the above statements is/are correct? (a) 2 only (b) 1 and 2 only (c) 2 and 3 only (d) 1, 2 and 3",
+      "answer_text": "(a) 2 only",
+      "explanation": "Only statement 2 is correct. JWST is at L2 (not L1), and it is a NASA-ESA-CSA project (Canadian Space Agency, not JAXA)."
+    },
+    {
+      "exam_type": "MAINS",
+      "year": 2017,
+      "marks": 10,
+      "question_text": "Describe the theories regarding the origin of the Universe. How does the Big Bang Theory explain the present state of the Universe?",
+      "answer_text": "Cover Steady State, Pulsating, and Big Bang theories; then expansion, CMBR, nucleosynthesis, and continuing accelerated expansion as explanations of the present state.",
+      "explanation": "Structure: (i) competing theories with proponents; (ii) Big Bang evidence; (iii) link to present observed expansion + composition (dark energy/matter)."
+    },
+    {
+      "exam_type": "MAINS",
+      "year": 2023,
+      "marks": 15,
+      "question_text": "India's space programme has increasingly become a player in the international space science community. Discuss with suitable examples.",
+      "answer_text": "Use AstroSat, Aditya-L1, LIGO-India, Chandrayaan series, NISAR (NASA-ISRO), and international collaborations (Chandrayaan-5 with Japan, Axiom-4) as examples, connecting each to fundamental physics/astronomy.",
+      "explanation": "Approach: link each Indian mission to a scientific frontier (solar physics, gravitational waves, Earth observation) and to international cooperation."
+    }
+  ],
+  "mcq_questions": [
+    {
+      "display_order": 1,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following: 1. Georges Lemaitre proposed the expanding-Universe model. 2. Edwin Hubble provided observational evidence for expansion through redshift. 3. Fred Hoyle was a strong supporter of the Big Bang Theory. Which statements are correct?",
+      "options": [
+        { "label": "A", "text": "1 and 2 only" },
+        { "label": "B", "text": "2 and 3 only" },
+        { "label": "C", "text": "1 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "A",
+      "explanation": "Lemaitre proposed (1927) and Hubble proved (1929). Fred Hoyle OPPOSED the Big Bang and coined the name mockingly, so statement 3 is wrong."
+    },
+    {
+      "display_order": 2,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Which of the following were produced during Big Bang Nucleosynthesis? 1. Hydrogen 2. Helium 3. Carbon 4. Iron. Select the correct answer:",
+      "options": [
+        { "label": "A", "text": "1 and 2 only" },
+        { "label": "B", "text": "1, 2 and 3" },
+        { "label": "C", "text": "1, 2, 3 and 4" },
+        { "label": "D", "text": "1 only" }
+      ],
+      "correct_option": "A",
+      "explanation": "Only hydrogen and helium (plus trace lithium) were produced in the Big Bang. Carbon and iron are forged inside stars."
+    },
+    {
+      "display_order": 3,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Regarding the Cosmic Microwave Background Radiation (CMBR): 1. It was predicted by the Steady State Theory. 2. It has a temperature of approximately 2.725 K. 3. It provides evidence for a specific early moment when matter became transparent. Which are correct?",
+      "options": [
+        { "label": "A", "text": "2 only" },
+        { "label": "B", "text": "1 and 2 only" },
+        { "label": "C", "text": "2 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "C",
+      "explanation": "CMBR is a relic of Recombination (~380,000 years) and disproves the Steady State Theory rather than being predicted by it. Statements 2 and 3 are correct."
+    },
+    {
+      "display_order": 4,
+      "question_type": "FACTUAL",
+      "question_text": "Aditya-L1, India's first solar mission, is placed in a halo orbit around which Lagrange point?",
+      "options": [
+        { "label": "A", "text": "Sun-Earth L1" },
+        { "label": "B", "text": "Sun-Earth L2" },
+        { "label": "C", "text": "Earth-Moon L1" },
+        { "label": "D", "text": "Sun-Earth L5" }
+      ],
+      "correct_option": "A",
+      "explanation": "Aditya-L1 orbits the Sun-Earth L1 point (Sun-facing), giving an uninterrupted view of the Sun. JWST, by contrast, is at L2."
+    },
+    {
+      "display_order": 5,
+      "question_type": "CHRONOLOGICAL",
+      "question_text": "Arrange the following in correct chronological order of age (oldest first): 1. Earth 2. The Universe 3. The Solar System.",
+      "options": [
+        { "label": "A", "text": "2, 3, 1" },
+        { "label": "B", "text": "1, 3, 2" },
+        { "label": "C", "text": "2, 1, 3" },
+        { "label": "D", "text": "3, 2, 1" }
+      ],
+      "correct_option": "A",
+      "explanation": "Universe (~13.8 Ga) is oldest, then the Solar System (~4.6 Ga), then Earth (~4.54 Ga). Order: 2, 3, 1."
+    }
+  ]
+}

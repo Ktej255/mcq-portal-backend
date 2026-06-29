@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\inference\mock_provider.py
+# hypothesis_version: 6.155.7
+
+[0.0, 0.9, 1.0, 'blocks', 'confidence', 'end', 'mock/internal', 'mock/internal-audio', 'mock/internal-vision', 'segments', 'start', 'text']

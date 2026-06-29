@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\intervention_analytics.py
+# hypothesis_version: 6.155.7
+
+[100, 'LOW', 'acceptance', 'causal_safety', 'count', 'evidence_confidence', 'intervention_count', 'level', 'metric_version', 'overall_acceptance', 'overload_marker_rate', 'pacing_stabilization', 'strategy_results']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\student_models.py
+# hypothesis_version: 6.155.7
+
+[0.0, 100.0, 'ABANDONED', 'AnswerAttempt', 'AnswerModeEnum', 'COMPLETED', 'ConceptPoint', 'Coverage', 'DRAFT', 'EVALUATED', 'EvaluationReport', 'FAILED', 'HANDWRITTEN', 'IN_PROGRESS', 'OptionalSubject', 'PRACTICE_PASS', 'ProgressEvent', 'Pyq', 'READ_COMPLETE', 'RECALL_THRESHOLD', 'RecallSession', 'RecallTurn', 'SPOKEN', 'SUBMITTED', 'SubjectSelection', 'SyllabusNode', 'TYPED', 'User', 'VideoSegment', 'all, delete-orphan', 'attempt', 'concept_points', 'optional_coverage', 'optional_pyqs.id', 'optional_subjects.id', 'recall_sessions', 'report', 'session', 'student_id', 'subject_id', 'turns', 'users.id', 'video_segment']

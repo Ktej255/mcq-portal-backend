@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\entitlement.py
+# hypothesis_version: 6.155.7
+
+['/pricing', '0', 'DEFAULT_UPGRADE_PATH', 'EntitlementDecision', 'EntitlementProvider', 'abstract', 'config', 'default', 'false', 'no', 'off', 'premium', 'true']

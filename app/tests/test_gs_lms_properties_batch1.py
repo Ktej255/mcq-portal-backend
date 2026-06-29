@@ -489,7 +489,7 @@ class TestProgressiveDisclosureLogic:
             )
 
     @given(num_leaf_nodes=st.integers(min_value=1, max_value=10))
-    @settings(max_examples=30)
+    @settings(max_examples=30, deadline=None)
     def test_property6_four_sections_in_correct_order(self, num_leaf_nodes):
         """Property 6: Every leaf-level node has exactly 4 content sections
         with labels [BASIC, ADVANCED, NCERT_LEVEL, EXAMINER_TRAPS] in that

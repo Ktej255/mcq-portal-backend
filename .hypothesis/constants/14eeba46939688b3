@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\payments\models.py
+# hypothesis_version: 6.155.7
+
+[128, 256, 'INR', 'JSON', 'PaymentOrder', 'PaymentWebhookLog', 'Subscription', 'active', 'cashfree_order_id', 'end_date', 'order', 'order_id', 'payment_orders', 'payment_webhook_logs', 'pending', 'sqlite', 'status', 'subscription', 'subscriptions', 'user_id']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\mcq_variation_engine.py
+# hypothesis_version: 6.155.7
+
+[0.5, 4294967295, ', ', '1', 'A', 'B', 'C', 'D', 'E', 'F', 'Neither 1 nor 2', 'None of the above', '\\b(\\d+)\\.\\s', '\\b(\\d+)\\b', '_opt_', 'are correct', 'are incorrect', 'correct_option', 'explanation_en', 'explanation_hi', 'four', 'how many', 'id', 'key_mapping', 'neither', 'none', 'one', 'options_en', 'options_hi', 'text', 'textEn', 'textHi', 'text_en', 'text_hi', 'three', 'two', 'utf-8', 'एक', 'कितने', 'कोई', 'कोई भी नहीं', 'गलत हैं', 'गलत\\s+हैं?\\b', 'चार', 'तीन', 'दो', 'सही हैं', 'सही\\s+नहीं\\s+हैं?\\b', 'सही\\s+हैं?\\b']

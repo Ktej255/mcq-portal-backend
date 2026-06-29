@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\optional\recall.py
+# hypothesis_version: 6.155.7
+
+[0.0, 1.0, 100.0, 1024, '/recall/{session_id}', '/{slug}/segments', 'Recall scored', 'Recall updated', 'Segments retrieved', 'concept', 'evidence', 'status', 'value', 'weight']

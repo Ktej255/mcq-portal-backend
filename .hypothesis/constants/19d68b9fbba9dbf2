@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\reports.py
+# hypothesis_version: 6.155.7
+
+[100, '/aggregate', '/evolution', '/recommendations', '/{attempt_id}', '/{attempt_id}/review', 'No reports found', 'Report retrieved', 'accuracy', 'attemptId', 'behavioral_analysis', 'confidenceAnalytics', 'confidence_analysis', 'correct', 'correctCount', 'correct_count', 'count', 'evaluation_version', 'forensic_audit_log', 'generatedAt', 'incorrectCount', 'incorrect_count', 'level', 'longitudinalProfile', 'narrative', 'processingStatus', 'processing_status', 'reliability_score', 'rendering_version', 'report_version', 'score', 'scoreTrends', 'strengths', 'subject', 'subjectScores', 'telemetry_summary', 'telemetry_version', 'topicMastery', 'topicWiseAnalysis', 'topic_wise_analysis', 'total', 'totalScore', 'totalTime', 'total_score', 'total_time_seconds', 'truth_status', 'unattemptedCount', 'unattempted_count']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\subject_importer.py
+# hypothesis_version: 6.155.7
+
+[1.0, 'DEFAULT_FEATURES', 'UNREVIEWED', 'answer', 'beyond_syllabus', 'content', 'description', 'display_order', 'features', 'gap', 'label', 'marks', 'name', 'null', 'official_phrasing', 'paper', 'papers', 'pending-review', 'phase', 'phase-2-upload', 'practice', 'pyq', 'pyqs', 'question', 'read', 'section', 'sections', 'slug', 'subjects', 'subtopic_nodes', 'subtopics', 'title', 'topic_nodes', 'topic_title', 'topics', 'year']

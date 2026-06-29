@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\main.py
+# hypothesis_version: 6.155.7
+
+['*', ',', '/', '/api/v1/admin', '/api/v1/attempts', '/api/v1/auth', '/api/v1/dashboard', '/api/v1/engagement', '/api/v1/gs-lms', '/api/v1/mains-upload', '/api/v1/optional', '/api/v1/payments', '/api/v1/reports', '/api/v1/revision', '/api/v1/simulation', '/api/v1/student', '/api/v1/tests', '/health', '2.0.0', 'admin', 'attempts', 'auth', 'clock', 'dashboard', 'engagement', 'gs-lms', 'gs-lms-preview', 'healthy', 'mains-upload', 'online', 'optional', 'payments', 'reports', 'revision', 'service', 'simulation', 'status', 'student-profile', 'tests', 'timestamp', 'version']

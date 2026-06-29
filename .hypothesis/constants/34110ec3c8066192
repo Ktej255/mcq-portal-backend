@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\adaptive_experimentation.py
+# hypothesis_version: 6.155.7
+
+[0.25, 100, 'A', 'B', 'LOW', 'MEDIUM', 'assigned', 'assigned_rate', 'assignment_count', 'experiment_id', 'metric_version', 'mode', 'pace_buffer', 'pacing_strategy_v1', 'purpose', 'reason', 'revision_intensity', 'risk', 'strategy', 'strategy_id', 'utf-8', 'variant', 'variant_id', 'variants']

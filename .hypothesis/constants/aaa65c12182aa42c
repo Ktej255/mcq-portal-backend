@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\pedagogy\contracts.py
+# hypothesis_version: 6.155.7
+
+['ASSERTION_REASON', 'CHRONOLOGY', 'MATCH_FOLLOWING', 'MEDIUM', 'MULTI_STATEMENT', 'PAIR_MATCHING', 'STANDARD', 'correct_option', 'options']

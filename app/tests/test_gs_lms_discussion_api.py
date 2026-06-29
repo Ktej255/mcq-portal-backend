@@ -39,6 +39,7 @@ from app.core.gs_lms import models as gs_lms_models  # noqa: F401
 from app.core.gs_lms import student_models as gs_lms_student_models  # noqa: F401
 from app.core.gs import models as gs_models  # noqa: F401
 from app.models import domain as domain_models  # noqa: F401
+from app.core.gs.models import GsSubject
 
 from app.core.gs_lms.student_models import (
     GsLmsDiscussionSession,
@@ -72,6 +73,17 @@ def test_engine():
         if any(name.startswith(p) for p in relevant_prefixes)
     ]
     Base.metadata.create_all(engine, tables=relevant_tables)
+    
+    # Seed subject
+    SessionLocal = sessionmaker(bind=engine)
+    db = SessionLocal()
+    try:
+        subject = GsSubject(id=1, slug="geography", name="GS Geography", display_order=1)
+        db.add(subject)
+        db.commit()
+    finally:
+        db.close()
+        
     yield engine
     engine.dispose()
 

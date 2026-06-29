@@ -37,7 +37,7 @@ from app.core.gs_lms import student_models as gs_lms_student_models  # noqa: F40
 from app.core.gs import models as gs_models  # noqa: F401
 from app.models import domain as domain_models  # noqa: F401
 
-from app.core.gs.models import GsReviewStatusEnum
+from app.core.gs.models import GsReviewStatusEnum, GsSubject
 from app.core.gs_lms.models import (
     GsLmsSyllabusNode,
     GsLmsContentSection,
@@ -89,6 +89,11 @@ def seed_data(session_factory):
     """Seed a syllabus node with 4 REVIEWED sections and one UNREVIEWED section."""
     db = session_factory()
     try:
+        # Create GS Geography subject
+        subject = GsSubject(id=1, slug="geography", name="GS Geography", display_order=1)
+        db.add(subject)
+        db.flush()
+
         # Create a syllabus node (leaf topic)
         node = GsLmsSyllabusNode(
             id=100,

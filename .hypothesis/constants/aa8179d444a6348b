@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\mains_upload.py
+# hypothesis_version: 6.155.7
+
+[b'\nendobj\n', b'\nendstream\nendobj\n', b'%PDF-1.4\n%\xe2\xe3\xcf\xd3\n', b'0000000000 65535 f \n', b'1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n', b'2 0 obj\n', b'\x89PNG\r\n\x1a\n', 192, 193, 194, 255, 400, 413, 422, 500, 595, 842, 1024, '%Y%m%d_%H%M%S', '/assemble-pdf', '/ping', '>H', '>I', 'Content-Disposition', 'No files provided.', 'Not a valid PNG file', 'X-Page-Count', 'X-Subject', 'application/pdf', 'general', 'mains_upload', 'ok', 'service', 'status', 'timestamp']

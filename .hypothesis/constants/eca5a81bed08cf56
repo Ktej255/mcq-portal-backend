@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\dependencies.py
+# hypothesis_version: 6.155.7
+
+['ADMIN', 'Bearer', 'MOCK_TOKEN', 'WWW-Authenticate', '_', 'dev-validator-id', 'email', 'name', 'picture', 'uid', 'validator@upsc.local']

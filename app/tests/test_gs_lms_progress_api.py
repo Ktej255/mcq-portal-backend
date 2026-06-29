@@ -48,6 +48,7 @@ from app.core.gs_lms.student_models import (  # noqa: F401
     GsLmsPracticeAttempt,
     GsLmsPracticeSessionStatusEnum,
     GsLmsGapSnapshot,
+    GsLmsRevisitSchedule,
 )
 
 
@@ -66,6 +67,7 @@ REQUIRED_TABLES = [
     "gs_lms_practice_sessions",
     "gs_lms_practice_attempts",
     "gs_lms_gap_snapshots",
+    "gs_lms_revisit_schedule",
 ]
 
 

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\pedagogical_reasoning_engine.py
+# hypothesis_version: 6.155.7
+
+[0.3, 0.35, 100, 'CAUSE_UNRESOLVED', 'claim', 'claims', 'conceptual_memory', 'conceptual_regions', 'contradiction_flags', 'durable_recoveries', 'evidence_source', 'failed_recoveries', 'inference_confidence', 'memory_version', 'metric_version', 'misconception_memory', 'misconceptions', 'narrative_confidence', 'narrative_continuity', 'narrative_timeline', 'no_diagnosis', 'no_permanent_labels', 'prerequisite_chain', 'probability', 'profile', 'reasoning_confidence', 'recovery_memory', 'retention_score', 'safety_boundary', 'supporting_attempts', 'teacher_summary', 'teacher_support', 'telemetry_continuity', 'topic', 'unstable_regions', 'user_id']

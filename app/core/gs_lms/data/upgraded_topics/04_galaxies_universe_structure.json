@@ -1,0 +1,208 @@
+{
+  "_meta": { "template_version": "v3-rich", "topic_number": 4 },
+  "title": "Galaxies and Large-Scale Structure of the Universe",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.0,
+  "display_order": 4,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "Follows stellar evolution: stars assembled into galaxies; galaxies into clusters, superclusters, and the cosmic web. Contextualises Earth's position in the Milky Way before the next topic (Earth's uniqueness).",
+  "concept_checklist": [
+    "Galaxies are gravitationally bound systems of stars, gas, dust, and dark matter; three main types: spiral, elliptical, irregular.",
+    "The Milky Way is a barred spiral galaxy, ~100,000 light-years across, containing 200–400 billion stars; Sun is in the Orion Arm ~26,000 ly from the centre.",
+    "Sagittarius A* is the supermassive black hole (~4 million M☉) at the Milky Way's centre, imaged by the EHT in 2022.",
+    "Large-scale structure: galaxies → galaxy clusters → superclusters → filaments and voids forming the cosmic web.",
+    "Andromeda (M31) is the nearest major galaxy; it will merge with the Milky Way in ~4.5 billion years.",
+    "Dark matter (~27% of the Universe) provides the gravitational scaffolding holding galaxies and clusters together; detected only by gravitational effects.",
+    "India connection: AstroSat observes galaxies in UV/X-ray; LIGO-India will detect events in distant galaxies."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        { "type": "callout", "tone": "hook", "title": "Context", "text": "Topic 3 showed how individual stars live and die. But stars don't exist in isolation — they cluster into **galaxies**, which in turn form an immense **cosmic web**. This topic maps the hierarchy from galaxies to the largest structures in the Universe, and locates Earth within it." },
+        { "type": "statgrid", "items": [
+          { "value": "100k ly", "label": "Milky Way diameter" },
+          { "value": "200–400 Bn", "label": "Stars in the Milky Way" },
+          { "value": "26,000 ly", "label": "Sun's distance from centre" },
+          { "value": "4 M M☉", "label": "Mass of Sagittarius A*" }
+        ]},
+        { "type": "heading", "text": "What Is a Galaxy?" },
+        { "type": "para", "text": "A galaxy is a gravitationally bound system of **stars, interstellar gas, dust, and dark matter**. Galaxies range from dwarfs with a few billion stars to giants with trillions. They are the fundamental building blocks of the Universe's large-scale structure." },
+        { "type": "heading", "text": "Galaxy Classification (Hubble Sequence)" },
+        { "type": "compare", "columns": ["Type", "Characteristics"], "rows": [
+          { "label": "Spiral", "a": "Flat rotating disk + spiral arms + central bulge", "b": "Active star formation in arms; e.g. **Milky Way**, Andromeda" },
+          { "label": "Elliptical", "a": "Smooth, featureless, ellipsoidal shape", "b": "Old stars, little gas/dust, low star formation; most **abundant** type" },
+          { "label": "Irregular", "a": "No distinct shape or structure", "b": "Often interacting/merging; e.g. Magellanic Clouds" }
+        ]},
+        { "type": "heading", "text": "The Milky Way — Our Home Galaxy" },
+        { "type": "points", "items": [
+          "Type: **barred spiral** galaxy (central bar-shaped structure of stars).",
+          "Diameter: ~**100,000 light-years**; ~13.6 billion years old.",
+          "Stars: estimated **200–400 billion**.",
+          "Structure: **Sagittarius A*** (central supermassive black hole, ~4 million M☉), **bulge** (old stars), **disk** (spiral arms, young stars, gas), **halo** (globular clusters, dark matter).",
+          "Sun's position: **Orion Arm** (a minor spiral arm), ~**26,000 light-years** from the centre; orbital period **225–250 million years** (one **Galactic year**)."
+        ]},
+        { "type": "heading", "text": "Large-Scale Structure: The Cosmic Web" },
+        { "type": "para", "text": "Galaxies are not randomly distributed. They cluster hierarchically:" },
+        { "type": "points", "items": [
+          "**Galaxy groups** (tens of galaxies): the **Local Group** contains the Milky Way + Andromeda + ~80 smaller galaxies.",
+          "**Galaxy clusters** (hundreds–thousands): the nearest large cluster is **Virgo Cluster** (~1,300 galaxies).",
+          "**Superclusters** (clusters of clusters): we belong to the **Laniakea Supercluster** (discovered 2014).",
+          "**Filaments and voids**: galaxies trace enormous thread-like **filaments** separated by vast empty **voids** — together forming the **cosmic web**."
+        ]},
+        { "type": "heading", "text": "Dark Matter — The Invisible Scaffolding" },
+        { "type": "para", "text": "**Dark matter** constitutes ~**27%** of the Universe. It does not emit, absorb, or reflect light — it is detected only through gravitational effects: galaxy rotation curves (stars orbit faster than visible mass predicts), gravitational lensing, and the structure of the cosmic web itself. Dark matter provides the gravitational framework galaxies form within." },
+        { "type": "quiz", "question": "If we cannot see dark matter, how do we know it exists?", "answer": "Three lines of evidence: (1) **Galaxy rotation curves** — outer stars orbit too fast for visible mass alone; (2) **Gravitational lensing** — light bends more than visible mass explains; (3) **Cosmic web structure** — the filament/void pattern requires invisible mass to seed it. All point to ~5× more mass than visible matter." },
+        { "type": "callout", "tone": "why", "title": "Why It Matters for Geography", "text": "Locating Earth within the Milky Way's Orion Arm contextualises our position. The concept of galactic years (~225 million years) maps onto geological timescales (Pangaea formed ~1.3 galactic years ago). And the total matter budget of the Universe (dark matter + dark energy + visible) underpins cosmological questions UPSC tests." }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Reference-Book Depth & 2026 Current Affairs",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        { "type": "heading", "text": "Key Facts for Advanced Reference" },
+        { "type": "para", "text": "**Andromeda (M31)** is the nearest major galaxy (~2.5 million light-years). It is approaching the Milky Way at ~110 km/s; the two will collide and merge in ~**4.5 billion years** (Milkomeda). This is gravitational — not expansion-related." },
+        { "type": "para", "text": "**Quasars** are extremely luminous active galactic nuclei powered by accretion onto supermassive black holes in distant galaxies. They mark the early Universe when galaxy formation was intense. JWST has detected quasars from <1 billion years after the Big Bang." },
+        { "type": "para", "text": "**Galaxy evolution**: spiral → elliptical through mergers (dynamical heating randomises ordered rotation). The Milky Way has consumed smaller galaxies and their remnants are detectable as stellar streams in the halo." },
+        { "type": "heading", "text": "Current Affairs (mid-2026)" },
+        { "type": "callout", "tone": "tip", "title": "High-Yield Linkages", "items": [
+          "**Event Horizon Telescope (EHT)** imaged **Sagittarius A*** (May 2022) — the first image of our own galaxy's central black hole. Validates the existence of supermassive black holes predicted by general relativity.",
+          "**AstroSat** (ISRO, 2015) observes galaxies in UV and X-ray simultaneously; detected UV from a galaxy **9.3 billion light-years** away (2024) — one of the farthest UV detections by any space telescope.",
+          "**JWST** discovered galaxies from just 300–400 million years after the Big Bang that are larger and more mature than models predicted — forcing revision of early galaxy-formation theories.",
+          "**Laniakea Supercluster** (discovered 2014 by Tully et al.) — the supercluster containing the Milky Way; ~520 million light-years across; demonstrated using galaxy flow maps."
+        ]},
+        { "type": "collapsible", "title": "Dig deeper — Dark Matter detection efforts", "items": [
+          "**XENON1T / XENONnT** (Italy) — largest liquid-xenon detector searching for dark matter particles (WIMPs).",
+          "**Large Hadron Collider** (CERN) — searches for dark matter candidates produced in high-energy collisions.",
+          "**India-based Neutrino Observatory (INO)** — proposed underground lab in Tamil Nadu relevant to dark-matter/neutrino physics.",
+          "No direct detection of dark matter particles yet (as of 2026) — only gravitational evidence."
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Content Mapping",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        { "type": "callout", "tone": "note", "title": "Source", "text": "NCERT covers galaxies minimally. **Class 6 — The Earth: Our Habitat, Chapter 1** states: 'Billions of stars form a galaxy. Millions of galaxies form the Universe.' **Class 11** mentions galaxies in the context of Universal expansion (Hubble)." },
+        { "type": "para", "text": "NCERT does NOT cover galaxy classification (spiral/elliptical/irregular), the Milky Way's structure, dark matter, or the cosmic web in detail. These come from supplementary sources (GC Leong Ch. 1, Savindra Singh Ch. 2). However, NCERT's statement about 'galaxies moving farther apart' is the observational basis of Universal expansion — directly testable." },
+        { "type": "para", "text": "Key testable NCERT facts: (1) the Sun is one star among billions in a galaxy; (2) galaxies are collections of stars bound by gravity; (3) galaxies are moving apart (Hubble). These appear in fundamental-level combination statements." }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps & Common Confusions",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        { "type": "trap", "title": "Trap 1 — 'Spiral galaxies are the most common'", "text": "WRONG. **Elliptical galaxies** are the most abundant type by number. Spirals are the most visually prominent and well-known but not the most common." },
+        { "type": "trap", "title": "Trap 2 — 'The Milky Way is a spiral galaxy'", "text": "**Incomplete.** It is specifically a **barred spiral** — the central region has a bar-shaped structure of stars. Options may test 'barred spiral' vs plain 'spiral'." },
+        { "type": "trap", "title": "Trap 3 — Andromeda collision timeline", "text": "The Milky Way–Andromeda merger will happen in ~**4.5 billion years** (not millions). Options may swap billion/million. Also: Earth will likely **survive** (stars are so far apart that direct collisions are extremely unlikely)." },
+        { "type": "trap", "title": "Trap 4 — 'Dark matter is 68% of the Universe'", "text": "WRONG — that's **dark energy**. Dark matter is ~**27%**; dark energy ~**68%**; visible matter ~**5%**. These three numbers are frequently swapped." },
+        { "type": "trap", "title": "Trap 5 — 'Sagittarius A* was discovered by JWST'", "text": "WRONG. Sgr A* was imaged by the **Event Horizon Telescope (EHT)** in 2022, a global network of radio telescopes. JWST observes in infrared and studies distant galaxies, not our galactic centre's black hole." },
+        { "type": "trap", "title": "Trap 6 — Sun's orbital period", "text": "The Sun orbits the galactic centre every ~**225–250 million years** (one Galactic year). This is NOT the Sun's age (5 billion years) or its remaining lifespan (5 billion years). These three numbers must not be confused." },
+        { "type": "memory", "text": "**'5-27-68'**: visible matter **5%**, dark matter **27%**, dark energy **68%**. In increasing order of percentage and decreasing order of how well we understand it." }
+      ]
+    }
+  ],
+  "pyqs": [
+    {
+      "exam_type": "PRELIMS",
+      "year": 2022,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following: 1. The Milky Way is a barred spiral galaxy. 2. Sagittarius A* is a supermassive black hole at the centre of the Milky Way. 3. The Event Horizon Telescope imaged Sagittarius A* in 2022. Which of the above statements is/are correct? (a) 1 only (b) 1 and 2 only (c) 2 and 3 only (d) 1, 2 and 3",
+      "answer_text": "(d) 1, 2 and 3",
+      "explanation": "All three are correct. The Milky Way is classified as a barred spiral (confirmed by infrared surveys). Sgr A* is a ~4 million solar-mass SMBH at the centre. The EHT released the first image of Sgr A* in May 2022."
+    },
+    {
+      "exam_type": "PRELIMS",
+      "year": 2019,
+      "question_type": "FACTUAL",
+      "question_text": "Which of the following correctly describes 'Dark Matter'? (a) Matter that emits very faint radiation detectable only by infrared telescopes (b) Matter that does not interact electromagnetically and is detected only through gravitational effects (c) Antimatter found in the voids between galaxy clusters (d) Dense matter at the centre of black holes",
+      "answer_text": "(b)",
+      "explanation": "Dark matter does not emit, absorb, or reflect light; it interacts only through gravity. It is detected via galaxy rotation curves, gravitational lensing, and cosmic structure formation."
+    },
+    {
+      "exam_type": "MAINS",
+      "year": 2018,
+      "marks": 10,
+      "question_text": "What is the evidence for the existence of dark matter? Discuss its role in the formation of large-scale cosmic structure.",
+      "answer_text": "Evidence: galaxy rotation curves, gravitational lensing, cosmic web structure, CMB anisotropies. Role: dark matter provides the gravitational wells (halos) within which ordinary matter accumulates to form galaxies and clusters; without it the cosmic web cannot form at the observed rate.",
+      "explanation": "Structure: (i) define dark matter; (ii) list and briefly explain each evidence type; (iii) describe how dark-matter halos seed galaxy formation and shape the filament/void pattern."
+    }
+  ],
+  "mcq_questions": [
+    {
+      "display_order": 1,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Regarding the composition of the Universe: 1. Visible (baryonic) matter constitutes about 27%. 2. Dark energy constitutes about 68%. 3. Dark matter constitutes about 5%. Which statements are correct?",
+      "options": [
+        { "label": "A", "text": "2 only" },
+        { "label": "B", "text": "1 and 2 only" },
+        { "label": "C", "text": "2 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "A",
+      "explanation": "The correct composition: Dark Energy ~68%, Dark Matter ~27%, Visible Matter ~5%. Statements 1 and 3 swap the values of dark matter (27%) and visible matter (5%). Only statement 2 (dark energy ~68%) is correct."
+    },
+    {
+      "display_order": 2,
+      "question_type": "FACTUAL",
+      "question_text": "The Sun is located in which arm of the Milky Way galaxy?",
+      "options": [
+        { "label": "A", "text": "Sagittarius Arm" },
+        { "label": "B", "text": "Perseus Arm" },
+        { "label": "C", "text": "Orion Arm" },
+        { "label": "D", "text": "Scutum-Centaurus Arm" }
+      ],
+      "correct_option": "C",
+      "explanation": "The Sun sits in the Orion Arm (also called the Orion Spur), a minor arm between the Sagittarius and Perseus arms, approximately 26,000 light-years from the galactic centre."
+    },
+    {
+      "display_order": 3,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following about the Andromeda Galaxy (M31): 1. It is the nearest galaxy to the Milky Way. 2. It will merge with the Milky Way in about 4.5 billion years. 3. It is a spiral galaxy. Which statements are correct?",
+      "options": [
+        { "label": "A", "text": "2 and 3 only" },
+        { "label": "B", "text": "1, 2 and 3" },
+        { "label": "C", "text": "1 and 3 only" },
+        { "label": "D", "text": "3 only" }
+      ],
+      "correct_option": "A",
+      "explanation": "Statement 1 is wrong: Andromeda is the nearest MAJOR galaxy, but the Canis Major Dwarf Galaxy and the Sagittarius Dwarf Elliptical Galaxy are closer. Statements 2 (merger in ~4.5 Bn years) and 3 (spiral type) are correct."
+    },
+    {
+      "display_order": 4,
+      "question_type": "FACTUAL",
+      "question_text": "India's AstroSat is significant in the study of galaxies because:",
+      "options": [
+        { "label": "A", "text": "It was the first telescope to image a black hole" },
+        { "label": "B", "text": "It observes in multiple wavelengths (UV, X-ray, visible) simultaneously" },
+        { "label": "C", "text": "It orbits the Sun at the L2 Lagrange point" },
+        { "label": "D", "text": "It is the world's largest radio telescope" }
+      ],
+      "correct_option": "B",
+      "explanation": "AstroSat (ISRO, 2015) is India's first dedicated multi-wavelength space observatory, observing in UV, X-ray, and visible light simultaneously. It orbits Earth (not L2); the black-hole image was by EHT; it is not a radio telescope."
+    },
+    {
+      "display_order": 5,
+      "question_type": "FACTUAL",
+      "question_text": "The hierarchical organisation of cosmic structure from smallest to largest is:",
+      "options": [
+        { "label": "A", "text": "Stars → Galaxies → Galaxy clusters → Superclusters → Cosmic web" },
+        { "label": "B", "text": "Stars → Galaxy clusters → Galaxies → Superclusters → Cosmic web" },
+        { "label": "C", "text": "Galaxies → Stars → Superclusters → Galaxy clusters → Cosmic web" },
+        { "label": "D", "text": "Stars → Galaxies → Superclusters → Galaxy clusters → Cosmic web" }
+      ],
+      "correct_option": "A",
+      "explanation": "The correct hierarchy: Stars → Galaxies → Galaxy clusters → Superclusters → Filaments/voids (Cosmic web). Each level is gravitationally bound at a larger scale."
+    }
+  ]
+}

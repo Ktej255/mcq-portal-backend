@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\pedagogy\forensics.py
+# hypothesis_version: 6.155.7
+
+['content', 'correct_option', 'difficulty', 'id', 'options', 'statements', 'structure', 'subject', 'text', 'topic', 'type']

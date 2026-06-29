@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\intervention_tracking_engine.py
+# hypothesis_version: 6.155.7
+
+[100, 'ABANDONED', 'ACCEPTED', 'FOLLOWED', 'GENERATED', 'IGNORED', 'PARTIALLY_FOLLOWED', 'VIEWED', 'abandonment_rate', 'accepted_rate', 'adaptive_context', 'at', 'experiment_id', 'ignored_rate', 'metadata', 'metric_version', 'outcome', 'recommendation', 'strategy', 'strategy_id', 'total', 'updated_at', 'user_id', 'utf-8', 'variant_id']

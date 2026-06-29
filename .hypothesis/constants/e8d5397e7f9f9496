@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\pedagogy\telemetry_reconstruction.py
+# hypothesis_version: 6.155.7
+
+[0.0, 0.25, 1.0, 'ACTIVE', 'ANSWER_CHANGED', 'BLURRED', 'EMPTY', 'FOCUSED', 'FOCUS_STATE_CHANGED', 'HEARTBEAT', 'IDLE', 'IDLE_STATE_CHANGED', 'QUESTION_VIEWED', 'REVIEW_MARKED', 'VERIFIED', 'answer_evolution', 'continuity_gaps', 'continuity_score', 'duration_seconds', 'dwell', 'dwell_seconds', 'ended_at', 'event_count', 'first_viewed_at', 'focus_interruptions', 'focus_reliability', 'from_event_id', 'gap_seconds', 'heartbeat_density', 'id', 'idle_windows', 'index', 'metadata', 'metric_version', 'next_question_id', 'old_id', 'option_id', 'pacing_shifts', 'payload', 'q_id', 'quality', 'question_id', 'question_insights', 'question_sequence', 'review_behavior', 'revisions', 'sequence_index', 'started_at', 'state', 'status', 'temporal_coherence', 'timeline', 'timestamp', 'to_event_id', 'total_duration', 'total_time', 'type', 'visits']

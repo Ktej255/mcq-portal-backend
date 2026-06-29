@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\payments\dependencies.py
+# hypothesis_version: 6.155.7
+
+['payment_service']

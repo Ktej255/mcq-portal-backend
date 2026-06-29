@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\providers\recall.py
+# hypothesis_version: 6.155.7
+
+[0.3, 0.6, 0.85, 200, 'MockRecallProvider', 'RecallProvider', '[a-z0-9]+', 'abstract', 'concept', 'gateway', 'gemini', 'general', 'get_recall_provider', 'missed', 'mock', 'partial', 'recalled']

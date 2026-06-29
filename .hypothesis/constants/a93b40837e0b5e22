@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs_lms\migration.py
+# hypothesis_version: 6.155.7
+
+['BridgeMappingError', 'MigrationError', 'completed', 'completedLessons', 'day', 'day_lesson_id', 'duplicates', 'lessons', 'migrate_progress', 'migration', 'node_count', 'orphans', 'records_created', 'records_deleted', 'records_skipped', 'rollback_migration', 'student_id', 'total_bridges', 'valid']

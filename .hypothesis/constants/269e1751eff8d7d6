@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\progress.py
+# hypothesis_version: 6.155.7
+
+[0.0, 100.0, '/gaps', '/progress', 'Gap profile computed', 'Progress retrieved', 'accuracy', 'action', 'attempts', 'completed_sections', 'node_id', 'reason', 'target_node_id', 'title', 'type']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\attempt_lock_manager.py
+# hypothesis_version: 6.155.7
+
+[404, 'ALREADY_SUBMITTED', 'Attempt not found', 'LOCK_VIOLATION', 'TIMER_EXPIRED']

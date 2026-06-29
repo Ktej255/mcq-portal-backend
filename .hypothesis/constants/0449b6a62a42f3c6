@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\evaluation\scoring.py
+# hypothesis_version: 6.155.7
+
+[0.0, 0.2, 1.0, 100.0, 'count_words', 'normalize_marks']

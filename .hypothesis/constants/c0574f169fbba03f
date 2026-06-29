@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\dynamic_test_generator.py
+# hypothesis_version: 6.155.7
+
+[0.55, 100, 'Unknown', 'adaptive_reliability', 'attempt_count', 'coverage_fallback', 'difficulty', 'graph_aware', 'metric_version', 'ordering_strategy', 'priority_score', 'question_count', 'question_id', 'questions', 'reason', 'relative_difficulty', 'topic', 'user_id']

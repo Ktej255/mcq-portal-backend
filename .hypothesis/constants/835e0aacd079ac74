@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\recommendation_effectiveness.py
+# hypothesis_version: 6.155.7
+
+[0.0, 'accuracy', 'anchor_attempt_id', 'attempt_id', 'behavioral_stability', 'calibration_slope', 'causal_confidence', 'causal_safety', 'claim_language', 'confidence_evolution', 'consistency_score', 'evidence_confidence', 'intervention_count', 'metric_version', 'outcome', 'outcomes', 'overall_reliability', 'pacing_stabilization', 'pacing_volatility', 'recommendation_id', 'retention_topics', 'safe_summary', 'score', 'status', 'strategy_id', 'topics', 'trajectory_points', 'user_id']

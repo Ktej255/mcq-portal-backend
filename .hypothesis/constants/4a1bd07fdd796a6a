@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\evaluation\prompts.py
+# hypothesis_version: 6.155.7
+
+['- (none yet)', '- (none)', 'JSON_MIME_TYPE', 'LOW_TEMPERATURE', '```', 'answer_language', 'body', 'build_hint_request', 'concept', 'conclusion', 'content_coverage', 'examiner_keywords', 'introduction', 'overall_assessment', 'parse_hint', 'parse_recall_match', 'strengths', 'text', 'value_addition', 'weight']

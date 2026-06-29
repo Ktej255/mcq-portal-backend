@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\attempt_reconciliation_engine.py
+# hypothesis_version: 6.155.7
+
+['ANSWER_CHANGED', 'ANSWER_CLEARED', 'ANSWER_SELECTED', 'Attempt not found', 'CLEAN', 'FORENSIC_DIVERGENCE', 'HIGH', 'INSUFFICIENT_DATA', 'MEDIUM', 'option', 'question_id', 'reconstructed_option', 'revision_count', 'selected_option', 'severity', 'stored_option']

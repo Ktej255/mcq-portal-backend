@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs_lms\evaluation\service.py
+# hypothesis_version: 6.155.7
+
+['0.6', '12000', '50', 'COMPLETED', 'DEGRADED', 'FAILED', 'GS_LMS_EVALUATION', 'JOB_TYPE', 'MEDIA_STORE_BACKEND', 'STARTED', 'error', 'estimate_tokens', 'evaluate_attempt_job', 'feedback', 'get_media_store', 'is_complete', 'local', 'memory', 'provider_key', 'rate_limit_exceeded', 'run_evaluation', 's3', 'score', 'token_usage']

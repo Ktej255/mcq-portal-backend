@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\admin.py
+# hypothesis_version: 6.155.7
+
+[100, 403, '/questions', '/questions/bulk', '/recalibrate-batches', '/search-questions', '/subjects', '/tests', '/tests/{test_id}', '/topics', '/topics/{topic_id}', 'ADMIN', 'ALL_BATCHES', 'CALIBRATION_STARTED', 'Questions retrieved', 'Subjects retrieved', 'Tests retrieved', 'Topics retrieved', 'batch-recal-123', 'data', 'job_id', 'status', 'target', 'total']

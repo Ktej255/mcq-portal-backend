@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\crud\admin.py
+# hypothesis_version: 6.155.7
+
+[100, 400, 404, 'Question not found', 'Subject not found', 'Test not found', 'Topic not found', 'correct_option', 'options_en', 'test_id']

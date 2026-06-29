@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\evaluation\resilience.py
+# hypothesis_version: 6.155.7
+
+[500, 'CircuitOpenError', 'ResilientCallError', 'breaker_is_open', 'connection', 'eval-call', 'guarded_call', 'is_retriable', 'record_failure', 'reset_breakers', 'response', 'status_code', 'timeout']

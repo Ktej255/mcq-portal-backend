@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\recall_gate.py
+# hypothesis_version: 6.155.7
+
+['/recall-gate', '/recall-gate/clear', 'No recall needed', 'Recall gate cleared', 'completed_count', 'day_start', 'last_completed']

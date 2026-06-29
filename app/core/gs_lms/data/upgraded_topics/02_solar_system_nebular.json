@@ -1,0 +1,220 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "topic_number": 2,
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography"
+  },
+  "title": "Origin of the Solar System — Nebular Hypothesis, Frost Line, Angular Momentum",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.0,
+  "display_order": 2,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "Directly follows the Big Bang (Topic 1): the Universe made H and He; now we explain how those elements plus stellar-forged heavier ones assembled into our Solar System 4.6 billion years ago. Establishes the framework (accretion, differentiation, frost line) needed for the next topic (Earth's internal structure).",
+  "concept_checklist": [
+    "Solar Nebula Theory: ~4.6 Ga, a rotating gas-dust cloud collapsed (likely triggered by a supernova shockwave), spun faster, flattened into a protoplanetary disk.",
+    "Kant (1755) proposed independently; Laplace (1796) developed the model independently — they never collaborated.",
+    "Frost Line (~2.7 AU, between Mars and Jupiter): inside — only metals + silicates survive; outside — ices condense, giving protoplanets more mass to capture gas → gas giants.",
+    "Angular Momentum Problem: Sun has 99.86% of mass but only 0.5% of angular momentum; resolved by magnetic braking + turbulent viscosity.",
+    "Planet building stages: dust → planetesimals (1–10 km) → protoplanets → gas capture beyond the frost line (runaway growth → gas giants).",
+    "Evidence: all planets orbit prograde in approximately the ecliptic plane; ALMA has directly imaged protoplanetary disks (HL Tauri 2014, TW Hydrae); compositional gradient matches frost-line predictions.",
+    "India linkage: Aditya-L1 studies solar magnetic fields that drove magnetic braking; Chandrayaan-3 studied lunar regolith from a giant-impact late-stage Solar System event."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        { "type": "callout", "tone": "hook", "title": "Where This Fits", "text": "Topic 1 explained the cosmic cookware: the Big Bang made H and He; stars forged everything heavier. Now we ask: **how did that raw material assemble into a Solar System** — one star, eight planets, moons, asteroids, comets — 4.6 billion years ago?" },
+        { "type": "statgrid", "items": [
+          { "value": "4.6 Bn yrs", "label": "Age of the Solar System" },
+          { "value": "2.7 AU", "label": "Frost Line distance" },
+          { "value": "99.86%", "label": "Sun's share of mass" },
+          { "value": "0.5%", "label": "Sun's share of angular momentum" }
+        ]},
+        { "type": "heading", "text": "The Nebular Hypothesis — Kant & Laplace" },
+        { "type": "para", "text": "The dominant explanation is the **Nebular Hypothesis**, first proposed by **Immanuel Kant (1755)** and independently developed by **Pierre-Simon Laplace (1796)**. The modern version — the **Solar Nebula Theory** — states that a slowly rotating cloud of interstellar gas and dust began gravitational collapse ~4.6 billion years ago, likely triggered by a nearby **supernova shockwave**." },
+        { "type": "analogy", "text": "An ice-skater pulling in their arms spins faster. Likewise, the collapsing nebula spun faster as it contracted — this is the **conservation of angular momentum** in action." },
+        { "type": "para", "text": "The spinning cloud flattened into a rotating **protoplanetary disk** (accretion disk). At its centre, temperature and pressure became extreme enough to ignite **nuclear fusion** of hydrogen — the **proto-Sun** was born. The remaining disk (~0.1% of total mass) formed planets, moons, and small bodies through **accretion** (collisions + sticking)." },
+        { "type": "heading", "text": "The Frost Line (Snow Line)" },
+        { "type": "keyterms", "terms": [
+          { "term": "Frost Line", "definition": "the distance (~**2.7 AU**, between Mars and Jupiter) beyond which volatile compounds (water, methane, ammonia) could condense as solid ice." },
+          { "term": "Inside the frost line", "definition": "only **metals and silicates** (rock) survived → formed **rocky terrestrial planets** (Mercury, Venus, Earth, Mars)." },
+          { "term": "Outside the frost line", "definition": "ices condensed alongside rock → protoplanets had **far more solid material** → grew massive cores that captured surrounding H/He gas → **gas/ice giants** (Jupiter, Saturn, Uranus, Neptune)." }
+        ]},
+        { "type": "heading", "text": "The Angular Momentum Problem" },
+        { "type": "para", "text": "If the Sun formed from a spinning disk it should spin much faster. The Sun has **99.86%** of the Solar System's mass but only **0.5%** of its angular momentum — the planets (especially Jupiter) carry **99.5%**. This is the **Angular Momentum Problem**." },
+        { "type": "para", "text": "The modern resolution: **magnetic braking** — the young Sun's powerful magnetic field coupled with the **solar wind** transferred momentum outward to the disk. Additionally, **turbulent viscosity** within the disk and gravitational interactions between forming protoplanets redistributed angular momentum." },
+        { "type": "heading", "text": "How Planets Built Up" },
+        { "type": "points", "heading": "Planet-building stages", "items": [
+          "**Dust grains** collided and stuck (accretion) → millimetre-sized particles.",
+          "Grew into **planetesimals** (1–10 km rocky/icy bodies).",
+          "Planetesimals gravitationally attracted more material → **protoplanets**.",
+          "Beyond the frost line, protoplanets reached ~**10 Earth masses** and captured H/He gas directly → **runaway gas capture** → **gas giants** (Jupiter = 318 Earth masses)."
+        ]},
+        { "type": "quiz", "question": "Why are gas giants located far from the Sun while rocky planets are close?", "answer": "Beyond the **frost line** (~2.7 AU), **ices** could condense alongside rock, giving protoplanets much more solid material. They grew massive enough (~10 Earth masses) to capture hydrogen/helium gas gravitationally. Inside the frost line, only rock and metal survived, limiting growth to smaller, rocky planets." },
+        { "type": "heading", "text": "Evidence for the Theory" },
+        { "type": "points", "items": [
+          "All planets orbit the Sun in the **same direction** (prograde).",
+          "All orbit in approximately the **same plane** (ecliptic).",
+          "**Protoplanetary disks** directly imaged around young stars by the **ALMA telescope** (HL Tauri 2014, TW Hydrae) — gaps carved by forming planets.",
+          "The **compositional gradient** (rocky inner → gaseous outer) matches frost-line predictions precisely."
+        ]},
+        { "type": "callout", "tone": "why", "title": "Why It Matters for Geography", "text": "This topic explains **why Earth is rocky with an iron core** (it formed inside the frost line from metals + silicates), why it has water (delivered by icy bodies from beyond the frost line), and why the Moon formed from a late-stage **giant impact** — all foundational for geomorphology." }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Reference-Book Depth & 2026 Current Affairs",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        { "type": "heading", "text": "NCERT Coverage (Class 11, Ch. 2 + Class 9)" },
+        { "type": "para", "text": "NCERT Class 11 (pp. 16–18): 'The nebula from which our Solar System formed started collapse ~5–5.6 billion years ago; the Sun formed ~5 Ga; planets ~4.6 Ga.' Explicitly discusses **Kant-Laplace** and notes Otto Schmidt (Russia) and Carl Weizäcker (Germany) revised the hypothesis in 1950 — this detail appears in UPSC MCQ options." },
+        { "type": "para", "text": "NCERT Class 9 — Contemporary India, Ch. 2: basic framework introducing inner vs outer planets and the asteroid belt as a dividing line — a simplified precursor to the frost-line concept." },
+        { "type": "heading", "text": "Reference-Book Depth (Savindra Singh + GC Leong)" },
+        { "type": "compare", "columns": ["Hypothesis", "Core idea"], "rows": [
+          { "label": "Gaseous (Kant 1755)", "a": "Hot gaseous mass contracted and rings broke off forming planets", "b": "No explanation of angular momentum; partially correct on contraction" },
+          { "label": "Nebular (Laplace 1796)", "a": "Rotating nebula cooled and contracted leaving rings that condensed into planets", "b": "Could not explain Sun's slow rotation" },
+          { "label": "Planetesimal (Chamberlin 1901)", "a": "A passing star pulled tidal debris from the Sun; small solid bodies (planetesimals) accreted", "b": "Rejected — probability of stellar encounter too low" },
+          { "label": "Modern Solar Nebula", "a": "Combines nebular collapse + magnetic braking + accretion + frost line + runaway gas capture", "b": "Currently **accepted**; validated by ALMA disk imaging" }
+        ]},
+        { "type": "heading", "text": "Current Affairs (mid-2026)" },
+        { "type": "callout", "tone": "tip", "title": "High-Yield Linkages", "items": [
+          "**ALMA** (Chile, 2025): new super-resolution imaging revealed protoplanetary disks around protostars previously unresolved — the **first step** of planet formation after star birth confirmed observationally.",
+          "**JWST** detected **water vapour in inner regions** of protoplanetary disks, directly confirming the frost-line concept (water as vapour inside, ice outside).",
+          "**Aditya-L1** (ISRO, Jan 2024 at L1): studies solar magnetic fields and solar wind — the same processes that resolved the angular momentum problem via magnetic braking.",
+          "**Chandrayaan-3** (Aug 2023, lunar south pole): Pragyan rover analysed regolith composition — the Moon formed from a **giant impact** (proto-Earth + Theia) in the late stage of accretion."
+        ]},
+        { "type": "collapsible", "title": "Dig deeper — Chandrayaan-4 & 5", "items": [
+          "**Chandrayaan-4** — India's first lunar **sample-return** mission (up to 3 kg regolith); launch ~2028.",
+          "**Chandrayaan-5** — joint ISRO-JAXA, ~350-kg rover, ~100-day surface operation (vs Chandrayaan-3's 14 days).",
+          "Returned samples will constrain **Giant Impact Hypothesis** models (compositional match between Earth's mantle and lunar material)."
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Content Mapping",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        { "type": "callout", "tone": "note", "title": "Source", "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** (pp. 16–18) is the core reference." },
+        { "type": "para", "text": "NCERT says: 'The nebula began to collapse approximately 5–5.6 billion years ago.' It attributes the hypothesis to **Kant and Laplace** and mentions the 1950 revision by **Schmidt and Weizäcker** adding the concept of a rotating disk with particles condensing into planets." },
+        { "type": "para", "text": "Key NCERT statements to memorise: (1) planets formed from the same cloud as the Sun; (2) inner planets are small and rocky, outer planets are large and gaseous; (3) the **asteroid belt** lies between Mars and Jupiter, marking the transition zone (a simplified frost-line concept)." },
+        { "type": "quiz", "question": "According to NCERT, who revised the Nebular Hypothesis in 1950?", "answer": "**Otto Schmidt (Russia)** and **Carl Weizäcker (Germany)**. They incorporated the rotating-disk and particle-condensation ideas into the hypothesis." }
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps & Common Confusions",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        { "type": "trap", "title": "Trap 1 — 'Kant and Laplace jointly proposed'", "text": "WRONG. They proposed **independently** — Kant (1755) first, Laplace (1796) later. They never collaborated." },
+        { "type": "trap", "title": "Trap 2 — Frost-line location", "text": "'The frost line is between Earth and Mars.' WRONG. It is between **Mars (~1.5 AU) and Jupiter (~5.2 AU)**, specifically in the **asteroid belt region (~2.7 AU)**." },
+        { "type": "trap", "title": "Trap 3 — Sun's angular momentum", "text": "'The Sun contains most of the Solar System's angular momentum.' WRONG. Sun = **99.86% of mass** but only **0.5% of angular momentum**. Planets carry 99.5%." },
+        { "type": "trap", "title": "Trap 4 — Why gas giants are large", "text": "'Gas giants formed because they're farther from the Sun and hence cooler.' **Incomplete.** Beyond the frost line, **ices condensed alongside rock** giving protoplanets **more solid material** to grow massive cores that then **captured gas gravitationally**. Temperature alone isn't the answer." },
+        { "type": "trap", "title": "Trap 5 — Direct from Big Bang", "text": "'The Solar System formed from the Big Bang directly.' WRONG. The Big Bang (13.8 Ga) produced only H + He. The Solar System (4.6 Ga) formed from a **second/third-generation nebula enriched with heavy elements from prior stellar explosions**." },
+        { "type": "trap", "title": "Trap 6 — Planetesimals ≠ small planets", "text": "Planetesimals are 1–10 km rocky/icy bodies — **building blocks**, not small planets." },
+        { "type": "trap", "title": "Trap 7 — 'Nebular Hypothesis rejected'", "text": "NOT rejected — **modified**. Modern Solar Nebula Theory resolves angular momentum through magnetic braking and turbulent viscosity." },
+        { "type": "memory", "text": "**'K-L-S-W → Modern'**: **K**ant (1755) → **L**aplace (1796) → **S**chmidt + **W**eizäcker (1950 revision) → **Modern Solar Nebula Theory** (currently accepted). Chronological chain in one line." }
+      ]
+    }
+  ],
+  "pyqs": [
+    {
+      "exam_type": "PRELIMS",
+      "year": 2019,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following statements: 1. The Nebular Hypothesis was proposed by Kant and later developed by Laplace. 2. The frost line in the Solar System lies between the orbits of Earth and Mars. 3. Planetesimals are 1–10 km sized building blocks of planets. Which of the above statements is/are correct? (a) 1 and 3 only (b) 2 and 3 only (c) 1 only (d) 1, 2 and 3",
+      "answer_text": "(a) 1 and 3 only",
+      "explanation": "Statement 2 is wrong: the frost line is at ~2.7 AU, between Mars and Jupiter (not Earth and Mars). Kant proposed (1755) and Laplace developed (1796) independently, so statement 1 is correct. Planetesimals are indeed 1–10 km sized building blocks, so statement 3 is correct."
+    },
+    {
+      "exam_type": "PRELIMS",
+      "year": 2023,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "With reference to Chandrayaan-3, consider the following: 1. It achieved the first soft landing near the lunar south pole. 2. The Pragyan rover operated for approximately 100 days. 3. It confirmed the presence of sulphur in lunar regolith. Which of the above statements is/are correct? (a) 1 and 3 only (b) 1 only (c) 2 and 3 only (d) 1, 2 and 3",
+      "answer_text": "(a) 1 and 3 only",
+      "explanation": "Chandrayaan-3 achieved the first south-pole soft landing (statement 1 correct) and its LIBS instrument confirmed sulphur (statement 3 correct). The Pragyan rover operated for ~14 days (one lunar day), not 100 days (statement 2 wrong — 100 days is planned for Chandrayaan-5's rover)."
+    },
+    {
+      "exam_type": "MAINS",
+      "year": 2020,
+      "marks": 15,
+      "question_text": "Explain the modern Nebular Hypothesis for the origin of the Solar System. How does the concept of the 'frost line' account for the compositional differences between terrestrial and jovian planets?",
+      "answer_text": "Cover: nebular collapse from supernova trigger → protoplanetary disk → proto-Sun ignition → frost line at ~2.7 AU → inside: only rock/metal survives (terrestrial planets) → outside: ices condense + runaway gas capture (jovian planets). Include: magnetic braking resolving angular momentum; ALMA evidence of disks around young stars.",
+      "explanation": "Structure: (i) modern nebular theory with stages; (ii) frost line definition and location; (iii) how it creates the rocky-gaseous divide; (iv) evidence (ALMA + orbital patterns)."
+    }
+  ],
+  "mcq_questions": [
+    {
+      "display_order": 1,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following: 1. Immanuel Kant and Pierre-Simon Laplace jointly published the Nebular Hypothesis. 2. The frost line is located between Mars and Jupiter at approximately 2.7 AU. 3. The Sun contains 99.86% of the Solar System's angular momentum. Which statements are correct?",
+      "options": [
+        { "label": "A", "text": "2 only" },
+        { "label": "B", "text": "1 and 2 only" },
+        { "label": "C", "text": "2 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "A",
+      "explanation": "Only statement 2 is correct. Kant and Laplace proposed INDEPENDENTLY (not jointly) — statement 1 is wrong. The Sun has 99.86% of the MASS but only 0.5% of angular momentum — statement 3 swaps mass and momentum."
+    },
+    {
+      "display_order": 2,
+      "question_type": "FACTUAL",
+      "question_text": "Which of the following best explains why Jupiter is a gas giant while Earth is a rocky planet?",
+      "options": [
+        { "label": "A", "text": "Jupiter formed earlier than Earth" },
+        { "label": "B", "text": "Jupiter formed beyond the frost line where ices condensed, enabling a massive core to capture gas" },
+        { "label": "C", "text": "The Sun's gravity is weaker at Jupiter's distance, allowing gas accumulation" },
+        { "label": "D", "text": "Jupiter captured gas from the interstellar medium after Solar System formation" }
+      ],
+      "correct_option": "B",
+      "explanation": "Beyond the frost line (~2.7 AU), ices condensed alongside rock, providing far more solid material for protoplanets to grow. Once a core reached ~10 Earth masses, it captured surrounding H/He gas in a runaway process — forming a gas giant."
+    },
+    {
+      "display_order": 3,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "The Angular Momentum Problem in the Nebular Hypothesis is resolved by: 1. Magnetic braking via the young Sun's magnetic field. 2. Turbulent viscosity within the protoplanetary disk. 3. Gravitational capture by a passing star. Select the correct answer:",
+      "options": [
+        { "label": "A", "text": "1 and 2 only" },
+        { "label": "B", "text": "1 only" },
+        { "label": "C", "text": "2 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "A",
+      "explanation": "Magnetic braking (Sun's field + solar wind transferring momentum to the disk) and turbulent viscosity are the accepted mechanisms. 'Gravitational capture by a passing star' is from the rejected Planetesimal/Tidal Hypothesis, not the Nebular model."
+    },
+    {
+      "display_order": 4,
+      "question_type": "CHRONOLOGICAL",
+      "question_text": "Arrange the following in correct chronological order: 1. Laplace's Nebular model 2. Kant's Gaseous Hypothesis 3. Schmidt-Weizäcker revision 4. Chamberlin's Planetesimal Hypothesis.",
+      "options": [
+        { "label": "A", "text": "2, 1, 4, 3" },
+        { "label": "B", "text": "1, 2, 4, 3" },
+        { "label": "C", "text": "2, 1, 3, 4" },
+        { "label": "D", "text": "2, 4, 1, 3" }
+      ],
+      "correct_option": "A",
+      "explanation": "Kant (1755) → Laplace (1796) → Chamberlin (1901) → Schmidt-Weizäcker (1950). Order: 2, 1, 4, 3."
+    },
+    {
+      "display_order": 5,
+      "question_type": "FACTUAL",
+      "question_text": "India's Aditya-L1 solar mission studies processes directly relevant to the origin of the Solar System because:",
+      "options": [
+        { "label": "A", "text": "It observes asteroid composition" },
+        { "label": "B", "text": "It studies solar magnetic fields and solar wind that drove magnetic braking in the early Solar System" },
+        { "label": "C", "text": "It measures the frost line's current position" },
+        { "label": "D", "text": "It images protoplanetary disks around other stars" }
+      ],
+      "correct_option": "B",
+      "explanation": "Aditya-L1 studies the Sun's corona, magnetic fields, and solar wind — the same physical processes that resolved the Angular Momentum Problem in the Solar Nebula through magnetic braking. A/C/D are factually incorrect about Aditya-L1's mission."
+    }
+  ]
+}

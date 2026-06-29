@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\pedagogy\ingestion_engine.py
+# hypothesis_version: 6.155.7
+
+['ASSERTION (A):', 'CHRONOLOGICAL ORDER', 'INGESTION_V1', 'REASON (R):', 'UNSPECIFIED', 'batch', 'correct_option', 'count', 'id', 'ingest_batch', 'ingested_at', 'ingested_count', 'integrity_hash', 'options', 'options_en', 'original_id', 'pedagogy.ingestion', 'question_number', 'question_type', 'statements_count', 'status', 'subject', 'success', 'test_id', 'text', 'text_en', 'topic', 'topic_id']

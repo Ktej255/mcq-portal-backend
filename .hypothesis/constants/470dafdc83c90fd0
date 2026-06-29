@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\optional\pyqs.py
+# hypothesis_version: 6.155.7
+
+[100, '/{slug}/pyqs', 'PYQs retrieved', 'is_deleted', 'value', 'year_asc', 'year_desc']

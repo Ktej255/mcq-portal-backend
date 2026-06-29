@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\answers.py
+# hypothesis_version: 6.155.7
+
+[1024, '.jpeg', '.jpg', '.png', '.webp', '/answers/handwritten', '/answers/typed', 'ADMIN', 'COMPLETED', 'DEGRADED', 'EVALUATOR', 'FAILED', 'FOUNDER', 'PYQ not found', 'Page not found', 'Page uploaded', 'Report overridden', 'Report retrieved', 'STAFF', 'STARTED', 'Status retrieved', 'completed', 'degraded', 'draft', 'failed', 'feedback', 'in_progress', 'incomplete_sections', 'is_admin', 'is_staff', 'is_superuser', 'marks_awarded', 'overall_score', 'review_required', 'role', 'score', 'sections', 'word_count', 'word_limit']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\engagement\email_service.py
+# hypothesis_version: 6.155.7
+
+['/upsc', '2027', 'EMAIL_FROM_ADDRESS', 'RESEND_API_KEY', 'first_topic_title', 'first_topic_url', 'from', 'html', 'id', 'plan_summary', 'subject', 'target_year', 'templates', 'to', 'unknown', 'utf-8', 'welcome.html', 'your first topic', '{{first_topic_url}}', '{{name}}', '{{plan_summary}}', '{{target_year}}']

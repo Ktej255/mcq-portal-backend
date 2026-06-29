@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\recommendation_service.py
+# hypothesis_version: 6.155.7
+
+['ANALYZED', 'Confidence review', 'Cross-topic timing', 'HIGH', 'LOW', 'MEDIUM', 'PACING_DRILL', 'PRACTICE_DRILL', 'REVISION', 'adaptivePlan', 'adaptive_reliability', 'assigned', 'experimentAssignment', 'mastery_score', 'message', 'pacing_problem', 'priority', 'reason', 'recommendationId', 'recommendations', 'status', 'study_plan', 'topic', 'trajectoryContext', 'type']

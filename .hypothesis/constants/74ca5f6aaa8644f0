@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs_lms\pdf_generator.py
+# hypothesis_version: 6.155.7
+
+[b'%PDF', '#0D47A1', '#1565C0', '#1B5E20', '#212121', '#2E7D32', '#424242', '#616161', '#6A1B9A', '#A5D6A7', '#BF360C', '#E8F5E9', '.html', '.pdf', 'ADVANCED', 'Advanced Analysis', 'BASIC', 'Basic Concepts', 'ContentBlock', 'EXAMINER_TRAPS', 'GS Geography', 'NCERT-Level Coverage', 'NCERT_LEVEL', 'SECTION_THEME', 'Section', 'THEME_COLORS', 'accent', 'application/pdf', 'bg_header', 'bg_light', 'blocks', 'border', 'code', 'color', 'content', 'display', 'display_order', 'generate_topic_pdf', 'get_content_type', 'get_file_extension', 'heading', 'html', 'image', 'list', 'page_number', 'primary', 'quote', 'render_html_template', 'secondary', 'section_label', 'subheading', 'text', 'text_primary', 'text_secondary', 'title', 'type', 'utf-8', 'value']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\attempts.py
+# hypothesis_version: 6.155.7
+
+[0.0, 1.0, 404, 409, 422, '/history', '/start', '/{attempt_id}/events', '/{attempt_id}/submit', 'Attempt not found', 'FORENSIC_DIVERGENCE', 'History retrieved', 'INSUFFICIENT_DATA', 'Unknown Test', 'accuracy', 'attemptId', 'attempt_id', 'audit', 'audit_summary', 'code', 'correct_marks', 'count', 'date', 'description', 'duration_minutes', 'eventTypes', 'firstTimestamp', 'id', 'invalid_event_types', 'is_valid', 'lastTimestamp', 'maxScore', 'message', 'score', 'start_time', 'status', 'success', 'test', 'title', 'total_questions']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\optional\answers.py
+# hypothesis_version: 6.155.7
+
+[', ', '/{slug}/answers', 'Answer evaluated', 'feedback', 'is_deleted', 'score']

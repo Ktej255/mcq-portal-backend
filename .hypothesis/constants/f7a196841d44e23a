@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\session_intelligence_engine.py
+# hypothesis_version: 6.155.7
+
+[0.45, 0.55, 'CONFIDENCE_SELECTED', 'REVIEW_MARKED', 'active_session_count', 'alert_type', 'attempt_id', 'current_question_id', 'educator_alerts', 'heartbeat', 'hesitation', 'live_cognitive_state', 'live_instability', 'memory_risk_topics', 'metric_version', 'misconception_memory', 'misconceptions', 'overload_risk', 'pacing', 'pacing_drift_seconds', 'pacing_memory', 'pacing_volatility', 'pattern', 'privacy_boundary', 'probabilities', 'reason', 'risk_present', 'signals', 'telemetry', 'telemetry_degraded', 'topic', 'user_id']

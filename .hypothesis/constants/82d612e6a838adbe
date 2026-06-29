@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\models.py
+# hypothesis_version: 6.155.7
+
+[0.0, 'ContentUnit', 'Diagram', 'HiddenTopic', 'IN_REVIEW', 'OptionalSubject', 'PAPER', 'PAPER_I', 'PAPER_II', 'Paper', 'PaperLabelEnum', 'Pyq', 'REVIEWED', 'SECTION', 'SECTION_A', 'SECTION_B', 'SUBTOPIC', 'Section', 'SectionLabelEnum', 'SourceRef', 'SyllabusNode', 'SyllabusNodeTypeEnum', 'TOPIC', 'UNREVIEWED', 'all, delete-orphan', 'children', 'content_unit', 'content_units', 'diagrams', 'hidden_topics', 'optional_diagrams', 'optional_papers', 'optional_papers.id', 'optional_pyqs', 'optional_sections', 'optional_sections.id', 'optional_source_refs', 'optional_subjects', 'optional_subjects.id', 'paper', 'papers', 'parent', 'pyqs', 'section', 'sections', 'source_ref', 'source_refs', 'subject', 'syllabus_node', 'syllabus_nodes', 'topic_node']

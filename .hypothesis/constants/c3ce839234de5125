@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\longitudinal_service.py
+# hypothesis_version: 6.155.7
+
+[100, 'ACCURACY_AVG_10', 'correct', 'last_updated', 'mastery_score', 'total']

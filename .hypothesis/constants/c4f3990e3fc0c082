@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\event_auditor.py
+# hypothesis_version: 6.155.7
+
+[0.5, 'ANSWER_CHANGED', 'CAUSALITY_VIOLATION', 'CHRONOLOGY_VIOLATION', 'CONFIDENCE_SELECTED', 'QUESTION_VIEWED', 'RAPID_FLICKER', 'REVIEW_MARKED', 'audit_summary', 'event_index', 'is_valid', 'message', 'question_id', 'total_events', 'type', 'violation_count', 'violations']

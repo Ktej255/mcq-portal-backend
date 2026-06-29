@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\evaluation\providers\evaluation.py
+# hypothesis_version: 6.155.7
+
+[0.0, 4.0, 7.0, 10.0, 70.0, 100.0, 'EvaluationProvider', '_all_incomplete', 'abstract', 'gateway', 'gemini', 'mock', 'mock/eval', 'total_tokens']

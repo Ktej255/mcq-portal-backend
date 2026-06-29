@@ -44,6 +44,7 @@ OTHER_STUDENT_ID = 2
 _ALLOWED_APP_PREFIXES = (
     "app.core.optional",
     "app.api.v1.optional",
+    "app.core.evaluation",
     "app.core.inference",
     "app.core.observability",
     "app.db",

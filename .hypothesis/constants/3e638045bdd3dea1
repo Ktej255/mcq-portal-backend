@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\evaluation\providers\openai_compatible.py
+# hypothesis_version: 6.155.7
+
+['/', '/chat/completions', 'Authorization', 'Content-Type', 'application/json', 'ascii', 'choices', 'content', 'image/png', 'image_url', 'json', 'json_object', 'max_tokens', 'message', 'messages', 'model', 'native', 'response_format', 'role', 'system', 'temperature', 'text', 'type', 'url', 'usage', 'user']

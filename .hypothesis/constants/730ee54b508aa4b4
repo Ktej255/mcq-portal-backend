@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs_lms\student_models.py
+# hypothesis_version: 6.155.7
+
+['ABANDONED', 'COMPLETED', 'GsLmsContentSection', 'GsLmsDailyPlan', 'GsLmsDiscussionTurn', 'GsLmsGapSnapshot', 'GsLmsMcqQuestion', 'GsLmsPracticeAttempt', 'GsLmsPracticeSession', 'GsLmsPyq', 'GsLmsPyqReveal', 'GsLmsReplanEvent', 'GsLmsRevisitSchedule', 'GsLmsSyllabusNode', 'GsLmsVideoWatch', 'GsLmsWeeklyRetro', 'INITIATED', 'IN_PROGRESS', 'SUBMITTED', 'User', 'all, delete-orphan', 'attempts', 'beginner', 'due_date', 'gs_lms_daily_plans', 'gs_lms_gap_snapshots', 'gs_lms_onboarding', 'gs_lms_pyq_reveals', 'gs_lms_pyqs.id', 'gs_lms_replan_events', 'gs_lms_video_watches', 'gs_lms_weekly_retros', 'pyq_id', 'revisit_type', 'section_id', 'session', 'student_id', 'syllabus_node_id', 'turns', 'uq_gs_lms_pyq_reveal', 'users.id', 'week_number']

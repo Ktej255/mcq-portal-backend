@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\pubad_seed.py
+# hypothesis_version: 6.155.7
+
+[2026, 'Accountability', 'Governance', 'PAPER_I', 'PAPER_II', 'PUBAD_SLUG', 'Reforms', 'SECTION_A', 'SECTION_B', 'SEEDER_ACTOR', 'UNREVIEWED', 'answer', 'content', 'currentAffairs', 'current_affairs', 'features', 'gap', 'label', 'month', 'papers', 'pending-review', 'phase', 'phase-2-scaffold', 'practice', 'pubad-draft-seeder', 'pyq', 'read', 'recall', 'sections', 'subjects', 'summary', 'title', 'topic', 'year']

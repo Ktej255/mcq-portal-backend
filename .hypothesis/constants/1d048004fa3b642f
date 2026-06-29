@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\strategy_registry.py
+# hypothesis_version: 6.155.7
+
+['EMERGING', 'HIGH', 'LOW', 'MEDIUM', 'MODERATE', 'PACING_DRILL', 'evidence_quality', 'intended_effect', 'level', 'metric_version', 'name', 'pacing_problem', 'priority', 'reversible', 'safety_notes', 'strategy-registry.v1', 'strategy_id', 'type']

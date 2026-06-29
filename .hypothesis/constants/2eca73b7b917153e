@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\inference\gemini_provider.py
+# hypothesis_version: 6.155.7
+
+['audio/wav', 'data', 'gemini-1.5-flash', 'google/gemini', 'google/gemini-audio', 'google/gemini-vision', 'image/png', 'max_output_tokens', 'mime_type', 'response_mime_type', 'temperature', 'text/plain']

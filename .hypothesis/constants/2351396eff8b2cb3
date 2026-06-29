@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\educational_state_manager.py
+# hypothesis_version: 6.155.7
+
+[0.0, 0.1, 0.15, 0.2, 0.25, 0.55, 0.78, 'HARD', 'HIGH', 'LIGHT', 'LOAD_VS_DIFFICULTY', 'LOW', 'MEDIUM', 'adaptive_plan', 'adaptive_reliability', 'cognitive_load', 'components', 'contradictions', 'description', 'difficulty_mix', 'educational-state.v1', 'educational_memory', 'graph_stability', 'graph_state', 'level', 'mastery', 'memory_continuity', 'metric_version', 'misconception_memory', 'misconceptions', 'mode', 'narrative_confidence', 'narrative_continuity', 'overall_reliability', 'profile', 'reliability', 'severity', 'statements', 'study_plan', 'telemetry_continuity', 'topic_count', 'type', 'user_id', 'workload']

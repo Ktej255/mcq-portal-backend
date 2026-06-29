@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\schemas.py
+# hypothesis_version: 6.155.7
+
+[120, 180, 'GsLmsSyllabusNodeOut', 'advanced', 'beginner', 'extra', 'forbid', 'intermediate', 'learner_level', 'study_window_minutes']

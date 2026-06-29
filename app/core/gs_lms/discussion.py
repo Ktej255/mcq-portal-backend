@@ -516,9 +516,10 @@ def check_threshold(session: GsLmsDiscussionSession, turn_count: int | None = No
         effective_turn_count = 0
 
     # Check if concept-based gating is active (match_percentage has been computed)
-    if session.match_percentage is not None:
+    match_pct = getattr(session, "match_percentage", None)
+    if match_pct is not None:
         return (
-            session.match_percentage >= CONCEPT_GATE_THRESHOLD
+            match_pct >= CONCEPT_GATE_THRESHOLD
             and effective_turn_count >= CONCEPT_GATE_MINIMUM_TURNS
         )
 

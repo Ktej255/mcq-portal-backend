@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\scoring_engine.py
+# hypothesis_version: 6.155.7
+
+[0.0, 1.0, 100, 'UNKNOWN', 'Unknown Subject', 'Unknown Topic', 'accuracy', 'attempted_count', 'confidence_level', 'confidence_stats', 'correct', 'correct_count', 'correct_marks', 'evaluations', 'incorrect', 'incorrect_count', 'mastery_percentage', 'max_possible_score', 'negative_marks', 'score_percentage', 'skipped', 'subject_wise', 'time', 'topic_wise', 'total', 'total_count', 'total_score', 'unattempted_count', 'value']

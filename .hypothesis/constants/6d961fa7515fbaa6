@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\providers\__init__.py
+# hypothesis_version: 6.155.7
+
+['EvaluationProvider', 'GeminiSttProvider', 'MockOcrProvider', 'MockRecallProvider', 'MockSttProvider', 'OcrBlock', 'OcrProvider', 'OcrResult', 'RecallProvider', 'SttProvider', 'SttResult', 'SttSegment', 'WhisperSttProvider', 'get_ocr_provider', 'get_recall_provider', 'get_stt_provider']

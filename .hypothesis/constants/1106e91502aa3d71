@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\clerk.py
+# hypothesis_version: 6.155.7
+
+['Bearer', 'RS256', 'WWW-Authenticate', 'email', 'email_address', 'first_name', 'image_url', 'name', 'picture', 'sub', 'uid', 'verify_exp', 'verify_signature']

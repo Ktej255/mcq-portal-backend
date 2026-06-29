@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\payments\config.py
+# hypothesis_version: 6.155.7
+
+[', ', 'CASHFREE_APP_ID', 'CASHFREE_ENVIRONMENT', 'CASHFREE_SECRET_KEY', 'production', 'sandbox']

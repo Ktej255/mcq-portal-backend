@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\preview.py
+# hypothesis_version: 6.155.7
+
+[404, '/preview', '/universe-topics', 'data', 'display_order', 'filename', 'generated_lectures', 'mains_relevance', 'parent_topic', 'prelims_relevance', 'r', 'scripts', 'success', 'title', 'topic_id', 'utf-8']

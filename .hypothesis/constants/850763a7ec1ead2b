@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\domain_contracts.py
+# hypothesis_version: 6.155.7
+
+[100, '100_SURE', '50_50', 'ACCURACY_RANGE', 'ACTIVE', 'ANSWER_CHANGED', 'BLIND_GUESS', 'BLURRED', 'CONFIDENCE_SELECTED', 'COUNT_CONTRADICTION', 'EDUCATED_GUESS', 'FAIRLY_SURE', 'FIFTY_FIFTY', 'FOCUSED', 'FOCUS_STATE_CHANGED', 'FULLSCREEN_EXIT', 'HEARTBEAT', 'HUNDRED_PERCENT', 'IDLE', 'IDLE_STATE_CHANGED', 'IMPOSSIBLE_TIMING', 'QUESTION_VIEWED', 'REVIEW_MARKED', 'SCORE_CONTRADICTION', 'SUBMIT_CLICKED', 'TAB_SWITCH', '_opt_', 'accuracy', 'correct_count', 'incorrect_count', 'level', 'message', 'old_id', 'option_id', 'state', 'status', 'total_questions', 'total_score', 'type', 'unattempted_count']

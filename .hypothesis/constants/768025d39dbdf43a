@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\current_affairs_models.py
+# hypothesis_version: 6.155.7
+
+['CurrentAffairsItem', 'OptionalSubject', 'optional_subjects.id']

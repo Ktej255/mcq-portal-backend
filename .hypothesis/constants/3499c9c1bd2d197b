@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs_lms\discussion.py
+# hypothesis_version: 6.155.7
+
+[0.0, 80.0, 100.0, 'AIResponseProvider', 'add_ai_turn', 'add_student_turn', 'ai', 'check_concept_gate', 'check_threshold', 'complete_session', 'concept_checklist', 'content', 'create_session', 'generate_ai_response', 'get_active_session', 'get_default_provider', 'role', 's', 'set_default_provider', 'student', 'title', 'turn_order', 'turns']

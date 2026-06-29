@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\optional\mapping.py
+# hypothesis_version: 6.155.7
+
+['/{slug}/mapping', 'Mapping retrieved', 'locations', 'questions']

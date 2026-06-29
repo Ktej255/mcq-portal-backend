@@ -19,6 +19,7 @@ Requirements: 1.4, 10.1, 10.4, 11.4
 from __future__ import annotations
 
 import enum
+from datetime import datetime, timezone
 
 from sqlalchemy import (
     Column,
@@ -30,11 +31,12 @@ from sqlalchemy import (
     ForeignKey,
     Enum,
     JSON,
+    DateTime,
 )
 from sqlalchemy.orm import relationship
 
 from app.db.session import Base
-from app.db.governance import InstitutionalAuditMixin
+from app.db.governance import InstitutionalAuditMixin, SoftDeleteMixin
 from app.core.gs.models import GsReviewStatusEnum
 
 
@@ -72,6 +74,28 @@ class GsLmsSectionLabelEnum(str, enum.Enum):
     ADVANCED = "ADVANCED"
     NCERT_LEVEL = "NCERT_LEVEL"
     EXAMINER_TRAPS = "EXAMINER_TRAPS"
+
+
+class GsLmsPaperEnum(str, enum.Enum):
+    """GS Mains paper a question belongs to (R9.1)."""
+    GS1 = "GS1"
+    GS2 = "GS2"
+    GS3 = "GS3"
+    GS4 = "GS4"
+
+
+class GsLmsAnswerModeEnum(str, enum.Enum):
+    """How the student composed a descriptive answer (R10, R11)."""
+    TYPED = "TYPED"
+    HANDWRITTEN = "HANDWRITTEN"
+
+
+class GsLmsAnswerAttemptStatusEnum(str, enum.Enum):
+    """Lifecycle of a GS answer attempt through the evaluation pipeline."""
+    DRAFT = "DRAFT"
+    SUBMITTED = "SUBMITTED"
+    EVALUATED = "EVALUATED"
+    FAILED = "FAILED"
 
 
 # ---------------------------------------------------------------------------
@@ -206,6 +230,8 @@ class GsLmsPyq(Base, InstitutionalAuditMixin):
     )
     exam_type = Column(Enum(GsLmsExamTypeEnum), nullable=False, index=True)
     year = Column(Integer, nullable=False, index=True)
+    # GS Mains paper discriminator (GS1–GS4); nullable (Prelims/free-form). R9.1
+    gs_paper = Column(Enum(GsLmsPaperEnum), nullable=True, index=True)
     question_text = Column(Text, nullable=False)
     answer_text = Column(Text, nullable=True)
     explanation = Column(Text, nullable=True)
@@ -263,15 +289,157 @@ class GsLmsMcqQuestion(Base, InstitutionalAuditMixin):
     )
 
 
+# ---------------------------------------------------------------------------
+# Answer writing + evaluation (Mains descriptive answers)
+# ---------------------------------------------------------------------------
+
+class GsLmsAnswerAttempt(Base, InstitutionalAuditMixin, SoftDeleteMixin):
+    """A student's descriptive (Mains) answer attempt for a GS PYQ/practice
+    question (R10, R11, R14).
+
+    Mirrors the Optional ``AnswerAttempt`` shape with a ``gs_lms_`` prefix and
+    FKs into the GS domain. Supports typed and handwritten (image) composition;
+    handwritten drafts carry the confidence-gate fields (``ocr_confidence`` /
+    ``review_acknowledged``). Ownership is scoped by ``student_id`` (R17).
+    """
+    __tablename__ = "gs_lms_answer_attempts"
+
+    id = Column(Integer, primary_key=True, index=True)
+    student_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+    # Linked PYQ (nullable for free-form practice questions — R9.5).
+    pyq_id = Column(
+        Integer, ForeignKey("gs_lms_pyqs.id"), nullable=True, index=True
+    )
+    gs_paper = Column(Enum(GsLmsPaperEnum), nullable=True, index=True)
+    # Denormalized prompt text (free-form practice or snapshot of the PYQ).
+    question_text = Column(Text, nullable=True)
+    # Marking scheme context (R7, R8).
+    max_marks = Column(Integer, nullable=True)
+
+    mode = Column(Enum(GsLmsAnswerModeEnum), nullable=False)
+    status = Column(
+        Enum(GsLmsAnswerAttemptStatusEnum),
+        default=GsLmsAnswerAttemptStatusEnum.DRAFT,
+        nullable=False,
+        index=True,
+    )
+
+    # The full answer text fed to the evaluator (typed, or OCR/assembled).
+    raw_text = Column(Text, nullable=True)
+    # Provider confidence for handwritten OCR + the review-ack gate (R14).
+    ocr_confidence = Column(Float, nullable=True)
+    review_acknowledged = Column(Boolean, default=False, nullable=False)
+
+    # Length-bias bookkeeping (R8.4).
+    word_count = Column(Integer, nullable=True)
+    word_limit = Column(Integer, nullable=True)
+
+    # Provider/usage + cache bookkeeping (R18).
+    provider_key = Column(String, nullable=True)
+    token_usage = Column(Integer, nullable=True)
+    content_hash = Column(String, nullable=True, index=True)
+
+    # Relationships
+    student = relationship("User")
+    pyq = relationship("GsLmsPyq")
+    images = relationship(
+        "GsLmsAnswerSheetImage",
+        back_populates="attempt",
+        cascade="all, delete-orphan",
+        order_by="GsLmsAnswerSheetImage.page_order",
+    )
+    report = relationship(
+        "GsLmsEvaluationReport",
+        back_populates="attempt",
+        uselist=False,
+        cascade="all, delete-orphan",
+    )
+
+
+class GsLmsAnswerSheetImage(Base, InstitutionalAuditMixin):
+    """One uploaded page of a handwritten answer (R11, R12, R17).
+
+    One row per page so pages can be ordered, re-ordered, audited, and
+    vision-graded. ``media_ref`` is a SERVER-authored object-storage key (never
+    client-supplied — R11.2). Ownership is scoped by ``student_id`` (R17.3).
+    """
+    __tablename__ = "gs_lms_answer_sheet_images"
+
+    id = Column(Integer, primary_key=True, index=True)
+    attempt_id = Column(
+        Integer, ForeignKey("gs_lms_answer_attempts.id"), nullable=False, index=True
+    )
+    student_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+    # Server-authored MediaStore key (R11.2).
+    media_ref = Column(String, nullable=False)
+    # Ascending assembly order (R12.1/R12.2).
+    page_order = Column(Integer, nullable=False)
+    content_type = Column(String, nullable=True)
+    uploaded_at = Column(
+        DateTime, default=lambda: datetime.now(timezone.utc), nullable=False
+    )
+
+    attempt = relationship("GsLmsAnswerAttempt", back_populates="images")
+    student = relationship("User")
+
+
+class GsLmsEvaluationReport(Base, InstitutionalAuditMixin):
+    """A complete evaluation report, 1:1 with a GsLmsAnswerAttempt (R7, R13, R16).
+
+    Preserves the report-completeness honesty invariant (``incomplete_sections``;
+    empty => complete) and adds marks-normalized scoring, factual-accuracy +
+    value-addition payloads, and the human-override audit columns (R16).
+    """
+    __tablename__ = "gs_lms_evaluation_reports"
+
+    id = Column(Integer, primary_key=True, index=True)
+    attempt_id = Column(
+        Integer,
+        ForeignKey("gs_lms_answer_attempts.id"),
+        nullable=False,
+        unique=True,
+        index=True,
+    )
+    student_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+
+    sections = Column(JSON, nullable=True)
+    incomplete_sections = Column(JSON, default=list, nullable=False)
+    overall_score = Column(Float, nullable=True)
+    # Marks-normalized scoring (R7).
+    marks_awarded = Column(Float, nullable=True)
+    max_marks = Column(Integer, nullable=True)
+    # Factual-accuracy + value-addition payloads (R7.5/R7.6, R13.3).
+    factual_accuracy = Column(JSON, nullable=True)
+    value_addition = Column(JSON, nullable=True)
+    # Human-in-the-loop override + audit (R16). ``original_report`` preserves
+    # the machine output unchanged when an evaluator overrides it.
+    original_report = Column(JSON, nullable=True)
+    overridden_by = Column(Integer, ForeignKey("users.id"), nullable=True)
+    overridden_at = Column(DateTime, nullable=True)
+
+    attempt = relationship("GsLmsAnswerAttempt", back_populates="report")
+
+    @property
+    def is_complete(self) -> bool:
+        """A report is complete only when no sections are missing (Property 6)."""
+        return not (self.incomplete_sections or [])
+
+
 __all__ = [
     # Enums
     "GsLmsNodeTypeEnum",
     "GsLmsExamTypeEnum",
     "GsLmsQuestionTypeEnum",
     "GsLmsSectionLabelEnum",
+    "GsLmsPaperEnum",
+    "GsLmsAnswerModeEnum",
+    "GsLmsAnswerAttemptStatusEnum",
     # Models
     "GsLmsSyllabusNode",
     "GsLmsContentSection",
     "GsLmsPyq",
     "GsLmsMcqQuestion",
+    "GsLmsAnswerAttempt",
+    "GsLmsAnswerSheetImage",
+    "GsLmsEvaluationReport",
 ]

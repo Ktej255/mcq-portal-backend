@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\pdf.py
+# hypothesis_version: 6.155.7
+
+['Content-Disposition', 'GS Geography', 'Topic not found', '[^\\w\\s\\-]', '\\s+', '_', 'topic']

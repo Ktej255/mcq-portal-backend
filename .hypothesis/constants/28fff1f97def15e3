@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\syllabus.py
+# hypothesis_version: 6.155.7
+
+[0.0, 100.0, '/syllabus', '/syllabus/{node_id}', 'Topic not found', 'value']

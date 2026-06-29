@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs\models.py
+# hypothesis_version: 6.155.7
+
+['GsDayLesson', 'GsReviewStatusEnum', 'GsSubject', 'IN_REVIEW', 'REVIEWED', 'UNREVIEWED', 'all, delete-orphan', 'day_lessons', 'day_number', 'gs_day_lessons', 'gs_subjects', 'gs_subjects.id', 'subject', 'subject_id']

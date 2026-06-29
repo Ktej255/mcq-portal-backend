@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs_lms\mcq_scoring.py
+# hypothesis_version: 6.155.7
+
+[0.0, 'Attempt', 'ScoringResult', 'SessionState', 'TypeAccuracy', 'advance_session', 'compute_score', 'is_session_complete', 'score_session']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\pyqs.py
+# hypothesis_version: 6.155.7
+
+['MAINS', 'PRELIMS', 'PYQ answer revealed', 'PYQ not found', 'PYQs retrieved', 'Topic not found', 'value']

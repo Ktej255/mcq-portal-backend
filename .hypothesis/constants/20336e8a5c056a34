@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\providers\stt.py
+# hypothesis_version: 6.155.7
+
+[0.0, 0.8, 0.95, 1.0, 1000.0, ', ', '.', '.audio', 'Vocabulary: ', '^json', '`', '```', 'abstract', 'application/json', 'audio', 'audio_bytes', 'audios', 'avg_logprob', 'base', 'confidence', 'contents', 'en', 'end', 'gemini', 'google/gemini-audio', 'media', 'mock', 'mock/internal', 'model_fields', 'openai/whisper', 'parts', 'segments', 'start', 'text', 'unknown', 'whisper']

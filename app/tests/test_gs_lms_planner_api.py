@@ -46,6 +46,7 @@ from app.core.gs_lms.student_models import (  # noqa: F401
     GsLmsDailyPlan,
     GsLmsReplanEvent,
     GsLmsOnboardingStatus,
+    GsLmsRevisitSchedule,
 )
 
 
@@ -88,6 +89,7 @@ def seeded_engine():
             "gs_lms_daily_plans",
             "gs_lms_replan_events",
             "gs_lms_onboarding",
+            "gs_lms_revisit_schedule",
         )
     ]
     Base.metadata.create_all(engine, tables=relevant_tables)

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\gs_lms\discussion.py
+# hypothesis_version: 6.155.7
+
+['/discussion/start', 'Session not found', 'Turn recorded', 'already_completed', 'content', 'created_at', 'gate_passed', 'role', 'syllabus_node_id', 'turn_order']

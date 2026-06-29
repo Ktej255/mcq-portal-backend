@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\payments\service.py
+# hypothesis_version: 6.155.7
+
+['***REDACTED***', 'CASHFREE_ERROR', 'INR', 'ORDER_FETCH_FAILED', 'PENDING', 'UNKNOWN', 'cf_order_id', 'cf_payment_id', 'cf_refund_id', 'order_id', 'order_status', 'payment_method', 'payment_session_id', 'refund_id', 'refund_status', 'sandbox', 'utf-8']

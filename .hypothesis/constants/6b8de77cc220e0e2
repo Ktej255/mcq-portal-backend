@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\services\explanation_quality_engine.py
+# hypothesis_version: 6.155.7
+
+[0.18, 0.2, 0.22, 0.25, 0.3, 0.45, 0.7, 1200, 'ADVANCED', 'BEGINNER', 'HIGH_OVERLOAD_RISK', 'INTERMEDIATE', 'NEEDS_REVIEW', 'STRONG', 'USABLE', 'band', 'concepts', 'conceptual_clarity', 'conceptual_density', 'definitions', 'dependency_coverage', 'explanation_density', 'extraction', 'formulas', 'id', 'learner_level', 'mapped_topics', 'metric_version', 'modalities', 'modality_profile', 'prerequisite_chain', 'prerequisite_regions', 'quality_band', 'ranked', 'reasoning_chains', 'resource_id', 'score', 'target_topic', 'text', 'topic', 'topics']

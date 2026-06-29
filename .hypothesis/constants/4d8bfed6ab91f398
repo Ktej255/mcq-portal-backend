@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\gs\importer.py
+# hypothesis_version: 6.155.7
+
+['--artifact', '--review-status', 'Imported counts:', 'MISMATCH', 'OK', 'REVIEWED', '__main__', 'data', 'day', 'day_lessons', 'exports', 'import_gs_geography', 'lesson', 'lessonCount', 'lessonNumber', 'lesson_count', 'lessons', 'lessons_scene_only', 'lessons_with_session', 'load_artifact', 'phase', 'r', 'scenes', 'session', 'sessionCount', 'session_count', 'session_days', 'sessions', 'subjectName', 'subjectSlug', 'subjects', 'subtopics', 'title', 'utf-8', 'week', 'weeks']

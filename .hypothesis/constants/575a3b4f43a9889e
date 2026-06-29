@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\api\v1\optional\subject_config.py
+# hypothesis_version: 6.155.7
+
+['/{slug}/completeness', '/{slug}/config', 'Complete', 'In progress', 'Not started', 'answer', 'authored', 'currentAffairs', 'diagrams', 'features', 'gap', 'is_deleted', 'label', 'mapping', 'papers', 'practice', 'pyq', 'read', 'recall', 'review_status', 'sections']

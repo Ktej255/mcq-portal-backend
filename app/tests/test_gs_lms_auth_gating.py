@@ -183,6 +183,7 @@ def seeded_engine():
             "gs_lms_daily_plans",
             "gs_lms_onboarding",
             "gs_lms_pyq_reveals",
+            "gs_lms_video_watches",
         )
     ]
     Base.metadata.create_all(engine, tables=relevant_tables)

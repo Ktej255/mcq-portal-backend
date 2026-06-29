@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\catalog_seed.py
+# hypothesis_version: 6.155.7
+
+['Agriculture', 'Anthropology', 'Botany', 'CATALOG', 'Chemistry', 'Civil Engineering', 'Economics', 'Geography', 'Geology', 'History', 'Law', 'Management', 'Mathematics', 'Medical Science', 'PAPER_I', 'PAPER_II', 'Philosophy', 'Physics', 'Psychology', 'SECTION_A', 'SECTION_B', 'SEEDER_ACTOR', 'Sociology', 'Statistics', 'Zoology', '__main__', 'agriculture', 'answer', 'anthropology', 'botany', 'chemistry', 'civil-engineering', 'commerce-accountancy', 'content', 'created', 'economics', 'features', 'gap', 'geography', 'geology', 'history', 'label', 'law', 'management', 'mathematics', 'medical-science', 'name', 'papers', 'pending-authoring', 'phase', 'phase-2-scaffold', 'philosophy', 'physics', 'practice', 'psychology', 'pyq', 'read', 'sections', 'seed_catalog', 'skipped', 'slug', 'sociology', 'statistics', 'total_catalog', 'zoology']

@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\mapping_models.py
+# hypothesis_version: 6.155.7
+
+['MapLocation', 'MapQuestion', 'OptionalSubject', 'location', 'optional_subjects.id', 'questions']

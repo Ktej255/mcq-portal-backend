@@ -1,0 +1,4 @@
+# file: D:\Development\MCQ Portal\backend\app\core\optional\prompts.py
+# hypothesis_version: 6.155.7
+
+['EvaluationSection', 'HintSchema', 'JSON_MIME_TYPE', 'LOW_TEMPERATURE', 'RecallMatchSchema', 'build_hint_request', 'parse_hint', 'parse_recall_match']
