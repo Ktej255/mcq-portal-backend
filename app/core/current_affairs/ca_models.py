@@ -69,6 +69,10 @@ class CAItem(Base, InstitutionalAuditMixin, SoftDeleteMixin):
     thread_associations = relationship("CAThreadItem", back_populates="ca_item")
     syllabus_links = relationship("CASyllabusLink", back_populates="ca_item", cascade="all, delete-orphan")
 
+    # Continuation link — previous item this continues from
+    continues_from_id = Column(Integer, ForeignKey("ca_items.id"), nullable=True, index=True)
+    continues_from = relationship("CAItem", remote_side="CAItem.id", foreign_keys=[continues_from_id])
+
 
 # ---------------------------------------------------------------------------
 # CA_Threads — Chronological topic groupings
@@ -324,3 +328,45 @@ __all__ = [
     "CAAuditLog",
     "CAMonthlyCompilation",
 ]
+
+
+# ---------------------------------------------------------------------------
+# CA_Doubt_Chat — AI Q&A per item (freeform doubt clearing)
+# ---------------------------------------------------------------------------
+
+class CADoubtChat(Base, InstitutionalAuditMixin):
+    """Freeform AI doubt-clearing chat session per student per CA item."""
+    __tablename__ = "ca_doubt_chats"
+
+    id = Column(Integer, primary_key=True, index=True)
+    student_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+    ca_item_id = Column(Integer, ForeignKey("ca_items.id"), nullable=False, index=True)
+    messages = Column(JSON, nullable=False, default=list)  # [{role, content, timestamp}]
+    total_messages = Column(Integer, default=0, nullable=False)
+    last_message_at = Column(DateTime, nullable=True)
+
+    # Relationships
+    student = relationship("User")
+    ca_item = relationship("CAItem")
+
+
+# ---------------------------------------------------------------------------
+# CA_Weekly_Compilations — AI-condensed weekly summaries
+# ---------------------------------------------------------------------------
+
+class CAWeeklyCompilation(Base, InstitutionalAuditMixin):
+    """AI-condensed weekly summary (from ~70 pages daily → 2-3 page digest)."""
+    __tablename__ = "ca_weekly_compilations"
+
+    id = Column(Integer, primary_key=True, index=True)
+    week_start = Column(Date, nullable=False)
+    week_end = Column(Date, nullable=False)
+    title = Column(String(200), nullable=False)
+    total_daily_items = Column(Integer, nullable=False)
+    condensed_content = Column(JSON, nullable=False)  # AI-summarized blocks
+    key_facts = Column(JSON, nullable=True)  # Extracted key facts for quick revision
+    mcq_ids = Column(JSON, nullable=True)  # Selected MCQs for weekly test
+    source_item_ids = Column(JSON, nullable=False)
+    review_status = Column(String(15), nullable=False, default="DRAFT")
+    pdf_storage_ref = Column(String(500), nullable=True)
+    generated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
