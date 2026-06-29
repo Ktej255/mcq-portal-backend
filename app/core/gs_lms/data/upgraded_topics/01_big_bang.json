@@ -228,6 +228,136 @@
       ],
       "correct_option": "A",
       "explanation": "Universe (~13.8 Ga) is oldest, then the Solar System (~4.6 Ga), then Earth (~4.54 Ga). Order: 2, 3, 1."
+    },
+    {
+      "display_order": 6,
+      "question_type": "ASSERTION_REASON",
+      "question_text": "Assertion (A): The Cosmic Microwave Background Radiation is considered strong evidence for the Big Bang. Reason (R): The CMBR is a relic radiation released when the Universe became transparent during Recombination. Select the correct option:",
+      "options": [
+        { "label": "A", "text": "Both A and R are true, and R is the correct explanation of A" },
+        { "label": "B", "text": "Both A and R are true, but R is NOT the correct explanation of A" },
+        { "label": "C", "text": "A is true, but R is false" },
+        { "label": "D", "text": "A is false, but R is true" }
+      ],
+      "correct_option": "A",
+      "explanation": "Both are true and R correctly explains A: CMBR is evidence precisely because it is the relic radiation from Recombination (~380,000 yrs), a specific Big Bang prediction the Steady State model cannot account for."
+    },
+    {
+      "display_order": 7,
+      "question_type": "ASSERTION_REASON",
+      "question_text": "Assertion (A): Fred Hoyle was a supporter of the Big Bang Theory. Reason (R): Hoyle coined the term 'Big Bang'. Select the correct option:",
+      "options": [
+        { "label": "A", "text": "Both A and R are true, and R is the correct explanation of A" },
+        { "label": "B", "text": "Both A and R are true, but R is NOT the correct explanation of A" },
+        { "label": "C", "text": "A is true, but R is false" },
+        { "label": "D", "text": "A is false, but R is true" }
+      ],
+      "correct_option": "D",
+      "explanation": "A is FALSE — Hoyle OPPOSED the Big Bang (he supported the Steady State Theory). R is TRUE — he did coin the term 'Big Bang', but mockingly. So A is false, R is true."
+    },
+    {
+      "display_order": 8,
+      "question_type": "MATCH_THE_FOLLOWING",
+      "question_text": "Match List-I (Scientist) with List-II (Contribution): A. Lemaitre  B. Hubble  C. Gamow  D. Penzias & Wilson | 1. Discovered CMBR  2. Proposed the expanding-Universe model  3. Observational evidence via redshift  4. Big Bang nucleosynthesis physics. Select the correct code:",
+      "options": [
+        { "label": "A", "text": "A-2, B-3, C-4, D-1" },
+        { "label": "B", "text": "A-3, B-2, C-1, D-4" },
+        { "label": "C", "text": "A-2, B-3, C-1, D-4" },
+        { "label": "D", "text": "A-1, B-2, C-3, D-4" }
+      ],
+      "correct_option": "A",
+      "explanation": "Lemaitre → proposed (2); Hubble → redshift evidence (3); Gamow → nucleosynthesis physics (4); Penzias & Wilson → discovered CMBR (1)."
+    },
+    {
+      "display_order": 9,
+      "question_type": "MATCH_THE_FOLLOWING",
+      "question_text": "Match List-I (Component) with List-II (Approx. share of the Universe): A. Dark Energy  B. Dark Matter  C. Visible (baryonic) matter | 1. 5%  2. 27%  3. 68%. Select the correct code:",
+      "options": [
+        { "label": "A", "text": "A-3, B-2, C-1" },
+        { "label": "B", "text": "A-1, B-2, C-3" },
+        { "label": "C", "text": "A-2, B-3, C-1" },
+        { "label": "D", "text": "A-3, B-1, C-2" }
+      ],
+      "correct_option": "A",
+      "explanation": "Dark Energy ~68% (3); Dark Matter ~27% (2); Visible matter ~5% (1)."
+    },
+    {
+      "display_order": 10,
+      "question_type": "CAUSE_EFFECT",
+      "question_text": "Why do distant galaxies show a redshift in their spectra?",
+      "options": [
+        { "label": "A", "text": "Because the Universe is expanding, stretching the wavelength of light from receding galaxies" },
+        { "label": "B", "text": "Because distant galaxies are intrinsically red in colour" },
+        { "label": "C", "text": "Because light loses energy passing through dark matter" },
+        { "label": "D", "text": "Because of the Sun's gravitational pull on incoming light" }
+      ],
+      "correct_option": "A",
+      "explanation": "Cosmic expansion stretches space itself, lengthening (red-shifting) the wavelength of light from receding galaxies — Hubble's 1929 observation and a key Big Bang evidence."
+    },
+    {
+      "display_order": 11,
+      "question_type": "CAUSE_EFFECT",
+      "question_text": "The Universe became transparent to light about 380,000 years after the Big Bang because:",
+      "options": [
+        { "label": "A", "text": "Electrons combined with nuclei to form neutral atoms (Recombination)" },
+        { "label": "B", "text": "All the hydrogen had been converted to helium" },
+        { "label": "C", "text": "The first stars switched on and ionised the gas" },
+        { "label": "D", "text": "Dark energy began accelerating the expansion" }
+      ],
+      "correct_option": "A",
+      "explanation": "At ~380,000 yrs the temperature fell below ~3000 K, letting electrons bind to nuclei (Recombination). With free electrons gone, photons could travel freely — the Universe became transparent, releasing the CMBR."
+    },
+    {
+      "display_order": 12,
+      "question_type": "CHRONOLOGICAL",
+      "question_text": "Arrange the following early-Universe events in correct chronological order: 1. Recombination (CMBR released) 2. Big Bang Nucleosynthesis 3. Formation of first stars 4. Planck epoch.",
+      "options": [
+        { "label": "A", "text": "4, 2, 1, 3" },
+        { "label": "B", "text": "4, 1, 2, 3" },
+        { "label": "C", "text": "2, 4, 1, 3" },
+        { "label": "D", "text": "4, 2, 3, 1" }
+      ],
+      "correct_option": "A",
+      "explanation": "Planck epoch (10⁻⁴³ s) → Nucleosynthesis (~3 min) → Recombination/CMBR (~380,000 yrs) → first stars (~200 million yrs). Order: 4, 2, 1, 3."
+    },
+    {
+      "display_order": 13,
+      "question_type": "FACTUAL",
+      "question_text": "The temperature of the Cosmic Microwave Background Radiation today is approximately:",
+      "options": [
+        { "label": "A", "text": "2.725 K" },
+        { "label": "B", "text": "273 K" },
+        { "label": "C", "text": "15 million K" },
+        { "label": "D", "text": "3000 K" }
+      ],
+      "correct_option": "A",
+      "explanation": "The CMBR has cooled to ~2.725 K (just above absolute zero) as the Universe expanded over 13.8 billion years. 3000 K was its temperature at Recombination; 15 million K is the Sun's core."
+    },
+    {
+      "display_order": 14,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "With reference to the James Webb Space Telescope (JWST): 1. It primarily observes in the infrared. 2. It orbits the Sun-Earth L2 point. 3. It is a joint project of NASA, ESA and CSA. Which are correct?",
+      "options": [
+        { "label": "A", "text": "1 and 2 only" },
+        { "label": "B", "text": "2 and 3 only" },
+        { "label": "C", "text": "1 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "D",
+      "explanation": "All three are correct: JWST observes in infrared, orbits the Sun-Earth L2 point (~1.5 million km, anti-Sun side), and is a NASA-ESA-CSA (Canadian Space Agency) collaboration."
+    },
+    {
+      "display_order": 15,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following statements: 1. The accelerating expansion of the Universe was discovered in 1998. 2. Dark energy is considered responsible for this acceleration. 3. The 2011 Nobel Prize in Physics was awarded for this discovery. Which are correct?",
+      "options": [
+        { "label": "A", "text": "1 and 2 only" },
+        { "label": "B", "text": "2 and 3 only" },
+        { "label": "C", "text": "1 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "D",
+      "explanation": "All correct: the accelerating expansion was discovered in 1998 (Perlmutter, Schmidt, Riess), is attributed to dark energy, and earned the 2011 Nobel Prize in Physics."
     }
   ]
 }

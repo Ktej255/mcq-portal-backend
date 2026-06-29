@@ -43,13 +43,23 @@ _GS_ANSWER_STATUS = sa.Enum(
 
 def upgrade() -> None:
     bind = op.get_bind()
-    if bind.dialect.name == "postgresql":
+    is_postgres = bind.dialect.name == "postgresql"
+
+    if is_postgres:
+        from sqlalchemy.dialects.postgresql import ENUM as pg_ENUM
         _GS_PAPER.create(bind, checkfirst=True)
         _GS_ANSWER_MODE.create(bind, checkfirst=True)
         _GS_ANSWER_STATUS.create(bind, checkfirst=True)
+        paper_type = pg_ENUM(name="gslmspaperenum", create_type=False)
+        mode_type = pg_ENUM(name="gslmsanswermodeenum", create_type=False)
+        status_type = pg_ENUM(name="gslmsanswerattemptstatusenum", create_type=False)
+    else:
+        paper_type = _GS_PAPER
+        mode_type = _GS_ANSWER_MODE
+        status_type = _GS_ANSWER_STATUS
 
     # --- 1. additive column on gs_lms_pyqs --------------------------------
-    op.add_column("gs_lms_pyqs", sa.Column("gs_paper", _GS_PAPER, nullable=True))
+    op.add_column("gs_lms_pyqs", sa.Column("gs_paper", paper_type, nullable=True))
     op.create_index(
         op.f("ix_gs_lms_pyqs_gs_paper"), "gs_lms_pyqs", ["gs_paper"], unique=False
     )
@@ -60,11 +70,11 @@ def upgrade() -> None:
         sa.Column("id", sa.Integer(), nullable=False),
         sa.Column("student_id", sa.Integer(), nullable=False),
         sa.Column("pyq_id", sa.Integer(), nullable=True),
-        sa.Column("gs_paper", _GS_PAPER, nullable=True),
+        sa.Column("gs_paper", paper_type, nullable=True),
         sa.Column("question_text", sa.Text(), nullable=True),
         sa.Column("max_marks", sa.Integer(), nullable=True),
-        sa.Column("mode", _GS_ANSWER_MODE, nullable=False),
-        sa.Column("status", _GS_ANSWER_STATUS, nullable=False),
+        sa.Column("mode", mode_type, nullable=False),
+        sa.Column("status", status_type, nullable=False),
         sa.Column("raw_text", sa.Text(), nullable=True),
         sa.Column("ocr_confidence", sa.Float(), nullable=True),
         sa.Column("review_acknowledged", sa.Boolean(), nullable=False),

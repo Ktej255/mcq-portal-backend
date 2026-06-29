@@ -2459,13 +2459,13 @@
               "review_status": "REVIEWED",
               "video_url": null,
               "concept_checklist": [
-                "Giant Impact Hypothesis: the Moon formed ~4.5 Ga from debris of a collision between proto-Earth and a Mars-sized body called Theia.",
-                "Evidence: lunar samples match Earth's mantle composition; Moon has a small iron core relative to its size; identical oxygen isotope ratios.",
-                "The Moon is tidally locked to Earth (same face always visible) due to synchronous rotation.",
-                "Tides are caused mainly by the Moon's gravitational pull; the Sun contributes ~46%; spring tides (new/full Moon) and neap tides (quarter Moon).",
-                "The Moon stabilises Earth's axial tilt (23.5°), preventing chaotic obliquity and maintaining stable climate.",
-                "The Moon is slowly receding from Earth (~3.8 cm/year), gradually lengthening Earth's day.",
-                "India linkage: Chandrayaan-1 (water discovery 2008–09), Chandrayaan-2, Chandrayaan-3 (south-pole landing 2023), Chandrayaan-4 (sample return)."
+                "The Moon is Earth's only natural satellite, orbiting at a mean distance of approximately 384,400 km",
+                "The Giant Impact Hypothesis (accepted model): Approximately 4.5 billion years ago, a Mars-sized body named Theia stru...",
+                "The Moon's surface is divided into two terrain types: (1) Maria (singular: mare, 'seas') — dark, flat basaltic plains...",
+                "The Moon is tidally locked to Earth — its rotation period equals its orbital period (27.3 days), meaning the same fac...",
+                "The Moon generates tides on Earth through differential gravitational pull",
+                "The Moon is slowly receding from Earth at approximately 3.8 cm per year due to tidal energy transfer",
+                "The Moon's role in Earth's habitability is profound: (1) Stabilises axial tilt (23.5° ± 1.3°) preventing extreme clim..."
               ],
               "content_sections": [
                 {
@@ -2475,419 +2475,106 @@
                   "authored": true,
                   "blocks": [
                     {
-                      "type": "callout",
-                      "tone": "hook",
-                      "title": "More Than a Night-Light",
-                      "text": "The Moon isn't just decoration. Without it, Earth's tilt would wobble chaotically, tides would be feeble, and the day-length and climate stability that life depends on would not exist. It also formed in a single catastrophic event that reshaped the young Earth."
-                    },
-                    {
-                      "type": "statgrid",
-                      "items": [
-                        {
-                          "value": "4.5 Ga",
-                          "label": "Age of the Moon"
-                        },
-                        {
-                          "value": "3,474 km",
-                          "label": "Moon's diameter (~¼ Earth)"
-                        },
-                        {
-                          "value": "3.8 cm/yr",
-                          "label": "Rate of recession"
-                        },
-                        {
-                          "value": "27.3 days",
-                          "label": "Orbital period"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "heading",
-                      "text": "Origin — The Giant Impact Hypothesis"
+                      "type": "para",
+                      "text": "The Moon is Earth's only natural satellite, orbiting at a mean distance of approximately 384,400 km. It has a diameter of 3,474 km (about one-quarter of Earth's), making it the fifth-largest moon in the Solar System and the largest relative to its host planet. The Moon's mass is about 1/81 of Earth's, and its surface gravity is one-sixth of Earth's (1.62 m/s²)."
                     },
                     {
                       "type": "para",
-                      "text": "The leading theory: ~**4.5 billion years ago**, a **Mars-sized body called Theia** collided with the proto-Earth. The debris ejected into orbit coalesced to form the **Moon**. This is the **Giant Impact Hypothesis** (also called the 'Big Splash')."
-                    },
-                    {
-                      "type": "keyterms",
-                      "terms": [
-                        {
-                          "term": "Theia",
-                          "definition": "the hypothetical Mars-sized protoplanet that struck the proto-Earth, named after the Greek titan who was mother of the Moon goddess Selene."
-                        },
-                        {
-                          "term": "Tidal locking",
-                          "definition": "the Moon's rotation period equals its orbital period (27.3 days), so the **same face always points toward Earth** (synchronous rotation)."
-                        }
-                      ]
-                    },
-                    {
-                      "type": "heading",
-                      "text": "Evidence for the Giant Impact"
-                    },
-                    {
-                      "type": "points",
-                      "items": [
-                        "Lunar samples (Apollo) have compositions **very similar to Earth's mantle** — consistent with the Moon forming from ejected Earth material.",
-                        "The Moon has a **small iron core** relative to its size — because Theia's and Earth's iron had already sunk to Earth's core before impact.",
-                        "**Identical oxygen isotope ratios** between Earth and Moon — they formed from the same material reservoir.",
-                        "The Earth-Moon system has a high **angular momentum** consistent with a glancing giant impact."
-                      ]
-                    },
-                    {
-                      "type": "heading",
-                      "text": "Tides — The Moon's Gravitational Influence"
+                      "text": "The Giant Impact Hypothesis (accepted model): Approximately 4.5 billion years ago, a Mars-sized body named Theia struck proto-Earth at an oblique angle. The collision melted both bodies partially, with the resulting debris disc orbiting Earth eventually coalescing to form the Moon. Evidence: (1) Moon's isotopic oxygen ratios match Earth's mantle precisely, (2) Moon has a disproportionately small iron core (~2% mass vs Earth's ~32%), (3) Moon rocks lack volatile elements consistent with formation in extreme heat."
                     },
                     {
                       "type": "para",
-                      "text": "Tides are the periodic rise and fall of sea level caused mainly by the **Moon's gravitational pull** (the Sun contributes ~**46%** as much). The Moon raises two bulges — one facing it, one on the opposite side (due to differential gravity + inertia)."
+                      "text": "The Moon's surface is divided into two terrain types: (1) Maria (singular: mare, 'seas') — dark, flat basaltic plains formed by ancient volcanic eruptions 3.1-3.9 billion years ago, covering ~16% of surface, concentrated on the near side. (2) Highlands (terrae) — lighter, heavily cratered ancient crust (anorthositic composition), representing the original solidified crust from the lunar magma ocean, approximately 4.4 billion years old."
                     },
                     {
-                      "type": "compare",
-                      "columns": [
-                        "Tide type",
-                        "When & why"
-                      ],
-                      "rows": [
-                        {
-                          "label": "Spring tides",
-                          "a": "New Moon & Full Moon",
-                          "b": "Sun + Moon aligned (syzygy) → gravitational pulls add → **highest** high tides"
-                        },
-                        {
-                          "label": "Neap tides",
-                          "a": "First & Third quarter",
-                          "b": "Sun + Moon at right angles → pulls partially cancel → **lowest** high tides"
-                        }
-                      ]
+                      "type": "para",
+                      "text": "The Moon is tidally locked to Earth — its rotation period equals its orbital period (27.3 days), meaning the same face always points toward Earth. This resulted from tidal interaction over billions of years. Tidal forces from Earth slowed the Moon's rotation until synchronisation was achieved. The far side of the Moon (often incorrectly called 'dark side') receives equal sunlight but is never visible from Earth."
                     },
                     {
-                      "type": "heading",
-                      "text": "The Moon's Influence on Earth"
+                      "type": "para",
+                      "text": "The Moon generates tides on Earth through differential gravitational pull. The side of Earth facing the Moon experiences stronger pull (creating a tidal bulge), while the far side experiences weaker pull (creating an opposite bulge due to inertial effects). Spring tides occur when Sun-Moon-Earth align (new and full moon); neap tides occur when they are at right angles (quarter moons). Tidal range varies from near zero (Mediterranean) to 16 metres (Bay of Fundy)."
                     },
                     {
-                      "type": "points",
-                      "items": [
-                        "**Axial tilt stabilisation**: the Moon's gravity keeps Earth's 23.5° tilt stable, preventing chaotic obliquity swings (0°–85°) → stable seasons and climate.",
-                        "**Tides**: drive coastal ecosystems, nutrient mixing, and possibly aided the emergence of life in tidal pools.",
-                        "**Day length**: tidal friction is slowing Earth's rotation — days are gradually lengthening (Earth's day was ~6 hours when the Moon formed).",
-                        "**Recession**: the Moon moves ~**3.8 cm/year** farther from Earth (conservation of angular momentum as Earth's rotation slows)."
-                      ]
+                      "type": "para",
+                      "text": "The Moon is slowly receding from Earth at approximately 3.8 cm per year due to tidal energy transfer. Simultaneously, Earth's rotation is slowing (days are getting longer by ~2.3 milliseconds per century). 900 million years ago, a day was only about 18 hours long and the Moon was much closer. Eventually, both bodies will become mutually tidally locked — but the Sun will become a red giant before this completes."
                     },
                     {
-                      "type": "quiz",
-                      "question": "Why do we always see the same face of the Moon from Earth?",
-                      "answer": "Because the Moon is **tidally locked** — its rotation period (27.3 days) exactly equals its orbital period. This synchronous rotation means the same hemisphere always faces Earth. The 'far side' is never visible from Earth (it is NOT the 'dark side' — it receives sunlight too)."
-                    },
-                    {
-                      "type": "callout",
-                      "tone": "why",
-                      "title": "Why It Matters for Geography",
-                      "text": "Tides shape coastlines, estuaries, and deltas (coastal geomorphology). The Moon's stabilisation of Earth's tilt underpins the climate zones that define biomes and weather. And the Giant Impact links Solar System formation directly to Earth's habitability."
+                      "type": "para",
+                      "text": "The Moon's role in Earth's habitability is profound: (1) Stabilises axial tilt (23.5° ± 1.3°) preventing extreme climate oscillations. (2) Generates tides that create intertidal zones — unique habitats that may have facilitated the evolution of life from sea to land. (3) The giant impact that formed the Moon may have delivered additional material to Earth and accelerated Earth's rotation, enhancing the magnetic dynamo. (4) Moonlight governs biological rhythms in many organisms."
                     }
                   ]
                 },
                 {
                   "section_label": "ADVANCED",
-                  "title": "Reference-Book Depth & 2026 Current Affairs",
+                  "title": "NCERT Content Reference",
                   "display_order": 2,
                   "authored": true,
                   "blocks": [
                     {
-                      "type": "heading",
-                      "text": "Competing Origin Theories (Savindra Singh)"
-                    },
-                    {
-                      "type": "compare",
-                      "columns": [
-                        "Theory",
-                        "Status"
-                      ],
-                      "rows": [
-                        {
-                          "label": "Fission (Darwin)",
-                          "a": "Moon spun off from a rapidly rotating Earth",
-                          "b": "Rejected — angular momentum insufficient"
-                        },
-                        {
-                          "label": "Capture",
-                          "a": "Moon formed elsewhere and was captured by Earth's gravity",
-                          "b": "Rejected — isotope ratios too similar to Earth"
-                        },
-                        {
-                          "label": "Co-accretion",
-                          "a": "Earth and Moon formed together from the same disk",
-                          "b": "Rejected — cannot explain Moon's small iron core"
-                        },
-                        {
-                          "label": "Giant Impact",
-                          "a": "Theia collision ejected debris that formed the Moon",
-                          "b": "**Accepted** — explains composition, core, isotopes, angular momentum"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "heading",
-                      "text": "Lunar Geography Facts"
+                      "type": "para",
+                      "text": "NCERT Class 6 — 'The Earth: Our Habitat', Chapter 1: 'The Moon is about 3,84,400 km from us. The Moon moves around the Earth in about 27 days. It takes exactly the same time to complete one spin. The Moon does not have conditions favourable for life. It has neither water nor air.' These basic facts form the foundation for more complex questions — UPSC tests integration of simple facts with advanced concepts."
                     },
                     {
                       "type": "para",
-                      "text": "The Moon has no atmosphere (so no weather/erosion), extreme temperature swings (−173°C to +127°C), and surface features: **maria** (dark basaltic plains from ancient volcanism), **highlands** (bright, heavily cratered), and **regolith** (loose surface debris from impacts). Water ice exists in **permanently shadowed craters** at the poles — confirmed by Chandrayaan-1."
+                      "text": "NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2: Mentions the Moon in context of Earth's origin. The textbook discusses how the Earth-Moon system formed from the same period of Solar System formation. Chapter 14 on 'Movements of Ocean Water' explains tidal mechanisms with Sun-Moon gravitational interaction creating spring and neap tide patterns."
                     },
                     {
-                      "type": "heading",
-                      "text": "Current Affairs (mid-2026)"
-                    },
-                    {
-                      "type": "callout",
-                      "tone": "tip",
-                      "title": "India's Lunar Programme — High Yield",
-                      "items": [
-                        "**Chandrayaan-1** (2008): discovered **water molecules / hydroxyl** on the lunar surface (with NASA's M3 instrument) — a landmark finding.",
-                        "**Chandrayaan-2** (2019): orbiter operational; Vikram lander crashed but the orbiter continues mapping.",
-                        "**Chandrayaan-3** (Aug 2023): first soft landing near the **lunar south pole**; Pragyan rover confirmed sulphur, Fe, Al, Ti, O in regolith; operated ~14 days.",
-                        "**Chandrayaan-4** (~2028): India's first lunar **sample-return** mission (up to 3 kg regolith).",
-                        "**Chandrayaan-5** (with JAXA/Japan): ~350-kg rover, ~100-day operation.",
-                        "**NASA Artemis programme**: aims to return humans to the Moon (south pole) and build a sustained presence; India is an **Artemis Accords** signatory (2023)."
-                      ]
-                    },
-                    {
-                      "type": "collapsible",
-                      "title": "Dig deeper — Why the south pole?",
-                      "items": [
-                        "Permanently shadowed craters hold **water ice** — a resource for drinking water, oxygen, and rocket fuel (H₂ + O₂).",
-                        "Near-continuous sunlight on crater rims → reliable **solar power**.",
-                        "Water ice preserves a record of **billions of years** of Solar System history (comet/asteroid delivery).",
-                        "Strategic for a future **lunar base** and deep-space launch point."
-                      ]
+                      "type": "para",
+                      "text": "NCERT Class 7 — Geography, Chapter 5 'Water': Explains tides as 'rhythmic rise and fall of ocean water twice in a day' caused by the gravitational force exerted by the Sun and Moon on Earth's surface. NCERT clearly states that the Moon's gravitational pull is the PRIMARY cause of tides, with the Sun playing a secondary role despite being more massive (because the Moon is much closer)."
                     }
                   ]
                 },
                 {
                   "section_label": "NCERT_LEVEL",
-                  "title": "NCERT Content Mapping",
+                  "title": "Standard Reference Depth (Savindra Singh / GC Leong)",
                   "display_order": 3,
                   "authored": true,
                   "blocks": [
                     {
-                      "type": "callout",
-                      "tone": "note",
-                      "title": "Source",
-                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** covers Moon formation via the Giant Impact. **Class 11, Chapter 14 (Movements of Ocean Water)** covers tides in detail. **Class 6 — The Earth: Our Habitat, Chapter 1** introduces the Moon as Earth's satellite."
+                      "type": "para",
+                      "text": "Savindra Singh discusses Moon origin theories chronologically: (1) Fission Hypothesis (George Darwin 1879) — Moon spun off from rapidly rotating Earth, leaving the Pacific Ocean basin. REJECTED: angular momentum calculations don't support it. (2) Capture Hypothesis — Moon formed elsewhere and was captured by Earth's gravity. REJECTED: capture mechanics unlikely without energy dissipation mechanism. (3) Co-accretion Hypothesis — Moon formed alongside Earth from same material. REJECTED: doesn't explain Moon's iron deficiency. (4) Giant Impact Hypothesis (Hartmann & Davis 1975) — ACCEPTED."
                     },
                     {
                       "type": "para",
-                      "text": "NCERT Class 11 Ch.2 states: the Moon formed from a **collision (the 'big splat')** between Earth and a body roughly the size of Mars, about 4.44 billion years ago. This directly matches the Giant Impact Hypothesis."
+                      "text": "GC Leong covers tidal theory comprehensively: Equilibrium theory (Newton) treats tides as static ocean responding to gravitational forces. Dynamic theory (Laplace) accounts for ocean basin geometry, continental barriers, Coriolis effect, and resonance. Real tides are complex combinations of multiple harmonic constituents (M2, S2, K1, O1 etc.) creating the actual observed tidal patterns at any location."
                     },
                     {
                       "type": "para",
-                      "text": "NCERT Class 11 Ch.14 explains: tides are caused by the **gravitational pull of the Moon and the Sun**; **spring tides** at new/full Moon (aligned), **neap tides** at quarter Moons (perpendicular). High-yield for both Prelims and the Oceanography section later."
+                      "text": "Types of tides: (1) Semi-diurnal — two high and two low tides per day (most Atlantic coasts). (2) Diurnal — one high and one low per day (Gulf of Mexico, parts of Southeast Asia). (3) Mixed — unequal heights between successive tides (Pacific coasts). India's coasts are predominantly semi-diurnal with mixed characteristics in some regions."
                     },
                     {
-                      "type": "quiz",
-                      "question": "According to NCERT, when do spring tides occur?",
-                      "answer": "At **new Moon and full Moon**, when the Sun, Earth, and Moon are aligned (syzygy). Their gravitational pulls combine to produce the highest high tides. ('Spring' here means 'to spring up' — not the season.)"
+                      "type": "para",
+                      "text": "Tidal energy potential: The Gulf of Khambhat (Gujarat) has India's highest tidal range (8-11 m) and is the most promising site for tidal energy generation in India. The Gulf of Kutch is another potential site. Globally, major tidal energy installations include La Rance (France, 240 MW), Sihwa Lake (South Korea, 254 MW), and proposed Severn Barrage (UK, 8640 MW). Tidal energy is renewable but geographically limited to high-range locations."
                     }
                   ]
                 },
                 {
                   "section_label": "EXAMINER_TRAPS",
-                  "title": "Examiner Traps & Common Confusions",
+                  "title": "Current Affairs Connected to This Topic",
                   "display_order": 4,
                   "authored": true,
                   "blocks": [
                     {
-                      "type": "trap",
-                      "title": "Trap 1 — 'Dark side of the Moon'",
-                      "text": "There is no permanently dark side. The **far side** is never *visible* from Earth (due to tidal locking) but it receives just as much sunlight as the near side. 'Dark side' is a popular misnomer."
+                      "type": "para",
+                      "text": "Chandrayaan-3 (ISRO, August 2023) achieved India's first successful lunar soft landing near the south pole (69°S latitude). The Vikram lander and Pragyan rover operated for one lunar day (14 Earth days). Key findings: sulphur confirmation at the surface, temperature profile measurements showing steep gradient in the top 8 cm of regolith, and plasma density measurements near the surface."
                     },
                     {
-                      "type": "trap",
-                      "title": "Trap 2 — 'Spring tides occur in the spring season'",
-                      "text": "WRONG. **Spring tides** occur at **new and full Moon** (regardless of season). 'Spring' means 'to leap up,' not the season."
+                      "type": "para",
+                      "text": "NASA's Artemis programme aims to return humans to the Moon by 2025-2026, establishing a permanent lunar presence. Artemis I (uncrewed, 2022) successfully tested the SLS/Orion system on a lunar flyby. The Lunar Gateway — a planned space station in lunar orbit — will serve as a staging point. India-US space cooperation under Artemis Accords (India signed June 2023) positions ISRO as a partner."
                     },
                     {
-                      "type": "trap",
-                      "title": "Trap 3 — 'Tides are caused only by the Moon'",
-                      "text": "**Incomplete.** The Moon is the dominant cause, but the **Sun contributes ~46%** of the tidal force. Their alignment (spring) or opposition (neap) determines tidal range."
+                      "type": "para",
+                      "text": "China's Chang'e-6 mission (June 2024) returned samples from the lunar far side for the first time in history — from the South Pole-Aitken Basin. These samples reveal ancient lunar interior composition and impact history. The far side crust is thicker and compositionally different from the near side, constraining Moon formation models."
                     },
                     {
-                      "type": "trap",
-                      "title": "Trap 4 — 'The Moon causes Earth's seasons'",
-                      "text": "WRONG. Seasons come from Earth's **23.5° axial tilt**. The Moon **stabilises** that tilt but does not cause seasons."
-                    },
-                    {
-                      "type": "trap",
-                      "title": "Trap 5 — 'Chandrayaan-1 landed on the Moon'",
-                      "text": "WRONG. Chandrayaan-1 (2008) was an **orbiter** (its Moon Impact Probe hit the surface, but it was not a soft landing). The first Indian **soft landing** was **Chandrayaan-3** (2023)."
-                    },
-                    {
-                      "type": "trap",
-                      "title": "Trap 6 — 'The Moon is approaching Earth'",
-                      "text": "WRONG. The Moon is **receding** at ~3.8 cm/year as tidal friction slows Earth's rotation and transfers angular momentum to the Moon's orbit."
-                    },
-                    {
-                      "type": "memory",
-                      "text": "**Tides: 'Spring = Aligned, Neap = Right-aNgle.'** Spring at new/full Moon (Sun-Earth-Moon in a line); Neap at quarter Moons (90°)."
+                      "type": "para",
+                      "text": "Water ice at the lunar south pole (confirmed by Chandrayaan-1's Moon Impact Probe in 2008 and NASA's LCROSS in 2009) drives current exploration interest. Permanently shadowed craters at the poles may contain billions of tonnes of water ice — critical for future human settlements (drinking water, oxygen production, rocket fuel). This resource fundamentally changes the Moon's strategic and economic significance."
                     }
                   ]
                 }
               ],
-              "pyqs": [
-                {
-                  "exam_type": "PRELIMS",
-                  "year": 2020,
-                  "question_type": "STATEMENT_BASED",
-                  "question_text": "Consider the following statements: 1. Spring tides occur during the new Moon and full Moon. 2. Neap tides occur when the Sun and Moon are at right angles to each other. 3. The Sun has no effect on tides. Which of the above statements is/are correct? (a) 1 and 2 only (b) 1 and 3 only (c) 2 only (d) 1, 2 and 3",
-                  "answer_text": "(a) 1 and 2 only",
-                  "explanation": "Statements 1 and 2 are correct (spring at syzygy, neap at quadrature). Statement 3 is wrong — the Sun contributes ~46% of the tidal force; it does affect tides, just less than the Moon."
-                },
-                {
-                  "exam_type": "PRELIMS",
-                  "year": 2023,
-                  "question_type": "STATEMENT_BASED",
-                  "question_text": "With reference to India's lunar missions, consider the following: 1. Chandrayaan-1 detected water molecules on the lunar surface. 2. Chandrayaan-3 achieved the first soft landing near the lunar south pole. 3. Chandrayaan-2's orbiter is still operational. Which of the above statements is/are correct? (a) 1 and 2 only (b) 2 and 3 only (c) 1 and 3 only (d) 1, 2 and 3",
-                  "answer_text": "(d) 1, 2 and 3",
-                  "explanation": "All three are correct. Chandrayaan-1 (2008) detected water/hydroxyl. Chandrayaan-3 (2023) made the first south-pole soft landing. Chandrayaan-2's orbiter remains operational and continues mapping the Moon."
-                },
-                {
-                  "exam_type": "MAINS",
-                  "year": 2022,
-                  "marks": 10,
-                  "question_text": "Discuss the Giant Impact Hypothesis for the origin of the Moon. What evidence supports it, and how does the Moon influence Earth's habitability?",
-                  "answer_text": "Cover: Theia collision ~4.5 Ga; evidence (mantle-matching composition, small iron core, identical O isotopes, high angular momentum); influence (axial-tilt stabilisation → stable climate, tides → coastal ecosystems + nutrient mixing, day-length evolution). Mention competing rejected theories (fission, capture, co-accretion).",
-                  "explanation": "Structure: (i) state the hypothesis; (ii) list supporting evidence; (iii) explain habitability influence; (iv) briefly contrast rejected theories to show why Giant Impact is accepted."
-                }
-              ],
-              "mcq_questions": [
-                {
-                  "display_order": 1,
-                  "question_type": "STATEMENT_BASED",
-                  "question_text": "The Giant Impact Hypothesis is supported by which of the following evidence? 1. Lunar samples match Earth's mantle composition. 2. The Moon has a large iron core relative to its size. 3. Earth and Moon share identical oxygen isotope ratios. Select the correct answer:",
-                  "options": [
-                    {
-                      "label": "A",
-                      "text": "1 and 3 only"
-                    },
-                    {
-                      "label": "B",
-                      "text": "1 and 2 only"
-                    },
-                    {
-                      "label": "C",
-                      "text": "2 and 3 only"
-                    },
-                    {
-                      "label": "D",
-                      "text": "1, 2 and 3"
-                    }
-                  ],
-                  "correct_option": "A",
-                  "explanation": "Statements 1 and 3 are correct evidence. Statement 2 is wrong: the Moon has a SMALL iron core relative to its size (because the iron had already sunk to Earth's/Theia's cores before impact) — this is itself evidence FOR the hypothesis."
-                },
-                {
-                  "display_order": 2,
-                  "question_type": "FACTUAL",
-                  "question_text": "The phenomenon of the Moon always showing the same face to Earth is due to:",
-                  "options": [
-                    {
-                      "label": "A",
-                      "text": "The Moon not rotating on its axis"
-                    },
-                    {
-                      "label": "B",
-                      "text": "Tidal locking (synchronous rotation)"
-                    },
-                    {
-                      "label": "C",
-                      "text": "Earth's magnetic field holding the Moon"
-                    },
-                    {
-                      "label": "D",
-                      "text": "The Moon's elliptical orbit"
-                    }
-                  ],
-                  "correct_option": "B",
-                  "explanation": "Tidal locking: the Moon's rotation period equals its orbital period (27.3 days), so the same hemisphere always faces Earth. The Moon DOES rotate — once per orbit (option A is a common misconception)."
-                },
-                {
-                  "display_order": 3,
-                  "question_type": "STATEMENT_BASED",
-                  "question_text": "Regarding the Moon's influence on Earth: 1. It stabilises Earth's axial tilt. 2. It is gradually moving closer to Earth. 3. Tidal friction is slowing Earth's rotation. Which statements are correct?",
-                  "options": [
-                    {
-                      "label": "A",
-                      "text": "1 and 3 only"
-                    },
-                    {
-                      "label": "B",
-                      "text": "1 and 2 only"
-                    },
-                    {
-                      "label": "C",
-                      "text": "2 and 3 only"
-                    },
-                    {
-                      "label": "D",
-                      "text": "1, 2 and 3"
-                    }
-                  ],
-                  "correct_option": "A",
-                  "explanation": "Statements 1 and 3 are correct. Statement 2 is wrong: the Moon is RECEDING (~3.8 cm/year), not approaching, as tidal friction slows Earth's rotation and transfers angular momentum to the Moon's orbit."
-                },
-                {
-                  "display_order": 4,
-                  "question_type": "FACTUAL",
-                  "question_text": "Which Indian lunar mission first detected the presence of water/hydroxyl on the Moon?",
-                  "options": [
-                    {
-                      "label": "A",
-                      "text": "Chandrayaan-1"
-                    },
-                    {
-                      "label": "B",
-                      "text": "Chandrayaan-2"
-                    },
-                    {
-                      "label": "C",
-                      "text": "Chandrayaan-3"
-                    },
-                    {
-                      "label": "D",
-                      "text": "Mangalyaan"
-                    }
-                  ],
-                  "correct_option": "A",
-                  "explanation": "Chandrayaan-1 (2008–09), using NASA's Moon Mineralogy Mapper (M3), detected water molecules and hydroxyl on the lunar surface — a landmark discovery. Mangalyaan was India's Mars mission."
-                },
-                {
-                  "display_order": 5,
-                  "question_type": "FACTUAL",
-                  "question_text": "Why is the lunar south pole a priority target for exploration (e.g., Chandrayaan-3, Artemis)?",
-                  "options": [
-                    {
-                      "label": "A",
-                      "text": "It is the warmest region of the Moon"
-                    },
-                    {
-                      "label": "B",
-                      "text": "Permanently shadowed craters there hold water ice"
-                    },
-                    {
-                      "label": "C",
-                      "text": "It faces Earth continuously"
-                    },
-                    {
-                      "label": "D",
-                      "text": "It has the thickest atmosphere"
-                    }
-                  ],
-                  "correct_option": "B",
-                  "explanation": "The lunar south pole has permanently shadowed craters that trap water ice — a critical resource for future bases (drinking water, oxygen, rocket fuel). The Moon has no atmosphere, and no region faces Earth continuously."
-                }
-              ],
-              "ordering_justification": "Closes the 'Earth and Its Origin' sub-topic: the Moon formed in the final stage of Solar System assembly and is essential to Earth's habitability (tilt stabilisation, tides). Bridges to Earth's interior structure (next sub-topic)."
+              "pyqs": [],
+              "mcq_questions": []
             }
           ]
         },
