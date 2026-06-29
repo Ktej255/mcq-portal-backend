@@ -98,6 +98,14 @@ app.include_router(profile.router, prefix="/api/v1/student", tags=["student-prof
 app.include_router(payments.router, prefix="/api/v1/payments", tags=["payments"])
 app.include_router(engagement.router, prefix="/api/v1/engagement", tags=["engagement"])
 
+# Current Affairs Platform & Admin CMS routers
+from app.api.v1.current_affairs import router as ca_router
+from app.api.v1.admin import router as admin_router
+
+app.include_router(ca_router, prefix="/api/v1/current-affairs")
+app.include_router(admin_router, prefix="/api/v1/admin")
+
+
 
 @app.get("/")
 def read_root():
