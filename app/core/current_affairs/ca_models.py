@@ -66,7 +66,7 @@ class CAItem(Base, InstitutionalAuditMixin, SoftDeleteMixin):
     # Relationships
     mcqs = relationship("CAMcq", back_populates="ca_item", cascade="all, delete-orphan")
     mains_questions = relationship("CAMainsQuestion", back_populates="ca_item", cascade="all, delete-orphan")
-    thread_associations = relationship("CAThreadItem", back_populates="ca_item")
+    thread_associations = relationship("CAThreadItem", foreign_keys="[CAThreadItem.item_id]", back_populates="ca_item")
     syllabus_links = relationship("CASyllabusLink", back_populates="ca_item", cascade="all, delete-orphan")
 
     # Continuation link — previous item this continues from

@@ -14,6 +14,8 @@ from sqlalchemy import text
 
 from app.core.gs_lms.importer import import_gs_geography
 from app.db.session import SessionLocal
+from app.models.domain import User
+
 
 
 def main() -> None:
