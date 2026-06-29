@@ -69,10 +69,11 @@ class GsLmsQuestionTypeEnum(str, enum.Enum):
 
 
 class GsLmsSectionLabelEnum(str, enum.Enum):
-    """The four progressive-disclosure content sections per topic."""
+    """The five progressive-disclosure content sections per topic."""
     BASIC = "BASIC"
     ADVANCED = "ADVANCED"
     NCERT_LEVEL = "NCERT_LEVEL"
+    CURRENT_AFFAIRS = "CURRENT_AFFAIRS"
     EXAMINER_TRAPS = "EXAMINER_TRAPS"
 
 

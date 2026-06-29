@@ -41,6 +41,18 @@ from app.core.gs_lms.student_models import (  # noqa: F401
     GsLmsVideoWatch,
     GsLmsOnboardingStatus,
 )
+# Import Interactive Learning Funnel models so autogenerate can detect them
+from app.core.gs_lms.funnel_models import (  # noqa: F401
+    GsLmsFunnelProgress,
+    GsLmsReadingTime,
+    GsLmsRecallAttempt,
+    GsLmsMcqLabSession,
+    GsLmsMcqLabAttempt,
+    GsLmsWeaknessPattern,
+    GsLmsGrowthReport,
+    GsLmsSpacedRepSchedule,
+    GsLmsExternalResource,
+)
 
 target_metadata = Base.metadata
 

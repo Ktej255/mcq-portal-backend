@@ -32,6 +32,11 @@ from app.api.v1.gs_lms import preview
 from app.api.v1.gs_lms import recall_gate
 from app.api.v1.gs_lms import retro
 from app.api.v1.gs_lms import answers
+# Interactive Learning Funnel routers
+from app.api.v1.gs_lms import funnel
+from app.api.v1.gs_lms import recall
+from app.api.v1.gs_lms import mcq_lab
+from app.api.v1.gs_lms import growth
 
 # All GS LMS routes require authentication. Declaring the dependency at the
 # aggregate level enforces auth-gating uniformly across every sub-router
@@ -55,6 +60,11 @@ router.include_router(revisit.router, prefix="/{subject_slug}", tags=["gs-lms"])
 router.include_router(recall_gate.router, prefix="/{subject_slug}", tags=["gs-lms"])
 router.include_router(retro.router, prefix="/{subject_slug}", tags=["gs-lms"])
 router.include_router(answers.router, prefix="/{subject_slug}", tags=["gs-lms"])
+# Interactive Learning Funnel sub-routers
+router.include_router(funnel.router, prefix="/{subject_slug}", tags=["gs-lms-funnel"])
+router.include_router(recall.router, prefix="/{subject_slug}", tags=["gs-lms-funnel"])
+router.include_router(mcq_lab.router, prefix="/{subject_slug}", tags=["gs-lms-funnel"])
+router.include_router(growth.router, prefix="/{subject_slug}", tags=["gs-lms-funnel"])
 
 # Preview routes are NOT subject-specific — they serve dev/preview content
 # without auth or subject resolution.
