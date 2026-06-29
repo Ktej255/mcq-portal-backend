@@ -1,5 +1,5 @@
-# Use official Python runtime as a parent image
-FROM python:3.11-slim
+# Use official Python runtime as a parent image (ECR Public Gallery mirror to bypass Docker Hub rate limits)
+FROM public.ecr.aws/docker/library/python:3.11-slim
 
 # Set environment variables for Python behavior
 ENV PYTHONDONTWRITEBYTECODE 1
