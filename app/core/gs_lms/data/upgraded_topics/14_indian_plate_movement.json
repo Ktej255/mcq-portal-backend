@@ -1,0 +1,280 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Indian Plate Movement and Himalayan Orogeny. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Plate Tectonics)"
+  },
+  "title": "Indian Plate Movement and Himalayan Orogeny",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 14,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After understanding plate tectonics theory and boundary types (topic 13), this topic applies those concepts specifically to the Indian subcontinent — its tectonic journey, the Himalayan collision, and ongoing seismicity. Highly India-specific and UPSC-critical.",
+  "concept_checklist": [
+    "India was part of Gondwanaland near the South Pole (~200 Ma); began separating ~140 Ma (Jurassic-Cretaceous).",
+    "India moved northward at 15-20 cm/year (80-50 Ma) — the fastest continental plate movement ever recorded.",
+    "Collision with Eurasia began ~50-55 Ma (Eocene); Tethys Sea closed; marine sediments uplifted to form Himalayas.",
+    "Three phases of Himalayan orogeny: Tethyan Himalayas (oldest), Greater Himalayas, Lesser Himalayas (youngest deformation front).",
+    "Major thrust zones (south to north in formation, north to south geographically): HFT (Himalayan Frontal Thrust), MBT (Main Boundary Thrust), MCT (Main Central Thrust), STDS (South Tibetan Detachment System).",
+    "Indo-Gangetic Plain is a foredeep (foreland basin) filled with sediment eroded from rising Himalayas (up to 6 km deep alluvium).",
+    "India still converges with Eurasia at ~5 cm/year today; of this, ~2 cm absorbed by Himalayan thrusts, ~3 cm by Tibetan deformation.",
+    "India's seismic zones (I-V): Zone V = highest risk (Kashmir, NE India, Kutch); linked to plate boundary stresses.",
+    "Andaman-Nicobar: Indian Plate (oceanic portion) subducts under Burma Plate; 2004 tsunami originated here.",
+    "Future: India continues moving north; Himalayas still rising (~5 mm/year uplift); large earthquakes inevitable in seismic gap zones."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "200 million years ago, India was attached to Antarctica, thousands of kilometres south of its current position. Then it broke free and raced northward at record speed — crashing into Asia so violently that the seafloor between them was pushed 8,848 metres into the sky. That seafloor is now the summit of Everest. And the collision continues today."},
+        {"type": "statgrid", "items": [
+          {"value": "~140 Ma", "label": "India separated from Gondwana"},
+          {"value": "15-20 cm/yr", "label": "Peak drift speed"},
+          {"value": "~50 Ma", "label": "India-Eurasia collision"},
+          {"value": "5 cm/yr", "label": "Current convergence rate"}
+        ]},
+        {"type": "heading", "text": "India's Journey from Gondwana"},
+        {"type": "para", "text": "**India's tectonic journey** is one of the most dramatic in geological history. Around **200 million years ago** (early Jurassic), India was part of **Gondwanaland**, nestled between Africa (west), Antarctica (south), and Australia (east), positioned near the **South Pole**. The **Tethys Sea** — a warm, shallow ocean — lay to India's north, separating Gondwanaland from Laurasia (Eurasia)."},
+        {"type": "para", "text": "Around **140 Ma** (Late Jurassic–Early Cretaceous), India began to **separate from Gondwana** — first from Africa (~160 Ma), then from Madagascar (~90 Ma), and finally from Antarctica-Australia (~80 Ma). Once fully separated, India began its remarkable **northward drift** across the Tethys Sea."},
+        {"type": "heading", "text": "The Fastest Continental Sprint"},
+        {"type": "para", "text": "Between **80 and 50 Ma** (Late Cretaceous to Early Eocene), the Indian Plate moved northward at **15-20 cm/year** — the **fastest recorded continental plate movement** in Earth's history. For comparison, most plates today move at 2-10 cm/year. This extraordinary speed may have been driven by a combination of **slab pull** (Tethyan oceanic crust subducting under Eurasia) and the **Réunion hotspot** (providing extra push from below)."},
+        {"type": "callout", "tone": "why", "title": "Why Was India So Fast?", "text": "Three factors: (1) **Slab pull** — the dense Tethyan oceanic plate subducting ahead of India created a strong pull. (2) **Small plate size** — less drag resistance. (3) **Réunion hotspot** — a deep mantle plume (which created the Deccan Traps at 66 Ma) may have provided additional push. The combination made India the fastest-moving continent ever."},
+        {"type": "heading", "text": "The Collision (~50 Ma)"},
+        {"type": "para", "text": "Around **50-55 million years ago** (Eocene), India finally collided with the Eurasian Plate. The **Tethys Sea was closed** — its marine sediments (limestone, shale) were caught between the two converging continental masses and **uplifted** to form the Himalayan mountain chain. This is why **marine fossils** are found at Himalayan summits — they are remnants of the ancient Tethys seafloor."},
+        {"type": "analogy", "text": "Imagine two cars racing towards each other on a road covered with wet sand (Tethys sediments). When they collide, neither car goes under the other (both are buoyant continental crust). Instead, the sand between them crumples upward into a ridge — that's the Himalayas. The crash continues at 5 cm/year, and the ridge keeps growing."},
+        {"type": "heading", "text": "Ongoing Convergence"},
+        {"type": "para", "text": "The collision is NOT over. India continues to push into Eurasia at approximately **5 cm/year** (47±2 mm/yr measured by GPS). This ongoing convergence is absorbed in two ways: **~2 cm/yr** is taken up by **thrust faulting in the Himalayas** (causing them to rise ~5 mm/year) and **~3 cm/yr** is absorbed by **lateral extrusion and crustal thickening** of the Tibetan Plateau."},
+        {"type": "keyterms", "terms": [
+          {"term": "Orogeny", "definition": "Mountain-building process caused by tectonic forces (compression, folding, thrusting). Himalayan orogeny is ongoing."},
+          {"term": "Foredeep", "definition": "Depression (basin) formed in front of an advancing mountain belt, filled with erosional sediments. Indo-Gangetic Plain is the Himalayan foredeep."},
+          {"term": "Thrust Fault", "definition": "Low-angle reverse fault where one rock mass is pushed OVER another. MCT, MBT, HFT are Himalayan thrusts."},
+          {"term": "Tethys Sea", "definition": "Ancient ocean between India (Gondwana) and Eurasia. Its closure formed the Himalayas. Sediments now at 8,000+ m elevation."},
+          {"term": "Suture Zone", "definition": "Boundary marking where two plates have collided and welded together. Indus-Tsangpo Suture marks India-Eurasia join."},
+          {"term": "Deccan Traps", "definition": "Massive basaltic lava flows (66 Ma) covering ~500,000 km² of western India. Linked to Réunion hotspot during India's northward drift."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Indian Plate and Himalayas",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "4", "page_start": 48, "page_end": 52, "external_url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf", "text": "Chapter 4 discusses the Indian Plate's boundaries, movement, and the formation of the Himalayas through India-Eurasia collision.", "key_facts": ["Indian Plate includes India and oceanic floor to its south and west", "Northern boundary: convergent with Eurasian Plate", "Eastern boundary: subduction at Andaman Trench", "India still moving north at ~5 cm/year", "Himalayas formed from Tethys Sea sediments"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 4"},
+        {"type": "points", "title": "Indian Plate Movement as per NCERT", "items": ["The Indian Plate includes **Peninsular India** and the **oceanic crust** to its south and west", "It has been moving **northward** since separating from Gondwanaland", "The **northern boundary** is a convergent boundary along the Himalayas (collision with Eurasian Plate)", "The **eastern margin** is a subduction zone along the **Andaman Trench** (Indian Plate subducts under Burma Plate)", "The **western margin** is along the Carlsberg Ridge (divergent) and Owen Fracture Zone (transform)"]},
+        {"type": "para", "text": "NCERT explicitly states that the **Himalayas represent the most prominent example of continental-continental convergent boundary** in the world. It notes that the Indian Plate is moving towards Eurasia at approximately **5 cm/year** and that this ongoing convergence is responsible for frequent earthquakes in the Himalayan region."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC directly tests: (1) India's plate boundaries (all four sides), (2) Why Himalayas have earthquakes but no volcanoes, (3) Origin of Himalayan sedimentary rocks (Tethys marine sediments), (4) India's current movement rate (5 cm/yr), (5) The 2004 tsunami's tectonic origin (Andaman subduction). All from NCERT Ch. 4."},
+        {"type": "ncert_reference", "book": "India — Physical Environment", "class": "11", "chapter": "2", "page_start": 8, "page_end": 14, "external_url": "https://ncert.nic.in/textbook/pdf/kegy102.pdf", "text": "Chapter 2 'Structure and Physiography' covers the geological formation of India's major physiographic divisions including the Himalayan system.", "key_facts": ["Himalayas divided into Greater, Lesser, and Shiwalik ranges", "Peninsular India (Gondwana) vs Extra-Peninsular India (Tethyan)", "Indo-Gangetic Plain as alluvial fill in foredeep", "Geological history from Archean to Recent"]}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Himalayan Orogeny, Thrust Zones, and Seismicity",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Phases of Himalayan Formation"},
+        {"type": "para", "text": "The Himalayan orogeny occurred in multiple phases as India progressively collided and deformed the Eurasian margin:"},
+        {"type": "timeline", "title": "Timeline of Indian Plate and Himalayan Formation", "items": [
+          {"year": "~200 Ma", "event": "India part of Gondwanaland near South Pole; Tethys Sea separates Gondwana from Laurasia"},
+          {"year": "~140 Ma", "event": "India begins separating from Gondwana (from Africa first)"},
+          {"year": "~90 Ma", "event": "India separates from Madagascar; begins rapid northward sprint"},
+          {"year": "~66 Ma", "event": "Deccan Traps volcanism as India passes over Réunion hotspot"},
+          {"year": "~55-50 Ma", "event": "Initial contact/collision between Indian and Eurasian continental crusts (Eocene)"},
+          {"year": "~50-25 Ma", "event": "Main Himalayan orogeny: formation of Greater Himalayas, MCT activation"},
+          {"year": "~25-10 Ma", "event": "Lesser Himalayas deformation, MBT activation; Tibetan Plateau uplifts"},
+          {"year": "~10-0 Ma", "event": "Shiwalik formation, HFT activation; Indo-Gangetic Plain fills as foredeep"},
+          {"year": "Present", "event": "India still converging at 5 cm/yr; Himalayas rising ~5 mm/yr; major earthquakes continue"}
+        ]},
+        {"type": "heading", "text": "Himalayan Thrust Zones"},
+        {"type": "para", "text": "The Himalayas are internally divided by major **thrust faults** — low-angle reverse faults where rock masses have been pushed southward over younger rocks. From north to south:"},
+        {"type": "points", "title": "Major Himalayan Thrusts (North → South)", "items": ["**STDS (South Tibetan Detachment System)** — normal fault at Tethyan/Greater Himalaya boundary", "**MCT (Main Central Thrust)** — separates Greater Himalayas from Lesser Himalayas; carries high-grade metamorphic rocks over lower-grade; active ~25-15 Ma", "**MBT (Main Boundary Thrust)** — separates Lesser Himalayas from Sub-Himalayas (Shiwaliks); active ~10-5 Ma", "**HFT/MFT (Himalayan Frontal Thrust / Main Frontal Thrust)** — southernmost active thrust; current deformation front; separates Shiwaliks from Indo-Gangetic Plain; absorbs ~2 cm/yr of convergence"]},
+        {"type": "callout", "tone": "insight", "title": "Key Insight: Southward Propagation", "text": "Himalayan deformation has **propagated southward** over time — the oldest thrust (MCT) is in the north, while the youngest active thrust (HFT) is in the south. This means the deformation front has migrated towards the Indo-Gangetic Plain over 50 million years. The HFT is where the next great Himalayan earthquakes are most likely."},
+        {"type": "heading", "text": "The Indo-Gangetic Plain as a Foredeep"},
+        {"type": "para", "text": "The **Indo-Gangetic Plain** is not merely a river-deposited alluvial surface. It is a **foredeep** (foreland basin) — a structural depression created by the weight of the Himalayan mountain mass depressing the Indian Plate's edge. This depression has been filled with sediment eroded from the rising Himalayas over ~20 million years. The alluvium is up to **6 km deep** in some places (beneath Lucknow/Kanpur). Below this alluvium lies the buried Peninsular Indian crust."},
+        {"type": "heading", "text": "India's Seismic Zones"},
+        {"type": "para", "text": "India is divided into **4 seismic zones** (II-V, Zone I was merged with II): **Zone V** (very high risk): Kashmir, Western Himachal, Uttarakhand, North Bihar, NE India, Kutch, Andaman-Nicobar. **Zone IV** (high risk): Remaining Himalayan belt, Delhi, parts of Indo-Gangetic Plain. **Zone III** (moderate): Most of Peninsular India, remaining Gangetic Plain. **Zone II** (low): Parts of Peninsular India (South Karnataka, Telangana)."},
+        {"type": "compare", "title": "Himalayan vs Andaman Seismicity", "left": {"label": "Himalayan Earthquakes", "items": ["Continental-Continental collision", "No subduction (both buoyant)", "Shallow to intermediate depth (10-70 km)", "Caused by thrust fault rupture (HFT, MBT)", "No volcanism", "Examples: 1905 Kangra, 1934 Bihar-Nepal, 2015 Nepal"]}, "right": {"label": "Andaman Earthquakes", "items": ["Oceanic-Continental subduction", "Indian oceanic plate subducts under Burma Plate", "Shallow to deep (10-200+ km)", "Caused by subduction interface rupture", "Active volcanism (Barren Island)", "Examples: 2004 Sumatra-Andaman (M9.1), 1941 Andaman"]}},
+        {"type": "collapsible", "title": "Advanced: The Seismic Gap Theory and Future Earthquakes", "content": "Seismologists have identified 'seismic gaps' along the Himalayan arc — segments that have NOT ruptured in historical memory but are accumulating strain. The Central Himalayan gap (between 1905 Kangra and 1934 Bihar-Nepal rupture zones) includes heavily populated regions of Uttarakhand, central Nepal, and western Nepal. With convergence of 2 cm/year over 500+ years, these segments have accumulated 10+ metres of slip potential — enough for M8+ earthquakes. Delhi, located ~200 km from the HFT, faces significant seismic risk from these expected events."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Indian Plate and Himalayan Seismicity",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Joshimath Subsidence Crisis (2023)", "text": "**Joshimath** (Uttarakhand) experienced severe land subsidence in January 2023, with buildings cracking and tilting. While primarily caused by unplanned construction, hydropower tunnelling, and water seepage, the deeper context is that Joshimath sits on an ancient landslide deposit in a **seismically active zone** (MCT zone). The Indian Plate's continued convergence makes the entire Himalayan belt prone to slope instability. Linked UPSC questions: disaster management + tectonics."},
+        {"type": "callout", "tone": "note", "title": "Nepal Earthquake (2023) and Seismic Gap Concerns", "text": "The **Western Nepal earthquake** (November 2023, M5.6) renewed concerns about the **Central Himalayan seismic gap**. Scientists from India's **National Centre for Seismology** warned that segments between the 1934 Bihar-Nepal and 1505 (historical) rupture zones have accumulated sufficient strain for an M8+ event. NDMA has intensified awareness campaigns."},
+        {"type": "callout", "tone": "note", "title": "India's National Seismic Risk Assessment (2024-2025)", "text": "The **NDMA** and **Ministry of Earth Sciences** released updated seismic hazard maps incorporating **GPS-measured convergence rates** and probabilistic seismic hazard analysis. Key finding: **59% of India's landmass** is vulnerable to moderate-to-severe earthquakes. Delhi (Zone IV) faces particular risk from the HFT. Building code enforcement (BIS IS 1893) remains a GS-III governance issue."},
+        {"type": "callout", "tone": "note", "title": "Tibetan Plateau Deformation Studies (2024)", "text": "New **InSAR satellite data** (2024) shows the Tibetan Plateau is deforming internally at ~15 mm/year as a response to India's continued push. Some material is being extruded eastward towards China's Sichuan province (explaining earthquakes there, e.g., 2008 Wenchuan). This 'lateral extrusion' model explains how India's 5 cm/yr convergence is distributed beyond the Himalayas themselves."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Indian Plate Movement",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "The Himalayas were formed by volcanic activity", "correct": "The Himalayas were formed by **tectonic folding and thrusting** from the India-Eurasia collision — NOT volcanism. Since it's a continental-continental collision (no subduction of oceanic crust), NO melting occurs, hence NO volcanism. The Himalayas are fold mountains of uplifted Tethyan sediments and crystalline basement."},
+        {"type": "trap", "wrong": "India collided with Eurasia about 200 million years ago when Pangaea broke", "correct": "Pangaea breakup started ~200 Ma, but India's collision with Eurasia happened much later — around **50-55 Ma** (Eocene). India took ~140 million years to drift from Gondwana to Eurasia. The timing distinction is critical: breakup (200 Ma) vs collision (50 Ma)."},
+        {"type": "trap", "wrong": "The Indo-Gangetic Plain is simply a river-deposited alluvial surface with no tectonic significance", "correct": "The Indo-Gangetic Plain is a **structural foredeep** — a depression created by the weight of the Himalayas bending the Indian Plate. It's filled with up to **6 km of sediment** eroded from the Himalayas. It has profound tectonic significance: the HFT (active Himalayan thrust) runs along its northern edge."},
+        {"type": "trap", "wrong": "The 2004 Indian Ocean tsunami was caused by the Himalayan collision zone", "correct": "The 2004 tsunami was caused by rupture at the **Andaman-Sumatra subduction zone** (Indian OCEANIC plate subducting under Burma Plate) — NOT the Himalayan collision zone. The Himalayan boundary is continental-continental (no subduction, no megathrust capable of tsunamis)."},
+        {"type": "trap", "wrong": "India has stopped moving now that it has collided with Eurasia", "correct": "India has NOT stopped. It continues to converge with Eurasia at **~5 cm/year** (measured by GPS). This ongoing movement causes the Himalayas to rise (~5 mm/yr), produces frequent earthquakes, and will cause future great earthquakes. The collision is an ONGOING process, not a past event."},
+        {"type": "trap", "wrong": "The Deccan Traps were formed by the India-Eurasia collision", "correct": "The Deccan Traps (66 Ma) formed BEFORE the collision (~50 Ma). They were created when India passed over the **Réunion mantle plume/hotspot** during its northward drift. The massive eruptions coincided with the Cretaceous-Paleogene extinction. The timing distinction (66 Ma traps vs 50 Ma collision) is critical."},
+        {"type": "trap", "wrong": "All earthquakes in India are caused by the Himalayan collision", "correct": "While Himalayan boundary causes most North Indian earthquakes, **Peninsular India** also has earthquakes (e.g., 1993 Latur M6.2, 2001 Bhuj M7.7) caused by **intraplate stresses**, reactivation of ancient faults, and far-field stress transmission from plate boundaries. The Kutch region (Zone V) is particularly active despite being far from Himalayas."},
+        {"type": "memory", "text": "India's Journey: 'GOATS Can Sprint Fast' = Gondwana (200 Ma) → Out (140 Ma) → Approaching (80 Ma) → Traps (66 Ma) → Collision (50 Ma) → Squeezing (now, 5 cm/yr) → Future (earthquakes) | Thrusts north→south: 'Some Men Make Huge Footprints' = STDS → MCT → MBT → HFT (Frontal)"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2023, "question_text": "Consider the following statements about the Indian Plate:\n1. The Indian Plate is moving in the north-east direction at present.\n2. The rate of movement of the Indian Plate is approximately 5 cm per year.\n3. The Andaman and Nicobar Islands are located on the Indian Plate.\nWhich of the above statements is/are correct?", "answer_text": "A", "explanation": "Statements 1 and 2 are correct. The Indian Plate moves in the north-northeast direction at ~5 cm/yr. Statement 3 is debatable — the Andaman-Nicobar arc is technically on the Burma Plate (overriding plate), while the Indian Plate subducts beneath it. The islands sit on the Burma/Sunda Plate, not the Indian Plate itself.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "The 2004 Indian Ocean tsunami was generated due to:", "answer_text": "Subduction of the Indian Plate beneath the Burma Plate along the Andaman-Sumatra Trench", "explanation": "The M9.1 earthquake (26 Dec 2004) was caused by ~1,200 km rupture along the subduction interface where the Indian oceanic plate dives under the Burma/Sunda Plate. The sudden seafloor uplift displaced water column generating the devastating tsunami.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2022, "question_text": "Trace the journey of the Indian Plate from Gondwanaland to its present position. How has this movement shaped the physiography of the Indian subcontinent?", "answer_text": "Journey: India in Gondwanaland near South Pole (200 Ma) → separates from Africa (140 Ma), Madagascar (90 Ma), Antarctica (80 Ma) → rapid northward drift at 15-20 cm/yr → Deccan Traps as India passes over Réunion hotspot (66 Ma) → collision with Eurasia (50 Ma) → ongoing convergence (5 cm/yr today). Physiographic shaping: (1) Himalayas formed from uplifted Tethys sediments and crustal shortening, (2) Indo-Gangetic Plain as foredeep filled with Himalayan erosion products, (3) Peninsular India's Gondwana character preserved (ancient shield), (4) Deccan Plateau from hotspot volcanism, (5) Andaman-Nicobar arc from subduction. India's entire physiography — mountains, plains, plateau, islands — can be explained by plate movement.", "explanation": "Mains answer must trace chronological journey AND connect each stage to a physiographic feature. Link geology to geography.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements about India's northward drift:\n1. India moved at 15-20 cm/year between 80-50 Ma — the fastest continental movement recorded.\n2. The Deccan Traps formed when India passed over the Réunion hotspot.\n3. India collided with Eurasia approximately 200 million years ago.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct. Statement 3 is WRONG — India collided with Eurasia at ~50-55 Ma (Eocene), NOT 200 Ma. At 200 Ma, India was still part of Gondwanaland. The breakup of Pangaea began ~200 Ma, but collision happened ~150 million years later.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Marine fossils found on the summit of Mount Everest prove it was once part of the Tethys Sea floor.\n2. The Indus-Tsangpo Suture Zone marks the original boundary between the Indian and Eurasian plates.\n3. The Himalayas have active volcanoes due to the ongoing India-Eurasia collision.\n4. The Indo-Gangetic Plain is a foredeep (foreland basin) formed by the weight of the Himalayas.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 4 are correct. Statement 3 is WRONG — the Himalayas have NO active volcanoes because it is a continental-continental collision (no oceanic subduction → no melting → no magma). Marine fossils on Everest, the Indus-Tsangpo Suture, and the foredeep are all well-established facts.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): India currently moves northward at approximately 5 cm per year towards Eurasia.\nReason (R): The slab pull from subducting Tethyan oceanic crust ahead of India continues to drive this movement.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — GPS confirms India moves ~5 cm/yr north. R is INCORRECT — the Tethyan oceanic crust was COMPLETELY consumed by ~50 Ma during the collision. There is no longer any oceanic slab subducting ahead of India (that's why it's now continental-continental). Current forces are residual momentum, ridge push from Carlsberg Ridge, and other plate boundary interactions.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The 2004 Indian Ocean tsunami originated from the Andaman-Sumatra subduction zone.\nReason (R): At this boundary, the continental Indian Plate collides with the continental Eurasian Plate, causing crustal thickening.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — the 2004 tsunami was generated by M9.1 earthquake at the Andaman-Sumatra subduction zone. R is INCORRECT — at this boundary, the OCEANIC part of the Indian Plate subducts under the BURMA Plate. It is NOT a continental-continental collision (that's the Himalayas). The boundary type is oceanic-continental/oceanic-oceanic subduction.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following correctly describes the relationship between the Himalayan thrust zones and their age of activation?",
+      "options": [{"label": "A", "text": "MCT (oldest) → MBT → HFT (youngest) — deformation propagated southward over time"}, {"label": "B", "text": "HFT (oldest) → MBT → MCT (youngest) — deformation propagated northward over time"}, {"label": "C", "text": "All thrusts activated simultaneously during the initial collision 50 Ma ago"}, {"label": "D", "text": "MBT (oldest) → MCT → HFT (youngest) — deformation propagated randomly"}],
+      "correct_option": "A",
+      "explanation": "Himalayan deformation propagated SOUTHWARD: MCT activated first (~25-15 Ma), then MBT (~10-5 Ma), then HFT (youngest, currently active). This 'in-sequence thrusting' is a key geological principle — the deformation front migrates away from the collision zone (southward) over time.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The Joshimath subsidence crisis (2023) is related to which deeper tectonic context?",
+      "options": [{"label": "A", "text": "It is located on the HFT where active thrusting destabilizes slopes"}, {"label": "B", "text": "It sits in the MCT zone on ancient landslide debris in a seismically active thrust belt"}, {"label": "C", "text": "It is caused by volcanic activity from the India-Eurasia subduction zone"}, {"label": "D", "text": "It is located on a transform fault similar to the San Andreas"}],
+      "correct_option": "B",
+      "explanation": "Joshimath sits in the MCT (Main Central Thrust) zone on an ancient landslide deposit. The broader tectonic context is seismic activity from the ongoing India-Eurasia collision making slopes inherently unstable. It is NOT on HFT (that's further south), NOT volcanic (no subduction here), and NOT a transform fault.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Scientists warn of a potential M8+ earthquake in the Central Himalayas based on the 'seismic gap' theory.\n\nIn light of the above passage, consider the following:\n1. A seismic gap is a segment of a fault that has not ruptured in a long time but is accumulating strain.\n2. The longer a gap remains unruptured, the greater the potential earthquake magnitude.\n3. Seismic gaps are only found in the Himalayas and nowhere else.\nWhich of the above inferences can be drawn?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Inferences 1 and 2 are valid — a seismic gap IS a segment that hasn't ruptured but accumulates strain (1), and longer accumulation generally means larger potential rupture and magnitude (2). Inference 3 is INVALID — seismic gaps exist worldwide (Cascadia, Alaska, Chile, Japan, etc.), not only in the Himalayas.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Earthquake/Event) with List-II (Tectonic Cause):\n\nList-I: (a) 2004 Indian Ocean Tsunami, (b) 2015 Nepal Earthquake, (c) 2001 Bhuj Earthquake, (d) Barren Island Volcanism\nList-II: (1) Intraplate stress in ancient rift zone, (2) Thrust fault rupture on MHT (Main Himalayan Thrust), (3) Subduction of Indian Plate under Burma Plate, (4) Oceanic plate subduction generating magma at Andaman arc",
+      "options": [{"label": "A", "text": "a-3, b-2, c-1, d-4"}, {"label": "B", "text": "a-2, b-3, c-4, d-1"}, {"label": "C", "text": "a-3, b-1, c-2, d-4"}, {"label": "D", "text": "a-4, b-2, c-1, d-3"}],
+      "correct_option": "A",
+      "explanation": "2004 Tsunami = subduction at Andaman-Sumatra (a-3). 2015 Nepal = Himalayan thrust rupture (b-2). 2001 Bhuj = intraplate earthquake in Kutch rift zone (c-1). Barren Island = subduction volcanism at Andaman arc (d-4).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Himalayan Thrust) with List-II (Separates which zones):\n\nList-I: (a) MCT, (b) MBT, (c) HFT, (d) STDS\nList-II: (1) Greater Himalayas from Lesser Himalayas, (2) Lesser Himalayas from Shiwalik Hills, (3) Shiwalik Hills from Indo-Gangetic Plain, (4) Tethyan Himalayas from Greater Himalayas",
+      "options": [{"label": "A", "text": "a-1, b-2, c-3, d-4"}, {"label": "B", "text": "a-2, b-1, c-4, d-3"}, {"label": "C", "text": "a-4, b-2, c-3, d-1"}, {"label": "D", "text": "a-1, b-3, c-2, d-4"}],
+      "correct_option": "A",
+      "explanation": "MCT separates Greater from Lesser Himalayas (a-1). MBT separates Lesser Himalayas from Shiwaliks (b-2). HFT separates Shiwaliks from Indo-Gangetic Plain (c-3). STDS separates Tethyan from Greater Himalayas (d-4). This north-to-south sequence is critical.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about India's seismic zones:\n1. Zone V represents the highest seismic risk in India.\n2. Delhi falls in Seismic Zone IV (high damage risk).\n3. The entire Peninsular India is in Zone I (no seismic risk).\n4. The 2001 Bhuj earthquake occurred in Seismic Zone V.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 4 are correct. Statement 3 is WRONG — Peninsular India is NOT in Zone I (Zone I was abolished). Most of Peninsular India is in Zone II-III, and Kutch (Gujarat) is actually in Zone V! The 2001 Bhuj earthquake proves that Peninsular India is NOT free of seismic risk.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following statements about the Deccan Traps is correct?",
+      "options": [{"label": "A", "text": "They were formed by the India-Eurasia collision about 50 million years ago"}, {"label": "B", "text": "They were formed when India passed over the Réunion hotspot about 66 million years ago during its northward drift"}, {"label": "C", "text": "They represent volcanic activity at the Andaman subduction zone"}, {"label": "D", "text": "They were formed by rifting when India separated from Africa 140 million years ago"}],
+      "correct_option": "B",
+      "explanation": "The Deccan Traps (~66 Ma) formed when the Indian Plate passed over the Réunion mantle plume/hotspot during its northward drift. This was BEFORE the collision with Eurasia (~50 Ma). Not related to subduction (Andaman) or rifting from Africa (which was much earlier, ~140 Ma).",
+      "question_type": "FACTUAL",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The Indo-Gangetic Plain alluvium reaches up to 6 km depth in some areas. This extreme thickness is primarily because:",
+      "options": [{"label": "A", "text": "The Ganga and its tributaries have been depositing sediment for billions of years"}, {"label": "B", "text": "The plain is a structural foredeep — a depression created by the weight of the Himalayas on the Indian Plate edge, continuously filled by Himalayan erosion"}, {"label": "C", "text": "Volcanic ash from Himalayan volcanoes accumulated over millions of years"}, {"label": "D", "text": "Marine sediments from the ancient Tethys Sea remain in situ beneath the surface"}],
+      "correct_option": "B",
+      "explanation": "The Indo-Gangetic Plain is a FOREDEEP (foreland basin) — a structural depression created by flexural loading (weight of Himalayas bending the Indian plate). Sediment comes from Himalayan erosion, not volcanic ash (no Himalayan volcanism) or in-situ Tethyan deposits (those are in the Himalayas, not the plain).",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Of India's 5 cm/year convergence with Eurasia, approximately 2 cm is absorbed by Himalayan thrust faults.\n2. The remaining ~3 cm/year is absorbed by deformation and lateral extrusion of the Tibetan Plateau.\n3. This convergence means the Himalayas are still rising at approximately 5 mm per year.\nWhich of the above is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct and represent current scientific understanding based on GPS and geological data. The 5 cm/yr convergence is partitioned between Himalayan thrusts (~2 cm) and Tibetan deformation (~3 cm). The Himalayas continue to rise at ~5 mm/yr (though erosion partially offsets this).",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following events in the geological history of the Indian Plate:\n1. Separation from Antarctica\n2. Formation of Deccan Traps\n3. Collision with Eurasia\n4. Separation from Africa\n\nArrange these in correct chronological order (earliest first):",
+      "options": [{"label": "A", "text": "4-1-2-3"}, {"label": "B", "text": "1-4-3-2"}, {"label": "C", "text": "4-1-3-2"}, {"label": "D", "text": "1-4-2-3"}],
+      "correct_option": "A",
+      "explanation": "Correct order: Separation from Africa (~140 Ma) → Separation from Antarctica (~80 Ma) → Deccan Traps (~66 Ma) → Collision with Eurasia (~50 Ma). India separated from Africa first (Jurassic), then Antarctica (Cretaceous), passed over Réunion hotspot (Late Cretaceous), then collided (Eocene).",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following Indian locations is in Seismic Zone V AND has experienced a devastating earthquake, despite being located far from the Himalayan plate boundary?",
+      "options": [{"label": "A", "text": "Chennai (Tamil Nadu)"}, {"label": "B", "text": "Kutch/Bhuj (Gujarat)"}, {"label": "C", "text": "Bangalore (Karnataka)"}, {"label": "D", "text": "Hyderabad (Telangana)"}],
+      "correct_option": "B",
+      "explanation": "Kutch (Bhuj) in Gujarat is in Seismic Zone V despite being ~1,500 km from the Himalayan boundary. The 2001 Bhuj earthquake (M7.7) was an intraplate earthquake caused by reactivation of ancient rift faults (Kutch Rift Basin) under far-field compressive stress from the India-Eurasia collision. This proves intraplate regions can be highly seismic.",
+      "question_type": "MAP_BASED",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

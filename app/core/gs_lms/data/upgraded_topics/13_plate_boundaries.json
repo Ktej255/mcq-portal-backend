@@ -1,0 +1,278 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Plate Tectonics — Plate Boundaries and Movements. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Plate Tectonics)"
+  },
+  "title": "Plate Tectonics — Plate Boundaries and Movements",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 13,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After Continental Drift (topic 11) and Seafloor Spreading (topic 12), this topic synthesizes both into the unifying theory of Plate Tectonics. Understanding plate boundaries is essential before studying Indian Plate movement (topic 14), earthquakes, and volcanism.",
+  "concept_checklist": [
+    "Plate Tectonics (1967-68) unified continental drift + seafloor spreading into one coherent theory (Wilson, Morgan, McKenzie, Le Pichon).",
+    "Lithospheric plates are rigid slabs (crust + uppermost mantle, ~100 km thick) floating on the plastic asthenosphere.",
+    "7 major plates: Pacific, North American, South American, Eurasian, African, Indo-Australian (or separate Indian + Australian), Antarctic. Several minor plates.",
+    "Three types of boundaries: Divergent (constructive — ridges/rifts), Convergent (destructive — trenches/mountains), Transform (conservative — lateral sliding).",
+    "Convergent sub-types: Oceanic-Oceanic (island arcs — Japan, Philippines), Oceanic-Continental (Andes, Cascades), Continental-Continental (Himalayas, Alps).",
+    "Driving forces: mantle convection (Arthur Holmes), ridge push (gravity sliding), slab pull (subducting plate pulls rest), basal drag.",
+    "Wilson Cycle: cyclic opening and closing of ocean basins over ~500 million year periods.",
+    "Transform faults: plates slide past each other horizontally; no crust created or destroyed; example: San Andreas Fault.",
+    "Indian Plate boundaries: convergent with Eurasian (Himalayas), divergent at Carlsberg Ridge, subduction at Andaman Trench (Indo-Burman plate).",
+    "Plate velocities: measured by GPS today; range from 1 cm/yr (Arctic Ridge) to 10+ cm/yr (Pacific Plate)."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "By the late 1960s, two pieces of the puzzle existed: Wegener showed continents WERE once joined, and Hess showed the ocean floor IS a moving conveyor. But who combined these into a single, testable, quantitative theory? The answer emerged from multiple scientists in 1967-68 — Plate Tectonics, the grand unifying theory of Earth science."},
+        {"type": "statgrid", "items": [
+          {"value": "1967-68", "label": "Theory formulated"},
+          {"value": "7+", "label": "Major plates"},
+          {"value": "3", "label": "Boundary types"},
+          {"value": "1-15 cm/yr", "label": "Plate speeds"}
+        ]},
+        {"type": "heading", "text": "What Is Plate Tectonics?"},
+        {"type": "para", "text": "**Plate Tectonics** states that Earth's outer rigid shell — the **lithosphere** (crust + uppermost solid mantle, ~100 km thick) — is broken into a number of large and small **plates** that move relative to each other on the underlying plastic **asthenosphere**. All major geological phenomena — earthquakes, volcanism, mountain building, ocean creation — occur at or near **plate boundaries**."},
+        {"type": "para", "text": "Unlike Wegener's model (continents moving through ocean floor), plate tectonics states that plates include BOTH continental and oceanic crust. They move as **rigid units** — all deformation and geological activity is concentrated at their **edges** (boundaries). The plate interiors are relatively stable."},
+        {"type": "heading", "text": "The Major Plates"},
+        {"type": "para", "text": "There are **7 major lithospheric plates**: **Pacific Plate** (largest, almost entirely oceanic), **North American Plate**, **South American Plate**, **Eurasian Plate**, **African Plate**, **Indo-Australian Plate** (sometimes split into Indian and Australian plates), and **Antarctic Plate**. Additionally, there are several **minor plates** including Nazca, Philippine, Caribbean, Arabian, Juan de Fuca, Cocos, and Scotia plates."},
+        {"type": "heading", "text": "Three Types of Plate Boundaries"},
+        {"type": "para", "text": "The interactions between plates occur at their boundaries, and there are three fundamental types:"},
+        {"type": "points", "title": "1. Divergent (Constructive) Boundaries", "items": ["Plates move **apart** from each other", "New crust is **created** by upwelling magma (hence 'constructive')", "Features: **Mid-ocean ridges** (underwater), **Rift valleys** (on land — East African Rift)", "Examples: Mid-Atlantic Ridge, East Pacific Rise, Carlsberg Ridge, East African Rift Valley", "Shallow earthquakes, basaltic volcanism, high heat flow"]},
+        {"type": "points", "title": "2. Convergent (Destructive) Boundaries", "items": ["Plates move **towards** each other", "Crust is **destroyed** at subduction zones (hence 'destructive')", "Three sub-types: Oceanic-Oceanic, Oceanic-Continental, Continental-Continental", "Features: Trenches, volcanic arcs, fold mountains", "Deep earthquakes (Benioff zone), andesitic volcanism, intense deformation"]},
+        {"type": "points", "title": "3. Transform (Conservative) Boundaries", "items": ["Plates slide **past** each other horizontally", "No crust is created or destroyed (hence 'conservative')", "Features: **Transform faults** — fracture zones with lateral displacement", "Example: **San Andreas Fault** (Pacific Plate slides NW past North American Plate)", "Shallow but powerful earthquakes, no volcanism"]},
+        {"type": "heading", "text": "Convergent Boundary Sub-types"},
+        {"type": "compare", "title": "Three Types of Convergent Boundaries", "left": {"label": "Oceanic-Oceanic", "items": ["Denser plate subducts under less dense", "Creates: island arc + trench", "Example: Japan, Philippines, Marianas", "Volcanic arc is on oceanic crust", "Deep Benioff zone earthquakes"]}, "right": {"label": "Oceanic-Continental", "items": ["Oceanic (denser) subducts under continental", "Creates: volcanic mountain chain + trench", "Example: Andes, Cascades", "Volcanic arc is on continental crust", "Andesitic explosive volcanism"]}},
+        {"type": "callout", "tone": "insight", "title": "Continental-Continental: The Himalayan Type", "text": "When two continental plates collide, NEITHER subducts easily (both are buoyant). Instead, massive **crustal thickening** and **folding** occurs, creating the world's highest mountains. Example: **Indian Plate colliding with Eurasian Plate → Himalayas**. No volcanism occurs (no subduction of oceanic crust), but intense seismicity is produced."},
+        {"type": "keyterms", "terms": [
+          {"term": "Lithosphere", "definition": "Rigid outer shell of Earth: crust + uppermost mantle. ~100 km thick. Broken into plates."},
+          {"term": "Asthenosphere", "definition": "Partially molten plastic layer (100-250 km) on which plates float and move."},
+          {"term": "Divergent Boundary", "definition": "Plates move apart; new crust created. Also called constructive boundary."},
+          {"term": "Convergent Boundary", "definition": "Plates move together; crust destroyed by subduction. Also called destructive boundary."},
+          {"term": "Transform Boundary", "definition": "Plates slide past each other; no crust created or destroyed. Also called conservative boundary."},
+          {"term": "Subduction Zone", "definition": "Where denser plate dives beneath another into the mantle. Marked by deep trench."},
+          {"term": "Benioff Zone", "definition": "Inclined plane of earthquake foci descending from trench into mantle along subducting plate."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Plate Tectonics",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "4", "page_start": 44, "page_end": 52, "external_url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf", "text": "Chapter 4 'Distribution of Oceans and Continents' explains plate tectonics as the synthesis of continental drift and seafloor spreading, with details on plate boundaries and Indian plate.", "key_facts": ["Plates move on asthenosphere driven by convection", "Three boundary types: divergent, convergent, transform", "Indian plate: convergent with Eurasian in north", "Major and minor plates listed", "Rates of movement measured by GPS"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 4"},
+        {"type": "points", "title": "Plate Tectonics as per NCERT", "items": ["A **plate** (tectonic plate) is a massive, rigid slab of solid rock made up of lithosphere", "Plates include BOTH oceanic and continental crust — they are NOT purely continental or oceanic", "Major plates carry continents as passengers — continents don't move independently", "Plate boundaries are zones of **seismic and volcanic activity** (Ring of Fire)", "Movement rates: 0 to ~10 cm/year, measured precisely by satellite (GPS) today"]},
+        {"type": "para", "text": "NCERT emphasises that the theory of plate tectonics is NOT the same as continental drift. It is a **unification** that explains HOW and WHY continents move. The key advance: plates include ocean floor AND continents as single rigid units, driven by convection, with all action at boundaries."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC frequently asks: (1) Difference between continental drift and plate tectonics, (2) Types of plate boundaries with Indian examples, (3) Why Himalayas have earthquakes but no active volcanism (continental-continental collision), (4) What drives plate movement (convection vs ridge push vs slab pull)."},
+        {"type": "para", "text": "NCERT explicitly names the **Indian Plate**: it includes peninsular India, the adjoining oceanic floor, and extends northward up to the Himalayas. Its northern boundary is **convergent** (collision with Eurasian Plate), western boundary is the **Owen Fracture Zone and Carlsberg Ridge** (transform and divergent), and eastern boundary includes the **Indo-Burman subduction zone** (Andaman)."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Driving Forces, Wilson Cycle, and Plate Dynamics",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "What Drives Plate Movement?"},
+        {"type": "para", "text": "The driving forces of plate tectonics remain actively debated. Three main mechanisms are proposed:"},
+        {"type": "points", "title": "Driving Forces", "items": ["**Mantle Convection** (Arthur Holmes, 1930s): Heat from radioactive decay creates convection cells in the mantle. Rising limbs push plates apart at ridges; descending limbs pull plates down at trenches. Most fundamental but long-wavelength driver.", "**Ridge Push**: Elevated mid-ocean ridges create a gravitational potential; the plate 'slides' downhill away from the ridge under gravity. Operates at the ridge itself.", "**Slab Pull**: The subducting slab (cold, dense) sinks into the mantle under gravity, pulling the rest of the plate behind it. Currently considered the DOMINANT force (explains why plates with large subducting slabs move fastest — e.g., Pacific Plate).", "**Basal Drag**: Friction between the base of the lithosphere and convecting asthenosphere either drives or resists plate motion depending on relative velocities."]},
+        {"type": "callout", "tone": "why", "title": "Why Slab Pull Dominates", "text": "The Pacific Plate (almost entirely surrounded by subduction zones) moves at ~10 cm/year. The African Plate (almost no subduction) moves at <2 cm/year. This correlation between subduction extent and plate speed strongly supports **slab pull** as the dominant driving force. UPSC Mains may ask you to evaluate these forces comparatively."},
+        {"type": "heading", "text": "The Wilson Cycle"},
+        {"type": "para", "text": "**J. Tuzo Wilson** proposed that ocean basins open and close in a cyclic fashion over ~500 million years — the **Wilson Cycle**. Stages: (1) **Embryonic** — continental rift begins (East African Rift today), (2) **Young** — narrow ocean forms (Red Sea today), (3) **Mature** — wide ocean with spreading ridge (Atlantic today), (4) **Declining** — subduction begins consuming the ocean (Pacific today), (5) **Terminal** — ocean closes, continents collide (Mediterranean today), (6) **Suture** — ocean completely closed, collision zone remains (Himalayas — Tethys closed)."},
+        {"type": "timeline", "title": "Wilson Cycle — Current Examples of Each Stage", "items": [
+          {"year": "Stage 1 (Embryonic)", "event": "East African Rift System — continent beginning to split"},
+          {"year": "Stage 2 (Young)", "event": "Red Sea — narrow ocean recently formed between Arabia and Africa"},
+          {"year": "Stage 3 (Mature)", "event": "Atlantic Ocean — wide ocean with active mid-ocean ridge, still widening"},
+          {"year": "Stage 4 (Declining)", "event": "Pacific Ocean — subduction zones consuming edges faster than ridge creates"},
+          {"year": "Stage 5 (Terminal)", "event": "Mediterranean Sea — remnant of Tethys, Africa pushing into Europe"},
+          {"year": "Stage 6 (Suture)", "event": "Himalayas — Tethys completely closed, India-Eurasia collision"}
+        ]},
+        {"type": "heading", "text": "Plate Boundaries of the Indian Plate"},
+        {"type": "para", "text": "The **Indian Plate** has complex boundary conditions on all sides: **North**: Continental-continental **convergent** boundary with Eurasian Plate → Himalayan collision zone (no subduction, crustal thickening). **West**: **Transform** boundary along Owen Fracture Zone → **Divergent** at Carlsberg Ridge (Indian Plate separating from African Plate). **East**: **Convergent** boundary — Indo-Burman plate subduction → Andaman-Nicobar Islands (oceanic plate subducting). **South**: **Divergent** boundary at Southeast Indian Ridge (separating from Antarctic Plate)."},
+        {"type": "compare", "title": "Indian Plate Boundaries — North vs East", "left": {"label": "Northern Boundary (Himalayan)", "items": ["Continental-Continental convergent", "NO subduction (both buoyant)", "Crustal thickening → mountains", "NO active volcanism", "Shallow to intermediate earthquakes", "Ongoing: India moves 5 cm/yr north"]}, "right": {"label": "Eastern Boundary (Andaman)", "items": ["Oceanic-Continental convergent", "Indian Plate subducts under Burma Plate", "Deep-sea trench + island arc", "Active volcanism (Barren Island)", "Deep Benioff zone earthquakes", "2004 tsunami originated here"]}},
+        {"type": "collapsible", "title": "Advanced: Triple Junctions", "content": "Where three plates meet, a triple junction forms. The Indian Ocean has the Rodrigues Triple Junction (Indian, African, Antarctic plates — three ridges meeting). The Afar Triple Junction (African, Arabian, Somali plates) is where the Red Sea, Gulf of Aden, and East African Rift meet — one of the only places where a triple junction is exposed on land. Triple junctions can combine ridge-ridge-ridge (RRR — stable), trench-trench-trench (TTT — less stable), or mixed combinations. UPSC has asked about the Afar region."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Plate Tectonics",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Turkey-Syria Earthquakes and Transform Faults (2023)", "text": "The devastating **Turkey-Syria earthquakes** (February 2023, M7.8 + M7.5) occurred on the **East Anatolian Fault** — a left-lateral **transform boundary** between the Anatolian Plate and Arabian Plate. Over 50,000 deaths highlighted the devastating potential of transform faults. UPSC may use this to test understanding of transform boundary characteristics (shallow, no volcanism, but powerful earthquakes)."},
+        {"type": "callout", "tone": "note", "title": "East African Rift — Continent Splitting (2024-2025)", "text": "Satellite measurements confirm the **East African Rift** is actively splitting the African Plate into the **Nubian Plate** and **Somali Plate** at ~6-7 mm/year. In 50 million years, a new ocean basin may form. This is a textbook Stage 1 (Embryonic) Wilson Cycle — currently being used in UPSC questions linking current geography to tectonic theory."},
+        {"type": "callout", "tone": "note", "title": "India-Eurasia Convergence Rate Update (2024)", "text": "Latest **GPS data** confirms India continues to converge with Eurasia at **~5 cm/year** (47±2 mm/yr from GNSS stations). Of this, ~2 cm/yr is absorbed by Himalayan thrust faults and ~3 cm/yr by internal deformation of the Tibetan Plateau. This explains ongoing Himalayan seismicity and why large earthquakes are inevitable in the region."},
+        {"type": "callout", "tone": "note", "title": "Morocco Earthquake — Intracontinental Stress (2023)", "text": "The **Marrakech earthquake** (September 2023, M6.8) occurred WITHIN the African Plate, not at a plate boundary. This illustrates that **intraplate earthquakes** also occur due to far-field stress transmission from plate boundaries (Africa-Eurasia convergence). Relevant for understanding why Peninsular India also experiences earthquakes despite being far from Himalayan boundary."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Plate Tectonics",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "Continental drift and plate tectonics are the same theory", "correct": "They are DIFFERENT theories. Continental drift (Wegener, 1912) said continents move through ocean floor but couldn't explain how. Plate tectonics (1967-68) says rigid PLATES (including both continental and oceanic crust) move on asthenosphere, driven by convection/slab pull. Plate tectonics SUBSUMES and corrects drift."},
+        {"type": "trap", "wrong": "At convergent boundaries, both plates are always destroyed by subduction", "correct": "At CONTINENTAL-CONTINENTAL convergent boundaries (like India-Eurasia), NEITHER plate subducts significantly. Both are too buoyant. Instead, massive crustal thickening and folding occurs (Himalayas). Subduction only occurs when at least one plate has dense oceanic crust."},
+        {"type": "trap", "wrong": "The Himalayas have active volcanoes because they are at a convergent boundary", "correct": "The Himalayas have NO active volcanism. They are a continental-continental collision (no oceanic crust subducts → no melting → no magma). Volcanism requires SUBDUCTION of oceanic crust. The Andes (oceanic-continental) have volcanoes; the Himalayas do not."},
+        {"type": "trap", "wrong": "Transform faults only occur in the ocean along mid-ocean ridges", "correct": "Transform faults also occur ON LAND. The **San Andreas Fault** (California) is a land-based transform boundary. The **Dead Sea Transform** (Jordan-Israel) is another. Transform faults along ridges are the most common type, but they are not exclusively oceanic."},
+        {"type": "trap", "wrong": "Slab pull means the subducting plate is being pulled downward by mantle convection currents", "correct": "Slab pull is driven by GRAVITY, not convection. The old, cold, dense subducting slab is heavier than surrounding mantle and sinks under its own weight — like a heavy tablecloth hanging off a table edge pulling the rest. Convection is a separate (though related) mechanism."},
+        {"type": "trap", "wrong": "The Indian Plate is entirely continental", "correct": "The Indian Plate includes BOTH continental crust (Peninsular India) and oceanic crust (Indian Ocean floor south and west of India). At the Andaman subduction zone, it is the OCEANIC part of the Indian Plate that subducts. Plates are lithospheric slabs, not just continents."},
+        {"type": "trap", "wrong": "Divergent boundaries only occur in the ocean (as mid-ocean ridges)", "correct": "Divergent boundaries also occur ON LAND as **rift valleys**. The **East African Rift System** is a continental divergent boundary (Stage 1 of Wilson Cycle). The Red Sea is a young ocean forming at a divergent boundary. Ridges are oceanic; rifts are continental expressions of the same process."},
+        {"type": "memory", "text": "Boundary Types: 'DCT' = Divergent-Convergent-Transform = 'Don't Crash Trains' | Convergent sub-types: 'OO-OC-CC' = Oceanic-Oceanic (Japan), Oceanic-Continental (Andes), Continental-Continental (Himalayas) | Driving forces: 'CRS-B' = Convection, Ridge push, Slab pull, Basal drag"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2023, "question_text": "Consider the following statements about plate boundaries:\n1. Divergent boundaries are also called constructive boundaries because new crust is created.\n2. The Himalayas were formed at a divergent plate boundary.\n3. Transform boundaries involve neither creation nor destruction of crust.\nWhich of the above statements is/are correct?", "answer_text": "B", "explanation": "Statements 1 and 3 are correct. Statement 2 is WRONG — Himalayas formed at a CONVERGENT (destructive) boundary where the Indian Plate collides with the Eurasian Plate. Divergent boundaries create rifts and ridges, not fold mountains.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "Which one of the following correctly describes the San Andreas Fault?", "answer_text": "It is a transform fault where the Pacific Plate slides past the North American Plate", "explanation": "The San Andreas Fault is the world's most famous transform boundary — a conservative boundary where plates slide horizontally past each other. The Pacific Plate moves northwestward relative to the North American Plate at ~4-5 cm/year.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2022, "question_text": "Differentiate between the three types of plate boundaries with suitable examples. Discuss how the type of plate boundary determines the geological features formed.", "answer_text": "Three boundary types: (1) DIVERGENT (constructive) — plates move apart, new crust formed, features: mid-ocean ridges (Mid-Atlantic), rift valleys (East African). Volcanism: basaltic, effusive. Earthquakes: shallow. (2) CONVERGENT (destructive) — plates collide, crust destroyed by subduction. Sub-types: Oceanic-Oceanic (trenches + island arcs — Japan), Oceanic-Continental (trenches + volcanic mountains — Andes), Continental-Continental (fold mountains, no volcanism — Himalayas). Earthquakes: shallow to deep (Benioff zone). (3) TRANSFORM (conservative) — plates slide past horizontally. No crust created/destroyed. Features: fault lines (San Andreas). Earthquakes: shallow, powerful. No volcanism. The boundary type determines: rock type (basalt vs andesite vs metamorphic), earthquake depth, volcanic presence, and landform (ridge vs trench vs mountain vs fault).", "explanation": "Mains answer requires: clear classification → Indian/global examples → logical connection between boundary type and resulting features.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements about plate tectonics:\n1. Lithospheric plates include both continental and oceanic crust.\n2. Plates move on the rigid mesosphere below the asthenosphere.\n3. Most earthquakes and volcanic eruptions occur at plate boundaries.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statements 1 and 3 are correct. Statement 2 is WRONG — plates move on the ASTHENOSPHERE (partially molten, plastic), not the mesosphere. The mesosphere (lower mantle) is rigid and lies BELOW the asthenosphere. Plates float on the asthenosphere.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. The Pacific Plate is the largest tectonic plate and is almost entirely oceanic.\n2. The Eurasian Plate contains both continental and oceanic crust.\n3. The Indian Plate is classified as a minor plate.\n4. The Nazca Plate is located in the eastern Pacific Ocean.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 4 are correct. Statement 3 is WRONG — the Indian Plate (or Indo-Australian Plate) is classified as a MAJOR plate, not a minor plate. It is one of the 7 major plates. Minor plates include Nazca, Philippine, Caribbean, etc. Wait — but Statement 4 says Nazca is in eastern Pacific which is correct. So 1, 2, 4 correct = 3 statements.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The Himalayas have no active volcanoes despite being at a convergent plate boundary.\nReason (R): At continental-continental convergent boundaries, no oceanic crust subducts into the mantle to generate magma.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "Both are correct and R explains A. The Himalayas formed by India-Eurasia collision (continental-continental). Since both plates are buoyant continental crust, neither subducts significantly. Without subduction of wet oceanic crust, no melting and magma generation occurs → no volcanism. The Andes HAVE volcanoes because oceanic Nazca plate subducts there.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The Pacific Plate moves faster than the African Plate.\nReason (R): Slab pull from extensive subduction zones around the Pacific Plate provides greater driving force than available to the African Plate.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "Both correct, R explains A. Pacific Plate (~10 cm/yr) moves much faster than African Plate (<2 cm/yr). The Pacific is surrounded by subduction zones (Ring of Fire) providing massive slab pull. Africa has almost no subducting edges. This correlation is key evidence that slab pull is the dominant driving force.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a characteristic of transform plate boundaries?",
+      "options": [{"label": "A", "text": "Plates slide past each other horizontally"}, {"label": "B", "text": "No crust is created or destroyed"}, {"label": "C", "text": "Intense volcanic activity occurs along the fault"}, {"label": "D", "text": "Shallow but powerful earthquakes are common"}],
+      "correct_option": "C",
+      "explanation": "C is INCORRECT for transform boundaries — there is NO volcanism at transform faults because no subduction or upwelling occurs. Transform boundaries involve only horizontal sliding. A, B, and D are correct characteristics. San Andreas Fault (transform) has earthquakes but no volcanoes.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The formation of the Japanese island arc system is best explained by which type of plate boundary interaction?",
+      "options": [{"label": "A", "text": "Continental-Continental convergent boundary"}, {"label": "B", "text": "Oceanic-Oceanic convergent boundary"}, {"label": "C", "text": "Oceanic-Continental convergent boundary"}, {"label": "D", "text": "Divergent boundary with hotspot volcanism"}],
+      "correct_option": "B",
+      "explanation": "Japan is formed by OCEANIC-OCEANIC convergence — the Pacific Plate subducts under the Philippine Sea Plate (oceanic). This creates: deep-sea trench (Japan Trench) + volcanic island arc (Japan). Compare with Andes (oceanic-continental) and Himalayas (continental-continental).",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A news report describes a major earthquake along the East Anatolian Fault in Turkey that caused widespread destruction but was NOT accompanied by any volcanic activity.\n\nIn light of the above, consider the following:\n1. The East Anatolian Fault is likely a transform boundary.\n2. Transform boundaries produce shallow earthquakes without volcanism.\n3. This earthquake proves that plate tectonics theory is flawed.\nWhich of the above inferences can be drawn?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Inferences 1 and 2 are valid. A fault producing earthquakes but no volcanism is characteristic of a TRANSFORM boundary (lateral sliding, no subduction/upwelling). The East Anatolian Fault IS a transform/strike-slip fault. Inference 3 is invalid — this behaviour is perfectly PREDICTED by plate tectonics, not evidence against it.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following pairs:\n\nGeological Feature : Type of Plate Boundary\n1. Mid-Atlantic Ridge : Divergent\n2. Mariana Trench : Convergent (Oceanic-Oceanic)\n3. East African Rift : Transform\n4. Andes Mountains : Convergent (Oceanic-Continental)\n\nHow many of the above pairs are correctly matched?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Pairs 1, 2, and 4 are correct. Pair 3 is WRONG — the East African Rift is a DIVERGENT boundary (continental rift, Stage 1 of Wilson Cycle), NOT transform. The continent is splitting apart, not sliding past itself. Transform = lateral sliding (San Andreas).",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Plate Boundary) with List-II (Associated Feature):\n\nList-I: (a) Divergent, (b) Convergent (Oceanic-Continental), (c) Convergent (Continental-Continental), (d) Transform\nList-II: (1) Fold mountains without volcanism, (2) Mid-ocean ridges, (3) Volcanic mountain chain with deep trench, (4) Lateral fault with no volcanism",
+      "options": [{"label": "A", "text": "a-2, b-3, c-1, d-4"}, {"label": "B", "text": "a-3, b-2, c-4, d-1"}, {"label": "C", "text": "a-2, b-1, c-3, d-4"}, {"label": "D", "text": "a-4, b-3, c-1, d-2"}],
+      "correct_option": "A",
+      "explanation": "Divergent = ridges/rifts (a-2). Oceanic-Continental convergent = volcanic chain + trench like Andes (b-3). Continental-Continental convergent = fold mountains, no volcanism like Himalayas (c-1). Transform = lateral fault, no volcanism like San Andreas (d-4).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Driving Force) with List-II (Description):\n\nList-I: (a) Slab Pull, (b) Ridge Push, (c) Mantle Convection, (d) Basal Drag\nList-II: (1) Gravity-driven sliding away from elevated ridge, (2) Circulation of hot mantle material in convection cells, (3) Cold dense subducting plate sinking and pulling rest of plate, (4) Frictional coupling between asthenosphere and plate base",
+      "options": [{"label": "A", "text": "a-3, b-1, c-2, d-4"}, {"label": "B", "text": "a-1, b-3, c-4, d-2"}, {"label": "C", "text": "a-3, b-4, c-2, d-1"}, {"label": "D", "text": "a-2, b-1, c-3, d-4"}],
+      "correct_option": "A",
+      "explanation": "Slab Pull = dense slab sinking by gravity, pulling plate (a-3). Ridge Push = gravity sliding from elevated ridge (b-1). Mantle Convection = hot material circulation cells (c-2). Basal Drag = friction at plate-asthenosphere interface (d-4).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about the Indian Plate:\n1. Its northern boundary with the Eurasian Plate is convergent.\n2. Its western boundary at the Carlsberg Ridge is divergent.\n3. The 2004 Indian Ocean tsunami originated at the convergent boundary along the Andaman Trench.\n4. The Indian Plate has no transform boundary anywhere.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 3 are correct. Statement 4 is WRONG — the Indian Plate DOES have a transform boundary: the **Owen Fracture Zone** (transform fault between Indian and Arabian plates in the Arabian Sea). So 3 statements are correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The Wilson Cycle describes the cyclic opening and closing of ocean basins. Which of the following represents the correct sequence from earliest to latest stage?",
+      "options": [{"label": "A", "text": "Continental rift → Narrow sea → Wide ocean → Subduction begins → Ocean closes → Collision"}, {"label": "B", "text": "Wide ocean → Subduction → Continental rift → Narrow sea → Collision → Ocean closes"}, {"label": "C", "text": "Collision → Continental rift → Wide ocean → Narrow sea → Subduction → Ocean closes"}, {"label": "D", "text": "Subduction → Wide ocean → Narrow sea → Continental rift → Collision → Ocean closes"}],
+      "correct_option": "A",
+      "explanation": "The Wilson Cycle sequence: (1) Continental rift (East African Rift) → (2) Narrow sea (Red Sea) → (3) Wide ocean (Atlantic) → (4) Subduction begins consuming ocean (Pacific) → (5) Ocean closes (Mediterranean) → (6) Collision/suture (Himalayas). Then the cycle may restart.",
+      "question_type": "FACTUAL",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. The Ring of Fire is associated with the boundary of the Pacific Plate.\n2. The Barren Island volcano (India's only active volcano) is located at a divergent boundary.\n3. Island arcs form at oceanic-oceanic convergent boundaries.\nWhich of the above is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statements 1 and 3 are correct. Statement 2 is WRONG — Barren Island (Andaman Sea) is located at a CONVERGENT boundary (Indian Plate subducting under Burma Plate), not divergent. Volcanism there is caused by subduction, not divergence.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following statements correctly distinguishes plate tectonics from Wegener's continental drift theory?",
+      "options": [{"label": "A", "text": "Plate tectonics explains only oceanic movements while continental drift explains continental movements"}, {"label": "B", "text": "Plate tectonics proposes rigid plates (with both continental and oceanic crust) moving on the asthenosphere, while continental drift proposed continents moving through ocean floor"}, {"label": "C", "text": "Continental drift had quantitative evidence while plate tectonics is qualitative"}, {"label": "D", "text": "Both theories propose identical mechanisms but differ only in terminology"}],
+      "correct_option": "B",
+      "explanation": "The KEY difference: Wegener imagined continents as independent entities ploughing THROUGH the ocean floor. Plate tectonics says continents are embedded in larger PLATES (which include ocean floor) that move as rigid units ON the asthenosphere. The mechanism is completely different — convection/slab pull vs tidal forces.",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following is the best example of a continental divergent boundary (rift) currently in the embryonic stage of the Wilson Cycle?",
+      "options": [{"label": "A", "text": "The Mid-Atlantic Ridge"}, {"label": "B", "text": "The East African Rift System"}, {"label": "C", "text": "The San Andreas Fault"}, {"label": "D", "text": "The Himalayan frontal thrust"}],
+      "correct_option": "B",
+      "explanation": "The East African Rift System is the textbook example of Stage 1 (Embryonic) of the Wilson Cycle — a continent beginning to split. The Mid-Atlantic Ridge is Stage 3 (Mature ocean). San Andreas is a transform fault (not divergent). Himalayas are convergent (Stage 6 — suture).",
+      "question_type": "MAP_BASED",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

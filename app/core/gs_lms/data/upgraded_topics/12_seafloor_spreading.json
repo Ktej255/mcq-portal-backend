@@ -1,0 +1,274 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Seafloor Spreading and Ocean Floor Mapping. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Plate Tectonics)"
+  },
+  "title": "Seafloor Spreading and Ocean Floor Mapping",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.3,
+  "display_order": 12,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After Continental Drift (topic 11), the student learns how the 'missing mechanism' was provided by Hess's seafloor spreading hypothesis. This bridges the gap between Wegener's observation and full plate tectonics theory (topic 13).",
+  "concept_checklist": [
+    "Harry Hess proposed Seafloor Spreading (1962) — new oceanic crust forms at mid-ocean ridges and spreads outward.",
+    "Mechanism: mantle convection currents → magma upwells at ridges → solidifies into new basaltic crust → pushes older crust aside.",
+    "Evidence: symmetric magnetic stripes (Vine-Matthews-Morley, 1963) on either side of ridges record geomagnetic reversals.",
+    "Age of ocean floor increases with distance from ridge — youngest at ridge crest, oldest near continents (~200 Ma maximum).",
+    "Sediment thickness increases with distance from ridge (more time for accumulation on older crust).",
+    "Heat flow is highest at mid-ocean ridges (proximity to upwelling magma) and decreases away from ridges.",
+    "Ocean floor features: mid-ocean ridges, deep-sea trenches, abyssal plains, seamounts, guyots (flat-topped seamounts).",
+    "Oceanic crust is destroyed at subduction zones (trenches) — creating a conveyor belt system of creation and destruction.",
+    "Carlsberg Ridge in the Indian Ocean is the divergent boundary relevant to India's tectonic setting.",
+    "Maximum age of ocean floor (~200 Ma) vs continental rocks (4 Ga) — proves oceanic crust is continuously recycled."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Wegener said continents move but couldn't explain how. In 1962, Harry Hess solved the puzzle: the ocean floor itself is a giant conveyor belt. New crust is born at underwater mountain chains, spreads outward, and is swallowed back into the Earth at deep trenches. The continents don't plough through the ocean — they ride on it."},
+        {"type": "statgrid", "items": [
+          {"value": "1962", "label": "Year proposed (Hess)"},
+          {"value": "65,000 km", "label": "Total ridge length"},
+          {"value": "2-18 cm/yr", "label": "Spreading rate"},
+          {"value": "200 Ma", "label": "Max ocean floor age"}
+        ]},
+        {"type": "heading", "text": "Harry Hess's Hypothesis"},
+        {"type": "para", "text": "**Harry Hess** (Princeton geologist, 1962) proposed that **mid-ocean ridges** are sites where hot mantle material **upwells**, creating new oceanic crust. This new crust then **spreads laterally** away from the ridge, carrying the older crust with it — like two parallel conveyor belts moving in opposite directions. He called this process **'seafloor spreading'** (though he modestly termed his paper 'geopoetry' — an essay in speculation)."},
+        {"type": "para", "text": "The mechanism is driven by **mantle convection currents**: radioactive heat in the mantle creates convection cells. Where currents **rise** (diverge), they split and push the ocean floor apart — creating **ridges**. Where currents **descend** (converge), the ocean floor is pulled back down into the mantle — creating **trenches** (subduction zones). This provided the missing mechanism for continental drift."},
+        {"type": "analogy", "text": "Imagine a pot of thick soup heating on a stove. Hot soup rises in the centre (= ridge), flows outward along the surface (= spreading crust), cools, and sinks at the edges (= trench/subduction). The film that forms on the soup's surface is carried along by this circulation — that's essentially how oceanic crust behaves."},
+        {"type": "heading", "text": "Ocean Floor Features"},
+        {"type": "para", "text": "Understanding seafloor spreading requires knowing the major features of the ocean floor:"},
+        {"type": "points", "title": "Major Ocean Floor Features", "items": ["**Mid-Ocean Ridges** — continuous underwater mountain chains (~65,000 km total), sites of new crust formation; examples: Mid-Atlantic Ridge, East Pacific Rise, Carlsberg Ridge (Indian Ocean)", "**Deep-Sea Trenches** — narrow, deep depressions where oceanic crust subducts; deepest: Mariana Trench (11,034 m); others: Java Trench (Indian Ocean, 7,725 m)", "**Abyssal Plains** — vast flat areas of deep ocean floor (4,000-6,000 m depth), covered by fine sediments", "**Seamounts** — underwater volcanic mountains rising >1,000 m from seafloor but not reaching surface", "**Guyots** — flat-topped seamounts (formerly above sea level, eroded, then subsided below surface)", "**Continental Shelf** — shallow submerged extension of continent (0-200 m depth)"]},
+        {"type": "callout", "tone": "insight", "title": "Indian Ocean Context", "text": "The **Carlsberg Ridge** runs through the Indian Ocean (from Gulf of Aden to near the Rodrigues Triple Junction). It is where the Indian Plate and African Plate diverge. India's **National Institute of Oceanography (NIO, Goa)** and **National Centre for Polar and Ocean Research (NCPOR)** have conducted extensive surveys of this ridge and India's oceanic territory."},
+        {"type": "keyterms", "terms": [
+          {"term": "Mid-Ocean Ridge", "definition": "Underwater mountain chain where new oceanic crust is created by volcanic activity. ~65,000 km global network."},
+          {"term": "Seafloor Spreading", "definition": "Process of new oceanic crust forming at ridges and moving laterally away, proposed by Harry Hess (1962)."},
+          {"term": "Subduction Zone", "definition": "Region where oceanic crust descends (subducts) into the mantle at a trench; crust is destroyed here."},
+          {"term": "Magnetic Stripes", "definition": "Alternating bands of normal and reversed magnetism in ocean floor rocks, symmetric about ridges."},
+          {"term": "Guyot", "definition": "Flat-topped seamount. Was above sea level (wave-eroded flat), then subsided below surface."},
+          {"term": "Abyssal Plain", "definition": "Flat deep-ocean floor (4,000-6,000 m) covered in fine pelagic and terrigenous sediments."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Seafloor Spreading",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "4", "page_start": 44, "page_end": 48, "external_url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf", "text": "Chapter 4 'Distribution of Oceans and Continents' introduces seafloor spreading as the mechanism that vindicated continental drift and led to plate tectonics.", "key_facts": ["Hess proposed convection-driven spreading from mid-ocean ridges", "Magnetic anomalies provide strongest evidence", "Ocean floor age never exceeds ~200 Ma", "Ridges and trenches are paired features in the conveyor system"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 4"},
+        {"type": "points", "title": "Seafloor Spreading as per NCERT", "items": ["Mid-oceanic ridges are formed due to **volcanic eruptions** driven by convection currents", "Rocks equidistant from ridge crest show **remarkable similarities** in age and magnetic properties", "Ocean floor **nowhere exceeds 200 million years** in age — much younger than continental rocks (up to 3.2 billion years)", "Sediments on ocean floor are **thinner near ridges** and thicker farther away", "The concept explains why continents move WITHOUT having to plough through oceanic crust"]},
+        {"type": "para", "text": "NCERT emphasises that seafloor spreading provided the **mechanism** that Wegener lacked. The key insight: continents are NOT independent rafts moving through oceanic crust — they are **embedded in plates** that include both continental and oceanic portions. The oceanic part is continuously created at ridges and consumed at trenches."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC frequently tests: (1) Who proposed seafloor spreading (Hess, not Wegener), (2) What is the maximum age of ocean floor (~200 Ma) and why, (3) Magnetic stripes as evidence, (4) Why oceanic crust is younger than continental crust. All from NCERT Ch. 4."},
+        {"type": "para", "text": "NCERT also introduces the idea that seafloor spreading and subduction together explain why the **Earth does not expand** despite continuous crust creation — equal amounts are created at ridges and destroyed at trenches. The surface area remains constant (a key conceptual test point)."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Evidence, Paleomagnetism, and Ocean Floor Dynamics",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "The Five Lines of Evidence"},
+        {"type": "para", "text": "Hess's hypothesis was confirmed by multiple independent lines of evidence in the 1960s, transforming it from speculation to established science:"},
+        {"type": "points", "title": "Evidence for Seafloor Spreading", "items": ["**Magnetic Stripes (Vine-Matthews-Morley, 1963)**: Ocean floor shows alternating bands of normal and reversed magnetic polarity, perfectly SYMMETRIC about ridge axes. As new lava erupts and cools, iron minerals align with Earth's current magnetic field. Since the field reverses periodically, this creates a 'barcode' recording spreading history.", "**Age of Ocean Floor**: Radiometric dating and deep-sea drilling (DSDP/ODP) confirmed that ocean floor age increases systematically from ridge (zero age) to continental margins (max ~200 Ma). No ocean floor is older than ~200 Ma.", "**Sediment Thickness**: Sediments are thinnest/absent at ridge crests (newly formed crust, no time for accumulation) and progressively thicker towards continents (older crust = more time for sediment deposition).", "**Heat Flow**: Thermal measurements show heat flow is HIGHEST at mid-ocean ridges (hot magma near surface) and decreases with distance. This confirms hot material rises at ridges.", "**Paleomagnetic Apparent Polar Wander**: If spreading occurs, rocks of same age on opposite sides of a ridge should show identical magnetic orientations — confirmed by ship-towed magnetometers in 1960s."]},
+        {"type": "heading", "text": "Vine-Matthews-Morley Hypothesis (1963)"},
+        {"type": "para", "text": "The **magnetic stripe pattern** was the 'smoking gun' for seafloor spreading. Fred Vine and Drummond Matthews (Cambridge, 1963) — independently also Lawrence Morley — proposed that the symmetric magnetic anomalies flanking mid-ocean ridges record periodic **reversals of Earth's magnetic field**. Each stripe = a period of normal or reversed polarity 'frozen' into the cooling basalt. The symmetry proves the crust formed at the ridge centre and moved equally outward on both sides."},
+        {"type": "diagram", "id": "magnetic-stripes-ridge", "caption": "Symmetric magnetic stripes on either side of a mid-ocean ridge. Normal polarity (dark) and reversed polarity (light) alternate, creating a mirror-image pattern about the ridge axis."},
+        {"type": "heading", "text": "Spreading Rates"},
+        {"type": "para", "text": "Spreading rates vary globally: **East Pacific Rise** — fast spreading (12-18 cm/year full rate), **Mid-Atlantic Ridge** — slow spreading (2-5 cm/year), **Carlsberg Ridge** (Indian Ocean) — intermediate (~2.5 cm/year). Faster spreading produces smoother, broader ridges; slower spreading produces rugged, narrow ridges with prominent rift valleys."},
+        {"type": "compare", "title": "Fast vs Slow Spreading Ridges", "left": {"label": "Fast Spreading (East Pacific Rise)", "items": ["Rate: 12-18 cm/year (full)", "Smooth, broad profile", "No central rift valley", "Higher magma supply", "Pacific Ocean"]}, "right": {"label": "Slow Spreading (Mid-Atlantic Ridge)", "items": ["Rate: 2-5 cm/year (full)", "Rugged, narrow profile", "Prominent central rift valley", "Lower magma supply", "Atlantic Ocean"]}},
+        {"type": "collapsible", "title": "Advanced: Deep-Sea Drilling Program (DSDP)", "content": "The Deep-Sea Drilling Program (1968-1983) and its successor Ocean Drilling Program (ODP) directly confirmed seafloor spreading by drilling into ocean floor at various distances from ridges. Core samples proved: (1) basement rock age increases with distance from ridge, (2) oldest sediment directly above basement also increases with distance, (3) the age pattern matches predictions from magnetic stripe analysis exactly. The ship JOIDES Resolution drilled over 2,000 holes worldwide."},
+        {"type": "callout", "tone": "insight", "title": "Why No Ocean Floor Older Than ~200 Ma?", "text": "If the Earth is 4.5 billion years old, why is the oldest ocean floor only ~200 million years? Because oceanic crust is CONTINUOUSLY RECYCLED by subduction. Old crust is destroyed at trenches. Continental crust, which is too buoyant to subduct, can survive for billions of years. This age limit is itself proof of seafloor spreading and subduction."},
+        {"type": "timeline", "title": "Key Discoveries in Seafloor Spreading", "items": [
+          {"year": "1947-53", "event": "Extensive ocean floor mapping reveals mid-ocean ridge system (Ewing, Heezen, Tharp)"},
+          {"year": "1960", "event": "Robert Dietz coins the term 'seafloor spreading' (published 1961)"},
+          {"year": "1962", "event": "Harry Hess publishes 'History of Ocean Basins' — proposes the convection-spreading hypothesis"},
+          {"year": "1963", "event": "Vine-Matthews-Morley explain symmetric magnetic stripes as proof of spreading"},
+          {"year": "1965", "event": "J. Tuzo Wilson proposes transform faults connecting ridge segments"},
+          {"year": "1968", "event": "Deep-Sea Drilling Program begins — directly confirms age predictions"},
+          {"year": "1977", "event": "Hydrothermal vents discovered at East Pacific Rise — confirming active volcanism at ridges"}
+        ]}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Seafloor Spreading",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "India's Deep Ocean Mission (2024-2025)", "text": "India's **Deep Ocean Mission** (Ministry of Earth Sciences, ₹4,077 crore) includes exploration of the **Carlsberg Ridge** and **Central Indian Ridge** for polymetallic nodules and hydrothermal vents. India's submersible **Matsya 6000** targets 6,000 m depth for resource mapping. Understanding ridge systems and seafloor spreading is essential context for this mission — linking physical geography to GS-III (Science & Technology)."},
+        {"type": "callout", "tone": "note", "title": "Critical Mineral Exploration on Ocean Floor (2025)", "text": "India secured exploration rights for **polymetallic sulphides** near the Carlsberg Ridge through the **International Seabed Authority (ISA)**. These mineral deposits form at hydrothermal vents on mid-ocean ridges — a direct consequence of seafloor spreading. Contains copper, zinc, gold, silver. UPSC may link this to India's critical mineral strategy."},
+        {"type": "callout", "tone": "note", "title": "Anomalous Spreading Rates Detected (2024)", "text": "Research in **Nature (2024)** revealed that seafloor spreading rates have **slowed by ~25%** over the past 19 million years globally. This may affect volcanic CO₂ emissions (ridges emit ~280 million tonnes CO₂/year), potentially contributing to long-term cooling trends. Climate-tectonics linkage is increasingly relevant for UPSC Environment questions."},
+        {"type": "callout", "tone": "note", "title": "Mapping the Arctic Mid-Ocean Ridge (2024)", "text": "International expeditions mapped the **Gakkel Ridge** (slowest spreading ridge, <1 cm/yr) beneath Arctic ice. Its ultra-slow spreading provides insights into how minimal magma supply creates unique vent ecosystems. Connects to UPSC themes of Arctic geopolitics and deep-sea biodiversity."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Seafloor Spreading",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "Seafloor spreading was proposed by Wegener", "correct": "Seafloor spreading was proposed by **Harry Hess** (1962), NOT Wegener. Wegener (1912) proposed continental drift but could not explain the mechanism. Hess provided that mechanism. Robert Dietz coined the actual term 'seafloor spreading' (1961)."},
+        {"type": "trap", "wrong": "Magnetic stripes prove that Earth's magnetic field is strongest at ridges", "correct": "Magnetic stripes do NOT measure field strength. They record alternating POLARITY (direction) of the magnetic field frozen into cooling lava. Normal polarity (aligns with today's field) alternates with reversed polarity. The pattern proves crust spreads symmetrically from ridges."},
+        {"type": "trap", "wrong": "Ocean floor is the oldest part of Earth's surface because it is deepest", "correct": "Ocean floor is actually the YOUNGEST part of Earth's surface (max ~200 Ma). Continental rocks reach 4+ billion years. Depth ≠ age. Ocean floor is young because it is continuously RECYCLED: created at ridges, destroyed at trenches. Continental crust survives because it's too buoyant to subduct."},
+        {"type": "trap", "wrong": "Sediment is thickest at mid-ocean ridges because ridges are volcanic", "correct": "Sediment is THINNEST (or absent) at ridges because the crust there is NEWLY FORMED — no time for accumulation. Sediment thickness INCREASES with distance from the ridge (older crust = more time for deposition). Volcanics produce ROCK, not sediment."},
+        {"type": "trap", "wrong": "Seafloor spreading means the Earth is continuously expanding", "correct": "The Earth does NOT expand. Crust created at ridges is EXACTLY balanced by crust destroyed at subduction zones (trenches). The system is a conveyor belt, not an inflation. Earth's surface area remains constant."},
+        {"type": "trap", "wrong": "Guyots are underwater volcanoes that never reached the surface", "correct": "Guyots are flat-topped seamounts that WERE once above sea level (their flat tops were carved by wave erosion). They later SUBSIDED below the surface as the plate they sit on moved away from the ridge and cooled (thermal subsidence). Their flat tops are the evidence of former emergence."},
+        {"type": "trap", "wrong": "The Carlsberg Ridge is located in the Atlantic Ocean", "correct": "The Carlsberg Ridge is in the **Indian Ocean** (not Atlantic). It runs from the Gulf of Aden to the Rodrigues Triple Junction, separating the Indian and African plates. The MID-ATLANTIC Ridge is in the Atlantic. This geographical confusion is commonly tested."},
+        {"type": "memory", "text": "HESS = His Essay Showed Spreading (1962) | Evidence: 'My Age Shows Heat Perfectly' = Magnetic stripes, Age pattern, Sediment thickness, Heat flow, Paleomagnetism | VINE-MATTHEWS = Vindication of Magnetic Anomalies Through Their Theory of Horizontal Extension, Westward and Symmetrical"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2022, "question_text": "Consider the following statements regarding seafloor spreading:\n1. It was proposed by Harry Hess in 1962.\n2. The oldest oceanic crust is found near mid-ocean ridges.\n3. Symmetric magnetic anomalies on either side of ridges support the theory.\nWhich of the above statements is/are correct?", "answer_text": "B", "explanation": "Statements 1 and 3 are correct. Statement 2 is WRONG — the YOUNGEST crust is found at ridges (newly formed). The OLDEST oceanic crust is found near continental margins, farthest from ridges.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2018, "question_text": "Which of the following provides the most compelling evidence for seafloor spreading?", "answer_text": "Symmetric magnetic anomalies (stripes) on either side of mid-ocean ridges", "explanation": "The Vine-Matthews-Morley hypothesis (1963) showed that alternating magnetic stripes, symmetric about ridge axes, record geomagnetic reversals frozen in cooling lava — proving that crust forms at the ridge and moves outward equally on both sides.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2019, "question_text": "Explain the concept of seafloor spreading. How does it validate Wegener's Continental Drift Theory and contribute to the theory of Plate Tectonics?", "answer_text": "Seafloor spreading (Hess, 1962) proposes that new oceanic crust forms at mid-ocean ridges from upwelling magma, spreads laterally, and is consumed at subduction zones. Evidence: magnetic stripes (Vine-Matthews), increasing age/sediment thickness from ridge, high heat flow at ridges. It validates Wegener by providing the MECHANISM he lacked — continents don't plough through ocean floor; they are carried passively by spreading plates. It contributes to plate tectonics by showing that the ocean floor is an active conveyor belt (creation + destruction), establishing that plates move as rigid units, and explaining why oceanic crust is never older than ~200 Ma.", "explanation": "Mains answer must connect three theories: Drift → Spreading → Plate Tectonics, showing how each built on the previous.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding seafloor spreading:\n1. New oceanic crust is formed at mid-ocean ridges by volcanic activity.\n2. Oceanic crust is destroyed at deep-sea trenches through subduction.\n3. Seafloor spreading causes the Earth to continuously expand in size.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct — crust is created at ridges and destroyed at trenches. Statement 3 is WRONG — Earth does NOT expand. Crust creation at ridges is balanced by crust destruction at trenches. The surface area remains constant.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Heat flow is highest at mid-ocean ridges.\n2. Sediment thickness is greatest at ridge crests.\n3. The age of ocean floor increases with distance from the ridge.\n4. Magnetic stripe patterns are symmetric about the ridge axis.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 3, and 4 are correct. Statement 2 is WRONG — sediment is THINNEST at ridge crests (newly formed crust = no time for accumulation). Sediment thickness increases AWAY from ridges. This reversal trap is frequently tested.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): No part of the ocean floor is older than approximately 200 million years.\nReason (R): Oceanic crust is continuously created at mid-ocean ridges and destroyed at subduction zones.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "Both A and R are correct, and R correctly explains A. The maximum age of ~200 Ma is BECAUSE oceanic crust is recycled — created at ridges, moved outward, and eventually subducted at trenches. The conveyor belt cycle takes ~200 Ma maximum before destruction.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Guyots have flat tops despite being underwater volcanic mountains.\nReason (R): Guyots were once above sea level where wave action eroded their peaks flat, before they subsided below the surface.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "Both statements are correct and R explains A. Guyots formed as volcanic islands above sea level, had their tops flattened by wave erosion, then subsided as the plate moved away from the hot ridge and cooled (thermal contraction + plate movement). The flat top is fossil evidence of former emergence.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a correct evidence for seafloor spreading?",
+      "options": [{"label": "A", "text": "Symmetric magnetic anomalies about ridge axis"}, {"label": "B", "text": "Increasing sediment thickness towards ridges"}, {"label": "C", "text": "Increasing age of ocean floor away from ridges"}, {"label": "D", "text": "Higher heat flow at mid-ocean ridges"}],
+      "correct_option": "B",
+      "explanation": "B is the INCORRECT statement — sediment thickness INCREASES AWAY from ridges (not towards). Near ridges, crust is young with little time for sediment accumulation. A, C, and D are all valid evidence for seafloor spreading.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The Vine-Matthews-Morley hypothesis (1963) explains which phenomenon?",
+      "options": [{"label": "A", "text": "The formation of deep-sea trenches at convergent margins"}, {"label": "B", "text": "The symmetric pattern of magnetic anomalies on either side of mid-ocean ridges"}, {"label": "C", "text": "The mechanism of mantle convection driving plate movement"}, {"label": "D", "text": "The formation of transform faults connecting ridge segments"}],
+      "correct_option": "B",
+      "explanation": "Vine-Matthews-Morley (1963) specifically explained the SYMMETRIC MAGNETIC STRIPES flanking mid-ocean ridges. They proposed that as new lava erupts at ridges and cools, it records the current magnetic polarity. Since the field reverses periodically, alternating normal/reversed stripes are created, symmetric about the ridge. Transform faults were Wilson (1965).",
+      "question_type": "FACTUAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A scientific expedition drills into the ocean floor at three locations: Site A (at a mid-ocean ridge crest), Site B (500 km from ridge), Site C (2000 km from ridge, near a continent).\n\nIn light of seafloor spreading theory, consider the following:\n1. Site A will have the youngest basement rock.\n2. Site C will have the thickest sediment cover.\n3. Site B will have higher heat flow than Site C.\nWhich of the above inferences can be drawn?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are valid inferences from seafloor spreading: (1) Ridge crest = newly formed crust = youngest; (2) Site C is oldest and farthest = most time for sediment = thickest; (3) Heat flow decreases with distance from ridge as crust cools, so B (closer) has more heat than C (farther).",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A news report states that India has secured exploration rights for polymetallic sulphide deposits near the Carlsberg Ridge in the Indian Ocean.\n\nIn light of the above, consider the following:\n1. The Carlsberg Ridge is a divergent plate boundary where new oceanic crust is formed.\n2. Polymetallic sulphides form at hydrothermal vents associated with volcanic activity at ridges.\n3. India's exploration contradicts its commitment to deep-sea environmental protection.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are factually correct — Carlsberg Ridge IS a divergent boundary, and polymetallic sulphides DO form at hydrothermal vents on ridges. Statement 3 is an unjustified inference — exploration does not inherently contradict environmental protection; the ISA framework allows exploration with environmental safeguards.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Ocean Floor Feature) with List-II (Characteristic):\n\nList-I: (a) Mid-Ocean Ridge, (b) Deep-Sea Trench, (c) Abyssal Plain, (d) Guyot\nList-II: (1) Flat-topped submerged seamount, (2) Site of new crust creation, (3) Flat, sediment-covered deep ocean floor, (4) Site of crust destruction by subduction",
+      "options": [{"label": "A", "text": "a-2, b-4, c-3, d-1"}, {"label": "B", "text": "a-4, b-2, c-1, d-3"}, {"label": "C", "text": "a-2, b-3, c-4, d-1"}, {"label": "D", "text": "a-1, b-4, c-3, d-2"}],
+      "correct_option": "A",
+      "explanation": "Mid-Ocean Ridge = crust creation (divergent, a-2). Deep-Sea Trench = crust destruction/subduction (b-4). Abyssal Plain = flat sediment-covered deep floor (c-3). Guyot = flat-topped submerged seamount (d-1).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Evidence) with List-II (What it proves about seafloor spreading):\n\nList-I: (a) Magnetic stripes, (b) Increasing ocean floor age from ridge, (c) Thin sediment at ridge, (d) High heat flow at ridge\nList-II: (1) Hot material rises at ridge, (2) Crust forms at ridge and moves outward, (3) Newly formed crust has no time for sediment accumulation, (4) Geomagnetic reversals recorded in spreading crust",
+      "options": [{"label": "A", "text": "a-4, b-2, c-3, d-1"}, {"label": "B", "text": "a-2, b-4, c-1, d-3"}, {"label": "C", "text": "a-4, b-3, c-2, d-1"}, {"label": "D", "text": "a-1, b-2, c-4, d-3"}],
+      "correct_option": "A",
+      "explanation": "Magnetic stripes = reversals recorded in cooling lava (a-4). Increasing age from ridge = crust forms at ridge, older farther away (b-2). Thin sediment at ridge = new crust, no time (c-3). High heat flow = hot magma upwelling (d-1).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about the Mid-Atlantic Ridge:\n1. It is a slow-spreading ridge with a prominent central rift valley.\n2. Iceland is located directly on the Mid-Atlantic Ridge.\n3. The ridge is perfectly straight from north to south without any offsets.\n4. It separates the American plates from the Eurasian and African plates.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 4 are correct. Statement 3 is WRONG — the Mid-Atlantic Ridge is offset by numerous TRANSFORM FAULTS (e.g., Romanche Fracture Zone), giving it a zigzag pattern, not a straight line. Transform faults are a key feature of all ridges.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following correctly explains why continental crust can be billions of years old while oceanic crust is never older than ~200 million years?",
+      "options": [{"label": "A", "text": "Continental crust formed first during Earth's formation, while oceanic crust formed later"}, {"label": "B", "text": "Continental crust is too buoyant to subduct, while oceanic crust is continuously recycled through subduction"}, {"label": "C", "text": "Oceanic crust erodes faster than continental crust due to ocean currents"}, {"label": "D", "text": "Continental crust is protected by the atmosphere while oceanic crust is exposed to corrosive seawater"}],
+      "correct_option": "B",
+      "explanation": "The correct answer is BUOYANCY. Continental crust (density ~2.7) is too light to be pulled into the mantle at subduction zones, so it survives and accumulates age. Oceanic crust (density ~3.0) is dense enough to subduct, so it is continuously created and destroyed — recycled every ~200 Ma maximum.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. The Carlsberg Ridge is located in the Indian Ocean between the Indian Plate and the African Plate.\n2. The Java Trench is the deepest point in the Indian Ocean.\n3. India's Deep Ocean Mission aims to explore polymetallic nodules in the deep sea.\nWhich of the above is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. Carlsberg Ridge separates Indian and African plates in the Indian Ocean. Java Trench (Sunda Trench, 7,725 m) is the deepest point in the Indian Ocean. India's Deep Ocean Mission (₹4,077 crore) targets polymetallic nodule exploration among other objectives.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about Harry Hess and his contribution:\n1. Hess was a British geologist who proposed seafloor spreading based on theoretical calculations.\n2. Hess proposed that mantle convection currents drive the spreading process.\n3. Hess called his original paper 'geopoetry' indicating it was speculative.\nWhich of the above is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statement 1 is WRONG — Hess was an AMERICAN geologist (Princeton University), not British. His work was based on WWII sonar data from the Pacific, not purely theoretical. Statements 2 and 3 are correct — he invoked mantle convection and modestly termed his paper 'an essay in geopoetry'.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following correctly describes the relationship between mid-ocean ridges and deep-sea trenches in the context of seafloor spreading?",
+      "options": [{"label": "A", "text": "Ridges and trenches are both sites of crust creation at different ocean depths"}, {"label": "B", "text": "Ridges are sites of crust creation while trenches are sites of crust destruction, forming a balanced conveyor system"}, {"label": "C", "text": "Trenches form first, and ridges develop later as a compensating mechanism"}, {"label": "D", "text": "Ridges produce continental crust while trenches consume oceanic crust"}],
+      "correct_option": "B",
+      "explanation": "The correct relationship: ridges CREATE oceanic crust (divergent, upwelling magma) while trenches DESTROY it (convergent, subduction). Together they form a balanced system — no net expansion of Earth. Option D is wrong because ridges produce OCEANIC (basaltic) crust, not continental crust.",
+      "question_type": "MAP_BASED",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Continental Drift Theory. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Plate Tectonics)"
+  },
+  "title": "Continental Drift Theory — Wegener's Hypothesis",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.2,
+  "display_order": 11,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After understanding Earth's internal structure (topics 7-10), the student must learn the historical hypothesis of continental drift before studying seafloor spreading and plate tectonics. Wegener's theory is the intellectual precursor to modern plate tectonics.",
+  "concept_checklist": [
+    "Alfred Wegener proposed Continental Drift in 1912; published 'The Origin of Continents and Oceans' (1915).",
+    "Pangaea (all lands) broke into Laurasia (north) and Gondwanaland (south) separated by Tethys Sea.",
+    "Jigsaw fit: coastlines of South America and Africa match almost perfectly (especially continental shelves).",
+    "Fossil evidence: Mesosaurus (freshwater reptile in Brazil + South Africa), Glossopteris (fern in all Gondwana continents), Lystrosaurus (in India, Antarctica, South Africa).",
+    "Geological evidence: matching rock formations, mountain chains, and mineral deposits across continents (Appalachians–Caledonian belt).",
+    "Paleoclimatic evidence: Gondwana glaciation — tillites in India (Talchir), South Africa, South America, Australia, Antarctica despite current tropical positions.",
+    "India's Gondwana formations: coal deposits (Permian-Carboniferous age) in Peninsular India are Gondwana sediments.",
+    "Main limitation: Wegener could not explain the driving force/mechanism for continental movement (proposed tidal force and pole-fleeing force — both too weak).",
+    "Theory was rejected by geophysicists (Harold Jeffreys) but later vindicated by seafloor spreading (1960s)."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Look at a world map. Now mentally push South America towards Africa. They fit like jigsaw pieces. In 1912, a German meteorologist named Alfred Wegener dared to suggest this wasn't coincidence — that all continents were once joined in a single supercontinent. He was ridiculed for decades. Yet today, his core idea is established science."},
+        {"type": "statgrid", "items": [
+          {"value": "1912", "label": "Year proposed"},
+          {"value": "Pangaea", "label": "Supercontinent name"},
+          {"value": "200 Ma", "label": "Pangaea breakup began"},
+          {"value": "6", "label": "Lines of evidence"}
+        ]},
+        {"type": "heading", "text": "The Hypothesis"},
+        {"type": "para", "text": "**Alfred Wegener** (1880-1930), a German meteorologist and polar researcher, proposed the **Continental Drift Theory** in 1912. He argued that all present-day continents were once joined together in a single supercontinent called **Pangaea** (Greek: 'all lands'), surrounded by a single ocean called **Panthalassa**. Around **200 million years ago**, Pangaea began to break apart, and the fragments (continents) 'drifted' to their present positions."},
+        {"type": "para", "text": "Wegener proposed that Pangaea first split into two large landmasses: **Laurasia** (Northern — North America, Europe, Asia) and **Gondwanaland** (Southern — South America, Africa, India, Australia, Antarctica), separated by a shallow sea called the **Tethys Sea**. These further fragmented into today's continents."},
+        {"type": "analogy", "text": "Imagine tearing a newspaper page in half. If the torn edges match AND the printed lines of text continue across both pieces, you can be sure they were once joined. Wegener's evidence worked the same way — matching coastlines (edges) AND matching geological features (printed text)."},
+        {"type": "heading", "text": "The Evidence — Six Pillars"},
+        {"type": "para", "text": "Wegener marshalled evidence from multiple disciplines. His genius was in **synthesizing** observations that specialists in each field had noticed but never connected:"},
+        {"type": "points", "title": "1. Jigsaw Fit (Geometric)", "items": ["The **eastern coast of South America** and **western coast of Africa** fit together almost perfectly", "The fit is even better when **continental shelves** (not coastlines) are matched — Bullard's computer fit (1965) showed <50 km gaps", "Similar fits: Madagascar into Mozambique, India into Antarctica-Australia"]},
+        {"type": "points", "title": "2. Fossil Evidence (Biological)", "items": ["**Mesosaurus** — freshwater reptile found ONLY in Brazil and South Africa; it could not have swum across the Atlantic", "**Glossopteris** — seed fern fossils in India, Australia, South Africa, South America, Antarctica (all Gondwana)", "**Lystrosaurus** — land reptile in India, Antarctica, and South Africa; could not have crossed oceans", "**Cynognathus** — land reptile in South America and Africa"]},
+        {"type": "points", "title": "3. Geological Evidence (Rock Matching)", "items": ["**Appalachian Mountains** (eastern USA) align perfectly with **Caledonian Mountains** (Scotland/Scandinavia) when continents are reassembled", "Similar **diamond-bearing kimberlite pipes** in Brazil and western Africa", "Matching **Precambrian basement rocks** across South America–Africa"]},
+        {"type": "heading", "text": "Paleoclimatic Evidence — The Strongest Pillar"},
+        {"type": "para", "text": "Perhaps the most compelling evidence came from **ancient climate indicators** found in wrong places. **Tillites** (glacial deposits) of **Permo-Carboniferous age** (~300 Ma) are found in India (**Talchir Boulder Bed**), South Africa, South America, Australia, and Antarctica — all suggesting these landmasses were near the South Pole together. Meanwhile, coal deposits (tropical swamp forests) of the same age exist in North America and Europe, which were then near the equator."},
+        {"type": "callout", "tone": "insight", "title": "Indian Context: Gondwana Formations", "text": "India's **Gondwana coal deposits** (found in Damodar, Mahanadi, Godavari valleys) are of Permian-Carboniferous age and match coal seams in Australia, Antarctica, and South Africa. The **Talchir tillites** in Odisha prove India was once glaciated near the South Pole — impossible at its current 8-37°N latitude. This is direct evidence of drift."},
+        {"type": "keyterms", "terms": [
+          {"term": "Pangaea", "definition": "Supercontinent comprising all landmasses; existed ~335-200 Ma. Greek: 'all lands'."},
+          {"term": "Panthalassa", "definition": "The single global ocean surrounding Pangaea."},
+          {"term": "Laurasia", "definition": "Northern supercontinent after Pangaea split: North America + Eurasia."},
+          {"term": "Gondwanaland", "definition": "Southern supercontinent: South America + Africa + India + Australia + Antarctica. Named after Gond tribe region in India."},
+          {"term": "Tethys Sea", "definition": "Shallow sea between Laurasia and Gondwanaland; its sediments now form the Himalayas and Alps."},
+          {"term": "Tillites", "definition": "Glacial deposits (rocks embedded in clay by glaciers). Found in India's Talchir formation."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Continental Drift",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "4", "page_start": 38, "page_end": 44, "external_url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf", "text": "Chapter 4 'Distribution of Oceans and Continents' covers Wegener's Continental Drift Theory, its evidence, and the transition to plate tectonics.", "key_facts": ["Wegener used jigsaw fit, fossil, geological, and paleoclimatic evidence", "Gondwanaland included India, named after Gond region", "Tethys Sea deposits formed Himalayan sedimentary rocks", "Theory rejected due to lack of mechanism"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 4"},
+        {"type": "points", "title": "Evidence as per NCERT", "items": ["**Matching coastlines**: South America and Africa continental shelf fit", "**Rocks of same age** across oceans: Belt of ancient rocks in Brazil matches with Western Africa", "**Tillite deposits**: Evidence of glaciation found in India (Talchir), Africa, Falkland Islands, Madagascar, Antarctica, Australia — all Gondwana fragments", "**Placer deposits**: Gold-bearing placer deposits in Ghana coast matched with source rocks in Brazil (no source rock in Ghana itself)", "**Fossil distribution**: Lemurs in India and Madagascar; Glossopteris across southern continents"]},
+        {"type": "para", "text": "NCERT specifically mentions that **Gondwanaland is named after the Gond tribe region** in central India (Nagpur area). The **Gondwana system of sediments** in India (coal-bearing strata of Damodar valley) gives the supercontinent its name. This India-centric naming is a frequent UPSC question."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC loves: (1) Why was Wegener's theory rejected? (force mechanism), (2) Naming origin of Gondwanaland, (3) Which fossil proves land connection between which continents, (4) Paleoclimatic evidence from India (Talchir tillites). All from NCERT Ch. 4."},
+        {"type": "para", "text": "NCERT also notes that Wegener suggested **tidal force** (due to Moon/Sun attraction) and **pole-fleeing force** (centrifugal force due to Earth's rotation) as driving mechanisms. Both were calculated to be **far too weak** to move entire continents through oceanic crust — this was the fatal weakness that led to rejection."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Drift Evidence and Modern Validation",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Why Was the Theory Rejected?"},
+        {"type": "para", "text": "Despite compelling **descriptive evidence**, Wegener's theory was rejected by the mainstream geological community (especially **Harold Jeffreys**, 1924) because he could not explain the **mechanism** — the force that could move entire continents. He proposed two forces: **tidal force** (gravitational pull of Moon and Sun) and **pole-fleeing force** (centrifugal force from Earth's rotation). Physicists calculated both were **10⁻⁷ times too weak** to plough continents through rigid oceanic crust."},
+        {"type": "para", "text": "Wegener also made a critical conceptual error: he imagined continents **ploughing through** oceanic crust like ships through ice. The correct picture — that continents and oceans move **together** as part of rigid plates floating on the asthenosphere — only emerged with **plate tectonics** in the 1960s."},
+        {"type": "callout", "tone": "why", "title": "Why This Matters", "text": "UPSC Mains frequently asks 'critically evaluate Wegener's theory' or 'discuss limitations of Continental Drift.' The answer must distinguish between (a) evidence — which was largely correct and (b) mechanism — which was wrong. The theory was rejected for the right scientific reason (no viable force), yet its observations were vindicated."},
+        {"type": "heading", "text": "Modern Vindication"},
+        {"type": "timeline", "title": "From Rejection to Acceptance", "items": [
+          {"year": "1912", "event": "Wegener presents Continental Drift hypothesis at Frankfurt Geological Association"},
+          {"year": "1915", "event": "Publication of 'Die Entstehung der Kontinente und Ozeane' (The Origin of Continents and Oceans)"},
+          {"year": "1924", "event": "Harold Jeffreys mathematically refutes proposed driving forces"},
+          {"year": "1930", "event": "Wegener dies on Greenland expedition; theory largely abandoned"},
+          {"year": "1937", "event": "Du Toit publishes 'Our Wandering Continents' — refines with Gondwana/Laurasia evidence"},
+          {"year": "1950s", "event": "Paleomagnetism studies show continents have moved relative to magnetic poles"},
+          {"year": "1962", "event": "Harry Hess proposes Seafloor Spreading — provides the missing mechanism"},
+          {"year": "1965", "event": "Bullard's computer fit confirms South America-Africa jigsaw with <50 km error"},
+          {"year": "1967-68", "event": "Plate Tectonics theory synthesised — vindicates Wegener's core observation"}
+        ]},
+        {"type": "heading", "text": "Paleomagnetic Evidence — The Turning Point"},
+        {"type": "para", "text": "In the 1950s, studies of **remanent magnetism** in ancient rocks showed that the **apparent polar wander paths** for different continents did not match — UNLESS the continents had moved relative to each other. This was the first **quantitative physical evidence** that continents had indeed drifted. It revived interest in Wegener's ideas and paved the way for Hess's seafloor spreading hypothesis."},
+        {"type": "collapsible", "title": "Advanced: Gondwana Reconstruction and India", "content": "Gondwanaland comprised South America, Africa, Madagascar, India, Sri Lanka, Antarctica, and Australia. India occupied a position adjacent to East Africa and Madagascar (~140 Ma), then rifted away and drifted rapidly northward (fastest continental plate movement ever recorded: 15-20 cm/year). The Deccan Traps (66 Ma) may be linked to the Réunion hotspot that India passed over during its northward journey. India's Gondwana formations (Talchir, Barakar, Raniganj series) provide the stratigraphic record of this shared history."},
+        {"type": "compare", "title": "Wegener's Theory vs Modern Plate Tectonics", "left": {"label": "Wegener (1912)", "items": ["Continents plough through oceanic crust", "Driving force: tidal + pole-fleeing", "Sialic continents move over Sima", "No role for ocean floor", "Qualitative/descriptive evidence"]}, "right": {"label": "Plate Tectonics (1967)", "items": ["Continents move WITH plates (rigid lithosphere)", "Driving force: mantle convection, ridge push, slab pull", "Plates include both continental and oceanic crust", "Ocean floor actively created and destroyed", "Quantitative: GPS, paleomagnetism, seismology"]}}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Continental Drift",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "GPS Confirmation of Ongoing Drift (2024)", "text": "Modern **GPS measurements** confirm that continents continue to move today: Africa and South America separate at ~2.5 cm/year, Australia moves north at ~7 cm/year, and India pushes into Eurasia at ~5 cm/year. These rates match paleomagnetic predictions, providing ultimate vindication of Wegener's core hypothesis — continents DO drift."},
+        {"type": "callout", "tone": "note", "title": "Amasia — The Next Supercontinent (2023-2024)", "text": "Research published in **Nature Geoscience** predicts that the next supercontinent, **Amasia**, will form in ~200-300 million years as the Pacific Ocean closes. The Americas will merge with Asia. This cyclical pattern (**Wilson Cycle**) of supercontinent assembly and breakup validates the long-term implications of continental drift theory."},
+        {"type": "callout", "tone": "note", "title": "India's Gondwana Coal — Energy Significance (2025)", "text": "India's **thermal coal reserves** (~319 billion tonnes) are overwhelmingly **Gondwana coal** (Permian age, formed when India was near the South Pole). The Ministry of Coal's coal blocks in Jharkhand, Chhattisgarh, Odisha, and West Bengal are all in **Gondwana sedimentary basins**. Understanding continental drift directly explains India's energy resource distribution — a GS-III linkage."},
+        {"type": "callout", "tone": "note", "title": "Antarctic Fossils and Climate Change (2024)", "text": "Discovery of new **Glossopteris and temperate forest fossils** in Antarctica supports Gondwana reconstruction and highlights how dramatically continental positions affect global climate. This connects to UPSC Environment syllabus: past warm climates when Antarctica was at lower latitudes vs current glaciation at the pole."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Continental Drift",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "Wegener proposed plate tectonics", "correct": "Wegener proposed CONTINENTAL DRIFT (1912) — the idea that continents move. Plate Tectonics (1967) is a later, more comprehensive theory that explains HOW they move (rigid plates on asthenosphere). Wegener never knew about plates, mid-ocean ridges, or subduction."},
+        {"type": "trap", "wrong": "Pangaea broke directly into today's seven continents", "correct": "Pangaea first split into TWO supercontinents — Laurasia (north) and Gondwanaland (south) — separated by the Tethys Sea. These then further fragmented into modern continents over ~200 million years."},
+        {"type": "trap", "wrong": "Gondwanaland is named after a place in Africa since most evidence comes from there", "correct": "Gondwanaland is named after the GOND TRIBE region of central India (near Nagpur). The Gondwana System of coal-bearing sedimentary rocks in India's Damodar Valley gave the supercontinent its name. Indian connection!"},
+        {"type": "trap", "wrong": "Mesosaurus could not swim across the Atlantic because it was a land animal", "correct": "Mesosaurus was actually a FRESHWATER reptile (aquatic). The key point is it lived in FRESH WATER, not salt water — so it could not have crossed the SALINE Atlantic Ocean. The distinction is freshwater vs marine, not land vs water."},
+        {"type": "trap", "wrong": "Continental Drift was rejected because the evidence was wrong", "correct": "The EVIDENCE was largely correct (coastline fit, fossils, rocks, paleoclimate). The theory was rejected because the MECHANISM was wrong — Wegener could not explain what force moves continents. The observations were vindicated; the physics was inadequate."},
+        {"type": "trap", "wrong": "Wegener's theory explains why the Himalayas formed", "correct": "Wegener's original theory did NOT specifically explain mountain building through collision. The collision model (India crashing into Eurasia) came from PLATE TECTONICS. Wegener focused on continental separation, not convergence mechanics."},
+        {"type": "trap", "wrong": "Tillites in India prove that India had ice ages in its current tropical position", "correct": "Tillites prove India was GLACIATED — but at a different latitude. India was near the SOUTH POLE during Permo-Carboniferous period (~300 Ma) as part of Gondwanaland. The glaciation was normal for that polar position; what needs explaining is why tillites are NOW in tropical India — because India DRIFTED northward."},
+        {"type": "memory", "text": "PANGAEA = Pan (all) + Gaea (Earth/land) | GONDWANA = Gond tribe (India) + wana (land) | Fossils: 'My Grandmother Loves Cookies' = Mesosaurus, Glossopteris, Lystrosaurus, Cynognathus | Evidence: 'Jigsaw Fossils Glue Plates Carefully' = Jigsaw fit, Fossils, Geological, Paleoclimatic, Coal deposits"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "Consider the following statements regarding Wegener's Continental Drift Theory:\n1. Pangaea broke into Laurasia and Gondwanaland.\n2. Wegener explained continental drift through mantle convection currents.\n3. Fossil evidence of Mesosaurus was found in both South America and South Africa.\nWhich of the above statements is/are correct?", "answer_text": "B", "explanation": "Statements 1 and 3 are correct. Statement 2 is wrong — Wegener proposed tidal force and pole-fleeing force as mechanisms, NOT mantle convection. Mantle convection was proposed by Arthur Holmes (1930s) and later became part of plate tectonics.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2019, "question_text": "The Gondwana system of sediments in India is famous for its rich deposits of:", "answer_text": "Coal", "explanation": "Gondwana formations in India (Damodar, Mahanadi, Godavari basins) are famous for coal deposits of Permian-Carboniferous age. About 98% of India's total coal reserves come from Gondwana sedimentary formations.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2020, "question_text": "Critically evaluate Wegener's Continental Drift Theory. What were the evidences in its favour and why was it rejected?", "answer_text": "Wegener's theory (1912) proposed that all continents were once united as Pangaea and drifted apart. Evidence: (1) Jigsaw fit of S. America–Africa, (2) Fossil distribution — Mesosaurus, Glossopteris, Lystrosaurus across separated continents, (3) Geological matching — Appalachian-Caledonian mountain belt, (4) Paleoclimatic — tillites in India/Africa/S. America suggesting polar position, (5) Gondwana coal deposits at same latitudes. Rejected because: mechanism inadequate — tidal and pole-fleeing forces too weak by factor of 10⁷. Imagined continents ploughing through ocean floor (physically impossible). Vindicated later when seafloor spreading (1962) and plate tectonics (1967) provided correct mechanism.", "explanation": "Classic UPSC Mains answer: present evidence systematically, then explain WHY rejected (mechanism, not evidence), then mention later vindication.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding Wegener's Continental Drift Theory:\n1. All continents were once part of a single landmass called Pangaea.\n2. Pangaea was surrounded by a super-ocean called Panthalassa.\n3. Wegener proposed mantle convection as the driving mechanism for drift.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct — Pangaea (all lands) surrounded by Panthalassa (all seas). Statement 3 is wrong — Wegener proposed TIDAL FORCE and POLE-FLEEING FORCE, not mantle convection. Mantle convection was proposed by Arthur Holmes in the 1930s as a possible mechanism.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Laurasia comprised South America, Africa, India, Australia, and Antarctica.\n2. Gondwanaland comprised North America, Europe, and Asia.\n3. The Tethys Sea separated Laurasia from Gondwanaland.\n4. Gondwanaland is named after a region in central India.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "B",
+      "explanation": "Statements 1 and 2 are REVERSED and therefore wrong. Laurasia = North America + Europe + Asia (northern). Gondwanaland = South America + Africa + India + Australia + Antarctica (southern). Statements 3 and 4 are correct — Tethys separated them, and Gondwanaland is named after the Gond tribe region near Nagpur, India. So only 2 are correct.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Tillites of Permo-Carboniferous age found in India's Talchir region provide evidence for continental drift.\nReason (R): Glacial deposits in tropical India indicate that India was once located near the South Pole as part of Gondwanaland.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "Both statements are correct. Tillites in Talchir (Odisha) ARE evidence for drift (A is correct). The reason these glacial deposits exist in tropical India IS that India was near the South Pole ~300 Ma ago as part of Gondwanaland (R correctly explains A). India later drifted to its current tropical position.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Wegener's Continental Drift Theory was rejected by the scientific community in the 1920s.\nReason (R): The fossil and geological evidence presented by Wegener was found to be fabricated.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — the theory WAS rejected in the 1920s (Harold Jeffreys led the opposition). R is incorrect — the evidence was NOT fabricated; it was genuine and later vindicated. The theory was rejected because the MECHANISM (driving force) was inadequate, not because the evidence was wrong.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following fossils is NOT correctly matched with its significance for Continental Drift?",
+      "options": [{"label": "A", "text": "Mesosaurus — freshwater reptile in South America and Africa, proving land connection"}, {"label": "B", "text": "Glossopteris — seed fern found across all Gondwana continents"}, {"label": "C", "text": "Lystrosaurus — marine fish found in all oceans, proving ocean connectivity"}, {"label": "D", "text": "Cynognathus — land reptile found in South America and Africa"}],
+      "correct_option": "C",
+      "explanation": "C is incorrect — Lystrosaurus was a LAND REPTILE (not a marine fish) found in India, Antarctica, and South Africa. It could not have crossed oceans, proving these landmasses were connected. A, B, and D are correctly matched.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is the most significant reason why Wegener's Continental Drift Theory was initially rejected?",
+      "options": [{"label": "A", "text": "The jigsaw fit between continents was not convincing"}, {"label": "B", "text": "No plausible mechanism could explain the force needed to move continents"}, {"label": "C", "text": "Fossil evidence was limited to only one continent"}, {"label": "D", "text": "Paleoclimatic data contradicted the theory"}],
+      "correct_option": "B",
+      "explanation": "The theory was rejected primarily because Wegener could not provide a viable MECHANISM. The forces he proposed (tidal force, pole-fleeing force) were calculated to be far too weak. The evidence (jigsaw fit, fossils, paleoclimate) was actually compelling and later vindicated. The physics was the problem, not the observations.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A newspaper reports discovery of identical 250-million-year-old rock formations on the coasts of Brazil and West Africa.\n\nIn light of the above passage, consider the following:\n1. This supports the hypothesis that South America and Africa were once joined.\n2. The rock formations must have been transported by ocean currents.\n3. This type of evidence was used by Wegener to support Continental Drift.\nWhich of the above inferences can be drawn?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Inference 1 is valid — matching ancient rocks across ocean suggest former connection. Inference 3 is valid — geological matching was one of Wegener's key lines of evidence. Inference 2 is INVALID — solid rock formations cannot be 'transported by ocean currents'; they form in situ. Their matching across continents proves the continents moved, not the rocks.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following pairs:\n\nFossil : Continents where found\n1. Mesosaurus : South America and Africa\n2. Glossopteris : India and North America\n3. Lystrosaurus : India, Antarctica, South Africa\n4. Cynognathus : South America and Africa\n\nHow many of the above pairs are correctly matched?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Pairs 1, 3, and 4 are correct. Pair 2 is WRONG — Glossopteris was found in GONDWANA continents (India, Australia, South Africa, South America, Antarctica), NOT in North America. North America was part of Laurasia, not Gondwanaland. So 3 pairs are correct.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Evidence Type) with List-II (Specific Example):\n\nList-I: (a) Jigsaw Fit, (b) Fossil Evidence, (c) Geological Evidence, (d) Paleoclimatic Evidence\nList-II: (1) Tillites in Talchir, Odisha, (2) Coastlines of South America and Africa, (3) Mesosaurus in Brazil and South Africa, (4) Appalachian-Caledonian mountain chain",
+      "options": [{"label": "A", "text": "a-2, b-3, c-4, d-1"}, {"label": "B", "text": "a-3, b-2, c-1, d-4"}, {"label": "C", "text": "a-2, b-4, c-3, d-1"}, {"label": "D", "text": "a-1, b-3, c-2, d-4"}],
+      "correct_option": "A",
+      "explanation": "Jigsaw Fit = coastline matching (a-2). Fossil Evidence = Mesosaurus distribution (b-3). Geological Evidence = matching mountain chains like Appalachian-Caledonian (c-4). Paleoclimatic Evidence = tillites/glacial deposits in now-tropical regions (d-1).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Scientist) with List-II (Contribution to Continental Drift/Plate Tectonics):\n\nList-I: (a) Alfred Wegener, (b) Arthur Holmes, (c) Harry Hess, (d) Alexander Du Toit\nList-II: (1) Proposed mantle convection currents as mechanism, (2) Proposed Continental Drift theory, (3) Proposed Seafloor Spreading, (4) Refined evidence for Gondwanaland-Laurasia split",
+      "options": [{"label": "A", "text": "a-2, b-1, c-3, d-4"}, {"label": "B", "text": "a-1, b-2, c-4, d-3"}, {"label": "C", "text": "a-2, b-3, c-1, d-4"}, {"label": "D", "text": "a-3, b-1, c-2, d-4"}],
+      "correct_option": "A",
+      "explanation": "Wegener = Continental Drift (1912). Holmes = mantle convection hypothesis (1930s). Hess = Seafloor Spreading (1962). Du Toit = 'Our Wandering Continents' (1937), refined Gondwana/Laurasia evidence.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about India's Gondwana formations:\n1. About 98% of India's coal reserves are found in Gondwana sedimentary basins.\n2. Gondwana formations are primarily found in the river valleys of Peninsular India.\n3. The Gondwana system is named after the Gond tribe region of central India.\n4. Gondwana coal deposits are of Tertiary age (~50 million years old).\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 3 are correct. Statement 4 is WRONG — Gondwana coal is of PERMIAN-CARBONIFEROUS age (~300-250 million years old), not Tertiary. Tertiary coal is found in northeast India (Assam, Meghalaya) and is much younger. This age distinction is crucial for UPSC.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following was NOT a force/mechanism proposed by Wegener to explain continental drift?",
+      "options": [{"label": "A", "text": "Tidal force due to gravitational attraction of the Moon and Sun"}, {"label": "B", "text": "Pole-fleeing force (Polflucht) due to Earth's rotation"}, {"label": "C", "text": "Mantle convection currents driven by radioactive heat"}, {"label": "D", "text": "Differential gravitational attraction on continental masses"}],
+      "correct_option": "C",
+      "explanation": "Mantle convection was proposed by ARTHUR HOLMES (1930s), not Wegener. Wegener proposed only tidal force (A) and pole-fleeing/Polflucht force (B). Option D refers to gravity-based differential attraction which is related to pole-fleeing. The convection mechanism trap is commonly tested.",
+      "question_type": "FACTUAL",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The placer deposits of gold found along the coast of Ghana (West Africa) are significant evidence for continental drift because:",
+      "options": [{"label": "A", "text": "They prove that gold can be transported across oceans by tidal forces"}, {"label": "B", "text": "The source rocks for these gold deposits are found in Brazil, not in Ghana"}, {"label": "C", "text": "Similar gold deposits are found in India, proving Gondwana connection"}, {"label": "D", "text": "Ghana was once part of the Pacific plate"}],
+      "correct_option": "B",
+      "explanation": "Gold placer deposits in Ghana have NO source rocks in Ghana — the source rocks are found in BRAZIL. This means Brazil and Ghana were once adjacent, with rivers carrying gold from Brazilian highlands to what is now the Ghanaian coast. This is NCERT-specific evidence for drift.",
+      "question_type": "FACTUAL",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Wegener was a geologist by training who studied rock formations to develop his theory.\n2. The fit between South America and Africa is best demonstrated using continental shelf edges rather than coastlines.\n3. Bullard's computer fit (1965) showed less than 50 km mismatch between the continents.\nWhich of the above is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statement 1 is WRONG — Wegener was a METEOROLOGIST and polar researcher, not a geologist. This was actually one reason geologists dismissed him — he was an 'outsider.' Statements 2 and 3 are correct — continental shelf edges give a better fit than coastlines, and Bullard confirmed this digitally.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following correctly describes the significance of Glossopteris flora distribution for Continental Drift theory?",
+      "options": [{"label": "A", "text": "It is a marine organism found in all ocean basins, proving oceans were once connected"}, {"label": "B", "text": "It is a cold-climate seed fern found across India, Australia, South Africa, South America and Antarctica, proving these landmasses were once joined near the South Pole"}, {"label": "C", "text": "It is a tropical plant found only in India and Africa, proving these two were connected"}, {"label": "D", "text": "It is a deep-sea fossil found in Himalayan rocks, proving mountains were once under the sea"}],
+      "correct_option": "B",
+      "explanation": "Glossopteris was a SEED FERN adapted to cold/temperate climates, found across ALL Gondwana continents (India, Australia, South Africa, South America, Antarctica). Its distribution proves these landmasses were joined together near the South Pole during Permian times. It is NOT marine (A wrong), NOT tropical (C wrong), and NOT a deep-sea fossil (D wrong).",
+      "question_type": "MAP_BASED",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}
