@@ -1,0 +1,279 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Mass Wasting and Landslides. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), Mains/Prelims PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Geomorphic Processes > Mass Movements)"
+  },
+  "title": "Mass Wasting and Landslides",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 20,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "Mass wasting logically follows weathering: weathering breaks rock in situ into loose regolith, and mass wasting is the gravity-driven downslope transfer of that weathered material. It precedes the study of fluvial and other erosional/transport agents because mass movement delivers debris to streams that then carry it away. Placing it here completes the 'weathering → mass wasting → erosion-transport' sequence of geomorphic processes.",
+  "concept_checklist": [
+    "Mass wasting (mass movement) is the downslope movement of rock, regolith, and soil under the direct influence of gravity, without a transporting medium like running water, wind, or ice.",
+    "Weathering prepares the material and gravity provides the driving force; mass wasting is therefore distinct from erosion, which requires a mobile transporting agent.",
+    "Slope stability is governed by the balance between the driving force (shear stress, from gravity acting on slope material) and the resisting force (shear strength, from cohesion and friction).",
+    "The angle of repose is the maximum slope angle at which loose, dry granular material remains stable; exceeding it triggers movement.",
+    "Water is the single most important triggering factor: it adds weight, reduces cohesion, lubricates failure surfaces, and raises pore water pressure that pushes grains apart.",
+    "Mass movements are classified by mechanism and speed: slow flows (creep, solifluction), rapid flows (earthflow, mudflow, debris flow), slides (slump, rockslide, debris slide), and falls (rockfall, topple).",
+    "Creep is the slowest, near-imperceptible movement, evidenced by tilted poles, bent tree trunks, and curved fence lines; solifluction is creep of water-saturated soil in periglacial/tundra regions.",
+    "A landslide is a rapid slide of a coherent mass of rock or soil along a defined failure plane; a slump rotates along a curved (concave) surface, while a translational slide moves along a planar surface.",
+    "In India, the Himalayas and the Western Ghats are the most landslide-prone regions, with monsoon rainfall, fragile young lithology, steep slopes, deforestation, and unplanned construction acting as key triggers.",
+    "Triggers and human causes include heavy/prolonged rainfall, earthquakes, undercutting of slopes by rivers or roads, deforestation, mining, and overloading of slopes by construction."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Every slope on Earth is a slow-motion battle between two forces: gravity pulling material down, and friction plus cohesion holding it in place. Most days, the holding force wins and nothing visibly happens — yet the hillside is still creeping downhill a few millimetres a year. Then one monsoon night the rain soaks in, the balance tips, and a quiet slope becomes a roaring wall of mud and rock. This is mass wasting, and in the Himalayas and Western Ghats it reshapes the land — and takes lives — every single year."},
+        {"type": "statgrid", "items": [
+          {"value": "Gravity", "label": "The only driving force"},
+          {"value": "Angle of repose", "label": "Stability threshold for loose material"},
+          {"value": "Water", "label": "Most common trigger"},
+          {"value": "12.6% of India", "label": "Area prone to landslides (NRSC)"}
+        ]},
+        {"type": "heading", "text": "What Is Mass Wasting?"},
+        {"type": "para", "text": "**Mass wasting** (also called **mass movement**) is the **downslope movement of rock, regolith, and soil under the direct influence of gravity**. The defining feature is that **no transporting agent** — no running water, wind, or glacial ice — is required to carry the material. Gravity alone does the work. This makes mass wasting fundamentally different from **erosion**, where a mobile medium picks up and transports debris. Mass wasting is the crucial link in the chain of geomorphic processes: **weathering** loosens the rock, **mass wasting** moves it downslope, and only then do rivers and other agents carry it away."},
+        {"type": "para", "text": "In India, the **Western Ghats** experience frequent debris flows and slumps during the southwest monsoon — the 2014 **Malin landslide** in Pune district, Maharashtra, buried an entire village after days of intense rain. The young, tectonically active **Himalayas** are the most landslide-prone region in the country, where steep slopes, fractured rock, and seasonal rains combine dangerously, as seen repeatedly in Uttarakhand, Himachal Pradesh, and the Northeast."},
+        {"type": "para", "text": "Movement need not be dramatic. On most Indian hill slopes the dominant process is **creep** — an almost imperceptible, centimetres-per-year shift of soil that bends tree trunks, tilts electric poles, and cracks retaining walls long before any visible collapse. Whether slow creep or a sudden **landslide**, the underlying physics is identical: gravity has overcome the slope's resistance."},
+        {"type": "analogy", "text": "Picture a book lying on a tilted table. Tilt gently and friction holds it — the slope is stable. Tilt past a critical angle and it suddenly slides off: that angle is the **angle of repose**. Now imagine pouring a little oil under the book (this is what rainwater does to a slope) — it slides at a far gentler tilt. Mass wasting is that book, and rain is the oil."},
+        {"type": "heading", "text": "The Driving Force vs the Resisting Force"},
+        {"type": "para", "text": "Slope stability is a tug-of-war. The **driving force** is **shear stress** — the component of gravity acting parallel to the slope, which increases as the slope gets steeper. The **resisting force** is **shear strength** — the internal resistance of the material, made up of **cohesion** (how well grains stick together) and **friction** between particles. When shear stress exceeds shear strength, the slope fails and material moves."},
+        {"type": "compare", "title": "Slow vs Rapid Mass Movements", "left": {"label": "Slow Movements", "items": ["Creep and solifluction", "Rates: mm to cm per year", "Often imperceptible to the eye", "Evidence: tilted poles, bent trees, curved fences", "Generally non-fatal but damage infrastructure over time"]}, "right": {"label": "Rapid Movements", "items": ["Landslides, slumps, rockfalls, debris/mud flows", "Rates: metres per second", "Sudden and often catastrophic", "Triggered by rain, earthquakes, undercutting", "Major cause of disaster fatalities in hill regions"]}},
+        {"type": "heading", "text": "Why Water Matters So Much"},
+        {"type": "para", "text": "Water is the single most important **trigger** of mass movements. It adds **weight** to the slope, it **reduces cohesion** between soil grains, it **lubricates** potential failure surfaces, and most importantly it raises **pore water pressure** — water filling the gaps between grains pushes them apart and reduces the friction holding the slope together. This is why the overwhelming majority of Indian landslides occur during or just after the **monsoon**."},
+        {"type": "callout", "tone": "insight", "title": "Key Insight", "text": "Mass wasting is the bridge between weathering and erosion. Without it, weathered debris would simply pile up where it formed. Mass wasting delivers that material to rivers, glaciers, and the sea, keeping the entire sediment-transport system moving. It is a process of **transfer**, not just destruction."},
+        {"type": "keyterms", "terms": [
+          {"term": "Creep", "definition": "The slowest mass movement — an imperceptible, **mm-to-cm per year** downslope shift of soil. Evidenced by **tilted poles and bent tree trunks**."},
+          {"term": "Solifluction", "definition": "Slow flow of **water-saturated soil** over a frozen subsoil, typical of **periglacial/tundra** regions during summer thaw."},
+          {"term": "Landslide", "definition": "Rapid downslope **slide of a coherent mass** of rock or soil along a defined **failure plane**."},
+          {"term": "Slump", "definition": "A landslide where material rotates and slides along a **curved (concave) failure surface**, leaving a crescent-shaped scar."},
+          {"term": "Debris flow / Mudflow", "definition": "Rapid downslope flow of **water-saturated debris (debris flow)** or fine, mostly clay-silt material (**mudflow**); fast and destructive."},
+          {"term": "Angle of repose", "definition": "The **maximum slope angle** at which loose, dry granular material remains stable; exceeding it triggers movement."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Mass Movements",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "6", "page_start": 50, "page_end": 57, "external_url": "https://ncert.nic.in/textbook/pdf/kegy106.pdf", "text": "Chapter 6 'Geomorphic Processes' covers weathering, mass movements (mass wasting), and erosion/deposition. Mass movements are presented as a distinct geomorphic process in which weathered material moves downslope under gravity without a transporting agent.", "key_facts": ["Mass movements move bulk of material downslope under gravity, NOT under a transporting medium", "Weathering is NOT a prerequisite but it aids mass movements", "Activated by water saturation, slope steepening, overloading, and removal of support", "NCERT classifies movements as: slow (creep, solifluction), rapid (earthflow, mudflow, debris avalanche), and landslides (slump, debris slide, rockslide, rockfall)"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 6"},
+        {"type": "points", "title": "What NCERT Says About Mass Movements", "items": ["Mass movements transfer the mass of rock debris **down the slopes under the direct influence of gravity**", "**No geomorphic agent** like running water, wind, or ice participates in the transport", "Weathering is **not a prerequisite** for mass movement, though weathered material moves more easily", "Mass movements are aided by **gravity** and **a weak/loose material base**"]},
+        {"type": "points", "title": "Factors That Activate Mass Movements (NCERT)", "items": ["Removal of support from below to materials above (undercutting by rivers, roads, waves)", "Increase in gradient and height of slopes", "Overloading through addition of material or water", "Overloading due to heavy rainfall and saturation", "Removal of material or vegetation cover that anchors slopes"]},
+        {"type": "para", "text": "NCERT groups mass movements into three categories by speed and mechanism: **slow movements** (**creep** of different materials, and **solifluction** — slow flow of water-saturated soil in cold regions), **rapid movements** (**earthflow, mudflow, and debris avalanche** — common in humid and steep, wet regions), and **landslides** (rapid, perceptible movements including **slump, debris slide, rockslide, and rockfall**)."},
+        {"type": "diagram", "id": "mass-movement-classification", "caption": "NCERT classification of mass movements: slow (creep, solifluction) → rapid flows (earthflow, mudflow, debris avalanche) → landslides (slump, debris slide, rockslide, rockfall), arranged by increasing speed and visibility."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC repeatedly tests three NCERT ideas: (1) that mass movement needs **NO transporting agent** (only gravity), (2) the **difference between creep, flow, slide and fall**, and (3) the **activating factors** (water saturation, slope undercutting, overloading). Memorise the three-fold slow/rapid/landslide classification straight from Chapter 6."},
+        {"type": "para", "text": "NCERT carefully distinguishes mass movements from **erosion**: in erosion, a **mobile agent** (water, wind, glacier) detaches and carries material away, whereas in mass movement the material simply **moves under its own weight**. This distinction is the single most commonly tested conceptual point from the chapter."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Slope Stability and Landslides",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "The Physics of Slope Failure"},
+        {"type": "para", "text": "Slope stability is quantified by the **Factor of Safety (FoS)** — the ratio of **resisting force (shear strength)** to **driving force (shear stress)**. When **FoS > 1** the slope is stable; when **FoS falls to 1 or below**, failure occurs. Anything that **increases shear stress** or **reduces shear strength** drives the slope toward failure."},
+        {"type": "compare", "title": "Driving Forces vs Resisting Forces", "left": {"label": "Driving Forces (promote failure)", "items": ["Shear stress: gravity component along the slope", "Steeper slope angle → larger driving component", "Overloading (construction, water, debris)", "High pore water pressure pushing grains apart", "Seismic shaking adding dynamic stress"]}, "right": {"label": "Resisting Forces (promote stability)", "items": ["Shear strength = cohesion + frictional resistance", "Cohesion from clay, roots, cementation", "Friction between interlocking grains", "Vegetation cover anchoring the soil", "Low water content keeping grains in contact"]}},
+        {"type": "heading", "text": "The Key Causal Factors"},
+        {"type": "points", "title": "What Reduces Slope Stability", "items": ["**Pore water pressure**: rain-saturated pores push grains apart, slashing friction — the dominant trigger of monsoon landslides", "**Slope angle**: as the angle approaches and exceeds the angle of repose, the gravitational shear stress overcomes friction", "**Lithology and structure**: weak, fractured, or clay-rich rock and bedding/joint planes dipping parallel to the slope create ready-made failure surfaces", "**Deforestation**: loss of root cohesion and increased infiltration sharply raise landslide risk", "**Seismicity**: earthquakes add dynamic shear stress and can liquefy saturated material, triggering co-seismic landslides", "**Slope undercutting**: rivers, road-cutting, and quarrying remove toe support and steepen slopes"]},
+        {"type": "callout", "tone": "why", "title": "Why Roads Trigger Himalayan Landslides", "text": "Hill road construction cuts into the slope, removing the **toe support** that buttressed the material above, and steepens the cut face beyond its stable angle. Unmanaged drainage then channels water into the loosened debris. This is why landslides cluster along highways like NH-58 and the Char Dham road corridor in Uttarakhand."},
+        {"type": "heading", "text": "Classification — The Varnes System"},
+        {"type": "para", "text": "The internationally standard **Varnes classification** (1978, updated by Cruden & Varnes 1996) classifies mass movements by **type of movement** and **type of material**. The five movement types are: **Falls** (free-fall of rock/debris, e.g. rockfall), **Topples** (forward rotation of a block about a pivot), **Slides** (movement along a defined surface — **rotational** like a slump, or **translational** along a planar surface), **Spreads** (lateral extension, often by liquefaction of a weak layer), and **Flows** (fluid-like movement — debris flow, mudflow, earthflow). Material is classed as **rock**, **debris** (coarse), or **earth/soil** (fine)."},
+        {"type": "compare", "title": "Slump (Rotational) vs Translational Slide", "left": {"label": "Slump — Rotational Slide", "items": ["Moves along a **curved, concave** surface", "Mass rotates backward; top tilts back", "Leaves a **crescent-shaped scarp**", "Common in thick, homogeneous soil/regolith", "Produces a hummocky toe"]}, "right": {"label": "Translational Slide", "items": ["Moves along a **planar (flat)** surface", "Slides along bedding/joint/weak layer", "No rotation — block moves intact", "Common where weak plane parallels slope", "Can travel long distances rapidly"]}},
+        {"type": "timeline", "title": "Major Indian Landslide & Subsidence Events", "items": [
+          {"year": "1998", "event": "Malpa landslide (Uttarakhand): rockfalls on the Kailash-Mansarovar route killed ~205 people — one of India's deadliest"},
+          {"year": "2013", "event": "Kedarnath disaster (Uttarakhand): cloudburst-triggered debris flows and flooding caused massive loss of life"},
+          {"year": "2014", "event": "Malin landslide (Pune, Maharashtra): heavy rain on a deforested Western Ghats slope buried a village, ~150 dead"},
+          {"year": "2023", "event": "Joshimath (Uttarakhand) land subsidence: progressive sinking and cracking forced large-scale evacuation"},
+          {"year": "2024", "event": "Wayanad (Kerala) landslides: monsoon-triggered debris flows in the Western Ghats killed hundreds at Mundakkai-Chooralmala"}
+        ]},
+        {"type": "heading", "text": "India Context — Where and Why"},
+        {"type": "para", "text": "About **12.6% of India's land area (excluding snow cover)** is prone to landslides as mapped by ISRO's **National Remote Sensing Centre (NRSC)**. The most vulnerable regions are the **Himalayas** (young, rising, seismically active fold mountains with weak, fractured rock) and the **Western Ghats and Nilgiris** (steep escarpments hit by intense orographic monsoon rainfall). The **Northeastern hills** and parts of the **Eastern Ghats** are also affected. Human pressures — **deforestation, terrace farming, hydropower and road projects, mining, and unplanned hill-town expansion** — sharply amplify the natural susceptibility."},
+        {"type": "collapsible", "title": "Advanced: Why the Himalayas Are So Landslide-Prone", "content": "Four factors combine: (1) The Himalayas are **young fold mountains** still rising due to the ongoing India-Eurasia collision, producing steep, immature slopes. (2) The rock is **highly fractured and faulted** from tectonic stress, with abundant pre-existing failure planes. (3) The region receives **intense monsoon and cloudburst rainfall**, saturating slopes rapidly. (4) High **seismicity** (Seismic Zones IV and V) regularly delivers the shaking that triggers co-seismic landslides. Add human activity — road cutting, deforestation, and dam reservoirs — and the result is the highest landslide density in India."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Landslides in India",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2025)"},
+        {"type": "callout", "tone": "note", "title": "Wayanad Landslides, Kerala (July 2024)", "text": "Catastrophic monsoon-triggered **debris flows** struck **Mundakkai and Chooralmala** in Wayanad district of the Western Ghats, killing hundreds and burying settlements. Extremely heavy, concentrated rainfall on steep, deforested slopes with loose regolith was the immediate cause. The disaster reignited debate over the **Gadgil and Kasturirangan committee reports** on protecting ecologically sensitive zones of the Western Ghats. A strong Mains case study on rainfall-triggered landslides and land-use regulation."},
+        {"type": "callout", "tone": "note", "title": "Joshimath Land Subsidence (Jan 2023)", "text": "The Himalayan town of **Joshimath (Uttarakhand)** experienced progressive **land subsidence** — widespread cracks in houses and roads forced evacuation of hundreds of families. Causes cited include the town being built on old **landslide debris**, slope overloading from unplanned construction, poor drainage, and the influence of nearby infrastructure projects. It is a textbook example of **anthropogenic destabilisation** of a fragile Himalayan slope."},
+        {"type": "callout", "tone": "note", "title": "Landslide Atlas of India — ISRO NRSC (2023)", "text": "ISRO's **National Remote Sensing Centre (NRSC)** released the **Landslide Atlas of India**, mapping landslide-prone districts and ranking the most vulnerable. It found the highest landslide exposure in Himalayan and Western Ghats districts (with Rudraprayag and Tehri Garhwal in Uttarakhand ranking among the highest). The atlas is a key tool for the **National Landslide Susceptibility Mapping (NLSM)** programme. Useful for factual Prelims questions on agencies and mapping."},
+        {"type": "callout", "tone": "note", "title": "NDMA Guidelines & Early Warning Systems", "text": "The **National Disaster Management Authority (NDMA)** has issued **National Landslide Risk Management** guidelines emphasising hazard zonation, slope stabilisation, and community awareness. The **Geological Survey of India (GSI)** is the nodal agency for landslide studies and runs a **Landslide Early Warning System (LEWS)** piloted in regions like the Nilgiris and Darjeeling, using rainfall thresholds to issue alerts."},
+        {"type": "callout", "tone": "note", "title": "Himalayan Vulnerability & Climate Change", "text": "Increasingly **erratic and intense rainfall** (cloudbursts), **glacial retreat**, and the proliferation of **hydropower and Char Dham road projects** are raising landslide risk across the Himalayas. Events like the **2021 Chamoli flash flood** and recurring blockages on Himalayan highways link climate change, fragile geology, and development pressure — a recurring GS-1 and GS-3 (disaster management) theme."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Mass Wasting",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "Mass wasting and erosion are the same process", "correct": "They are DIFFERENT. Mass wasting moves material downslope under gravity alone, with NO transporting agent. Erosion requires a mobile agent (running water, wind, glacier) to detach and carry material away. Mass wasting often FEEDS erosion."},
+        {"type": "trap", "wrong": "Weathering must occur before any mass movement can happen", "correct": "Weathering AIDS mass movement by producing loose material, but it is NOT a prerequisite. Fresh, unweathered rock can fail directly as a rockfall or rockslide along joints and fractures."},
+        {"type": "trap", "wrong": "Creep is too slow to cause any real damage", "correct": "Creep is the SLOWEST movement (mm-cm per year) but it steadily tilts poles, bends tree trunks, cracks walls and roads, and ruptures pipelines over time. It is geomorphically and economically significant, just not sudden."},
+        {"type": "trap", "wrong": "A slump and a translational slide move the same way", "correct": "A SLUMP rotates along a CURVED (concave) failure surface, tilting backward and leaving a crescent scarp. A TRANSLATIONAL slide moves along a PLANAR surface (e.g. a bedding plane) without rotation."},
+        {"type": "trap", "wrong": "Adding water always strengthens a slope by binding the soil", "correct": "A little moisture can add apparent cohesion (like in damp sand), but SATURATION does the opposite — it raises pore water pressure, reduces friction, adds weight, and lubricates failure planes, sharply REDUCING stability. Most landslides are rain-triggered."},
+        {"type": "trap", "wrong": "Solifluction can occur in any climate", "correct": "Solifluction is specifically the slow flow of WATER-SATURATED soil over a FROZEN subsoil (permafrost). It is characteristic of PERIGLACIAL/tundra and high-altitude regions during the summer thaw, not of warm humid lowlands."},
+        {"type": "trap", "wrong": "Deforestation has no effect on landslides since trees are light", "correct": "Deforestation strongly INCREASES landslide risk: roots provide cohesion and anchor the soil, and the canopy intercepts rain. Removing vegetation reduces root strength and raises infiltration — a key factor in the Malin (2014) and Wayanad (2024) disasters."},
+        {"type": "memory", "text": "Mass movement TYPES by speed: 'Creep Slowly, Flow Faster, Slide and Fall Fastest' (Creep/Solifluction → Earthflow/Mudflow/Debris flow → Slump/Rockslide/Rockfall). Triggers = 'WORST': Water, Overloading, Removal of support, Seismicity, Tree-loss (deforestation)."}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "Consider the following statements about mass movements (mass wasting):\n1. Mass movement requires a transporting agent such as running water or wind to carry the material downslope.\n2. Increase in pore water pressure during heavy rainfall reduces the stability of a slope.\n3. Creep is an example of an extremely slow mass movement.\nWhich of the above statements is/are correct?", "answer_text": "B", "explanation": "Statement 1 is INCORRECT — mass movement occurs under gravity alone, with NO transporting agent (that is what distinguishes it from erosion). Statement 2 is correct — saturation raises pore water pressure, pushing grains apart and reducing shear strength. Statement 3 is correct — creep is the slowest mass movement. Hence statements 2 and 3 are correct.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2019, "question_text": "The phenomenon of slow, water-saturated soil flowing over a frozen subsoil in cold/periglacial regions is known as:", "answer_text": "Solifluction", "explanation": "Solifluction is the slow downslope flow of water-saturated soil over an impermeable frozen layer (permafrost), characteristic of periglacial and tundra environments during summer thaw. It is a form of slow mass movement.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2023, "question_text": "Landslides are among the most damaging natural hazards in the Himalayan region and the Western Ghats. Discuss the causes of landslides in India and suggest measures for their mitigation.", "answer_text": "Causes: (a) Natural — steep slopes of young, rising and seismically active fold mountains (Himalayas), weak/fractured lithology, intense monsoon and cloudburst rainfall raising pore water pressure, and earthquakes adding dynamic shear stress. (b) Anthropogenic — deforestation (loss of root cohesion), road and hydropower construction undercutting slopes, mining, terrace farming, and unplanned hill-town expansion overloading slopes. Mitigation: hazard zonation and susceptibility mapping (NRSC Landslide Atlas, GSI), early warning systems based on rainfall thresholds, slope stabilisation (retaining walls, drainage, benching, bio-engineering with vegetation), afforestation, regulation of construction in ecologically sensitive zones (Gadgil/Kasturirangan recommendations), and community awareness as per NDMA guidelines.", "explanation": "Mains answer structure: classify causes into natural vs anthropogenic → give region-specific examples (Wayanad 2024, Malin 2014, Joshimath 2023) → structural and non-structural mitigation → institutional framework (GSI, NRSC, NDMA). Adding a map of vulnerable zones strengthens the answer.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements about mass wasting:\n1. It is the movement of material downslope under the direct influence of gravity.\n2. It requires running water, wind, or glacial ice as a transporting medium.\n3. Weathering is an absolute prerequisite for any mass movement to occur.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 only"}, {"label": "B", "text": "1 and 2 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — mass wasting is downslope movement under gravity. Statement 2 is WRONG — mass wasting needs NO transporting agent; that is precisely what separates it from erosion. Statement 3 is WRONG — weathering AIDS mass movement but is not a prerequisite, since fresh rock can fail directly (rockfall). Only statement 1 is correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements regarding slope stability:\n1. Shear stress is the driving force that promotes downslope movement.\n2. Shear strength is made up of cohesion and frictional resistance.\n3. A slope fails when shear strength exceeds shear stress.\n4. Increasing pore water pressure raises the shear strength of a slope.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "B",
+      "explanation": "Statements 1 and 2 are correct — shear stress drives failure, shear strength (cohesion + friction) resists it. Statement 3 is WRONG — a slope fails when shear STRESS exceeds shear STRENGTH (not the reverse). Statement 4 is WRONG — rising pore water pressure REDUCES shear strength by pushing grains apart. Only two statements are correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. In a slump, the material moves along a curved, concave failure surface and rotates backward.\n2. A translational slide moves along a planar surface such as a bedding or joint plane.\n3. Rockfall is an example of a slow mass movement.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — a slump is a rotational slide along a concave surface. Statement 2 is correct — translational slides move along planar surfaces. Statement 3 is WRONG — rockfall is one of the FASTEST (most rapid) movements, involving free fall of rock fragments. Hence statements 1 and 2 are correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about landslides in India:\n1. About 12.6% of India's land area (excluding snow-covered area) is prone to landslides as mapped by the NRSC.\n2. The Himalayas and the Western Ghats are the two most landslide-prone regions.\n3. The Geological Survey of India is the nodal agency for landslide studies in the country.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. The NRSC (ISRO) maps about 12.6% of India's non-snow area as landslide-prone. The Himalayas and Western Ghats (with the Nilgiris and Northeast) are the most vulnerable. The Geological Survey of India (GSI) is the official nodal agency for landslide hazard studies and the National Landslide Susceptibility Mapping programme.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following mass movements in order of INCREASING speed (slowest to fastest):\n1. Soil creep\n2. Rockfall\n3. Earthflow / mudflow\nSelect the correct sequence:",
+      "options": [{"label": "A", "text": "1 → 3 → 2"}, {"label": "B", "text": "2 → 3 → 1"}, {"label": "C", "text": "3 → 1 → 2"}, {"label": "D", "text": "1 → 2 → 3"}],
+      "correct_option": "A",
+      "explanation": "Creep is the slowest (mm-cm per year). Earthflow/mudflow is faster (a flowing, water-saturated mass moving at intermediate to high speed). Rockfall is the fastest, involving near free-fall of rock fragments at metres per second. The correct increasing order is Creep → Earthflow/Mudflow → Rockfall, i.e. 1 → 3 → 2.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following major Indian landslide/subsidence events. Arrange them in correct CHRONOLOGICAL order (earliest first):\n1. Malin landslide, Maharashtra\n2. Malpa landslide, Uttarakhand\n3. Wayanad landslides, Kerala\n4. Joshimath land subsidence, Uttarakhand\nSelect the correct sequence:",
+      "options": [{"label": "A", "text": "2 → 1 → 4 → 3"}, {"label": "B", "text": "1 → 2 → 3 → 4"}, {"label": "C", "text": "2 → 1 → 3 → 4"}, {"label": "D", "text": "1 → 2 → 4 → 3"}],
+      "correct_option": "A",
+      "explanation": "Malpa (1998) → Malin (2014) → Joshimath subsidence (Jan 2023) → Wayanad (July 2024). The correct chronological order is 2 → 1 → 4 → 3.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The majority of landslides in India occur during or just after the monsoon season.\nReason (R): Saturation of slope material raises pore water pressure, which reduces the shear strength of the slope.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — most Indian landslides are monsoon-triggered. R is correct AND is the precise mechanism — rain saturates the slope, pore water pressure rises, grains are pushed apart, friction and shear strength fall, and the slope fails. R fully explains A.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Deforestation on hill slopes increases the risk of landslides.\nReason (R): Tree roots provide cohesion that anchors the soil and the canopy intercepts rainfall, both of which are lost when forests are cleared.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — deforestation raises landslide risk (seen at Malin 2014 and Wayanad 2024). R is correct and is the correct explanation — roots add cohesion and anchor soil, while the canopy reduces the rain reaching the ground; removing forest cover loses both, raising infiltration and reducing slope strength.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A new road is cut horizontally into a steep Himalayan hillside, removing material from the base of the slope above. Which of the following best explains why this increases landslide risk?",
+      "options": [{"label": "A", "text": "Cutting the road removes the toe support and steepens the slope, increasing the driving shear stress"}, {"label": "B", "text": "The road surface absorbs sunlight and heats the rock, melting it"}, {"label": "C", "text": "Vehicles on the road add so much weight that the mountain compresses"}, {"label": "D", "text": "Roads always reduce rainfall over the slope, drying it out"}],
+      "correct_option": "A",
+      "explanation": "Option A is correct — undercutting removes the toe (base) support that buttressed the material above and steepens the cut face, increasing the gravitational shear stress relative to the slope's strength. B and C are physically implausible. D is false — roads with poor drainage tend to channel and concentrate water into the slope, worsening the risk, not drying it.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Why is loose, dry sand poured onto a flat surface unable to form a pile steeper than a certain fixed angle?",
+      "options": [{"label": "A", "text": "Because beyond the angle of repose, the gravitational shear stress exceeds the frictional resistance and grains slide down"}, {"label": "B", "text": "Because dry sand has very high cohesion that prevents stacking"}, {"label": "C", "text": "Because air pressure flattens the pile from above"}, {"label": "D", "text": "Because sand grains repel each other electrostatically"}],
+      "correct_option": "A",
+      "explanation": "Option A is correct — the angle of repose is the maximum stable angle for loose granular material; beyond it, the downslope component of gravity (shear stress) exceeds inter-grain friction and the grains slide until the stable angle is restored. B is wrong — dry sand has negligible cohesion. C and D are not the operative causes.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "An earthquake strikes a region of steep, rain-saturated slopes and is immediately followed by numerous landslides. Which is the best explanation for these co-seismic landslides?",
+      "options": [{"label": "A", "text": "Seismic shaking adds dynamic shear stress and can liquefy saturated material, tipping slopes already near failure into collapse"}, {"label": "B", "text": "Earthquakes increase the cohesion of soil, making slopes heavier"}, {"label": "C", "text": "Earthquakes only cause landslides in completely dry deserts"}, {"label": "D", "text": "The ground shaking evaporates pore water and stabilises the slope"}],
+      "correct_option": "A",
+      "explanation": "Option A is correct — seismic ground shaking imposes additional dynamic (inertial) shear stress and can cause liquefaction of saturated, loose material, pushing marginally stable slopes past failure. B is false (shaking does not increase cohesion). C is false — co-seismic landslides are most common in steep, wet terrain. D is false — shaking does not evaporate or stabilise pore water.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Mass Movement) with List-II (Defining Characteristic):\n\nList-I: (a) Creep, (b) Solifluction, (c) Slump, (d) Rockfall\nList-II: (1) Slow flow of water-saturated soil over frozen subsoil, (2) Rotational slide along a concave surface, (3) Imperceptibly slow soil movement shown by tilted poles, (4) Free fall of rock fragments down a steep face",
+      "options": [{"label": "A", "text": "a-3, b-1, c-2, d-4"}, {"label": "B", "text": "a-1, b-3, c-4, d-2"}, {"label": "C", "text": "a-3, b-1, c-4, d-2"}, {"label": "D", "text": "a-2, b-1, c-3, d-4"}],
+      "correct_option": "A",
+      "explanation": "Creep — imperceptibly slow soil movement (tilted poles) = 3. Solifluction — slow flow of water-saturated soil over frozen subsoil = 1. Slump — rotational slide along a concave surface = 2. Rockfall — free fall of rock fragments = 4. The correct match is a-3, b-1, c-2, d-4.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Event) with List-II (Location/State):\n\nList-I: (a) Malin landslide, (b) Wayanad landslides, (c) Joshimath subsidence, (d) Malpa landslide\nList-II: (1) Kerala, (2) Pune district, Maharashtra, (3) Pithoragarh area, Uttarakhand, (4) Chamoli district, Uttarakhand",
+      "options": [{"label": "A", "text": "a-2, b-1, c-4, d-3"}, {"label": "B", "text": "a-1, b-2, c-3, d-4"}, {"label": "C", "text": "a-2, b-1, c-3, d-4"}, {"label": "D", "text": "a-3, b-1, c-4, d-2"}],
+      "correct_option": "A",
+      "explanation": "Malin landslide — Pune district, Maharashtra (Western Ghats) = 2. Wayanad landslides — Kerala = 1. Joshimath subsidence — Chamoli district, Uttarakhand = 4. Malpa landslide — Pithoragarh area, Uttarakhand = 3. The correct match is a-2, b-1, c-4, d-3.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which agency released the 'Landslide Atlas of India', which maps and ranks landslide-prone districts of the country?",
+      "options": [{"label": "A", "text": "National Remote Sensing Centre (NRSC), ISRO"}, {"label": "B", "text": "India Meteorological Department (IMD)"}, {"label": "C", "text": "Central Water Commission (CWC)"}, {"label": "D", "text": "National Institute of Disaster Management (NIDM)"}],
+      "correct_option": "A",
+      "explanation": "The Landslide Atlas of India was released by the National Remote Sensing Centre (NRSC) of ISRO, using satellite-based mapping of landslide-prone districts. IMD handles weather/rainfall, CWC handles water resources, and NIDM handles disaster training and research — none of which produced the atlas.",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The maximum angle at which loose, dry granular material such as sand or scree remains stable on a slope is called the:",
+      "options": [{"label": "A", "text": "Angle of repose"}, {"label": "B", "text": "Angle of incidence"}, {"label": "C", "text": "Gradient of saturation"}, {"label": "D", "text": "Critical shear angle of cohesion"}],
+      "correct_option": "A",
+      "explanation": "The angle of repose is the steepest angle at which loose, dry granular material stays stable; beyond it the material slides. 'Angle of incidence' relates to optics/insolation, and the other two options are not standard geomorphic terms for this property.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

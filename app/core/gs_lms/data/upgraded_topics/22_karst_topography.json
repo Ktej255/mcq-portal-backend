@@ -1,0 +1,275 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Karst Topography and Limestone Landforms. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), Mains + Prelims PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Landforms and their Evolution > Karst Topography)"
+  },
+  "title": "Karst Topography and Limestone Landforms",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.0,
+  "display_order": 22,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "Karst topography is a distinct exogenic landform system driven by groundwater action and chemical solution (carbonation) on soluble limestone, rather than by mechanical fluvial, glacial or aeolian erosion. Placed after the major fluvial landforms within exogenic processes, it complements running-water geomorphology by showing how the same water, acting chemically below the surface, produces a contrasting suite of surface and underground landforms.",
+  "concept_checklist": [
+    "Karst topography develops on thick, well-jointed, soluble carbonate rocks such as limestone and dolomite through the chemical process of carbonation-solution.",
+    "The term 'karst' derives from the Kras (Karst) limestone plateau of Slovenia, which is the type region for these landforms.",
+    "Carbonation is the reaction of carbon dioxide dissolved in rainwater (forming weak carbonic acid) with calcium carbonate to produce soluble calcium bicarbonate (CaCO3 + H2O + CO2 -> Ca(HCO3)2).",
+    "Surface (erosional) karst landforms include karren/lapies, sinkholes (dolines), swallow holes, uvalas, poljes and dry valleys.",
+    "Underground karst features include caves, caverns and karst windows formed by the enlargement of joints and bedding planes by percolating water.",
+    "Depositional karst landforms (dripstone/speleothems) include stalactites (hanging from the ceiling), stalagmites (rising from the floor) and pillars/columns formed where the two meet.",
+    "Essential conditions for karstification are thick soluble rock, dense jointing/fractures, sufficient rainfall, and a deep water table allowing vertical percolation.",
+    "In India, notable karst and cave landscapes occur at Borra Caves (Araku valley, Andhra Pradesh), the limestone caves of Meghalaya (including Krem Liat Prah, one of the longest caves in India), and the Pachmarhi region of the Satpura range.",
+    "Karst aquifers store large volumes of groundwater but are highly vulnerable to contamination because pollutants travel rapidly through open conduits.",
+    "Speleothems (cave deposits) preserve geochemical records that scientists use to reconstruct past monsoon and climate variability."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Imagine rain that does not flow away but quietly disappears into the ground, dissolving solid rock as it sinks. Over thousands of years this slow chemical nibbling hollows out caves big enough to walk through, opens funnel-shaped pits in the fields above, and decorates dark caverns with stone icicles. This is karst — a landscape sculpted not by hammering rivers but by water acting as a gentle acid on limestone."},
+        {"type": "statgrid", "items": [
+          {"value": "~10-15%", "label": "Share of ice-free land that is karst"},
+          {"value": "CaCO3", "label": "The rock that dissolves"},
+          {"value": "Slovenia", "label": "Origin of the word 'karst'"},
+          {"value": "Borra", "label": "Famous limestone caves in Andhra Pradesh"}
+        ]},
+        {"type": "heading", "text": "What Is Karst Topography?"},
+        {"type": "para", "text": "**Karst topography** is the distinctive landscape that develops where **soluble rocks** — chiefly **limestone** (calcium carbonate, CaCO3), but also **dolomite** and **gypsum** — are dissolved by water. Unlike river or glacial landscapes that are shaped by mechanical erosion, karst is shaped mainly by **chemical solution (carbonation)** and by the action of **groundwater** moving along joints and bedding planes. The name comes from the **Kras (Karst) plateau** of Slovenia, the classic region where such features were first studied."},
+        {"type": "para", "text": "Because water sinks underground instead of running off, karst regions often have **few surface streams**, many **closed depressions**, and an elaborate **underground drainage** of caves and passages. In India the spectacular **Borra Caves** in the **Araku valley of Andhra Pradesh**, the long limestone cave systems of **Meghalaya** (such as **Krem Liat Prah**, among the longest caves in India), and the cave-and-gorge country around **Pachmarhi** in the Satpura range all illustrate karst and cave development."},
+        {"type": "analogy", "text": "Think of a sugar cube left in a saucer of fizzy soda water. The carbonated water slowly eats into the cube, opening pits and channels, and the cube weakens from the inside. Limestone behaves the same way with rainwater charged with carbon dioxide — except the 'cube' is a whole plateau and the process takes millennia."},
+        {"type": "heading", "text": "Surface Landforms (Above Ground)"},
+        {"type": "para", "text": "Where solution attacks the rock surface, it first etches shallow grooves and ridges called **karren** or **lapies**. Deeper solution opens funnel- or bowl-shaped pits called **sinkholes** (also **dolines**). A **swallow hole** is the point where a surface stream actually plunges underground. When several sinkholes merge they form a larger hollow called an **uvala**, and the largest flat-floored depression, often kilometres across, is a **polje**. Valleys that no longer carry water because the stream has gone underground are called **dry valleys**."},
+        {"type": "heading", "text": "Underground Landforms (Below Ground)"},
+        {"type": "para", "text": "Below the surface, percolating water widens joints into **caves** and large **caverns**. Where the roof of an underground passage collapses or a cave connects to the surface, a **karst window** is formed, giving a glimpse into the subterranean drainage. Inside caves, water dripping from the ceiling deposits calcium carbonate to build **stalactites** (hanging down) and **stalagmites** (growing up from the floor); when the two join they form a **pillar** or **column**."},
+        {"type": "compare", "title": "Surface vs Underground Karst Landforms", "left": {"label": "Surface (erosional)", "items": ["Karren / Lapies — grooved, fluted rock surfaces", "Sinkhole / Doline — funnel-shaped solution pit", "Swallow hole — stream sinks underground here", "Uvala — coalesced sinkholes", "Polje — large flat-floored basin", "Dry valley — valley abandoned by sunken stream"]}, "right": {"label": "Underground (erosional + depositional)", "items": ["Cave / Cavern — enlarged joints and passages", "Karst window — opening exposing underground drainage", "Stalactite — dripstone hanging from ceiling", "Stalagmite — dripstone rising from floor", "Pillar / Column — stalactite meets stalagmite", "Underground river — stream flowing through conduits"]}},
+        {"type": "callout", "tone": "insight", "title": "Key Insight", "text": "Karst is a two-storey landscape. The **surface** shows where water enters and disappears (sinkholes, swallow holes, dry valleys), while the **subsurface** shows where it travels and re-deposits material (caves, stalactites, stalagmites). The same dissolving water both **erodes** above and **builds** below."},
+        {"type": "keyterms", "terms": [
+          {"term": "Karren / Lapies", "definition": "Small grooves, ridges and fluting etched on a bare **limestone** surface by solution."},
+          {"term": "Sinkhole / Doline", "definition": "A **funnel- or bowl-shaped closed depression** formed by surface solution or roof collapse."},
+          {"term": "Swallow hole", "definition": "The point where a **surface stream sinks underground** into the limestone."},
+          {"term": "Uvala", "definition": "A **larger compound depression** formed when several sinkholes coalesce."},
+          {"term": "Polje", "definition": "The **largest flat-floored karst basin** (often several km long), sometimes seasonally flooded."},
+          {"term": "Cave / Cavern", "definition": "An **underground hollow** formed by solution along joints and bedding planes."},
+          {"term": "Stalactite", "definition": "A dripstone deposit **hanging from the cave ceiling** (holds on 'tight' to the top)."},
+          {"term": "Stalagmite", "definition": "A dripstone deposit **rising from the cave floor** (grows up with 'might')."},
+          {"term": "Karst window", "definition": "An **opening** where collapse or solution exposes the underground drainage to view."},
+          {"term": "Dry valley", "definition": "A former river valley left **without surface water** because the stream now flows underground."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Karst / Groundwater",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "7", "page_start": 56, "page_end": 65, "external_url": "https://ncert.nic.in/textbook/pdf/kegy107.pdf", "text": "Chapter 7 'Landforms and their Evolution' describes how various geomorphic agents — running water, groundwater, glaciers, waves and wind — create erosional and depositional landforms. The section on the work of GROUNDWATER explains 'Karst Topography', named after the Karst region, and lists the erosional and depositional landforms produced by solution and deposition in limestone country.", "key_facts": ["Karst topography is produced by the action of GROUNDWATER on limestone, dolomite and gypsum", "Erosional landforms: pools, sinkholes, lapies and limestone pavements", "A sinkhole is a funnel-shaped depression; when its opening is plugged with debris it may hold water as a swallow hole", "Underground caves/caverns form by solution along joints; collapse of cave roofs creates valley-like features", "Depositional landforms: stalactites (from ceiling), stalagmites (from floor) and pillars where they join"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 7"},
+        {"type": "points", "title": "Work of Groundwater (Erosional Landforms)", "items": ["Solution by slightly acidic groundwater enlarges joints in **limestone and dolomite**", "**Pools, sinkholes and dolines** form as closed surface depressions", "**Lapies (karren)** and limestone pavements form on exposed rock surfaces", "**Swallow holes** mark where surface drainage disappears underground", "**Caves and caverns** develop along bedding planes and fractures below the water table"]},
+        {"type": "points", "title": "Work of Groundwater (Depositional Landforms)", "items": ["**Stalactites** hang from cave ceilings where dripping water deposits calcium carbonate", "**Stalagmites** rise from the cave floor beneath the drips", "**Pillars/columns** form when a stalactite and stalagmite join", "These dripstone forms are collectively called **speleothems**"]},
+        {"type": "para", "text": "NCERT stresses that karst landforms require **soluble rock** (limestone, dolomite, gypsum) and that the landscape is dominated by **underground drainage**. It notes that surface streams are scarce because water sinks rapidly through **joints and sinkholes**, re-emerging elsewhere as springs. The same groundwater that **dissolves** rock to make caves later **deposits** dissolved material to build dripstone features."},
+        {"type": "diagram", "id": "karst-landform-profile", "caption": "Cross-section of a karst landscape: lapies and sinkholes at the surface, a swallow hole feeding an underground river, a cavern with stalactites, stalagmites and pillars, and a spring re-emerging at the base."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC frequently tests three NCERT points: (1) which agent makes karst landforms (answer: **groundwater**, not running water on the surface), (2) the difference between a **stalactite and a stalagmite**, and (3) which rocks are soluble enough to form karst (**limestone, dolomite, gypsum**). All three come straight from Class 11, Chapter 7."},
+        {"type": "para", "text": "The chapter also links karst to **groundwater resources**: because water moves quickly through open conduits, karst aquifers are **productive but easily polluted**, a point that connects geomorphology to water-management questions in GS Paper I and III."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Karstification & Carbonation",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "The Chemistry of Karstification"},
+        {"type": "para", "text": "Karst landscapes are produced by **karstification** — the long-term dissolution of carbonate rock by weakly acidic water. The central reaction is **carbonation**: rainwater absorbs **carbon dioxide** from the atmosphere and the soil to form weak **carbonic acid** (H2CO3), which reacts with insoluble **calcium carbonate** to form **soluble calcium bicarbonate** that is carried away in solution."},
+        {"type": "para", "text": "The reaction is written as **CaCO3 + H2O + CO2 -> Ca(HCO3)2**. This reaction is **reversible**: where water is rich in dissolved CO2 it **dissolves** limestone (in the soil and along joints), but where CO2 escapes — for example as a droplet hangs in cave air — the reaction runs backwards, CaCO3 is **re-precipitated**, and dripstone (stalactites and stalagmites) is built. Solution is favoured by **cold, CO2-rich water**, so karstification can be vigorous even in cool, humid climates."},
+        {"type": "callout", "tone": "why", "title": "Why the Same Process Erodes and Deposits", "text": "Carbonation is an equilibrium. **More dissolved CO2 -> rock dissolves** (erosion, making caves). **Loss of CO2 from the water -> rock precipitates** (deposition, making stalactites/stalagmites). So a single chemical reaction, running in opposite directions, explains both the hollowing of caverns and the growth of dripstone inside them."},
+        {"type": "heading", "text": "Conditions Required for Karst Development"},
+        {"type": "points", "title": "Four Essential Conditions", "items": ["**Thick, pure, soluble rock** — massive beds of limestone or dolomite so that solution can act to great depth", "**Dense jointing and fractures** — joints and bedding planes guide water inward and let it widen them into conduits", "**Adequate rainfall** — a reliable supply of CO2-charged water to drive solution; karst is best developed in humid regions", "**A deep water table** — space below the surface for water to percolate vertically, dissolving rock and forming caves above the saturated zone"]},
+        {"type": "compare", "title": "Erosional vs Depositional Karst Features", "left": {"label": "Erosional (solution)", "items": ["Karren / lapies and limestone pavements", "Sinkholes / dolines and uvalas", "Swallow holes", "Poljes", "Caves and caverns", "Dry valleys and karst windows"]}, "right": {"label": "Depositional (dripstone / speleothems)", "items": ["Stalactites (from ceiling)", "Stalagmites (from floor)", "Pillars / columns", "Flowstone and curtains/draperies", "Cave pearls", "Travertine / tufa at springs"]}},
+        {"type": "heading", "text": "Karst and Caves in India"},
+        {"type": "para", "text": "Although India is dominated by hard crystalline and basaltic rocks, limestone belts produce notable karst and caves. The **Borra Caves** in the **Ananthagiri hills of the Araku valley, Andhra Pradesh**, are million-year-old solution caves rich in stalactites and stalagmites, formed in **Khondalite/limestone** by the Gosthani river. **Meghalaya** holds India's most extensive cave country, developed in **Cretaceous–Tertiary limestone** of the Jaintia, Khasi and Garo hills; **Krem Liat Prah** in the Jaintia hills is among the **longest surveyed caves in India**. The **Pachmarhi** plateau in the Satpura range of Madhya Pradesh has cave shelters and gorges associated with its sandstone-and-limestone country."},
+        {"type": "callout", "tone": "insight", "title": "Exam Trap on Indian 'Caves'", "text": "Not every famous Indian cave is a **karst (solution) cave**. **Bhimbetka** rock shelters and many other 'caves' are weathered **sandstone** shelters or **man-made/volcanic** features (e.g., Ajanta-Ellora are carved into Deccan basalt). True karst caves need **soluble limestone** — Borra and the Meghalaya caves qualify; Bhimbetka does not."},
+        {"type": "collapsible", "title": "Advanced: Cycle of Erosion in Karst (Karst Cycle)", "content": "Like the fluvial cycle, karst evolves through stages. In YOUTH, the surface still has streams, with the first sinkholes and swallow holes appearing. In MATURITY, surface drainage has largely gone underground; sinkholes, uvalas, caves and poljes are extensive, and the area is riddled with closed depressions. In OLD AGE, continued solution lowers the land towards the water table; cave roofs collapse, poljes coalesce, and isolated limestone residual hills (hums/mogotes, seen in tropical tower karst such as Guilin in China) may rise above a planed surface. Climate matters: TEMPERATE karst (e.g., the Dinaric/Kras region) tends to favour sinkholes and poljes, while humid TROPICAL karst favours dramatic tower and cone karst."},
+        {"type": "para", "text": "Globally, **tropical tower karst** (e.g., **Guilin, China** and **Ha Long Bay, Vietnam**) and **cockpit karst** (Jamaica) show how climate modifies the same chemistry: intense rainfall and high biological CO2 accelerate solution, producing steep residual towers rather than the gentler sinkhole plains of temperate karst."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Caves & Karst",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments and Linkages (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Meghalaya Cave Exploration & India's Longest Caves", "text": "Annual speleological expeditions ('**Caving in the Abode of the Clouds**') continue to survey and extend Meghalaya's limestone caves. **Krem Liat Prah** (Jaintia hills) remains India's longest surveyed cave, and Meghalaya hosts most of the country's longest and deepest caves. UPSC can frame this as a location/match question linking caves to states, or as a conservation question on cave biodiversity and limestone quarrying pressure."},
+        {"type": "callout", "tone": "note", "title": "Karst Aquifers and Groundwater Stress", "text": "Karst and limestone aquifers supply water to many regions, but their open conduits make them **highly vulnerable to contamination and over-extraction**. With India facing severe groundwater stress, managing limestone aquifers (and the impact of **cement-industry limestone mining**) is increasingly relevant to GS Paper I (geography) and Paper III (resource management)."},
+        {"type": "callout", "tone": "note", "title": "Sinkhole Hazards", "text": "Sudden **sinkhole collapses** — where the roof of a solution cavity gives way, sometimes triggered by heavy rain, groundwater withdrawal or construction loading — are a recurring hazard in limestone and gypsum terrain worldwide. They illustrate the link between karst geomorphology and **disaster management**, and explain why land-use planning must account for subsurface cavities."},
+        {"type": "callout", "tone": "note", "title": "Speleothems as Paleoclimate & Monsoon Proxies", "text": "Layered cave deposits such as **stalagmites** trap chemical signals (notably oxygen-isotope ratios) that record past rainfall. Indian stalagmites — including those from **Meghalaya caves** — have been used to reconstruct the history of the **Indian summer monsoon** over thousands of years, linking abrupt monsoon weakening to events such as the decline of past civilisations. This makes karst directly relevant to climate-change and monsoon questions."},
+        {"type": "callout", "tone": "note", "title": "Karst Landscapes as World Heritage & Geo-Tourism", "text": "Karst regions such as **South China Karst** and **Ha Long Bay** are UNESCO World Heritage sites, and India promotes cave geo-tourism at **Borra Caves** and in **Meghalaya**. This connects geomorphology to heritage conservation, sustainable tourism and local livelihoods."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Karst",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "Stalactites grow upward from the cave floor", "correct": "STALACTITES hang DOWN from the CEILING; STALAGMITES grow UP from the FLOOR. Memory: stalac-Tite holds 'Tight' to the Top (ceiling); stalag-Mite grows with 'Might' from the ground (Mound)."},
+        {"type": "trap", "wrong": "Karst landforms are created by surface running water (rivers) eroding mechanically", "correct": "Karst is created by GROUNDWATER through CHEMICAL SOLUTION (carbonation), not by mechanical river erosion. Karst regions are notable for the ABSENCE of surface streams because water sinks underground."},
+        {"type": "trap", "wrong": "Karst can form on any rock type given enough rainfall", "correct": "Karst forms only on SOLUBLE rocks — chiefly LIMESTONE and DOLOMITE (and gypsum). Insoluble rocks like granite or basalt do not develop true karst; weathering there produces different landforms."},
+        {"type": "trap", "wrong": "A swallow hole and a polje are the same feature", "correct": "A SWALLOW HOLE is the small point where a surface stream sinks underground. A POLJE is the LARGEST flat-floored karst depression, often several kilometres across. They differ enormously in scale and origin."},
+        {"type": "trap", "wrong": "The word 'karst' comes from a place in India", "correct": "'Karst' comes from the KRAS (Karst) limestone PLATEAU of SLOVENIA (on the Adriatic/Dinaric border), the type region where these landforms were first described."},
+        {"type": "trap", "wrong": "Bhimbetka and Ajanta-Ellora are examples of karst solution caves", "correct": "They are NOT karst. Bhimbetka rock shelters are weathered SANDSTONE; Ajanta and Ellora are carved into Deccan BASALT (man-made). True Indian karst caves include Borra (Andhra Pradesh) and the limestone caves of Meghalaya."},
+        {"type": "trap", "wrong": "Carbonation only dissolves limestone and never deposits it", "correct": "Carbonation is REVERSIBLE. When CO2-rich water meets limestone it DISSOLVES it (forming caves); when CO2 escapes from the water (e.g., a drip in cave air) it RE-PRECIPITATES calcium carbonate, building stalactites and stalagmites."},
+        {"type": "memory", "text": "Stalac-Tite = ceiling (holds Tight to the Top) | Stalag-Mite = ground (grows with Might from the Mound) | Karst rocks = 'LDG' Limestone, Dolomite, Gypsum | Solution reaction: CaCO3 + H2O + CO2 -> Ca(HCO3)2 | Size order of depressions: Sinkhole < Uvala < Polje"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2017, "question_text": "Consider the following landforms:\n1. Sinkhole (doline)\n2. Stalactite\n3. Polje\n4. Yardang\nWhich of the above are landforms associated with karst (limestone) topography?", "answer_text": "1, 2 and 3 only", "explanation": "Sinkholes/dolines, stalactites and poljes are all karst landforms produced by groundwater solution and deposition in limestone. A YARDANG is an AEOLIAN (wind-eroded) landform of deserts and is NOT a karst feature, so it must be excluded.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2019, "question_text": "The chemical process chiefly responsible for the formation of karst (limestone) landforms is:", "answer_text": "Carbonation (solution of calcium carbonate by carbonic acid)", "explanation": "Karstification is driven by CARBONATION: rainwater plus CO2 forms weak carbonic acid that dissolves calcium carbonate (CaCO3 + H2O + CO2 -> Ca(HCO3)2). It is a chemical solution process, distinct from oxidation, hydration or mechanical abrasion.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2021, "question_text": "Describe the landforms produced by the action of groundwater on limestone terrain, and explain the conditions necessary for the development of karst topography.", "answer_text": "Groundwater acting on soluble limestone through carbonation produces a characteristic karst landscape. EROSIONAL landforms include karren/lapies (grooved surfaces), sinkholes/dolines and swallow holes (where surface streams sink), uvalas and large poljes (flat-floored basins), dry valleys, and underground caves and caverns. DEPOSITIONAL (dripstone) landforms inside caves include stalactites (from the ceiling), stalagmites (from the floor) and pillars where they join, formed when CO2 escapes and calcium carbonate is re-precipitated. NECESSARY CONDITIONS are: (i) thick, pure, well-bedded soluble rock (limestone/dolomite); (ii) dense jointing and fractures to guide percolating water; (iii) adequate rainfall to supply CO2-charged water; and (iv) a deep water table allowing vertical percolation and cave formation. Indian examples include the Borra Caves (Andhra Pradesh) and the limestone caves of Meghalaya.", "explanation": "Mains structure: define karst and the carbonation reaction -> list erosional landforms -> list depositional landforms -> state the four required conditions -> add Indian examples and a line on karst aquifers/hazards for value addition.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding karst topography:\n1. Karst landforms develop mainly on soluble rocks such as limestone, dolomite and gypsum.\n2. The dominant geomorphic agent responsible for karst landforms is groundwater acting through solution.\n3. Karst regions typically have a dense network of permanent surface streams.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — karst needs soluble rock (limestone, dolomite, gypsum). Statement 2 is correct — groundwater solution (carbonation) is the chief agent. Statement 3 is WRONG — karst regions are notable for the ABSENCE of surface streams, because water sinks underground through sinkholes and swallow holes. Hence A.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about karst landforms:\n1. A stalactite hangs downward from the ceiling of a cave.\n2. A stalagmite rises upward from the floor of a cave.\n3. A pillar (column) forms when a stalactite and a stalagmite join.\n4. Stalactites and stalagmites are erosional landforms.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2 and 3 are correct descriptions of dripstone features. Statement 4 is WRONG — stalactites and stalagmites are DEPOSITIONAL (dripstone) landforms formed by re-precipitation of calcium carbonate, not erosional features. Three statements are correct, so C.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements regarding the chemistry of karst formation:\n1. Rainwater dissolves atmospheric and soil carbon dioxide to form weak carbonic acid.\n2. Carbonic acid reacts with calcium carbonate to form soluble calcium bicarbonate.\n3. The carbonation reaction is irreversible, so limestone is never re-deposited.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 correctly describe carbonation (CaCO3 + H2O + CO2 -> Ca(HCO3)2). Statement 3 is WRONG — the reaction is REVERSIBLE; when CO2 escapes from the water, calcium carbonate is re-precipitated to form stalactites and stalagmites. Hence A.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about karst in India:\n1. The Borra Caves are located in the Araku valley of Andhra Pradesh.\n2. Meghalaya contains some of the longest limestone caves in India, including Krem Liat Prah.\n3. The Bhimbetka rock shelters are classic examples of limestone solution (karst) caves.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct — Borra Caves are in the Araku valley (Andhra Pradesh) and Meghalaya holds India's longest caves such as Krem Liat Prah. Statement 3 is WRONG — Bhimbetka shelters are weathered SANDSTONE, not limestone solution caves. Hence A.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following karst depressions in increasing order of their size (smallest to largest):\n1. Polje\n2. Sinkhole (doline)\n3. Uvala\nSelect the correct sequence:",
+      "options": [{"label": "A", "text": "2 - 3 - 1"}, {"label": "B", "text": "1 - 3 - 2"}, {"label": "C", "text": "2 - 1 - 3"}, {"label": "D", "text": "3 - 2 - 1"}],
+      "correct_option": "A",
+      "explanation": "A single sinkhole/doline is the smallest closed depression. When several sinkholes coalesce they form a larger uvala. The largest flat-floored karst basin is the polje. So smallest to largest = Sinkhole (2) -> Uvala (3) -> Polje (1), i.e., 2 - 3 - 1. Hence A.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following stages in the development of a karst landscape and arrange them in the correct chronological sequence:\n1. Surface streams sink underground through swallow holes; sinkholes and caves become widespread.\n2. Rainwater charged with carbon dioxide begins dissolving jointed limestone at the surface.\n3. Cave roofs collapse and residual limestone hills rise above a lowered, planed surface.\nSelect the correct order:",
+      "options": [{"label": "A", "text": "2 - 1 - 3"}, {"label": "B", "text": "1 - 2 - 3"}, {"label": "C", "text": "2 - 3 - 1"}, {"label": "D", "text": "3 - 1 - 2"}],
+      "correct_option": "A",
+      "explanation": "Karstification begins with surface solution of jointed limestone (2 - youth), proceeds to widespread underground drainage with sinkholes and caves (1 - maturity), and ends with cave-roof collapse and residual hills on a lowered surface (3 - old age). Correct order is 2 - 1 - 3. Hence A.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Karst regions generally lack a well-developed network of permanent surface rivers.\nReason (R): In limestone country much of the rainwater sinks underground through joints, sinkholes and swallow holes to form underground drainage.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — karst areas have sparse surface streams. R is correct — water sinks underground through joints and swallow holes, creating subterranean drainage. R is precisely the reason surface streams are scarce, so R correctly explains A. Hence A.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Stalactites and stalagmites are formed inside limestone caves.\nReason (R): Granite and basalt readily dissolve in carbonic acid to deposit calcium carbonate inside caves.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — stalactites and stalagmites form in limestone caves by re-precipitation of calcium carbonate. R is WRONG — granite and basalt are INSOLUBLE in carbonic acid and do not form karst dripstone; the calcium carbonate comes from the limestone itself. Hence C.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A limestone plateau receives heavy rainfall, yet its surface is largely dry with numerous funnel-shaped pits, while a powerful stream emerges as a spring at its base. What is the most likely explanation?",
+      "options": [{"label": "A", "text": "The rainfall data are inaccurate and the area is actually arid"}, {"label": "B", "text": "Rainwater sinks through sinkholes and swallow holes into underground conduits and re-emerges as a spring"}, {"label": "C", "text": "The plateau is made of impermeable granite that prevents any water flow"}, {"label": "D", "text": "Evaporation removes all the rainfall before it can form streams"}],
+      "correct_option": "B",
+      "explanation": "This is classic karst behaviour. Despite heavy rain, the soluble jointed limestone lets water sink through sinkholes and swallow holes into underground passages, leaving a dry surface, and the water re-emerges lower down as a spring. B states this cause-effect chain. A, C and D contradict the given facts (heavy rainfall, limestone, a strong spring).",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following best explains WHY a single chemical process can both excavate caves and build stalactites in the same limestone region?",
+      "options": [{"label": "A", "text": "Carbonation is reversible: CO2-rich water dissolves limestone, while loss of CO2 from the water re-precipitates it"}, {"label": "B", "text": "Mechanical abrasion by sand erodes caves while wind deposits dripstone"}, {"label": "C", "text": "Oxidation dissolves the rock and hydration deposits it"}, {"label": "D", "text": "Glacial ice carves the caves and melting ice builds the stalactites"}],
+      "correct_option": "A",
+      "explanation": "The carbonation equilibrium (CaCO3 + H2O + CO2 <-> Ca(HCO3)2) runs forward when water is rich in CO2 (dissolving rock to make caves) and backward when CO2 escapes from the water (re-precipitating calcium carbonate to build dripstone). A captures this. B, C and D invoke wrong agents (wind, oxidation, glaciers) that do not produce karst dripstone.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A sudden circular collapse pit appears in a town built on limestone after a period of heavy rain and intensive groundwater pumping. What is the most likely cause?",
+      "options": [{"label": "A", "text": "A meteorite impact"}, {"label": "B", "text": "Collapse of the roof of an underground solution cavity weakened by water-table changes"}, {"label": "C", "text": "Tectonic uplift of the limestone"}, {"label": "D", "text": "Wind deflation removing surface sediment"}],
+      "correct_option": "B",
+      "explanation": "Such collapse sinkholes form when the roof of an underground solution cavity gives way, often triggered by heavy rain, groundwater withdrawal or loading. B identifies this cause. A meteorite (A) is implausible and unrelated to limestone; uplift (C) and wind deflation (D) do not produce sudden circular collapse pits in soluble rock.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Karst landform) with List-II (Description):\n\nList-I: (a) Swallow hole, (b) Polje, (c) Stalagmite, (d) Karren / Lapies\nList-II: (1) Large flat-floored karst basin, (2) Point where a surface stream sinks underground, (3) Grooved, fluted limestone surface, (4) Dripstone rising from the cave floor",
+      "options": [{"label": "A", "text": "a-2, b-1, c-4, d-3"}, {"label": "B", "text": "a-1, b-2, c-3, d-4"}, {"label": "C", "text": "a-2, b-1, c-3, d-4"}, {"label": "D", "text": "a-3, b-1, c-4, d-2"}],
+      "correct_option": "A",
+      "explanation": "Swallow hole = point where a stream sinks underground (2); Polje = large flat-floored basin (1); Stalagmite = dripstone rising from the floor (4); Karren/Lapies = grooved, fluted limestone surface (3). So a-2, b-1, c-4, d-3. Hence A.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Cave / Karst site) with List-II (Location):\n\nList-I: (a) Borra Caves, (b) Krem Liat Prah, (c) Pachmarhi, (d) Guilin tower karst\nList-II: (1) Meghalaya, (2) Andhra Pradesh, (3) China, (4) Madhya Pradesh (Satpura)",
+      "options": [{"label": "A", "text": "a-2, b-1, c-4, d-3"}, {"label": "B", "text": "a-1, b-2, c-4, d-3"}, {"label": "C", "text": "a-2, b-1, c-3, d-4"}, {"label": "D", "text": "a-4, b-1, c-2, d-3"}],
+      "correct_option": "A",
+      "explanation": "Borra Caves = Andhra Pradesh (2); Krem Liat Prah = Meghalaya (1); Pachmarhi = Madhya Pradesh / Satpura (4); Guilin tower karst = China (3). So a-2, b-1, c-4, d-3. Hence A.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "From which region does the term 'karst' originate?",
+      "options": [{"label": "A", "text": "The Kras (Karst) limestone plateau of Slovenia"}, {"label": "B", "text": "The Araku valley of Andhra Pradesh, India"}, {"label": "C", "text": "The Guilin hills of southern China"}, {"label": "D", "text": "The Dolomite mountains of northern Italy"}],
+      "correct_option": "A",
+      "explanation": "The word 'karst' derives from the Kras (Karst) limestone plateau of Slovenia, the type region where such solution landforms were first systematically described. The Araku valley (B) hosts Borra Caves but did not give the name; Guilin (C) is famous tower karst but is not the origin of the term; the Dolomites (D) are named after the rock dolomite, not karst.",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following rock types is most favourable for the development of true karst topography?",
+      "options": [{"label": "A", "text": "Granite"}, {"label": "B", "text": "Basalt"}, {"label": "C", "text": "Limestone"}, {"label": "D", "text": "Quartzite"}],
+      "correct_option": "C",
+      "explanation": "Limestone (calcium carbonate) is soluble in weak carbonic acid and is the classic karst-forming rock (along with dolomite and gypsum). Granite (A), basalt (B) and quartzite (D) are essentially insoluble in carbonic acid and do not develop true karst landforms. Hence C.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Weathering (Physical, Chemical, Biological). Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), Mains questions, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Geomorphic Processes > Weathering)"
+  },
+  "title": "Weathering — Physical, Chemical, and Biological",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 19,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "Weathering follows the endogenic topics (interior, plate tectonics, earthquakes, volcanism); it is the first exogenic/denudation process, preparing in-situ rock material for erosion, mass movement, and subsequent landform creation.",
+  "concept_checklist": [
+    "Weathering is the in-situ (in-place) disintegration and decomposition of rocks with little or no movement of material, distinguishing it from erosion which involves transport.",
+    "There are three broad types of weathering: physical (mechanical), chemical, and biological.",
+    "Physical weathering breaks rock into smaller fragments without changing its chemical composition (e.g., frost wedging, exfoliation, thermal expansion, salt crystallisation, block and granular disintegration).",
+    "Chemical weathering alters the chemical composition of minerals through solution, carbonation, hydration, hydrolysis, and oxidation, producing new substances.",
+    "Biological weathering is the disintegration and decomposition of rock by the action of plants, animals, microorganisms, and humans, and involves both physical and chemical processes.",
+    "Climate is the master control on weathering: high temperature and high moisture favour chemical weathering, while alternating freeze-thaw or wetting-drying favours physical weathering.",
+    "Carbonation of limestone (CaCO3 + H2O + CO2 to soluble calcium bicarbonate) drives karst topography and cave formation.",
+    "Spheroidal weathering and exfoliation domes (e.g., granite tors and domes) are classic outcomes of weathering on jointed crystalline rocks in India.",
+    "Black cotton soil (regur) of the Deccan is formed by the chemical weathering of basaltic lava under a semi-arid climate with seasonal wetting and drying.",
+    "Weathering prepares regolith and is the first essential step in soil formation and in supplying sediment to agents of erosion."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "The mighty Himalayas are crumbling, the granite domes of Karnataka are peeling like onions, and the limestone caves of Meghalaya are dissolving drop by drop. None of this involves a river, glacier, or wind carrying material away — yet. This silent, in-place breakdown of solid rock is **weathering**, the quiet first act that prepares the Earth's surface for every landform that follows."},
+        {"type": "statgrid", "items": [
+          {"value": "3", "label": "Major types (physical, chemical, biological)"},
+          {"value": "In-situ", "label": "No transport of material"},
+          {"value": "Climate", "label": "Master control"},
+          {"value": "Step 1", "label": "First stage of soil formation"}
+        ]},
+        {"type": "heading", "text": "What Is Weathering?"},
+        {"type": "para", "text": "**Weathering** is the mechanical disintegration and chemical decomposition of rocks **in-situ** — that is, in their original place — through the elements of weather and climate, with **little or no movement** of the broken material. This 'no transport' condition is the single most important point separating weathering from **erosion**, which is the removal and transport of weathered material by agents like running water, wind, glaciers, and waves."},
+        {"type": "para", "text": "In India, the effects are everywhere. The rounded **exfoliation domes** of granite around **Bengaluru and Hampi (Karnataka)** are peeled by sheet-like physical weathering, while the spectacular limestone caves of **Mawsmai and Mawmluh in Meghalaya** are carved by chemical weathering (carbonation) in a high-rainfall climate."},
+        {"type": "para", "text": "The fertile **black cotton soil (regur)** of the **Deccan Trap** region — covering Maharashtra, Gujarat, and parts of Madhya Pradesh — is itself a product of the chemical weathering of **basaltic lava**. Weathering, therefore, is not merely destruction; it is the process that creates the **regolith** and soil on which agriculture and civilisation depend."},
+        {"type": "analogy", "text": "Think of weathering as a slow demolition crew working without trucks: it cracks, crumbles, and dissolves a building (the rock) where it stands, leaving the rubble (regolith) in a heap on the spot. **Erosion** is the separate fleet of trucks that arrives later to haul the rubble away."},
+        {"type": "heading", "text": "The Two Main Families"},
+        {"type": "para", "text": "Physical (mechanical) weathering **breaks rock apart** into smaller pieces without altering its chemical make-up, increasing the **surface area** available for further attack. Chemical weathering **changes the minerals themselves** into new, often softer or soluble substances. The two work together: physical weathering exposes more surface, which accelerates chemical weathering, which in turn weakens the rock for more physical breakdown."},
+        {"type": "compare", "title": "Physical vs Chemical Weathering", "left": {"label": "Physical (Mechanical)", "items": ["Breaks rock into smaller fragments", "No change in chemical composition", "Dominant in cold and arid climates", "Processes: frost wedging, exfoliation, thermal, salt", "Increases surface area for further weathering"]}, "right": {"label": "Chemical", "items": ["Decomposes and alters minerals", "Changes chemical composition (new substances)", "Dominant in warm, humid climates", "Processes: solution, carbonation, hydrolysis, oxidation", "Produces clays, soluble salts, and soil"]}},
+        {"type": "keyterms", "terms": [
+          {"term": "Weathering", "definition": "**In-situ** disintegration and decomposition of rock with little or no movement of material."},
+          {"term": "Erosion", "definition": "Removal and **transport** of weathered material by agents (rivers, wind, ice, waves)."},
+          {"term": "Regolith", "definition": "The layer of loose, weathered rock debris (mantle of broken material) overlying solid bedrock."},
+          {"term": "Denudation", "definition": "The combined wearing down of the land surface = weathering + mass wasting + erosion + transport."},
+          {"term": "Exfoliation", "definition": "Peeling away of curved rock sheets parallel to the surface, often due to **pressure release (unloading)**."},
+          {"term": "Carbonation", "definition": "Chemical reaction of CO2-charged water with carbonate minerals (e.g., limestone) to form soluble bicarbonates."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Weathering",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "6", "page_start": 40, "page_end": 47, "external_url": "https://ncert.nic.in/textbook/pdf/kegy106.pdf", "text": "Chapter 6 'Geomorphic Processes' covers endogenic and exogenic processes, weathering (physical, chemical, biological), special effects of weathering, mass movements, erosion and deposition, and soil formation.", "key_facts": ["Weathering is defined as the action of elements of weather and climate over earth materials, occurring in-situ.", "Three major groups: (i) chemical weathering, (ii) physical/mechanical weathering, (iii) biological weathering.", "Physical weathering processes include unloading and expansion, temperature changes and expansion, freezing-thawing and frost wedging, and salt weathering.", "Chemical weathering processes include solution, carbonation, hydration, oxidation and reduction.", "Weathering is responsible for biodiversity of soils, formation of soils, and enrichment/concentration of ores (e.g., bauxite, iron)."]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 6"},
+        {"type": "points", "title": "Physical (Mechanical) Weathering Processes", "items": ["**Unloading and expansion** — removal of overburden causes pressure release, leading to exfoliation sheets and domes", "**Temperature changes and expansion** — differential heating and cooling of minerals (insolation/thermal weathering) causes granular disintegration", "**Freezing, thawing and frost wedging** — water in joints freezes, expands ~9%, and prises rock apart", "**Salt weathering** — crystallisation, hydration, and thermal expansion of salts in pores exert pressure and disintegrate rock"]},
+        {"type": "points", "title": "Chemical Weathering Processes (NCERT)", "items": ["**Solution** — minerals (especially soluble salts like nitrates, sulphates, chlorides) dissolve directly in water", "**Carbonation** — CO2-charged water reacts with carbonate minerals to form soluble bicarbonates (key for limestone and karst)", "**Hydration** — minerals absorb water, swell, and increase in volume (e.g., gypsum from anhydrite)", "**Oxidation and reduction** — oxygen combines with minerals (especially iron) causing rusting, crumbling, and colour change"]},
+        {"type": "para", "text": "NCERT stresses that **biological weathering** is the contribution to weathering by **organisms** — through the growth of plant roots, burrowing animals, decaying organic matter producing acids, and human activity. It usually involves **both physical and chemical** processes acting together."},
+        {"type": "para", "text": "Crucially, NCERT links weathering to **economic geology and soils**: deep and prolonged chemical weathering in the humid tropics concentrates insoluble residues, producing **laterite, bauxite (aluminium ore), and iron-rich soils**. Weathering is therefore the foundation of **soil formation (pedogenesis)** and of several mineral deposits."},
+        {"type": "diagram", "id": "weathering-types-overview", "caption": "Classification of weathering into physical (unloading, thermal, frost, salt), chemical (solution, carbonation, hydration, oxidation), and biological processes, with climate as the master control."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC repeatedly tests: (1) the distinction between weathering and erosion (in-situ vs transport), (2) which climate favours which weathering type, (3) carbonation and limestone/karst, and (4) weathering as the basis of soil and ore (bauxite/laterite) formation. All four come straight from NCERT Chapter 6."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Weathering",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Physical (Mechanical) Weathering in Depth"},
+        {"type": "para", "text": "Physical weathering disintegrates rock through mechanical stress. **Frost weathering (freeze-thaw / frost wedging)** dominates in cold and high-altitude regions: water seeping into joints freezes, expanding by about **9%**, and exerts pressure that prises the rock apart. It is most effective where temperatures oscillate around **0°C**, as in the Himalayas, producing angular debris and **scree/talus** slopes."},
+        {"type": "para", "text": "**Exfoliation and unloading (pressure release)** occurs when deeply buried rocks like **granite** are exposed by the removal of overlying load. The release of confining pressure allows the rock to expand and crack in curved sheets parallel to the surface, creating **exfoliation domes** and rounded **tors** — vividly seen across the granite uplands of Karnataka, Tamil Nadu, and the Eastern Ghats."},
+        {"type": "para", "text": "**Thermal (insolation) weathering** results from the repeated daily heating and cooling of rock in deserts; differential expansion of dark and light minerals causes the surface to flake and crumble (**granular disintegration**). **Salt weathering** occurs when salt crystals grow, hydrate, or expand within pore spaces, exerting pressure — important in arid and coastal zones. **Block and granular disintegration** describe whether rock breaks along joints into large blocks or crumbles grain-by-grain depending on its mineral structure."},
+        {"type": "heading", "text": "Chemical Weathering in Depth"},
+        {"type": "para", "text": "Chemical weathering decomposes minerals into new compounds. **Solution** is the direct dissolving of soluble minerals (salts) in water. **Carbonation** is the reaction of CO2-charged rainwater (weak carbonic acid) with carbonate rocks: CaCO3 + H2O + CO2 produces soluble **calcium bicarbonate**, which is washed away — the engine of **karstification** seen in the limestone caves of Meghalaya, the Borra Caves (Andhra Pradesh), and the Bhimbetka-region sandstones."},
+        {"type": "para", "text": "**Hydration** is the absorption of water into the mineral lattice, causing swelling (e.g., anhydrite to gypsum), which sets up internal stress. **Hydrolysis** is the reaction of minerals with water (and the H+ ion) — it converts feldspars in granite into **clay minerals (kaolinite)**, the chief cause of deep rock rotting in the humid tropics. **Oxidation** is the combination of oxygen with minerals, especially **iron**, producing reddish-brown rust (limonite/hematite) and crumbly rock; **reduction** is its reverse in waterlogged, oxygen-poor settings."},
+        {"type": "callout", "tone": "insight", "title": "Spheroidal Weathering — Chemistry Meets Geometry", "text": "When chemical weathering attacks a jointed cube of rock, it works fastest on the **corners** (three faces exposed), slower on edges (two faces), and slowest on flat faces (one face). The cube is progressively rounded into a **sphere** — giving the classic rounded **boulders and core-stones** of the Deccan and the granite landscapes of peninsular India."},
+        {"type": "heading", "text": "Climate as the Master Control"},
+        {"type": "para", "text": "The **Peltier diagram** captures how **temperature and rainfall (moisture)** jointly control weathering. Hot-and-wet equatorial climates produce **intense chemical weathering** and deep regolith; cold climates with freeze-thaw favour **strong physical (frost) weathering**; hot-and-dry deserts see limited weathering of both kinds; and cold-and-dry regions show minimal weathering overall. Moisture and warmth together accelerate almost all chemical reactions."},
+        {"type": "compare", "title": "Weathering Regimes by Climate (Peltier Concept)", "left": {"label": "Hot & Humid (Equatorial)", "items": ["Intense CHEMICAL weathering", "Deep regolith and laterite", "Hydrolysis and oxidation dominant", "Example: Western Ghats, NE India"]}, "right": {"label": "Cold / High-altitude", "items": ["Strong PHYSICAL (frost) weathering", "Shallow, angular debris (scree)", "Freeze-thaw wedging dominant", "Example: Higher Himalayas"]}},
+        {"type": "collapsible", "title": "Advanced: How Does Weathering Concentrate Ores (Bauxite & Laterite)?", "content": "In hot, humid tropical climates, prolonged hydrolysis leaches away soluble silica and bases from rock, leaving behind insoluble residues of aluminium and iron oxides. Over time this **residual concentration** forms **laterite** (iron-rich) and **bauxite** (the chief aluminium ore). This is why India's bauxite reserves (Odisha, Jharkhand, Gujarat) and laterite cappings occur on old, deeply weathered plateau surfaces — weathering is literally an ore-forming process."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Weathering",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Where Weathering Meets the Headlines (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Enhanced Rock Weathering for CO2 Capture", "text": "**Enhanced Rock Weathering (ERW)** — spreading crushed silicate rock such as **basalt** on farmland to speed up natural carbonation/hydrolysis and lock away atmospheric **CO2** as bicarbonates — has emerged as a leading negative-emissions technology. Trials in 2023-2025 highlight India's vast **Deccan basalt** as a potential resource, while also co-benefiting soils. UPSC can frame this as a climate-mitigation and geomorphology link."},
+        {"type": "callout", "tone": "note", "title": "Weathering, Slope Instability and Himalayan Landslides", "text": "Repeated wetting-drying and freeze-thaw weathering deeply fractures Himalayan rock, weakening slopes that then fail as **landslides** during intense monsoon rain — as seen in recurring disasters in **Himachal Pradesh, Uttarakhand (Joshimath subsidence), and the Wayanad (Kerala) landslide of 2024**. Weathering-prepared regolith is the material that mass movements mobilise."},
+        {"type": "callout", "tone": "note", "title": "Soil Formation, Degradation and Food Security", "text": "Because weathering is the first step of **soil formation**, the slow pace at which it generates new soil (centimetres over centuries) underlies global concern over **soil degradation and erosion** outpacing renewal. India's policy push on soil health, organic carbon, and land degradation neutrality (UNCCD/COP-14 hosted by India) connects directly to weathering rates."},
+        {"type": "callout", "tone": "note", "title": "Black Cotton Soil (Regur) from Deccan Basalt", "text": "The **regur (black cotton soil)** of the Deccan, formed by in-situ chemical weathering of **basaltic lava**, is rich in clay and swells when wet and cracks when dry. Its engineering challenges for roads, buildings, and railways (heave and shrinkage) regularly feature in infrastructure news and are a favourite Geography-Agriculture overlap for UPSC."},
+        {"type": "callout", "tone": "note", "title": "Threats to Stone Monuments", "text": "Acid-forming pollutants accelerate **chemical weathering (carbonation and oxidation)** of marble and sandstone monuments such as the **Taj Mahal** (yellowing and surface decay). Conservation debates over air quality around heritage sites are, at root, debates about controlling anthropogenic weathering."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Weathering",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "Weathering and erosion are the same thing", "correct": "Weathering is the IN-SITU breakdown of rock with NO transport. Erosion is the REMOVAL and TRANSPORT of weathered material by an agent (river, wind, ice, waves). Weathering must usually precede erosion."},
+        {"type": "trap", "wrong": "Physical weathering changes the chemical composition of rock", "correct": "Physical (mechanical) weathering only BREAKS rock into smaller fragments; the chemical composition stays UNCHANGED. It is CHEMICAL weathering that alters mineral composition into new substances."},
+        {"type": "trap", "wrong": "Chemical weathering is strongest in hot, dry deserts", "correct": "Chemical weathering is strongest in HOT and HUMID (wet) climates, because moisture plus warmth speeds up reactions like hydrolysis, carbonation and oxidation. Hot DRY deserts favour physical (thermal and salt) weathering due to lack of water."},
+        {"type": "trap", "wrong": "Exfoliation is caused mainly by chemical solution of the rock surface", "correct": "Exfoliation (sheeting) is primarily a PHYSICAL process driven by PRESSURE RELEASE (unloading) and thermal stress, causing curved sheets to peel off — as in granite domes. It is mechanical, not a solution process."},
+        {"type": "trap", "wrong": "Frost weathering is most effective in extremely cold regions that stay frozen", "correct": "Frost (freeze-thaw) weathering is most effective where temperatures FLUCTUATE around 0°C, allowing repeated freezing and thawing. Permanently frozen ground has little freeze-thaw cycling and so less frost wedging."},
+        {"type": "trap", "wrong": "Carbonation affects all rocks equally", "correct": "Carbonation specifically attacks CARBONATE rocks like LIMESTONE and chalk (and the cement in some sandstones). It is the basis of KARST topography; rocks like quartzite (silica) are largely resistant to carbonation."},
+        {"type": "trap", "wrong": "Black cotton soil (regur) is formed by weathering of granite", "correct": "Regur (black cotton soil) is formed by the weathering of BASALTIC LAVA of the Deccan Traps, NOT granite. Granite weathering tends to yield sandy, kaolinite-rich (reddish) soils via hydrolysis of feldspar."},
+        {"type": "memory", "text": "Chemical weathering processes — 'SCHHO': Solution, Carbonation, Hydration, Hydrolysis, Oxidation. | Physical weathering — 'FETS': Frost (freeze-thaw), Exfoliation (unloading), Thermal (insolation), Salt. | Master rule: WET + WARM = Chemical; COLD/ARID = Physical."}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2022, "question_text": "Consider the following statements regarding weathering:\n1. Weathering involves the disintegration of rocks in-situ with little or no movement of material.\n2. Chemical weathering is more dominant in hot and humid climatic conditions.\n3. Frost weathering is most effective when temperatures remain permanently below freezing.\nWhich of the above statements is/are correct?", "answer_text": "B (1 and 2 only)", "explanation": "Statement 1 is correct — weathering is in-situ with no transport. Statement 2 is correct — warmth plus moisture accelerates chemical reactions. Statement 3 is wrong — frost weathering is most effective where temperatures FLUCTUATE around 0°C, allowing repeated freeze-thaw, not where it stays permanently frozen.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2018, "question_text": "The formation of karst topography and limestone caves is primarily associated with which one of the following weathering processes?", "answer_text": "Carbonation", "explanation": "Carbonation — the reaction of CO2-charged rainwater with carbonate rock (limestone) to form soluble calcium bicarbonate — dissolves limestone and produces karst features such as caves, sinkholes, and stalactites. It is a chemical weathering process.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2017, "question_text": "Distinguish between physical and chemical weathering, and explain how climate acts as the master control determining the type and intensity of weathering. Illustrate with Indian examples.", "answer_text": "Physical weathering mechanically disintegrates rock into smaller fragments without altering composition (frost wedging, exfoliation/unloading, thermal and salt weathering), dominating cold and arid climates. Chemical weathering decomposes minerals into new substances through solution, carbonation, hydration, hydrolysis and oxidation, dominating warm humid climates. Climate is the master control: the Peltier relationship shows hot-wet conditions maximise chemical weathering (deep regolith, laterite/bauxite of the Western Ghats and Odisha), cold/high-altitude conditions maximise frost weathering (Himalayan scree), and hot-dry deserts favour thermal and salt weathering. Indian illustrations include karst caves of Meghalaya (carbonation), granite exfoliation domes of Karnataka (unloading), spheroidal weathering and black cotton regur soil from Deccan basalt (hydrolysis/oxidation).", "explanation": "Mains structure: define and contrast the two types (table) -> introduce climate control via Peltier concept -> give a climate-wise mapping -> anchor each with Indian examples -> conclude with significance for soils and ores.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding weathering:\n1. Weathering involves significant transport of broken rock material over long distances.\n2. Physical weathering increases the surface area of rock available for chemical attack.\n3. Weathering is the first essential step in the process of soil formation.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statement 1 is wrong — weathering is IN-SITU with little or no movement; transport is the domain of erosion. Statement 2 is correct — breaking rock into smaller pieces exposes more surface area, speeding chemical weathering. Statement 3 is correct — weathering produces regolith and is the foundation of pedogenesis (soil formation).",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about chemical weathering processes:\n1. Carbonation primarily affects carbonate rocks such as limestone.\n2. Hydrolysis converts feldspar in granite into clay minerals.\n3. Oxidation is most commonly associated with iron-bearing minerals.\n4. Hydration involves the chemical breakdown of minerals into soluble salts that are washed away.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1, 2 and 3 only"}, {"label": "B", "text": "1 and 4 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2, 3 and 4"}],
+      "correct_option": "A",
+      "explanation": "Statements 1, 2 and 3 are correct descriptions of carbonation, hydrolysis and oxidation respectively. Statement 4 is wrong — hydration is the ABSORPTION of water into the mineral lattice causing swelling (e.g., anhydrite to gypsum); the dissolving and washing away of soluble salts is SOLUTION, not hydration.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Physical weathering changes the chemical composition of the parent rock.\n2. Block disintegration and granular disintegration are forms of physical weathering.\n3. Salt weathering is significant in arid and coastal environments.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statement 1 is wrong — physical weathering does NOT change chemical composition; it only fragments rock. Statement 2 is correct — block and granular disintegration are mechanical processes. Statement 3 is correct — salt crystallisation, hydration and thermal expansion are effective in arid and coastal (saline) settings.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements regarding the control of climate on weathering:\n1. Chemical weathering is most intense in hot and humid equatorial climates.\n2. Frost (freeze-thaw) weathering is most effective where temperatures fluctuate around 0°C.\n3. Hot and dry desert climates are characterised by the deepest chemical weathering profiles.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct — warmth plus moisture maximises chemical weathering, and freeze-thaw needs temperatures oscillating around 0°C. Statement 3 is wrong — hot dry deserts lack the moisture needed for deep chemical weathering; their weathering is dominated by physical (thermal and salt) processes.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following stages in the typical sequence of denudation in their correct chronological order:\n1. Erosion (removal of debris by an agent)\n2. Weathering of rock in-situ\n3. Deposition of transported material\n4. Transport of weathered material\nSelect the correct order:",
+      "options": [{"label": "A", "text": "2 - 1 - 4 - 3"}, {"label": "B", "text": "1 - 2 - 3 - 4"}, {"label": "C", "text": "2 - 4 - 1 - 3"}, {"label": "D", "text": "4 - 2 - 1 - 3"}],
+      "correct_option": "A",
+      "explanation": "The logical sequence is: weathering breaks rock in-situ (2), then erosion picks up/removes the debris (1), the material is transported (4), and finally deposited (3). Hence 2 - 1 - 4 - 3. Erosion conceptually includes the removal followed by transport, so weathering must come first and deposition last.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following stages in the formation of an exfoliation dome and arrange them in correct chronological order:\n1. Removal of overlying load by erosion (unloading)\n2. Deep burial of granite under great pressure\n3. Expansion of rock and development of sheet joints parallel to the surface\n4. Peeling away of curved rock sheets to form a rounded dome\nSelect the correct order:",
+      "options": [{"label": "A", "text": "2 - 1 - 3 - 4"}, {"label": "B", "text": "1 - 2 - 3 - 4"}, {"label": "C", "text": "2 - 3 - 1 - 4"}, {"label": "D", "text": "1 - 3 - 2 - 4"}],
+      "correct_option": "A",
+      "explanation": "Granite first forms and is deeply buried under pressure (2); erosion then removes the overburden, releasing confining pressure (1); the rock expands and develops surface-parallel sheet joints (3); these curved sheets peel off to create the exfoliation dome (4). Hence 2 - 1 - 3 - 4.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Spheroidal weathering rounds off rectangular blocks of jointed rock into boulders.\nReason (R): Chemical weathering attacks the corners and edges of a jointed block faster than its flat faces.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — spheroidal weathering produces rounded boulders/core-stones. R is correct AND explains A: corners (three exposed faces) weather fastest, edges (two faces) next, and flat faces (one face) slowest, so a cube is progressively rounded into a sphere. R is the correct explanation of A.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Black cotton soil (regur) of the Deccan is highly fertile and clayey.\nReason (R): It is formed by the chemical weathering of granite under humid equatorial conditions.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — regur is clayey and fertile (rich in lime, iron, magnesia). R is incorrect — regur forms from the weathering of BASALTIC LAVA (Deccan Traps), NOT granite, and under a semi-arid climate with seasonal wetting and drying, not humid equatorial conditions. Hence A is correct but R is wrong.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following best explains why chemical weathering is generally more intense in equatorial regions than in polar regions?",
+      "options": [{"label": "A", "text": "Polar regions have more jointed rocks available for weathering"}, {"label": "B", "text": "High temperature and abundant moisture in equatorial regions accelerate chemical reaction rates"}, {"label": "C", "text": "Equatorial regions experience more frequent freeze-thaw cycles"}, {"label": "D", "text": "Polar regions receive more intense ultraviolet radiation"}],
+      "correct_option": "B",
+      "explanation": "Chemical reactions proceed faster with higher temperature and require water; equatorial regions provide both abundant heat and moisture, maximising hydrolysis, carbonation and oxidation. A is irrelevant; C describes physical (frost) weathering favouring cold regions; D does not control chemical weathering intensity.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Water freezing in the joints of Himalayan rocks repeatedly shatters them into angular fragments. What is the primary cause of this disintegration?",
+      "options": [{"label": "A", "text": "Water expands by about 9% on freezing, exerting pressure that prises the rock apart"}, {"label": "B", "text": "Ice chemically reacts with silicate minerals to dissolve them"}, {"label": "C", "text": "Freezing water heats the rock causing thermal expansion"}, {"label": "D", "text": "Salts crystallise within the ice and dissolve the rock"}],
+      "correct_option": "A",
+      "explanation": "Frost (freeze-thaw) weathering works because water expands by roughly 9% when it freezes; the repeated expansion in joints exerts wedging pressure that mechanically breaks the rock into angular debris. B and D describe chemical/salt processes; C is incorrect because freezing cools rather than heats the rock.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The deep red colour and crumbly nature of many weathered iron-bearing rocks in humid tropical India is mainly the result of which process?",
+      "options": [{"label": "A", "text": "Carbonation"}, {"label": "B", "text": "Oxidation"}, {"label": "C", "text": "Frost wedging"}, {"label": "D", "text": "Exfoliation"}],
+      "correct_option": "B",
+      "explanation": "Oxidation — the combination of atmospheric oxygen with iron in minerals — produces reddish-brown iron oxides (rust, e.g., limonite/hematite) and weakens the rock, giving the characteristic red, crumbly weathered material. Carbonation affects carbonates; frost wedging and exfoliation are physical processes that do not cause the colour change.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Weathering Process) with List-II (Description):\n\nList-I: (a) Carbonation, (b) Hydrolysis, (c) Exfoliation, (d) Frost wedging\nList-II: (1) Pressure release causing curved sheets to peel off, (2) CO2-charged water dissolving limestone, (3) Repeated freezing and thawing of water in joints, (4) Reaction of feldspar with water to form clay",
+      "options": [{"label": "A", "text": "a-2, b-4, c-1, d-3"}, {"label": "B", "text": "a-1, b-4, c-2, d-3"}, {"label": "C", "text": "a-2, b-3, c-1, d-4"}, {"label": "D", "text": "a-4, b-2, c-3, d-1"}],
+      "correct_option": "A",
+      "explanation": "Carbonation — CO2-charged water dissolving limestone (2); Hydrolysis — feldspar reacting with water to form clay (4); Exfoliation — pressure release peeling curved sheets (1); Frost wedging — repeated freeze-thaw in joints (3). Hence a-2, b-4, c-1, d-3.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Weathering type/process) with List-II (Indian example/outcome):\n\nList-I: (a) Carbonation, (b) Exfoliation/unloading, (c) Weathering of Deccan basalt, (d) Tropical residual concentration\nList-II: (1) Granite domes of Karnataka, (2) Limestone caves of Meghalaya, (3) Bauxite and laterite deposits, (4) Black cotton (regur) soil",
+      "options": [{"label": "A", "text": "a-2, b-1, c-4, d-3"}, {"label": "B", "text": "a-1, b-2, c-3, d-4"}, {"label": "C", "text": "a-2, b-1, c-3, d-4"}, {"label": "D", "text": "a-3, b-1, c-4, d-2"}],
+      "correct_option": "A",
+      "explanation": "Carbonation — limestone caves of Meghalaya (2); Exfoliation/unloading — granite domes of Karnataka (1); Weathering of Deccan basalt — black cotton regur soil (4); Tropical residual concentration — bauxite and laterite deposits (3). Hence a-2, b-1, c-4, d-3.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following correctly defines biological weathering?",
+      "options": [{"label": "A", "text": "The disintegration and decomposition of rock by the action of plants, animals, microorganisms and humans"}, {"label": "B", "text": "The transport of weathered material by living organisms to distant locations"}, {"label": "C", "text": "The breakdown of rock exclusively by chemical reactions without any organisms"}, {"label": "D", "text": "The deposition of organic matter to form sedimentary rocks"}],
+      "correct_option": "A",
+      "explanation": "Biological weathering is the in-situ breakdown of rock by organisms — root growth (physical) and acids from decaying matter and microbes (chemical), plus burrowing animals and human activity. B describes transport (erosion); C ignores the biological agent; D describes sedimentation, not weathering.",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following weathering processes is chiefly responsible for the formation of karst topography?",
+      "options": [{"label": "A", "text": "Oxidation"}, {"label": "B", "text": "Frost wedging"}, {"label": "C", "text": "Carbonation"}, {"label": "D", "text": "Thermal (insolation) weathering"}],
+      "correct_option": "C",
+      "explanation": "Karst topography (caves, sinkholes, stalactites/stalagmites) forms by carbonation — the dissolution of limestone by CO2-charged rainwater forming soluble calcium bicarbonate. Oxidation affects iron minerals, frost wedging and thermal weathering are physical processes that do not dissolve limestone.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

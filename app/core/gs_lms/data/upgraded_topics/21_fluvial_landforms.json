@@ -1,0 +1,277 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Fluvial Landforms and the Cycle of Erosion. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), Mains questions, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Landforms and their Evolution)"
+  },
+  "title": "Fluvial Landforms and the Cycle of Erosion",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 21,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "Running water (fluvial action) is the most important exogenic agent of gradation on Earth, sculpting the majority of the land surface. This topic naturally follows weathering and mass wasting: once rock is broken down, running water transports and deposits it, creating erosional and depositional landforms across the river's long profile.",
+  "concept_checklist": [
+    "Running water is the most important agent of erosion and deposition, acting through the river's long profile from source to mouth.",
+    "Fluvial erosion operates through hydraulic action, abrasion (corrasion), attrition, and solution (corrosion).",
+    "Erosional landforms include V-shaped valleys, gorges, canyons, waterfalls, potholes, river terraces, and structural benches.",
+    "Depositional landforms include alluvial fans, natural levees, floodplains, meanders, oxbow lakes, braided channels, and deltas.",
+    "A meander is a looping bend formed by lateral erosion on the concave (outer) bank and deposition on the convex (inner) bank.",
+    "An oxbow lake forms when a meander neck is cut off and abandoned by the river during flooding.",
+    "A delta forms where a river deposits its sediment load on entering a standing water body, as in the Ganga-Brahmaputra (Sundarbans) delta.",
+    "W. M. Davis proposed the geographical (geomorphic) cycle of erosion with youthful, mature, and old stages, while Walther Penck offered an alternative tectonic-uplift model.",
+    "Rejuvenation revives erosional activity (forming incised meanders and river terraces) due to uplift or a fall in base level.",
+    "River capture (stream piracy), antecedent drainage, and consequent drainage explain how Indian river systems evolved."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "A single raindrop is powerless. But gather a billion of them into a river and you can carve the Grand Canyon, move a Himalaya grain by grain into the Bay of Bengal, and build new land where there was only sea. Running water is the planet's most relentless sculptor — and most of the landscape you have ever seen was shaped by it. The question is not whether a river changes the land, but how."},
+        {"type": "statgrid", "items": [
+          {"value": "~70%", "label": "of land sculpted by running water"},
+          {"value": "1 km³+", "label": "silt the Ganga carries to sea yearly"},
+          {"value": "3", "label": "Davisian stages (youth-mature-old)"},
+          {"value": "Bay of Bengal", "label": "world's largest delta drains here"}
+        ]},
+        {"type": "heading", "text": "Running Water — The Master Agent"},
+        {"type": "para", "text": "Among all exogenic (external) agents, **running water** is the most important agent of **gradation** — the process that levels the land. A river works in three ways: **erosion** (wearing away rock), **transportation** (carrying the load), and **deposition** (dropping the load). In humid regions like the Indian plains, rivers such as the **Ganga**, **Yamuna**, and **Brahmaputra** dominate the entire landscape, from the steep Himalayan gorges where they begin to the vast deltas where they end."},
+        {"type": "para", "text": "A river's behaviour changes along its **long profile** (the slope from source to mouth). In the **upper course** (mountains), the river has high energy and steep slope, so **vertical erosion** dominates — cutting deep **V-shaped valleys** and **gorges**, as the **Brahmaputra** does in the Dihang gorge. In the **middle course**, the slope flattens and the river begins to swing sideways, forming **meanders**. In the **lower course**, the river is sluggish and overloaded, so **deposition** dominates, building **floodplains** and **deltas**."},
+        {"type": "para", "text": "The processes of fluvial erosion are: **hydraulic action** (the sheer force of water dislodging material), **abrasion/corrasion** (the load grinding the bed and banks), **attrition** (load particles colliding and breaking each other down), and **solution/corrosion** (chemical dissolving of soluble rocks). The **Kosi** river of Bihar — the 'Sorrow of Bihar' — illustrates how a heavily-loaded river deposits sediment, shifts its course, and braids across its own floodplain."},
+        {"type": "analogy", "text": "Think of a river like a conveyor belt at a quarry. Near the engine (upper course) it runs fast and grinds rock downward; in the middle it slows and the load starts sliding side to side; at the delivery end (mouth) it dumps everything in a fan-shaped heap. Same belt, same load — only the speed and slope change the result."},
+        {"type": "heading", "text": "Erosional vs Depositional Landforms"},
+        {"type": "compare", "title": "Two Families of Fluvial Landforms", "left": {"label": "Erosional (Upper/Middle Course)", "items": ["V-shaped valley — vertical down-cutting", "Gorge / Canyon — deep, steep-sided", "Waterfall & rapids — over hard rock", "Potholes — drilled by swirling pebbles", "River terraces — old floodplain remnants", "Cut-off slopes on meander outer bank"]}, "right": {"label": "Depositional (Middle/Lower Course)", "items": ["Alluvial fan — at mountain foot", "Natural levee — raised river bank", "Floodplain — flat sediment plain", "Point bar — on meander inner bank", "Oxbow lake — abandoned meander loop", "Delta — at the river mouth"]}},
+        {"type": "para", "text": "These two families are not separate rivers — they are the **same river at different stages**. As the slope decreases downstream, the river shifts from a net **eroder** to a net **depositor**. Understanding this transition is the key to the entire topic and to the **cycle of erosion** discussed later."},
+        {"type": "keyterms", "terms": [
+          {"term": "V-shaped valley", "definition": "Narrow, steep-sided valley formed by **vertical erosion** in a river's youthful (upper) course."},
+          {"term": "Gorge / Canyon", "definition": "A very deep, narrow valley with near-vertical walls. A **gorge** is deep and narrow; a **canyon** is a wider gorge in horizontal strata (e.g., Grand Canyon)."},
+          {"term": "Waterfall", "definition": "A vertical drop where the river flows over **resistant rock** onto softer rock; retreats upstream over time."},
+          {"term": "Meander", "definition": "A looping bend; erosion on the **concave (outer)** bank, deposition on the **convex (inner)** bank."},
+          {"term": "Oxbow lake", "definition": "A crescent-shaped lake left when a meander **neck is cut off** and the loop is abandoned."},
+          {"term": "Floodplain", "definition": "A flat plain of **alluvium** beside a river, built up by repeated flood deposition."},
+          {"term": "Delta", "definition": "A depositional landform at a river's **mouth**, where it dumps sediment into a sea or lake (e.g., Sundarbans)."},
+          {"term": "Alluvial fan", "definition": "A fan-shaped deposit where a stream leaves a **steep mountain** and spreads onto a plain, dropping its load."},
+          {"term": "Natural levee", "definition": "A raised ridge of coarse sediment along a river bank, built by **overflow deposition** during floods."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Running Water",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "7", "page_start": 62, "page_end": 74, "external_url": "https://ncert.nic.in/textbook/pdf/kegy107.pdf", "text": "Chapter 7 'Landforms and their Evolution' explains how running water, groundwater, glaciers, waves and wind create distinctive erosional and depositional landforms. The fluvial section covers the work of rivers from the upper to the lower course.", "key_facts": ["Running water is the most important geomorphic agent in shaping the land surface", "Two components of running water: overland flow on slopes (sheet erosion) and linear flow in channels (river/stream)", "Erosional fluvial landforms: valleys, potholes, plunge pools, incised meanders, river terraces", "Depositional fluvial landforms: alluvial fans, deltas, floodplains, natural levees, point bars, meanders, braided channels"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 7"},
+        {"type": "points", "title": "Work of Running Water", "items": ["Two components: **overland flow** (sheet wash over the surface) and **channel/linear flow** (the river itself)", "Downcutting (valley deepening) dominates in the **youthful** upper course", "Lateral erosion (valley widening, meandering) dominates in the **mature** middle course", "Deposition dominates in the **old** lower course where gradient is gentle"]},
+        {"type": "points", "title": "Erosional Landforms (NCERT)", "items": ["**Valleys** evolve from rills → gullies → V-shaped valley → gorge/canyon", "**Potholes & plunge pools** — circular depressions drilled by grinding pebbles and at the foot of waterfalls", "**Incised / entrenched meanders** — deep meander loops formed after rejuvenation", "**River terraces** — surfaces marking old valley floors / former floodplain levels"]},
+        {"type": "points", "title": "Depositional Landforms (NCERT)", "items": ["**Alluvial fans** — coarse sediment dumped where streams leave mountains", "**Deltas** — like fans but at the river mouth; sediment sorted (coarse to fine seaward)", "**Floodplains, natural levees and point bars** — built by flood deposition and meander migration", "**Braided channels** — sediment bars divide the river into interlacing channels"]},
+        {"type": "para", "text": "NCERT stresses that a river attempts to achieve a **graded profile** — a smooth, concave long profile representing **balance between erosion and deposition**. When this balance is disturbed by **uplift** or a **fall in base level**, the river is **rejuvenated** and begins down-cutting afresh, producing incised meanders and terraces."},
+        {"type": "diagram", "id": "river-long-profile", "caption": "Idealised long profile of a river: steep youthful upper course (V-valleys, gorges) grading to a gentle old lower course (floodplains, delta) — the graded concave profile."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC frequently lifts straight from NCERT Ch. 7: (1) the difference between a gorge and a canyon, (2) how meanders and oxbow lakes form, (3) the distinction between an alluvial fan and a delta, and (4) what 'base level' and 'graded profile' mean. Read the diagrams, not just the text."},
+        {"type": "para", "text": "NCERT also notes that **base level** is the lowest level to which a river can erode — usually **sea level**. A river cannot cut below its base level. Local base levels (a lake or a resistant rock band) can temporarily control erosion upstream."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Davis's Cycle of Erosion & Stages",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "The Davisian Geographical Cycle of Erosion"},
+        {"type": "para", "text": "In 1899, **William Morris Davis** proposed the **geographical cycle (cycle of erosion)** — the idea that landscapes evolve through a sequence of stages, famously summarised as **\"landscape is a function of structure, process, and time (stage)\"**. Davis assumed **rapid uplift followed by a long period of stability**, during which running water progressively wears the land down toward a near-level surface called a **peneplain**."},
+        {"type": "compare", "title": "Davis's Three Stages of the Cycle", "left": {"label": "Youth → Maturity", "items": ["**Youth:** steep gradient, vigorous vertical erosion, V-shaped valleys, gorges, waterfalls, rapids; few tributaries; divides broad", "**Maturity:** graded profile attained, lateral erosion begins, well-developed meanders, widest valleys, maximum relief and integrated drainage"]}, "right": {"label": "Old Age", "items": ["**Old age:** very gentle gradient, deposition dominates", "Extensive floodplains, large sweeping meanders, oxbow lakes, natural levees", "Low relief; landscape reduced toward a **peneplain** with residual **monadnocks**"]}},
+        {"type": "heading", "text": "Davis vs Penck — A Fundamental Debate"},
+        {"type": "compare", "title": "Davisian vs Penckian Models", "left": {"label": "Davis (1899)", "items": ["Uplift is **rapid then ceases**; erosion acts on a static block", "Time/stage is the key variable", "End product: a **peneplain**", "Sequence: youth → maturity → old age"]}, "right": {"label": "Penck (1924)", "items": ["Uplift and erosion are **simultaneous and ongoing**", "Rate of uplift vs erosion controls slope form", "Slope replacement; end product: an **endrumpf** (worn-down surface)", "Stages: aufsteigende (waxing), gleichförmige, absteigende (waning) development"]}},
+        {"type": "callout", "tone": "insight", "title": "Why the Debate Matters", "text": "Davis treated uplift and erosion as **separate** in time; Penck treated them as **happening together**. In tectonically active regions like the **Himalayas**, where uplift is still ongoing, Penck's model often fits reality better — which is exactly why UPSC likes to contrast the two."},
+        {"type": "heading", "text": "The Graded Profile and Base Level"},
+        {"type": "para", "text": "A river constantly adjusts toward a **graded profile** — a smooth concave curve where the river's energy is just sufficient to transport its load, with neither net erosion nor net deposition. **Base level** (usually sea level) is the limit of down-cutting. A **temporary/local base level** — such as a lake or a hard rock bar — controls the profile upstream of it until the river erodes through it."},
+        {"type": "heading", "text": "Rejuvenation — A River Reborn"},
+        {"type": "para", "text": "When the land is **uplifted** or the **base level falls**, a river gains fresh erosive energy — this is **rejuvenation**. The river starts cutting down into its own floodplain, producing **incised (entrenched) meanders**, paired and unpaired **river terraces**, and **knickpoints** (sudden breaks of slope, often marked by waterfalls or rapids). The **incised meanders of the Himalayan rivers** and terraces along the **Ganga** plains record episodes of rejuvenation."},
+        {"type": "heading", "text": "River Capture (Stream Piracy)"},
+        {"type": "para", "text": "**River capture** (or **stream piracy**) occurs when a more powerful, actively head-eroding stream diverts the headwaters of a weaker neighbour into its own channel. The diverted stream is the **captured stream**; the bend where diversion happens is the **elbow of capture**; the now-dry valley below it is the **wind gap** or **beheaded valley**. A classic Indian example is the capture associated with the **Tista** river in the eastern Himalayas, and stream piracy is well documented on the **Shillong Plateau** (Meghalaya), where the area's high rainfall drives aggressive headward erosion."},
+        {"type": "heading", "text": "Drainage and Structure — Antecedent vs Consequent"},
+        {"type": "compare", "title": "Antecedent vs Consequent Drainage", "left": {"label": "Antecedent Drainage", "items": ["River **predates** the uplift of the land", "Maintains its course by cutting down as the land rises", "Cuts deep transverse gorges across mountains", "Indian examples: **Indus, Sutlej, Brahmaputra** crossing the Himalayas"]}, "right": {"label": "Consequent Drainage", "items": ["River develops **after** the land form, following the original slope", "Direction is a **consequence** of the initial slope", "Most Peninsular rivers flowing east are broadly consequent", "Indian examples: major **Peninsular rivers** down the Deccan slope"]}},
+        {"type": "callout", "tone": "why", "title": "Why Himalayan Rivers Cut Across the Mountains", "text": "The **Indus, Sutlej and Brahmaputra** flow through deep gorges that cut right across the Himalayan ranges. This is because they are **antecedent** — they were already flowing before the Himalayas rose, and they down-cut fast enough to keep their course as the mountains were uplifted around them."},
+        {"type": "collapsible", "title": "Advanced: Superimposed vs Antecedent Drainage", "content": "Both produce drainage that seems 'wrong' relative to the underlying rock structure. ANTECEDENT: the river existed before uplift and maintained its course (e.g., Brahmaputra). SUPERIMPOSED (epigenetic): the drainage pattern developed on a younger cover of rock and was then 'let down' onto a buried older structure as the cover eroded away, so the river ignores the structure beneath it. Parts of the Peninsular Indian drainage (e.g., the Damodar and some Chambal tributaries on the older Gondwana/Vindhyan surfaces) are cited as superimposed."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Rivers & Deltas",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Ganga-Brahmaputra (Sundarbans) Delta Under Threat", "text": "The world's largest delta, the **Ganga-Brahmaputra (Sundarbans)** delta, is **sinking and shrinking**. Upstream dams and barrages (e.g., Farakka) trap silt, so less sediment reaches the delta to offset **subsidence and sea-level rise**. Combined with mangrove loss and coastal erosion, several Sundarbans islands (such as Ghoramara and the lost Lohachara) have shrunk, displacing residents — a live example of 'delta drowning'. UPSC can frame this as environment + geomorphology linkage."},
+        {"type": "callout", "tone": "note", "title": "Sediment Starvation — Dams Trapping Silt", "text": "Large dams trap a major share of a river's **sediment load** in their reservoirs. This causes two problems: **reservoir sedimentation** (reducing storage and dam life) upstream, and **sediment starvation** downstream that accelerates **delta erosion** and **coastal land loss**. Sediment management — flushing, sluicing and de-silting — is now a key policy concern for Indian reservoirs."},
+        {"type": "callout", "tone": "note", "title": "National River Interlinking Project (NRLP)", "text": "India's **river interlinking** programme (e.g., the **Ken-Betwa Link**, formally launched) aims to transfer water from 'surplus' to 'deficit' basins. Geomorphologically it raises concerns about altered **sediment transport, downstream erosion/deposition, delta health and river morphology**. It is a recurring Mains theme on the costs and benefits of large water-transfer engineering."},
+        {"type": "callout", "tone": "note", "title": "Joshimath Subsidence & River Erosion (2023)", "text": "The land subsidence crisis at **Joshimath (Uttarakhand)** in early 2023 highlighted how **toe erosion by the Alaknanda/Dhauliganga**, combined with unstable slopes and construction, can destabilise Himalayan settlements. River erosion at the base of slopes is a classic trigger for mass movement in young fold mountains."},
+        {"type": "callout", "tone": "note", "title": "Kosi River Shifting & Embankment Stress", "text": "The **Kosi** ('Sorrow of Bihar'), one of the most sediment-laden and laterally mobile rivers, continues to **aggrade its bed and shift course**, raising recurring flood and embankment-breach risks. It is a textbook live case of a heavily-loaded river depositing sediment and braiding across its alluvial fan/floodplain."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Fluvial Landforms",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "A delta and an alluvial fan are the same landform", "correct": "Both are depositional, but an ALLUVIAL FAN forms on LAND where a stream leaves a mountain front, while a DELTA forms at the river's MOUTH where it enters a standing water body (sea/lake). The delta's sediments are also sorted seaward; fan sediments are coarser and less sorted."},
+        {"type": "trap", "wrong": "On a meander, erosion happens on the inner bank and deposition on the outer bank", "correct": "It is the REVERSE. Erosion occurs on the CONCAVE/OUTER bank (faster flow, undercutting), and deposition (point bar) occurs on the CONVEX/INNER bank (slower flow). This asymmetry causes the meander to migrate."},
+        {"type": "trap", "wrong": "A gorge and a canyon are identical", "correct": "A GORGE is deep and narrow with near-vertical walls (forms in hard rock / humid regions). A CANYON is essentially a wider gorge developed in horizontally-bedded rock in arid regions (e.g., the Grand Canyon). Depth/width and rock structure distinguish them."},
+        {"type": "trap", "wrong": "Rejuvenation means the river is depositing more sediment", "correct": "Rejuvenation means RENEWED EROSION. Triggered by uplift or a fall in base level, the river starts DOWN-CUTTING again, forming incised meanders, river terraces and knickpoints — not extra deposition."},
+        {"type": "trap", "wrong": "Antecedent rivers formed after the mountains were uplifted", "correct": "ANTECEDENT rivers EXISTED BEFORE the uplift and maintained their course by down-cutting as the land rose (e.g., Indus, Sutlej, Brahmaputra cutting Himalayan gorges). Rivers that form AFTER, following the new slope, are CONSEQUENT."},
+        {"type": "trap", "wrong": "The Davisian cycle ends in a high plateau", "correct": "The Davisian cycle of erosion ends in a PENEPLAIN — an almost-level, low-relief surface near base level — possibly with isolated residual hills called MONADNOCKS. It is a worn-DOWN surface, not an upland."},
+        {"type": "trap", "wrong": "A river can erode indefinitely, even below sea level", "correct": "A river cannot erode below its BASE LEVEL (normally sea level). Down-cutting slows and stops as the profile approaches grade. Only a FALL in base level (or uplift) renews vertical erosion via rejuvenation."},
+        {"type": "memory", "text": "MEANDER erosion = OUTER bank (think 'Outer = Off, eroded'); deposition = INNER bank (point bar). | OXBOW = Old meander, Cut-off, Bow-shaped, Water-filled. | DAVIS stages: 'Young Men Often' = Youth, Maturity, Old age. | DELTA at the Door (mouth); FAN at the Foot (of mountain)."}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2018, "question_text": "Consider the following landforms:\n1. V-shaped valley\n2. Oxbow lake\n3. Meander\nWhich of the above is/are associated with the work of running water?", "answer_text": "D (all three — 1, 2 and 3)", "explanation": "All three are fluvial landforms. The V-shaped valley is an erosional landform of the youthful upper course; meanders form by lateral erosion/deposition in the middle course; oxbow lakes form when a meander is cut off in the lower course. All are produced by running water.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "Match the following fluvial features with their mode of formation:\n(a) Delta  (b) Gorge  (c) Oxbow lake  (d) Alluvial fan — and identify whether each is primarily erosional or depositional.", "answer_text": "Delta — depositional (river mouth); Gorge — erosional (deep vertical cutting); Oxbow lake — depositional/cut-off (lower course); Alluvial fan — depositional (mountain foot).", "explanation": "Gorge is the only erosional feature here; the rest are depositional. This tests the student's ability to separate erosional from depositional fluvial landforms along the long profile.", "question_type": "MATCH_THE_FOLLOWING", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2019, "question_text": "\"Running water is the most important agent of gradation.\" In light of this statement, explain the erosional and depositional landforms produced by a river along its long profile.", "answer_text": "A river grades the land through erosion, transportation and deposition. In the youthful upper course, high energy and steep slope drive vertical erosion, producing V-shaped valleys, gorges/canyons, waterfalls, rapids and potholes. In the mature middle course, lateral erosion dominates, forming meanders, river cliffs and wide valleys. In the old lower course, deposition dominates, building floodplains, natural levees, point bars, oxbow lakes and ultimately a delta at the mouth (e.g., the Ganga-Brahmaputra/Sundarbans delta). Rejuvenation can renew erosion, producing incised meanders and river terraces. Thus running water shapes the majority of the land surface, justifying its status as the master agent of gradation.", "explanation": "Mains answer structure: define gradation → upper-course erosional landforms → middle-course transition → lower-course depositional landforms → delta → add rejuvenation and Indian examples (Ganga, Brahmaputra, Kosi, Sundarbans) for value.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding fluvial landforms:\n1. V-shaped valleys are formed by dominant vertical erosion in the upper course.\n2. Oxbow lakes are erosional landforms of the youthful stage.\n3. Natural levees are depositional landforms built along river banks during floods.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 3 only"}, {"label": "B", "text": "1 and 2 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — V-shaped valleys result from vertical down-cutting in the upper course. Statement 2 is WRONG — oxbow lakes are DEPOSITIONAL/cut-off features of the OLD (lower) course, not erosional youthful ones. Statement 3 is correct — natural levees are depositional ridges built by overflow during floods. Hence 1 and 3 only.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about meanders:\n1. Erosion is concentrated on the concave (outer) bank of a meander.\n2. Deposition forms a point bar on the convex (inner) bank.\n3. An oxbow lake forms when the meander neck is cut off.\n4. Meanders are typical of the steep youthful upper course.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2 and 3 are correct — erosion on the concave/outer bank, point-bar deposition on the convex/inner bank, and oxbow lakes form on neck cut-off. Statement 4 is WRONG — meanders develop in the mature middle and old lower courses where the gradient is gentle, NOT in the steep youthful course. Hence only three.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about deltas and alluvial fans:\n1. A delta forms where a river deposits its load on entering a standing water body.\n2. An alluvial fan forms where a stream descends from a mountain onto a plain.\n3. Delta sediments are generally well sorted, becoming finer seaward.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. A delta is built at a river's mouth in a sea/lake (statement 1). An alluvial fan forms at a mountain foot on land (statement 2). Delta sediments are sorted, fining seaward as flow energy drops (statement 3). The key distinction is location — fan on land, delta at the mouth.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements regarding the work of a river:\n1. Hydraulic action involves the chemical dissolving of soluble rocks.\n2. Attrition is the wearing down of the load particles as they collide with one another.\n3. Abrasion (corrasion) is the grinding of the river bed and banks by the transported load.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "2 and 3 only"}, {"label": "B", "text": "1 and 2 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is WRONG — chemical dissolving is SOLUTION/corrosion, not hydraulic action (which is the mechanical force of moving water). Statement 2 is correct — attrition wears down load particles by collision. Statement 3 is correct — abrasion/corrasion grinds the bed and banks. Hence 2 and 3 only.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following stages of the Davisian cycle of erosion in the correct sequence from earliest to latest:\n1. Wide valleys with well-developed meanders and a graded profile\n2. Steep V-shaped valleys, gorges, waterfalls and rapids\n3. Low-relief peneplain with residual monadnocks\nSelect the correct chronological order:",
+      "options": [{"label": "A", "text": "2 → 1 → 3"}, {"label": "B", "text": "1 → 2 → 3"}, {"label": "C", "text": "2 → 3 → 1"}, {"label": "D", "text": "3 → 1 → 2"}],
+      "correct_option": "A",
+      "explanation": "The Davisian sequence is Youth → Maturity → Old age. Youth (2) has steep V-valleys, gorges and waterfalls. Maturity (1) shows a graded profile and well-developed meanders. Old age (3) reduces the land to a low peneplain with monadnocks. Hence 2 → 1 → 3.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following landforms in the order in which a river typically creates them moving from its source to its mouth:\n1. Delta\n2. Gorge / V-shaped valley\n3. Meanders and floodplain\n4. Alluvial fan at the mountain foot\nSelect the correct order:",
+      "options": [{"label": "A", "text": "2 → 4 → 3 → 1"}, {"label": "B", "text": "4 → 2 → 3 → 1"}, {"label": "C", "text": "2 → 3 → 4 → 1"}, {"label": "D", "text": "2 → 4 → 1 → 3"}],
+      "correct_option": "A",
+      "explanation": "From source to mouth: the river first cuts gorges/V-valleys in the mountains (2), then deposits an alluvial fan as it leaves the mountain front (4), then develops meanders and a floodplain across the plains (3), and finally builds a delta at the mouth (1). Hence 2 → 4 → 3 → 1.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The Indus, Sutlej and Brahmaputra cut deep transverse gorges across the Himalayan ranges.\nReason (R): These rivers are antecedent — they existed before the uplift of the Himalayas and maintained their courses by down-cutting as the mountains rose.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — these rivers do cut transverse Himalayan gorges. R is correct AND is the right explanation — they are antecedent rivers that predated the Himalayan uplift and down-cut fast enough to keep their course as the land rose. R fully explains A.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The Davisian cycle of erosion ends in a low, almost level surface called a peneplain.\nReason (R): Davis assumed continuous and rapid tectonic uplift throughout the entire cycle of erosion.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — the Davisian cycle culminates in a peneplain (with monadnocks). R is INCORRECT — Davis assumed RAPID uplift followed by a LONG PERIOD OF STABILITY, not continuous uplift. It was Penck who modelled simultaneous, ongoing uplift and erosion. Hence A correct, R incorrect.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Why does an oxbow lake form along a meandering river?",
+      "options": [{"label": "A", "text": "Continued erosion narrows the meander neck until the river cuts across it, abandoning the loop"}, {"label": "B", "text": "Tectonic uplift raises the river bed and traps water in a depression"}, {"label": "C", "text": "Heavy deposition at the river mouth backs water up into the channel"}, {"label": "D", "text": "Vertical erosion deepens the valley faster than the river can widen it"}],
+      "correct_option": "A",
+      "explanation": "Option A is correct — as a meander grows, erosion on the outer banks narrows the neck; during a flood the river cuts straight across the neck, and deposition seals off the old loop, leaving a crescent-shaped oxbow lake. B and C describe unrelated processes; D describes youthful valley deepening, which does not create oxbow lakes.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The Ganga-Brahmaputra (Sundarbans) delta is increasingly threatened by subsidence and land loss. Which of the following is the most direct geomorphic cause?",
+      "options": [{"label": "A", "text": "Upstream dams and barrages trap sediment, reducing the silt supply needed to offset subsidence and sea-level rise"}, {"label": "B", "text": "The delta is being uplifted faster than the sea level is rising"}, {"label": "C", "text": "Rivers have stopped carrying any sediment to the coast"}, {"label": "D", "text": "Increased rainfall has caused the delta to expand seaward rapidly"}],
+      "correct_option": "A",
+      "explanation": "Option A is correct — dams/barrages trap sediment upstream, so less silt reaches the delta to counter natural subsidence and rising seas, causing islands to shrink. B is wrong (deltas subside, not uplift). C is an overstatement — sediment is reduced, not stopped. D is the opposite of the observed shrinking.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A river that had developed wide meanders begins to cut down vertically into its own floodplain, forming incised meanders and paired river terraces. What is the most likely cause?",
+      "options": [{"label": "A", "text": "Rejuvenation due to uplift of the land or a fall in base level"}, {"label": "B", "text": "An increase in the river's sediment load only"}, {"label": "C", "text": "The river reaching its graded profile and old-age stage"}, {"label": "D", "text": "A rise in sea level submerging the lower course"}],
+      "correct_option": "A",
+      "explanation": "Option A is correct — incised meanders and terraces are classic signs of REJUVENATION, triggered by uplift or a fall in base level that renews vertical erosion. B (more load) would promote deposition, not down-cutting. C (old age) is dominated by deposition. D (sea-level rise) would drown the lower course, not cause incision.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Fluvial Landform) with List-II (Characteristic feature):\n\nList-I: (a) Waterfall, (b) Oxbow lake, (c) Alluvial fan, (d) Natural levee\nList-II: (1) Raised ridge along a river bank built by flood overflow, (2) Vertical drop where a river crosses resistant rock, (3) Crescent-shaped cut-off meander loop, (4) Fan-shaped deposit at a mountain foot",
+      "options": [{"label": "A", "text": "a-2, b-3, c-4, d-1"}, {"label": "B", "text": "a-2, b-4, c-3, d-1"}, {"label": "C", "text": "a-1, b-3, c-4, d-2"}, {"label": "D", "text": "a-3, b-2, c-1, d-4"}],
+      "correct_option": "A",
+      "explanation": "Waterfall — vertical drop over resistant rock (2). Oxbow lake — crescent-shaped cut-off meander (3). Alluvial fan — fan-shaped deposit at a mountain foot (4). Natural levee — raised ridge along the bank from flood overflow (1). Hence a-2, b-3, c-4, d-1.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Concept) with List-II (Description):\n\nList-I: (a) Antecedent drainage, (b) Consequent drainage, (c) River capture, (d) Base level\nList-II: (1) Lowest level to which a river can erode, (2) River that predates uplift and maintains its course, (3) Diversion of one stream's headwaters by another, (4) River that follows the original slope of the land",
+      "options": [{"label": "A", "text": "a-2, b-4, c-3, d-1"}, {"label": "B", "text": "a-4, b-2, c-1, d-3"}, {"label": "C", "text": "a-2, b-4, c-1, d-3"}, {"label": "D", "text": "a-1, b-3, c-4, d-2"}],
+      "correct_option": "A",
+      "explanation": "Antecedent drainage — river predates uplift and maintains course (2). Consequent drainage — follows the original slope (4). River capture — diversion of one stream's headwaters by another (3). Base level — lowest level of erosion (1). Hence a-2, b-4, c-3, d-1.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following Indian rivers is best known for being heavily sediment-laden, frequently shifting its course and braiding across its alluvial fan, earning the nickname 'Sorrow of Bihar'?",
+      "options": [{"label": "A", "text": "Kosi"}, {"label": "B", "text": "Yamuna"}, {"label": "C", "text": "Chambal"}, {"label": "D", "text": "Godavari"}],
+      "correct_option": "A",
+      "explanation": "The Kosi is correct — it carries an enormous Himalayan sediment load, aggrades its bed, frequently shifts course and braids across a large alluvial fan in Bihar, causing recurrent floods ('Sorrow of Bihar'). The Yamuna, Chambal and Godavari are not associated with this particular pattern and nickname.",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following pairs of geomorphologists is correctly associated with their model of landform evolution?",
+      "options": [{"label": "A", "text": "W. M. Davis — geographical cycle of erosion ending in a peneplain"}, {"label": "B", "text": "Walther Penck — cycle ending in a peneplain assuming rapid early uplift then stability"}, {"label": "C", "text": "W. M. Davis — simultaneous uplift and erosion ending in an endrumpf"}, {"label": "D", "text": "Walther Penck — three stages named youth, maturity and old age"}],
+      "correct_option": "A",
+      "explanation": "Option A is correct — Davis proposed the geographical cycle of erosion (youth-maturity-old age) ending in a peneplain. B and D wrongly assign Davis's ideas (peneplain, youth/maturity/old age, rapid-then-stable uplift) to Penck. C wrongly assigns Penck's simultaneous-uplift/endrumpf model to Davis.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}
