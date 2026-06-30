@@ -66,9 +66,21 @@
       ]
     },
     {
-      "section_label": "ADVANCED",
-      "title": "Reference-Book Depth & 2026 Current Affairs",
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Content Mapping",
       "display_order": 2,
+      "authored": true,
+      "blocks": [
+        { "type": "callout", "tone": "note", "title": "Source", "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** (pp. 16–18) is the core reference." },
+        { "type": "para", "text": "NCERT says: 'The nebula began to collapse approximately 5–5.6 billion years ago.' It attributes the hypothesis to **Kant and Laplace** and mentions the 1950 revision by **Schmidt and Weizäcker** adding the concept of a rotating disk with particles condensing into planets." },
+        { "type": "para", "text": "Key NCERT statements to memorise: (1) planets formed from the same cloud as the Sun; (2) inner planets are small and rocky, outer planets are large and gaseous; (3) the **asteroid belt** lies between Mars and Jupiter, marking the transition zone (a simplified frost-line concept)." },
+        { "type": "quiz", "question": "According to NCERT, who revised the Nebular Hypothesis in 1950?", "answer": "**Otto Schmidt (Russia)** and **Carl Weizäcker (Germany)**. They incorporated the rotating-disk and particle-condensation ideas into the hypothesis." }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Reference-Book Depth",
+      "display_order": 3,
       "authored": true,
       "blocks": [
         { "type": "heading", "text": "NCERT Coverage (Class 11, Ch. 2 + Class 9)" },
@@ -80,37 +92,27 @@
           { "label": "Nebular (Laplace 1796)", "a": "Rotating nebula cooled and contracted leaving rings that condensed into planets", "b": "Could not explain Sun's slow rotation" },
           { "label": "Planetesimal (Chamberlin 1901)", "a": "A passing star pulled tidal debris from the Sun; small solid bodies (planetesimals) accreted", "b": "Rejected — probability of stellar encounter too low" },
           { "label": "Modern Solar Nebula", "a": "Combines nebular collapse + magnetic braking + accretion + frost line + runaway gas capture", "b": "Currently **accepted**; validated by ALMA disk imaging" }
-        ]},
-        { "type": "heading", "text": "Current Affairs (mid-2026)" },
-        { "type": "callout", "tone": "tip", "title": "High-Yield Linkages", "items": [
-          "**ALMA** (Chile, 2025): new super-resolution imaging revealed protoplanetary disks around protostars previously unresolved — the **first step** of planet formation after star birth confirmed observationally.",
-          "**JWST** detected **water vapour in inner regions** of protoplanetary disks, directly confirming the frost-line concept (water as vapour inside, ice outside).",
-          "**Aditya-L1** (ISRO, Jan 2024 at L1): studies solar magnetic fields and solar wind — the same processes that resolved the angular momentum problem via magnetic braking.",
-          "**Chandrayaan-3** (Aug 2023, lunar south pole): Pragyan rover analysed regolith composition — the Moon formed from a **giant impact** (proto-Earth + Theia) in the late stage of accretion."
-        ]},
-        { "type": "collapsible", "title": "Dig deeper — Chandrayaan-4 & 5", "items": [
-          "**Chandrayaan-4** — India's first lunar **sample-return** mission (up to 3 kg regolith); launch ~2028.",
-          "**Chandrayaan-5** — joint ISRO-JAXA, ~350-kg rover, ~100-day surface operation (vs Chandrayaan-3's 14 days).",
-          "Returned samples will constrain **Giant Impact Hypothesis** models (compositional match between Earth's mantle and lunar material)."
         ]}
       ]
     },
     {
-      "section_label": "NCERT_LEVEL",
-      "title": "NCERT Content Mapping",
-      "display_order": 3,
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Origin of the Solar System",
+      "display_order": 4,
       "authored": true,
       "blocks": [
-        { "type": "callout", "tone": "note", "title": "Source", "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** (pp. 16–18) is the core reference." },
-        { "type": "para", "text": "NCERT says: 'The nebula began to collapse approximately 5–5.6 billion years ago.' It attributes the hypothesis to **Kant and Laplace** and mentions the 1950 revision by **Schmidt and Weizäcker** adding the concept of a rotating disk with particles condensing into planets." },
-        { "type": "para", "text": "Key NCERT statements to memorise: (1) planets formed from the same cloud as the Sun; (2) inner planets are small and rocky, outer planets are large and gaseous; (3) the **asteroid belt** lies between Mars and Jupiter, marking the transition zone (a simplified frost-line concept)." },
-        { "type": "quiz", "question": "According to NCERT, who revised the Nebular Hypothesis in 1950?", "answer": "**Otto Schmidt (Russia)** and **Carl Weizäcker (Germany)**. They incorporated the rotating-disk and particle-condensation ideas into the hypothesis." }
+        { "type": "heading", "text": "Recent Developments (2023-2026)" },
+        { "type": "callout", "tone": "note", "title": "ALMA Super-Resolution Disk Imaging (2025)", "text": "**ALMA** (Chile, 2025): new super-resolution imaging revealed protoplanetary disks around protostars previously unresolved — the **first step** of planet formation after star birth confirmed observationally. This directly validates the disk-accretion stage of the Solar Nebula Theory." },
+        { "type": "callout", "tone": "note", "title": "JWST Confirms the Frost Line", "text": "**JWST** detected **water vapour in inner regions** of protoplanetary disks, directly confirming the frost-line concept — water exists as vapour inside the line and as ice beyond it, exactly as the theory predicts for the rocky-versus-gaseous divide." },
+        { "type": "callout", "tone": "note", "title": "Aditya-L1 and Magnetic Braking (ISRO, Jan 2024)", "text": "**Aditya-L1** (ISRO, Jan 2024 at L1): studies solar magnetic fields and the solar wind — the same processes that resolved the **angular momentum problem** via magnetic braking in the early Solar System." },
+        { "type": "callout", "tone": "note", "title": "Chandrayaan-3 and the Giant Impact (Aug 2023)", "text": "**Chandrayaan-3** (Aug 2023, lunar south pole): the Pragyan rover analysed regolith composition — the Moon is thought to have formed from a **giant impact** (proto-Earth + Theia) during the late stage of accretion." },
+        { "type": "callout", "tone": "note", "title": "Chandrayaan-4 & 5 — Constraining the Giant Impact", "text": "**Chandrayaan-4** is India's first lunar **sample-return** mission (up to 3 kg regolith, launch ~2028); **Chandrayaan-5** is a joint ISRO-JAXA ~350-kg rover with ~100-day surface operation. Returned samples will test **Giant Impact Hypothesis** models by comparing Earth's mantle and lunar material." }
       ]
     },
     {
       "section_label": "EXAMINER_TRAPS",
       "title": "Examiner Traps & Common Confusions",
-      "display_order": 4,
+      "display_order": 5,
       "authored": true,
       "blocks": [
         { "type": "trap", "title": "Trap 1 — 'Kant and Laplace jointly proposed'", "text": "WRONG. They proposed **independently** — Kant (1755) first, Laplace (1796) later. They never collaborated." },
@@ -162,7 +164,8 @@
         { "label": "D", "text": "1, 2 and 3" }
       ],
       "correct_option": "A",
-      "explanation": "Only statement 2 is correct. Kant and Laplace proposed INDEPENDENTLY (not jointly) — statement 1 is wrong. The Sun has 99.86% of the MASS but only 0.5% of angular momentum — statement 3 swaps mass and momentum."
+      "explanation": "Only statement 2 is correct. Kant and Laplace proposed INDEPENDENTLY (not jointly) — statement 1 is wrong. The Sun has 99.86% of the MASS but only 0.5% of angular momentum — statement 3 swaps mass and momentum.",
+      "review_status": "REVIEWED"
     },
     {
       "display_order": 2,
@@ -175,7 +178,8 @@
         { "label": "D", "text": "Jupiter captured gas from the interstellar medium after Solar System formation" }
       ],
       "correct_option": "B",
-      "explanation": "Beyond the frost line (~2.7 AU), ices condensed alongside rock, providing far more solid material for protoplanets to grow. Once a core reached ~10 Earth masses, it captured surrounding H/He gas in a runaway process — forming a gas giant."
+      "explanation": "Beyond the frost line (~2.7 AU), ices condensed alongside rock, providing far more solid material for protoplanets to grow. Once a core reached ~10 Earth masses, it captured surrounding H/He gas in a runaway process — forming a gas giant.",
+      "review_status": "REVIEWED"
     },
     {
       "display_order": 3,
@@ -188,7 +192,8 @@
         { "label": "D", "text": "1, 2 and 3" }
       ],
       "correct_option": "A",
-      "explanation": "Magnetic braking (Sun's field + solar wind transferring momentum to the disk) and turbulent viscosity are the accepted mechanisms. 'Gravitational capture by a passing star' is from the rejected Planetesimal/Tidal Hypothesis, not the Nebular model."
+      "explanation": "Magnetic braking (Sun's field + solar wind transferring momentum to the disk) and turbulent viscosity are the accepted mechanisms. 'Gravitational capture by a passing star' is from the rejected Planetesimal/Tidal Hypothesis, not the Nebular model.",
+      "review_status": "REVIEWED"
     },
     {
       "display_order": 4,
@@ -201,7 +206,8 @@
         { "label": "D", "text": "2, 4, 1, 3" }
       ],
       "correct_option": "A",
-      "explanation": "Kant (1755) → Laplace (1796) → Chamberlin (1901) → Schmidt-Weizäcker (1950). Order: 2, 1, 4, 3."
+      "explanation": "Kant (1755) → Laplace (1796) → Chamberlin (1901) → Schmidt-Weizäcker (1950). Order: 2, 1, 4, 3.",
+      "review_status": "REVIEWED"
     },
     {
       "display_order": 5,
@@ -214,7 +220,148 @@
         { "label": "D", "text": "It images protoplanetary disks around other stars" }
       ],
       "correct_option": "B",
-      "explanation": "Aditya-L1 studies the Sun's corona, magnetic fields, and solar wind — the same physical processes that resolved the Angular Momentum Problem in the Solar Nebula through magnetic braking. A/C/D are factually incorrect about Aditya-L1's mission."
+      "explanation": "Aditya-L1 studies the Sun's corona, magnetic fields, and solar wind — the same physical processes that resolved the Angular Momentum Problem in the Solar Nebula through magnetic braking. A/C/D are factually incorrect about Aditya-L1's mission.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 6,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following statements about the frost line in the Solar System: 1. It lies at approximately 2.7 AU, between the orbits of Mars and Jupiter. 2. Inside the frost line, only metals and silicates could survive to form rocky terrestrial planets. 3. Beyond the frost line, ices condensed alongside rock, giving protoplanets more solid material. Which of the above statements is/are correct?",
+      "options": [
+        { "label": "A", "text": "1 and 2 only" },
+        { "label": "B", "text": "2 and 3 only" },
+        { "label": "C", "text": "1 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "D",
+      "explanation": "All three statements are correct. The frost line is at ~2.7 AU between Mars and Jupiter (statement 1). Inside it, only metals and silicates survived to build terrestrial planets (statement 2). Beyond it, ices condensed with rock so protoplanets had far more solid material to grow massive cores (statement 3).",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 7,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "With reference to the stages of planet formation in the Solar Nebula, consider the following statements: 1. Planetesimals are 1–10 km sized rocky or icy bodies. 2. Runaway gas capture occurred only for protoplanets beyond the frost line. 3. Jupiter has a mass of about 318 Earth masses. Which of the above statements is/are correct?",
+      "options": [
+        { "label": "A", "text": "1 only" },
+        { "label": "B", "text": "1 and 2 only" },
+        { "label": "C", "text": "2 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "D",
+      "explanation": "All three are correct. Planetesimals are 1–10 km building blocks (statement 1). Runaway gas capture happened beyond the frost line where protoplanets reached ~10 Earth masses and captured H/He gas (statement 2). The file states Jupiter = 318 Earth masses (statement 3).",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 8,
+      "question_type": "CHRONOLOGICAL",
+      "question_text": "Arrange the following stages of planet building in the correct sequence: 1. Protoplanets 2. Dust grains sticking together 3. Runaway gas capture forming gas giants 4. Planetesimals (1–10 km bodies).",
+      "options": [
+        { "label": "A", "text": "2, 4, 1, 3" },
+        { "label": "B", "text": "2, 1, 4, 3" },
+        { "label": "C", "text": "4, 2, 1, 3" },
+        { "label": "D", "text": "2, 4, 3, 1" }
+      ],
+      "correct_option": "A",
+      "explanation": "The accretion sequence is: dust grains collide and stick (2) → planetesimals 1–10 km (4) → protoplanets (1) → runaway gas capture forming gas giants beyond the frost line (3). Correct order: 2, 4, 1, 3.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 9,
+      "question_type": "ASSERTION_REASON",
+      "question_text": "Assertion (A): Gas giants such as Jupiter formed beyond the frost line of the Solar System.\nReason (R): Beyond the frost line, ices condensed alongside rock, allowing protoplanets to grow massive cores that captured surrounding hydrogen and helium gas.",
+      "options": [
+        { "label": "A", "text": "Both A and R are correct, and R is the correct explanation of A" },
+        { "label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A" },
+        { "label": "C", "text": "A is correct but R is incorrect" },
+        { "label": "D", "text": "A is incorrect but R is correct" }
+      ],
+      "correct_option": "A",
+      "explanation": "A is correct — gas giants formed beyond the frost line (~2.7 AU). R is correct and is the precise mechanism — beyond the frost line ices condensed with rock, giving protoplanets more solid material to build ~10 Earth-mass cores that then captured H/He gas. R fully explains A.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 10,
+      "question_type": "ASSERTION_REASON",
+      "question_text": "Assertion (A): The Sun rotates more slowly than the Nebular Hypothesis would naively predict.\nReason (R): Magnetic braking transferred angular momentum outward from the young Sun to the protoplanetary disk via its magnetic field and the solar wind.",
+      "options": [
+        { "label": "A", "text": "Both A and R are correct, and R is the correct explanation of A" },
+        { "label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A" },
+        { "label": "C", "text": "A is correct but R is incorrect" },
+        { "label": "D", "text": "A is incorrect but R is correct" }
+      ],
+      "correct_option": "A",
+      "explanation": "A is correct — the Sun holds 99.86% of the mass but only 0.5% of angular momentum, so it spins slower than expected (the Angular Momentum Problem). R is correct and is the accepted explanation — magnetic braking moved momentum outward to the disk via the Sun's magnetic field and solar wind. R explains A.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 11,
+      "question_type": "CAUSE_EFFECT",
+      "question_text": "Which of the following is NOT a correct cause-and-effect relationship in the formation of the Solar System?",
+      "options": [
+        { "label": "A", "text": "The nebula contracted → it spun faster due to conservation of angular momentum" },
+        { "label": "B", "text": "The proto-Sun's core reached extreme temperature and pressure → nuclear fusion of hydrogen ignited" },
+        { "label": "C", "text": "A passing star pulled tidal debris from the Sun → the planets of our Solar System formed" },
+        { "label": "D", "text": "Protoplanets beyond the frost line reached ~10 Earth masses → they captured H/He gas in a runaway process" }
+      ],
+      "correct_option": "C",
+      "explanation": "C is INCORRECT (and therefore the answer). The 'passing star pulling tidal debris' is Chamberlin's Planetesimal/Tidal Hypothesis, which was rejected because the probability of such a stellar encounter is too low — it is not how our Solar System formed. A, B and D are all valid cause-effect chains in the Solar Nebula Theory.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 12,
+      "question_type": "CAUSE_EFFECT",
+      "question_text": "The compositional gradient of the Solar System — rocky planets in the inner region and gaseous giants in the outer region — is primarily a consequence of:",
+      "options": [
+        { "label": "A", "text": "The frost line, beyond which volatile ices could condense and add solid material" },
+        { "label": "B", "text": "The Big Bang directly forming planets of different compositions" },
+        { "label": "C", "text": "A passing star depositing heavier elements near the Sun" },
+        { "label": "D", "text": "The Sun's magnetic field sorting planets by density" }
+      ],
+      "correct_option": "A",
+      "explanation": "A is correct — inside the frost line only metals and silicates survived (rocky terrestrial planets), while beyond it ices condensed alongside rock, letting protoplanets grow massive cores that captured gas (gas giants). This gradient matches frost-line predictions. B, C and D are not supported by the file's account.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 13,
+      "question_type": "CAUSE_EFFECT",
+      "question_text": "Why do all the planets orbit the Sun in approximately the same plane and the same direction?",
+      "options": [
+        { "label": "A", "text": "Because they were captured individually from interstellar space" },
+        { "label": "B", "text": "Because they all formed from a single rotating, flattened protoplanetary disk" },
+        { "label": "C", "text": "Because the Sun's gravity later aligned their independent orbits" },
+        { "label": "D", "text": "Because a passing star set them spinning in one direction" }
+      ],
+      "correct_option": "B",
+      "explanation": "B is correct — the planets condensed from one rotating cloud that flattened into a protoplanetary disk, so they inherited a common direction (prograde) and a common plane (the ecliptic). This shared orbital geometry is cited as direct evidence for the Nebular Hypothesis. A, C and D contradict the disk-formation model.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 14,
+      "question_type": "MATCH_THE_FOLLOWING",
+      "question_text": "Match List-I (Hypothesis) with List-II (Proponent and year):\n\nList-I: (a) Gaseous Hypothesis, (b) Nebular model, (c) Planetesimal Hypothesis, (d) 1950 revision\nList-II: (1) Laplace, 1796, (2) Chamberlin, 1901, (3) Kant, 1755, (4) Schmidt and Weizäcker, 1950",
+      "options": [
+        { "label": "A", "text": "a-3, b-1, c-2, d-4" },
+        { "label": "B", "text": "a-1, b-3, c-2, d-4" },
+        { "label": "C", "text": "a-3, b-1, c-4, d-2" },
+        { "label": "D", "text": "a-2, b-1, c-3, d-4" }
+      ],
+      "correct_option": "A",
+      "explanation": "Gaseous Hypothesis — Kant, 1755 (a-3); Nebular model — Laplace, 1796 (b-1); Planetesimal Hypothesis — Chamberlin, 1901 (c-2); 1950 revision — Schmidt and Weizäcker (d-4). Correct match: a-3, b-1, c-2, d-4.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 15,
+      "question_type": "MATCH_THE_FOLLOWING",
+      "question_text": "Match List-I (Mission/Instrument) with List-II (Relevance to Solar System origin):\n\nList-I: (a) ALMA, (b) Aditya-L1, (c) Chandrayaan-3, (d) JWST\nList-II: (1) Studies solar magnetic fields and solar wind linked to magnetic braking, (2) Imaged protoplanetary disks such as HL Tauri, (3) Detected water vapour inside protoplanetary disks confirming the frost line, (4) Analysed lunar regolith linked to a giant-impact event",
+      "options": [
+        { "label": "A", "text": "a-2, b-1, c-4, d-3" },
+        { "label": "B", "text": "a-1, b-2, c-4, d-3" },
+        { "label": "C", "text": "a-2, b-1, c-3, d-4" },
+        { "label": "D", "text": "a-3, b-1, c-4, d-2" }
+      ],
+      "correct_option": "A",
+      "explanation": "ALMA imaged protoplanetary disks like HL Tauri (a-2); Aditya-L1 studies solar magnetic fields and solar wind tied to magnetic braking (b-1); Chandrayaan-3 analysed lunar regolith linked to the giant-impact origin of the Moon (c-4); JWST detected water vapour inside disks confirming the frost line (d-3). Correct match: a-2, b-1, c-4, d-3.",
+      "review_status": "REVIEWED"
     }
   ]
 }

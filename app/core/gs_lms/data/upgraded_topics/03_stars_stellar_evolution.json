@@ -57,9 +57,21 @@
       ]
     },
     {
-      "section_label": "ADVANCED",
-      "title": "Reference-Book Depth & 2026 Current Affairs",
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Content Mapping",
       "display_order": 2,
+      "authored": true,
+      "blocks": [
+        { "type": "callout", "tone": "note", "title": "Source", "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** covers stellar evolution briefly as context for Solar System formation. **NCERT Class 6 — The Earth: Our Habitat, Chapter 1** introduces stars at the most basic level." },
+        { "type": "para", "text": "NCERT Class 11 states that heavier elements were formed by **stellar explosions** (supernovae) and that the Solar System formed from a **second-generation nebula** enriched with these elements. This directly connects stellar death to Earth's chemistry." },
+        { "type": "para", "text": "NCERT Class 6 introduces: 'The Sun is a **star**. Millions of stars form a **galaxy**.' This fundamental level is tested in UPSC combination statements." },
+        { "type": "para", "text": "Key NCERT point for UPSC: NCERT **does not** cover the H-R Diagram or Chandrasekhar Limit — these come from supplementary references (GC Leong, Savindra Singh). But NCERT does state that 'the Sun is a **medium-sized star**' — testable in options claiming the Sun is small or large." }
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Reference-Book Depth (GC Leong + Savindra Singh)",
+      "display_order": 3,
       "authored": true,
       "blocks": [
         { "type": "heading", "text": "GC Leong + Savindra Singh" },
@@ -72,32 +84,26 @@
           { "year": "1967", "title": "Pulsars discovered", "detail": "Jocelyn Bell Burnell detects the first pulsar (rotating neutron star)." },
           { "year": "2017", "title": "Neutron-star merger", "detail": "LIGO/Virgo detect gravitational waves from merging neutron stars + confirm r-process element production." }
         ]},
-        { "type": "heading", "text": "Current Affairs (mid-2026)" },
-        { "type": "callout", "tone": "tip", "title": "High-Yield Linkages", "items": [
-          "**JWST** continues imaging stellar nurseries in unprecedented detail — Carina Nebula 'Cosmic Cliffs' revealed hundreds of previously hidden protostars forming inside molecular clouds.",
-          "**LIGO-India** (under construction, Maharashtra) will improve localisation of gravitational-wave sources from neutron-star mergers — directly proving where r-process elements (gold, platinum) are made.",
-          "**Subrahmanyan Chandrasekhar** (Indian, Nobel 1983) — the **Chandrasekhar Limit** is named after him. UPSC frequently tests Indian scientists' contributions to physics/astronomy.",
-          "**Event Horizon Telescope** imaged Sagittarius A* (our galaxy's central black hole, 2022) — the endpoint of massive stellar evolution made visible."
-        ]},
         { "type": "quiz", "question": "The Chandrasekhar Limit is named after an Indian scientist. What does it describe, and what happens when it is exceeded?", "answer": "**Subrahmanyan Chandrasekhar** calculated that a white dwarf (or iron core) cannot support itself if it exceeds **~1.4 solar masses**. Beyond this limit, electron degeneracy pressure fails → the core collapses catastrophically → either a neutron star or black hole forms depending on the remaining mass." }
       ]
     },
     {
-      "section_label": "NCERT_LEVEL",
-      "title": "NCERT Content Mapping",
-      "display_order": 3,
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Stars & Stellar Evolution",
+      "display_order": 4,
       "authored": true,
       "blocks": [
-        { "type": "callout", "tone": "note", "title": "Source", "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** covers stellar evolution briefly as context for Solar System formation. **NCERT Class 6 — The Earth: Our Habitat, Chapter 1** introduces stars at the most basic level." },
-        { "type": "para", "text": "NCERT Class 11 states that heavier elements were formed by **stellar explosions** (supernovae) and that the Solar System formed from a **second-generation nebula** enriched with these elements. This directly connects stellar death to Earth's chemistry." },
-        { "type": "para", "text": "NCERT Class 6 introduces: 'The Sun is a **star**. Millions of stars form a **galaxy**.' This fundamental level is tested in UPSC combination statements." },
-        { "type": "para", "text": "Key NCERT point for UPSC: NCERT **does not** cover the H-R Diagram or Chandrasekhar Limit — these come from supplementary references (GC Leong, Savindra Singh). But NCERT does state that 'the Sun is a **medium-sized star**' — testable in options claiming the Sun is small or large." }
+        { "type": "heading", "text": "Recent Developments (2023-2026)" },
+        { "type": "callout", "tone": "note", "title": "JWST Images Stellar Nurseries", "text": "The **James Webb Space Telescope (JWST)** continues imaging stellar nurseries in unprecedented detail. The Carina Nebula 'Cosmic Cliffs' revealed hundreds of previously hidden **protostars** forming inside molecular clouds — direct visual evidence of the star-formation process described in this topic. UPSC can frame this as a science-and-technology linkage question." },
+        { "type": "callout", "tone": "note", "title": "LIGO-India Under Construction (Maharashtra)", "text": "**LIGO-India**, being built in Maharashtra, will improve localisation of gravitational-wave sources from **neutron-star mergers** — directly proving where r-process elements (gold, platinum) are made. This builds on the 2017 LIGO/Virgo detection of gravitational waves from merging neutron stars that first confirmed r-process element production." },
+        { "type": "callout", "tone": "note", "title": "Indian Scientists in Astrophysics", "text": "**Subrahmanyan Chandrasekhar** (Indian, Nobel Prize in Physics 1983) gives his name to the **Chandrasekhar Limit (~1.4 M☉)**. UPSC frequently tests Indian scientists' contributions to physics and astronomy, so the limit and its discoverer are high-yield facts." },
+        { "type": "callout", "tone": "note", "title": "Event Horizon Telescope Images Black Holes", "text": "The **Event Horizon Telescope** imaged **Sagittarius A***, our galaxy's central black hole, in 2022 — making visible the endpoint of massive stellar evolution. Black holes form as remnants of stars massive enough (>~3 M☉ remnant) that gravity overcomes all other forces." }
       ]
     },
     {
       "section_label": "EXAMINER_TRAPS",
       "title": "Examiner Traps & Common Confusions",
-      "display_order": 4,
+      "display_order": 5,
       "authored": true,
       "blocks": [
         { "type": "trap", "title": "Trap 1 — Spectral classification order", "text": "The sequence is **O B A F G K M** (hottest to coolest; blue to red). The Sun is **G-type**. Mnemonic: **'Oh Be A Fine Girl/Guy, Kiss Me.'** Options may reverse the order or misplace the Sun." },
@@ -148,7 +154,8 @@
         { "label": "D", "text": "3, 2, 1, 4, 5" }
       ],
       "correct_option": "A",
-      "explanation": "Protostar → Main sequence (H fusion) → Red supergiant (fuel exhaustion, successive fusion) → Supernova (iron core collapse) → Neutron star or Black hole (remnant). Order: 3, 2, 4, 1, 5."
+      "explanation": "Protostar → Main sequence (H fusion) → Red supergiant (fuel exhaustion, successive fusion) → Supernova (iron core collapse) → Neutron star or Black hole (remnant). Order: 3, 2, 4, 1, 5. Option B misplaces the red supergiant before the main sequence; C starts on the main sequence and omits the protostar-first rule; D puts the supernova before the red supergiant.",
+      "review_status": "REVIEWED"
     },
     {
       "display_order": 2,
@@ -161,7 +168,8 @@
         { "label": "D", "text": "2 only" }
       ],
       "correct_option": "A",
-      "explanation": "Temperature increases LEFTWARD (blue-hot on the left), so statement 1 is wrong. Main sequence is a diagonal band (correct) and red giants are upper-right — cool but luminous (correct)."
+      "explanation": "Temperature increases LEFTWARD (blue-hot on the left), so statement 1 is wrong. Main sequence is a diagonal band (correct) and red giants are upper-right — cool but luminous (correct). Hence A. B and C wrongly accept statement 1; D wrongly rejects the correct statement 3.",
+      "review_status": "REVIEWED"
     },
     {
       "display_order": 3,
@@ -174,7 +182,8 @@
         { "label": "D", "text": "Homi Bhabha" }
       ],
       "correct_option": "B",
-      "explanation": "Subrahmanyan Chandrasekhar calculated the mass limit (~1.4 M☉) above which a white dwarf collapses — the Chandrasekhar Limit. Nobel Prize in Physics, 1983. C.V. Raman (light scattering), Saha (ionization equation), Bhabha (cosmic rays/nuclear physics)."
+      "explanation": "Subrahmanyan Chandrasekhar calculated the mass limit (~1.4 M☉) above which a white dwarf collapses — the Chandrasekhar Limit. Nobel Prize in Physics, 1983. C.V. Raman (light scattering), Saha (ionization equation), Bhabha (cosmic rays/nuclear physics) are not linked to the stellar mass limit.",
+      "review_status": "REVIEWED"
     },
     {
       "display_order": 4,
@@ -187,7 +196,8 @@
         { "label": "D", "text": "1, 2, 3 and 4" }
       ],
       "correct_option": "A",
-      "explanation": "Carbon and iron are produced in stellar cores (normal fusion). Gold (Au) and uranium (U) are heavier than iron and can ONLY be made via the r-process in supernovae or neutron-star mergers."
+      "explanation": "Carbon and iron are produced in stellar cores (normal fusion). Gold (Au) and uranium (U) are heavier than iron and can ONLY be made via the r-process in supernovae or neutron-star mergers. Hence A. B and D wrongly include carbon; C wrongly includes iron, which is made in cores.",
+      "review_status": "REVIEWED"
     },
     {
       "display_order": 5,
@@ -200,7 +210,148 @@
         { "label": "D", "text": "Supernova remnant" }
       ],
       "correct_option": "C",
-      "explanation": "The Sun is a low-mass star (<8 M☉). It will expand into a red giant, shed its outer layers as a planetary nebula, and leave behind a white dwarf. Only stars >8 M☉ undergo supernovae to form neutron stars or black holes."
+      "explanation": "The Sun is a low-mass star (<8 M☉). It will expand into a red giant, shed its outer layers as a planetary nebula, and leave behind a white dwarf. Only stars >8 M☉ undergo supernovae to form neutron stars (A, B, D), so those endpoints do not apply to the Sun.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 6,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following statements about star formation: 1. Stars form within molecular clouds composed mainly of molecular hydrogen (H₂). 2. The gravitational collapse of an unstable region is described by the Jeans instability. 3. Hydrogen fusion ignites when the protostar's core reaches about 10 million K. Which of the above statements is/are correct?",
+      "options": [
+        { "label": "A", "text": "1 and 2 only" },
+        { "label": "B", "text": "2 and 3 only" },
+        { "label": "C", "text": "1 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "D",
+      "explanation": "All three are correct. Molecular clouds are mainly H₂ (statement 1). A region collapses when it becomes gravitationally unstable — the Jeans instability (statement 2). Fusion ignites at ~10 million K, ending the protostar phase and starting the main sequence (statement 3). A, B and C each omit a correct statement.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 7,
+      "question_type": "STATEMENT_BASED",
+      "question_text": "Consider the following statements: 1. The main sequence is the longest phase of a star's life. 2. More massive stars have longer lifespans than less massive stars. 3. The Sun is a G-type main-sequence star. Which of the above statements is/are correct?",
+      "options": [
+        { "label": "A", "text": "1 and 3 only" },
+        { "label": "B", "text": "1 and 2 only" },
+        { "label": "C", "text": "2 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — the main sequence is the longest phase. Statement 3 is correct — the Sun is a G-type (yellow dwarf) main-sequence star. Statement 2 is WRONG — more massive stars are hotter and burn fuel faster, so they have SHORTER lifespans. Hence A. B and D wrongly accept statement 2; C wrongly rejects statement 1.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 8,
+      "question_type": "CHRONOLOGICAL",
+      "question_text": "Arrange the following stages of a low-mass star (<8 M☉) in correct chronological order: 1. Planetary nebula 2. Main sequence 3. White dwarf 4. Red giant 5. Protostar.",
+      "options": [
+        { "label": "A", "text": "5, 2, 4, 1, 3" },
+        { "label": "B", "text": "5, 4, 2, 1, 3" },
+        { "label": "C", "text": "2, 5, 4, 3, 1" },
+        { "label": "D", "text": "5, 2, 1, 4, 3" }
+      ],
+      "correct_option": "A",
+      "explanation": "Protostar → Main sequence (H fusion) → Red giant (core hydrogen exhausted) → Planetary nebula (outer layers ejected) → White dwarf (core remnant). Order: 5, 2, 4, 1, 3. Option B places the red giant before the main sequence; C starts on the main sequence omitting the protostar-first rule; D ejects the planetary nebula before the red giant stage.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 9,
+      "question_type": "ASSERTION_REASON",
+      "question_text": "Assertion (A): Iron cannot release energy through nuclear fusion in a star's core.\nReason (R): Iron is the most tightly bound nucleus.",
+      "options": [
+        { "label": "A", "text": "Both A and R are correct, and R is the correct explanation of A" },
+        { "label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A" },
+        { "label": "C", "text": "A is correct but R is incorrect" },
+        { "label": "D", "text": "A is incorrect but R is correct" }
+      ],
+      "correct_option": "A",
+      "explanation": "A is correct — fusion stops at iron because fusing iron does not release energy. R is correct — iron is the most tightly bound nucleus, which is precisely WHY no further energy can be extracted by fusing it. R correctly explains A, so the answer is A. B is wrong because R is the explanation; C and D wrongly mark one statement as incorrect.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 10,
+      "question_type": "ASSERTION_REASON",
+      "question_text": "Assertion (A): The Sun will never end its life as a supernova.\nReason (R): The Sun's mass is less than 8 solar masses.",
+      "options": [
+        { "label": "A", "text": "Both A and R are correct, and R is the correct explanation of A" },
+        { "label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A" },
+        { "label": "C", "text": "A is correct but R is incorrect" },
+        { "label": "D", "text": "A is incorrect but R is correct" }
+      ],
+      "correct_option": "A",
+      "explanation": "A is correct — the Sun will become a red giant, then a planetary nebula, and finally a white dwarf, never a supernova. R is correct — only stars greater than 8 M☉ go supernova, and the Sun is below this threshold. R is the correct explanation of A, so the answer is A. B denies the causal link; C and D wrongly reject one statement.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 11,
+      "question_type": "CAUSE_EFFECT",
+      "question_text": "A massive star's iron core grows until it exceeds the Chandrasekhar limit (~1.4 M☉). What is the most direct consequence?",
+      "options": [
+        { "label": "A", "text": "The iron core begins fusing into heavier elements, releasing energy" },
+        { "label": "B", "text": "The core collapses catastrophically, triggering a core-collapse supernova" },
+        { "label": "C", "text": "The star stabilises and returns to the main sequence" },
+        { "label": "D", "text": "The core cools and forms a black dwarf directly" }
+      ],
+      "correct_option": "B",
+      "explanation": "Once the iron core exceeds the Chandrasekhar limit, it can no longer support itself and collapses catastrophically, producing a core-collapse supernova — hence B. A is wrong because iron fusion absorbs rather than releases energy. C is wrong because a star with an inert iron core cannot rejoin the main sequence. D is wrong — black dwarfs are the (theoretical) end-state of low-mass white dwarfs, not collapsing iron cores.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 12,
+      "question_type": "CAUSE_EFFECT",
+      "question_text": "Which of the following statements about the remnants of stellar death is NOT correct?",
+      "options": [
+        { "label": "A", "text": "A neutron star forms when the remnant is below about 3 solar masses" },
+        { "label": "B", "text": "A black hole forms when the remnant exceeds about 3 solar masses" },
+        { "label": "C", "text": "A rapidly rotating neutron star is observed as a pulsar" },
+        { "label": "D", "text": "The Sun will collapse into a black hole at the end of its life" }
+      ],
+      "correct_option": "D",
+      "explanation": "D is NOT correct (and is therefore the answer) — the Sun is a low-mass star and will end as a white dwarf, never a black hole. A is correct — a supernova remnant below ~3 M☉ becomes a neutron star. B is correct — a remnant above ~3 M☉ becomes a black hole. C is correct — a rapidly rotating neutron star is a pulsar.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 13,
+      "question_type": "CAUSE_EFFECT",
+      "question_text": "An astronomer observes a main-sequence star that is distinctly bluer and hotter than the Sun. Based on the properties of stars, which of the following can be inferred? 1. The star is more massive than the Sun. 2. The star will have a shorter lifespan than the Sun. 3. The star lies to the left of the Sun on the H-R diagram.",
+      "options": [
+        { "label": "A", "text": "1 and 2 only" },
+        { "label": "B", "text": "1 and 3 only" },
+        { "label": "C", "text": "2 and 3 only" },
+        { "label": "D", "text": "1, 2 and 3" }
+      ],
+      "correct_option": "D",
+      "explanation": "All three follow. A star's mass at birth determines its colour and temperature — bluer and hotter means more massive (inference 1). More massive stars burn faster and die sooner, so a shorter lifespan (inference 2). On the H-R diagram temperature increases leftward, so a hotter star sits to the left of the Sun (inference 3). Hence D; A, B and C each drop a valid inference.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 14,
+      "question_type": "MATCH_THE_FOLLOWING",
+      "question_text": "Match List-I (Star/remnant scenario) with List-II (End state):\n\nList-I: (a) Low-mass star (<8 M☉), (b) Massive star with remnant below 3 M☉, (c) Massive star with remnant above 3 M☉, (d) Explosive death of a massive star\nList-II: (1) Black hole, (2) White dwarf, (3) Supernova, (4) Neutron star",
+      "options": [
+        { "label": "A", "text": "a-2, b-4, c-1, d-3" },
+        { "label": "B", "text": "a-1, b-4, c-2, d-3" },
+        { "label": "C", "text": "a-2, b-1, c-4, d-3" },
+        { "label": "D", "text": "a-4, b-2, c-1, d-3" }
+      ],
+      "correct_option": "A",
+      "explanation": "A low-mass star ends as a white dwarf (a-2). A massive star leaving a remnant below ~3 M☉ becomes a neutron star (b-4). A remnant above ~3 M☉ becomes a black hole (c-1). The explosive death itself is the supernova (d-3). Hence A. The other options swap the white dwarf, neutron star, or black hole assignments.",
+      "review_status": "REVIEWED"
+    },
+    {
+      "display_order": 15,
+      "question_type": "MATCH_THE_FOLLOWING",
+      "question_text": "Match List-I (Milestone in stellar astrophysics) with List-II (Year):\n\nList-I: (a) H-R Diagram, (b) Chandrasekhar Limit calculated, (c) First pulsar discovered, (d) Neutron-star merger detected\nList-II: (1) 1967, (2) 1910, (3) 2017, (4) 1931",
+      "options": [
+        { "label": "A", "text": "a-2, b-4, c-1, d-3" },
+        { "label": "B", "text": "a-4, b-2, c-1, d-3" },
+        { "label": "C", "text": "a-2, b-4, c-3, d-1" },
+        { "label": "D", "text": "a-1, b-4, c-2, d-3" }
+      ],
+      "correct_option": "A",
+      "explanation": "The H-R Diagram dates to 1910 (a-2). Chandrasekhar calculated his mass limit in 1931 (b-4). The first pulsar was discovered in 1967 (c-1). LIGO/Virgo detected the neutron-star merger in 2017 (d-3). Hence A. The other options swap the H-R diagram, pulsar, or merger years.",
+      "review_status": "REVIEWED"
     }
   ]
 }

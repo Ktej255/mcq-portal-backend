@@ -878,9 +878,36 @@
                   ]
                 },
                 {
-                  "section_label": "ADVANCED",
-                  "title": "Reference-Book Depth & 2026 Current Affairs",
+                  "section_label": "NCERT_LEVEL",
+                  "title": "NCERT Content Mapping",
                   "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Source",
+                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** (pp. 16–18) is the core reference."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT says: 'The nebula began to collapse approximately 5–5.6 billion years ago.' It attributes the hypothesis to **Kant and Laplace** and mentions the 1950 revision by **Schmidt and Weizäcker** adding the concept of a rotating disk with particles condensing into planets."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Key NCERT statements to memorise: (1) planets formed from the same cloud as the Sun; (2) inner planets are small and rocky, outer planets are large and gaseous; (3) the **asteroid belt** lies between Mars and Jupiter, marking the transition zone (a simplified frost-line concept)."
+                    },
+                    {
+                      "type": "quiz",
+                      "question": "According to NCERT, who revised the Nebular Hypothesis in 1950?",
+                      "answer": "**Otto Schmidt (Russia)** and **Carl Weizäcker (Germany)**. They incorporated the rotating-disk and particle-condensation ideas into the hypothesis."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "Reference-Book Depth",
+                  "display_order": 3,
                   "authored": true,
                   "blocks": [
                     {
@@ -927,64 +954,55 @@
                           "b": "Currently **accepted**; validated by ALMA disk imaging"
                         }
                       ]
-                    },
-                    {
-                      "type": "heading",
-                      "text": "Current Affairs (mid-2026)"
-                    },
-                    {
-                      "type": "callout",
-                      "tone": "tip",
-                      "title": "High-Yield Linkages",
-                      "items": [
-                        "**ALMA** (Chile, 2025): new super-resolution imaging revealed protoplanetary disks around protostars previously unresolved — the **first step** of planet formation after star birth confirmed observationally.",
-                        "**JWST** detected **water vapour in inner regions** of protoplanetary disks, directly confirming the frost-line concept (water as vapour inside, ice outside).",
-                        "**Aditya-L1** (ISRO, Jan 2024 at L1): studies solar magnetic fields and solar wind — the same processes that resolved the angular momentum problem via magnetic braking.",
-                        "**Chandrayaan-3** (Aug 2023, lunar south pole): Pragyan rover analysed regolith composition — the Moon formed from a **giant impact** (proto-Earth + Theia) in the late stage of accretion."
-                      ]
-                    },
-                    {
-                      "type": "collapsible",
-                      "title": "Dig deeper — Chandrayaan-4 & 5",
-                      "items": [
-                        "**Chandrayaan-4** — India's first lunar **sample-return** mission (up to 3 kg regolith); launch ~2028.",
-                        "**Chandrayaan-5** — joint ISRO-JAXA, ~350-kg rover, ~100-day surface operation (vs Chandrayaan-3's 14 days).",
-                        "Returned samples will constrain **Giant Impact Hypothesis** models (compositional match between Earth's mantle and lunar material)."
-                      ]
                     }
                   ]
                 },
                 {
-                  "section_label": "NCERT_LEVEL",
-                  "title": "NCERT Content Mapping",
-                  "display_order": 3,
+                  "section_label": "CURRENT_AFFAIRS",
+                  "title": "Current Affairs Connections — Origin of the Solar System",
+                  "display_order": 4,
                   "authored": true,
                   "blocks": [
                     {
+                      "type": "heading",
+                      "text": "Recent Developments (2023-2026)"
+                    },
+                    {
                       "type": "callout",
                       "tone": "note",
-                      "title": "Source",
-                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** (pp. 16–18) is the core reference."
+                      "title": "ALMA Super-Resolution Disk Imaging (2025)",
+                      "text": "**ALMA** (Chile, 2025): new super-resolution imaging revealed protoplanetary disks around protostars previously unresolved — the **first step** of planet formation after star birth confirmed observationally. This directly validates the disk-accretion stage of the Solar Nebula Theory."
                     },
                     {
-                      "type": "para",
-                      "text": "NCERT says: 'The nebula began to collapse approximately 5–5.6 billion years ago.' It attributes the hypothesis to **Kant and Laplace** and mentions the 1950 revision by **Schmidt and Weizäcker** adding the concept of a rotating disk with particles condensing into planets."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "JWST Confirms the Frost Line",
+                      "text": "**JWST** detected **water vapour in inner regions** of protoplanetary disks, directly confirming the frost-line concept — water exists as vapour inside the line and as ice beyond it, exactly as the theory predicts for the rocky-versus-gaseous divide."
                     },
                     {
-                      "type": "para",
-                      "text": "Key NCERT statements to memorise: (1) planets formed from the same cloud as the Sun; (2) inner planets are small and rocky, outer planets are large and gaseous; (3) the **asteroid belt** lies between Mars and Jupiter, marking the transition zone (a simplified frost-line concept)."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Aditya-L1 and Magnetic Braking (ISRO, Jan 2024)",
+                      "text": "**Aditya-L1** (ISRO, Jan 2024 at L1): studies solar magnetic fields and the solar wind — the same processes that resolved the **angular momentum problem** via magnetic braking in the early Solar System."
                     },
                     {
-                      "type": "quiz",
-                      "question": "According to NCERT, who revised the Nebular Hypothesis in 1950?",
-                      "answer": "**Otto Schmidt (Russia)** and **Carl Weizäcker (Germany)**. They incorporated the rotating-disk and particle-condensation ideas into the hypothesis."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Chandrayaan-3 and the Giant Impact (Aug 2023)",
+                      "text": "**Chandrayaan-3** (Aug 2023, lunar south pole): the Pragyan rover analysed regolith composition — the Moon is thought to have formed from a **giant impact** (proto-Earth + Theia) during the late stage of accretion."
+                    },
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Chandrayaan-4 & 5 — Constraining the Giant Impact",
+                      "text": "**Chandrayaan-4** is India's first lunar **sample-return** mission (up to 3 kg regolith, launch ~2028); **Chandrayaan-5** is a joint ISRO-JAXA ~350-kg rover with ~100-day surface operation. Returned samples will test **Giant Impact Hypothesis** models by comparing Earth's mantle and lunar material."
                     }
                   ]
                 },
                 {
                   "section_label": "EXAMINER_TRAPS",
                   "title": "Examiner Traps & Common Confusions",
-                  "display_order": 4,
+                  "display_order": 5,
                   "authored": true,
                   "blocks": [
                     {
@@ -1079,7 +1097,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Only statement 2 is correct. Kant and Laplace proposed INDEPENDENTLY (not jointly) — statement 1 is wrong. The Sun has 99.86% of the MASS but only 0.5% of angular momentum — statement 3 swaps mass and momentum."
+                  "explanation": "Only statement 2 is correct. Kant and Laplace proposed INDEPENDENTLY (not jointly) — statement 1 is wrong. The Sun has 99.86% of the MASS but only 0.5% of angular momentum — statement 3 swaps mass and momentum.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 2,
@@ -1104,7 +1123,8 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "Beyond the frost line (~2.7 AU), ices condensed alongside rock, providing far more solid material for protoplanets to grow. Once a core reached ~10 Earth masses, it captured surrounding H/He gas in a runaway process — forming a gas giant."
+                  "explanation": "Beyond the frost line (~2.7 AU), ices condensed alongside rock, providing far more solid material for protoplanets to grow. Once a core reached ~10 Earth masses, it captured surrounding H/He gas in a runaway process — forming a gas giant.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 3,
@@ -1129,7 +1149,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Magnetic braking (Sun's field + solar wind transferring momentum to the disk) and turbulent viscosity are the accepted mechanisms. 'Gravitational capture by a passing star' is from the rejected Planetesimal/Tidal Hypothesis, not the Nebular model."
+                  "explanation": "Magnetic braking (Sun's field + solar wind transferring momentum to the disk) and turbulent viscosity are the accepted mechanisms. 'Gravitational capture by a passing star' is from the rejected Planetesimal/Tidal Hypothesis, not the Nebular model.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 4,
@@ -1154,7 +1175,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Kant (1755) → Laplace (1796) → Chamberlin (1901) → Schmidt-Weizäcker (1950). Order: 2, 1, 4, 3."
+                  "explanation": "Kant (1755) → Laplace (1796) → Chamberlin (1901) → Schmidt-Weizäcker (1950). Order: 2, 1, 4, 3.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 5,
@@ -1179,7 +1201,268 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "Aditya-L1 studies the Sun's corona, magnetic fields, and solar wind — the same physical processes that resolved the Angular Momentum Problem in the Solar Nebula through magnetic braking. A/C/D are factually incorrect about Aditya-L1's mission."
+                  "explanation": "Aditya-L1 studies the Sun's corona, magnetic fields, and solar wind — the same physical processes that resolved the Angular Momentum Problem in the Solar Nebula through magnetic braking. A/C/D are factually incorrect about Aditya-L1's mission.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 6,
+                  "question_type": "STATEMENT_BASED",
+                  "question_text": "Consider the following statements about the frost line in the Solar System: 1. It lies at approximately 2.7 AU, between the orbits of Mars and Jupiter. 2. Inside the frost line, only metals and silicates could survive to form rocky terrestrial planets. 3. Beyond the frost line, ices condensed alongside rock, giving protoplanets more solid material. Which of the above statements is/are correct?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "2 and 3 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "1 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "D",
+                  "explanation": "All three statements are correct. The frost line is at ~2.7 AU between Mars and Jupiter (statement 1). Inside it, only metals and silicates survived to build terrestrial planets (statement 2). Beyond it, ices condensed with rock so protoplanets had far more solid material to grow massive cores (statement 3).",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 7,
+                  "question_type": "STATEMENT_BASED",
+                  "question_text": "With reference to the stages of planet formation in the Solar Nebula, consider the following statements: 1. Planetesimals are 1–10 km sized rocky or icy bodies. 2. Runaway gas capture occurred only for protoplanets beyond the frost line. 3. Jupiter has a mass of about 318 Earth masses. Which of the above statements is/are correct?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "2 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "D",
+                  "explanation": "All three are correct. Planetesimals are 1–10 km building blocks (statement 1). Runaway gas capture happened beyond the frost line where protoplanets reached ~10 Earth masses and captured H/He gas (statement 2). The file states Jupiter = 318 Earth masses (statement 3).",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 8,
+                  "question_type": "CHRONOLOGICAL",
+                  "question_text": "Arrange the following stages of planet building in the correct sequence: 1. Protoplanets 2. Dust grains sticking together 3. Runaway gas capture forming gas giants 4. Planetesimals (1–10 km bodies).",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "2, 4, 1, 3"
+                    },
+                    {
+                      "label": "B",
+                      "text": "2, 1, 4, 3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "4, 2, 1, 3"
+                    },
+                    {
+                      "label": "D",
+                      "text": "2, 4, 3, 1"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "The accretion sequence is: dust grains collide and stick (2) → planetesimals 1–10 km (4) → protoplanets (1) → runaway gas capture forming gas giants beyond the frost line (3). Correct order: 2, 4, 1, 3.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 9,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): Gas giants such as Jupiter formed beyond the frost line of the Solar System.\nReason (R): Beyond the frost line, ices condensed alongside rock, allowing protoplanets to grow massive cores that captured surrounding hydrogen and helium gas.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — gas giants formed beyond the frost line (~2.7 AU). R is correct and is the precise mechanism — beyond the frost line ices condensed with rock, giving protoplanets more solid material to build ~10 Earth-mass cores that then captured H/He gas. R fully explains A.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 10,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): The Sun rotates more slowly than the Nebular Hypothesis would naively predict.\nReason (R): Magnetic braking transferred angular momentum outward from the young Sun to the protoplanetary disk via its magnetic field and the solar wind.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — the Sun holds 99.86% of the mass but only 0.5% of angular momentum, so it spins slower than expected (the Angular Momentum Problem). R is correct and is the accepted explanation — magnetic braking moved momentum outward to the disk via the Sun's magnetic field and solar wind. R explains A.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 11,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "Which of the following is NOT a correct cause-and-effect relationship in the formation of the Solar System?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "The nebula contracted → it spun faster due to conservation of angular momentum"
+                    },
+                    {
+                      "label": "B",
+                      "text": "The proto-Sun's core reached extreme temperature and pressure → nuclear fusion of hydrogen ignited"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A passing star pulled tidal debris from the Sun → the planets of our Solar System formed"
+                    },
+                    {
+                      "label": "D",
+                      "text": "Protoplanets beyond the frost line reached ~10 Earth masses → they captured H/He gas in a runaway process"
+                    }
+                  ],
+                  "correct_option": "C",
+                  "explanation": "C is INCORRECT (and therefore the answer). The 'passing star pulling tidal debris' is Chamberlin's Planetesimal/Tidal Hypothesis, which was rejected because the probability of such a stellar encounter is too low — it is not how our Solar System formed. A, B and D are all valid cause-effect chains in the Solar Nebula Theory.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 12,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "The compositional gradient of the Solar System — rocky planets in the inner region and gaseous giants in the outer region — is primarily a consequence of:",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "The frost line, beyond which volatile ices could condense and add solid material"
+                    },
+                    {
+                      "label": "B",
+                      "text": "The Big Bang directly forming planets of different compositions"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A passing star depositing heavier elements near the Sun"
+                    },
+                    {
+                      "label": "D",
+                      "text": "The Sun's magnetic field sorting planets by density"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — inside the frost line only metals and silicates survived (rocky terrestrial planets), while beyond it ices condensed alongside rock, letting protoplanets grow massive cores that captured gas (gas giants). This gradient matches frost-line predictions. B, C and D are not supported by the file's account.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 13,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "Why do all the planets orbit the Sun in approximately the same plane and the same direction?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Because they were captured individually from interstellar space"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Because they all formed from a single rotating, flattened protoplanetary disk"
+                    },
+                    {
+                      "label": "C",
+                      "text": "Because the Sun's gravity later aligned their independent orbits"
+                    },
+                    {
+                      "label": "D",
+                      "text": "Because a passing star set them spinning in one direction"
+                    }
+                  ],
+                  "correct_option": "B",
+                  "explanation": "B is correct — the planets condensed from one rotating cloud that flattened into a protoplanetary disk, so they inherited a common direction (prograde) and a common plane (the ecliptic). This shared orbital geometry is cited as direct evidence for the Nebular Hypothesis. A, C and D contradict the disk-formation model.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 14,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I (Hypothesis) with List-II (Proponent and year):\n\nList-I: (a) Gaseous Hypothesis, (b) Nebular model, (c) Planetesimal Hypothesis, (d) 1950 revision\nList-II: (1) Laplace, 1796, (2) Chamberlin, 1901, (3) Kant, 1755, (4) Schmidt and Weizäcker, 1950",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-3, b-1, c-2, d-4"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-1, b-3, c-2, d-4"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-3, b-1, c-4, d-2"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-2, b-1, c-3, d-4"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Gaseous Hypothesis — Kant, 1755 (a-3); Nebular model — Laplace, 1796 (b-1); Planetesimal Hypothesis — Chamberlin, 1901 (c-2); 1950 revision — Schmidt and Weizäcker (d-4). Correct match: a-3, b-1, c-2, d-4.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 15,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I (Mission/Instrument) with List-II (Relevance to Solar System origin):\n\nList-I: (a) ALMA, (b) Aditya-L1, (c) Chandrayaan-3, (d) JWST\nList-II: (1) Studies solar magnetic fields and solar wind linked to magnetic braking, (2) Imaged protoplanetary disks such as HL Tauri, (3) Detected water vapour inside protoplanetary disks confirming the frost line, (4) Analysed lunar regolith linked to a giant-impact event",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-2, b-1, c-4, d-3"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-1, b-2, c-4, d-3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-2, b-1, c-3, d-4"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-3, b-1, c-4, d-2"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "ALMA imaged protoplanetary disks like HL Tauri (a-2); Aditya-L1 studies solar magnetic fields and solar wind tied to magnetic braking (b-1); Chandrayaan-3 analysed lunar regolith linked to the giant-impact origin of the Moon (c-4); JWST detected water vapour inside disks confirming the frost line (d-3). Correct match: a-2, b-1, c-4, d-3.",
+                  "review_status": "REVIEWED"
                 }
               ],
               "ordering_justification": "Directly follows the Big Bang (Topic 1): the Universe made H and He; now we explain how those elements plus stellar-forged heavier ones assembled into our Solar System 4.6 billion years ago. Establishes the framework (accretion, differentiation, frost line) needed for the next topic (Earth's internal structure)."
@@ -1305,9 +1588,35 @@
                   ]
                 },
                 {
-                  "section_label": "ADVANCED",
-                  "title": "Reference-Book Depth & 2026 Current Affairs",
+                  "section_label": "NCERT_LEVEL",
+                  "title": "NCERT Content Mapping",
                   "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Source",
+                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** covers stellar evolution briefly as context for Solar System formation. **NCERT Class 6 — The Earth: Our Habitat, Chapter 1** introduces stars at the most basic level."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 states that heavier elements were formed by **stellar explosions** (supernovae) and that the Solar System formed from a **second-generation nebula** enriched with these elements. This directly connects stellar death to Earth's chemistry."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 6 introduces: 'The Sun is a **star**. Millions of stars form a **galaxy**.' This fundamental level is tested in UPSC combination statements."
+                    },
+                    {
+                      "type": "para",
+                      "text": "Key NCERT point for UPSC: NCERT **does not** cover the H-R Diagram or Chandrasekhar Limit — these come from supplementary references (GC Leong, Savindra Singh). But NCERT does state that 'the Sun is a **medium-sized star**' — testable in options claiming the Sun is small or large."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "Reference-Book Depth (GC Leong + Savindra Singh)",
+                  "display_order": 3,
                   "authored": true,
                   "blocks": [
                     {
@@ -1353,21 +1662,6 @@
                       ]
                     },
                     {
-                      "type": "heading",
-                      "text": "Current Affairs (mid-2026)"
-                    },
-                    {
-                      "type": "callout",
-                      "tone": "tip",
-                      "title": "High-Yield Linkages",
-                      "items": [
-                        "**JWST** continues imaging stellar nurseries in unprecedented detail — Carina Nebula 'Cosmic Cliffs' revealed hundreds of previously hidden protostars forming inside molecular clouds.",
-                        "**LIGO-India** (under construction, Maharashtra) will improve localisation of gravitational-wave sources from neutron-star mergers — directly proving where r-process elements (gold, platinum) are made.",
-                        "**Subrahmanyan Chandrasekhar** (Indian, Nobel 1983) — the **Chandrasekhar Limit** is named after him. UPSC frequently tests Indian scientists' contributions to physics/astronomy.",
-                        "**Event Horizon Telescope** imaged Sagittarius A* (our galaxy's central black hole, 2022) — the endpoint of massive stellar evolution made visible."
-                      ]
-                    },
-                    {
                       "type": "quiz",
                       "question": "The Chandrasekhar Limit is named after an Indian scientist. What does it describe, and what happens when it is exceeded?",
                       "answer": "**Subrahmanyan Chandrasekhar** calculated that a white dwarf (or iron core) cannot support itself if it exceeds **~1.4 solar masses**. Beyond this limit, electron degeneracy pressure fails → the core collapses catastrophically → either a neutron star or black hole forms depending on the remaining mass."
@@ -1375,35 +1669,45 @@
                   ]
                 },
                 {
-                  "section_label": "NCERT_LEVEL",
-                  "title": "NCERT Content Mapping",
-                  "display_order": 3,
+                  "section_label": "CURRENT_AFFAIRS",
+                  "title": "Current Affairs Connections — Stars & Stellar Evolution",
+                  "display_order": 4,
                   "authored": true,
                   "blocks": [
                     {
+                      "type": "heading",
+                      "text": "Recent Developments (2023-2026)"
+                    },
+                    {
                       "type": "callout",
                       "tone": "note",
-                      "title": "Source",
-                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** covers stellar evolution briefly as context for Solar System formation. **NCERT Class 6 — The Earth: Our Habitat, Chapter 1** introduces stars at the most basic level."
+                      "title": "JWST Images Stellar Nurseries",
+                      "text": "The **James Webb Space Telescope (JWST)** continues imaging stellar nurseries in unprecedented detail. The Carina Nebula 'Cosmic Cliffs' revealed hundreds of previously hidden **protostars** forming inside molecular clouds — direct visual evidence of the star-formation process described in this topic. UPSC can frame this as a science-and-technology linkage question."
                     },
                     {
-                      "type": "para",
-                      "text": "NCERT Class 11 states that heavier elements were formed by **stellar explosions** (supernovae) and that the Solar System formed from a **second-generation nebula** enriched with these elements. This directly connects stellar death to Earth's chemistry."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "LIGO-India Under Construction (Maharashtra)",
+                      "text": "**LIGO-India**, being built in Maharashtra, will improve localisation of gravitational-wave sources from **neutron-star mergers** — directly proving where r-process elements (gold, platinum) are made. This builds on the 2017 LIGO/Virgo detection of gravitational waves from merging neutron stars that first confirmed r-process element production."
                     },
                     {
-                      "type": "para",
-                      "text": "NCERT Class 6 introduces: 'The Sun is a **star**. Millions of stars form a **galaxy**.' This fundamental level is tested in UPSC combination statements."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Indian Scientists in Astrophysics",
+                      "text": "**Subrahmanyan Chandrasekhar** (Indian, Nobel Prize in Physics 1983) gives his name to the **Chandrasekhar Limit (~1.4 M☉)**. UPSC frequently tests Indian scientists' contributions to physics and astronomy, so the limit and its discoverer are high-yield facts."
                     },
                     {
-                      "type": "para",
-                      "text": "Key NCERT point for UPSC: NCERT **does not** cover the H-R Diagram or Chandrasekhar Limit — these come from supplementary references (GC Leong, Savindra Singh). But NCERT does state that 'the Sun is a **medium-sized star**' — testable in options claiming the Sun is small or large."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Event Horizon Telescope Images Black Holes",
+                      "text": "The **Event Horizon Telescope** imaged **Sagittarius A***, our galaxy's central black hole, in 2022 — making visible the endpoint of massive stellar evolution. Black holes form as remnants of stars massive enough (>~3 M☉ remnant) that gravity overcomes all other forces."
                     }
                   ]
                 },
                 {
                   "section_label": "EXAMINER_TRAPS",
                   "title": "Examiner Traps & Common Confusions",
-                  "display_order": 4,
+                  "display_order": 5,
                   "authored": true,
                   "blocks": [
                     {
@@ -1493,7 +1797,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Protostar → Main sequence (H fusion) → Red supergiant (fuel exhaustion, successive fusion) → Supernova (iron core collapse) → Neutron star or Black hole (remnant). Order: 3, 2, 4, 1, 5."
+                  "explanation": "Protostar → Main sequence (H fusion) → Red supergiant (fuel exhaustion, successive fusion) → Supernova (iron core collapse) → Neutron star or Black hole (remnant). Order: 3, 2, 4, 1, 5. Option B misplaces the red supergiant before the main sequence; C starts on the main sequence and omits the protostar-first rule; D puts the supernova before the red supergiant.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 2,
@@ -1518,7 +1823,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Temperature increases LEFTWARD (blue-hot on the left), so statement 1 is wrong. Main sequence is a diagonal band (correct) and red giants are upper-right — cool but luminous (correct)."
+                  "explanation": "Temperature increases LEFTWARD (blue-hot on the left), so statement 1 is wrong. Main sequence is a diagonal band (correct) and red giants are upper-right — cool but luminous (correct). Hence A. B and C wrongly accept statement 1; D wrongly rejects the correct statement 3.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 3,
@@ -1543,7 +1849,8 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "Subrahmanyan Chandrasekhar calculated the mass limit (~1.4 M☉) above which a white dwarf collapses — the Chandrasekhar Limit. Nobel Prize in Physics, 1983. C.V. Raman (light scattering), Saha (ionization equation), Bhabha (cosmic rays/nuclear physics)."
+                  "explanation": "Subrahmanyan Chandrasekhar calculated the mass limit (~1.4 M☉) above which a white dwarf collapses — the Chandrasekhar Limit. Nobel Prize in Physics, 1983. C.V. Raman (light scattering), Saha (ionization equation), Bhabha (cosmic rays/nuclear physics) are not linked to the stellar mass limit.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 4,
@@ -1568,7 +1875,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Carbon and iron are produced in stellar cores (normal fusion). Gold (Au) and uranium (U) are heavier than iron and can ONLY be made via the r-process in supernovae or neutron-star mergers."
+                  "explanation": "Carbon and iron are produced in stellar cores (normal fusion). Gold (Au) and uranium (U) are heavier than iron and can ONLY be made via the r-process in supernovae or neutron-star mergers. Hence A. B and D wrongly include carbon; C wrongly includes iron, which is made in cores.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 5,
@@ -1593,7 +1901,268 @@
                     }
                   ],
                   "correct_option": "C",
-                  "explanation": "The Sun is a low-mass star (<8 M☉). It will expand into a red giant, shed its outer layers as a planetary nebula, and leave behind a white dwarf. Only stars >8 M☉ undergo supernovae to form neutron stars or black holes."
+                  "explanation": "The Sun is a low-mass star (<8 M☉). It will expand into a red giant, shed its outer layers as a planetary nebula, and leave behind a white dwarf. Only stars >8 M☉ undergo supernovae to form neutron stars (A, B, D), so those endpoints do not apply to the Sun.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 6,
+                  "question_type": "STATEMENT_BASED",
+                  "question_text": "Consider the following statements about star formation: 1. Stars form within molecular clouds composed mainly of molecular hydrogen (H₂). 2. The gravitational collapse of an unstable region is described by the Jeans instability. 3. Hydrogen fusion ignites when the protostar's core reaches about 10 million K. Which of the above statements is/are correct?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "2 and 3 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "1 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "D",
+                  "explanation": "All three are correct. Molecular clouds are mainly H₂ (statement 1). A region collapses when it becomes gravitationally unstable — the Jeans instability (statement 2). Fusion ignites at ~10 million K, ending the protostar phase and starting the main sequence (statement 3). A, B and C each omit a correct statement.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 7,
+                  "question_type": "STATEMENT_BASED",
+                  "question_text": "Consider the following statements: 1. The main sequence is the longest phase of a star's life. 2. More massive stars have longer lifespans than less massive stars. 3. The Sun is a G-type main-sequence star. Which of the above statements is/are correct?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 and 3 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "2 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Statement 1 is correct — the main sequence is the longest phase. Statement 3 is correct — the Sun is a G-type (yellow dwarf) main-sequence star. Statement 2 is WRONG — more massive stars are hotter and burn fuel faster, so they have SHORTER lifespans. Hence A. B and D wrongly accept statement 2; C wrongly rejects statement 1.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 8,
+                  "question_type": "CHRONOLOGICAL",
+                  "question_text": "Arrange the following stages of a low-mass star (<8 M☉) in correct chronological order: 1. Planetary nebula 2. Main sequence 3. White dwarf 4. Red giant 5. Protostar.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "5, 2, 4, 1, 3"
+                    },
+                    {
+                      "label": "B",
+                      "text": "5, 4, 2, 1, 3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "2, 5, 4, 3, 1"
+                    },
+                    {
+                      "label": "D",
+                      "text": "5, 2, 1, 4, 3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Protostar → Main sequence (H fusion) → Red giant (core hydrogen exhausted) → Planetary nebula (outer layers ejected) → White dwarf (core remnant). Order: 5, 2, 4, 1, 3. Option B places the red giant before the main sequence; C starts on the main sequence omitting the protostar-first rule; D ejects the planetary nebula before the red giant stage.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 9,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): Iron cannot release energy through nuclear fusion in a star's core.\nReason (R): Iron is the most tightly bound nucleus.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — fusion stops at iron because fusing iron does not release energy. R is correct — iron is the most tightly bound nucleus, which is precisely WHY no further energy can be extracted by fusing it. R correctly explains A, so the answer is A. B is wrong because R is the explanation; C and D wrongly mark one statement as incorrect.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 10,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): The Sun will never end its life as a supernova.\nReason (R): The Sun's mass is less than 8 solar masses.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — the Sun will become a red giant, then a planetary nebula, and finally a white dwarf, never a supernova. R is correct — only stars greater than 8 M☉ go supernova, and the Sun is below this threshold. R is the correct explanation of A, so the answer is A. B denies the causal link; C and D wrongly reject one statement.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 11,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "A massive star's iron core grows until it exceeds the Chandrasekhar limit (~1.4 M☉). What is the most direct consequence?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "The iron core begins fusing into heavier elements, releasing energy"
+                    },
+                    {
+                      "label": "B",
+                      "text": "The core collapses catastrophically, triggering a core-collapse supernova"
+                    },
+                    {
+                      "label": "C",
+                      "text": "The star stabilises and returns to the main sequence"
+                    },
+                    {
+                      "label": "D",
+                      "text": "The core cools and forms a black dwarf directly"
+                    }
+                  ],
+                  "correct_option": "B",
+                  "explanation": "Once the iron core exceeds the Chandrasekhar limit, it can no longer support itself and collapses catastrophically, producing a core-collapse supernova — hence B. A is wrong because iron fusion absorbs rather than releases energy. C is wrong because a star with an inert iron core cannot rejoin the main sequence. D is wrong — black dwarfs are the (theoretical) end-state of low-mass white dwarfs, not collapsing iron cores.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 12,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "Which of the following statements about the remnants of stellar death is NOT correct?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "A neutron star forms when the remnant is below about 3 solar masses"
+                    },
+                    {
+                      "label": "B",
+                      "text": "A black hole forms when the remnant exceeds about 3 solar masses"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A rapidly rotating neutron star is observed as a pulsar"
+                    },
+                    {
+                      "label": "D",
+                      "text": "The Sun will collapse into a black hole at the end of its life"
+                    }
+                  ],
+                  "correct_option": "D",
+                  "explanation": "D is NOT correct (and is therefore the answer) — the Sun is a low-mass star and will end as a white dwarf, never a black hole. A is correct — a supernova remnant below ~3 M☉ becomes a neutron star. B is correct — a remnant above ~3 M☉ becomes a black hole. C is correct — a rapidly rotating neutron star is a pulsar.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 13,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "An astronomer observes a main-sequence star that is distinctly bluer and hotter than the Sun. Based on the properties of stars, which of the following can be inferred? 1. The star is more massive than the Sun. 2. The star will have a shorter lifespan than the Sun. 3. The star lies to the left of the Sun on the H-R diagram.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "1 and 3 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "2 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "D",
+                  "explanation": "All three follow. A star's mass at birth determines its colour and temperature — bluer and hotter means more massive (inference 1). More massive stars burn faster and die sooner, so a shorter lifespan (inference 2). On the H-R diagram temperature increases leftward, so a hotter star sits to the left of the Sun (inference 3). Hence D; A, B and C each drop a valid inference.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 14,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I (Star/remnant scenario) with List-II (End state):\n\nList-I: (a) Low-mass star (<8 M☉), (b) Massive star with remnant below 3 M☉, (c) Massive star with remnant above 3 M☉, (d) Explosive death of a massive star\nList-II: (1) Black hole, (2) White dwarf, (3) Supernova, (4) Neutron star",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-2, b-4, c-1, d-3"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-1, b-4, c-2, d-3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-2, b-1, c-4, d-3"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-4, b-2, c-1, d-3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A low-mass star ends as a white dwarf (a-2). A massive star leaving a remnant below ~3 M☉ becomes a neutron star (b-4). A remnant above ~3 M☉ becomes a black hole (c-1). The explosive death itself is the supernova (d-3). Hence A. The other options swap the white dwarf, neutron star, or black hole assignments.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 15,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I (Milestone in stellar astrophysics) with List-II (Year):\n\nList-I: (a) H-R Diagram, (b) Chandrasekhar Limit calculated, (c) First pulsar discovered, (d) Neutron-star merger detected\nList-II: (1) 1967, (2) 1910, (3) 2017, (4) 1931",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-2, b-4, c-1, d-3"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-4, b-2, c-1, d-3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-2, b-4, c-3, d-1"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-1, b-4, c-2, d-3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "The H-R Diagram dates to 1910 (a-2). Chandrasekhar calculated his mass limit in 1931 (b-4). The first pulsar was discovered in 1967 (c-1). LIGO/Virgo detected the neutron-star merger in 2017 (d-3). Hence A. The other options swap the H-R diagram, pulsar, or merger years.",
+                  "review_status": "REVIEWED"
                 }
               ],
               "ordering_justification": "Follows Solar System formation: stars forged the heavy elements that became Earth. Understanding stellar life cycles explains why the periodic table exists and why Earth has an iron core."
@@ -1737,58 +2306,9 @@
                   ]
                 },
                 {
-                  "section_label": "ADVANCED",
-                  "title": "Reference-Book Depth & 2026 Current Affairs",
-                  "display_order": 2,
-                  "authored": true,
-                  "blocks": [
-                    {
-                      "type": "heading",
-                      "text": "Key Facts for Advanced Reference"
-                    },
-                    {
-                      "type": "para",
-                      "text": "**Andromeda (M31)** is the nearest major galaxy (~2.5 million light-years). It is approaching the Milky Way at ~110 km/s; the two will collide and merge in ~**4.5 billion years** (Milkomeda). This is gravitational — not expansion-related."
-                    },
-                    {
-                      "type": "para",
-                      "text": "**Quasars** are extremely luminous active galactic nuclei powered by accretion onto supermassive black holes in distant galaxies. They mark the early Universe when galaxy formation was intense. JWST has detected quasars from <1 billion years after the Big Bang."
-                    },
-                    {
-                      "type": "para",
-                      "text": "**Galaxy evolution**: spiral → elliptical through mergers (dynamical heating randomises ordered rotation). The Milky Way has consumed smaller galaxies and their remnants are detectable as stellar streams in the halo."
-                    },
-                    {
-                      "type": "heading",
-                      "text": "Current Affairs (mid-2026)"
-                    },
-                    {
-                      "type": "callout",
-                      "tone": "tip",
-                      "title": "High-Yield Linkages",
-                      "items": [
-                        "**Event Horizon Telescope (EHT)** imaged **Sagittarius A*** (May 2022) — the first image of our own galaxy's central black hole. Validates the existence of supermassive black holes predicted by general relativity.",
-                        "**AstroSat** (ISRO, 2015) observes galaxies in UV and X-ray simultaneously; detected UV from a galaxy **9.3 billion light-years** away (2024) — one of the farthest UV detections by any space telescope.",
-                        "**JWST** discovered galaxies from just 300–400 million years after the Big Bang that are larger and more mature than models predicted — forcing revision of early galaxy-formation theories.",
-                        "**Laniakea Supercluster** (discovered 2014 by Tully et al.) — the supercluster containing the Milky Way; ~520 million light-years across; demonstrated using galaxy flow maps."
-                      ]
-                    },
-                    {
-                      "type": "collapsible",
-                      "title": "Dig deeper — Dark Matter detection efforts",
-                      "items": [
-                        "**XENON1T / XENONnT** (Italy) — largest liquid-xenon detector searching for dark matter particles (WIMPs).",
-                        "**Large Hadron Collider** (CERN) — searches for dark matter candidates produced in high-energy collisions.",
-                        "**India-based Neutrino Observatory (INO)** — proposed underground lab in Tamil Nadu relevant to dark-matter/neutrino physics.",
-                        "No direct detection of dark matter particles yet (as of 2026) — only gravitational evidence."
-                      ]
-                    }
-                  ]
-                },
-                {
                   "section_label": "NCERT_LEVEL",
                   "title": "NCERT Content Mapping",
-                  "display_order": 3,
+                  "display_order": 2,
                   "authored": true,
                   "blocks": [
                     {
@@ -1808,9 +2328,79 @@
                   ]
                 },
                 {
+                  "section_label": "ADVANCED",
+                  "title": "Reference-Book Depth",
+                  "display_order": 3,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "heading",
+                      "text": "Key Facts for Advanced Reference"
+                    },
+                    {
+                      "type": "para",
+                      "text": "**Andromeda (M31)** is the nearest major galaxy (~2.5 million light-years). It is approaching the Milky Way at ~110 km/s; the two will collide and merge in ~**4.5 billion years** (Milkomeda). This is gravitational — not expansion-related."
+                    },
+                    {
+                      "type": "para",
+                      "text": "**Quasars** are extremely luminous active galactic nuclei powered by accretion onto supermassive black holes in distant galaxies. They mark the early Universe when galaxy formation was intense. JWST has detected quasars from <1 billion years after the Big Bang."
+                    },
+                    {
+                      "type": "para",
+                      "text": "**Galaxy evolution**: spiral → elliptical through mergers (dynamical heating randomises ordered rotation). The Milky Way has consumed smaller galaxies and their remnants are detectable as stellar streams in the halo."
+                    },
+                    {
+                      "type": "collapsible",
+                      "title": "Dig deeper — Dark Matter detection efforts",
+                      "items": [
+                        "**XENON1T / XENONnT** (Italy) — largest liquid-xenon detector searching for dark matter particles (WIMPs).",
+                        "**Large Hadron Collider** (CERN) — searches for dark matter candidates produced in high-energy collisions.",
+                        "**India-based Neutrino Observatory (INO)** — proposed underground lab in Tamil Nadu relevant to dark-matter/neutrino physics.",
+                        "No direct detection of dark matter particles yet (as of 2026) — only gravitational evidence."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "section_label": "CURRENT_AFFAIRS",
+                  "title": "Current Affairs Connections — Galaxies & Large-Scale Structure",
+                  "display_order": 4,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "heading",
+                      "text": "Recent Developments (2023-2026)"
+                    },
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Event Horizon Telescope images Sagittarius A* (2022)",
+                      "text": "The **Event Horizon Telescope (EHT)** — a global network of radio telescopes acting as an Earth-sized interferometer — released the first image of **Sagittarius A*** in May 2022, the supermassive black hole (~4 million M☉) at the centre of our own galaxy. It validates the existence of supermassive black holes predicted by general relativity."
+                    },
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "AstroSat's far-UV detections (2024)",
+                      "text": "ISRO's **AstroSat** (launched 2015), India's first dedicated multi-wavelength space observatory, observes galaxies in UV and X-ray simultaneously. In 2024 it detected ultraviolet emission from a galaxy **9.3 billion light-years** away — among the farthest UV detections by any space telescope."
+                    },
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "JWST and the early Universe",
+                      "text": "The **James Webb Space Telescope (JWST)** discovered galaxies from just **300–400 million years** after the Big Bang that are larger and more mature than models predicted, forcing a revision of early galaxy-formation theories. JWST has also detected quasars from less than 1 billion years after the Big Bang."
+                    },
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Laniakea Supercluster mapping",
+                      "text": "The **Laniakea Supercluster** — the supercluster containing the Milky Way, ~520 million light-years across — was identified in 2014 (Tully et al.) using maps of galaxy flows. It reframed our address in the cosmic web and remains a high-yield large-scale-structure reference."
+                    }
+                  ]
+                },
+                {
                   "section_label": "EXAMINER_TRAPS",
                   "title": "Examiner Traps & Common Confusions",
-                  "display_order": 4,
+                  "display_order": 5,
                   "authored": true,
                   "blocks": [
                     {
@@ -1900,7 +2490,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "The correct composition: Dark Energy ~68%, Dark Matter ~27%, Visible Matter ~5%. Statements 1 and 3 swap the values of dark matter (27%) and visible matter (5%). Only statement 2 (dark energy ~68%) is correct."
+                  "explanation": "The correct composition: Dark Energy ~68%, Dark Matter ~27%, Visible Matter ~5%. Statements 1 and 3 swap the values of dark matter (27%) and visible matter (5%). Only statement 2 (dark energy ~68%) is correct.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 2,
@@ -1925,7 +2516,8 @@
                     }
                   ],
                   "correct_option": "C",
-                  "explanation": "The Sun sits in the Orion Arm (also called the Orion Spur), a minor arm between the Sagittarius and Perseus arms, approximately 26,000 light-years from the galactic centre."
+                  "explanation": "The Sun sits in the Orion Arm (also called the Orion Spur), a minor arm between the Sagittarius and Perseus arms, approximately 26,000 light-years from the galactic centre.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 3,
@@ -1950,7 +2542,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Statement 1 is wrong: Andromeda is the nearest MAJOR galaxy, but the Canis Major Dwarf Galaxy and the Sagittarius Dwarf Elliptical Galaxy are closer. Statements 2 (merger in ~4.5 Bn years) and 3 (spiral type) are correct."
+                  "explanation": "Statement 1 is wrong: Andromeda is the nearest MAJOR galaxy, but the Canis Major Dwarf Galaxy and the Sagittarius Dwarf Elliptical Galaxy are closer. Statements 2 (merger in ~4.5 Bn years) and 3 (spiral type) are correct.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 4,
@@ -1975,11 +2568,12 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "AstroSat (ISRO, 2015) is India's first dedicated multi-wavelength space observatory, observing in UV, X-ray, and visible light simultaneously. It orbits Earth (not L2); the black-hole image was by EHT; it is not a radio telescope."
+                  "explanation": "AstroSat (ISRO, 2015) is India's first dedicated multi-wavelength space observatory, observing in UV, X-ray, and visible light simultaneously. It orbits Earth (not L2); the black-hole image was by EHT; it is not a radio telescope.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 5,
-                  "question_type": "FACTUAL",
+                  "question_type": "STATEMENT_BASED",
                   "question_text": "The hierarchical organisation of cosmic structure from smallest to largest is:",
                   "options": [
                     {
@@ -2000,7 +2594,268 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "The correct hierarchy: Stars → Galaxies → Galaxy clusters → Superclusters → Filaments/voids (Cosmic web). Each level is gravitationally bound at a larger scale."
+                  "explanation": "The correct hierarchy: Stars → Galaxies → Galaxy clusters → Superclusters → Filaments/voids (Cosmic web). Each level is gravitationally bound at a larger scale.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 6,
+                  "question_type": "STATEMENT_BASED",
+                  "question_text": "Consider the following statements about the Milky Way galaxy:\n1. It is a barred spiral galaxy.\n2. It is about 100,000 light-years in diameter and contains an estimated 200–400 billion stars.\n3. The Sun lies in the Orion Arm, about 26,000 light-years from the galactic centre.\nWhich of the above statements is/are correct?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "2 and 3 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "1 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "D",
+                  "explanation": "All three are correct. The Milky Way is a barred spiral (statement 1); its diameter is ~100,000 light-years with 200–400 billion stars (statement 2); and the Sun sits in the minor Orion Arm ~26,000 light-years from the centre (statement 3).",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 7,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I with List-II:\n\nList-I (Galaxy type): (a) Spiral, (b) Elliptical, (c) Irregular\nList-II (Characteristic): (1) Smooth ellipsoidal shape, old stars, most abundant type, (2) No distinct shape, often interacting or merging, (3) Rotating disk with spiral arms and active star formation",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-3, b-1, c-2"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-1, b-3, c-2"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-3, b-2, c-1"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-2, b-1, c-3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Spiral galaxies have a rotating disk with arms and active star formation (a-3); elliptical galaxies are smooth, ellipsoidal, dominated by old stars and are the most abundant type (b-1); irregular galaxies have no distinct shape and are often interacting or merging, e.g. the Magellanic Clouds (c-2). Correct match: a-3, b-1, c-2.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 8,
+                  "question_type": "CHRONOLOGICAL",
+                  "question_text": "Arrange the following events in correct chronological order (earliest first):\n1. Launch of India's AstroSat observatory.\n2. Identification of the Laniakea Supercluster.\n3. First image of Sagittarius A* released by the Event Horizon Telescope.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "2 → 1 → 3"
+                    },
+                    {
+                      "label": "B",
+                      "text": "1 → 2 → 3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "2 → 3 → 1"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1 → 3 → 2"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Laniakea was identified in 2014, AstroSat was launched in 2015, and the EHT image of Sagittarius A* was released in 2022. The correct order is therefore 2 (2014) → 1 (2015) → 3 (2022).",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 9,
+                  "question_type": "CHRONOLOGICAL",
+                  "question_text": "Arrange the following cosmic structures in increasing order of physical scale (smallest first):\n1. Local Group\n2. Laniakea Supercluster\n3. Virgo Cluster",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 → 3 → 2"
+                    },
+                    {
+                      "label": "B",
+                      "text": "1 → 2 → 3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "3 → 1 → 2"
+                    },
+                    {
+                      "label": "D",
+                      "text": "2 → 3 → 1"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Scale increases from galaxy group → galaxy cluster → supercluster. The Local Group (a galaxy group of ~80 galaxies) is smallest, the Virgo Cluster (~1,300 galaxies) is larger, and the Laniakea Supercluster (~520 million light-years across) is largest. Correct order: 1 → 3 → 2.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 10,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): The Milky Way and Andromeda galaxies will collide and merge in about 4.5 billion years.\nReason (R): Andromeda is approaching the Milky Way under mutual gravitational attraction rather than being carried away by cosmic expansion.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Both statements are correct and R explains A. Andromeda is moving toward the Milky Way at ~110 km/s due to gravitational attraction (not expansion), and this is precisely why the two will merge in ~4.5 billion years (forming 'Milkomeda').",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 11,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): Dark matter cannot be observed directly with telescopes.\nReason (R): Dark matter does not emit, absorb, or reflect electromagnetic radiation.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Both are correct and R explains A. Because dark matter does not emit, absorb, or reflect light (R), it cannot be seen directly with telescopes (A) and is instead inferred only through gravitational effects such as rotation curves and lensing.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 12,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "Which of the following is NOT used as evidence for the existence of dark matter?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Galaxy rotation curves showing outer stars orbiting faster than visible mass predicts"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Gravitational lensing bending light more than visible mass explains"
+                    },
+                    {
+                      "label": "C",
+                      "text": "The filament-and-void structure of the cosmic web"
+                    },
+                    {
+                      "label": "D",
+                      "text": "The high luminosity of quasars in the early Universe"
+                    }
+                  ],
+                  "correct_option": "D",
+                  "explanation": "Options A, B, and C are the three standard gravitational lines of evidence for dark matter. Option D is the answer because quasar luminosity arises from accretion onto supermassive black holes in active galactic nuclei — it is not evidence for dark matter.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 13,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "The Event Horizon Telescope was able to produce an image of Sagittarius A* primarily because:",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "It is a single optical telescope placed at the L2 Lagrange point"
+                    },
+                    {
+                      "label": "B",
+                      "text": "It links radio telescopes across the globe to act as an Earth-sized interferometer"
+                    },
+                    {
+                      "label": "C",
+                      "text": "It observes in ultraviolet and X-ray wavelengths simultaneously"
+                    },
+                    {
+                      "label": "D",
+                      "text": "It is located inside the Milky Way's central bulge"
+                    }
+                  ],
+                  "correct_option": "B",
+                  "explanation": "The EHT is a global network of radio telescopes that combine to act as an Earth-sized interferometer, giving the resolution needed to image Sagittarius A* (2022). It is not a single optical telescope at L2 (A), not a UV/X-ray observatory like AstroSat (C), and is Earth-based, not inside the galactic bulge (D).",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 14,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "JWST observations of galaxies from just 300–400 million years after the Big Bang revealed them to be larger and more mature than expected. Consider the following inferences:\n1. Early galaxy-formation theories may need revision.\n2. Galaxies in the very early Universe were able to assemble more rapidly than models predicted.\n3. These observations prove that dark matter does not exist.\nWhich of the above inferences can be validly drawn?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "2 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "1 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Inferences 1 and 2 follow directly: finding mature galaxies so early forces revision of early galaxy-formation theories and implies faster-than-expected assembly. Inference 3 is invalid — these observations say nothing that disproves dark matter, which is still inferred from gravitational evidence.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 15,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I with List-II:\n\nList-I (Object/Structure): (a) Milky Way, (b) Andromeda (M31), (c) Virgo Cluster, (d) Laniakea\nList-II (Description): (1) Nearest major galaxy to the Milky Way, (2) Supercluster containing the Milky Way, (3) Barred spiral home galaxy of the Sun, (4) Nearest large galaxy cluster (~1,300 galaxies)",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-3, b-1, c-4, d-2"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-1, b-3, c-2, d-4"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-3, b-1, c-2, d-4"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-2, b-4, c-1, d-3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "The Milky Way is the barred spiral home galaxy (a-3); Andromeda is the nearest major galaxy (b-1); the Virgo Cluster is the nearest large galaxy cluster with ~1,300 galaxies (c-4); and Laniakea is the supercluster containing the Milky Way (d-2). Correct match: a-3, b-1, c-4, d-2.",
+                  "review_status": "REVIEWED"
                 }
               ],
               "ordering_justification": "Follows stellar evolution: stars assembled into galaxies; galaxies into clusters, superclusters, and the cosmic web. Contextualises Earth's position in the Milky Way before the next topic (Earth's uniqueness)."
@@ -2151,9 +3006,36 @@
                   ]
                 },
                 {
-                  "section_label": "ADVANCED",
-                  "title": "Reference-Book Depth & 2026 Current Affairs",
+                  "section_label": "NCERT_LEVEL",
+                  "title": "NCERT Content Mapping",
                   "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Source",
+                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** (pp. 18–20) covers 'conditions favourable to life on Earth.' **Class 11 Chapter 9** covers solar radiation and heat budget."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT lists conditions: correct **distance from the Sun** (moderate temperature), **atmosphere** (traps heat + provides O₂), and **water** (liquid state). It mentions that neither too close (Venus) nor too far (Mars) works — the habitable-zone concept in simple language."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT also covers Earth's **axial tilt** and seasons (Chapter 3), and the **greenhouse effect** in the context of insolation and heat budget (Chapter 9). It does NOT cover Milankovitch cycles, the geodynamo, or plate tectonics as a habitability factor — those are supplementary."
+                    },
+                    {
+                      "type": "quiz",
+                      "question": "According to NCERT, what are the three primary conditions that make Earth habitable?",
+                      "answer": "NCERT lists: (1) **correct distance from the Sun** (moderate temperature allowing liquid water); (2) an **atmosphere** (traps heat, provides oxygen, shields from UV); (3) presence of **liquid water**."
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "Reference-Book Depth",
+                  "display_order": 3,
                   "authored": true,
                   "blocks": [
                     {
@@ -2199,22 +3081,6 @@
                       ]
                     },
                     {
-                      "type": "heading",
-                      "text": "Current Affairs (mid-2026)"
-                    },
-                    {
-                      "type": "callout",
-                      "tone": "tip",
-                      "title": "High-Yield Linkages",
-                      "items": [
-                        "**JWST** detecting atmospheres of exoplanets in habitable zones (TRAPPIST-1 system) — testing whether Earth-like conditions exist elsewhere. UPSC may frame questions on habitability criteria.",
-                        "**NISAR** (NASA-ISRO, launched Jul 2025) — Earth-observation radar measuring surface deformation, ice-sheet changes, and biomass — directly studying Earth's unique geological activity.",
-                        "**Chandrayaan-3** confirmed sulphur, aluminium, iron in lunar regolith — Moon lacks plate tectonics, magnetic field, atmosphere — a comparison case for Earth's uniqueness.",
-                        "**Aditya-L1** monitoring solar wind that Earth's magnetosphere deflects — quantifying the protection the geodynamo provides.",
-                        "**IPCC AR6 (2021–2023)** connected the carbon-silicate cycle (long-term thermostat from plate tectonics) to anthropogenic CO₂ disruption — geomorphology meets climate policy."
-                      ]
-                    },
-                    {
                       "type": "collapsible",
                       "title": "Dig deeper — Exoplanet habitability",
                       "items": [
@@ -2227,36 +3093,51 @@
                   ]
                 },
                 {
-                  "section_label": "NCERT_LEVEL",
-                  "title": "NCERT Content Mapping",
-                  "display_order": 3,
+                  "section_label": "CURRENT_AFFAIRS",
+                  "title": "Current Affairs Connections — Earth's Uniqueness and Habitability",
+                  "display_order": 4,
                   "authored": true,
                   "blocks": [
                     {
+                      "type": "heading",
+                      "text": "Recent Developments (2023-2026)"
+                    },
+                    {
                       "type": "callout",
                       "tone": "note",
-                      "title": "Source",
-                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** (pp. 18–20) covers 'conditions favourable to life on Earth.' **Class 11 Chapter 9** covers solar radiation and heat budget."
+                      "title": "JWST Probing Habitable-Zone Exoplanets",
+                      "text": "**JWST** is detecting the atmospheres of exoplanets in habitable zones (the **TRAPPIST-1** system — 7 Earth-sized planets, 3 in the HZ) to test whether Earth-like conditions exist elsewhere. UPSC may frame questions on habitability criteria and biosignatures (O₂, CH₄, H₂O)."
                     },
                     {
-                      "type": "para",
-                      "text": "NCERT lists conditions: correct **distance from the Sun** (moderate temperature), **atmosphere** (traps heat + provides O₂), and **water** (liquid state). It mentions that neither too close (Venus) nor too far (Mars) works — the habitable-zone concept in simple language."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "NISAR (NASA-ISRO, launched Jul 2025)",
+                      "text": "**NISAR** is an Earth-observation radar mission measuring surface deformation, ice-sheet changes, and biomass — directly studying Earth's unique, geologically active surface, a feature absent on Mars and Venus."
                     },
                     {
-                      "type": "para",
-                      "text": "NCERT also covers Earth's **axial tilt** and seasons (Chapter 3), and the **greenhouse effect** in the context of insolation and heat budget (Chapter 9). It does NOT cover Milankovitch cycles, the geodynamo, or plate tectonics as a habitability factor — those are supplementary."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Chandrayaan-3 and Earth's Uniqueness (Aug 2023)",
+                      "text": "**Chandrayaan-3** confirmed sulphur, aluminium and iron in lunar regolith. The Moon lacks plate tectonics, a magnetic field and an atmosphere — making it a sharp comparison case for the combination of factors that make Earth habitable."
                     },
                     {
-                      "type": "quiz",
-                      "question": "According to NCERT, what are the three primary conditions that make Earth habitable?",
-                      "answer": "NCERT lists: (1) **correct distance from the Sun** (moderate temperature allowing liquid water); (2) an **atmosphere** (traps heat, provides oxygen, shields from UV); (3) presence of **liquid water**."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Aditya-L1 Monitoring the Solar Wind",
+                      "text": "**Aditya-L1** monitors the **solar wind** that Earth's magnetosphere deflects — quantifying the protection the geodynamo provides. Without this shield, the atmosphere would be stripped, as happened on Mars."
+                    },
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "IPCC AR6 and the Carbon-Silicate Thermostat",
+                      "text": "**IPCC AR6 (2021–2023)** connected the carbon-silicate cycle — the long-term thermostat driven by plate tectonics — to anthropogenic CO₂ disruption, where geomorphology meets climate policy."
                     }
                   ]
                 },
                 {
                   "section_label": "EXAMINER_TRAPS",
                   "title": "Examiner Traps & Common Confusions",
-                  "display_order": 4,
+                  "display_order": 5,
                   "authored": true,
                   "blocks": [
                     {
@@ -2346,7 +3227,8 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "Without greenhouse gases (CO₂, H₂O vapour, etc.), Earth's surface would radiate heat directly to space, dropping the average temperature to approximately −18°C (from the actual +15°C). The natural greenhouse effect contributes ~33°C of warming."
+                  "explanation": "Without greenhouse gases (CO₂, H₂O vapour, etc.), Earth's surface would radiate heat directly to space, dropping the average temperature to approximately −18°C (from the actual +15°C). The natural greenhouse effect contributes ~33°C of warming.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 2,
@@ -2371,7 +3253,8 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "The Moon stabilises Earth's obliquity (preventing chaotic swings from 0°–85°), maintaining consistent climate zones. It does NOT cause seasons (the tilt itself does). While tides play biological roles, the PRIMARY habitability contribution is obliquity stabilisation."
+                  "explanation": "The Moon stabilises Earth's obliquity (preventing chaotic swings from 0°–85°), maintaining consistent climate zones. It does NOT cause seasons (the tilt itself does). While tides play biological roles, the PRIMARY habitability contribution is obliquity stabilisation.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 3,
@@ -2396,7 +3279,8 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "Mars's geodynamo ceased ~4 Ga; without a magnetic shield, the solar wind progressively stripped most of the atmosphere. With surface pressure below water's triple point, liquid water became unstable on the surface. Mars did NOT move out of the habitable zone."
+                  "explanation": "Mars's geodynamo ceased ~4 Ga; without a magnetic shield, the solar wind progressively stripped most of the atmosphere. With surface pressure below water's triple point, liquid water became unstable on the surface. Mars did NOT move out of the habitable zone.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 4,
@@ -2421,7 +3305,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Precession ~26,000 yrs (shortest) → Obliquity ~41,000 yrs → Eccentricity ~100,000 yrs (longest). Order: 3, 2, 1."
+                  "explanation": "Precession ~26,000 yrs (shortest) → Obliquity ~41,000 yrs → Eccentricity ~100,000 yrs (longest). Order: 3, 2, 1.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 5,
@@ -2446,7 +3331,268 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Subduction recycles carbon (thermostat — statement 1 correct) and volcanism outgasses CO₂ (statement 2 correct). Ozone is produced from O₂ by UV radiation in the stratosphere — NOT from volcanic emissions (statement 3 wrong)."
+                  "explanation": "Subduction recycles carbon (thermostat — statement 1 correct) and volcanism outgasses CO₂ (statement 2 correct). Ozone is produced from O₂ by UV radiation in the stratosphere — NOT from volcanic emissions (statement 3 wrong).",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 6,
+                  "question_type": "STATEMENT_BASED",
+                  "question_text": "Consider the following statements about the three-stage evolution of Earth's atmosphere: 1. The primary atmosphere of hydrogen and helium was lost to space. 2. The secondary atmosphere formed mainly from volcanic outgassing of CO₂, N₂ and water vapour. 3. The tertiary atmosphere's oxygen was produced by photosynthesis, culminating in the Great Oxidation Event. Which of the above statements is/are correct?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "2 and 3 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "1 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "D",
+                  "explanation": "All three statements are correct. Statement 1 is right — the primary H₂/He atmosphere was lost because Earth's gravity was too weak to retain these lightest gases. Statement 2 is right — volcanic outgassing produced the secondary atmosphere of CO₂, N₂ and water vapour, which condensed into oceans. Statement 3 is right — photosynthetic cyanobacteria produced O₂, leading to the Great Oxidation Event (~2.5 Ga).",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 7,
+                  "question_type": "CHRONOLOGICAL",
+                  "question_text": "Arrange the following stages in Earth's atmospheric evolution in correct chronological order: 1. Great Oxidation Event from photosynthetic oxygen. 2. Loss of the primary hydrogen-helium atmosphere. 3. Volcanic outgassing forming the secondary atmosphere.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "2, 3, 1"
+                    },
+                    {
+                      "label": "B",
+                      "text": "3, 2, 1"
+                    },
+                    {
+                      "label": "C",
+                      "text": "2, 1, 3"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2, 3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "The sequence is: loss of the primary H₂/He atmosphere (2) → volcanic outgassing forming the secondary CO₂/N₂/H₂O atmosphere (3) → the Great Oxidation Event when photosynthetic oxygen accumulated (1). Correct order: 2, 3, 1. Options B, C and D break this primary → secondary → tertiary progression.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 8,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): Mars has no stable liquid water on its surface today.\nReason (R): Mars lost its magnetic field around 4 Ga, allowing the solar wind to strip most of its atmosphere until surface pressure fell below the triple point of water.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — Mars has only subsurface ice and no stable surface liquid water. R is correct and is the precise mechanism — Mars's dynamo died ~4 Ga, the solar wind stripped the atmosphere, and once surface pressure fell below water's triple point liquid water became unstable. R fully explains A, so option A is right; B/C/D misstate this relationship.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 9,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): Earth's natural greenhouse effect is essential for habitability.\nReason (R): Without the natural greenhouse effect, Earth's average surface temperature would be about −18°C instead of the actual +15°C.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — the natural greenhouse effect is essential because it keeps Earth warm enough for liquid water. R is correct and explains exactly why — without it the average surface temperature would fall from +15°C to about −18°C, freezing the planet. R is the correct explanation of A, so option A is right; the enhanced (anthropogenic) greenhouse effect is a separate issue.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 10,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "Which of the following is NOT a correct cause-and-effect relationship relating to Earth's habitability?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Convection in the liquid outer core → a geodynamo generates Earth's magnetic field"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Earth's magnetic field deflects the solar wind → the atmosphere is retained"
+                    },
+                    {
+                      "label": "C",
+                      "text": "Milankovitch cycles change the total solar energy Earth receives → glacial and interglacial periods occur"
+                    },
+                    {
+                      "label": "D",
+                      "text": "Subduction recycles carbon into the mantle → atmospheric CO₂ is regulated over geological time"
+                    }
+                  ],
+                  "correct_option": "C",
+                  "explanation": "C is INCORRECT (and therefore the answer). Milankovitch cycles change the spatial and seasonal DISTRIBUTION of solar radiation, not the TOTAL energy received — so the stated cause is wrong. A is valid (geodynamo from outer-core convection), B is valid (magnetosphere shields the atmosphere), and D is valid (the carbon-silicate thermostat via subduction). All except C are correct cause-effect chains.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 11,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "The persistence of liquid water on Earth's surface is primarily a consequence of:",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Earth's correct mass, its distance within the habitable zone, and the greenhouse effect acting together"
+                    },
+                    {
+                      "label": "B",
+                      "text": "The Moon's tidal pull alone"
+                    },
+                    {
+                      "label": "C",
+                      "text": "The complete absence of any atmosphere"
+                    },
+                    {
+                      "label": "D",
+                      "text": "Plate tectonics generating water directly from the mantle"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — liquid water persists because Earth has the right mass (retains an atmosphere), the right distance (within the CHZ), and a greenhouse effect that lifts the surface temperature from −18°C to +15°C. B is wrong — tides do not maintain liquid water. C is wrong — an atmosphere (and its pressure plus greenhouse warming) is required, not its absence. D is wrong — tectonics recycles carbon and outgasses water vapour but does not by itself account for persistent surface water.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 12,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "Venus lies near the inner edge of the Sun's habitable-zone region yet has no liquid water. This is primarily because:",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Venus has no atmosphere at all"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Its dense CO₂ atmosphere produces a runaway greenhouse effect, making the surface far too hot"
+                    },
+                    {
+                      "label": "C",
+                      "text": "It lies far beyond the outer edge of the habitable zone"
+                    },
+                    {
+                      "label": "D",
+                      "text": "Its strong magnetic field boils away surface water"
+                    }
+                  ],
+                  "correct_option": "B",
+                  "explanation": "B is correct — Venus has an extremely dense CO₂ atmosphere (~92× Earth's surface pressure) that drives a runaway greenhouse effect, so the surface is too hot for liquid water. A is wrong — Venus has a very dense, not absent, atmosphere. C is wrong — Venus is at 0.72 AU, inside the inner edge, not beyond the zone. D is wrong — Venus has a very weak or absent magnetic field, and a magnetic field would not boil water.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 13,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I (Milankovitch parameter) with List-II (Approximate periodicity):\n\nList-I: (a) Eccentricity, (b) Obliquity, (c) Precession\nList-II: (1) ~41,000 years, (2) ~26,000 years, (3) ~100,000 years",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-3, b-1, c-2"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-1, b-3, c-2"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-3, b-2, c-1"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-2, b-1, c-3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Eccentricity ~100,000 years (a-3); Obliquity ~41,000 years (b-1); Precession ~26,000 years (c-2). Correct match: a-3, b-1, c-2. The other options misassign these well-known periodicities (e.g. swapping the eccentricity and obliquity values).",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 14,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I (Planet) with List-II (Characteristic):\n\nList-I: (a) Earth, (b) Mars, (c) Venus\nList-II: (1) Dense CO₂ atmosphere with a runaway greenhouse, (2) Active geodynamo and active plate tectonics, (3) Extinct magnetic field with a thin CO₂ atmosphere",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-2, b-3, c-1"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-1, b-3, c-2"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-2, b-1, c-3"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-3, b-2, c-1"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Earth has an active geodynamo and active plate tectonics (a-2); Mars has an extinct magnetic field and a thin CO₂ atmosphere (b-3); Venus has a dense CO₂ atmosphere with a runaway greenhouse (c-1). Correct match: a-2, b-3, c-1, exactly as set out in the Earth–Mars–Venus comparison. The other options swap these traits incorrectly.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 15,
+                  "question_type": "FACTUAL",
+                  "question_text": "The Great Oxidation Event, when photosynthetic oxygen began to accumulate in Earth's atmosphere, occurred approximately:",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "4.6 Ga"
+                    },
+                    {
+                      "label": "B",
+                      "text": "2.5 Ga"
+                    },
+                    {
+                      "label": "C",
+                      "text": "540 Ma"
+                    },
+                    {
+                      "label": "D",
+                      "text": "13.8 Ga"
+                    }
+                  ],
+                  "correct_option": "B",
+                  "explanation": "B is correct — the Great Oxidation Event occurred at ~2.5 Ga, when cyanobacterial photosynthesis built up atmospheric O₂ and an ozone layer. A (4.6 Ga) is the age of the Solar System/Earth's formation, not the oxidation event. C (540 Ma) marks the much later Cambrian explosion of complex life. D (13.8 Ga) is the age of the Universe (Big Bang).",
+                  "review_status": "REVIEWED"
                 }
               ],
               "ordering_justification": "After understanding the Universe, galaxies, stars, and the Solar System's formation, this topic explains WHY Earth alone (among known planets) sustains life — bridging astronomy to geomorphology and environmental geography."
@@ -2589,9 +3735,36 @@
                   ]
                 },
                 {
-                  "section_label": "ADVANCED",
-                  "title": "Reference-Book Depth & 2026 Current Affairs",
+                  "section_label": "NCERT_LEVEL",
+                  "title": "NCERT Content Mapping",
                   "display_order": 2,
+                  "authored": true,
+                  "blocks": [
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Source",
+                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** covers Moon formation via the Giant Impact. **Class 11, Chapter 14 (Movements of Ocean Water)** covers tides in detail. **Class 6 — The Earth: Our Habitat, Chapter 1** introduces the Moon as Earth's satellite."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 Ch.2 states: the Moon formed from a **collision (the 'big splat')** between Earth and a body roughly the size of Mars, about 4.44 billion years ago. This directly matches the Giant Impact Hypothesis."
+                    },
+                    {
+                      "type": "para",
+                      "text": "NCERT Class 11 Ch.14 explains: tides are caused by the **gravitational pull of the Moon and the Sun**; **spring tides** at new/full Moon (aligned), **neap tides** at quarter Moons (perpendicular). High-yield for both Prelims and the Oceanography section later."
+                    },
+                    {
+                      "type": "quiz",
+                      "question": "According to NCERT, when do spring tides occur?",
+                      "answer": "At **new Moon and full Moon**, when the Sun, Earth, and Moon are aligned (syzygy). Their gravitational pulls combine to produce the highest high tides. ('Spring' here means 'to spring up' — not the season.)"
+                    }
+                  ]
+                },
+                {
+                  "section_label": "ADVANCED",
+                  "title": "Reference-Book Depth",
+                  "display_order": 3,
                   "authored": true,
                   "blocks": [
                     {
@@ -2636,23 +3809,6 @@
                       "text": "The Moon has no atmosphere (so no weather/erosion), extreme temperature swings (−173°C to +127°C), and surface features: **maria** (dark basaltic plains from ancient volcanism), **highlands** (bright, heavily cratered), and **regolith** (loose surface debris from impacts). Water ice exists in **permanently shadowed craters** at the poles — confirmed by Chandrayaan-1."
                     },
                     {
-                      "type": "heading",
-                      "text": "Current Affairs (mid-2026)"
-                    },
-                    {
-                      "type": "callout",
-                      "tone": "tip",
-                      "title": "India's Lunar Programme — High Yield",
-                      "items": [
-                        "**Chandrayaan-1** (2008): discovered **water molecules / hydroxyl** on the lunar surface (with NASA's M3 instrument) — a landmark finding.",
-                        "**Chandrayaan-2** (2019): orbiter operational; Vikram lander crashed but the orbiter continues mapping.",
-                        "**Chandrayaan-3** (Aug 2023): first soft landing near the **lunar south pole**; Pragyan rover confirmed sulphur, Fe, Al, Ti, O in regolith; operated ~14 days.",
-                        "**Chandrayaan-4** (~2028): India's first lunar **sample-return** mission (up to 3 kg regolith).",
-                        "**Chandrayaan-5** (with JAXA/Japan): ~350-kg rover, ~100-day operation.",
-                        "**NASA Artemis programme**: aims to return humans to the Moon (south pole) and build a sustained presence; India is an **Artemis Accords** signatory (2023)."
-                      ]
-                    },
-                    {
                       "type": "collapsible",
                       "title": "Dig deeper — Why the south pole?",
                       "items": [
@@ -2665,36 +3821,51 @@
                   ]
                 },
                 {
-                  "section_label": "NCERT_LEVEL",
-                  "title": "NCERT Content Mapping",
-                  "display_order": 3,
+                  "section_label": "CURRENT_AFFAIRS",
+                  "title": "Current Affairs Connections — The Moon",
+                  "display_order": 4,
                   "authored": true,
                   "blocks": [
                     {
+                      "type": "heading",
+                      "text": "Recent Developments (2023-2026)"
+                    },
+                    {
                       "type": "callout",
                       "tone": "note",
-                      "title": "Source",
-                      "text": "**NCERT Class 11 — Fundamentals of Physical Geography, Chapter 2** covers Moon formation via the Giant Impact. **Class 11, Chapter 14 (Movements of Ocean Water)** covers tides in detail. **Class 6 — The Earth: Our Habitat, Chapter 1** introduces the Moon as Earth's satellite."
+                      "title": "Chandrayaan-1 — Water Discovery (2008–09)",
+                      "text": "**Chandrayaan-1** (2008), using NASA's Moon Mineralogy Mapper (M3), detected **water molecules / hydroxyl** on the lunar surface — a landmark finding that first confirmed water on the Moon."
                     },
                     {
-                      "type": "para",
-                      "text": "NCERT Class 11 Ch.2 states: the Moon formed from a **collision (the 'big splat')** between Earth and a body roughly the size of Mars, about 4.44 billion years ago. This directly matches the Giant Impact Hypothesis."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Chandrayaan-2 — Orbiter Still Mapping (2019)",
+                      "text": "**Chandrayaan-2** (2019): the Vikram lander crashed during descent, but the **orbiter remains operational** and continues high-resolution mapping of the lunar surface."
                     },
                     {
-                      "type": "para",
-                      "text": "NCERT Class 11 Ch.14 explains: tides are caused by the **gravitational pull of the Moon and the Sun**; **spring tides** at new/full Moon (aligned), **neap tides** at quarter Moons (perpendicular). High-yield for both Prelims and the Oceanography section later."
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Chandrayaan-3 — South-Pole Landing (Aug 2023)",
+                      "text": "**Chandrayaan-3** (Aug 2023) achieved the **first soft landing near the lunar south pole**. The Pragyan rover confirmed sulphur, Fe, Al, Ti and O in the regolith and operated for ~14 days (one lunar day)."
                     },
                     {
-                      "type": "quiz",
-                      "question": "According to NCERT, when do spring tides occur?",
-                      "answer": "At **new Moon and full Moon**, when the Sun, Earth, and Moon are aligned (syzygy). Their gravitational pulls combine to produce the highest high tides. ('Spring' here means 'to spring up' — not the season.)"
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "Chandrayaan-4 & 5 — Sample Return and Joint Rover",
+                      "text": "**Chandrayaan-4** (~2028) is India's first lunar **sample-return** mission (up to 3 kg of regolith). **Chandrayaan-5** is a joint ISRO-JAXA mission with a ~350-kg rover designed for ~100 days of surface operation."
+                    },
+                    {
+                      "type": "callout",
+                      "tone": "note",
+                      "title": "NASA Artemis Programme — India a Signatory",
+                      "text": "The **NASA Artemis programme** aims to return humans to the Moon (south pole) and build a sustained presence. India became an **Artemis Accords** signatory in **2023**."
                     }
                   ]
                 },
                 {
                   "section_label": "EXAMINER_TRAPS",
                   "title": "Examiner Traps & Common Confusions",
-                  "display_order": 4,
+                  "display_order": 5,
                   "authored": true,
                   "blocks": [
                     {
@@ -2784,7 +3955,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Statements 1 and 3 are correct evidence. Statement 2 is wrong: the Moon has a SMALL iron core relative to its size (because the iron had already sunk to Earth's/Theia's cores before impact) — this is itself evidence FOR the hypothesis."
+                  "explanation": "Statements 1 and 3 are correct evidence. Statement 2 is wrong: the Moon has a SMALL iron core relative to its size (because the iron had already sunk to Earth's/Theia's cores before impact) — this is itself evidence FOR the hypothesis.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 2,
@@ -2809,7 +3981,8 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "Tidal locking: the Moon's rotation period equals its orbital period (27.3 days), so the same hemisphere always faces Earth. The Moon DOES rotate — once per orbit (option A is a common misconception)."
+                  "explanation": "Tidal locking: the Moon's rotation period equals its orbital period (27.3 days), so the same hemisphere always faces Earth. The Moon DOES rotate — once per orbit (option A is a common misconception).",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 3,
@@ -2834,7 +4007,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Statements 1 and 3 are correct. Statement 2 is wrong: the Moon is RECEDING (~3.8 cm/year), not approaching, as tidal friction slows Earth's rotation and transfers angular momentum to the Moon's orbit."
+                  "explanation": "Statements 1 and 3 are correct. Statement 2 is wrong: the Moon is RECEDING (~3.8 cm/year), not approaching, as tidal friction slows Earth's rotation and transfers angular momentum to the Moon's orbit.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 4,
@@ -2859,7 +4033,8 @@
                     }
                   ],
                   "correct_option": "A",
-                  "explanation": "Chandrayaan-1 (2008–09), using NASA's Moon Mineralogy Mapper (M3), detected water molecules and hydroxyl on the lunar surface — a landmark discovery. Mangalyaan was India's Mars mission."
+                  "explanation": "Chandrayaan-1 (2008–09), using NASA's Moon Mineralogy Mapper (M3), detected water molecules and hydroxyl on the lunar surface — a landmark discovery. Mangalyaan was India's Mars mission.",
+                  "review_status": "REVIEWED"
                 },
                 {
                   "display_order": 5,
@@ -2884,7 +4059,268 @@
                     }
                   ],
                   "correct_option": "B",
-                  "explanation": "The lunar south pole has permanently shadowed craters that trap water ice — a critical resource for future bases (drinking water, oxygen, rocket fuel). The Moon has no atmosphere, and no region faces Earth continuously."
+                  "explanation": "The lunar south pole has permanently shadowed craters that trap water ice — a critical resource for future bases (drinking water, oxygen, rocket fuel). The Moon has no atmosphere, and no region faces Earth continuously.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 6,
+                  "question_type": "CHRONOLOGICAL",
+                  "question_text": "Arrange the following Indian lunar missions in correct chronological order of launch: 1. Chandrayaan-2 2. Chandrayaan-1 3. Chandrayaan-4 (planned) 4. Chandrayaan-3.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "2, 1, 4, 3"
+                    },
+                    {
+                      "label": "B",
+                      "text": "1, 2, 4, 3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "2, 1, 3, 4"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2, 3, 4"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Chandrayaan-1 (2008) → Chandrayaan-2 (2019) → Chandrayaan-3 (Aug 2023) → Chandrayaan-4 (planned ~2028). In the listed numbering that is 2, 1, 4, 3. Option D wrongly assumes the mission numbers match the order of the listed items.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 7,
+                  "question_type": "CHRONOLOGICAL",
+                  "question_text": "Arrange the following stages of the Giant Impact origin of the Moon in the correct sequence: 1. Debris ejected into orbit coalesces into the Moon 2. A Mars-sized body (Theia) collides with the proto-Earth 3. The proto-Earth forms in the early Solar System 4. Debris is thrown into orbit around Earth.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "3, 2, 4, 1"
+                    },
+                    {
+                      "label": "B",
+                      "text": "2, 3, 4, 1"
+                    },
+                    {
+                      "label": "C",
+                      "text": "3, 4, 2, 1"
+                    },
+                    {
+                      "label": "D",
+                      "text": "3, 2, 1, 4"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "The sequence is: proto-Earth forms (3) → Theia collides with it ~4.5 Ga (2) → debris is ejected into orbit (4) → the orbiting debris coalesces into the Moon (1). Correct order: 3, 2, 4, 1.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 8,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): Only one hemisphere of the Moon is ever visible from Earth.\nReason (R): The Moon's rotation period is equal to its orbital period of about 27.3 days (synchronous rotation).",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — the same face always points toward Earth, so the far side is never visible. R is correct and is the precise reason — because the Moon is tidally locked, its rotation period equals its orbital period (27.3 days), keeping one hemisphere facing Earth. R fully explains A.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 9,
+                  "question_type": "ASSERTION_REASON",
+                  "question_text": "Assertion (A): Earth's day is gradually getting longer over geological time.\nReason (R): Tidal friction slows Earth's rotation and transfers angular momentum to the Moon, which recedes at about 3.8 cm per year.",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Both A and R are correct, and R is the correct explanation of A"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Both A and R are correct, but R is NOT the correct explanation of A"
+                    },
+                    {
+                      "label": "C",
+                      "text": "A is correct but R is incorrect"
+                    },
+                    {
+                      "label": "D",
+                      "text": "A is incorrect but R is correct"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — Earth's day was only ~6 hours when the Moon formed and has lengthened since. R is correct and is the mechanism — tidal friction slows Earth's spin and transfers angular momentum to the Moon's orbit, so the Moon recedes ~3.8 cm/year. R explains A.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 10,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "The highest high tides (spring tides) occur at new Moon and full Moon because:",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "The Sun, Earth and Moon are aligned (syzygy), so the solar and lunar pulls add together"
+                    },
+                    {
+                      "label": "B",
+                      "text": "The Sun and Moon are at right angles, so their pulls cancel"
+                    },
+                    {
+                      "label": "C",
+                      "text": "The Moon is closest to Earth in its orbit"
+                    },
+                    {
+                      "label": "D",
+                      "text": "The Sun has no influence on tides at these times"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — at new and full Moon the Sun, Earth and Moon line up (syzygy), so the gravitational pulls of the Sun and Moon combine to produce the highest high tides. B describes neap tides (quadrature). The Sun contributes ~46% of the tidal force, so D is wrong, and C confuses spring tides with perigee.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 11,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "Which of the following is NOT a correct cause-and-effect relationship regarding the Moon?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "The Moon stabilises Earth's 23.5° axial tilt → seasons and climate remain stable"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Tidal friction slows Earth's rotation → the Moon recedes and the day lengthens"
+                    },
+                    {
+                      "label": "C",
+                      "text": "The Moon's axial tilt determines Earth's seasons → the Moon causes summer and winter"
+                    },
+                    {
+                      "label": "D",
+                      "text": "The Sun and Moon align at new/full Moon → spring tides occur"
+                    }
+                  ],
+                  "correct_option": "C",
+                  "explanation": "C is INCORRECT (and therefore the answer). Earth's seasons are caused by Earth's own 23.5° axial tilt, not the Moon — the Moon only stabilises that tilt. A, B and D are all valid cause-effect chains supported by the file.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 12,
+                  "question_type": "CAUSE_EFFECT",
+                  "question_text": "Why does the Moon have a small iron core relative to its size?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "Because the iron of Earth and Theia had already sunk to their cores before the giant impact, so mostly mantle material was ejected"
+                    },
+                    {
+                      "label": "B",
+                      "text": "Because the Moon captured iron-poor asteroids after it formed"
+                    },
+                    {
+                      "label": "C",
+                      "text": "Because the Moon formed far from the Sun where iron is rare"
+                    },
+                    {
+                      "label": "D",
+                      "text": "Because solar wind stripped iron from the Moon's surface"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "A is correct — by the time of the giant impact, the dense iron of both proto-Earth and Theia had already differentiated into their cores. The debris ejected to form the Moon was mostly iron-poor mantle material, so the Moon ended up with only a small iron core. B, C and D are not supported by the file.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 13,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I (Theory of Moon's origin) with List-II (Status / reason):\n\nList-I: (a) Fission, (b) Capture, (c) Co-accretion, (d) Giant Impact\nList-II: (1) Accepted — explains composition, core, isotopes and angular momentum, (2) Rejected — angular momentum insufficient, (3) Rejected — cannot explain the Moon's small iron core, (4) Rejected — isotope ratios too similar to Earth",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-2, b-4, c-3, d-1"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-4, b-2, c-3, d-1"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-2, b-3, c-4, d-1"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-3, b-4, c-2, d-1"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Fission — rejected, angular momentum insufficient (a-2); Capture — rejected, isotope ratios too similar (b-4); Co-accretion — rejected, cannot explain the small iron core (c-3); Giant Impact — accepted (d-1). Correct match: a-2, b-4, c-3, d-1.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 14,
+                  "question_type": "MATCH_THE_FOLLOWING",
+                  "question_text": "Match List-I (Mission) with List-II (Achievement / feature):\n\nList-I: (a) Chandrayaan-1, (b) Chandrayaan-3, (c) Chandrayaan-4, (d) Chandrayaan-5\nList-II: (1) First soft landing near the lunar south pole (2023), (2) Detected water/hydroxyl on the lunar surface (2008), (3) Joint ISRO-JAXA mission with a ~350-kg rover, (4) India's first lunar sample-return mission (~2028)",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "a-2, b-1, c-4, d-3"
+                    },
+                    {
+                      "label": "B",
+                      "text": "a-1, b-2, c-4, d-3"
+                    },
+                    {
+                      "label": "C",
+                      "text": "a-2, b-1, c-3, d-4"
+                    },
+                    {
+                      "label": "D",
+                      "text": "a-2, b-4, c-1, d-3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Chandrayaan-1 detected water/hydroxyl in 2008 (a-2); Chandrayaan-3 made the first south-pole soft landing in 2023 (b-1); Chandrayaan-4 is the planned sample-return mission ~2028 (c-4); Chandrayaan-5 is the joint ISRO-JAXA ~350-kg rover mission (d-3). Correct match: a-2, b-1, c-4, d-3.",
+                  "review_status": "REVIEWED"
+                },
+                {
+                  "display_order": 15,
+                  "question_type": "STATEMENT_BASED",
+                  "question_text": "Consider the following statements about lunar surface geography: 1. Maria are dark basaltic plains formed by ancient volcanism. 2. The Moon has a thick atmosphere that causes weather and erosion. 3. Water ice exists in permanently shadowed craters at the poles. Which of the above statements is/are correct?",
+                  "options": [
+                    {
+                      "label": "A",
+                      "text": "1 and 3 only"
+                    },
+                    {
+                      "label": "B",
+                      "text": "1 and 2 only"
+                    },
+                    {
+                      "label": "C",
+                      "text": "2 and 3 only"
+                    },
+                    {
+                      "label": "D",
+                      "text": "1, 2 and 3"
+                    }
+                  ],
+                  "correct_option": "A",
+                  "explanation": "Statements 1 and 3 are correct — maria are dark basaltic plains from ancient volcanism, and water ice occurs in permanently shadowed polar craters (confirmed by Chandrayaan-1). Statement 2 is wrong: the Moon has no atmosphere, which is why there is no weather or erosion and why it shows extreme temperature swings.",
+                  "review_status": "REVIEWED"
                 }
               ],
               "ordering_justification": "Closes the 'Earth and Its Origin' sub-topic: the Moon formed in the final stage of Solar System assembly and is essential to Earth's habitability (tilt stabilisation, tides). Bridges to Earth's interior structure (next sub-topic)."
@@ -2897,7 +4333,7 @@
           "display_order": 2,
           "children": [
             {
-              "display_order": 1,
+              "display_order": 7,
               "title": "Earth's Internal Structure — Crust, Mantle, Core",
               "node_type": "LEAF_TOPIC",
               "weight": 1.5,
@@ -3746,7 +5182,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 2,
+              "display_order": 8,
               "title": "Sources of Information about Earth's Interior",
               "node_type": "LEAF_TOPIC",
               "weight": 1.2,
@@ -4559,7 +5995,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 3,
+              "display_order": 9,
               "title": "Temperature, Pressure, and Density Distribution within Earth",
               "node_type": "LEAF_TOPIC",
               "weight": 1.0,
@@ -5333,7 +6769,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 4,
+              "display_order": 10,
               "title": "Earth's Magnetic Field and Paleomagnetism",
               "node_type": "LEAF_TOPIC",
               "weight": 1.3,
@@ -6244,7 +7680,7 @@
           "display_order": 4,
           "children": [
             {
-              "display_order": 1,
+              "display_order": 11,
               "title": "Continental Drift Theory — Wegener's Hypothesis",
               "node_type": "LEAF_TOPIC",
               "weight": 1.2,
@@ -7069,7 +8505,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 2,
+              "display_order": 12,
               "title": "Seafloor Spreading and Ocean Floor Mapping",
               "node_type": "LEAF_TOPIC",
               "weight": 1.3,
@@ -7879,7 +9315,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 3,
+              "display_order": 13,
               "title": "Plate Tectonics — Plate Boundaries and Movements",
               "node_type": "LEAF_TOPIC",
               "weight": 1.5,
@@ -8739,7 +10175,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 4,
+              "display_order": 14,
               "title": "Indian Plate Movement and Himalayan Orogeny",
               "node_type": "LEAF_TOPIC",
               "weight": 1.5,
@@ -10452,7 +11888,7 @@
           "display_order": 5,
           "children": [
             {
-              "display_order": 1,
+              "display_order": 15,
               "title": "Earthquakes — Causes, Types, and Seismic Waves",
               "node_type": "LEAF_TOPIC",
               "weight": 1.5,
@@ -11276,7 +12712,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 2,
+              "display_order": 16,
               "title": "Earthquake Distribution and Seismic Zones of India",
               "node_type": "LEAF_TOPIC",
               "weight": 1.5,
@@ -12116,7 +13552,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 3,
+              "display_order": 17,
               "title": "Volcanoes — Types, Distribution, and Products",
               "node_type": "LEAF_TOPIC",
               "weight": 1.5,
@@ -12956,7 +14392,7 @@
               "review_status": "REVIEWED"
             },
             {
-              "display_order": 4,
+              "display_order": 18,
               "title": "Volcanic Landforms and Hotspots",
               "node_type": "LEAF_TOPIC",
               "weight": 1.5,
