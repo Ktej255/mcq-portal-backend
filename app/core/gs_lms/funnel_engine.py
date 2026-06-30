@@ -98,12 +98,16 @@ def get_funnel_state(db: Session, student_id: int, node_id: int) -> FunnelState:
         if row.completed:
             completed_steps.add(row.step_number)
         # Track timestamps
-        if row.created_at:
-            if started_at is None or row.created_at < started_at:
-                started_at = row.created_at
-        if row.completed_at:
-            if last_activity_at is None or row.completed_at > last_activity_at:
-                last_activity_at = row.completed_at
+        # Normalize to naive datetimes to avoid 'can't compare offset-naive and offset-aware datetimes'
+        row_created_at = row.created_at.replace(tzinfo=None) if row.created_at else None
+        row_completed_at = row.completed_at.replace(tzinfo=None) if row.completed_at else None
+
+        if row_created_at:
+            if started_at is None or row_created_at < started_at:
+                started_at = row_created_at
+        if row_completed_at:
+            if last_activity_at is None or row_completed_at > last_activity_at:
+                last_activity_at = row_completed_at
 
     current_step = _compute_current_step(completed_steps)
 
