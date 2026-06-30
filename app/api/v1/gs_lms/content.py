@@ -305,9 +305,9 @@ def get_topic_sections(
                 locked=locked,
                 completed=completed,
                 skippable=is_skippable,
-                # Content blocks: always include when discussion gate passed
-                # (funnel controls access progression, not section locking)
-                blocks=section.blocks if discussion_gate_passed else None,
+                # Content blocks: always returned — the funnel UI controls
+                # what the student sees at each step, not the backend lock.
+                blocks=section.blocks,
             )
         )
 
