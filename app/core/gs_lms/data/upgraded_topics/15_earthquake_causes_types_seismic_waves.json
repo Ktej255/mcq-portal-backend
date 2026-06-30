@@ -1,0 +1,274 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Earthquake Causes, Types, and Seismic Waves. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Earthquakes & Volcanism)"
+  },
+  "title": "Earthquakes — Causes, Types, and Seismic Waves",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 15,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After understanding plate tectonics (topics 11-14), the student must learn what happens when plates interact violently. Earthquakes are the direct consequence of plate boundary stresses and are foundational for understanding volcanism, tsunamis, and seismic zoning of India.",
+  "concept_checklist": [
+    "Earthquake: sudden release of energy in Earth's lithosphere causing seismic waves; measured by seismograph.",
+    "Focus (hypocentre) is the point of origin below surface; Epicentre is the point directly above on the surface.",
+    "Three causes: tectonic (plate interaction), volcanic (magma movement), and collapse/human-induced (mining, reservoir).",
+    "Body waves: P-waves (longitudinal, travel through all media, fastest) and S-waves (transverse, solids only).",
+    "Surface waves: Love waves (horizontal shaking) and Rayleigh waves (rolling motion) — most destructive.",
+    "Elastic Rebound Theory (Reid, 1911): rocks accumulate strain along faults until they snap back to original shape, releasing energy.",
+    "Richter scale measures magnitude (logarithmic, each step = 10× amplitude, 31.6× energy); Modified Mercalli scale measures intensity (I-XII, based on damage).",
+    "India lies at the junction of the Indo-Australian and Eurasian plates; entire Himalayan belt is seismically active.",
+    "Shallow-focus earthquakes (<70 km) cause most damage; deep-focus earthquakes (300-700 km) occur at subduction zones."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Every year, Earth experiences over **500,000 detectable earthquakes**. Of these, about 100 cause damage. India's deadliest — the **2001 Bhuj earthquake** (7.7 magnitude) — killed over 20,000 people in 45 seconds. Yet earthquakes are not random. They follow plate boundaries with mathematical precision. Understanding why and where they strike is not just geology — it is survival science for a country where **59% of the landmass** is vulnerable."},
+        {"type": "statgrid", "items": [
+          {"value": "500,000+", "label": "Earthquakes per year"},
+          {"value": "59%", "label": "India's seismic-prone area"},
+          {"value": "8 km/s", "label": "P-wave speed in mantle"},
+          {"value": "1906", "label": "San Francisco (elastic rebound proof)"}
+        ]},
+        {"type": "heading", "text": "What Is an Earthquake?"},
+        {"type": "para", "text": "An **earthquake** is a sudden release of energy stored in rocks of the **lithosphere**, producing **seismic waves** that radiate outward from the point of rupture. The point of energy release underground is the **focus** (hypocentre); the point directly above it on the surface is the **epicentre**. The severity depends on depth, magnitude, distance from epicentre, and local geology."},
+        {"type": "analogy", "text": "Imagine bending a wooden ruler slowly. It stores elastic energy as it bends. When it snaps, the stored energy releases suddenly as vibrations. Earth's rocks behave the same way — they bend under tectonic stress until they fracture along a fault, releasing accumulated strain energy as seismic waves."},
+        {"type": "heading", "text": "Causes of Earthquakes"},
+        {"type": "para", "text": "The primary cause is **tectonic activity** — movement and collision of lithospheric plates. When plates converge, diverge, or slide past each other, enormous stress builds along **faults**. When stress exceeds rock strength, sudden rupture occurs. Secondary causes include **volcanic activity** (magma forcing through rock), **collapse** (cave/mine roof), and **human activities** (reservoir-induced seismicity, nuclear tests, fracking)."},
+        {"type": "keyterms", "terms": [
+          {"term": "Focus (Hypocentre)", "definition": "The point within Earth where the earthquake originates; depth determines classification: shallow (<70 km), intermediate (70-300 km), deep (300-700 km)."},
+          {"term": "Epicentre", "definition": "The point on Earth's surface directly above the focus; experiences strongest shaking."},
+          {"term": "Fault", "definition": "A fracture in rock along which displacement has occurred. Types: normal, reverse (thrust), strike-slip."},
+          {"term": "Elastic Rebound Theory", "definition": "Rocks on either side of a fault deform elastically under stress; when friction is overcome, they snap back to original shape, releasing energy (H.F. Reid, 1911)."},
+          {"term": "Seismograph", "definition": "Instrument that records seismic waves; consists of a suspended mass that remains stationary while the frame moves with the ground."}
+        ]},
+        {"type": "heading", "text": "The Elastic Rebound Theory"},
+        {"type": "para", "text": "Proposed by **H.F. Reid** in **1911** after studying the **1906 San Francisco earthquake**, this theory explains the mechanism of tectonic earthquakes. Rocks on opposite sides of a fault are subjected to tectonic forces that cause gradual **elastic deformation**. Strain accumulates over decades/centuries. When accumulated stress exceeds the **frictional resistance** of the fault, sudden rupture occurs — rocks snap back (rebound) to their original undeformed shape, releasing stored energy as seismic waves."},
+        {"type": "callout", "tone": "insight", "title": "Key Insight", "text": "The Elastic Rebound Theory explains why earthquakes are repetitive at the same faults — once strain is released, the cycle of accumulation begins again. This is the basis of **seismic gap theory** used in earthquake prediction: fault segments that haven't ruptured in a long time have accumulated maximum strain and are most likely to rupture next."}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Earthquakes",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "3", "page_start": 33, "page_end": 37, "external_url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf", "text": "Chapter 3 'Interior of the Earth' covers earthquake causes, seismic waves (body and surface), shadow zones, and measurement scales. Pages 33-37 deal specifically with earthquakes.", "key_facts": ["Earthquakes caused by: tectonic, volcanic, collapse, explosion", "Body waves: P-waves and S-waves", "Surface waves: Love and Rayleigh", "Shadow zones prove liquid outer core", "Seismograph principle: inertia of suspended mass"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 3 (Earthquakes Section)"},
+        {"type": "points", "title": "Causes Listed in NCERT", "items": ["**Tectonic earthquakes** — most common and most destructive; caused by plate movements along faults", "**Volcanic earthquakes** — limited to volcanic regions; caused by magma movement", "**Collapse earthquakes** — in mining areas or regions of intense groundwater withdrawal", "**Explosion earthquakes** — caused by nuclear or chemical explosions (human-induced)"]},
+        {"type": "points", "title": "Seismic Waves as per NCERT", "items": ["**Body waves** — generated at the focus, travel through Earth's body: P-waves (faster, longitudinal) and S-waves (slower, transverse)", "**Surface waves** — generated when body waves interact with surface: more destructive, lower frequency, longer duration", "**P-waves**: particles vibrate parallel to wave direction (push-pull); travel through solids, liquids, and gases", "**S-waves**: particles vibrate perpendicular to wave direction (shake); travel through solids ONLY", "**Shadow zones**: P-wave shadow (103°-143°), S-wave shadow (103°-180°) — key evidence for liquid outer core"]},
+        {"type": "para", "text": "NCERT emphasises that the **difference in arrival time** between P-waves and S-waves at a seismograph station helps determine the **distance to the epicentre**. Data from at least **three stations** is needed to pinpoint the exact epicentre location (triangulation method)."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC directly tests: (1) Difference between body waves and surface waves, (2) Why S-waves cannot pass through liquids, (3) How shadow zones prove liquid outer core, (4) Types of earthquakes with examples. The 2022 Prelims asked about inner/outer core states — directly from this NCERT section."},
+        {"type": "para", "text": "NCERT also mentions that **seismic waves change speed** at boundaries between layers of different density — this is how discontinuities were discovered. The chapter connects earthquakes to the broader understanding of Earth's interior structure."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Seismic Wave Mechanics and Fault Dynamics",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Types of Faults and Their Earthquakes"},
+        {"type": "para", "text": "The nature of an earthquake depends on the **type of fault** on which it occurs. **Normal faults** form at divergent boundaries (tensional stress; hanging wall moves down). **Reverse/thrust faults** form at convergent boundaries (compressional stress; hanging wall moves up — most powerful earthquakes). **Strike-slip faults** form at transform boundaries (shear stress; horizontal movement — e.g., San Andreas Fault). India's Himalayan earthquakes are predominantly **thrust-fault** events along the Main Frontal Thrust (MFT)."},
+        {"type": "compare", "title": "Types of Faults", "left": {"label": "Normal Fault", "items": ["Divergent boundary (tension)", "Hanging wall moves DOWN", "Creates graben/rift valleys", "Example: East African Rift", "Generally moderate magnitude"]}, "right": {"label": "Reverse/Thrust Fault", "items": ["Convergent boundary (compression)", "Hanging wall moves UP", "Creates fold mountains, nappes", "Example: Himalayan Frontal Thrust", "Can produce M8+ megaquakes"]}},
+        {"type": "heading", "text": "Body Waves — Detailed Mechanics"},
+        {"type": "para", "text": "**P-waves (Primary/Pressure)**: Longitudinal compressional waves where particles oscillate **parallel** to wave propagation. Speed: **5-8 km/s** in crust, up to **13.5 km/s** in inner core. Travel through solids, liquids, and gases — hence they pass through Earth's entire interior but are refracted at boundaries. **S-waves (Secondary/Shear)**: Transverse waves where particles oscillate **perpendicular** to wave propagation. Speed: **3-4.5 km/s** in crust. Travel **only through solids** because liquids have zero shear modulus — cannot sustain shearing."},
+        {"type": "heading", "text": "Surface Waves — The Destructive Ones"},
+        {"type": "para", "text": "Surface waves are generated when body waves reach the surface and interact with it. **Love waves** (named after A.E.H. Love, 1911): horizontal shearing motion perpendicular to wave direction; cause buildings to sway side-to-side. **Rayleigh waves** (Lord Rayleigh, 1885): elliptical rolling motion (like ocean waves); cause ground to roll up-and-down and side-to-side simultaneously. Surface waves travel **slower** than body waves but carry **more energy** and are **most destructive** because they're trapped at the surface."},
+        {"type": "compare", "title": "Love Waves vs Rayleigh Waves", "left": {"label": "Love Waves", "items": ["Horizontal shearing (side-to-side)", "Fastest surface wave", "No vertical component", "Named after A.E.H. Love (1911)", "Buildings sway laterally"]}, "right": {"label": "Rayleigh Waves", "items": ["Elliptical rolling motion", "Slower than Love waves", "Both vertical and horizontal motion", "Named after Lord Rayleigh (1885)", "Ground appears to roll like sea waves"]}},
+        {"type": "timeline", "title": "Key Milestones in Seismology", "items": [
+          {"year": "1755", "event": "Great Lisbon earthquake — first systematic scientific study of an earthquake"},
+          {"year": "1857", "event": "Robert Mallet proposes that earthquakes are caused by wave propagation from a focus"},
+          {"year": "1885", "event": "Lord Rayleigh mathematically predicts surface waves (Rayleigh waves)"},
+          {"year": "1897", "event": "Great Assam earthquake (8.1) — one of the first well-documented Indian earthquakes"},
+          {"year": "1906", "event": "San Francisco earthquake; Reid develops Elastic Rebound Theory (1911)"},
+          {"year": "1935", "event": "Charles Richter develops the magnitude scale (Richter scale)"},
+          {"year": "1964", "event": "Great Alaska earthquake (9.2) — largest recorded in North America; proved megathrust mechanism"}
+        ]},
+        {"type": "heading", "text": "Measurement: Magnitude vs Intensity"},
+        {"type": "para", "text": "**Magnitude** measures the total energy released (single value per earthquake): the **Richter Scale** (local magnitude, logarithmic — each step = 10× amplitude, 31.6× energy) and the **Moment Magnitude Scale (Mw)** (used for large events, based on fault area × slip × rock rigidity). **Intensity** measures the effects at a specific location: **Modified Mercalli Intensity Scale (MMI)** (I to XII), depends on distance from epicentre, depth, local geology, and building quality. An earthquake has ONE magnitude but MANY intensities at different locations."},
+        {"type": "collapsible", "title": "Advanced: Seismic Moment and Moment Magnitude", "content": "Seismic moment M₀ = μ × A × D, where μ = rock rigidity (shear modulus, ~30 GPa), A = fault rupture area, D = average displacement. Moment magnitude Mw = (2/3) × log₁₀(M₀) - 10.7. This scale is preferred over Richter for M>7 earthquakes because it doesn't saturate. The 2004 Sumatra earthquake: M₀ ≈ 4×10²² N·m, Mw = 9.1."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Earthquakes",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Turkey-Syria Earthquake (February 2023)", "text": "Two massive earthquakes (Mw **7.8** and **7.5**) struck southeastern Turkey and northern Syria on 6 February 2023, killing over **59,000 people**. The East Anatolian Fault (strike-slip, similar to North Anatolian Fault) ruptured over **300 km**. Key UPSC angle: comparison with Indian seismic risk — the Himalayan Frontal Thrust has accumulated enough strain for a potential M8+ event (the 'Himalayan seismic gap')."},
+        {"type": "callout", "tone": "note", "title": "Morocco Earthquake (September 2023)", "text": "A Mw **6.8** earthquake struck the High Atlas Mountains of Morocco — rare intraplate event in a region not near a major plate boundary. Over **2,900** dead. UPSC relevance: demonstrates that **intraplate earthquakes** (like Bhuj 2001 in India) can be devastating despite occurring far from plate boundaries. India's Peninsular Shield is NOT immune."},
+        {"type": "callout", "tone": "note", "title": "Japan Noto Peninsula Earthquake (January 2024)", "text": "A Mw **7.6** earthquake struck the Noto Peninsula, Japan, causing **tsunamis** and over 240 deaths. Japan's building codes and early warning system (J-Alert) saved thousands. UPSC angle: India's **National Seismological Network** expansion and comparison of India's earthquake preparedness with Japan's."},
+        {"type": "callout", "tone": "note", "title": "India: Earthquake Early Warning System (2024-2025)", "text": "India's **National Centre for Seismology (NCS)** began rolling out an **Earthquake Early Warning (EEW) system** for the Himalayan region and Delhi-NCR in 2024. Using dense seismometer networks, the system aims to provide **5-40 seconds** advance warning — enough to trigger automatic shutdowns of trains, gas lines, and evacuation alerts. UPSC relevance: Science & Technology + Disaster Management crossover."},
+        {"type": "callout", "tone": "note", "title": "Reservoir-Induced Seismicity — Joshimath Subsidence Connection (2023)", "text": "The **Joshimath subsidence crisis** (January 2023) revived debate about the seismic risks of large hydroelectric projects in the Himalayas. Koyna (Maharashtra) remains India's best-documented case of **reservoir-induced seismicity** (1967, M6.3 after Koyna Dam filling). UPSC tests the connection between human activities (dams, mining) and earthquake risk."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Earthquakes",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "Surface waves originate at the focus/hypocentre", "correct": "Surface waves are generated when BODY waves (originating at the focus) reach the Earth's surface and interact with it. They do NOT originate at the focus directly."},
+        {"type": "trap", "wrong": "Richter scale goes up to 10 — an earthquake cannot exceed 10", "correct": "The Richter/Moment Magnitude scale is OPEN-ENDED (logarithmic). There is no upper limit. However, the largest recorded earthquake is 9.5 (Chile, 1960). The scale doesn't 'max out' at 10."},
+        {"type": "trap", "wrong": "Higher Richter magnitude always means more destruction", "correct": "Destruction (intensity) depends on: depth of focus, distance from epicentre, local soil type, building quality, and population density. A M7 shallow earthquake in a city causes more damage than a M8 deep earthquake in the ocean."},
+        {"type": "trap", "wrong": "P-waves are more destructive than S-waves because they arrive first", "correct": "P-waves arrive first but cause LESS damage because their push-pull motion is less violent. S-waves (shearing) and surface waves (Love + Rayleigh) cause MORE destruction. First arrival ≠ most destructive."},
+        {"type": "trap", "wrong": "All earthquakes occur at plate boundaries", "correct": "While 95% occur at plate boundaries (interplate), significant earthquakes also occur WITHIN plates (intraplate). India examples: Bhuj 2001 (intraplate, in Gujarat's Kachchh region), Koyna 1967 (reservoir-induced, Maharashtra)."},
+        {"type": "trap", "wrong": "The Mercalli scale and Richter scale measure the same thing", "correct": "Richter/Mw measures MAGNITUDE (total energy released — one value per earthquake). Mercalli measures INTENSITY (damage at a specific location — varies with distance). An earthquake has ONE magnitude but MULTIPLE intensities."},
+        {"type": "trap", "wrong": "Earthquakes can be predicted accurately in terms of time, place, and magnitude", "correct": "Earthquake PREDICTION (exact time, place, magnitude) remains impossible with current science. What is possible is FORECASTING (probabilistic assessment of likelihood in a region over decades) and EARLY WARNING (seconds of alert after an earthquake begins, before damaging waves arrive)."},
+        {"type": "memory", "text": "P before S before L before R: Primary → Secondary → Love → Rayleigh (order of arrival). | MAGNITUDE = Machine reading (one number) | INTENSITY = Man's experience (many values) | 'P-waves Push-Pull, S-waves Shake Side-to-side, Love waves Lash Laterally, Rayleigh waves Roll'"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "Consider the following statements:\n1. Earthquakes can be caused by volcanic activity.\n2. Reservoir-induced seismicity is a well-documented phenomenon in India.\n3. The focus of an earthquake is always located on the Earth's surface.\nWhich of the above statements is/are correct?", "answer_text": "A", "explanation": "Statements 1 and 2 are correct. Volcanic earthquakes are a recognized type, and Koyna (1967, Maharashtra) is India's classic case of reservoir-induced seismicity. Statement 3 is wrong — the focus is BELOW the surface (the epicentre is on the surface directly above the focus).", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2018, "question_text": "Which of the following phenomena is/are the cause/causes of earthquake?\n1. Volcanic eruption\n2. Folding and faulting\n3. Upwarping and downwarping\n4. Plate movement\nSelect the correct answer using the code given below:", "answer_text": "D (1, 2, 3 and 4)", "explanation": "All four can cause earthquakes. Volcanic eruptions cause volcanic earthquakes. Folding/faulting and plate movement cause tectonic earthquakes. Upwarping/downwarping involves crustal adjustment (isostasy) that can trigger seismic activity.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2021, "question_text": "Discuss the causes of earthquakes and the mechanism of generation of seismic waves. How do seismic waves help in understanding the interior of the Earth? (15 marks)", "answer_text": "Earthquakes are caused primarily by tectonic plate interactions along faults (Elastic Rebound Theory — Reid, 1911). Secondary causes include volcanic activity and human-induced triggers. When rupture occurs, energy is released as seismic waves: Body waves (P-waves — compressional, travel through all media; S-waves — shear, solids only) and Surface waves (Love — horizontal shear; Rayleigh — elliptical rolling). For understanding Earth's interior: P-waves refract at density boundaries revealing discontinuities (Moho, Gutenberg, Lehmann). S-wave shadow zone (103°-180°) proves liquid outer core. Wave velocity changes reveal layer compositions and physical states.", "explanation": "Answer structure: Define earthquake → Causes (tectonic primary) → Elastic Rebound Theory → Wave types (body + surface with characteristics) → Application to Earth's interior (shadow zones, discontinuities) → Indian context (seismic zones).", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding seismic waves:\n1. P-waves are longitudinal waves that can travel through solids, liquids, and gases.\n2. S-waves are transverse waves that can travel only through solid media.\n3. Surface waves originate directly at the focus of the earthquake.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct. P-waves are compressional/longitudinal and travel through all states of matter. S-waves are shear/transverse and require rigidity (solids only). Statement 3 is wrong — surface waves are generated when body waves (from the focus) interact with the Earth's surface, not directly at the focus.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about earthquakes:\n1. The Elastic Rebound Theory was proposed by H.F. Reid after the 1906 San Francisco earthquake.\n2. The epicentre is the point below the surface where the earthquake originates.\n3. Shallow-focus earthquakes cause less damage than deep-focus earthquakes.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Only Statement 1 is correct — Reid proposed Elastic Rebound Theory in 1911 based on the 1906 San Francisco earthquake. Statement 2 is wrong — the epicentre is on the SURFACE (the point below is the focus/hypocentre). Statement 3 is wrong — shallow-focus earthquakes cause MORE damage because energy doesn't attenuate over distance before reaching the surface.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Love waves cause horizontal shearing motion perpendicular to the direction of wave travel.\n2. Rayleigh waves produce an elliptical rolling motion.\n3. Body waves are more destructive than surface waves.\n4. P-waves arrive at seismograph stations before S-waves.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 4 are correct. Love waves cause horizontal shearing; Rayleigh waves produce rolling motion; P-waves are fastest so arrive first. Statement 3 is wrong — SURFACE waves are more destructive than body waves because they carry more energy at the surface where structures exist.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. The Richter scale is logarithmic — each unit increase represents 10 times more ground shaking amplitude.\n2. The Modified Mercalli scale measures the intensity of damage at a specific location.\n3. An earthquake has multiple magnitudes depending on where it is measured.\n4. The Moment Magnitude scale is preferred over Richter for very large earthquakes.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 4 are correct. Statement 3 is wrong — an earthquake has ONE magnitude (fixed property of the event), but MULTIPLE intensities at different locations. Magnitude is a single value; intensity varies with distance, depth, and local conditions.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): S-waves cannot pass through Earth's outer core.\nReason (R): The outer core is in a liquid state and S-waves (being transverse) require a medium with rigidity to propagate.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — S-waves are blocked by the liquid outer core (creating shadow zone 103°-180°). R is correct AND explains A — liquids have zero shear modulus (no rigidity), so transverse waves cannot propagate through them. The liquid state directly causes S-wave blockage.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The 1967 Koyna earthquake in Maharashtra was triggered by human activity.\nReason (R): Large reservoir filling can increase pore water pressure in underlying rocks, reducing friction on faults and triggering slip.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — Koyna (M6.3, 1967) is India's best-documented case of reservoir-induced seismicity, triggered after filling of Koyna Dam. R is correct and explains the mechanism — water seepage increases pore pressure, reduces effective normal stress on faults, lowers friction, and can trigger earthquake on pre-stressed faults.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a correct characteristic of P-waves?",
+      "options": [{"label": "A", "text": "They are the fastest seismic waves and arrive first at seismograph stations"}, {"label": "B", "text": "They cause particles to vibrate perpendicular to the direction of wave propagation"}, {"label": "C", "text": "They can travel through solids, liquids, and gases"}, {"label": "D", "text": "They create a shadow zone between 103° and 143° from the epicentre"}],
+      "correct_option": "B",
+      "explanation": "B is NOT correct for P-waves — P-waves cause particles to vibrate PARALLEL (push-pull) to the direction of propagation. Perpendicular vibration is characteristic of S-waves (transverse). A, C, and D are all correct characteristics of P-waves.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a type of earthquake based on its cause?",
+      "options": [{"label": "A", "text": "Tectonic earthquake caused by plate movement along faults"}, {"label": "B", "text": "Volcanic earthquake caused by magma forcing through rock"}, {"label": "C", "text": "Isostatic earthquake caused by convection currents in the outer core"}, {"label": "D", "text": "Collapse earthquake caused by roof falls in mines or caves"}],
+      "correct_option": "C",
+      "explanation": "C is NOT a recognized type — there is no category called 'isostatic earthquake caused by convection in outer core.' Convection in the outer core generates the magnetic field (dynamo), not earthquakes. A (tectonic), B (volcanic), and D (collapse) are the standard NCERT-listed types.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A seismograph station located 150° from an earthquake epicentre detects P-waves but no S-waves. Another station at 80° detects both P-waves and S-waves.\n\nBased on this observation, which of the following can be concluded?",
+      "options": [{"label": "A", "text": "The earthquake was too weak to generate S-waves at 150°"}, {"label": "B", "text": "A liquid layer in Earth's interior blocks S-waves from reaching 150° while allowing P-waves to pass"}, {"label": "C", "text": "The station at 150° has malfunctioning instruments"}, {"label": "D", "text": "S-waves travel slower and have not arrived yet at 150°"}],
+      "correct_option": "B",
+      "explanation": "150° falls within the S-wave shadow zone (103°-180°), while 80° is outside it. The only explanation is that a liquid layer (outer core) blocks S-waves on their path to 150°. P-waves pass through (with refraction) because they can travel through liquids. This is the classic evidence for the liquid outer core.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A government report states: 'City X experienced Modified Mercalli Intensity VIII during the recent earthquake, while City Y experienced Intensity V from the same event.'\n\nWhich of the following inferences can be drawn?\n1. City X was closer to the epicentre than City Y.\n2. The earthquake had two different magnitudes.\n3. Local soil conditions and building quality could have contributed to the intensity difference.",
+      "options": [{"label": "A", "text": "1 only"}, {"label": "B", "text": "1 and 3 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Inference 1 is valid — higher intensity generally indicates proximity to epicentre. Inference 3 is valid — soil amplification and building vulnerability significantly affect observed intensity. Inference 2 is INVALID — an earthquake has ONE magnitude; intensity varies by location. Different intensities at different cities is expected and does not mean different magnitudes.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A newspaper headline reads: 'Earthquake of magnitude 6.0 causes severe damage in Town A but negligible damage in Town B, despite both being equidistant from the epicentre.'\n\nWhich of the following can explain this paradox?\n1. Town A is built on soft alluvial soil while Town B is on hard bedrock.\n2. Town A has older unreinforced masonry buildings while Town B has earthquake-resistant structures.\n3. The earthquake had higher magnitude near Town A.",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Inferences 1 and 2 are valid. Soft soil amplifies seismic waves (site amplification effect — as seen in Mexico City 1985). Building vulnerability directly determines damage. Inference 3 is invalid — magnitude is a single value for the entire earthquake; it doesn't vary by location.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Seismic Wave Type) with List-II (Characteristic):\n\nList-I: (a) P-wave, (b) S-wave, (c) Love wave, (d) Rayleigh wave\nList-II: (1) Elliptical rolling motion, (2) Horizontal shearing motion, (3) Longitudinal compression-rarefaction, (4) Transverse perpendicular vibration",
+      "options": [{"label": "A", "text": "a-3, b-4, c-2, d-1"}, {"label": "B", "text": "a-4, b-3, c-1, d-2"}, {"label": "C", "text": "a-3, b-4, c-1, d-2"}, {"label": "D", "text": "a-4, b-3, c-2, d-1"}],
+      "correct_option": "A",
+      "explanation": "P-wave — longitudinal compression-rarefaction (push-pull parallel to propagation). S-wave — transverse perpendicular vibration (shake at right angles). Love wave — horizontal shearing motion (side-to-side at surface). Rayleigh wave — elliptical rolling motion (like ocean waves).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Earthquake Scale) with List-II (What it measures):\n\nList-I: (a) Richter Scale, (b) Modified Mercalli Scale, (c) Moment Magnitude Scale, (d) MSK Scale\nList-II: (1) Intensity based on observed damage and human perception (I-XII), (2) Local magnitude based on maximum seismograph amplitude, (3) Seismic moment incorporating fault geometry and slip, (4) Intensity scale similar to Mercalli, used in Europe",
+      "options": [{"label": "A", "text": "a-2, b-1, c-3, d-4"}, {"label": "B", "text": "a-3, b-4, c-2, d-1"}, {"label": "C", "text": "a-2, b-4, c-3, d-1"}, {"label": "D", "text": "a-1, b-2, c-4, d-3"}],
+      "correct_option": "A",
+      "explanation": "Richter — local magnitude from seismograph amplitude (2). Mercalli — damage-based intensity I-XII (1). Moment Magnitude — based on seismic moment M₀ = μ×A×D, doesn't saturate (3). MSK — European intensity scale similar to Mercalli (4).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about earthquakes in India:\n1. The Bhuj earthquake (2001) was an intraplate earthquake occurring far from any plate boundary.\n2. The Koyna earthquake (1967) was triggered by the filling of a large reservoir.\n3. India's entire landmass falls under seismic zone V (highest risk).\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct. Bhuj (M7.7, 2001) occurred within the Indian Plate (Kachchh region, Gujarat) — a classic intraplate earthquake. Koyna is India's best case of reservoir-induced seismicity. Statement 3 is wrong — India is divided into 4 seismic zones (II, III, IV, V); only parts of Himalayan belt, Kachchh, and NE India are in Zone V.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The 'Seismic Gap Theory' suggests that fault segments which have not experienced a major earthquake for a long time are most likely to produce one in the future. Which of the following regions in India is considered a 'seismic gap' with high potential for a major earthquake?",
+      "options": [{"label": "A", "text": "Central Himalayan region between the 1905 Kangra and 1934 Bihar-Nepal earthquake rupture zones"}, {"label": "B", "text": "The Deccan Plateau in central India"}, {"label": "C", "text": "The coastal plains of Tamil Nadu"}, {"label": "D", "text": "The Thar Desert region of Rajasthan"}],
+      "correct_option": "A",
+      "explanation": "The Central Himalayan Gap (between Kangra 1905 and Bihar-Nepal 1934 rupture zones) has not experienced a major earthquake since 1505 and has accumulated over 500 years of strain. Scientists estimate potential for M8+ event. The other regions are either in low seismic zones or within the stable Indian Shield.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Earthquake Distribution and Seismic Zones of India. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Earthquakes & Volcanism)"
+  },
+  "title": "Earthquake Distribution and Seismic Zones of India",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 16,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After understanding earthquake mechanics (topic 15), the student must learn the global distribution pattern and India's specific vulnerability. This is heavily tested in UPSC — seismic zones, vulnerability mapping, and disaster management policy all derive from this knowledge.",
+  "concept_checklist": [
+    "Three major global earthquake belts: Circum-Pacific (Ring of Fire, 68%), Mid-Atlantic Ridge (Alpine-Himalayan), and Mid-Continental Belt.",
+    "Ring of Fire accounts for ~68% of all earthquakes and 75% of active volcanoes — follows Pacific plate boundaries.",
+    "India divided into 4 seismic zones (II, III, IV, V) by BIS; Zone V is highest risk (MSK IX or above).",
+    "Zone V: entire NE India, Kachchh (Gujarat), Andaman & Nicobar, parts of J&K, Himachal, Uttarakhand, northern Bihar.",
+    "Zone IV: Delhi-NCR, remaining Jammu & Kashmir, Himachal Pradesh, parts of UP, Bihar, and Maharashtra.",
+    "Major Indian earthquakes: Assam 1897 (8.1), Kangra 1905 (7.8), Bihar-Nepal 1934 (8.1), Bhuj 2001 (7.7), Kashmir 2005 (7.6).",
+    "Central Himalayan Seismic Gap: area between 1905 Kangra and 1934 Bihar-Nepal ruptures — no major release since 1505, high M8+ potential.",
+    "NDMA guidelines: seismic microzonation, building codes (IS 1893), vulnerability atlas, earthquake-resistant construction.",
+    "Tsunamis: seismic sea waves caused by submarine earthquakes (especially subduction zone); 2004 Indian Ocean tsunami killed ~230,000."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Plot every earthquake from the last 50 years on a world map and a stunning pattern emerges — they trace the edges of tectonic plates like connect-the-dots. The **Ring of Fire** alone accounts for **68% of all earthquakes**. India sits at the collision zone of two massive plates, making the entire Himalayan arc a loaded spring. The question isn't whether a great earthquake will hit — it's when."},
+        {"type": "statgrid", "items": [
+          {"value": "68%", "label": "Earthquakes in Ring of Fire"},
+          {"value": "4 Zones", "label": "India's seismic zonation (II-V)"},
+          {"value": "59%", "label": "India's area in Zone III+"},
+          {"value": "2004", "label": "Indian Ocean tsunami year"}
+        ]},
+        {"type": "heading", "text": "Global Distribution of Earthquakes"},
+        {"type": "para", "text": "Earthquakes are **not randomly distributed** — they concentrate along **plate boundaries** in three major belts: (1) **Circum-Pacific Belt** (Ring of Fire): encircles the Pacific Ocean, accounts for **68%** of all earthquakes — follows subduction zones (Pacific, Nazca, Philippine plates diving under continental plates). (2) **Mid-Continental Belt** (Alpine-Himalayan): runs from Mediterranean through Iran, Himalayas to Myanmar — accounts for **21%** of earthquakes — continental collision zones. (3) **Mid-Ocean Ridge Belt**: along divergent boundaries (Mid-Atlantic Ridge, East Pacific Rise) — shallow, moderate earthquakes."},
+        {"type": "analogy", "text": "Think of Earth's surface as a cracked eggshell being pushed from inside. The cracks (plate boundaries) are where all the action happens — pushing, pulling, sliding. Earthquakes are the sounds the shell makes at those cracks. The wider the crack and the harder the push, the louder the sound."},
+        {"type": "heading", "text": "Why India Is Earthquake-Prone"},
+        {"type": "para", "text": "India lies on the **Indo-Australian Plate**, which is moving **northward at ~5 cm/year** and colliding with the **Eurasian Plate**. This collision created the **Himalayas** and continues to build them — making the entire Himalayan arc seismically active. Additionally, **intraplate faults** in peninsular India (Kachchh, Koyna, Narmada-Son lineament) pose unexpected risk far from the plate boundary."},
+        {"type": "heading", "text": "India's Seismic Zonation"},
+        {"type": "para", "text": "The **Bureau of Indian Standards (BIS)** divides India into **4 seismic zones** (Zone II to V) based on expected intensity of shaking. Zone I was removed in the 2002 revision — NO part of India is considered entirely free of seismic risk. **Zone V** (very high risk, MSK IX+): entire northeast India, Kachchh (Gujarat), Andaman & Nicobar, parts of J&K and Himachal. **Zone IV** (high risk): Delhi-NCR, remaining J&K, Himachal, parts of UP, Bihar, northern Maharashtra. **Zone III** (moderate): most of peninsular India, Ganga basin. **Zone II** (low): remaining peninsular India, parts of Rajasthan."},
+        {"type": "compare", "title": "India's Seismic Zones", "left": {"label": "Zone V (Very High)", "items": ["Entire NE India (7 sisters + Sikkim)", "Kachchh region, Gujarat", "Andaman & Nicobar Islands", "Parts of J&K, Himachal, Uttarakhand", "Northern Bihar near Nepal border", "Expected: MSK IX and above"]}, "right": {"label": "Zone IV (High)", "items": ["Delhi and NCR", "Remaining Jammu & Kashmir", "Parts of Himachal Pradesh", "Patna, Lucknow corridor", "Parts of Maharashtra (near Koyna)", "Expected: MSK VIII"]}},
+        {"type": "keyterms", "terms": [
+          {"term": "Ring of Fire", "definition": "Circum-Pacific belt of earthquakes and volcanoes; ~40,000 km horseshoe shape; 68% of world's earthquakes."},
+          {"term": "Seismic Zone", "definition": "Region classified by expected earthquake intensity; India has zones II-V (BIS IS 1893:2002)."},
+          {"term": "Seismic Gap", "definition": "Section of an active fault that has not produced a significant earthquake for a long time — considered high-risk for future rupture."},
+          {"term": "Tsunami", "definition": "Seismic sea wave caused by submarine earthquakes, volcanic eruptions, or landslides; speed ~800 km/h in deep ocean, height increases in shallow water."},
+          {"term": "MSK Scale", "definition": "Medvedev-Sponheuer-Karnik intensity scale (I-XII), similar to Modified Mercalli; used by India for seismic zonation."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Earthquake Distribution",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "3", "page_start": 33, "page_end": 37, "external_url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf", "text": "Chapter 3 covers earthquake distribution along plate boundaries and effects. Also refer to India: Physical Environment (Class 11, Ch 3) for Indian seismic zones.", "key_facts": ["Earthquake distribution follows plate boundaries", "Circum-Pacific and Mid-Continental belts", "Body waves reveal Earth's interior", "Indian subcontinent: active seismic zone due to Himalayan collision"]},
+        {"type": "ncert_reference", "book": "India: Physical Environment", "class": "11", "chapter": "2", "page_start": 8, "page_end": 12, "external_url": "https://ncert.nic.in/textbook/pdf/kegy202.pdf", "text": "Chapter 2 discusses India's geological structure and physiographic divisions, including the seismically active Himalayan zone and stable peninsular block.", "key_facts": ["Himalayan region: geologically young and unstable", "Peninsular India: ancient shield, relatively stable but not immune", "India-Eurasia collision: ongoing, 5 cm/year convergence", "NE India: one of the most seismically active regions globally"]},
+        {"type": "heading", "text": "NCERT Key Points — Earthquake Distribution"},
+        {"type": "points", "title": "Global Distribution (from NCERT)", "items": ["**Circum-Pacific Belt (Ring of Fire)**: most earthquakes and volcanoes — subduction zones around Pacific", "**Mid-Continental Belt**: Mediterranean → Alpine → Himalayan → Myanmar chain — continental collision zones", "**Mid-Ocean Ridges**: shallow, moderate earthquakes at divergent boundaries", "Distribution pattern **proves** plate tectonic theory — earthquakes trace plate boundaries precisely"]},
+        {"type": "points", "title": "India's Seismic Vulnerability (from NCERT)", "items": ["India-Eurasia collision creates ongoing stress in the Himalayan region", "Northeast India: among the **six most seismically active regions** in the world", "Peninsular India considered **relatively stable** but Bhuj 2001 proved intraplate risk exists", "Historical great earthquakes: Assam 1897, Kangra 1905, Bihar-Nepal 1934, Assam 1950"]},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC Prelims frequently asks: (1) Which global belt has maximum earthquakes (Ring of Fire), (2) India's seismic zone classification, (3) Which Indian states are in Zone V, (4) 2004 tsunami causation. Map-based questions on earthquake belts are common."},
+        {"type": "para", "text": "NCERT connects earthquake distribution to the broader **theory of plate tectonics** — the fact that earthquakes align with plate boundaries was one of the strongest evidences supporting the theory in the 1960s. The chapter emphasises that understanding distribution helps in **hazard mapping and preparedness**."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Seismic Gaps, Tsunamis, and Indian Plate Dynamics",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "The Central Himalayan Seismic Gap"},
+        {"type": "para", "text": "The **Central Himalayan Seismic Gap** extends roughly between the rupture zones of the **1905 Kangra earthquake** (western end) and the **1934 Bihar-Nepal earthquake** (eastern end) — covering much of Uttarakhand, western Nepal, and parts of western UP. This segment has not produced a great earthquake (M8+) since **1505** — over 500 years of strain accumulation at **~2 cm/year convergence** = potential **10+ metres** of accumulated slip. Scientists estimate this gap could produce an earthquake of **Mw 8.0-8.5**, affecting 50+ million people."},
+        {"type": "callout", "tone": "why", "title": "Why This Matters", "text": "The Himalayan seismic gap is considered the **greatest seismic risk in the world** in terms of potential casualties. Delhi (Zone IV) lies within 200 km of the locked fault. The 2015 Nepal earthquake (M7.8, 9000 dead) ruptured only a PART of this gap — the remaining unruptured segment still holds accumulated strain."},
+        {"type": "heading", "text": "Major Historical Earthquakes of India"},
+        {"type": "timeline", "title": "India's Great Earthquakes", "items": [
+          {"year": "1819", "event": "Kachchh (Rann of Kutch) — M8.0; created the 'Allah Bund' (dam of God), lifted ground by 6 metres"},
+          {"year": "1897", "event": "Great Assam Earthquake — M8.1; one of the first to be scientifically documented in India"},
+          {"year": "1905", "event": "Kangra (Himachal) — M7.8; ~20,000 killed; western boundary of Central Seismic Gap"},
+          {"year": "1934", "event": "Bihar-Nepal — M8.1; ~10,000 killed; eastern boundary of Central Seismic Gap"},
+          {"year": "1950", "event": "Upper Assam — M8.6; one of the most powerful earthquakes ever recorded"},
+          {"year": "1967", "event": "Koyna (Maharashtra) — M6.3; reservoir-induced; in peninsular 'stable' India"},
+          {"year": "1993", "event": "Latur (Maharashtra) — M6.2; ~10,000 killed; intraplate, in Zone II area"},
+          {"year": "2001", "event": "Bhuj (Gujarat) — M7.7; ~20,000 killed; intraplate; led to seismic zone revision"},
+          {"year": "2005", "event": "Kashmir — M7.6; ~87,000 killed; thrust fault along Himalayan arc"},
+          {"year": "2015", "event": "Nepal (Gorkha) — M7.8; ~9,000 killed; partial rupture of Central Gap"}
+        ]},
+        {"type": "heading", "text": "Tsunamis — Seismic Sea Waves"},
+        {"type": "para", "text": "A **tsunami** is a series of ocean waves generated by sudden displacement of the ocean floor — caused by submarine earthquakes (most common), volcanic eruptions, or underwater landslides. In deep ocean, tsunamis travel at **~800 km/h** (speed of a jet) with wave height of only **0.5-1 metre** (undetectable by ships). As they approach shallow coastal waters, speed decreases but height increases dramatically to **10-30+ metres** — the 'wall of water' effect."},
+        {"type": "para", "text": "The **2004 Indian Ocean tsunami** (triggered by Mw 9.1 Sumatra earthquake on 26 December) killed **~230,000 people** across 14 countries. India lost over **12,000** (mainly Tamil Nadu, Andaman & Nicobar). This disaster led to establishment of the **Indian Tsunami Early Warning Centre (ITEWC)** at INCOIS, Hyderabad, which became operational in 2007."},
+        {"type": "compare", "title": "Tsunami vs Normal Ocean Waves", "left": {"label": "Tsunami", "items": ["Caused by seismic events (submarine EQ, volcano)", "Wavelength: 100-500 km", "Speed: up to 800 km/h in deep ocean", "Affects entire water column (seafloor to surface)", "Height increases dramatically near coast"]}, "right": {"label": "Normal Waves", "items": ["Caused by wind", "Wavelength: typically 100-200 m", "Speed: typically 10-100 km/h", "Affects only surface layer", "Height determined by wind speed/fetch"]}},
+        {"type": "collapsible", "title": "Advanced: Depth Classification of Earthquakes and Associated Hazards", "content": "Shallow-focus (<70 km): Most destructive; occur at all plate boundary types. Intermediate (70-300 km): Common at subduction zones; less surface damage but wider felt area. Deep-focus (300-700 km): Only at subduction zones (Wadati-Benioff zone); rarely cause surface damage but indicate plate is being subducted to great depth. The deepest earthquake recorded: 700 km (Tonga-Fiji region). India's Himalayan earthquakes are predominantly shallow (10-30 km depth), making them extremely destructive."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Earthquake Distribution & India",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Nepal Earthquake and Central Gap Implications (2023)", "text": "The November 2023 earthquake in western Nepal (M6.4, 150+ killed) occurred near the **Central Himalayan Seismic Gap**. Seismologists warned this was NOT the expected 'big one' — it released only a fraction of accumulated strain. The unruptured segment (~500 km) between Kangra and Bihar-Nepal zones remains locked. UPSC angle: disaster preparedness, seismic gap theory, India-Nepal cooperation in seismology."},
+        {"type": "callout", "tone": "note", "title": "Delhi-NCR Earthquake Preparedness Report (2024)", "text": "A **NDMA assessment (2024)** warned that Delhi-NCR (Zone IV, 20+ million population) is inadequately prepared for a major Himalayan earthquake. Key findings: 70% of buildings don't conform to seismic codes, inadequate hospital capacity for mass casualties, soil liquefaction risk in Yamuna floodplain areas. UPSC relevance: Governance + Disaster Management paper crossover."},
+        {"type": "callout", "tone": "note", "title": "Indian Tsunami Early Warning System Upgrade (2025)", "text": "INCOIS (Hyderabad) completed a major upgrade to the **Indian Tsunami Early Warning Centre** in 2025 — now providing warnings within **8-10 minutes** of a submarine earthquake (improved from 20 minutes in 2007). New deep-ocean tsunameters deployed in Bay of Bengal and Arabian Sea. System serves 28 Indian Ocean countries under IOC-UNESCO framework."},
+        {"type": "callout", "tone": "note", "title": "Seismic Microzonation of Major Indian Cities (2024-2025)", "text": "The **Geological Survey of India (GSI)** and **National Centre for Seismology** completed seismic microzonation maps for **Delhi, Mumbai, Kolkata, Chennai, and Bengaluru** (2024-2025). These maps show block-by-block soil amplification factors, liquefaction potential, and landslide susceptibility. UPSC relevance: links to urban planning, building codes (IS 1893), and disaster mitigation strategies."},
+        {"type": "callout", "tone": "note", "title": "Artificial Intelligence in Earthquake Early Warning (2024-2026)", "text": "India's National Centre for Seismology adopted **AI/ML-based earthquake detection** algorithms (2024-2026) that can identify P-waves and estimate magnitude within **3 seconds** of an earthquake's initiation — vs 15-30 seconds for traditional methods. Deployed across 500+ seismometer network. UPSC angle: Science & Technology application in disaster management."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Earthquake Distribution & India",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "India has 5 seismic zones (Zone I to Zone V)", "correct": "India has only 4 seismic zones (Zone II to V). Zone I was REMOVED in the 2002 revision after the Bhuj earthquake proved no part of India is truly safe. There is NO Zone I in the current BIS classification."},
+        {"type": "trap", "wrong": "Peninsular India (Deccan Shield) is completely free from earthquake risk", "correct": "The Latur earthquake (1993, M6.2) and Bhuj earthquake (2001, M7.7) proved that even the 'stable' peninsular shield has active faults. Koyna (1967) showed reservoir-induced seismicity is possible. The shield is LESS active but NOT immune."},
+        {"type": "trap", "wrong": "The Ring of Fire encircles the Atlantic Ocean", "correct": "The Ring of Fire encircles the PACIFIC Ocean — a 40,000 km horseshoe of subduction zones. The Atlantic has the Mid-Atlantic Ridge (divergent, moderate earthquakes) but no 'ring' of subduction."},
+        {"type": "trap", "wrong": "Delhi is in Seismic Zone V (highest risk)", "correct": "Delhi is in Seismic Zone IV (high risk), NOT Zone V. However, parts of Delhi built on soft Yamuna alluvium may experience Zone V-equivalent shaking due to soil amplification. Zone V includes NE India, Kachchh, Andaman, and parts of Himalayan states."},
+        {"type": "trap", "wrong": "Tsunamis are caused by underwater storms and strong winds", "correct": "Tsunamis are caused by sudden displacement of ocean floor — primarily by SUBMARINE EARTHQUAKES (especially at subduction zones), also by underwater volcanic eruptions or landslides. They are NOT caused by wind. 'Tsunami' = Japanese for 'harbour wave.'"},
+        {"type": "trap", "wrong": "The 2004 Indian Ocean tsunami originated from an earthquake near India's coast", "correct": "It originated from a Mw 9.1 earthquake off the coast of SUMATRA (Indonesia) — ~1,500 km from India's mainland coast. Waves took 2+ hours to reach Tamil Nadu and 3+ hours to reach Sri Lanka. This delay is why early warning systems can save lives."},
+        {"type": "trap", "wrong": "All major earthquakes in India occur only along the Himalayan belt", "correct": "While the Himalayan belt is most active, significant earthquakes occur in: Kachchh/Gujarat (2001 Bhuj, M7.7 — intraplate), Koyna/Maharashtra (1967, M6.3 — reservoir-induced), Latur/Maharashtra (1993, M6.2 — intraplate), Andaman & Nicobar (subduction zone). India's seismicity is NOT limited to the Himalayas."},
+        {"type": "memory", "text": "Zone V states: 'JUNK IS Alive' = J&K + Uttarakhand + Northeast + Kachchh + Islands (A&N) + Sikkim + parts of HP | Major EQ years: '97-05-34-50-67-93-01' (1897 Assam, 1905 Kangra, 1934 Bihar, 1950 Assam, 1967 Koyna, 1993 Latur, 2001 Bhuj)"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2019, "question_text": "Consider the following statements:\n1. The Ring of Fire is associated with the Pacific Ocean.\n2. The Mid-Atlantic Ridge is associated with divergent plate boundaries.\n3. The Alpine-Himalayan Belt is associated with convergent plate boundaries.\nWhich of the above statements is/are correct?", "answer_text": "D (1, 2 and 3)", "explanation": "All three are correct. Ring of Fire = Circum-Pacific subduction zones. Mid-Atlantic Ridge = divergent boundary (seafloor spreading). Alpine-Himalayan = convergent (continental collision creating fold mountains and earthquakes).", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2020, "question_text": "Which of the following states/UTs of India lie in Seismic Zone V?\n1. Sikkim\n2. Gujarat (Kachchh)\n3. Delhi\n4. Andaman and Nicobar Islands\nSelect the correct answer:", "answer_text": "B (1, 2 and 4 only)", "explanation": "Zone V includes: all of NE India (including Sikkim), Kachchh region of Gujarat, Andaman & Nicobar Islands, parts of J&K and Himachal. Delhi is in Zone IV, not Zone V.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2022, "question_text": "Discuss the seismic vulnerability of India with special reference to the concept of 'seismic gap'. What measures has India taken for earthquake preparedness and disaster mitigation? (15 marks)", "answer_text": "India's seismic vulnerability stems from: (1) Indo-Australian plate collision with Eurasia (5 cm/yr) making Himalayan arc active, (2) Intraplate faults in peninsular India (Kachchh, Koyna). The Central Himalayan Seismic Gap (between 1905 Kangra and 1934 Bihar-Nepal ruptures) has accumulated 500+ years of strain — potential M8+ event threatening 50M+ people including Delhi. Measures: BIS seismic zonation (IS 1893), NDMA guidelines, earthquake-resistant building codes, Earthquake Early Warning System (NCS/INCOIS), seismic microzonation of cities, NCRMP (National Cyclone Risk Mitigation Project extended to earthquakes), capacity building in Zone IV-V areas.", "explanation": "Structure: India's vulnerability (plate tectonics + intraplate) → Seismic gap concept → Specific gaps in India → Measures (institutional, technological, policy) → Way forward.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements about global earthquake distribution:\n1. The Circum-Pacific Belt (Ring of Fire) accounts for approximately 68% of all earthquakes.\n2. The Mid-Continental Belt runs from the Mediterranean to Myanmar through the Himalayas.\n3. Mid-Ocean Ridge earthquakes are typically deep-focus and highly destructive.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct. The Ring of Fire has ~68% of earthquakes, and the Alpine-Himalayan belt runs Mediterranean → Caucasus → Iran → Himalayas → Myanmar. Statement 3 is wrong — Mid-Ocean Ridge earthquakes are typically SHALLOW-focus and of moderate intensity (not deep or highly destructive).",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about India's seismic zones:\n1. India is divided into 5 seismic zones (I to V).\n2. Zone V represents areas of highest seismic risk.\n3. The entire northeast India falls under Zone V.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "2 and 3 only"}, {"label": "B", "text": "1 and 2 only"}, {"label": "C", "text": "2 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 2 and 3 are correct. Zone V is highest risk (MSK IX+), and entire NE India is in Zone V. Statement 1 is wrong — India has 4 zones (II to V) since the 2002 revision. Zone I was removed after Bhuj 2001 proved no area is completely safe.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. The 2004 Indian Ocean tsunami was triggered by a submarine earthquake of magnitude 9.1 near Sumatra.\n2. Tsunamis travel at approximately 800 km/h in deep ocean.\n3. The Indian Tsunami Early Warning Centre is located at INCOIS, Hyderabad.\n4. Tsunamis are primarily caused by strong ocean winds during cyclones.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 3 are correct. The 2004 tsunami was from M9.1 Sumatra earthquake; tsunamis travel ~800 km/h in deep water; ITEWC is at INCOIS Hyderabad. Statement 4 is wrong — tsunamis are caused by submarine earthquakes/volcanic eruptions/landslides, NOT by wind. Wind causes normal ocean waves.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following pairs:\n1. Kangra (1905) — first great Indian earthquake to be scientifically documented\n2. Bihar-Nepal (1934) — eastern boundary of Central Himalayan Seismic Gap\n3. Bhuj (2001) — reservoir-induced seismicity\n4. Koyna (1967) — intraplate earthquake in peninsular India\nHow many of the above pairs are correctly matched?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "A",
+      "explanation": "Only Statement 2 is correct — Bihar-Nepal 1934 is the eastern boundary of the Central Gap. Statement 1 is wrong — the Assam 1897 earthquake was scientifically documented earlier; Kangra 1905 defines the WESTERN boundary of the gap. Statement 3 is wrong — Bhuj was INTRAPLATE (not reservoir-induced). Statement 4 is wrong — Koyna was RESERVOIR-INDUCED (not just intraplate).",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The Central Himalayan Seismic Gap is considered one of the most dangerous seismic zones in the world.\nReason (R): This segment has not experienced a major earthquake (M8+) since 1505 and has accumulated over 500 years of tectonic strain.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — the Central Himalayan Gap threatens 50+ million people including Delhi. R is correct and explains why — 500+ years without a major release at ~2 cm/yr convergence = 10+ metres accumulated slip, potential for M8-8.5 event. The long quiescence (reason) directly explains the high danger (assertion).",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The 2001 Bhuj earthquake led to a revision of India's seismic zonation map.\nReason (R): The earthquake occurred in a region previously classified as Zone I (lowest risk), demonstrating that no part of India is free from seismic hazard.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — after Bhuj 2001, BIS revised IS 1893 in 2002, removing Zone I entirely. R is correct and explains the revision — Bhuj (Kachchh) was in a low-risk zone under the old map; the M7.7 earthquake proved the classification was dangerously wrong, leading to the removal of Zone I and upgradation of several regions.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following Indian cities is NOT located in Seismic Zone V?",
+      "options": [{"label": "A", "text": "Guwahati (Assam)"}, {"label": "B", "text": "Srinagar (Jammu & Kashmir)"}, {"label": "C", "text": "Delhi (National Capital Territory)"}, {"label": "D", "text": "Port Blair (Andaman & Nicobar)"}],
+      "correct_option": "C",
+      "explanation": "Delhi is in Seismic Zone IV (high risk), NOT Zone V. Guwahati (entire NE India is Zone V), Srinagar (parts of J&K in Zone V), and Port Blair (Andaman & Nicobar Islands in Zone V) are all in Zone V.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following factors does NOT contribute to tsunami generation?",
+      "options": [{"label": "A", "text": "Submarine earthquakes at subduction zones"}, {"label": "B", "text": "Underwater volcanic eruptions"}, {"label": "C", "text": "Strong tropical cyclones over open ocean"}, {"label": "D", "text": "Submarine landslides displacing large volumes of water"}],
+      "correct_option": "C",
+      "explanation": "Tropical cyclones generate storm surges and large wind-driven waves, but NOT tsunamis. Tsunamis require sudden displacement of the ocean floor or water column — caused by submarine earthquakes (A), underwater volcanic eruptions (B), or submarine landslides (D). Cyclones don't displace the seafloor.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A seismological report states that an earthquake of M7.0 occurred at a depth of 500 km beneath a subduction zone.\n\nBased on this, which of the following inferences can be drawn?\n1. The earthquake occurred in the Wadati-Benioff zone where oceanic plate subducts.\n2. Surface damage would be less compared to a shallow M7.0 earthquake.\n3. This type of deep-focus earthquake cannot occur at mid-ocean ridges.",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three inferences are valid. Deep-focus earthquakes (300-700 km) occur only at subduction zones along the Wadati-Benioff zone (1). Energy attenuates over 500 km distance to surface, reducing damage (2). Mid-ocean ridges produce only shallow earthquakes because there is no subducting slab to carry stress to depth (3).",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "An earthquake expert warns: 'City Z in the Himalayan foothills is at extreme risk because it sits on 20 metres of soft alluvial sediment overlying bedrock, and the last major earthquake on the underlying fault occurred in 1505.'\n\nWhich of the following risks does this scenario specifically highlight?\n1. Soil amplification (soft soil magnifies seismic waves)\n2. Seismic gap (long accumulated strain)\n3. Volcanic eruption potential",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "The scenario highlights two risks: soft alluvial soil will amplify seismic waves (soil amplification, 1), and the fault hasn't ruptured since 1505 — a classic seismic gap with 500+ years accumulated strain (2). Volcanic eruption (3) is NOT indicated — the Himalayas are a collision zone, not a subduction zone with volcanoes.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider a scenario: 'After the 2004 tsunami, India established ITEWC. In 2025, a M8.5 earthquake occurs in the Makran Subduction Zone (off Pakistan/Iran coast). ITEWC issues a warning within 10 minutes.'\n\nWhich of the following areas would have the LEAST time for evacuation?\n1. Gujarat coast\n2. Tamil Nadu coast\n3. Andaman & Nicobar Islands",
+      "options": [{"label": "A", "text": "1 only"}, {"label": "B", "text": "2 only"}, {"label": "C", "text": "3 only"}, {"label": "D", "text": "1 and 3 equally"}],
+      "correct_option": "A",
+      "explanation": "The Makran Subduction Zone is closest to Gujarat's coast (across the Arabian Sea). Tsunami waves would reach Gujarat in approximately 1-2 hours — least time for evacuation. Tamil Nadu is on the opposite coast (Bay of Bengal side) and would be largely unaffected by an Arabian Sea tsunami. Andaman is also in Bay of Bengal, far from Makran.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Earthquake) with List-II (Significance):\n\nList-I: (a) Assam 1897, (b) Koyna 1967, (c) Latur 1993, (d) Bhuj 2001\nList-II: (1) Led to removal of Zone I from India's seismic map, (2) First well-documented great earthquake of India, (3) Classic case of reservoir-induced seismicity, (4) Proved 'stable' peninsular shield is not earthquake-free",
+      "options": [{"label": "A", "text": "a-2, b-3, c-4, d-1"}, {"label": "B", "text": "a-3, b-2, c-1, d-4"}, {"label": "C", "text": "a-2, b-4, c-3, d-1"}, {"label": "D", "text": "a-4, b-3, c-1, d-2"}],
+      "correct_option": "A",
+      "explanation": "Assam 1897 (M8.1) — first scientifically documented great Indian earthquake (2). Koyna 1967 (M6.3) — classic reservoir-induced seismicity case (3). Latur 1993 (M6.2) — occurred in stable peninsular region, proved shield is not safe (4). Bhuj 2001 (M7.7) — led to IS 1893:2002 revision removing Zone I (1).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Earthquake Preparedness Institution) with List-II (Function):\n\nList-I: (a) NCS, (b) INCOIS/ITEWC, (c) NDMA, (d) BIS\nList-II: (1) Issues seismic building codes (IS 1893), (2) Monitors seismic activity and issues earthquake bulletins, (3) Operates Indian Tsunami Early Warning Centre, (4) Formulates national disaster management policy and guidelines",
+      "options": [{"label": "A", "text": "a-2, b-3, c-4, d-1"}, {"label": "B", "text": "a-3, b-2, c-1, d-4"}, {"label": "C", "text": "a-4, b-3, c-2, d-1"}, {"label": "D", "text": "a-2, b-4, c-3, d-1"}],
+      "correct_option": "A",
+      "explanation": "NCS (National Centre for Seismology) — monitors seismicity, issues bulletins (2). INCOIS/ITEWC — operates tsunami warning centre in Hyderabad (3). NDMA — national disaster policy and guidelines (4). BIS (Bureau of Indian Standards) — seismic building codes IS 1893 (1).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about the 2004 Indian Ocean tsunami:\n1. It was triggered by a submarine earthquake near Sumatra, Indonesia.\n2. India's eastern coast (especially Tamil Nadu) was more affected than the western coast.\n3. It led to the establishment of the Indian Tsunami Early Warning Centre at INCOIS, Hyderabad.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 3 only"}, {"label": "B", "text": "1 and 2 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. The M9.1 earthquake was near Sumatra (1). India's eastern coast (Tamil Nadu, AP, Andaman) faced direct wave impact from the east (2). ITEWC was established at INCOIS Hyderabad in 2007 as a direct response (3).",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The concept of 'seismic microzonation' involves mapping earthquake hazards at a local scale within a city. Which of the following parameters is NOT typically mapped in seismic microzonation?",
+      "options": [{"label": "A", "text": "Soil amplification factors based on local geology"}, {"label": "B", "text": "Liquefaction susceptibility of water-saturated soils"}, {"label": "C", "text": "Annual rainfall patterns and flood frequency"}, {"label": "D", "text": "Landslide and slope instability potential during earthquakes"}],
+      "correct_option": "C",
+      "explanation": "Seismic microzonation maps earthquake-specific hazards: soil amplification (A), liquefaction potential (B), and earthquake-induced landslide risk (D). Annual rainfall and flood frequency (C) are hydrological parameters mapped in flood hazard assessments, NOT seismic microzonation.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

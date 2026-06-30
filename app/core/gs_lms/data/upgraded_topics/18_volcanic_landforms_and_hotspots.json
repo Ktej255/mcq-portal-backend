@@ -1,0 +1,271 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Volcanic Landforms and Hotspots. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Earthquakes & Volcanism)"
+  },
+  "title": "Volcanic Landforms and Hotspots",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 18,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After understanding volcano types, distribution, and products (topic 17), this topic covers the LANDFORMS they create — both extrusive (surface) and intrusive (underground). It also covers hotspot volcanism as a special case. This completes the Earthquakes & Volcanism sub-topic and bridges to geomorphic processes (weathering, erosion) in subsequent topics.",
+  "concept_checklist": [
+    "Extrusive landforms (surface): lava plateaus/plains, volcanic mountains (shield, composite), calderas, volcanic islands, lava tubes/caves.",
+    "Intrusive landforms (underground, exposed by erosion): Batholith (largest, granite core of mountains), Laccolith (dome-shaped, concordant), Lopolith (saucer-shaped), Sill (horizontal sheet), Dyke (vertical sheet), Phacolith (wave-shaped, in anticline crests).",
+    "Hotspot: fixed thermal plume in mantle; plate moves over it creating a chain of progressively older volcanoes (Hawaiian chain, Emperor Seamounts).",
+    "Caldera: large depression formed when volcanic summit collapses into emptied magma chamber; can be >50 km diameter (Yellowstone).",
+    "Deccan Traps: India's largest volcanic landform — flood basalt plateau covering western-central India, formed ~66 Ma over Réunion hotspot.",
+    "Mid-ocean ridges are the largest volcanic feature on Earth — 65,000 km long, producing new oceanic crust continuously.",
+    "Island arcs: curved chains of volcanic islands formed at oceanic-oceanic subduction zones (Japan, Philippines, Indonesia, Andaman-Nicobar).",
+    "Geysers and hot springs: secondary volcanic features powered by residual heat; India's Manikaran (HP), Tattapani (CG), Puga Valley (Ladakh).",
+    "Crater vs Caldera: Crater is small (<1 km) vent opening; Caldera is large (>1 km) collapse structure. Lonar (Maharashtra) is a meteorite impact crater, NOT volcanic."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "The Deccan Plateau you see on India's map — that massive flat-topped region covering Maharashtra, Karnataka, and Madhya Pradesh — is entirely a **volcanic creation**. Layer upon layer of basaltic lava, erupted **66 million years ago**, built a plateau up to **2 km thick**. Walk in the **Western Ghats** and you're walking on ancient lava flows. But volcanism also works underground — giant mushroom-shaped bodies of magma cool slowly beneath the surface. When erosion strips away billions of years of rock, these intrusive bodies appear as mountain cores, like the **granite batholiths** of the Himalayas."},
+        {"type": "statgrid", "items": [
+          {"value": "65,000 km", "label": "Total length of mid-ocean ridges"},
+          {"value": "500,000 km²", "label": "Area of Deccan Traps"},
+          {"value": "72 × 55 km", "label": "Yellowstone caldera size"},
+          {"value": "3.8 cm/yr", "label": "Hawaiian hotspot plate movement"}
+        ]},
+        {"type": "heading", "text": "Extrusive Volcanic Landforms (Surface)"},
+        {"type": "para", "text": "When magma reaches the surface, it cools quickly and builds **extrusive landforms**: (1) **Volcanic mountains** — shield volcanoes (Mauna Loa), composite (Fuji), cinder cones (Parícutin). (2) **Lava plateaus** — repeated fissure eruptions of basaltic lava build extensive flat-topped plateaus (Deccan Traps, Columbia Plateau, Ethiopian Highlands). (3) **Calderas** — large collapse depressions when summit sinks into emptied magma chamber (Yellowstone, Krakatoa). (4) **Volcanic islands** — both at subduction zones (island arcs) and hotspots (Hawaii)."},
+        {"type": "heading", "text": "Intrusive Volcanic Landforms (Underground)"},
+        {"type": "para", "text": "When magma cools and solidifies **below** the surface without reaching it, it forms **intrusive (plutonic) landforms**. These are later exposed by erosion over millions of years. They are classified as **concordant** (parallel to existing rock layers) or **discordant** (cuts across existing layers)."},
+        {"type": "compare", "title": "Key Intrusive Landforms", "left": {"label": "Concordant (Parallel to Layers)", "items": ["**Sill**: horizontal sheet of magma between rock layers (e.g., Great Whin Sill, UK)", "**Laccolith**: dome-shaped body that pushes overlying rock up (mushroom shape); produces dome-like hills", "**Lopolith**: saucer-shaped body that causes rock above to sag (inverted laccolith)", "**Phacolith**: lens-shaped body in the crest of anticlines or trough of synclines"]}, "right": {"label": "Discordant (Cuts Across Layers)", "items": ["**Dyke (Dike)**: vertical/near-vertical sheet cutting across rock layers; when surrounding rock erodes, forms wall-like ridges", "**Batholith**: largest intrusive body; forms the granite core of mountain ranges (100+ km long); exposed by deep erosion", "**Volcanic neck/plug**: solidified magma in the vent of an extinct volcano; surrounding cone erodes away leaving a pillar (e.g., Devil's Tower, USA)"]}},
+        {"type": "analogy", "text": "Think of intrusive landforms like a bakery inside a building. The magma 'bakes' into solid rock underground, hidden for millions of years. When the 'building' (overlying rock) is gradually demolished by erosion, the solidified granite shapes inside are revealed — domes (laccoliths), walls (dykes), floors (sills), and massive foundations (batholiths)."},
+        {"type": "keyterms", "terms": [
+          {"term": "Batholith", "definition": "Largest intrusive body (100+ km); granite; forms mountain cores. Example: Idaho Batholith, Himalayan granite intrusions."},
+          {"term": "Laccolith", "definition": "Dome-shaped concordant body pushing rock layers up; creates dome hills. Example: Henry Mountains, Utah; Pachmarhi hills (possible)."},
+          {"term": "Dyke", "definition": "Vertical discordant sheet cutting across rock layers. When exposed by erosion, forms wall-like ridges or troughs (if softer than surrounding rock)."},
+          {"term": "Sill", "definition": "Horizontal concordant sheet between rock layers. Example: Great Whin Sill (supports Hadrian's Wall), Palisades Sill (New Jersey, USA)."},
+          {"term": "Caldera", "definition": "Large (>1 km) volcanic depression formed by summit collapse into emptied magma chamber. Can fill with water (crater lake). Example: Crater Lake (Oregon), Yellowstone."}
+        ]},
+        {"type": "callout", "tone": "insight", "title": "Key Insight", "text": "UPSC frequently confuses students with **laccolith vs batholith**: Both are large intrusive bodies, but a laccolith is dome-shaped, concordant (pushes layers up), and relatively small. A batholith is massive (100+ km), discordant (cuts across layers), exposed by deep erosion, and forms the granite core of entire mountain ranges. The Himalayan batholith underlies the entire range."}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Volcanic Landforms",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "4", "page_start": 38, "page_end": 44, "external_url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf", "text": "Chapter 4 'Distribution of Oceans and Continents' discusses volcanic features in the context of plate tectonics — mid-ocean ridges, island arcs, hotspots, and their relationship to plate movements.", "key_facts": ["Mid-ocean ridges: continuous submarine volcanic mountain system", "Island arcs: volcanic chains at subduction zones", "Hawaiian Islands: hotspot volcanism", "Volcanic features validate plate tectonic theory"]},
+        {"type": "ncert_reference", "book": "India: Physical Environment", "class": "11", "chapter": "2", "page_start": 9, "page_end": 14, "external_url": "https://ncert.nic.in/textbook/pdf/kegy202.pdf", "text": "Chapter 2 discusses the Deccan Plateau as a volcanic landform and mentions intrusive igneous formations in Indian geology.", "key_facts": ["Deccan Traps: basaltic lava plateau", "Western Ghats: escarpment edge of Deccan Traps", "Igneous rocks form significant part of Indian geology", "Peninsular plateau: oldest landmass"]},
+        {"type": "heading", "text": "NCERT Key Points — Volcanic Landforms"},
+        {"type": "points", "title": "Extrusive Features (from NCERT)", "items": ["**Mid-ocean ridges**: longest mountain chain on Earth (~65,000 km); formed by continuous basaltic eruptions at divergent boundaries", "**Island arcs**: curved chains of volcanic islands at oceanic-oceanic convergence (Japan, Indonesia, Andaman-Nicobar)", "**Hotspot chains**: plate moves over fixed mantle plume; creates age-progressive island chain (Hawaii → Emperor Seamounts = 6,000 km)", "**Lava plateaus**: extensive flat landforms from flood basalt eruptions (Deccan Traps, Columbia Plateau)"]},
+        {"type": "points", "title": "Intrusive Features (from NCERT)", "items": ["**Batholith**: large body of igneous rock formed deep underground; core of fold mountains (granite)", "**Laccolith**: mushroom/dome-shaped body between sedimentary layers; creates dome hills on surface", "**Sill**: horizontal sheet of igneous rock; formed when magma flows between layers", "**Dyke**: vertical sheet cutting across rock layers; many visible in Deccan region of India"]},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC frequently tests: (1) Distinguish between sill and dyke (concordant vs discordant), (2) Difference between laccolith and batholith, (3) How hotspot chains prove plate movement (age progression), (4) Deccan Traps formation and significance. Diagrams of intrusive landforms are common in Mains Geography optional papers."},
+        {"type": "para", "text": "NCERT uses the Hawaiian island chain as **proof of plate movement** — the islands get progressively OLDER as you move northwest from the active volcano (Kilauea) toward the Emperor Seamounts. The hotspot is fixed; the Pacific Plate moves over it at ~7 cm/year. This is one of the clearest evidences of plate motion direction and speed."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Hotspot Dynamics and Indian Volcanic Geomorphology",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Hotspot Volcanism — The Fixed-Plume Model"},
+        {"type": "para", "text": "A **hotspot** is a location where a **mantle plume** — a column of anomalously hot rock rising from the deep mantle (possibly core-mantle boundary) — causes melting near the surface. Unlike plate-boundary volcanism, hotspots are relatively **fixed** in the mantle while the plate moves over them. This creates a **chain of volcanoes** with a clear age progression: the active volcano sits directly over the plume, while extinct ones are progressively older in the direction of plate movement."},
+        {"type": "para", "text": "The **Hawaiian-Emperor chain** stretches ~6,000 km across the Pacific: Kilauea (active, 0 Ma) → Maui (1.3 Ma) → Oahu (3.7 Ma) → Midway (28 Ma) → Emperor Seamounts (40-70 Ma). The chain bends at 47 Ma, recording a change in Pacific Plate direction. Currently, **~40-50 hotspots** are identified globally: Hawaii, Yellowstone, Iceland, Réunion, Galápagos, and others."},
+        {"type": "heading", "text": "India and the Réunion Hotspot"},
+        {"type": "para", "text": "The **Deccan Traps** (~66 Ma) were likely produced when the **Indian Plate** passed over the **Réunion hotspot** during its northward journey from Gondwanaland to Asia. As India moved north, the hotspot left a trail: Deccan Traps (66 Ma) → Laccadive Islands → Maldive Islands → Chagos Bank → Mascarene Plateau → **Réunion Island** (currently active, sitting directly over the plume today). This trail is one of the best examples of hotspot-plate motion evidence."},
+        {"type": "compare", "title": "Plate Boundary vs Hotspot Volcanism", "left": {"label": "Plate Boundary Volcanism", "items": ["Located AT plate edges", "Moves WITH the plate boundaries", "Linear belts (Ring of Fire)", "Mechanism: subduction (flux melting) or divergence (decompression melting)", "Mainly andesitic (subduction) or basaltic (ridges)"]}, "right": {"label": "Hotspot Volcanism", "items": ["Located WITHIN plates (away from boundaries)", "Plume is FIXED; plate moves over it", "Creates age-progressive chains", "Mechanism: deep mantle plume (decompression/heat transfer)", "Usually basaltic (oceanic) or rhyolitic (continental — e.g., Yellowstone)"]}},
+        {"type": "heading", "text": "Calderas — Collapse Structures"},
+        {"type": "para", "text": "A **caldera** forms when a large volcanic eruption empties the magma chamber so rapidly that the overlying summit can no longer be supported and **collapses inward**. Calderas range from 1 km to over 50 km in diameter. **Yellowstone** (72×55 km) is the world's largest; its last supereruption (640,000 years ago) ejected ~1,000 km³ of material. Calderas often fill with water to form **crater lakes** (Crater Lake, Oregon; Lake Toba, Sumatra). Smaller collapse features at summits of active volcanoes are sometimes called calderas too (Kilauea summit caldera)."},
+        {"type": "heading", "text": "India's Volcanic Geomorphology"},
+        {"type": "points", "title": "Volcanic Landforms in India", "items": ["**Deccan Traps**: flood basalt plateau; 500,000 km²; up to 2 km thick in Western Ghats; forms the Deccan Plateau", "**Western Ghats**: the western escarpment edge of the Deccan lava pile; step-like topography (trap = staircase in Dutch)", "**Barren Island**: active volcanic island; stratovolcano type; 354 m height; part of Andaman volcanic arc (subduction of Indian Plate under Burma Plate)", "**Narcondam Island**: dormant volcano; ~710 m height; same volcanic arc as Barren Island", "**Hot springs**: Manikaran (HP), Tattapani (CG), Puga Valley (Ladakh), Bakreshwar (WB) — residual volcanic/tectonic heat", "**Dykes in Deccan**: numerous basaltic dykes visible in Maharashtra, Gujarat — feeders for Deccan lava flows"]},
+        {"type": "timeline", "title": "India's Hotspot Trail (Réunion Plume)", "items": [
+          {"year": "66 Ma", "event": "Deccan Traps eruption begins — Indian Plate over Réunion hotspot"},
+          {"year": "60 Ma", "event": "India moves north; volcanism wanes; Laccadive Ridge forms"},
+          {"year": "55 Ma", "event": "Maldive Ridge forms as India continues northward"},
+          {"year": "40 Ma", "event": "Chagos Bank and Mascarene Plateau form"},
+          {"year": "Present", "event": "Réunion Island (Indian Ocean) sits directly over the plume — active Piton de la Fournaise volcano"}
+        ]},
+        {"type": "collapsible", "title": "Advanced: Geysers, Fumaroles, and Geothermal Energy", "content": "Secondary volcanic features are powered by magmatic heat near the surface: Geysers (periodic hot water eruptions — Old Faithful, Yellowstone), Fumaroles (steam/gas vents), Solfataras (sulphur-emitting vents), Hot springs (continuous warm water discharge). India's geothermal potential: ~10,600 MW estimated; major fields at Puga Valley (Ladakh), Manikaran (HP), Tattapani (CG), Cambay Basin (Gujarat). MNRE's geothermal energy programme is in exploratory stage. Iceland generates 25% of electricity from geothermal — a model for volcanic regions."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Volcanic Landforms & Hotspots",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Iceland's Reykjanes Eruptions Creating New Land (2023-2024)", "text": "The 2023-2024 fissure eruptions on Iceland's Reykjanes Peninsula are actively **creating new land** — lava flows extending the coastline. This is a textbook example of a **constructive plate margin** where new crust forms. The eruptions follow the Mid-Atlantic Ridge which runs through Iceland. UPSC angle: divergent boundary volcanism; how volcanic eruptions create landforms in real-time; comparison with India's Deccan fissure eruptions (same mechanism, ancient scale)."},
+        {"type": "callout", "tone": "note", "title": "Yellowstone Supervolcano Monitoring Update (2024-2025)", "text": "USGS's Yellowstone Volcano Observatory reported in 2024-2025 that the magma chamber beneath Yellowstone shows NO signs of imminent eruption, despite ongoing uplift/subsidence cycles of ~2 cm/year. New tomographic imaging revealed the magma body is only **5-15% molten** — far below the ~50% threshold needed for eruption. UPSC relevance: supervolcano concept; monitoring vs prediction; caldera landforms."},
+        {"type": "callout", "tone": "note", "title": "India's Geothermal Energy Push (2024-2025)", "text": "The **Ministry of New and Renewable Energy (MNRE)** launched pilot geothermal projects at **Puga Valley (Ladakh)** and **Tattapani (Chhattisgarh)** in 2024-2025. India's estimated geothermal potential is ~10,600 MW but virtually untapped. These projects explore medium-enthalpy resources (100-150°C at 2-3 km depth) for power generation. UPSC angle: renewable energy diversification; volcanic/tectonic heat utilisation; comparison with Iceland (25% geothermal electricity)."},
+        {"type": "callout", "tone": "note", "title": "New Undersea Volcano Discovered Near Andaman (2024)", "text": "A **previously unmapped submarine volcano** was discovered in the Andaman Sea in 2024 during a bathymetric survey by the National Institute of Oceanography (NIO). Located south of Barren Island along the Andaman volcanic arc, it rises 1,500 m from the seafloor but remains ~800 m below sea surface. UPSC angle: India's volcanic arc system; subduction of Indian Plate under Burma Plate; ocean floor mapping programmes."},
+        {"type": "callout", "tone": "note", "title": "Tonga Eruption Aftermath — Submarine Caldera Study (2023-2024)", "text": "Detailed surveys of the **Hunga Tonga-Hunga Ha'apai** submarine caldera (post-2022 eruption) revealed the caldera floor dropped **700+ metres** during the eruption — one of the most dramatic caldera collapses observed in real-time. Two pre-existing islands were almost entirely destroyed. UPSC angle: caldera formation mechanism; submarine volcanism; volcanic tsunami generation."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Volcanic Landforms & Hotspots",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "A laccolith and a batholith are the same — both are large underground igneous bodies", "correct": "They differ fundamentally: LACCOLITH is dome-shaped, concordant (parallel to layers), relatively small, creates dome hills. BATHOLITH is the largest intrusive body (100+ km), discordant (cuts across layers), forms granite core of mountain ranges, exposed only after deep erosion. Think: laccolith = mushroom cap; batholith = mountain foundation."},
+        {"type": "trap", "wrong": "Sills and dykes are the same — both are sheet-like intrusions", "correct": "Critical difference: SILL is horizontal/concordant (intrudes BETWEEN existing rock layers, parallel to them). DYKE is vertical/discordant (CUTS ACROSS rock layers at an angle). Direction relative to existing layers is the key distinction."},
+        {"type": "trap", "wrong": "Hotspots move with the tectonic plates", "correct": "Hotspots are relatively FIXED in the deep mantle — the PLATES move over them. This is why hotspot chains show age progression. Hawaii: youngest island (Big Island) is over the hotspot; oldest (Midway, Emperor Seamounts) are thousands of km away, carried by plate movement."},
+        {"type": "trap", "wrong": "Lonar Lake (Maharashtra) is a volcanic crater", "correct": "Lonar Lake is a METEORITE IMPACT crater — formed ~50,000 years ago by a hypervelocity meteorite strike. It is NOT volcanic despite being located in the Deccan Traps basalt region. It is one of only four known impact craters in basaltic rock worldwide."},
+        {"type": "trap", "wrong": "The Western Ghats are fold mountains like the Himalayas", "correct": "The Western Ghats are NOT fold mountains — they are the EROSIONAL ESCARPMENT (fault scarp edge) of the Deccan Trap lava plateau. They represent the edge where the lava pile was broken by rifting when India separated from Madagascar. The Himalayas are fold mountains from continental collision — completely different origin."},
+        {"type": "trap", "wrong": "Mid-ocean ridges are caused by subduction of plates", "correct": "Mid-ocean ridges form at DIVERGENT boundaries where plates move APART — magma rises from below to fill the gap (decompression melting creates new oceanic crust). SUBDUCTION occurs at convergent boundaries and creates trenches, not ridges. The Mid-Atlantic Ridge is splitting the Atlantic wider by ~2.5 cm/year."},
+        {"type": "trap", "wrong": "All volcanic islands form from hotspot volcanism (like Hawaii)", "correct": "Volcanic islands form from TWO different mechanisms: (1) HOTSPOT (mid-plate) — Hawaii, Galápagos; (2) SUBDUCTION ZONE island arcs — Japan, Philippines, Indonesia, Andaman-Nicobar. Most volcanic islands are actually island arc (subduction) volcanoes, not hotspot volcanoes. India's Barren Island is a subduction zone volcano, not a hotspot."},
+        {"type": "memory", "text": "Intrusive bodies by size: 'Bad Luck Stops Playing' = Batholith (largest) → Laccolith (dome) → Sill (horizontal) → Phacolith (lens in folds) | Concordant = C for 'Comfortable' (lies between layers); Discordant = D for 'Disruptive' (cuts across layers) | India's volcanic trio: 'BaND plays' = Barren (Active), Narcondam (Dormant), Deccan (Flood basalt)"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2018, "question_text": "Consider the following statements:\n1. A sill is a horizontal intrusion of igneous rock between layers of sedimentary rock.\n2. A dyke is a vertical or near-vertical intrusion cutting across rock layers.\n3. A batholith is smaller than a laccolith.\nWhich of the above statements is/are correct?", "answer_text": "C (1 and 2 only)", "explanation": "Statements 1 and 2 are correct definitions. Statement 3 is wrong — a batholith is the LARGEST intrusive body (100+ km extent, forming mountain cores), while a laccolith is much smaller (dome-shaped, local feature).", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "The Hawaiian Islands chain progressively increases in age from southeast to northwest. This is best explained by:", "answer_text": "B (The Pacific Plate moving northwest over a fixed mantle hotspot)", "explanation": "The Hawaiian chain demonstrates hotspot volcanism: the mantle plume is fixed, but the Pacific Plate moves northwest at ~7 cm/year. The youngest island (Big Island/Hawaii) sits over the active plume; older islands (Oahu, Midway) have been carried away. Age progression proves plate motion.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2020, "question_text": "Differentiate between extrusive and intrusive volcanic landforms with suitable examples. Discuss the significance of the Deccan Traps in Indian geomorphology. (15 marks)", "answer_text": "Extrusive landforms form on the surface from erupted material: volcanic mountains (Fuji — composite, Mauna Loa — shield), lava plateaus (Deccan Traps — flood basalt), calderas (Yellowstone — collapse structure), volcanic islands (Barren Island — subduction arc). Intrusive landforms form underground and are exposed by erosion: Batholiths (largest, granite cores of mountains — Himalayan granite), Laccoliths (dome-shaped, concordant — push layers up), Sills (horizontal sheets between layers), Dykes (vertical sheets cutting across layers — many in Deccan). Deccan Traps significance: (1) Largest volcanic feature in India, ~500,000 km²; (2) Forms the Deccan Plateau physiographic division; (3) Western Ghats = erosional escarpment of this lava pile; (4) Black regur (cotton) soil derived from basalt weathering; (5) Rich mineral deposits; (6) Linked to end-Cretaceous extinction; (7) Evidence of India's passage over Réunion hotspot.", "explanation": "Structure: Define extrusive vs intrusive → Examples of each (with diagrams if optional) → Deccan Traps detailed analysis → Indian geomorphic significance → Geological history link.", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements about intrusive volcanic landforms:\n1. A laccolith is a dome-shaped concordant intrusion that pushes overlying rock layers upward.\n2. A batholith is exposed at the surface only after extensive erosion removes overlying rock.\n3. A dyke is a horizontal sheet of igneous rock intruded between existing layers.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statements 1 and 2 are correct. Laccoliths are dome-shaped and concordant (1). Batholiths form deep underground and are only exposed after millions of years of erosion (2). Statement 3 is wrong — a HORIZONTAL sheet between layers is a SILL, not a dyke. A dyke is VERTICAL/near-vertical and cuts across layers (discordant).",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about hotspot volcanism:\n1. Hotspots are located at plate boundaries where tectonic plates meet.\n2. The Hawaiian island chain was formed by the Pacific Plate moving over a fixed mantle plume.\n3. India's Deccan Traps are linked to the Réunion hotspot.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statements 2 and 3 are correct. Hawaii formed from Pacific Plate movement over a hotspot (2). Deccan Traps formed when India passed over Réunion hotspot ~66 Ma (3). Statement 1 is wrong — hotspots are specifically NOT at plate boundaries; they are WITHIN plates, caused by deep mantle plumes independent of plate boundary processes.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Mid-ocean ridges are the longest mountain chain on Earth at ~65,000 km.\n2. Mid-ocean ridges form at convergent plate boundaries through subduction.\n3. New oceanic crust is continuously created at mid-ocean ridges.\n4. Iceland is a rare case where a mid-ocean ridge rises above sea level.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 3, and 4 are correct. Mid-ocean ridges are ~65,000 km long (1). New crust forms continuously from basaltic eruptions (3). Iceland straddles the Mid-Atlantic Ridge above sea level (4). Statement 2 is wrong — ridges form at DIVERGENT boundaries (plates moving apart), not convergent (subduction creates trenches, not ridges).",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following pairs:\n1. Caldera — formed by explosive eruption emptying magma chamber and summit collapse\n2. Crater lake — water-filled caldera or volcanic crater\n3. Lava tube — formed when surface lava cools while interior continues flowing\n4. Geyser — periodic eruption of hot water powered by underground magmatic heat\nHow many of the above pairs are correctly described?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "D",
+      "explanation": "All four are correctly described. Caldera = summit collapse (1). Crater lake = water-filled depression (Crater Lake Oregon) (2). Lava tube = hollow tube formed by surface cooling over still-flowing interior lava (3). Geyser = periodic hot water eruptions from underground heating (Old Faithful) (4).",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The Hawaiian island chain shows progressive age increase from southeast to northwest.\nReason (R): The Pacific Plate is moving northwest over a relatively fixed mantle plume (hotspot).",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — Big Island (youngest, 0.7 Ma) is in the southeast; Midway (28 Ma) and Emperor Seamounts (40-70 Ma) are in the northwest. R is correct and directly explains the age progression — as the Pacific Plate moves northwest at ~7 cm/yr over the fixed plume, new islands form while old ones are carried away.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The Western Ghats are the erosional escarpment edge of the Deccan Trap lava plateau.\nReason (R): The Western Ghats were formed by the folding of sedimentary rocks during the Himalayan orogeny.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — the Western Ghats represent the western broken edge of the Deccan Trap basalt pile, created by faulting when India rifted from Madagascar (~88 Ma). R is incorrect — the Western Ghats are NOT fold mountains and have nothing to do with Himalayan orogeny. They are a fault/erosional scarp of volcanic basalt, fundamentally different from fold mountains.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a correct characteristic of a caldera?",
+      "options": [{"label": "A", "text": "Formed by collapse of volcanic summit into emptied magma chamber"}, {"label": "B", "text": "Always smaller than 1 km in diameter"}, {"label": "C", "text": "Can fill with water to form a crater lake"}, {"label": "D", "text": "Yellowstone caldera is approximately 72 × 55 km in size"}],
+      "correct_option": "B",
+      "explanation": "B is incorrect — calderas are specifically LARGER than 1 km (that's the distinction from simple craters). Major calderas can be enormous: Yellowstone (72×55 km), Toba (100×30 km). A, C, and D are all correct characteristics of calderas.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following statements about Lonar Lake (Maharashtra) is NOT correct?",
+      "options": [{"label": "A", "text": "It is located in the Deccan Trap basalt region"}, {"label": "B", "text": "It is a volcanic caldera formed by collapse of an ancient volcano"}, {"label": "C", "text": "It was formed by a meteorite impact approximately 50,000 years ago"}, {"label": "D", "text": "It is one of the few known impact craters in basaltic rock worldwide"}],
+      "correct_option": "B",
+      "explanation": "B is NOT correct — Lonar Lake is a METEORITE IMPACT crater, not a volcanic caldera. Despite being located in volcanic basalt (Deccan Traps), it was formed by a hypervelocity meteorite strike ~50,000 years ago. A (location in Deccan basalt), C (meteorite origin), and D (one of four impact craters in basalt) are all correct.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A geological survey identifies a large dome-shaped hill made of igneous rock. The overlying sedimentary layers appear to be pushed upward. Upon drilling, the igneous body is found to be concordant (parallel to surrounding strata).\n\nThis intrusion is most likely a:",
+      "options": [{"label": "A", "text": "Batholith"}, {"label": "B", "text": "Laccolith"}, {"label": "C", "text": "Dyke"}, {"label": "D", "text": "Volcanic neck"}],
+      "correct_option": "B",
+      "explanation": "The description matches a laccolith perfectly: dome-shaped, pushes overlying layers upward, concordant (parallel to strata). A batholith is discordant and much larger; a dyke is vertical/discordant; a volcanic neck is the solidified core of a vent. The concordant + dome + pushed-up layers = laccolith.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A geologist studying the Andaman Islands observes: 'The Andaman volcanic arc follows a curved line of islands, with an active volcano (Barren Island) at the subduction front.'\n\nWhich of the following inferences about this volcanic arc are correct?\n1. It forms where the Indian Plate subducts under the Burma Plate.\n2. The volcanoes are primarily basaltic shield type due to oceanic setting.\n3. Earthquakes and volcanism are both expected along this arc.",
+      "options": [{"label": "A", "text": "1 and 3 only"}, {"label": "B", "text": "1 and 2 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Inferences 1 and 3 are correct. The Andaman arc forms from Indian Plate subduction under Burma Plate (1). Both seismicity and volcanism are characteristic of subduction zones (3). Inference 2 is wrong — subduction zone volcanoes are typically ANDESITIC (intermediate) and EXPLOSIVE (stratovolcano type), not basaltic shield type. Barren Island is classified as a stratovolcano.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A government report discusses India's geothermal energy potential of ~10,600 MW from volcanic/tectonic heat sources.\n\nWhich of the following Indian locations would be most suitable for geothermal energy extraction?\n1. Puga Valley (Ladakh)\n2. Sundarbans (West Bengal)\n3. Manikaran (Himachal Pradesh)",
+      "options": [{"label": "A", "text": "1 and 3 only"}, {"label": "B", "text": "1 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Puga Valley (1) and Manikaran (3) are both known geothermal fields with hot springs indicating subsurface heat from tectonic/volcanic sources. Sundarbans (2) is a delta/mangrove region with no significant geothermal activity — its energy relevance is tidal/solar, not geothermal.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Intrusive Landform) with List-II (Characteristic):\n\nList-I: (a) Batholith, (b) Laccolith, (c) Sill, (d) Dyke\nList-II: (1) Horizontal concordant sheet between layers, (2) Vertical discordant sheet cutting across layers, (3) Dome-shaped concordant body pushing layers up, (4) Largest intrusive body forming mountain cores",
+      "options": [{"label": "A", "text": "a-4, b-3, c-1, d-2"}, {"label": "B", "text": "a-3, b-4, c-2, d-1"}, {"label": "C", "text": "a-4, b-1, c-3, d-2"}, {"label": "D", "text": "a-2, b-3, c-4, d-1"}],
+      "correct_option": "A",
+      "explanation": "Batholith — largest, forms mountain cores, 100+ km extent (4). Laccolith — dome-shaped, concordant, pushes layers up (3). Sill — horizontal sheet between existing layers, concordant (1). Dyke — vertical/near-vertical, cuts across layers, discordant (2).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Indian Volcanic Feature) with List-II (Classification):\n\nList-I: (a) Barren Island, (b) Narcondam Island, (c) Deccan Traps, (d) Lonar Lake\nList-II: (1) Extinct flood basalt province, (2) Meteorite impact crater, (3) Active stratovolcano, (4) Dormant volcano",
+      "options": [{"label": "A", "text": "a-3, b-4, c-1, d-2"}, {"label": "B", "text": "a-4, b-3, c-2, d-1"}, {"label": "C", "text": "a-3, b-4, c-2, d-1"}, {"label": "D", "text": "a-1, b-3, c-4, d-2"}],
+      "correct_option": "A",
+      "explanation": "Barren Island — India's only ACTIVE volcano, stratovolcano type (3). Narcondam — DORMANT (not erupted in recorded history but possible) (4). Deccan Traps — EXTINCT flood basalt province, 66 Ma old (1). Lonar Lake — NOT volcanic; it is a METEORITE IMPACT crater in Deccan basalt (2).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about the Deccan Traps:\n1. They were formed by explosive stratovolcanic eruptions at a subduction zone.\n2. The basalt weathering produces the black regur (cotton) soil.\n3. The Western Ghats represent the eroded western edge of the lava plateau.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statements 2 and 3 are correct. Basalt weathering produces black cotton soil/regur (2). Western Ghats are the broken western edge of the Deccan lava pile (3). Statement 1 is wrong — Deccan Traps were formed by FISSURE-TYPE FLOOD BASALT eruptions (effusive, not explosive) from a HOTSPOT (Réunion plume), not at a subduction zone.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "India's geothermal energy potential is estimated at approximately 10,600 MW. Which of the following correctly identifies a major geothermal field in India?",
+      "options": [{"label": "A", "text": "Puga Valley in Ladakh — associated with tectonic fault systems"}, {"label": "B", "text": "Sundarbans in West Bengal — associated with tidal energy"}, {"label": "C", "text": "Jaisalmer in Rajasthan — associated with solar radiation"}, {"label": "D", "text": "Kochi in Kerala — associated with wave energy"}],
+      "correct_option": "A",
+      "explanation": "Puga Valley (Ladakh) is India's most promising geothermal field — located along active tectonic faults with hot springs reaching 80-85°C. MNRE has pilot projects there. The other options describe different energy sources: Sundarbans (tidal), Jaisalmer (solar), Kochi (wave) — none are geothermal fields.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

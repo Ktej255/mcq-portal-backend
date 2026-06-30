@@ -1,0 +1,273 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Volcanoes — Types, Distribution, and Products. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), 3 PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Earthquakes & Volcanism)"
+  },
+  "title": "Volcanoes — Types, Distribution, and Products",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 17,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After earthquake distribution (topic 16), the student naturally progresses to volcanism — both are manifestations of Earth's internal energy at plate boundaries. Understanding volcanic types and their distribution reinforces plate tectonic concepts and connects to landform creation.",
+  "concept_checklist": [
+    "Volcano: opening in Earth's crust through which molten rock (magma/lava), gases, and pyroclastics erupt to the surface.",
+    "Three types by activity: Active (erupted recently/regularly), Dormant (not erupted in recorded history but could), Extinct (no expected future eruption).",
+    "Three types by shape: Shield volcano (broad, gentle slopes, basaltic lava — e.g., Mauna Loa), Composite/Stratovolcano (steep, alternating layers — e.g., Mt. Fuji), Cinder cone (small, steep, pyroclastics — e.g., Parícutin).",
+    "Volcanic products: Lava (molten rock at surface), Pyroclastics (fragments — ash, lapilli, bombs), Gases (H₂O, CO₂, SO₂, H₂S).",
+    "Distribution follows plate boundaries: 75% at convergent (subduction), Ring of Fire; also at divergent (mid-ocean ridges) and hotspots.",
+    "India's only active volcano: Barren Island (Andaman Sea); Narcondam is dormant; Deccan Traps are extinct flood basalts.",
+    "Viscosity determines eruption style: low viscosity (basaltic) = effusive/quiet; high viscosity (andesitic/rhyolitic) = explosive/violent.",
+    "VEI (Volcanic Explosivity Index): 0-8 scale measuring eruption size; each step = 10× more material ejected.",
+    "Plate tectonic settings: Subduction zones (explosive, andesitic), Mid-ocean ridges (quiet, basaltic), Hotspots (both types, within plates)."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "In **79 AD**, Mount Vesuvius buried the Roman city of Pompeii under 6 metres of ash in hours — preserving it for 2,000 years. In **1815**, Indonesia's Mount Tambora ejected so much ash that it caused the 'Year Without a Summer' globally. Volcanoes are Earth's pressure valves — when the planet's internal heat builds beyond containment, the surface tears open. India has its own active volcano — **Barren Island** in the Andaman Sea — which last erupted in **2020**."},
+        {"type": "statgrid", "items": [
+          {"value": "~1,500", "label": "Active volcanoes on Earth"},
+          {"value": "75%", "label": "Located in Ring of Fire"},
+          {"value": "50-70", "label": "Erupt each year"},
+          {"value": "1", "label": "India's active volcano (Barren Island)"}
+        ]},
+        {"type": "heading", "text": "What Is a Volcano?"},
+        {"type": "para", "text": "A **volcano** is an opening (vent) in Earth's crust through which **molten rock** (magma when underground, **lava** when it reaches the surface), volcanic **gases** (steam, CO₂, SO₂), and solid fragments (**pyroclastics**) are ejected. The term comes from 'Vulcan' — the Roman god of fire. Volcanoes build landforms (mountains, plateaus, islands) and reshape Earth's surface and atmosphere."},
+        {"type": "analogy", "text": "A volcano works like a shaken soda bottle. The carbon dioxide dissolved in soda is like gases dissolved in magma under pressure. When you open the cap (Earth's crust fractures), the pressure drops suddenly, dissolved gases expand explosively, and liquid sprays out. The more gas and the thicker the liquid, the more violent the explosion."},
+        {"type": "heading", "text": "Classification by Activity"},
+        {"type": "para", "text": "Volcanoes are classified by their **eruptive history**: **Active** — has erupted in recorded history or shows signs of activity (seismicity, gas emissions); ~1,500 worldwide. **Dormant** — not currently erupting but has potential; shows no present activity but has erupted in geological past (e.g., Mt. Kilimanjaro). **Extinct** — no expected future eruption; magma source has died (e.g., Edinburgh Castle rock, Scotland). However, classification can change — Mt. Pinatubo was considered dormant before its catastrophic 1991 eruption."},
+        {"type": "heading", "text": "Classification by Shape (Eruption Style)"},
+        {"type": "compare", "title": "Volcano Types by Shape", "left": {"label": "Shield Volcano", "items": ["Broad base, gentle slopes (2-10°)", "Built by successive flows of fluid BASALTIC lava", "Effusive eruptions (non-explosive)", "Largest volcanoes on Earth by volume", "Example: Mauna Loa (Hawaii), 4,170 m above sea level"]}, "right": {"label": "Composite (Stratovolcano)", "items": ["Steep, symmetrical cone (30-35°)", "Alternating layers of lava AND pyroclastics", "Explosive + effusive eruptions (ANDESITIC)", "Most common type at subduction zones", "Example: Mt. Fuji (Japan), Mt. Vesuvius (Italy)"]}},
+        {"type": "para", "text": "A third type — **Cinder Cone** (Scoria Cone) — is the simplest: small (< 300 m), steep-sided (~30-40°), built entirely of pyroclastic fragments ejected from a single vent. They often form on flanks of larger volcanoes. Example: **Parícutin** (Mexico, 1943 — grew from a farmer's field to 424 m in a year). **Caldera** volcanoes form when a massive eruption empties the magma chamber and the summit collapses inward (e.g., Yellowstone, Krakatoa)."},
+        {"type": "keyterms", "terms": [
+          {"term": "Magma", "definition": "Molten rock BELOW Earth's surface; contains dissolved gases and crystals. Becomes lava when erupted."},
+          {"term": "Lava", "definition": "Magma that has reached the surface. Types: Pahoehoe (smooth, ropy), Aa (rough, blocky), Pillow (underwater)."},
+          {"term": "Pyroclastics", "definition": "Fragmental volcanic material ejected during eruptions: **ash** (<2 mm), **lapilli** (2-64 mm), **bombs/blocks** (>64 mm)."},
+          {"term": "Viscosity", "definition": "Resistance to flow. Low viscosity (basaltic, hot, low silica) → flows easily. High viscosity (rhyolitic, cooler, high silica) → resists flow, traps gas, causes explosions."},
+          {"term": "VEI", "definition": "Volcanic Explosivity Index (0-8). Each step = ~10× more ejected material. VEI 5 = Plinian (e.g., Vesuvius 79 AD). VEI 8 = Supervolcano (e.g., Yellowstone 640,000 years ago)."}
+        ]},
+        {"type": "callout", "tone": "insight", "title": "Key Insight", "text": "The **silica content** of magma determines everything: eruption style, volcano shape, and hazard type. Low silica (basaltic, ~50%) → low viscosity → gas escapes easily → EFFUSIVE (shield volcanoes, lava flows). High silica (rhyolitic, ~70%) → high viscosity → gas TRAPPED → EXPLOSIVE (stratovolcanoes, pyroclastic flows). This is the single most tested volcanic concept in UPSC."}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Volcanoes",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "3", "page_start": 28, "page_end": 32, "external_url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf", "text": "Chapter 3 'Interior of the Earth' discusses volcanic eruptions as a direct source of information about Earth's interior and mentions volcanic types and distribution.", "key_facts": ["Volcanic eruptions bring material from depth — direct evidence of Earth's interior", "Volcanoes are associated with plate boundaries", "Types: active, dormant, extinct", "Volcanic material: lava, gas, pyroclastics"]},
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "4", "page_start": 38, "page_end": 42, "external_url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf", "text": "Chapter 4 'Distribution of Oceans and Continents' connects volcanism to plate tectonics — volcanoes at subduction zones, mid-ocean ridges, and hotspots.", "key_facts": ["Ring of Fire: belt of volcanoes around Pacific", "Subduction zones: explosive volcanism (andesitic)", "Mid-ocean ridges: effusive volcanism (basaltic)", "Hotspot volcanism: Hawaii, Yellowstone"]},
+        {"type": "heading", "text": "NCERT Key Points — Volcanoes"},
+        {"type": "points", "title": "Volcanic Activity and Plate Tectonics (NCERT)", "items": ["Volcanoes at **convergent boundaries**: oceanic plate subducts, water lowers melting point of mantle → magma rises → explosive volcanoes (Andes, Japan, Philippines)", "Volcanoes at **divergent boundaries**: mantle rises to fill gap → basaltic eruptions → mostly submarine (mid-ocean ridges)", "**Hotspot volcanoes**: mantle plumes rising from deep (independent of plate boundaries) → Hawaii chain, Yellowstone", "**Ring of Fire**: ~75% of world's volcanoes — encircles Pacific plate"]},
+        {"type": "points", "title": "NCERT Classification", "items": ["**Active**: currently erupting or showing signs (Kilauea, Etna, Barren Island)", "**Dormant**: not currently active but capable of eruption (Vesuvius, Kilimanjaro)", "**Extinct**: no magma source, will not erupt (Arthur's Seat Edinburgh, extinct volcanoes of India's Deccan)"]},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC directly tests: (1) Why Ring of Fire has most volcanoes (subduction), (2) Difference between shield and composite volcanoes, (3) India's volcanic features (Barren Island = only active; Deccan Traps = extinct flood basalt), (4) Role of viscosity in eruption style. Questions connecting volcanoes to plate tectonics are frequent."},
+        {"type": "para", "text": "NCERT emphasises that volcanoes are **direct evidence** of Earth's internal heat and composition — erupted lava provides actual samples of mantle material (unlike earthquakes which only give indirect wave-based evidence). This dual role (evidence source + geomorphic agent) makes volcanism a bridge between interior dynamics and surface landforms."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Volcanic Mechanisms, Products, and Global Impact",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "How Magma Forms — The Three Mechanisms"},
+        {"type": "para", "text": "Magma forms when solid mantle rock melts. Three mechanisms cause this: (1) **Decompression melting** — at divergent boundaries and hotspots, rising mantle rock experiences decreasing pressure; since melting point drops with pressure, rock melts without adding heat. (2) **Flux melting** — at subduction zones, water from the subducting oceanic plate enters the mantle wedge, LOWERING the melting point and causing melting (this is why subduction zones produce magma). (3) **Heat transfer** — hot mantle plume transfers heat to surrounding rock, raising temperature above melting point."},
+        {"type": "heading", "text": "Magma Types and Their Consequences"},
+        {"type": "compare", "title": "Magma Composition and Eruption Style", "left": {"label": "Basaltic (Mafic)", "items": ["SiO₂: ~50%", "Temperature: 1000-1200°C", "Viscosity: LOW (flows easily)", "Gas content: LOW", "Eruption: EFFUSIVE (quiet lava flows)", "Volcano type: Shield, fissure", "Example: Hawaii, Iceland, Deccan Traps"]}, "right": {"label": "Rhyolitic (Felsic)", "items": ["SiO₂: ~70%", "Temperature: 650-800°C", "Viscosity: HIGH (thick, sticky)", "Gas content: HIGH (trapped)", "Eruption: EXPLOSIVE (pyroclastic)", "Volcano type: Stratovolcano, caldera", "Example: Mt. St. Helens, Pinatubo"]}},
+        {"type": "heading", "text": "Volcanic Products in Detail"},
+        {"type": "para", "text": "**Lava flows**: Basaltic lava forms **pahoehoe** (smooth, ropy surface, highly fluid) or **aa** (rough, blocky surface, more viscous). Underwater eruptions form **pillow lava**. **Pyroclastic materials**: **Volcanic ash** (<2 mm, can travel thousands of km in atmosphere), **lapilli** (2-64 mm, 'little stones'), **volcanic bombs** (>64 mm, ejected molten, solidify in flight), **ignimbrite** (welded tuff from pyroclastic flows). **Gases**: Mainly **water vapour** (60-90%), **CO₂**, **SO₂**, **H₂S**, **HCl**. Sulphur dioxide converts to aerosols → reflects sunlight → causes temporary global cooling."},
+        {"type": "heading", "text": "Volcanic Hazards"},
+        {"type": "points", "title": "Primary Hazards", "items": ["**Pyroclastic flows (nuées ardentes)**: avalanches of hot gas + fragments travelling at 100-700 km/h at 200-700°C — most deadly volcanic hazard (killed 30,000 at Mt. Pelée, 1902)", "**Lava flows**: destroy everything in path but usually slow enough to evacuate", "**Lahars**: volcanic mudflows (ash + water from rainfall/melted ice) — can travel 100+ km at 60+ km/h", "**Tephra fall**: airborne fragments; heavy deposits collapse roofs; ash clogs engines", "**Volcanic gases**: CO₂ pooling in low areas (Lake Nyos 1986: CO₂ release killed 1,700)"]},
+        {"type": "timeline", "title": "Notable Volcanic Eruptions", "items": [
+          {"year": "79 AD", "event": "Vesuvius — buried Pompeii; VEI 5; ~16,000 killed"},
+          {"year": "1783", "event": "Laki (Iceland) — fissure eruption; caused European famine from gas/aerosol effects"},
+          {"year": "1815", "event": "Tambora (Indonesia) — VEI 7; largest in recorded history; caused 'Year Without a Summer' (1816)"},
+          {"year": "1883", "event": "Krakatoa (Indonesia) — VEI 6; explosion heard 4,800 km away; tsunamis killed 36,000"},
+          {"year": "1980", "event": "Mt. St. Helens (USA) — VEI 5; lateral blast; demonstrated prediction value of monitoring"},
+          {"year": "1991", "event": "Mt. Pinatubo (Philippines) — VEI 6; global temperature dropped 0.5°C for 2 years from SO₂ aerosols"},
+          {"year": "2010", "event": "Eyjafjallajökull (Iceland) — ash cloud grounded European aviation for 6 days"}
+        ]},
+        {"type": "collapsible", "title": "Advanced: Supervolcanoes and Large Igneous Provinces", "content": "Supervolcanoes (VEI 8) eject >1,000 km³ of material in a single eruption. Only a few are known: Yellowstone (last: 640,000 years ago, caldera 72×55 km), Toba (Indonesia, 74,000 years ago — may have reduced human population to ~10,000). Large Igneous Provinces (LIPs) are massive flood basalt eruptions over millions of years: Deccan Traps (India, 66 million years ago, ~500,000 km² covered, may have contributed to dinosaur extinction), Siberian Traps (252 Ma, linked to Permian mass extinction). India's Deccan Traps represent one of the largest volcanic events in Earth's history."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Volcanism",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Iceland Reykjanes Peninsula Eruptions (2023-2024)", "text": "The **Reykjanes Peninsula** in Iceland experienced multiple fissure eruptions in 2023-2024, threatening the town of Grindavík. This is a **divergent boundary** setting (Mid-Atlantic Ridge). The eruptions demonstrated that even 'quiet' basaltic eruptions at divergent boundaries can pose significant hazards to nearby communities. UPSC angle: volcanism at divergent vs convergent boundaries; Iceland as a case study of constructive plate margin."},
+        {"type": "callout", "tone": "note", "title": "Barren Island Activity Monitoring (2024-2025)", "text": "India's **Barren Island volcano** (Andaman Sea) showed renewed thermal activity in 2024-2025 as detected by satellite monitoring (ISRO's sensors + international monitoring). The Geological Survey of India (GSI) maintains continuous monitoring. It last erupted in 2017-2020. UPSC relevance: India's only active volcano; Andaman plate tectonics; volcanic island arc formation at subduction zone."},
+        {"type": "callout", "tone": "note", "title": "Hunga Tonga Eruption Climate Impact Studies (2023-2025)", "text": "The January 2022 **Hunga Tonga-Hunga Ha'apai** submarine eruption (VEI 5-6, Tonga) was the largest atmospheric explosion since Krakatoa 1883. Research published in 2023-2025 revealed it injected **~146 million tonnes of water vapour** into the stratosphere — potentially WARMING the climate for 5-7 years (unlike SO₂ which causes cooling). UPSC angle: volcanic impacts on climate; difference between water vapour and SO₂ effects."},
+        {"type": "callout", "tone": "note", "title": "Volcanic Ash Aviation Hazards — New Protocols (2024)", "text": "After the 2010 Eyjafjallajökull disruption, ICAO and national aviation authorities implemented enhanced **Volcanic Ash Advisory Centres (VAACs)** and satellite-based ash detection. India's **VAAC New Delhi** monitors volcanic ash from Indonesian and Andaman sources. In 2024, new AI-based ash dispersion models were deployed. UPSC angle: International cooperation in disaster management; aviation safety."},
+        {"type": "callout", "tone": "note", "title": "Deccan Traps and Dinosaur Extinction — New Evidence (2023-2024)", "text": "New research (2023-2024) strengthened the role of **Deccan Traps volcanism** in the end-Cretaceous mass extinction (66 Ma). Studies showed eruption intensified BEFORE the Chicxulub asteroid impact, with massive CO₂ and SO₂ emissions destabilising climate. The 'double whammy' hypothesis (volcanism + asteroid) is now mainstream. UPSC relevance: Deccan Traps as Large Igneous Province; geological history of India."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Volcanoes",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "All volcanoes are found only at plate boundaries", "correct": "While 90% of volcanoes are at plate boundaries, significant volcanism occurs at HOTSPOTS within plates — Hawaii (middle of Pacific Plate) and Yellowstone (within North American Plate) are prime examples. India's Deccan Traps likely formed over the Réunion hotspot."},
+        {"type": "trap", "wrong": "Shield volcanoes are more dangerous than composite volcanoes because they are larger", "correct": "Composite (stratovolcanoes) are FAR more dangerous despite being smaller. Their high-viscosity magma traps gas, causing explosive eruptions with pyroclastic flows. Shield volcanoes erupt effusively — lava flows are slow enough to evacuate. Nearly all deadly eruptions in history are from composite volcanoes."},
+        {"type": "trap", "wrong": "Lava is the most deadly volcanic product", "correct": "PYROCLASTIC FLOWS are the deadliest volcanic hazard — superheated gas + fragments travelling at 100-700 km/h, impossible to outrun. Lava flows, while destructive to property, typically move slowly (1-10 km/h for basaltic) allowing evacuation. Mt. Pelée 1902: pyroclastic flow killed 30,000 in minutes."},
+        {"type": "trap", "wrong": "India has no volcanic activity — the Deccan Traps are the only volcanic feature", "correct": "India has ONE active volcano: **Barren Island** (Andaman Sea, last erupted 2017-2020). **Narcondam** Island is classified as dormant. The Deccan Traps are EXTINCT flood basalts (66 Ma old). India also has hot springs (Manikaran, Tattapani) indicating residual volcanic heat."},
+        {"type": "trap", "wrong": "Volcanic eruptions only cause local damage near the volcano", "correct": "Major eruptions have GLOBAL effects: Tambora 1815 caused 'Year Without a Summer' worldwide; Pinatubo 1991 cooled Earth by 0.5°C for 2 years; Eyjafjallajökull 2010 disrupted aviation across Europe. Volcanic ash, gases, and aerosols affect climate, agriculture, and air travel thousands of km away."},
+        {"type": "trap", "wrong": "Magma and lava are the same thing", "correct": "MAGMA is molten rock BELOW the surface (contains dissolved gases and crystals). LAVA is magma that has reached the surface and lost most of its dissolved gas. The distinction matters: magma drives eruption dynamics; lava is what we observe at the surface. Same material, different context."},
+        {"type": "trap", "wrong": "The Deccan Traps were formed by a single massive volcanic explosion", "correct": "The Deccan Traps were formed by FLOOD BASALT eruptions over ~500,000 years (66.25-65.75 Ma) — repeated outpourings of low-viscosity basaltic lava from fissures (NOT a single explosion). Layer upon layer of lava flows built up to 2+ km thickness. The 'stepped' landscape ('trap' = Dutch for 'staircase') shows individual flow layers."},
+        {"type": "memory", "text": "SILICA controls STYLE: 'Low Silica = Lazy lava (effusive shield)' | 'High Silica = Hostile eruption (explosive strato)' | India's volcanoes: 'BaND' = Barren (Active), Narcondam (Dormant), Deccan (extinct) | VEI like Richter: each step = 10× bigger"}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2020, "question_text": "Consider the following statements:\n1. Barren Island is India's only active volcano.\n2. It is located in the Andaman Sea.\n3. Narcondam Island is classified as an extinct volcano.\nWhich of the above statements is/are correct?", "answer_text": "C (1 and 2 only)", "explanation": "Statements 1 and 2 are correct — Barren Island (Andaman Sea) is India's only confirmed active volcano. Statement 3 is wrong — Narcondam is classified as DORMANT (not extinct). It has not erupted in recorded history but retains potential for future activity.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2019, "question_text": "Which one of the following is the type of the volcanic eruption which is most explosive and violent?", "answer_text": "Plinian (named after Pliny the Younger who described Vesuvius 79 AD)", "explanation": "Plinian eruptions (VEI 5-6) are the most explosive common type — sustained columns of gas and pyroclastics reaching 20-45 km height. Named after Pliny who documented Vesuvius. Ultra-Plinian/supervolcanic (VEI 7-8) are rarer but more powerful.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2021, "question_text": "Discuss the distribution of volcanoes in the world and explain the relationship between volcanic activity and plate tectonics. How are volcanic eruptions linked to climate change? (15 marks)", "answer_text": "Volcanic distribution follows plate boundaries: (1) Convergent — subduction causes flux melting → explosive andesitic eruptions (Ring of Fire, ~75% of volcanoes); (2) Divergent — decompression melting → effusive basaltic eruptions (mid-ocean ridges, Iceland); (3) Hotspots — mantle plumes within plates (Hawaii, Yellowstone). Climate link: Large eruptions inject SO₂ aerosols into stratosphere → reflect sunlight → temporary cooling (Pinatubo 1991: -0.5°C for 2 years; Tambora 1815: 'Year Without Summer'). CO₂ from sustained volcanism contributes to long-term warming (Deccan Traps, PETM). Water vapour injection (Hunga Tonga 2022) may cause temporary warming.", "explanation": "Structure: Global distribution by plate setting → Mechanism of magma generation at each → Ring of Fire dominance → Climate effects (cooling from SO₂ vs warming from CO₂/H₂O) → Indian examples (Deccan Traps, Barren Island).", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements about volcano types:\n1. Shield volcanoes are built by highly viscous lava and have steep slopes.\n2. Composite volcanoes are built by alternating layers of lava and pyroclastics.\n3. Cinder cones are the smallest and simplest type of volcano.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statements 2 and 3 are correct. Composite volcanoes have alternating lava/pyroclastic layers, and cinder cones are smallest/simplest. Statement 1 is wrong — shield volcanoes are built by LOW viscosity (basaltic) lava, giving them GENTLE slopes (2-10°). High viscosity gives steep slopes to stratovolcanoes.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about volcanic products:\n1. Pyroclastic flows are the most deadly volcanic hazard.\n2. Pahoehoe and Aa are types of basaltic lava flows.\n3. Volcanic ash can travel thousands of kilometres and disrupt aviation.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. Pyroclastic flows (100-700 km/h, 200-700°C) are the most lethal volcanic hazard. Pahoehoe (smooth) and Aa (rough) are both basaltic lava types. Volcanic ash is fine (<2 mm) and can be carried by winds across continents (Eyjafjallajökull 2010 disrupted European aviation for 6 days).",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements:\n1. Most volcanoes on Earth are found along the Ring of Fire.\n2. Hotspot volcanoes occur only at divergent plate boundaries.\n3. Subduction zones produce explosive eruptions because water lowers mantle melting point.\n4. Mid-ocean ridge volcanism is predominantly basaltic and effusive.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 3, and 4 are correct. ~75% of volcanoes are in Ring of Fire (1). Subduction introduces water → flux melting → intermediate/felsic magma → explosive (3). Mid-ocean ridges have basaltic effusive eruptions (4). Statement 2 is wrong — hotspots occur WITHIN plates, independent of boundaries (Hawaii is in middle of Pacific Plate).",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about India's volcanic features:\n1. Barren Island (Andaman) is India's only active volcano.\n2. Narcondam Island is classified as extinct.\n3. The Deccan Traps are the result of flood basalt volcanism.\n4. India has hot springs (Manikaran, Tattapani) indicating residual geothermal activity.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 3, and 4 are correct. Barren Island is India's only active volcano (1). Deccan Traps are flood basalts from 66 Ma (3). India has geothermal hot springs (4). Statement 2 is wrong — Narcondam is classified as DORMANT (not extinct) — it retains potential for future eruption.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Basaltic eruptions are generally non-explosive and produce shield volcanoes.\nReason (R): Basaltic magma has low silica content and low viscosity, allowing dissolved gases to escape easily without building pressure.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — basaltic eruptions are predominantly effusive (quiet lava flows forming broad shield volcanoes like Mauna Loa). R is correct and explains A — low silica (~50%) means low viscosity, so gases escape freely without explosive pressure buildup. This is the fundamental silica-viscosity-explosivity relationship.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): The 1991 eruption of Mt. Pinatubo caused a temporary decline in global temperatures.\nReason (R): The eruption injected massive amounts of SO₂ into the stratosphere, forming aerosols that reflected incoming solar radiation.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — Pinatubo caused ~0.5°C global cooling for about 2 years (1991-1993). R is correct and explains the mechanism — ~20 million tonnes of SO₂ formed sulphate aerosols in the stratosphere that reflected sunlight, reducing incoming solar radiation. This is the volcanic winter effect.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a correct association between magma composition and eruption style?",
+      "options": [{"label": "A", "text": "Basaltic magma — effusive eruption — shield volcano"}, {"label": "B", "text": "Andesitic magma — intermediate explosivity — composite volcano"}, {"label": "C", "text": "Rhyolitic magma — explosive eruption — caldera formation"}, {"label": "D", "text": "Basaltic magma — explosive eruption — stratovolcano"}],
+      "correct_option": "D",
+      "explanation": "D is incorrect — basaltic magma does NOT produce explosive eruptions forming stratovolcanoes. Basaltic magma is low viscosity, gas escapes easily, producing effusive eruptions and shield volcanoes. Stratovolcanoes are built by ANDESITIC to RHYOLITIC (intermediate to high silica) magma. A, B, and C are all correct associations.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a volcanic landform found in India?",
+      "options": [{"label": "A", "text": "Deccan Traps — flood basalt province in western/central India"}, {"label": "B", "text": "Barren Island — active volcanic island in Andaman Sea"}, {"label": "C", "text": "Mount Kailash — active stratovolcano in the Himalayas"}, {"label": "D", "text": "Narcondam — dormant volcanic island in Andaman Sea"}],
+      "correct_option": "C",
+      "explanation": "C is incorrect — Mount Kailash is NOT a volcano. It is a peak in the Kailash Range (Transhimalayas) formed by tectonic uplift of sedimentary/metamorphic rocks. The Himalayas are a collision zone, not a subduction zone — no volcanism occurs there. A, B, and D are all genuine volcanic features in India.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A volcanic eruption is described as producing enormous ash columns reaching 25 km height, devastating pyroclastic flows, and forming a caldera after the summit collapsed.\n\nBased on these characteristics, which type of eruption is this most likely?",
+      "options": [{"label": "A", "text": "Hawaiian (effusive, basaltic lava flows)"}, {"label": "B", "text": "Strombolian (mild explosions, incandescent fragments)"}, {"label": "C", "text": "Plinian (highly explosive, sustained eruption columns)"}, {"label": "D", "text": "Icelandic (fissure eruption, flood basalts)"}],
+      "correct_option": "C",
+      "explanation": "The description matches a Plinian eruption: sustained columns reaching 20-45 km (stratosphere), pyroclastic flows from column collapse, and caldera formation from magma chamber evacuation. Named after Pliny's description of Vesuvius 79 AD. Hawaiian = quiet lava; Strombolian = mild bursts; Icelandic = fissure flows.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A research paper states: 'The Deccan Traps eruptions released massive amounts of CO₂ and SO₂ over 500,000 years, potentially contributing to the end-Cretaceous mass extinction.'\n\nWhich of the following inferences can be drawn?\n1. The Deccan Traps are an example of Large Igneous Province (LIP) volcanism.\n2. Sustained volcanic CO₂ emissions can cause long-term global warming.\n3. The eruptions were caused by a single explosive event similar to a supervolcano.",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "1 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Inferences 1 and 2 are valid. Deccan Traps (500,000 km² basalt) are a classic Large Igneous Province (1). Sustained CO₂ from prolonged eruptions causes greenhouse warming (2). Inference 3 is invalid — the passage says 'over 500,000 years' (prolonged flood basalt eruptions), NOT a single explosive event. LIP eruptions are fundamentally different from supervolcanic explosions.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "An airline receives a volcanic ash advisory stating that ash from an Indonesian eruption is drifting toward Indian airspace at an altitude of 10-12 km.\n\nWhich of the following actions would be most appropriate?\n1. Reroute flights below 5 km altitude to avoid ash.\n2. Cancel flights through affected corridors until ash disperses.\n3. Ignore the advisory as volcanic ash only affects areas near the volcano.",
+      "options": [{"label": "A", "text": "1 only"}, {"label": "B", "text": "2 only"}, {"label": "C", "text": "1 and 2 only"}, {"label": "D", "text": "3 only"}],
+      "correct_option": "B",
+      "explanation": "Option 2 is most appropriate — volcanic ash can destroy jet engines (melts and re-solidifies on turbine blades), abrade windshields, and contaminate fuel systems. Rerouting below ash (1) may work in some cases but ash can exist at multiple altitudes and is difficult to detect visually. Option 3 is dangerously wrong — ash travels thousands of km (Eyjafjallajökull ash reached India-bound flights).",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Volcano) with List-II (Type):\n\nList-I: (a) Mauna Loa, (b) Mt. Fuji, (c) Parícutin, (d) Yellowstone\nList-II: (1) Caldera/Supervolcano, (2) Shield volcano, (3) Composite/Stratovolcano, (4) Cinder cone",
+      "options": [{"label": "A", "text": "a-2, b-3, c-4, d-1"}, {"label": "B", "text": "a-3, b-2, c-1, d-4"}, {"label": "C", "text": "a-2, b-4, c-3, d-1"}, {"label": "D", "text": "a-4, b-3, c-2, d-1"}],
+      "correct_option": "A",
+      "explanation": "Mauna Loa (Hawaii) — world's largest shield volcano, basaltic, gentle slopes (2). Mt. Fuji (Japan) — classic symmetric composite/stratovolcano at subduction zone (3). Parícutin (Mexico) — textbook cinder cone, grew from a cornfield in 1943 (4). Yellowstone — supervolcano caldera, 72×55 km, last VEI 8 eruption 640,000 years ago (1).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Eruption) with List-II (Global Impact):\n\nList-I: (a) Tambora 1815, (b) Pinatubo 1991, (c) Eyjafjallajökull 2010, (d) Krakatoa 1883\nList-II: (1) Grounded European aviation for 6 days, (2) Caused 'Year Without a Summer' globally, (3) Global cooling of 0.5°C for 2 years, (4) Explosion heard 4,800 km away; tsunamis killed 36,000",
+      "options": [{"label": "A", "text": "a-2, b-3, c-1, d-4"}, {"label": "B", "text": "a-3, b-2, c-4, d-1"}, {"label": "C", "text": "a-2, b-4, c-1, d-3"}, {"label": "D", "text": "a-4, b-3, c-2, d-1"}],
+      "correct_option": "A",
+      "explanation": "Tambora 1815 (VEI 7) — caused 1816 'Year Without Summer,' global crop failures (2). Pinatubo 1991 (VEI 6) — SO₂ aerosols caused 0.5°C global cooling (3). Eyjafjallajökull 2010 — ash disrupted European aviation (1). Krakatoa 1883 (VEI 6) — loudest sound in recorded history, tsunamis devastated coasts (4).",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about the Deccan Traps:\n1. They cover approximately 500,000 km² of western and central India.\n2. They were formed by fissure-type flood basalt eruptions over ~500,000 years.\n3. Their formation is linked to the Réunion hotspot over which India passed.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. Deccan Traps cover ~500,000 km² (1). They formed from repeated fissure eruptions of basaltic lava over ~500,000 years around 66 Ma (2). The eruptions are linked to the Réunion hotspot — as the Indian plate moved north over the hotspot, it produced the Deccan volcanism (3). Réunion Island (Indian Ocean) sits over the same hotspot today.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The term 'Ring of Fire' specifically refers to the belt of volcanoes and earthquake zones surrounding which ocean?",
+      "options": [{"label": "A", "text": "Atlantic Ocean"}, {"label": "B", "text": "Indian Ocean"}, {"label": "C", "text": "Pacific Ocean"}, {"label": "D", "text": "Arctic Ocean"}],
+      "correct_option": "C",
+      "explanation": "The Ring of Fire is the ~40,000 km horseshoe-shaped belt of intense volcanic and seismic activity encircling the Pacific Ocean. It follows the subduction zones where Pacific, Nazca, Cocos, and Philippine plates dive beneath surrounding continental plates. ~75% of active volcanoes and ~68% of earthquakes occur here.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}
