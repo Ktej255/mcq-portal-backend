@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Arid and Aeolian (Desert) Landforms. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), Mains questions, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Landforms and their Evolution)"
+  },
+  "title": "Arid and Aeolian (Desert) Landforms",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.0,
+  "display_order": 24,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "After running water, groundwater and glacial action, the student studies the work of wind, which becomes the dominant geomorphic agent in arid and semi-arid regions. This topic follows the other exogenic agents because aeolian processes are best understood by contrast with fluvial and glacial action, and because deserts remain relevant to India through the Thar and the national concern of desertification.",
+  "concept_checklist": [
+    "Wind (aeolian action) becomes the dominant geomorphic agent only in arid and semi-arid regions where vegetation is sparse and the surface is dry and loose.",
+    "Wind erosion works through deflation (lifting and removal of loose particles), abrasion (sand-blasting of rock surfaces), and attrition (particle-on-particle wear).",
+    "Wind transports sediment by suspension (fine dust), saltation (bouncing sand), and surface creep (rolling of coarse grains).",
+    "Wind erosional landforms include deflation hollows, ventifacts, mushroom rocks (gara), yardangs, zeugen, inselbergs and pediments.",
+    "Wind depositional landforms include ripples, sand dunes (barchans, seifs, transverse and longitudinal dunes) and vast sheets of wind-blown loess.",
+    "A barchan is a crescent-shaped dune whose horns point downwind, forming where sand is limited and wind blows from a single direction.",
+    "A seif (longitudinal) dune is a long ridge lying parallel to a strong prevailing wind, common in the Thar Desert of Rajasthan.",
+    "Running water, though rare, is a powerful sculptor of deserts, producing wadis, bajadas, playas (bolsons) and badlands during flash floods and sheet floods.",
+    "The Thar Desert of Rajasthan is India's largest desert and shows barchans, seifs, playas (locally called 'dhands') and loess-like deposits.",
+    "Desertification and land degradation are major current concerns in India, monitored by ISRO/SAC's Desertification and Land Degradation Atlas and addressed through the UNCCD framework."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "In the desert, the air itself becomes a chisel. Where rivers are absent and plants cannot hold the ground, the wind picks up sand and hurls it against rock day after day, carving mushrooms out of boulders and sculpting ridges out of plains. Then, in a single flash flood once a decade, water does more work in an hour than wind did in years. To read a desert landscape you must watch two artists at once — a patient wind and an impatient flood."},
+        {"type": "statgrid", "items": [
+          {"value": "~2 lakh km²", "label": "area of India's Thar Desert"},
+          {"value": "< 250 mm", "label": "annual rainfall defining a hot desert"},
+          {"value": "3", "label": "modes of wind transport"},
+          {"value": "Rajasthan", "label": "core of the Indian Thar"}
+        ]},
+        {"type": "heading", "text": "Wind — The Master Agent of Deserts"},
+        {"type": "para", "text": "In most of the world, running water shapes the land. But in **arid and semi-arid regions** — where rainfall is scanty, vegetation is sparse, and the surface is dry and loose — **wind (aeolian action)** becomes the dominant geomorphic agent. India's own example is the **Thar Desert** (Great Indian Desert), spread across western **Rajasthan** and parts of Gujarat, Punjab and Haryana. Here wind lifts, carries and drops sand to build the shifting dunes for which the region is famous."},
+        {"type": "para", "text": "Wind performs the same three tasks as a river: **erosion**, **transportation** and **deposition**. But wind is a far weaker and more selective agent than water. It can only lift **loose, dry, fine material**, so its power is greatest where there is no soil moisture or plant cover to bind the surface. In the **Thar**, the desert wind piles sand into **barchans** (crescent dunes) near Jaisalmer and long **seif** ridges aligned with the prevailing south-westerly winds."},
+        {"type": "para", "text": "The finest dust that wind carries can travel thousands of kilometres before settling as **loess** — a yellowish, fertile, wind-blown silt. Great loess deposits cover northern China; in the Indian subcontinent, loess-like wind-blown silts occur along the margins of the Thar and in the Potwar plateau region. Loess reminds us that a desert exports its dust far beyond its own boundary, and that Indian dust storms can carry Thar and Middle-Eastern sand across the Indo-Gangetic plains."},
+        {"type": "analogy", "text": "Think of the desert wind as a sandblaster in a workshop. It can only throw the fine grit lying loose on the floor, not the heavy blocks bolted down; it strikes hardest near the ground where the grit bounces; and it wears surfaces unevenly, cutting fastest at knee height. That is exactly why a wind-carved rock ends up narrow at the base and broad on top — a mushroom rock."},
+        {"type": "heading", "text": "Erosional vs Depositional Landforms"},
+        {"type": "compare", "title": "Two Families of Aeolian Landforms", "left": {"label": "Wind Erosional Landforms", "items": ["Deflation hollow — scooped-out basin", "Ventifact — wind-faceted pebble", "Mushroom rock (gara) — undercut boulder", "Yardang — streamlined rock ridge", "Zeugen — table-like ridge on soft/hard beds", "Inselberg — residual rock hill", "Pediment — gently sloping rock plain"]}, "right": {"label": "Wind Depositional Landforms", "items": ["Ripple marks — small sand waves", "Barchan — crescent dune, horns downwind", "Seif (longitudinal) dune — long ridge", "Transverse dune — ridge across the wind", "Star dune — many-armed dune", "Loess — sheet of wind-blown silt", "Sand sheet / erg — vast sand sea"]}},
+        {"type": "para", "text": "These landforms are not created by wind alone. In arid regions, **occasional but violent water action** produces its own family of landforms — **wadis** (dry stream channels), **bajadas** and **alluvial fans** at mountain feet, **playas** (temporary salt lakes in a **bolson** or enclosed basin), and **badlands** cut by gullies. The best deserts to understand, therefore, are shaped by the partnership of wind and rare, powerful water."},
+        {"type": "keyterms", "terms": [
+          {"term": "Deflation / Deflation hollow", "definition": "**Deflation** is the lifting and removal of loose dry particles by wind. Where it scoops out an enclosed basin, the result is a **deflation hollow** (e.g., the Qattara Depression)."},
+          {"term": "Ventifact", "definition": "A pebble or rock **faceted and polished** by wind-driven sand abrasion, often with sharp edges (dreikanter = three-faced ventifact)."},
+          {"term": "Yardang", "definition": "A **streamlined ridge** of alternating hard and soft rock carved parallel to the wind, with the blunt nose facing upwind."},
+          {"term": "Zeugen", "definition": "A **table- or mushroom-shaped ridge** where a resistant cap rock protects softer rock beneath; ridges lie at right angles to the wind."},
+          {"term": "Mushroom rock (Gara)", "definition": "A rock **undercut near its base** by near-surface sand abrasion, leaving a broad top on a narrow stem; called a **gara** or pedestal rock."},
+          {"term": "Inselberg", "definition": "An **isolated residual hill** of resistant rock rising abruptly from a plain in an arid region (German for 'island mountain')."},
+          {"term": "Pediment", "definition": "A **gently sloping bedrock surface** at the foot of a desert highland, produced mainly by sheet erosion and backwearing of slopes."},
+          {"term": "Playa / Bolson", "definition": "A **playa** is a temporary shallow salt lake in the centre of a **bolson** — an enclosed desert basin with interior drainage; leaves salt-encrusted flats when dry."},
+          {"term": "Barchan", "definition": "A **crescent-shaped dune** with a gentle windward slope and horns pointing **downwind**; forms with limited sand and a single wind direction."},
+          {"term": "Seif / Longitudinal dune", "definition": "A long, narrow **ridge of sand lying parallel to the prevailing wind**, common in the Thar; formed by strong winds from one general direction."},
+          {"term": "Loess", "definition": "A **thick deposit of fine, wind-blown silt**, yellowish and very fertile, laid down far from its desert source (e.g., loess plateau of China)."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Work of Wind",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "7", "page_start": 62, "page_end": 74, "external_url": "https://ncert.nic.in/textbook/pdf/kegy107.pdf", "text": "Chapter 7 'Landforms and their Evolution' explains how running water, groundwater, glaciers, waves and wind create distinctive erosional and depositional landforms. The final section deals with the work of wind in arid regions and notes that in deserts both wind and water act, though wind dominates.", "key_facts": ["In arid regions wind is the dominant geomorphic agent, but water action (though rare) is also very significant", "Wind erosion is mainly through deflation and abrasion", "Erosional wind landforms: pediments, playas, deflation hollows/caves, mushroom rocks, yardangs, inselbergs", "Depositional wind landforms: sand dunes (barchans, seif/longitudinal, transverse dunes) and loess"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 7"},
+        {"type": "points", "title": "Work of Wind (Aeolian Action)", "items": ["Wind is the dominant agent in **hot deserts**, but NCERT stresses that **water action is not absent** — flash floods do significant work", "Erosion by wind occurs mainly through **deflation** (removal of loose particles) and **abrasion** (sand-blasting)", "**Pediments and pediplains** form by erosion and backwearing of desert mountain fronts", "The **playa** is the lowest part of an interior-drainage basin (bolson) where salt-rich water gathers and evaporates"]},
+        {"type": "points", "title": "Erosional Landforms (NCERT)", "items": ["**Deflation hollows and caves** — basins and hollows scooped by removal of loose material", "**Mushroom, table and pedestal rocks** — differential abrasion near the ground undercuts the base", "**Yardangs** — streamlined ridges aligned with the wind", "**Inselbergs** — residual hills standing above pediplains"]},
+        {"type": "points", "title": "Depositional Landforms (NCERT)", "items": ["**Sand dunes** are the most characteristic depositional forms; their shape depends on sand supply and wind direction", "**Barchans** — crescent dunes with horns pointing downwind, formed with a single wind direction", "**Seif / longitudinal dunes** — long ridges parallel to the wind; **transverse dunes** lie across the wind", "**Loess** — accumulations of very fine, wind-transported silt deposited far from the source"]},
+        {"type": "para", "text": "NCERT is careful to correct a popular myth: deserts are **not** shaped by wind alone. It states that **water is a powerful agent even in deserts**, because when the rare rains come they fall as sudden **sheet floods** and **stream floods** over bare, unprotected ground, moving enormous quantities of material. The landforms of **pediments, bajadas and playas** are largely the work of this occasional running water, not of wind."},
+        {"type": "diagram", "id": "aeolian-landforms-overview", "caption": "Arid landscape: wind-carved mushroom rocks, yardangs and inselbergs on the erosional side; barchan and seif dunes and loess sheets on the depositional side; a playa in the basin centre."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC repeatedly lifts from NCERT Ch. 7: (1) the reminder that WATER, not just wind, shapes deserts, (2) how barchans differ from seif dunes and which way the horns point, (3) the meaning of deflation, playa and pediment, and (4) that loess is wind-DEPOSITED, not eroded. Read the dune diagrams carefully."},
+        {"type": "para", "text": "NCERT also notes that arid landforms evolve towards a **pediplain** — a wide, low plain formed by the coalescing of pediments as desert mountains retreat (backwearing). Residual **inselbergs** are the last remnants of the old highland, standing like islands above the pediplain."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Wind Action in Deserts",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "How Wind Erodes: Deflation, Abrasion, Attrition"},
+        {"type": "para", "text": "Wind erosion works through three distinct processes. **Deflation** is the lifting and blowing away of loose, dry, fine particles (dust and sand); where it hollows out an enclosed basin it forms a **deflation hollow** — the Qattara Depression in Egypt is the classic example, lying below sea level. **Abrasion (corrasion)** is the sand-blasting of rock surfaces by wind-driven grains — the true carving tool that shapes ventifacts, mushroom rocks and yardangs. **Attrition** is the wearing down of the sand grains themselves as they collide in transit, producing the well-rounded, frosted grains typical of desert sand."},
+        {"type": "callout", "tone": "insight", "title": "Why Mushroom Rocks Are Undercut", "text": "Sand is carried mostly within the lowest 1-2 metres of moving air, because heavy grains cannot rise high. So abrasion is concentrated **near the ground**. A standing rock is therefore blasted hardest at its base, leaving it narrow at the bottom and broad on top — a **mushroom rock (gara)**. The same near-ground concentration explains why yardangs and zeugen are undercut on their lower, softer beds."},
+        {"type": "heading", "text": "How Wind Transports: Suspension, Saltation, Surface Creep"},
+        {"type": "para", "text": "Wind moves its load in three ways depending on grain size. **Suspension** carries the finest dust and silt high into the air over long distances (this is what builds loess and drives dust storms). **Saltation** — from the Latin for 'leaping' — is the bouncing, hopping movement of sand-sized grains close to the surface; it is the dominant process in dune-building and moves the bulk of desert sand. **Surface creep** is the slow rolling and sliding of the coarsest grains along the ground, nudged by the impact of saltating grains."},
+        {"type": "compare", "title": "Wind Transport by Grain Size", "left": {"label": "Suspension & Saltation", "items": ["Suspension: fine dust/silt, carried high & far", "Builds loess; drives dust storms", "Saltation: sand grains, bouncing hops", "Confined to lowest 1-2 m of air", "Moves the bulk of dune sand"]}, "right": {"label": "Surface Creep", "items": ["Coarsest sand and small pebbles", "Rolls / slides along the ground", "Driven by impact of saltating grains", "Slowest mode of transport", "Leaves coarse lag on the surface (desert pavement)"]}},
+        {"type": "heading", "text": "The Role of Water in Arid Landforms"},
+        {"type": "para", "text": "The greatest misconception about deserts is that they are the work of wind alone. In fact, **running water is a powerful sculptor of arid landscapes**, precisely because the ground is bare. When rare, intense rain falls, it cannot soak into the sun-baked surface, so it runs off instantly as **sheet floods** (thin films of water over wide areas) and **stream floods** in channels. These carve **wadis** (steep-sided dry valleys that flow only after rain), deposit **alluvial fans** and coalescing **bajadas** at mountain feet, and pond in central **playas**. Where soft rock is dissected by countless gullies, intricate **badlands** form — India's **Chambal ravines** are a classic badland terrain."},
+        {"type": "callout", "tone": "why", "title": "Why Water Matters in a 'Wind' Topic", "text": "UPSC loves the paradox: the driest places show dramatic water-cut features. The reason is that arid surfaces lack the vegetation and soil that elsewhere absorb rainfall and slow runoff. So a desert cloudburst produces flash floods of extraordinary erosive power. Pediments, bajadas, playas and badlands are largely WATER-made, even though they lie in a 'wind' desert."},
+        {"type": "heading", "text": "Dune Dynamics: Barchan vs Seif and the Role of Wind Direction"},
+        {"type": "para", "text": "Dune shape is controlled by two factors: the **amount of sand available** and the **constancy of wind direction**. A **barchan** forms where sand supply is limited and the wind blows steadily from **one direction**; it is crescent-shaped with a gentle windward slope, a steep leeward slip face, and **horns pointing downwind**. The whole dune migrates downwind as sand is pushed up the gentle side and slides down the steep face. A **seif (longitudinal) dune** forms where a strong prevailing wind, occasionally deflected by cross-winds, drives sand into long ridges lying **parallel to the wind**. **Transverse dunes** form at right angles to the wind where sand is abundant."},
+        {"type": "callout", "tone": "insight", "title": "The Horn Test", "text": "Barchan horns always point in the direction the wind is blowing TOWARDS (downwind), because the thin edges of the crescent, holding less sand, advance faster than the thick centre. If you can see which way the horns point, you know the wind direction and the direction the whole dune is marching. This single fact answers most dune MCQs."},
+        {"type": "collapsible", "title": "Advanced: The Cycle of Erosion in Arid Regions (Davis and King)", "content": "W. M. Davis proposed an arid cycle of erosion in which desert mountains are progressively worn down and pediments extend backwards (backwearing) until only isolated inselbergs remain above a wide pediplain. L. C. King generalised this into the theory of PEDIPLANATION, arguing that in semi-arid climates slopes retreat parallel to themselves (parallel retreat / backwearing) rather than being lowered from the top (downwearing, as Davis argued for humid regions). The end product in both is a pediplain studded with inselbergs. UPSC has referenced pediplanation and the contrast between downwearing and backwearing."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Deserts & Desertification",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2019-2026)"},
+        {"type": "callout", "tone": "note", "title": "UNCCD COP14 at New Delhi & Land Degradation Neutrality", "text": "India hosted the **14th Conference of Parties (COP14) of the UN Convention to Combat Desertification (UNCCD)** at Greater Noida in 2019, which produced the **Delhi Declaration**. India committed to restoring **26 million hectares** of degraded land by 2030 and to achieving **Land Degradation Neutrality (LDN)**. UPSC frequently frames questions on the three Rio Conventions — UNCCD (desertification), UNFCCC (climate) and CBD (biodiversity)."},
+        {"type": "callout", "tone": "note", "title": "ISRO/SAC Desertification & Land Degradation Atlas", "text": "ISRO's **Space Applications Centre (SAC), Ahmedabad** publishes the **Desertification and Land Degradation Atlas of India**. Its updated editions show that roughly **29-30% of India's land area** is undergoing degradation/desertification, with Rajasthan, Gujarat, Maharashtra and Jharkhand among the worst affected. Water erosion, vegetation degradation and wind erosion are the leading processes — a favourite data point for prelims and mains."},
+        {"type": "callout", "tone": "note", "title": "Is the Thar Expanding or Greening?", "text": "There is an active scientific debate on the Thar. Some studies warn that arid conditions are creeping eastward (desert expansion driven by land degradation), while satellite and rainfall studies suggest parts of the western Thar have actually seen **increased monsoon rainfall and greening** in recent decades. This nuance — desertification of new areas even as an existing desert greens — is exactly the kind of paradox UPSC likes to test."},
+        {"type": "callout", "tone": "note", "title": "Aravalli Green Wall & the Great Green Wall Idea", "text": "Inspired by Africa's **Great Green Wall** across the Sahel, India has proposed an **Aravalli Green Wall** — a green belt roughly 1,400 km long and 5 km wide along the Aravalli range from Gujarat to Delhi — to check the eastward march of the Thar and to combat dust storms and land degradation in the NCR region. It links the desertification agenda with afforestation and air-quality goals."},
+        {"type": "callout", "tone": "note", "title": "Dust Storms & Sand-and-Dust Storm Early Warning", "text": "North-west India regularly suffers **dust storms** (locally 'andhi') in the pre-monsoon season, worsened by land degradation and long-range transport of dust from the Thar and West Asia. India participates in the **WMO Sand and Dust Storm Warning Advisory and Assessment System (SDS-WAS)**, and the IMD/regional centres issue dust-storm forecasts. Dust storms link deserts to air pollution, aviation safety and public health."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Aeolian Landforms",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "The horns of a barchan dune point into the wind (upwind).", "correct": "A barchan's horns point DOWNWIND — in the direction the wind is blowing towards. The gentle slope faces the wind (windward); the steep slip face is on the leeward side, and the thin horns advance ahead of the thick centre."},
+        {"type": "trap", "wrong": "Barchan and seif dunes are the same thing seen from different angles.", "correct": "They are different. A BARCHAN is a crescent-shaped dune transverse to a single-direction wind (horns downwind). A SEIF is a LONGITUDINAL dune — a long ridge lying PARALLEL to a strong prevailing wind. Barchans need limited sand; seifs form with strong, slightly variable winds."},
+        {"type": "trap", "wrong": "A yardang and a zeugen are basically identical wind-carved ridges.", "correct": "A YARDANG is a streamlined ridge carved in vertically-bedded soft and hard rock, aligned PARALLEL to the wind. A ZEUGEN is a table/mushroom-shaped ridge on HORIZONTALLY-bedded rock (hard cap over soft base), lying at RIGHT ANGLES to the wind. Different structure, different orientation."},
+        {"type": "trap", "wrong": "Loess is a landform produced by wind EROSION.", "correct": "Loess is a DEPOSITIONAL landform — a thick sheet of fine, wind-blown silt laid down (not eroded) far from its source. It is highly fertile. The great loess plateau of northern China is the type example."},
+        {"type": "trap", "wrong": "Deserts are shaped almost entirely by wind; water plays no real role.", "correct": "Running water is a powerful agent in deserts. Because the bare surface cannot absorb sudden rain, flash floods and sheet floods carve wadis, build bajadas and playas, and create badlands. NCERT explicitly stresses that water is significant even in arid regions."},
+        {"type": "trap", "wrong": "An inselberg and a pediment are the same feature.", "correct": "An INSELBERG is an isolated RESIDUAL HILL of resistant rock rising above a plain. A PEDIMENT is the gently sloping ROCK-CUT PLAIN at the foot of a desert highland. Inselbergs are the leftover highs; pediments (coalescing into a pediplain) are the eroded lows around them."},
+        {"type": "trap", "wrong": "A playa is a permanent freshwater lake in the desert.", "correct": "A playa is a TEMPORARY, shallow, usually SALT-rich lake occupying the centre of an interior-drainage basin (bolson). It fills briefly after rain and dries into a salt-encrusted flat. It is neither permanent nor fresh."},
+        {"type": "memory", "text": "BARCHAN = Both horns Aim in the direction the wind Rushes (downwind), Crescent shape. | SEIF = Straight, Extended, In-line with the Force of the wind (longitudinal). | YARDANG = parallel (Y for 'aligned'); ZEUGEN = across (Z for 'right angles'). | LOESS = Layer Of Extremely fine Silt Settled (deposited, not eroded)."}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2011, "question_text": "A geographic region has the following distinct characteristics:\n1. Warm and dry climate\n2. Mostly treeless vegetation with thorny scrub\n3. Occurrence of shifting sand dunes\nThe above features are the distinct characteristics of which one of the following regions?", "answer_text": "Hot desert (arid region such as the Thar)", "explanation": "Warm-dry climate, thorny treeless scrub and shifting sand dunes together describe a HOT DESERT such as the Thar. Shifting dunes (barchans/seifs) are the hallmark of aeolian deposition in arid regions; the thorny scrub is xerophytic vegetation adapted to water scarcity.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2023, "question_text": "Consider the following statements about wind action in arid regions:\n1. Deflation is the removal of loose particles by wind.\n2. A barchan is a longitudinal dune lying parallel to the prevailing wind.\n3. Loess is a deposit of wind-blown fine silt.\nWhich of the statements given above is/are correct?", "answer_text": "1 and 3 only", "explanation": "Statement 1 is correct — deflation is the lifting and removal of loose material. Statement 2 is WRONG — a barchan is a crescent-shaped TRANSVERSE dune with horns downwind; a longitudinal dune is a seif. Statement 3 is correct — loess is a wind-deposited silt sheet.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2022, "question_text": "Bring out the role of wind and water in shaping the landforms of arid and semi-arid regions. Also examine the causes and consequences of desertification in India.", "answer_text": "In arid regions wind (aeolian action) is the dominant agent, eroding through deflation, abrasion and attrition to produce deflation hollows, ventifacts, mushroom rocks, yardangs, zeugen and inselbergs, and depositing barchans, seifs, transverse dunes and loess. However, water is also a powerful agent: rare but intense sheet floods and stream floods over bare surfaces carve wadis and badlands and build alluvial fans, bajadas and playas. In India, desertification affects nearly 30% of land (ISRO/SAC Atlas) due to wind and water erosion, overgrazing, deforestation, faulty irrigation causing salinity/waterlogging, and climate change. Consequences include loss of agricultural productivity, migration, dust storms and biodiversity loss. Responses include the UNCCD/LDN commitments (COP14 Delhi Declaration, 26 million ha restoration by 2030), the proposed Aravalli Green Wall, watershed programmes and afforestation.", "explanation": "Mains answer structure: (1) wind processes and landforms, (2) water processes and landforms in deserts, (3) causes of Indian desertification (natural + anthropogenic), (4) consequences, (5) mitigation (UNCCD, LDN, Green Wall, ISRO Atlas data).", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding wind erosion in arid regions:\n1. Deflation is the removal of loose, dry particles by the wind.\n2. Abrasion is the sand-blasting of rock surfaces by wind-driven grains.\n3. Attrition is the wearing down of moving particles as they collide with one another.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. Deflation lifts and removes loose material (creating deflation hollows). Abrasion (corrasion) is the sand-blasting of rock, carving ventifacts and mushroom rocks. Attrition is the mutual collision and rounding of the transported grains themselves. Together they are the three modes of wind erosion.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about aeolian landforms:\n1. A mushroom rock is undercut at its base because sand abrasion is concentrated near the ground.\n2. A yardang is aligned at right angles to the prevailing wind.\n3. Loess is a wind-deposited landform.\n4. A playa is a permanent freshwater lake.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "B",
+      "explanation": "Statements 1 and 3 are correct — mushroom rocks are undercut because saltating sand hugs the ground, and loess is a depositional (wind-laid) silt sheet. Statement 2 is wrong — a yardang lies PARALLEL to the wind (a zeugen lies at right angles). Statement 4 is wrong — a playa is a temporary, usually salty lake. So two statements are correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements regarding deserts:\n1. Running water is completely absent as a geomorphic agent in hot deserts.\n2. Pediments, bajadas and playas are largely formed by the action of running water.\n3. The Thar Desert lies mainly in western Rajasthan.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "B",
+      "explanation": "Statement 1 is wrong — running water is NOT absent; rare flash floods and sheet floods are powerful agents in deserts. Statement 2 is correct — pediments, bajadas and playas are largely water-made. Statement 3 is correct — the Thar (Great Indian Desert) lies mainly in western Rajasthan.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about sand dunes:\n1. Barchans form where sand supply is limited and the wind blows from a single direction.\n2. The horns of a barchan point downwind.\n3. Seif dunes lie parallel to the prevailing wind.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. Barchans form with limited sand and a single-direction wind; their thin horns advance faster than the thick centre and point downwind; and seif (longitudinal) dunes are long ridges aligned parallel to a strong prevailing wind.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following stages of wind transport by the size of particle moved, from the finest to the coarsest:\n1. Surface creep\n2. Suspension\n3. Saltation\nSelect the correct sequence (finest to coarsest):",
+      "options": [{"label": "A", "text": "2 - 3 - 1"}, {"label": "B", "text": "1 - 3 - 2"}, {"label": "C", "text": "3 - 2 - 1"}, {"label": "D", "text": "2 - 1 - 3"}],
+      "correct_option": "A",
+      "explanation": "From finest to coarsest: SUSPENSION (2) carries the finest dust/silt high and far; SALTATION (3) bounces sand-sized grains near the ground; SURFACE CREEP (1) rolls the coarsest grains along the surface. Hence the order is 2-3-1.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following in the correct sequence in which an arid landscape is progressively reduced according to the pediplanation model:\n1. Wide pediplain with residual inselbergs\n2. Youthful desert highland with steep slopes\n3. Backwearing of slopes and extension of pediments\nSelect the correct order:",
+      "options": [{"label": "A", "text": "2 - 3 - 1"}, {"label": "B", "text": "1 - 2 - 3"}, {"label": "C", "text": "2 - 1 - 3"}, {"label": "D", "text": "3 - 2 - 1"}],
+      "correct_option": "A",
+      "explanation": "In the arid cycle (King's pediplanation), the sequence is: (2) a youthful desert highland with steep slopes, then (3) parallel retreat (backwearing) of slopes extending pediments, and finally (1) a wide pediplain from which only residual inselbergs project. So the order is 2-3-1.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): In a barchan dune, the horns point in the downwind direction.\nReason (R): The thin edges of the crescent, carrying less sand, migrate faster than the thicker central part of the dune.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — barchan horns point downwind. R is also correct and is the reason: the thin horns hold less sand and therefore advance faster than the bulky centre, so the crescent's tips stretch ahead in the downwind direction. R correctly explains A.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Wind-carved mushroom rocks (gara) are broader at the top and narrower at the base.\nReason (R): Wind carries most of its sand load high above the ground, so abrasion is strongest near the summit of a standing rock.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — mushroom rocks are broad on top and narrow at the base. R is incorrect — wind carries sand mostly LOW (within 1-2 m of the ground via saltation), so abrasion is strongest NEAR THE BASE, which is why the base is undercut. R states the opposite, so it is wrong.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Why do deserts, despite receiving very little rainfall, display dramatic water-cut landforms such as badlands, wadis and alluvial fans?",
+      "options": [{"label": "A", "text": "Because desert rocks are chemically weak and dissolve easily in the little rain that falls"}, {"label": "B", "text": "Because the bare, sun-baked surface cannot absorb sudden rain, so intense flash floods and sheet floods run off with great erosive power"}, {"label": "C", "text": "Because underground rivers surface only in deserts"}, {"label": "D", "text": "Because wind and water always act with equal force everywhere"}],
+      "correct_option": "B",
+      "explanation": "The correct cause is B — arid surfaces lack vegetation and soil that would normally absorb rainfall, so rare but intense rain runs off instantly as flash and sheet floods with enormous erosive power, cutting badlands and wadis and building fans. A misstates the mechanism (it is mechanical, not chemical). C is false. D is a vague generalisation.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A playa in the centre of a desert basin is typically covered with a crust of salt. What is the main reason for this?",
+      "options": [{"label": "A", "text": "Salt is blown in by the wind from the sea"}, {"label": "B", "text": "Interior drainage collects water with no outlet, and intense evaporation leaves dissolved salts behind"}, {"label": "C", "text": "Volcanic activity beneath the basin releases salt"}, {"label": "D", "text": "The salt is deposited directly by sand dunes"}],
+      "correct_option": "B",
+      "explanation": "B is correct — a playa lies in a bolson (interior-drainage basin) with no outlet to the sea. Water gathers there after rain, then evaporates rapidly in the arid heat, leaving behind the dissolved salts as a crust. A, C and D do not explain the salt crust; the mechanism is evaporation of interior-drainage water.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following best explains why wind becomes the dominant geomorphic agent in hot deserts but not in humid regions?",
+      "options": [{"label": "A", "text": "Wind blows faster in deserts than anywhere else on Earth"}, {"label": "B", "text": "Deserts have a dry, loose, unvegetated surface that the wind can easily lift, whereas moisture and plant cover bind the surface elsewhere"}, {"label": "C", "text": "Humid regions have no wind at all"}, {"label": "D", "text": "Desert rocks are magnetically attracted to the wind"}],
+      "correct_option": "B",
+      "explanation": "B is correct — wind dominates in deserts because the surface is dry, loose and unprotected by vegetation, so grains are easily entrained; in humid regions soil moisture and plant roots bind the surface and running water dominates. A is false (wind speed is not uniquely high in deserts). C is false. D is nonsense.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Landform) with List-II (Description):\n\nList-I: (a) Barchan, (b) Yardang, (c) Playa, (d) Loess\nList-II: (1) Streamlined rock ridge parallel to the wind, (2) Crescent dune with horns downwind, (3) Deposit of wind-blown fine silt, (4) Temporary salt lake in an interior basin",
+      "options": [{"label": "A", "text": "a-2, b-1, c-4, d-3"}, {"label": "B", "text": "a-1, b-2, c-3, d-4"}, {"label": "C", "text": "a-2, b-1, c-3, d-4"}, {"label": "D", "text": "a-3, b-1, c-4, d-2"}],
+      "correct_option": "A",
+      "explanation": "Barchan — crescent dune with horns downwind (2). Yardang — streamlined rock ridge parallel to the wind (1). Playa — temporary salt lake in an interior basin (4). Loess — deposit of wind-blown fine silt (3). Hence a-2, b-1, c-4, d-3.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Process/Term) with List-II (Meaning):\n\nList-I: (a) Deflation, (b) Saltation, (c) Surface creep, (d) Abrasion\nList-II: (1) Bouncing, hopping movement of sand grains near the ground, (2) Sand-blasting and wearing of rock surfaces, (3) Lifting and removal of loose particles by wind, (4) Rolling of the coarsest grains along the ground",
+      "options": [{"label": "A", "text": "a-3, b-1, c-4, d-2"}, {"label": "B", "text": "a-1, b-3, c-2, d-4"}, {"label": "C", "text": "a-3, b-4, c-1, d-2"}, {"label": "D", "text": "a-2, b-1, c-4, d-3"}],
+      "correct_option": "A",
+      "explanation": "Deflation — lifting and removal of loose particles (3). Saltation — bouncing/hopping movement of sand grains near the ground (1). Surface creep — rolling of the coarsest grains along the ground (4). Abrasion — sand-blasting and wearing of rock surfaces (2). Hence a-3, b-1, c-4, d-2.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The Great Indian Desert (Thar) is located mainly in which one of the following Indian states?",
+      "options": [{"label": "A", "text": "Gujarat"}, {"label": "B", "text": "Rajasthan"}, {"label": "C", "text": "Madhya Pradesh"}, {"label": "D", "text": "Punjab"}],
+      "correct_option": "B",
+      "explanation": "The Thar Desert lies mainly in western RAJASTHAN, extending into parts of Gujarat, Punjab and Haryana. Its core — around Jaisalmer, Barmer and Bikaner — is in Rajasthan, which is why B is correct. Gujarat and Punjab hold only marginal extensions; Madhya Pradesh is not a Thar state.",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which Indian organisation prepares the 'Desertification and Land Degradation Atlas of India' used to monitor the spread of degraded land?",
+      "options": [{"label": "A", "text": "Space Applications Centre (SAC), ISRO"}, {"label": "B", "text": "Geological Survey of India"}, {"label": "C", "text": "Survey of India"}, {"label": "D", "text": "Central Ground Water Board"}],
+      "correct_option": "A",
+      "explanation": "A is correct — ISRO's Space Applications Centre (SAC), Ahmedabad, prepares the Desertification and Land Degradation Atlas of India using satellite remote sensing. GSI deals with geology/minerals, Survey of India with topographic mapping, and CGWB with groundwater — none of these produces the desertification atlas.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

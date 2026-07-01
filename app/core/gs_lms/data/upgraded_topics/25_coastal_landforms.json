@@ -1,0 +1,274 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Coastal Landforms and Processes. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), Mains/Prelims PYQs, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Landforms and their Evolution)"
+  },
+  "title": "Coastal Landforms and Processes",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.0,
+  "display_order": 25,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "The coast is the meeting zone of land, sea, and air, and the sea (through waves, tides, and currents) is a major exogenic agent of gradation. Studied after fluvial, glacial, arid, and karst landforms, coastal geomorphology completes the survey of the agents that sculpt the land and directly connects to the hazards, ecology, and economy of India's 7,500 km coastline.",
+  "concept_checklist": [
+    "Waves are the dominant agent of coastal erosion and deposition, assisted by tides, currents, and winds acting on the shore zone.",
+    "Wave erosion works through hydraulic action, abrasion (corrasion), attrition, and solution (corrosion), just as in a river but concentrated at the wave base.",
+    "Erosional coastal landforms include sea cliffs, wave-cut platforms, sea caves, sea arches, stacks, stumps, and headlands with bays.",
+    "Depositional coastal landforms include beaches, spits, bars, tombolos, lagoons, and barrier islands, all built from sediment moved by longshore drift.",
+    "Longshore drift is the zig-zag transport of sediment along a coast, caused by waves approaching the shore at an angle.",
+    "An emergent coastline is formed by a fall in sea level or land uplift and is typically straight with raised beaches, as along much of India's east coast.",
+    "A submergent coastline is formed by a rise in sea level or land subsidence and is typically indented with rias and drowned valleys, as along parts of India's west coast.",
+    "A lagoon is a shallow water body separated from the sea by a bar or spit, with Chilika (Odisha) being the largest coastal lagoon in India.",
+    "Coral coasts (fringing reefs, barrier reefs, and atolls) form in warm, shallow, clear tropical seas, as in the Gulf of Mannar and Lakshadweep.",
+    "Human activity, sea-level rise, cyclones, and the Coastal Regulation Zone (CRZ) framework make coastal management a live current-affairs and Mains theme."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Stand on Marina Beach in Chennai at dawn and you are watching two titans wrestle: the restless sea trying to tear the land down, and the same sea patiently building it back up grain by grain. Every wave that crashes is doing geology in real time. The cliffs, caves, and stacks it carves, and the beaches, spits, and bars it heaps up, are the visible score of a battle that never ends. Learn to read the coast and you can tell, at a glance, whether the sea here is winning or losing."},
+        {"type": "statgrid", "items": [
+          {"value": "~7,500 km", "label": "length of India's coastline"},
+          {"value": "1,100 km²", "label": "area of Chilika lagoon (India's largest)"},
+          {"value": "2", "label": "coast types: emergent & submergent"},
+          {"value": "13", "label": "coastal states & UTs of India"}
+        ]},
+        {"type": "heading", "text": "What Shapes a Coast?"},
+        {"type": "para", "text": "The coast is the narrow zone where land, sea, and atmosphere meet. Its landforms are produced mainly by **waves**, assisted by **tides**, **currents**, and **winds**. Like a river, the sea both **erodes** (tearing the land down) and **deposits** (building the land up). Where wave energy is high, erosional forms dominate; where it is low and sediment is plentiful, depositional forms grow. India shows both faces: the wave-battered rocky headlands of the **Konkan and Malabar (west) coast** and the smooth, sandy stretches of the **Coromandel (east) coast** including **Marina Beach, Chennai** — one of the longest urban beaches in the world."},
+        {"type": "analogy", "text": "Think of the sea as a sculptor working on a soft stone wall. The chisel (waves) chips away hard rock into cliffs and caves, while the debris is swept aside and piled into ridges (beaches and spits) a little further along. The same tool that destroys in one place builds in another."},
+        {"type": "heading", "text": "Erosional Landforms"},
+        {"type": "para", "text": "Where waves attack a rocky shore, they undercut the base to form a **sea cliff**. Continued erosion leaves a gently sloping **wave-cut platform** at the cliff foot. Along lines of weakness, waves hollow out a **sea cave**; when a cave is cut right through a headland it becomes a **sea arch**; when the arch roof collapses, an isolated pillar called a **sea stack** is left; and when the stack is worn down to a low stump it becomes a **stump**. Such forms are well seen along the rocky **Gulf of Kachchh** and parts of the western coast."},
+        {"type": "heading", "text": "Depositional Landforms"},
+        {"type": "para", "text": "Where sediment accumulates, the sea builds a **beach** (a ridge of sand and shingle). Sediment moved along the coast by **longshore drift** can grow a finger-like **spit** projecting into the sea, or a **bar** sealing off a bay. A bar linking an island to the mainland is a **tombolo**, and a shallow water body cut off behind a bar is a **lagoon** — the **Chilika lagoon in Odisha** is India's largest coastal lagoon. Long, detached ridges of sand parallel to the shore are **barrier islands**, well developed off the Odisha–Andhra coast."},
+        {"type": "compare", "title": "Erosional vs Depositional Coastal Landforms", "left": {"label": "Erosional (sea tears down)", "items": ["Sea cliff & wave-cut platform", "Sea cave, arch, stack, stump", "Headlands and bays", "High wave energy, hard rock", "Typical of rocky west coast"]}, "right": {"label": "Depositional (sea builds up)", "items": ["Beach (sand and shingle)", "Spit, bar, tombolo", "Lagoon (e.g. Chilika)", "Barrier islands", "Low energy, plentiful sediment"]}},
+        {"type": "callout", "tone": "insight", "title": "Key Insight", "text": "The same coast can show BOTH sets of landforms. Waves erode exposed **headlands** and carry the sediment into sheltered **bays**, where it is deposited as beaches. Over time this **straightens** an irregular coast — erosion trims the projections, deposition fills the recesses."},
+        {"type": "keyterms", "terms": [
+          {"term": "Wave-cut platform", "definition": "Gently sloping rocky bench at the foot of a **sea cliff**, exposed at low tide, left behind as the cliff retreats."},
+          {"term": "Sea cliff", "definition": "Steep rock face cut by wave undercutting; retreats landward as it is eroded."},
+          {"term": "Sea cave / arch / stack / stump", "definition": "An erosional sequence: a **cave** cut into a headland becomes an **arch**, whose collapse leaves a **stack**, later reduced to a **stump**."},
+          {"term": "Beach", "definition": "Accumulation of sand and shingle in the shore zone, e.g. **Marina Beach, Chennai**."},
+          {"term": "Spit", "definition": "A ridge of sediment attached to land at one end and projecting into the sea, built by **longshore drift**."},
+          {"term": "Bar", "definition": "A ridge of sediment lying across a bay or river mouth; may partly or wholly enclose water behind it."},
+          {"term": "Tombolo", "definition": "A bar or spit that connects an offshore island to the mainland."},
+          {"term": "Lagoon", "definition": "Shallow water body separated from the open sea by a bar or spit, e.g. **Chilika (Odisha)**, **Pulicat (AP–TN)**."},
+          {"term": "Barrier island", "definition": "A long, narrow, detached ridge of sand running parallel to the coast, separated from land by a lagoon."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Work of Sea Waves",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "7", "page_start": 61, "page_end": 70, "external_url": "https://ncert.nic.in/textbook/pdf/kegy107.pdf", "text": "Chapter 7 'Landforms and their Evolution' describes the work of sea waves and the erosional and depositional coastal landforms they create, alongside the action of running water, groundwater, glaciers, and winds.", "key_facts": ["Waves, tides, currents and winds are the geomorphic agents of the coast", "High-energy rocky coasts show erosional forms; low-energy sediment-rich coasts show depositional forms", "Erosional forms: cliffs, wave-cut terraces, caves, arches, stacks, bays and headlands", "Depositional forms: beaches, bars, barrier bars, spits, and lagoons", "Emergent coasts (uplift/sea-level fall) contrast with submergent coasts (subsidence/sea-level rise)"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 7"},
+        {"type": "points", "title": "Coastal Erosional Landforms (NCERT)", "items": ["**Sea cliffs** formed by wave undercutting of steep rocky shores", "**Wave-cut terraces / platforms** left at the base of retreating cliffs", "**Sea caves** hollowed along joints and weak zones, enlarging into **arches** and then **stacks**", "**Bays and headlands** produced by differential erosion of hard and soft rock"]},
+        {"type": "points", "title": "Coastal Depositional Landforms (NCERT)", "items": ["**Beaches** of sand and shingle in the shore zone", "**Bars and barrier bars** built offshore parallel to the coast", "**Spits** growing across bays from headlands", "**Lagoons** enclosed behind bars and spits"]},
+        {"type": "para", "text": "NCERT stresses that **wave action** is the chief force shaping the coast, and that whether a stretch of coast is dominated by **erosion** or **deposition** depends on wave energy, the configuration of the shore, and the supply of sediment. It also distinguishes **high, rocky coasts** (erosion-dominated) from **low, sedimentary coasts** (deposition-dominated), and links the overall shape of a coast to whether it is **emergent** or **submergent**."},
+        {"type": "diagram", "id": "sea-cave-arch-stack-stump", "caption": "The erosional sequence along a headland: sea cave enlarges into an arch; the arch collapses to leave a stack; the stack is reduced to a stump."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC repeatedly draws on this chapter for: (1) the **cave–arch–stack–stump** sequence, (2) the distinction between **emergent and submergent** coasts, and (3) matching depositional forms (spit, bar, tombolo, lagoon) to their definitions. Learn these three clusters cold — they are almost guaranteed value from Chapter 7."},
+        {"type": "para", "text": "The chapter also notes that many coastal forms are **transitional** — a spit can grow into a bar, a bar can enclose a lagoon, and a lagoon can silt up into a coastal plain. This progression from open sea to enclosed, infilled land is a favourite theme for statement-based questions."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Coastal Processes & Coast Types",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "How Waves Do Their Work"},
+        {"type": "para", "text": "A wave is energy moving through water; when it breaks against the shore, that energy is spent eroding and transporting rock. Wave erosion operates through four processes: **hydraulic action** (the sheer force of water and compressed air smashing into cracks), **abrasion / corrasion** (waves hurling sand and pebbles like sandpaper against the rock — the most effective process), **attrition** (the load itself being ground down into ever finer particles), and **solution / corrosion** (chemical dissolving of soluble rocks such as limestone by seawater)."},
+        {"type": "compare", "title": "Wave Erosion vs Wave Deposition", "left": {"label": "Erosion (destructive waves)", "items": ["Strong backwash, tall steep waves", "Hydraulic action & abrasion dominate", "Removes sediment from beach", "Cuts cliffs, caves, arches, stacks", "High-energy, exposed coasts"]}, "right": {"label": "Deposition (constructive waves)", "items": ["Strong swash, low gentle waves", "Sediment carried up and left behind", "Builds up beach material", "Forms beaches, spits, bars", "Low-energy, sheltered coasts"]}},
+        {"type": "heading", "text": "Longshore Drift — The Coastal Conveyor Belt"},
+        {"type": "para", "text": "Because waves usually approach the shore at an **angle** (driven by the prevailing wind), the **swash** carries sediment up the beach diagonally, while the **backwash** drags it straight back down under gravity. Repeated, this produces a **zig-zag** net movement of material along the coast called **longshore drift** (or littoral drift). It is the conveyor belt that supplies sand to build **spits** and **bars** down-drift, and its interruption by ports and groynes is a leading cause of engineered coastal erosion in India."},
+        {"type": "callout", "tone": "why", "title": "Why Spits Curve at Their Ends", "text": "A spit grows in the direction of longshore drift, but where the coast changes direction the spit projects into open water. Waves refracting around the tip and occasional storms from other directions push sediment landward, so the free end **hooks** or **recurves** into the sheltered bay — producing the classic curved-hook spit."},
+        {"type": "heading", "text": "Emergent vs Submergent Coastlines"},
+        {"type": "para", "text": "Coasts are classified by whether the land–sea relationship shows **emergence** or **submergence**. An **emergent coastline** results from a **fall in sea level or uplift of land**; it is typically **smooth and straight**, backed by **raised beaches**, elevated wave-cut platforms, and coastal plains. A **submergent coastline** results from a **rise in sea level or subsidence of land**; it is typically **highly indented**, with **rias** (drowned river valleys), fjords, and estuaries. India's **east coast (Coromandel)** is broadly an **emergent** coast — straight, with wide deltas, lagoons like Chilika and Pulicat, and offshore bars — while much of the **west coast (Konkan–Malabar)** shows **submergent** features such as drowned valleys, natural harbours (Mumbai, Marmagao), and cliffed shores."},
+        {"type": "compare", "title": "Emergent vs Submergent Coasts (India)", "left": {"label": "Emergent — East Coast", "items": ["Land uplift / sea-level fall", "Straight, smooth outline", "Raised beaches, wave-cut terraces", "Wide deltas, lagoons, offshore bars", "Coromandel: Chilika, Pulicat, deltas"]}, "right": {"label": "Submergent — West Coast", "items": ["Land subsidence / sea-level rise", "Highly indented, irregular", "Rias, estuaries, drowned valleys", "Natural deep-water harbours", "Konkan–Malabar: Mumbai, Marmagao"]}},
+        {"type": "callout", "tone": "insight", "title": "Nuance UPSC Loves", "text": "The east-coast-emergent / west-coast-submergent rule is a **useful generalisation, not an absolute**. The west coast also has emergent stretches (the Malabar coast has raised features and the Kerala backwaters are lagoon-like), and the concept of a **neutral / compound coastline** exists. UPSC often tests whether you treat the rule too rigidly."},
+        {"type": "heading", "text": "Coral Coasts"},
+        {"type": "para", "text": "In warm (>20°C), shallow, clear, sediment-free tropical seas, colonies of **coral polyps** secrete calcium carbonate to build **reefs**. Three types are recognised: **fringing reefs** (attached to the shore), **barrier reefs** (separated from land by a lagoon), and **atolls** (ring-shaped reefs enclosing a lagoon, marking a subsided volcanic island — Darwin's subsidence theory). India's coral coasts include the **Gulf of Mannar** and **Gulf of Kachchh** (fringing reefs), the **Andaman & Nicobar Islands**, and the **Lakshadweep atolls**. Coral reefs are highly sensitive to warming and are prone to **bleaching**."},
+        {"type": "collapsible", "title": "Advanced: How Does an Indented Coast Straighten Over Time?", "content": "On an irregular coast, wave energy is concentrated on the protruding **headlands** by wave refraction and dispersed in the recessed **bays**. So headlands are eroded (forming cliffs, caves, arches, stacks) while bays receive the eroded sediment as **bay-head beaches**. Over long periods the headlands retreat and the bays fill, so the coastline becomes progressively **smoother and straighter** — a natural tendency towards an equilibrium, graded coast."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Coasts",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments and Policy (2023-2026)"},
+        {"type": "callout", "tone": "note", "title": "Coastal Erosion Along India's Coastline (NCCR)", "text": "The **National Centre for Coastal Research (NCCR)**, Chennai, under the Ministry of Earth Sciences, monitors shoreline change along India's ~7,500 km coast. Its assessments report that roughly **one-third of the mainland coast is under erosion**, with states like **Odisha, Kerala, West Bengal, and Tamil Nadu** among the worst affected. Causes include reduced sediment supply from dammed rivers, port and groyne construction interrupting longshore drift, and sea-level rise — a classic Mains linkage of geomorphology with human intervention."},
+        {"type": "callout", "tone": "note", "title": "Sea-Level Rise and Sinking Deltas", "text": "Global **sea-level rise** (IPCC AR6) threatens low-lying Indian deltas and the **Sunderbans**, where several islands have already been lost and populations displaced. **Delta subsidence** (compaction worsened by reduced sediment from upstream dams and groundwater extraction) means the relative rise is faster than the global average, endangering the **Ganga–Brahmaputra**, **Godavari**, and **Krishna** deltas. This is a high-value climate-and-geography intersection theme."},
+        {"type": "callout", "tone": "note", "title": "Coastal Regulation Zone (CRZ) Framework", "text": "The **CRZ Notification** (under the Environment Protection Act, latest comprehensive version 2019) regulates development along the coast, dividing it into zones (CRZ-I ecologically sensitive, CRZ-II developed, CRZ-III rural, CRZ-IV water area). It aims to balance **coastal ecology, livelihoods of fishing communities, and development**. Debates over relaxing CRZ norms for tourism and infrastructure make it a recurring Prelims and Mains topic."},
+        {"type": "callout", "tone": "note", "title": "Blue Economy and Coastal Resources", "text": "India's draft **Blue Economy policy** seeks to harness ocean and coastal resources — fisheries, ports, shipping, tourism, offshore energy, and deep-sea minerals (**Deep Ocean Mission**) — for sustainable growth. Coastal geomorphology underpins port siting, dredging, and shoreline protection, tying physical geography directly to economic policy."},
+        {"type": "callout", "tone": "note", "title": "Mangroves as Natural Coastal Protection", "text": "**Mangroves** (as in the **Sunderbans**, **Bhitarkanika**, and Gulf of Kachchh) act as natural bio-shields, dissipating wave and cyclone energy, trapping sediment, and sheltering fisheries. The **MISHTI scheme (2023)** promotes mangrove restoration along the coast. Their loss increases exposure to **cyclones** (e.g. Amphan 2020, Biparjoy 2023), which cause storm surges, coastal flooding, and rapid shoreline change — linking ecology, disaster management, and geomorphology."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Coastal Landforms",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "An emergent coastline is formed by a rise in sea level", "correct": "It is the OPPOSITE — an **emergent** coast forms by a FALL in sea level or UPLIFT of land, giving a straight coast with raised beaches. A RISE in sea level or subsidence gives a **submergent**, indented coast."},
+        {"type": "trap", "wrong": "India's west coast is emergent and the east coast is submergent", "correct": "It is the reverse (broadly): the **east coast (Coromandel) is largely emergent** — straight, with deltas and lagoons; much of the **west coast (Konkan–Malabar) is submergent** — indented, with drowned valleys and natural harbours."},
+        {"type": "trap", "wrong": "A spit, a bar, and a tombolo are the same depositional feature", "correct": "They differ: a **spit** is attached to land at ONE end and projects into the sea; a **bar** lies ACROSS a bay or mouth (often enclosing a lagoon); a **tombolo** connects an offshore ISLAND to the mainland."},
+        {"type": "trap", "wrong": "A lagoon is a landform created directly by wave erosion", "correct": "A **lagoon** is a DEPOSITIONAL setting — a shallow water body cut off from the sea by a **bar or spit** (deposition). Chilika and Pulicat are lagoons enclosed behind bars, not erosional hollows."},
+        {"type": "trap", "wrong": "A sea stack forms before a sea arch in the erosional sequence", "correct": "The order is cave → **arch** → **stack** → stump. A **cave** is cut, enlarges into an **arch**, the arch roof collapses to leave a **stack**, which is finally worn down to a **stump**."},
+        {"type": "trap", "wrong": "Longshore drift moves sediment straight out to sea, away from the coast", "correct": "**Longshore drift** moves sediment in a zig-zag path ALONG the coast (parallel to shore), because waves approach at an angle (swash) and backwash returns straight down-slope. It builds spits and bars down-drift."},
+        {"type": "trap", "wrong": "Atolls, barrier reefs, and fringing reefs are unrelated coral forms with no growth link", "correct": "Darwin's **subsidence theory** links them as stages: a **fringing reef** around a volcanic island becomes a **barrier reef** as the island subsides, and finally an **atoll** (ring reef with lagoon) after the island sinks below the sea."},
+        {"type": "memory", "text": "Erosion sequence: 'Cats Are Sneaky Stalkers' = Cave → Arch → Stack → Stump. | Coast type: 'EmErgEnt = East, EvEn (straight)' vs 'Submergent = Sinking, Serrated (indented) — West coast'. | Depositional trio: Spit points OUT, Bar lies ACROSS, Tombolo TIES an island."}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2021, "question_text": "Consider the following pairs of coastal landforms and their nature:\n1. Sea stack — Erosional landform\n2. Tombolo — Depositional landform\n3. Lagoon — Erosional landform\nWhich of the pairs given above is/are correctly matched?", "answer_text": "B", "explanation": "Pairs 1 and 2 are correct: a sea stack is erosional (an isolated pillar left after an arch collapses) and a tombolo is depositional (a bar joining an island to the mainland). Pair 3 is wrong — a lagoon is a DEPOSITIONAL setting, enclosed behind a bar or spit, not an erosional landform. Hence only 1 and 2 are correct.", "question_type": "MATCH_THE_FOLLOWING", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2019, "question_text": "Chilika Lake, one of the largest coastal lagoons in India, is best associated with which of the following geomorphic settings?", "answer_text": "A lagoon separated from the Bay of Bengal by a sand bar/spit along an emergent coast", "explanation": "Chilika (Odisha) is a brackish coastal lagoon on the emergent east coast, separated from the Bay of Bengal by a long sand bar/spit built by longshore drift. It illustrates a classic depositional coastal environment and is also a Ramsar wetland of international importance.", "question_type": "FACTUAL", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2022, "question_text": "Distinguish between emergent and submergent coastlines with suitable examples, and explain why the eastern and western coasts of India differ in their coastal landforms.", "answer_text": "An emergent coastline results from a relative fall in sea level (land uplift or sea-level fall) and is typically straight and smooth, backed by raised beaches, wave-cut terraces, coastal plains, lagoons and offshore bars. A submergent coastline results from a relative rise in sea level (land subsidence or sea-level rise) and is typically indented, with rias (drowned valleys), estuaries and natural harbours. India's EAST coast (Coromandel) is broadly emergent — straight, with the wide Godavari, Krishna and Kaveri deltas, lagoons such as Chilika and Pulicat, and offshore bars/barrier islands. Much of the WEST coast (Konkan–Malabar) is submergent — indented, cliffed, with drowned valleys and deep natural harbours (Mumbai, Marmagao) and the Kerala backwaters. The contrast arises from differing tectonic history (faulted, subsided western margin vs stable, gently sloping eastern margin), sediment supply from large east-flowing peninsular rivers, and relative sea-level change.", "explanation": "Mains answer structure: define emergence vs submergence → list characteristic landforms of each → apply to India's east (emergent) and west (submergent) coasts with named examples → explain causes (tectonics, sediment, sea-level change). Note the generalisation is not absolute (west coast has emergent stretches too).", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding coastal erosional landforms:\n1. A wave-cut platform is left at the base of a retreating sea cliff.\n2. A sea stack is formed when the roof of a sea arch collapses.\n3. A lagoon is an erosional landform carved by wave abrasion.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — a wave-cut platform is the gently sloping bench left as a cliff retreats. Statement 2 is correct — a stack is an isolated pillar left after an arch collapses. Statement 3 is wrong — a lagoon is a DEPOSITIONAL setting, a water body enclosed behind a bar or spit, not an erosional landform. Hence only 1 and 2 are correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about depositional coastal landforms:\n1. A spit is attached to the land at one end and projects into the sea.\n2. A tombolo connects an offshore island to the mainland.\n3. A bar can enclose a body of water to form a lagoon.\n4. Barrier islands run perpendicular to the coastline.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2 and 3 are correct — a spit is land-attached at one end, a tombolo ties an island to the mainland, and a bar can enclose a lagoon. Statement 4 is wrong — barrier islands run PARALLEL to the coastline, not perpendicular. Hence three statements are correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about India's coastlines:\n1. The east coast is broadly an emergent coastline with wide deltas and lagoons.\n2. The west coast is broadly a submergent coastline with natural harbours and drowned valleys.\n3. Chilika and Pulicat are lagoons located along the east coast.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. The east coast (Coromandel) is broadly emergent — straight, with the Godavari/Krishna/Kaveri deltas and lagoons. The west coast (Konkan–Malabar) is broadly submergent — indented, with natural harbours (Mumbai, Marmagao) and drowned valleys. Chilika (Odisha) and Pulicat (AP–TN border) are both east-coast lagoons.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements regarding wave erosion processes:\n1. Hydraulic action is the force of water and compressed air breaking rock along cracks.\n2. Attrition is the wearing down of the sediment load into finer particles.\n3. Corrosion (solution) is the mechanical hurling of pebbles against the cliff.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — hydraulic action is the sheer force of water and trapped, compressed air. Statement 2 is correct — attrition grinds the load into finer particles. Statement 3 is wrong — corrosion (solution) is CHEMICAL dissolving of soluble rock; the mechanical hurling of pebbles against the rock is ABRASION (corrasion). Hence only 1 and 2 are correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following stages in the erosional evolution of a headland in the correct sequence:\n1. Sea arch\n2. Sea cave\n3. Stump\n4. Sea stack\nSelect the correct chronological order:",
+      "options": [{"label": "A", "text": "2 - 1 - 4 - 3"}, {"label": "B", "text": "1 - 2 - 3 - 4"}, {"label": "C", "text": "2 - 4 - 1 - 3"}, {"label": "D", "text": "1 - 2 - 4 - 3"}],
+      "correct_option": "A",
+      "explanation": "The correct sequence is Sea cave (2) → Sea arch (1) → Sea stack (4) → Stump (3). Waves first hollow a cave in a headland; the cave is cut through to form an arch; the arch roof collapses leaving an isolated stack; the stack is finally worn down to a low stump. Hence 2-1-4-3.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following coral reef features in the correct order of development according to Darwin's subsidence theory, as a volcanic island gradually sinks:\n1. Barrier reef\n2. Fringing reef\n3. Atoll\nSelect the correct chronological order:",
+      "options": [{"label": "A", "text": "2 - 1 - 3"}, {"label": "B", "text": "1 - 2 - 3"}, {"label": "C", "text": "3 - 1 - 2"}, {"label": "D", "text": "2 - 3 - 1"}],
+      "correct_option": "A",
+      "explanation": "Per Darwin's subsidence theory the order is Fringing reef (2) → Barrier reef (1) → Atoll (3). A fringing reef grows around a volcanic island; as the island subsides, a lagoon opens between shore and reef making it a barrier reef; when the island sinks fully below sea level a ring-shaped atoll enclosing a lagoon remains. Hence 2-1-3.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): A submergent coastline is generally highly indented, with rias, estuaries and natural harbours.\nReason (R): A submergent coastline is formed by a relative rise in sea level that drowns former river valleys.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — submergent coasts are indented with rias (drowned valleys), estuaries, and deep natural harbours. R is correct — a relative rise in sea level (or land subsidence) drowns the lower parts of river valleys, and this drowning IS precisely why the coast becomes indented. R correctly explains A.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Marina Beach in Chennai lies along a broadly emergent coastline.\nReason (R): An emergent coastline is formed by the subsidence of land beneath a rising sea.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "C",
+      "explanation": "A is correct — Marina Beach lies on the Coromandel (east) coast, which is broadly emergent (straight, sandy, with wide beaches). R is incorrect — an EMERGENT coast is formed by a FALL in sea level or UPLIFT of land, NOT by subsidence beneath a rising sea (that would produce a submergent coast). Hence A is correct but R is wrong.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which of the following is NOT a correct cause-and-effect relationship in coastal geomorphology?",
+      "options": [{"label": "A", "text": "Waves approaching the shore at an angle cause longshore drift of sediment along the coast"}, {"label": "B", "text": "Undercutting of a steep rocky shore by waves causes the formation of a sea cliff"}, {"label": "C", "text": "A rise in relative sea level causes the formation of raised beaches on an emergent coast"}, {"label": "D", "text": "Deposition of sediment across a bay by longshore drift causes the formation of a bar"}],
+      "correct_option": "C",
+      "explanation": "Option C is the INCORRECT relationship (and hence the answer). Raised beaches are features of an EMERGENT coast produced by a FALL in relative sea level (or uplift), not a RISE. A rise in sea level produces submergent features. Options A, B and D are all correctly stated cause-effect links.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A newly constructed port breakwater on an Indian coast has led to sand accumulating on one side while the beach on the other side is rapidly eroding. What is the most likely explanation?",
+      "options": [{"label": "A", "text": "The breakwater has raised the local sea level, drowning one beach"}, {"label": "B", "text": "The breakwater interrupts longshore drift, trapping sediment up-drift and starving the down-drift beach"}, {"label": "C", "text": "Tidal range has increased on only one side of the breakwater"}, {"label": "D", "text": "Coral growth on one side has consumed all the available sand"}],
+      "correct_option": "B",
+      "explanation": "The pattern of accumulation on one side and erosion on the other is the classic signature of interrupted LONGSHORE DRIFT. Sediment moving along the coast is trapped on the up-drift side of the structure, while the down-drift beach, cut off from its sediment supply, is starved and erodes. This is a major cause of engineered coastal erosion in India (option B). The others do not explain the asymmetry.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The Sunderbans delta is experiencing loss of islands and displacement of people. Which combination of causes best explains this?",
+      "options": [{"label": "A", "text": "Sea-level rise, delta subsidence, and reduced sediment supply from upstream dams"}, {"label": "B", "text": "Uplift of the land and a fall in regional sea level"}, {"label": "C", "text": "Increased longshore drift depositing excess sediment on the islands"}, {"label": "D", "text": "Growth of coral reefs blocking the river mouths"}],
+      "correct_option": "A",
+      "explanation": "Island loss and displacement in the Sunderbans result from a RELATIVE rise in sea level: global sea-level rise, plus delta subsidence (compaction), worsened by reduced sediment delivery because upstream dams trap silt that would otherwise replenish the delta. This combination (option A) drives submergence. Option B would build land, not drown it; C and D are not operative here.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Coastal Landform) with List-II (Description):\n\nList-I: (a) Spit, (b) Tombolo, (c) Lagoon, (d) Stack\nList-II: (1) Isolated rock pillar left after an arch collapses, (2) Ridge attached to land at one end, projecting into the sea, (3) Bar connecting an island to the mainland, (4) Shallow water body enclosed behind a bar",
+      "options": [{"label": "A", "text": "a-2, b-3, c-4, d-1"}, {"label": "B", "text": "a-3, b-2, c-1, d-4"}, {"label": "C", "text": "a-2, b-4, c-3, d-1"}, {"label": "D", "text": "a-1, b-3, c-4, d-2"}],
+      "correct_option": "A",
+      "explanation": "Spit — a ridge attached to land at one end projecting into the sea (2). Tombolo — a bar connecting an island to the mainland (3). Lagoon — a shallow water body enclosed behind a bar (4). Stack — an isolated rock pillar left after an arch collapses (1). Hence a-2, b-3, c-4, d-1.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Site in India) with List-II (Coastal Feature):\n\nList-I: (a) Chilika, (b) Marina Beach, (c) Gulf of Mannar, (d) Mumbai Harbour\nList-II: (1) Fringing coral reefs, (2) Coastal lagoon, (3) Drowned valley / natural harbour (submergent), (4) Long sandy beach on emergent coast",
+      "options": [{"label": "A", "text": "a-2, b-4, c-1, d-3"}, {"label": "B", "text": "a-4, b-2, c-3, d-1"}, {"label": "C", "text": "a-2, b-1, c-4, d-3"}, {"label": "D", "text": "a-1, b-4, c-2, d-3"}],
+      "correct_option": "A",
+      "explanation": "Chilika — India's largest coastal lagoon (2). Marina Beach — a long sandy beach on the emergent east coast (4). Gulf of Mannar — fringing coral reefs (1). Mumbai Harbour — a drowned valley forming a natural harbour on the submergent west coast (3). Hence a-2, b-4, c-1, d-3.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following correctly describes the largest coastal lagoon in India?",
+      "options": [{"label": "A", "text": "Pulicat Lake, on the Andhra Pradesh–Tamil Nadu border"}, {"label": "B", "text": "Chilika Lake, in Odisha, separated from the Bay of Bengal by a sand bar"}, {"label": "C", "text": "Vembanad Lake, in Kerala"}, {"label": "D", "text": "Kolleru Lake, in Andhra Pradesh"}],
+      "correct_option": "B",
+      "explanation": "Chilika Lake in Odisha is the largest coastal (brackish) lagoon in India, separated from the Bay of Bengal by a long sand bar/spit, and a Ramsar wetland. Pulicat is the second largest coastal lagoon. Vembanad is a backwater lagoon system but smaller in lagoon extent, and Kolleru is a freshwater lake, not a coastal lagoon. Hence option B.",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following is the chief agent responsible for shaping coastal landforms?",
+      "options": [{"label": "A", "text": "Sea waves"}, {"label": "B", "text": "Groundwater"}, {"label": "C", "text": "Glaciers"}, {"label": "D", "text": "Wind abrasion in deserts"}],
+      "correct_option": "A",
+      "explanation": "Sea waves are the chief geomorphic agent of the coast, assisted by tides, currents and winds; they both erode (cliffs, caves, stacks) and deposit (beaches, spits, bars). Groundwater shapes karst, glaciers shape glaciated highlands, and wind abrasion dominates deserts — none is the principal coastal agent. Hence option A.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

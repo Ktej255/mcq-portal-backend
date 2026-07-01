@@ -1,0 +1,273 @@
+{
+  "_meta": {
+    "template_version": "v3-rich",
+    "purpose": "Deeply authored GS Geography LMS topic: Glacial Landforms and Glaciation. Rich blocks, keyword highlighting, NCERT references, 15 MCQs (7 UPSC types), Mains questions, concept checklist. Rendered by RichBlockRenderer.tsx.",
+    "block_types": "heading | para(**highlight**) | callout(tone: hook|insight|tip|why|note) | statgrid | keyterms | compare | timeline | trap | memory | analogy | quiz | collapsible | points | diagram | ncert_reference",
+    "ingests_via": "app.core.gs_lms.importer.import_gs_geography (merge under Geomorphology > Landforms and their Evolution)"
+  },
+  "title": "Glacial Landforms and Glaciation",
+  "node_type": "LEAF_TOPIC",
+  "weight": 1.5,
+  "display_order": 23,
+  "review_status": "REVIEWED",
+  "video_url": null,
+  "ordering_justification": "Glaciers are the second great agent of gradation after running water, dominating high mountains and high latitudes. This topic follows fluvial and arid landforms because moving ice sculpts distinctive erosional and depositional features, and it directly links to the Himalayan cryosphere, water security, and current affairs on glacier retreat and glacial lake outburst floods.",
+  "concept_checklist": [
+    "A glacier is a large mass of moving ice formed by the compaction and recrystallisation of snow above the snowline over many years.",
+    "Glaciers are of two broad types: continental (ice sheets and ice caps) as in Antarctica and Greenland, and valley (alpine/mountain) glaciers as in the Himalayas and Alps.",
+    "Glacial erosion works mainly through plucking (quarrying of rock) and abrasion (grinding by embedded debris), leaving striations and roches moutonnées.",
+    "Erosional landforms include cirques (corries), aretes, horns, U-shaped (glacial trough) valleys, hanging valleys, and fjords.",
+    "Depositional landforms include moraines (lateral, medial, terminal, ground), drumlins, eskers, kames, outwash plains, and erratics.",
+    "A U-shaped valley is carved by a valley glacier, whereas a V-shaped valley is cut by a river — a favourite UPSC distinction.",
+    "Fjords are drowned glacial troughs invaded by the sea, common along the coasts of Norway, Chile, and New Zealand.",
+    "Fluvioglacial (glaciofluvial) landforms such as eskers, kames, and outwash plains are built by meltwater streams issuing from glaciers.",
+    "Major Himalayan glaciers include Siachen, Gangotri, Zemu, Bara Shigri, and Milam; most are retreating due to warming.",
+    "Glacial lake outburst floods (GLOFs), such as Chamoli (2021) and South Lhonak/Sikkim (2023), are a growing Himalayan hazard linked to glacier retreat."
+  ],
+  "content_sections": [
+    {
+      "section_label": "BASIC",
+      "title": "Foundation Understanding",
+      "display_order": 1,
+      "authored": true,
+      "blocks": [
+        {"type": "callout", "tone": "hook", "title": "Start Here", "text": "Ice looks still, but a glacier is a river that has forgotten how to hurry. It creeps downhill a few centimetres a day, yet with the weight of centuries behind it, it can gouge a mountain valley from a narrow V into a broad U, snap ridges into knife-edged peaks, and carry boulders the size of houses hundreds of kilometres before dropping them in a field. The Himalayas that feed the Ganga and the Indus are storing this frozen power right now — and it is melting."},
+        {"type": "statgrid", "items": [
+          {"value": "~10%", "label": "of land surface under ice today"},
+          {"value": "76 km", "label": "length of Siachen Glacier"},
+          {"value": "~30 km", "label": "length of Gangotri Glacier"},
+          {"value": "U-shaped", "label": "signature glacial valley profile"}
+        ]},
+        {"type": "heading", "text": "What Is a Glacier?"},
+        {"type": "para", "text": "A **glacier** is a large, persistent mass of ice that forms on land where more snow accumulates in winter than melts in summer. Over years, buried snow is compacted and recrystallised into dense glacial ice, which then **flows** slowly downhill under its own weight. Glaciers form only above the **snowline** — the altitude above which snow persists year-round. In India, the **Gangotri Glacier** (source of the Bhagirathi headstream of the Ganga), the **Siachen Glacier** (the longest in the Himalayas outside the polar regions), and the **Zemu Glacier** (on Kangchenjunga in Sikkim) are classic valley glaciers."},
+        {"type": "para", "text": "Glaciers are the second most important **agent of gradation** after running water. Where rivers cut narrow **V-shaped valleys**, glaciers grind out broad **U-shaped troughs**. The Himalayan valleys of **Kashmir, Ladakh, and Lahaul-Spiti** preserve textbook glacial troughs, hanging valleys, and moraines left by ice that was far more extensive during the **Pleistocene Ice Age**."},
+        {"type": "para", "text": "The work of a glacier has two halves: **erosion** in the upper, high-energy zone where ice plucks and grinds rock, and **deposition** lower down where the ice melts and dumps its debris. The unsorted material a glacier carries and deposits is called **till** or boulder clay, while meltwater streams sort and redeposit it as **fluvioglacial** material. The **Bara Shigri** and **Milam** glaciers of the Indian Himalayas show both processes along their length."},
+        {"type": "analogy", "text": "Think of a glacier as a slow conveyor belt coated in sandpaper. The embedded rock fragments act like grit on the belt, scouring everything it passes over (abrasion), while the belt itself yanks loose blocks from its bed (plucking). When the belt reaches warmth and melts, whatever it was carrying simply piles up at the end — that pile is a moraine."},
+        {"type": "heading", "text": "Erosional vs Depositional Landforms"},
+        {"type": "compare", "title": "Two Families of Glacial Landforms", "left": {"label": "Erosional (upper glacier)", "items": ["Cirque (corrie)", "Arete and horn", "U-shaped (trough) valley", "Hanging valley", "Fjord", "Roche moutonnee, striations"]}, "right": {"label": "Depositional (lower glacier)", "items": ["Moraines (lateral, medial, terminal, ground)", "Drumlin", "Esker", "Kame", "Outwash plain", "Erratics"]}},
+        {"type": "keyterms", "terms": [
+          {"term": "Cirque (Corrie)", "definition": "Arm-chair shaped hollow at a glacier's head where ice accumulates; may hold a **tarn** lake after the ice melts."},
+          {"term": "Arete", "definition": "Sharp, knife-edged ridge formed when two cirques erode back-to-back."},
+          {"term": "Horn", "definition": "Sharp pyramidal peak formed when three or more cirques erode a mountain from different sides (e.g., **Matterhorn**)."},
+          {"term": "U-shaped valley", "definition": "Broad, flat-floored, steep-sided **glacial trough** carved by a valley glacier."},
+          {"term": "Hanging valley", "definition": "Tributary glacial valley left high above the main trough; often carries a waterfall."},
+          {"term": "Fjord", "definition": "Deep glacial trough drowned by the sea, forming a long, steep-sided coastal inlet."},
+          {"term": "Moraine", "definition": "Ridge or sheet of unsorted **till** deposited by a glacier (lateral, medial, terminal, or ground)."},
+          {"term": "Esker", "definition": "Long, winding ridge of sorted sand and gravel laid down by a meltwater stream flowing under the ice."},
+          {"term": "Drumlin", "definition": "Smooth, elongated whale-back hill of till; steep (stoss) end faces up-ice, gentle (lee) end down-ice."},
+          {"term": "Outwash plain", "definition": "Broad apron of sorted sand and gravel spread by meltwater beyond the terminal moraine (also called a **sandur**)."},
+          {"term": "Erratics", "definition": "Boulders of rock foreign to their surroundings, transported and dropped far from their source by ice."}
+        ]}
+      ]
+    },
+    {
+      "section_label": "NCERT_LEVEL",
+      "title": "NCERT Reference — Glaciers",
+      "display_order": 2,
+      "authored": true,
+      "blocks": [
+        {"type": "ncert_reference", "book": "Fundamentals of Physical Geography", "class": "11", "chapter": "7", "page_start": 62, "page_end": 71, "external_url": "https://ncert.nic.in/textbook/pdf/kegy107.pdf", "text": "Chapter 7 'Landforms and their Evolution' covers running water, groundwater, glaciers, waves and currents, and winds. The section on glaciers explains glacial erosion and deposition and the landforms each produces.", "key_facts": ["Glaciers are masses of ice moving as sheets over land (continental/piedmont) or as linear flows down valleys (valley/mountain glaciers)", "Glaciers erode by plucking and abrasion, carrying huge debris loads", "Erosional landforms: cirque, horn, arete, glacial valley (U-shaped), hanging valley, fjord", "Depositional landforms: moraine, esker, outwash plain, drumlin", "Cirques often hold tarn lakes; several cirques around a peak form a horn"]},
+        {"type": "heading", "text": "NCERT Key Points — Class 11, Chapter 7"},
+        {"type": "points", "title": "Types of Glaciers (NCERT)", "items": ["**Continental glaciers / ice sheets** — cover large parts of land, as in Antarctica and Greenland", "**Piedmont glaciers** — form when valley glaciers spread out onto plains at the foot of mountains", "**Valley / mountain glaciers** — confined, linear flows of ice down existing valleys in high mountains"]},
+        {"type": "points", "title": "Glacial Erosional Landforms (NCERT)", "items": ["**Cirque** — deep, long, wide armchair-shaped basin at the head of a glacial valley; may hold a **tarn** lake", "**Horn and arete** — horns form by headward erosion of cirques; aretes are the divides between them", "**Glacial valley / trough** — U-shaped, flat-floored, steep-sided; may hold a ribbon lake", "**Hanging valley** — tributary valley hanging above the main valley, often with a waterfall", "**Fjord** — deep glacial trough filled by sea water along coasts"]},
+        {"type": "points", "title": "Glacial Depositional Landforms (NCERT)", "items": ["**Moraines** — long ridges of glacial till (terminal, lateral, medial, ground)", "**Eskers** — sinuous ridges of sorted material deposited by meltwater streams beneath the ice", "**Outwash plains** — spreads of glaciofluvial sediment beyond the moraine", "**Drumlins** — inverted boat-shaped deposits of till indicating ice-flow direction"]},
+        {"type": "para", "text": "NCERT stresses that glaciers move slowly under the influence of **gravity** and that they carry enormous amounts of debris (**moraine**). It notes that the highest peaks of the Himalayas and the Alps such as **horns** were carved by cirque erosion, and that most present-day glacial landforms in mid-latitude plains are **relict features** of the last Ice Age."},
+        {"type": "callout", "tone": "tip", "title": "NCERT Exam Focus", "text": "UPSC repeatedly tests: (1) matching erosional vs depositional landforms, (2) the difference between a U-shaped glacial valley and a V-shaped river valley, and (3) how a cirque, arete, and horn are related. All three are stated plainly in NCERT Class 11 Chapter 7 — read the glacier section closely."}
+      ]
+    },
+    {
+      "section_label": "ADVANCED",
+      "title": "Advanced Analysis — Glacial Erosion & Deposition",
+      "display_order": 3,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "How Glaciers Erode: Plucking and Abrasion"},
+        {"type": "para", "text": "Glacial erosion works through two chief mechanisms. **Plucking (quarrying)** occurs when meltwater seeps into cracks in the bedrock, refreezes onto the base of the glacier, and then pulls loose blocks away as the ice moves forward — this creates the jagged back-wall of a cirque and the steep down-glacier face of a **roche moutonnee**. **Abrasion** occurs when rock fragments frozen into the base of the ice act like the teeth of a file, scratching and polishing the bedrock to leave **striations** (parallel grooves) and rock flour. The stoss (up-ice) side of obstacles is smoothed by abrasion, while the lee (down-ice) side is roughened by plucking."},
+        {"type": "compare", "title": "Plucking vs Abrasion", "left": {"label": "Plucking (Quarrying)", "items": ["Freeze-thaw prises loose bedrock blocks", "Ice freezes onto rock and drags it away", "Produces jagged, steep surfaces", "Forms cirque back-walls and roche moutonnee lee side"]}, "right": {"label": "Abrasion (Corrasion)", "items": ["Embedded debris grinds the bedrock", "Acts like sandpaper on the valley floor", "Produces smoothed, polished surfaces and striations", "Generates fine rock flour that colours meltwater"]}},
+        {"type": "heading", "text": "Types of Glaciers"},
+        {"type": "compare", "title": "Continental vs Valley Glaciers", "left": {"label": "Continental (Ice Sheet)", "items": ["Cover vast areas irrespective of relief", "Antarctica, Greenland", "Flow outward from thick central dome", "Produce ice caps, ice shelves, extensive till plains"]}, "right": {"label": "Valley (Alpine/Mountain)", "items": ["Confined to existing valleys", "Himalayas, Alps, Rockies", "Flow downhill along the valley long profile", "Produce cirques, aretes, horns, U-shaped troughs"]}},
+        {"type": "heading", "text": "Moraine Types"},
+        {"type": "points", "title": "Four Kinds of Moraine", "items": ["**Lateral moraine** — debris carried and deposited along the sides of a valley glacier", "**Medial moraine** — ridge formed in the middle where two glaciers merge and their inner lateral moraines join", "**Terminal (end) moraine** — arc of till dumped at the snout marking the glacier's furthest advance", "**Ground moraine** — sheet of till plastered across the valley floor beneath the ice, forming till plains"]},
+        {"type": "callout", "tone": "insight", "title": "Reading a Glacier's History", "text": "Moraines are a glacier's diary. A series of **terminal (recessional) moraines** down-valley records successive halts during retreat, while a fresh terminal moraine far from today's snout — as seen below Gangotri's **Gaumukh** snout — is direct field evidence that the glacier once extended much further and has since shrunk."},
+        {"type": "heading", "text": "Fluvioglacial (Glaciofluvial) Features"},
+        {"type": "para", "text": "Beyond the ice, **meltwater** sorts and redeposits glacial debris to build **fluvioglacial landforms**. An **esker** is a sinuous ridge of sand and gravel laid in a tunnel beneath the ice. A **kame** is a mound of stratified sediment dropped at the ice margin. An **outwash plain (sandur)** is a broad, gently sloping apron of sorted sediment spread by braided meltwater streams beyond the terminal moraine. **Kettle holes** — depressions left where buried ice blocks melted — often pit these plains and may hold lakes. Unlike unsorted glacial till, fluvioglacial deposits are **stratified and sorted** because moving water grades them by size."},
+        {"type": "heading", "text": "Himalayan Glaciers and the Cryosphere"},
+        {"type": "para", "text": "The **Himalaya-Karakoram** region holds the largest store of ice outside the poles, earning it the name the **Third Pole**. Major Indian glaciers include the **Siachen** (~76 km, Karakoram), **Gangotri** (~30 km, source of the Bhagirathi), **Zemu** (Sikkim, draining Kangchenjunga), **Bara Shigri** (Lahaul, Himachal Pradesh), and **Milam** and **Pindari** (Kumaon, Uttarakhand). These glaciers feed the perennial **Indus, Ganga, and Brahmaputra** systems, making them the water towers of South Asia. A striking anomaly is the **Karakoram Anomaly** — while most Himalayan glaciers are retreating, several Karakoram glaciers have remained stable or even advanced in recent decades."},
+        {"type": "collapsible", "title": "Advanced: Why Is a Glacial Valley U-Shaped but a River Valley V-Shaped?", "content": "A river erodes chiefly downward at a point (its bed), and mass wasting opens the sides into a V. A glacier, by contrast, fills the entire valley and erodes its floor AND both walls simultaneously through abrasion and plucking. It truncates projecting spurs into **truncated spurs** and widens and deepens the whole cross-section into a broad, flat-floored, steep-walled U-shaped trough. When the glacier melts, tributary valleys that could not cut as deep are left as **hanging valleys** high above the main trough floor."}
+      ]
+    },
+    {
+      "section_label": "CURRENT_AFFAIRS",
+      "title": "Current Affairs Connections — Glaciers",
+      "display_order": 4,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Recent Developments (2021-2026)"},
+        {"type": "callout", "tone": "note", "title": "Hindu Kush Himalaya Assessment and Glacier Retreat", "text": "The **ICIMOD** Hindu Kush Himalaya (HKH) assessments warn that the region could lose a large share of its glacier volume this century under high-emission pathways, with accelerating **glacier retreat** across the Himalayas. Gangotri's snout at **Gaumukh** has been retreating for decades. UPSC may frame this as a statement-based question linking warming, glacier mass loss, and river flows in the Indus-Ganga-Brahmaputra basins."},
+        {"type": "callout", "tone": "note", "title": "Glacial Lake Outburst Floods — Chamoli 2021 and Sikkim 2023", "text": "In **February 2021** a rock-ice avalanche in **Chamoli (Uttarakhand)** triggered a catastrophic flood in the Rishiganga-Dhauliganga valley, damaging the Tapovan-Vishnugad and Rishiganga hydro projects. In **October 2023** the **South Lhonak Lake** GLOF in **Sikkim** breached and devastated the **Teesta** valley, destroying the Teesta-III dam. These events made **GLOFs** a central disaster-management concern for the Himalayan states."},
+        {"type": "callout", "tone": "note", "title": "Black Carbon on Himalayan Glaciers", "text": "Deposits of **black carbon** (soot) from biomass burning, vehicles, and industry darken snow and ice, lowering their **albedo** and accelerating melt. Studies flag black carbon as a significant driver of Himalayan glacier and snow loss alongside rising temperatures, connecting the topic to air pollution and clean-energy policy."},
+        {"type": "callout", "tone": "note", "title": "Cryosphere and Water Security", "text": "Himalayan glaciers act as frozen reservoirs that release meltwater in the dry season, sustaining the **Indus, Ganga, and Brahmaputra**. Long-term glacier loss threatens dry-season flows, irrigation, and hydropower for hundreds of millions across South Asia, making the **cryosphere** central to India's water and climate security debates."},
+        {"type": "callout", "tone": "note", "title": "ISRO and Glacier Monitoring", "text": "**ISRO** and the National Remote Sensing Centre track glacier extent, snow cover, and the growth of **glacial lakes** using satellite data, feeding early-warning efforts for GLOFs. Central and state agencies have begun inventorying and monitoring high-risk glacial lakes such as South Lhonak in the aftermath of recent disasters."}
+      ]
+    },
+    {
+      "section_label": "EXAMINER_TRAPS",
+      "title": "Examiner Traps — Glacial Landforms",
+      "display_order": 5,
+      "authored": true,
+      "blocks": [
+        {"type": "heading", "text": "Common Misconceptions UPSC Tests"},
+        {"type": "trap", "wrong": "A glacier carves a V-shaped valley", "correct": "A glacier carves a broad, flat-floored, steep-sided **U-shaped valley (trough)**. The **V-shaped valley** is cut by a river through downward erosion. This is the single most common glacial vs fluvial trap."},
+        {"type": "trap", "wrong": "Moraines are sorted, layered deposits of sand and gravel", "correct": "Moraines are **unsorted, unstratified till** dumped directly by ice. Sorted, stratified, layered deposits (eskers, outwash plains, kames) are **fluvioglacial** features laid down by meltwater, not by the ice itself."},
+        {"type": "trap", "wrong": "A cirque, an arete, and a horn are unrelated features", "correct": "They are a family. A **cirque** is the armchair hollow where ice gathers; two cirques eroding back-to-back leave a knife-edged **arete**; three or more cirques cutting into one peak produce a pyramidal **horn** (like the Matterhorn)."},
+        {"type": "trap", "wrong": "A fjord is a landform built by river deposition at the coast", "correct": "A **fjord** is a glacial **erosional** feature — a deep U-shaped trough later drowned by the sea. A river-built coastal landform of deposition is a **delta**, which is entirely different."},
+        {"type": "trap", "wrong": "A drumlin's steep end points down-glacier in the direction of ice flow", "correct": "A **drumlin's steep (stoss) end faces up-glacier**, into the oncoming ice, while the gentle, tapering (lee) end points down-glacier. Drumlins therefore indicate the direction of ice movement."},
+        {"type": "trap", "wrong": "All Himalayan glaciers are retreating uniformly", "correct": "Most are retreating, but the **Karakoram Anomaly** describes glaciers in the Karakoram that have remained stable or even advanced in recent decades, so blanket statements about uniform retreat are wrong."},
+        {"type": "trap", "wrong": "A hanging valley and a tarn are the same thing", "correct": "A **hanging valley** is a tributary glacial valley left high above the main trough, often ending in a waterfall. A **tarn** is a small lake occupying a **cirque** basin after the ice has gone. Different landforms entirely."},
+        {"type": "memory", "text": "EROSION carves: Cirque -> Arete -> Horn (armchair -> knife-edge -> pyramid). DEPOSITION dumps: Moraine, Drumlin, Esker (unsorted till vs meltwater ridge). 'U for Under-ice glacier, V for riVer.' Drumlin: Stoss faces the Storm (up-ice)."}
+      ]
+    }
+  ],
+  "pyqs": [
+    {"exam_type": "PRELIMS", "year": 2015, "question_text": "Consider the following pairs of glacial landforms and their nature:\n1. Cirque — Erosional landform\n2. Esker — Depositional (fluvioglacial) landform\n3. Drumlin — Erosional landform\nWhich of the pairs given above is/are correctly matched?", "answer_text": "B", "explanation": "Pairs 1 and 2 are correct. A cirque is an erosional landform; an esker is a fluvioglacial depositional ridge laid by meltwater. Pair 3 is wrong — a drumlin is a DEPOSITIONAL landform made of till, not an erosional one. Hence '1 and 2 only' is correct.", "question_type": "MATCH_THE_FOLLOWING", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "PRELIMS", "year": 2019, "question_text": "With reference to glaciated regions, consider the following statements:\n1. A U-shaped valley is formed by glacial erosion.\n2. A hanging valley often gives rise to a waterfall where it meets the main glacial trough.\n3. A fjord is a glacial trough drowned by the sea.\nWhich of the above statements is/are correct?", "answer_text": "D", "explanation": "All three statements are correct. U-shaped valleys are glacial erosional troughs; hanging valleys are left elevated above the deeper main trough and commonly carry waterfalls; fjords are glacial troughs submerged by rising sea level along coasts such as Norway.", "question_type": "STATEMENT_BASED", "marks": null, "review_status": "REVIEWED"},
+    {"exam_type": "MAINS", "year": 2021, "question_text": "Distinguish between the erosional and depositional landforms produced by glaciers, and discuss the significance of Himalayan glaciers for India.", "answer_text": "Glacial erosional landforms are produced by plucking and abrasion in the upper glacier and include cirques (armchair hollows, often holding tarns), aretes (knife-edged ridges), horns (pyramidal peaks), U-shaped troughs, hanging valleys and fjords. Depositional landforms are built where ice melts and dumps unsorted till or where meltwater sorts debris: lateral, medial, terminal and ground moraines, drumlins, plus fluvioglacial eskers, kames and outwash plains. The Himalaya-Karakoram, the Third Pole, stores the largest ice mass outside the poles. Glaciers such as Siachen, Gangotri and Zemu feed the perennial Indus, Ganga and Brahmaputra, ensuring dry-season flow for irrigation, drinking water and hydropower for hundreds of millions. Their accelerating retreat and associated GLOFs (Chamoli 2021, South Lhonak 2023) threaten water security and demand monitoring and disaster preparedness.", "explanation": "Mains answer structure: define glacial erosion mechanisms -> list erosional landforms -> list depositional/fluvioglacial landforms -> significance of Himalayan glaciers (water towers, rivers, hydropower) -> current threats (retreat, GLOFs, black carbon).", "question_type": "STATEMENT_BASED", "marks": 15, "review_status": "REVIEWED"}
+  ],
+  "mcq_questions": [
+    {
+      "question_text": "Consider the following statements regarding glacial landforms:\n1. A cirque is an erosional landform that may contain a tarn lake after the ice melts.\n2. A moraine is a sorted and stratified deposit laid down by glacial meltwater.\n3. A U-shaped valley is a signature landform of glacial erosion.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 3 only"}, {"label": "B", "text": "1 and 2 only"}, {"label": "C", "text": "2 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — a cirque is erosional and often holds a tarn. Statement 2 is wrong — a moraine is UNSORTED, unstratified till dumped directly by ice; sorted, stratified deposits are fluvioglacial (esker, outwash). Statement 3 is correct — U-shaped troughs are the classic glacial erosional valley. Hence '1 and 3 only'.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 1,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about types of glaciers:\n1. Continental glaciers (ice sheets) cover large areas irrespective of the underlying relief.\n2. Valley glaciers are confined to and flow along existing valleys.\n3. Piedmont glaciers form when valley glaciers spread out onto a plain at the foot of mountains.\n4. Antarctica and Greenland are covered mainly by valley glaciers.\nHow many of the above statements are correct?",
+      "options": [{"label": "A", "text": "Only one"}, {"label": "B", "text": "Only two"}, {"label": "C", "text": "Only three"}, {"label": "D", "text": "All four"}],
+      "correct_option": "C",
+      "explanation": "Statements 1, 2, and 3 are correct descriptions of continental, valley, and piedmont glaciers. Statement 4 is wrong — Antarctica and Greenland are covered by CONTINENTAL glaciers (ice sheets), not valley glaciers. Hence only three are correct.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 2,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements about Himalayan glaciers:\n1. The Siachen Glacier lies in the Karakoram range.\n2. The Gangotri Glacier is a source of the Bhagirathi headstream of the Ganga.\n3. The Zemu Glacier is located in the Sikkim Himalayas.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "D",
+      "explanation": "All three are correct. Siachen is in the Karakoram; Gangotri (snout at Gaumukh) feeds the Bhagirathi, a headstream of the Ganga; and Zemu, draining Kangchenjunga, lies in Sikkim. All are major Indian valley glaciers.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 3,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Consider the following statements distinguishing glacial and fluvioglacial deposits:\n1. Till deposited directly by ice is unsorted and unstratified.\n2. Outwash plains are laid down by braided meltwater streams and are sorted.\n3. Eskers are ridges of unsorted till deposited along the sides of a valley glacier.\nWhich of the above statements is/are correct?",
+      "options": [{"label": "A", "text": "1 and 2 only"}, {"label": "B", "text": "2 and 3 only"}, {"label": "C", "text": "1 and 3 only"}, {"label": "D", "text": "1, 2 and 3"}],
+      "correct_option": "A",
+      "explanation": "Statement 1 is correct — glacial till is unsorted/unstratified. Statement 2 is correct — outwash plains are sorted fluvioglacial deposits. Statement 3 is wrong — eskers are SORTED sand and gravel laid by meltwater in tunnels beneath the ice; unsorted debris along a glacier's sides forms LATERAL moraines. Hence '1 and 2 only'.",
+      "question_type": "STATEMENT_BASED",
+      "display_order": 4,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following stages in the erosional evolution of a glaciated peak in the correct sequence:\n1. Formation of a knife-edged arete between two cirques\n2. Accumulation of ice in armchair-shaped cirque hollows\n3. Development of a pyramidal horn as several cirques cut into one peak\nSelect the correct chronological order:",
+      "options": [{"label": "A", "text": "2 - 1 - 3"}, {"label": "B", "text": "1 - 2 - 3"}, {"label": "C", "text": "2 - 3 - 1"}, {"label": "D", "text": "3 - 2 - 1"}],
+      "correct_option": "A",
+      "explanation": "Ice first gathers and erodes cirques (2). As adjacent cirques enlarge back-to-back, the divide between them sharpens into an arete (1). When three or more cirques cut into a single peak from different sides, the surviving summit becomes a pyramidal horn (3). Correct order: 2-1-3.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 5,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Arrange the following in the correct downstream sequence along a valley glacier from source to snout:\n1. Terminal moraine\n2. Cirque (accumulation zone)\n3. Outwash plain\n4. U-shaped trough\nSelect the correct order:",
+      "options": [{"label": "A", "text": "2 - 4 - 1 - 3"}, {"label": "B", "text": "2 - 1 - 4 - 3"}, {"label": "C", "text": "4 - 2 - 3 - 1"}, {"label": "D", "text": "2 - 4 - 3 - 1"}],
+      "correct_option": "A",
+      "explanation": "Ice accumulates at the head in the cirque (2), flows down carving the U-shaped trough (4), and at the snout dumps a terminal moraine (1) beyond which meltwater spreads the outwash plain (3). Correct order: 2-4-1-3.",
+      "question_type": "CHRONOLOGICAL",
+      "display_order": 6,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): A glacier carves a broad, flat-floored, steep-sided U-shaped valley.\nReason (R): Unlike a river, a glacier fills the valley and erodes its floor and both walls simultaneously by abrasion and plucking.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — glacial troughs are U-shaped. R is correct AND explains A — because the glacier occupies the entire cross-section and erodes the bed and both walls at once (unlike a river, which erodes mainly at a point and leaves a V), the result is a broad U-shaped valley. R is the correct explanation of A.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 7,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Assertion (A): Deposits of black carbon on Himalayan glaciers accelerate their melting.\nReason (R): Black carbon lowers the albedo of snow and ice, causing them to absorb more solar radiation.",
+      "options": [{"label": "A", "text": "Both A and R are correct, and R is the correct explanation of A"}, {"label": "B", "text": "Both A and R are correct, but R is NOT the correct explanation of A"}, {"label": "C", "text": "A is correct but R is incorrect"}, {"label": "D", "text": "A is incorrect but R is correct"}],
+      "correct_option": "A",
+      "explanation": "A is correct — black carbon (soot) accelerates glacier melt. R is correct AND explains A — soot darkens the bright surface, lowering albedo (reflectivity), so more solar energy is absorbed as heat, hastening melt. R correctly explains A.",
+      "question_type": "ASSERTION_REASON",
+      "display_order": 8,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "A tributary glacier is much smaller than the main valley glacier it joins. After both glaciers melt away, what landform is most likely to result where the tributary valley meets the main valley?",
+      "options": [{"label": "A", "text": "A hanging valley, because the smaller tributary glacier eroded less deeply than the main glacier"}, {"label": "B", "text": "A fjord, because the sea floods the junction"}, {"label": "C", "text": "A drumlin, because till accumulates at the junction"}, {"label": "D", "text": "An esker, because meltwater deposits sediment there"}],
+      "correct_option": "A",
+      "explanation": "The larger main glacier erodes its trough deeper than the smaller tributary glacier can. When the ice melts, the tributary valley is left 'hanging' high above the main valley floor — a hanging valley, often with a waterfall. B, C, and D describe unrelated processes not caused by the depth difference between the two glaciers.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 9,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Rising temperatures cause a Himalayan valley glacier to retreat rapidly, leaving a large lake dammed behind its loose terminal moraine. What is the most likely hazard associated with this situation?",
+      "options": [{"label": "A", "text": "A glacial lake outburst flood (GLOF) if the moraine dam fails"}, {"label": "B", "text": "A permanent rise in dry-season river flow"}, {"label": "C", "text": "Formation of a new fjord along the coast"}, {"label": "D", "text": "Immediate desertification of the valley"}],
+      "correct_option": "A",
+      "explanation": "A moraine-dammed glacial lake can breach suddenly, releasing a GLOF that devastates downstream valleys — as in Chamoli (2021) and South Lhonak, Sikkim (2023). B is wrong (retreat reduces long-term flow); C is wrong (fjords are coastal, not high mountain); D is not an immediate consequence. The direct hazard is a GLOF.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 10,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Why does the stoss (up-ice) side of a rock knob in a glaciated area appear smooth and polished, while its lee (down-ice) side appears rough and steep, forming a roche moutonnee?",
+      "options": [{"label": "A", "text": "Abrasion smooths the up-ice side while plucking roughens the down-ice side"}, {"label": "B", "text": "The up-ice side is exposed to wind erosion and the down-ice side to water"}, {"label": "C", "text": "Chemical weathering smooths one side and freezing roughens the other"}, {"label": "D", "text": "Deposition of till smooths the up-ice side"}],
+      "correct_option": "A",
+      "explanation": "As ice rides up over the obstacle, embedded debris abrades and polishes the up-ice (stoss) side. On the down-ice (lee) side, meltwater refreezes into cracks and the ice plucks blocks away, leaving it steep and jagged — producing a roche moutonnee. The other options misattribute the mechanism.",
+      "question_type": "CAUSE_EFFECT",
+      "display_order": 11,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Glacial landform) with List-II (Description):\n\nList-I: (a) Arete, (b) Esker, (c) Drumlin, (d) Fjord\nList-II: (1) Sinuous ridge of sorted meltwater sediment, (2) Knife-edged ridge between two cirques, (3) Glacial trough drowned by the sea, (4) Whale-back hill of till",
+      "options": [{"label": "A", "text": "a-2, b-1, c-4, d-3"}, {"label": "B", "text": "a-1, b-2, c-3, d-4"}, {"label": "C", "text": "a-2, b-4, c-1, d-3"}, {"label": "D", "text": "a-3, b-1, c-4, d-2"}],
+      "correct_option": "A",
+      "explanation": "Arete — knife-edged ridge between cirques (2); Esker — sinuous ridge of sorted meltwater sediment (1); Drumlin — whale-back hill of till (4); Fjord — glacial trough drowned by the sea (3). Correct matching: a-2, b-1, c-4, d-3.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 12,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Match List-I (Moraine type) with List-II (Position):\n\nList-I: (a) Lateral moraine, (b) Medial moraine, (c) Terminal moraine, (d) Ground moraine\nList-II: (1) At the snout marking furthest advance, (2) Along the sides of the glacier, (3) Plastered across the valley floor beneath the ice, (4) Down the middle where two glaciers merge",
+      "options": [{"label": "A", "text": "a-2, b-4, c-1, d-3"}, {"label": "B", "text": "a-4, b-2, c-1, d-3"}, {"label": "C", "text": "a-2, b-4, c-3, d-1"}, {"label": "D", "text": "a-1, b-4, c-2, d-3"}],
+      "correct_option": "A",
+      "explanation": "Lateral moraine forms along the sides (2); medial moraine forms down the middle where two glaciers join (4); terminal moraine lies at the snout marking the furthest advance (1); ground moraine is the till sheet on the valley floor beneath the ice (3). Correct matching: a-2, b-4, c-1, d-3.",
+      "question_type": "MATCH_THE_FOLLOWING",
+      "display_order": 13,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "Which one of the following pairs of a peak and its mode of formation is correctly matched?",
+      "options": [{"label": "A", "text": "Horn (e.g., Matterhorn) — formed by headward erosion of three or more cirques into a single peak"}, {"label": "B", "text": "Horn — formed by deposition of till around a mountain summit"}, {"label": "C", "text": "Horn — formed by river erosion of a plateau edge"}, {"label": "D", "text": "Horn — formed by wind abrasion in an arid region"}],
+      "correct_option": "A",
+      "explanation": "A horn is a sharp, pyramidal peak produced when three or more cirques erode headward into the same mountain from different sides, as with the Matterhorn in the Alps. It is an erosional glacial landform, so B (deposition), C (river erosion), and D (wind abrasion) are all incorrect.",
+      "question_type": "FACTUAL",
+      "display_order": 14,
+      "review_status": "REVIEWED"
+    },
+    {
+      "question_text": "The 2023 South Lhonak Lake disaster, which devastated the Teesta valley, is an example of which of the following?",
+      "options": [{"label": "A", "text": "A glacial lake outburst flood (GLOF) in Sikkim"}, {"label": "B", "text": "A cloudburst-triggered flash flood in Kerala"}, {"label": "C", "text": "A coastal storm surge in Odisha"}, {"label": "D", "text": "A landslide dam failure in the Western Ghats"}],
+      "correct_option": "A",
+      "explanation": "South Lhonak is a glacial lake in the Sikkim Himalayas; its outburst in October 2023 sent a GLOF down the Teesta, destroying the Teesta-III dam and downstream settlements. It was not a Kerala cloudburst, an Odisha storm surge, or a Western Ghats landslide, so only A is correct.",
+      "question_type": "FACTUAL",
+      "display_order": 15,
+      "review_status": "REVIEWED"
+    }
+  ]
+}

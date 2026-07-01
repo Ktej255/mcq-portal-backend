@@ -156,3 +156,6 @@ cython_debug/
 
 # VS Code
 .vscode/
+
+# Hypothesis cache
+.hypothesis/
